@@ -30,7 +30,7 @@ Before planning, generating, editing, or reviewing code, the agent must read the
 - Do not revise locked assumptions without explicit approval.
 - Do not change the established brand direction without explicit approval.
 - Reuse documented components and patterns before introducing new ones.
-- Keep the website clinician-first unless a page explicitly targets another audience.
+- Keep the website maternal and fetal intelligence platform unless a page explicitly targets another audience.
 - Maintain consistency across design, content, interaction, accessibility, and engineering.
 - Prefer clear and explainable implementation over unnecessary complexity.
 - Record material architectural decisions in `ai/decisions/`.
@@ -64,3 +64,18 @@ The agent must verify:
 The repository documentation is the durable memory of the project.
 
 Chat history is temporary context.
+
+## Product Capability Verification
+
+Before describing or implementing any product capability:
+
+1. Read `docs/product/PRODUCT_STATUS.md`.
+2. Verify whether the capability is:
+   - Available
+   - Limited availability
+   - Pilot
+   - In validation
+   - In development
+   - Planned
+   - Future roadmap
+3. Do not describe roadmap capabilities as available.

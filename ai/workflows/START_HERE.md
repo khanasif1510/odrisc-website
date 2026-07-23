@@ -3,11 +3,43 @@
 ## Before Starting Any Task
 
 1. Read `AGENTS.md`.
+
 2. Read `PROJECT_CONTEXT.md`.
-3. Identify the relevant source-of-truth documents.
+
+3. Read the relevant source-of-truth documents for the task.
+
+   Typical reading order:
+
+   **Foundation**
+   - `docs/project/SOURCE_OF_TRUTH.md`
+   - `ai/rules/NON_NEGOTIABLES.md`
+
+   **Product**
+   - `docs/product/PRODUCT_VISION.md`
+   - `docs/product/AUDIENCE.md`
+   - `docs/product/WEBSITE_OBJECTIVES.md`
+   - `docs/product/WEBSITE_STORY.md`
+
+   **Design**
+   - `docs/design/BRAND_FOUNDATION.md`
+   - `docs/design/DESIGN_SYSTEM.md`
+
+   **Content**
+   - `docs/content/CONTENT_GUIDELINES.md`
+
+   **Engineering**
+   - `docs/engineering/ARCHITECTURE.md`
+   - `docs/engineering/COMPONENT_LIBRARY.md`
+   - `docs/engineering/CODING_STANDARDS.md`
+
+   Read only the documents that are relevant to the current task. Do not read the entire repository unless necessary.
+
 4. Inspect the existing repository implementation.
+
 5. Confirm the scope of the requested change.
+
 6. Identify assumptions and unresolved questions.
+
 7. Define acceptance criteria.
 
 ## Task Classification

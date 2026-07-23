@@ -8,12 +8,35 @@
 - The website must not position ODRISC as replacing clinicians.
 - ODRISC must be presented as clinical decision support and monitoring intelligence, not autonomous diagnosis.
 
+## Product Identity
+
+- ODRISC is a maternal and fetal intelligence platform.
+- ODRISC must not be reduced to a pregnancy-content, diet, weight-tracking, or fetal-growth application.
+- Patient and Provider experiences are connected parts of one product ecosystem.
+- Longitudinal intelligence is the central product foundation.
+- Artificial intelligence is an enabling capability, not the primary product identity.
+
+## Clinical Boundaries
+
+- ODRISC supports but does not replace healthcare professionals.
+- Risk assessment must not be presented as diagnosis.
+- Product outputs must remain explainable and reviewable.
+- Future or unvalidated capabilities must not be presented as available.
+- Patient safety takes priority over engagement or conversion.
+
+## Product Development
+
+- New capabilities must strengthen maternal or fetal understanding, monitoring, or collaboration.
+- Do not introduce unrelated health categories without explicit approval.
+- Do not build disconnected tools that create new data silos.
+- Clinical, product, and availability status must be documented before public release.
+
 ## Audience Priority
 
-- Clinicians are the primary audience of the main website experience.
-- Patients, healthcare institutions, partners, and investors are important secondary audiences.
-- Clinical credibility must not be weakened by consumer-style wellness language.
-- Patient-facing language must remain understandable, reassuring, and responsible.
+- Patients and healthcare providers are both primary audiences of the website.
+- Each must receive a complete audience-specific journey.
+- Healthcare institutions are served primarily through the Provider journey.
+- Investors, media, partners, and other corporate visitors are shared secondary audiences and must not be added to the primary entry gateway.
 
 ## Clinical Integrity
 

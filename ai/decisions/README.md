@@ -8,3 +8,5 @@ Each decision must use a numbered file name:
 ADR-001-decision-name.md
 ADR-002-decision-name.md
 ADR-003-decision-name.md
+
+| ADR-002 | Product Vision and Platform Identity | Approved | 2026-07-23 |

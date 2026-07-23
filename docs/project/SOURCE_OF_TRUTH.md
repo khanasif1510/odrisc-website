@@ -8,16 +8,18 @@ AI agents and human contributors must follow this hierarchy when two documents, 
 
 ## Source-of-Truth Hierarchy
 
-From highest authority to lowest authority:
+For product identity, purpose, direction, and long-term boundaries:
 
-1. Explicit decisions approved by the founder
-2. PROJECT_CONTEXT.md
-3. ai/rules/NON_NEGOTIABLES.md
-4. Product requirements and approved project documentation
-5. Design system and content guidelines
-6. Architecture Decision Records in ai/decisions/
-7. Existing production implementation
-8. Temporary prompts, comments, drafts, and AI suggestions
+1. Founder-approved decisions
+2. `PROJECT_CONTEXT.md`
+3. `docs/product/PRODUCT_VISION.md`
+4. `docs/product/AUDIENCE.md`
+5. Approved Product Requirements Documents
+6. Approved Architecture Decision Records
+7. Current implementation
+8. Temporary prompts, mockups, and suggestions
+
+A prototype, mockup, prompt, or existing feature does not redefine the product vision. Material changes to product identity or scope require explicit approval and documentation.
 
 ## Conflict Resolution
 
