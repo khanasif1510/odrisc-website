@@ -1,5 +1,7 @@
 # ODRISC Product Capability Status
 
+Website storytelling and public capability descriptions must be checked against this register before being implemented.
+
 ## Purpose
 
 This document records the approved maturity and public communication status of ODRISC product capabilities.
@@ -32,3 +34,4 @@ No capability may be presented publicly without checking this register.
 | Ultrasound OCR | Planned | Planned | Do not present as available | Future markets | CTO | 2026-07-23 |
 | Provider Dashboard | To confirm | In development | Restricted | Qatar | Founder | 2026-07-23 |
 | Hospital FHIR Integration | Not applicable | Future roadmap | Roadmap only | GCC | CTO | 2026-07-23 |
+

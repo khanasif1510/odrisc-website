@@ -62,3 +62,41 @@ When the documentation does not contain enough information:
 - Use the smallest reasonable assumption only when implementation can proceed safely.
 - Clearly identify the assumption.
 - Add the unresolved issue to `docs/project/OPEN_QUESTIONS.md` when it materially affects the project.
+
+## Capability Status Verification
+
+Before generating:
+
+- Website copy
+- Product pages
+- Marketing material
+- UI
+- Product screenshots
+- Diagrams
+- Sales material
+
+Always verify the capability status in:
+
+`docs/product/PRODUCT_STATUS.md`
+
+If the status is unknown, state the uncertainty rather than assuming availability.
+
+## Website and Content Generation
+
+Before generating website copy, page architecture, components, diagrams, or animations, the AI agent must read:
+
+1. `docs/product/PRODUCT_VISION.md`
+2. `docs/product/AUDIENCE.md`
+3. `docs/product/WEBSITE_OBJECTIVES.md`
+4. `docs/product/WEBSITE_STORY.md`
+5. `docs/product/PRODUCT_STATUS.md`
+
+The AI agent must identify:
+
+- The intended audience
+- The relevant stage of the website story
+- The approved product status
+- The required clinical boundary
+- The intended visitor action
+
+The AI agent must not begin website work from a visual reference alone.

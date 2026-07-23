@@ -19,6 +19,10 @@
    - `docs/product/AUDIENCE.md`
    - `docs/product/WEBSITE_OBJECTIVES.md`
    - `docs/product/WEBSITE_STORY.md`
+   - `docs/product/PRODUCT_STATUS.md`
+   
+   **Project**
+   - `docs/project/GLOSSARY.md`
 
    **Design**
    - `docs/design/BRAND_FOUNDATION.md`
@@ -42,53 +46,143 @@
 
 7. Define acceptance criteria.
 
-## Task Classification
+## Website Task Workflow
 
-Classify the task as one of the following:
+For every public website task:
 
-- Product definition
-- Content
-- Page design
-- Component design
-- Frontend implementation
-- Animation
+### Step 1 — Identify the Task Type
+
+Determine whether the task concerns:
+
+- Information architecture
+- Patient content
+- Provider content
+- Shared content
+- Institutional content
+- Design
+- Components
+- Forms
 - SEO
-- Accessibility
 - Analytics
+- Accessibility
+- Localization
+- Engineering
+- Website-to-application integration
+
+### Step 2 — Identify the Audience
+
+Record the primary audience as:
+
+- Patient
+- Healthcare Provider
+- Hospital or Institution
+- Shared audience
+
+Do not begin audience-specific work without identifying the audience.
+
+### Step 3 — Identify the Objective
+
+Identify the approved website objective supported by the task.
+
+Every page must have one primary objective.
+
+### Step 4 — Identify the Primary Action
+
+Define one primary call to action.
+
+Do not create multiple competing primary actions.
+
+### Step 5 — Check Product Status
+
+Review:
+
+`docs/product/PRODUCT_STATUS.md`
+
+Do not present a capability as available unless its status permits public availability language.
+
+### Step 6 — Check Clinical Boundaries
+
+Confirm:
+
+- What ODRISC supports
+- What ODRISC does not replace
+- Whether clinical review is required
+- Whether a disclaimer is required
+- Whether escalation language is required
+
+### Step 7 — Check Market and Language
+
+Confirm:
+
+- Market
+- Product availability
+- Language
+- Localization
+- Pricing
+- Contact pathway
+- Legal and privacy context
+
+### Step 8 — Check Existing Decisions
+
+Review relevant files in:
+
+`ai/decisions/`
+
+Do not reopen an approved decision without a documented reason.
+
+### Step 9 — Create or Modify the Work
+
+Implementation must remain consistent with:
+
+- Product identity
+- Audience definition
+- Website objectives
+- Product status
+- Glossary
+- Design system
+- Engineering standards
+
+### Step 10 — Validate
+
+Before completion, verify:
+
+- Audience alignment
+- Objective alignment
+- CTA clarity
+- Product-status accuracy
+- Clinical safety
+- Terminology
+- Accessibility
+- Responsive behavior
+- Privacy
 - Performance
-- Refactoring
-- Bug fixing
-- Documentation
+- Analytics
+- Ownership
+- Documentation consistency
 
-## During the Task
+## Unresolved Information
 
-- Keep changes focused.
-- Follow approved patterns.
-- Reuse components.
-- Avoid unrelated improvements.
-- Preserve accessibility and responsive behavior.
-- Record important decisions.
+When required information is missing:
 
-## Before Completing the Task
+1. Check `docs/project/OPEN_QUESTIONS.md`.
+2. Check `docs/product/PRODUCT_STATUS.md`.
+3. Do not invent a public claim.
+4. Use an explicit internal placeholder where necessary.
+5. Add a new open question only when the issue is material and not already recorded.
+6. Continue with all work that can be completed safely without resolving the missing item.
 
-Check:
+## Website Task Completion Criteria
 
-- Does the result match the requested scope?
-- Does it follow the source of truth?
-- Does it maintain clinical integrity?
-- Does it follow the brand system?
-- Does it work across relevant screen sizes?
-- Is it accessible?
-- Is documentation affected?
-- Were unsupported claims introduced?
-- Were unrelated files changed?
+A public website task is complete only when:
 
-## Completion Output
-
-Summarize:
-
-1. What changed
-2. Which files changed
-3. What was verified
-4. Any assumptions
-5. Any remaining open questions
+- The audience is defined
+- The objective is defined
+- The primary CTA is defined
+- Product status has been verified
+- Clinical boundaries have been respected
+- Approved terminology has been used
+- Accessibility has been considered
+- Privacy has been considered
+- Market and language context has been considered
+- Relevant analytics have been identified
+- Documentation and implementation remain aligned

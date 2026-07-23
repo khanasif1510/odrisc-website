@@ -11,6 +11,18 @@
 
 ---
 
+## Canonical Product and Website Documents 
+
+The following documents define the approved product and website direction: 
+
+- `docs/product/PRODUCT_VISION.md` - Defines what ODRISC is becoming and the principles governing product evolution. 
+- `docs/product/AUDIENCE.md` - Defines the Patient and Healthcare Provider audiences, their needs, journeys, and conversion requirements. 
+- `docs/product/WEBSITE_OBJECTIVES.md` - Defines what the public ODRISC website must accomplish across audience routing, communication, trust, conversion, accessibility, localization, privacy, performance, and governance.
+- `docs/product/WEBSITE_STORY.md` - Defines the canonical public narrative, the shared story architecture, and the Patient and Provider narrative progression. 
+- `docs/product/PRODUCT_STATUS.md` - Defines the approved maturity and public communication status of every product capability.
+
+---
+
 ## 1. Purpose of This Document
 
 This document provides the canonical context for the design, content, development, review, and continued evolution of the ODRISC website.
@@ -725,6 +737,21 @@ Its primary objectives are:
 * Generate demonstration, pilot, panel, and partnership enquiries
 * Support conversations with clinics, hospitals, and healthcare systems
 
+## 13.4 Website Objectives
+
+The Website Objectives must help Patients and healthcare providers understand:
+
+1. What ODRISC is
+2. Why pregnancy information should be understood longitudinally
+3. How ODRISC connects maternal and fetal information
+4. How the Patient and Provider experiences relate
+5. What ODRISC supports
+6. What ODRISC does not replace
+7. Which capabilities are currently available
+8. Which next action is appropriate for the visitor
+
+The website must function as a structured product-communication system rather than a collection of unrelated marketing pages.
+
 ---
 
 # 14. Geographic Context
@@ -1210,3 +1237,17 @@ Detailed audience definitions, user segmentation, motivations, objections, trust
 - `docs/product/AUDIENCE.md`
 
 This document should be read before developing any Patient- or Provider-facing experience.
+
+# 28. AI required-reading
+
+Before performing public website work, AI agents must read:
+
+1. `PROJECT_CONTEXT.md`
+2. `docs/project/SOURCE_OF_TRUTH.md`
+3. `ai/rules/NON_NEGOTIABLES.md`
+4. `docs/product/PRODUCT_VISION.md`
+5. `docs/product/AUDIENCE.md`
+6. `docs/product/WEBSITE_OBJECTIVES.md`
+7. `docs/product/PRODUCT_STATUS.md`
+8. `docs/project/GLOSSARY.md`
+9. Relevant design, content, SEO, and engineering documents

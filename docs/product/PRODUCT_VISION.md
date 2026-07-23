@@ -18,6 +18,14 @@ Capability availability is governed by:
 
 This document defines the intended long-term direction of the platform. It does not determine whether a capability is currently available for public use.
 
+---
+
+Related Documents:
+
+- `docs/product/WEBSITE_STORY.md`
+
+---
+
 # 1. Purpose of This Document
 
 This document defines the long-term product vision for ODRISC.

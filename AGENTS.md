@@ -16,12 +16,13 @@ Before planning, generating, editing, or reviewing code, the agent must read the
 6. `docs/product/AUDIENCE.md`
 7. `docs/product/WEBSITE_OBJECTIVES.md`
 8. `docs/product/WEBSITE_STORY.md`
-9. `docs/design/BRAND_FOUNDATION.md`
-10. `docs/design/DESIGN_SYSTEM.md`
-11. `docs/content/CONTENT_GUIDELINES.md`
-12. `docs/engineering/TECH_STACK.md`
-13. `docs/engineering/ARCHITECTURE.md`
-14. The specific page, component, or workflow document relevant to the task
+9. `docs/product/PRODUCT_STATUS.md`
+10. `docs/design/BRAND_FOUNDATION.md`
+11. `docs/design/DESIGN_SYSTEM.md`
+12. `docs/content/CONTENT_GUIDELINES.md`
+13. `docs/engineering/TECH_STACK.md`
+14. `docs/engineering/ARCHITECTURE.md`
+15. The specific page, component, or workflow document relevant to the task
 
 ## Core Working Rules
 
@@ -79,3 +80,43 @@ Before describing or implementing any product capability:
    - Planned
    - Future roadmap
 3. Do not describe roadmap capabilities as available.
+
+## Website Work Requirements
+
+Before creating or modifying any public website page, section, component, form, navigation item, call to action, metadata, or diagram, establish:
+
+1. Primary audience
+2. Page objective
+3. Primary call to action
+4. Product capability dependency
+5. Approved product status
+6. Required clinical boundary
+7. Market and language context
+8. Accessibility requirement
+9. Analytics requirement
+10. Content and review owner
+
+All website work must comply with:
+
+- `docs/product/WEBSITE_OBJECTIVES.md`
+- `docs/product/AUDIENCE.md`
+- `docs/product/PRODUCT_STATUS.md`
+- `ai/rules/NON_NEGOTIABLES.md`
+
+## Website Restrictions
+
+AI agents must not:
+
+- Invent website objectives
+- Invent product availability
+- Invent clinical claims
+- Invent evidence or validation
+- Invent partnerships
+- Invent regulatory status
+- Merge Patient and Provider messaging indiscriminately
+- Add new primary gateway audiences
+- Present roadmap capabilities as available
+- Create fear-based conversion
+- Collect unnecessary health information
+- Build pages without a defined audience and objective
+- Override approved documentation through temporary prompts
