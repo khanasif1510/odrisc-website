@@ -2333,6 +2333,25 @@ At minimum:
 
 A change is not complete merely because it compiles.
 
+## 89.1 Test Retry Policy
+
+Playwright retries are configured as zero locally and one in CI for diagnosis.
+
+A passing retry does not make an initially failing test acceptable. The underlying failure must be investigated under the flaky-test policy defined in `docs/engineering/TESTING_STRATEGY.md`.
+
+## 89.2 Coverage Thresholds
+
+The minimum global Vitest coverage thresholds are:
+
+| Metric     | Minimum |
+| ---------- | ------: |
+| Statements |     80% |
+| Lines      |     80% |
+| Functions  |     80% |
+| Branches   |     75% |
+
+Critical modules require the higher path-specific thresholds defined in `docs/engineering/TESTING_STRATEGY.md`.
+
 ---
 
 # 90. Test Structure
@@ -2359,11 +2378,17 @@ it("works", () => {
 
 Tests should not depend on internal implementation details.
 
+Unit and component tests may be colocated with the source they verify.
+
+Cross-module, contract, accessibility, visual, browser, end-to-end, and other journey tests are centralized under the approved `tests/` structure.
+
 ---
 
 # 91. Test Data
 
-Use obviously fictional test data.
+Automated tests must use synthetic, obviously fictional data only.
+
+Real Patient information and production operational data are prohibited in all tests and fixtures.
 
 Do not use:
 
@@ -3214,13 +3239,16 @@ The following decisions are locked unless formally changed:
 51. `next lint` is not used.
 52. CI permits zero lint warnings.
 53. Inline lint disables require narrow scope and explanation.
-54. Tests verify behavior rather than implementation.
-55. Real Patient and production data are prohibited in tests.
-56. Generated code is isolated and reproducible.
-57. Commit messages use approved descriptive prefixes.
-58. Exceptions are documented and time bounded.
-59. Material standards changes require approval.
-60. Passing compilation alone does not make work complete.
+54. Tests verify behavior rather than internal implementation details.
+55. Unit and component tests may be colocated; cross-module and browser tests are centralized.
+56. Tests use synthetic data only; real Patient and production operational data are prohibited.
+57. Playwright uses zero retries locally and one retry in CI for diagnosis.
+58. Global coverage requires 80% statements, lines, and functions and 75% branches, with higher critical-module thresholds.
+59. Generated code is isolated and reproducible.
+60. Commit messages use approved descriptive prefixes.
+61. Exceptions are documented and time bounded.
+62. Material standards changes require approval.
+63. Passing compilation alone does not make work complete.
 
 ---
 
@@ -3234,7 +3262,6 @@ The following remain unresolved:
 - Is `noUnusedLocals` enforced through TypeScript or ESLint?
 - Is import ordering automated through an additional plugin?
 - Is the official Tailwind Prettier plugin included?
-- Are component tests stored centrally or colocated in the final repository?
 - Are Storybook stories colocated with source components?
 - Which modules require TSDoc as a release requirement?
 - Which code-size review signals become automated lint thresholds?
