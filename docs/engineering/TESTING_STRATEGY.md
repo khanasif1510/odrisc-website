@@ -20,40 +20,40 @@
 
 ## Related Documents
 
-* `PROJECT_CONTEXT.md`
-* `README.md`
-* `AGENTS.md`
-* `CLAUDE.md`
-* `docs/project/SOURCE_OF_TRUTH.md`
-* `docs/project/ASSUMPTIONS.md`
-* `docs/project/OPEN_QUESTIONS.md`
-* `docs/project/GLOSSARY.md`
-* `docs/product/PRD.md`
-* `docs/product/PRODUCT_STATUS.md`
-* `docs/product/INFORMATION_ARCHITECTURE.md`
-* `docs/product/PAGE_REQUIREMENTS.md`
-* `docs/product/ROUTE_REGISTRY.md`
-* `docs/product/REQUIREMENTS_TRACEABILITY.md`
-* `docs/product/PAGE_IMPLEMENTATION_TRACKER.md`
-* `docs/design/BRAND_FOUNDATION.md`
-* `docs/design/DESIGN_SYSTEM.md`
-* `docs/design/ANIMATION_GUIDELINES.md`
-* `docs/engineering/TECH_STACK.md`
-* `docs/engineering/ARCHITECTURE.md`
-* `docs/engineering/COMPONENT_LIBRARY.md`
-* `docs/engineering/COMPONENT_REGISTRY.md`
-* `docs/engineering/CODING_STANDARDS.md`
-* `docs/engineering/CODE_REVIEW_CHECKLIST.md`
-* `docs/engineering/DEPENDENCY_POLICY.md`
-* `docs/engineering/ENVIRONMENT_VARIABLES.md`
-* `docs/engineering/PERFORMANCE_BUDGET.md`
-* `docs/engineering/DATA_CLASSIFICATION.md`
-* `docs/engineering/ERROR_CATALOG.md`
-* `docs/engineering/INTEGRATION_REGISTRY.md`
-* `docs/engineering/SECURITY_ARCHITECTURE.md`
-* `docs/engineering/DEPLOYMENT_RUNBOOK.md`
-* `ai/rules/NON_NEGOTIABLES.md`
-* `ai/rules/AI_BEHAVIOR.md`
+- `PROJECT_CONTEXT.md`
+- `README.md`
+- `AGENTS.md`
+- `CLAUDE.md`
+- `docs/project/SOURCE_OF_TRUTH.md`
+- `docs/project/ASSUMPTIONS.md`
+- `docs/project/OPEN_QUESTIONS.md`
+- `docs/project/GLOSSARY.md`
+- `docs/product/PRD.md`
+- `docs/product/PRODUCT_STATUS.md`
+- `docs/product/INFORMATION_ARCHITECTURE.md`
+- `docs/product/PAGE_REQUIREMENTS.md`
+- `docs/product/ROUTE_REGISTRY.md`
+- `docs/product/REQUIREMENTS_TRACEABILITY.md`
+- `docs/product/PAGE_IMPLEMENTATION_TRACKER.md`
+- `docs/design/BRAND_FOUNDATION.md`
+- `docs/design/DESIGN_SYSTEM.md`
+- `docs/design/ANIMATION_GUIDELINES.md`
+- `docs/engineering/TECH_STACK.md`
+- `docs/engineering/ARCHITECTURE.md`
+- `docs/engineering/COMPONENT_LIBRARY.md`
+- `docs/engineering/COMPONENT_REGISTRY.md`
+- `docs/engineering/CODING_STANDARDS.md`
+- `docs/engineering/CODE_REVIEW_CHECKLIST.md`
+- `docs/engineering/DEPENDENCY_POLICY.md`
+- `docs/engineering/ENVIRONMENT_VARIABLES.md`
+- `docs/engineering/PERFORMANCE_BUDGET.md`
+- `docs/engineering/DATA_CLASSIFICATION.md`
+- `docs/engineering/ERROR_CATALOG.md`
+- `docs/engineering/INTEGRATION_REGISTRY.md`
+- `docs/engineering/SECURITY_ARCHITECTURE.md`
+- `docs/engineering/DEPLOYMENT_RUNBOOK.md`
+- `ai/rules/NON_NEGOTIABLES.md`
+- `ai/rules/AI_BEHAVIOR.md`
 
 ---
 
@@ -63,36 +63,36 @@ This document defines how the ODRISC public website is verified before, during, 
 
 It establishes:
 
-* Test objectives
-* Test levels
-* Static verification
-* Unit testing
-* Component testing
-* Integration testing
-* Contract testing
-* End-to-end testing
-* Browser and mobile coverage
-* Accessibility testing
-* Arabic and RTL testing
-* Reduced-motion testing
-* Visual-regression testing
-* Content and Product Status validation
-* Form and integration testing
-* Analytics and consent testing
-* Security verification
-* Performance verification
-* Test-data rules
-* Mocking and isolation
-* Coverage expectations
-* Continuous-integration gates
-* Staging verification
-* Production smoke testing
-* Manual quality assurance
-* Defect severity
-* Flaky-test governance
-* Release criteria
-* Traceability
-* AI-agent responsibilities
+- Test objectives
+- Test levels
+- Static verification
+- Unit testing
+- Component testing
+- Integration testing
+- Contract testing
+- End-to-end testing
+- Browser and mobile coverage
+- Accessibility testing
+- Arabic and RTL testing
+- Reduced-motion testing
+- Visual-regression testing
+- Content and Product Status validation
+- Form and integration testing
+- Analytics and consent testing
+- Security verification
+- Performance verification
+- Test-data rules
+- Mocking and isolation
+- Coverage expectations
+- Continuous-integration gates
+- Staging verification
+- Production smoke testing
+- Manual quality assurance
+- Defect severity
+- Flaky-test governance
+- Release criteria
+- Traceability
+- AI-agent responsibilities
 
 This document answers:
 
@@ -104,46 +104,46 @@ This document answers:
 
 This strategy applies to:
 
-* Public routes
-* Shared entry experience
-* Patient pages
-* Provider pages
-* Institutional pages
-* Resource pages
-* Company pages
-* Legal pages
-* Public forms
-* Consent controls
-* Analytics
-* Application handoffs
-* Public product previews
-* Public diagrams and charts
-* Localization
-* Arabic and RTL behavior
-* Error states
-* Loading states
-* Server Actions
-* Route Handlers
-* External integration adapters
-* Runtime configuration
-* SEO outputs
-* Security headers
-* Docker images
-* Nginx behavior
-* Deployment and rollback
-* Production health and smoke verification
+- Public routes
+- Shared entry experience
+- Patient pages
+- Provider pages
+- Institutional pages
+- Resource pages
+- Company pages
+- Legal pages
+- Public forms
+- Consent controls
+- Analytics
+- Application handoffs
+- Public product previews
+- Public diagrams and charts
+- Localization
+- Arabic and RTL behavior
+- Error states
+- Loading states
+- Server Actions
+- Route Handlers
+- External integration adapters
+- Runtime configuration
+- SEO outputs
+- Security headers
+- Docker images
+- Nginx behavior
+- Deployment and rollback
+- Production health and smoke verification
 
 It does not validate the correctness of:
 
-* Internal clinical algorithms
-* Patient-application calculations
-* Provider-platform calculations
-* OCR extraction
-* FHIR workflows
-* SQL Server behavior
-* Clinical alerts
-* Regulated medical-device functions
-* Native mobile application behavior
+- Internal clinical algorithms
+- Patient-application calculations
+- Provider-platform calculations
+- OCR extraction
+- FHIR workflows
+- SQL Server behavior
+- Clinical alerts
+- Regulated medical-device functions
+- Native mobile application behavior
 
 Those systems require separate test strategies.
 
@@ -190,11 +190,11 @@ A public CTA, Product Status statement, consent choice, form submission, or clin
 
 Tests should verify:
 
-* What the user perceives
-* What an integration receives
-* What an application service returns
-* What the system publishes
-* What a route exposes
+- What the user perceives
+- What an integration receives
+- What an application service returns
+- What the system publishes
+- What a route exposes
 
 Tests should not be coupled unnecessarily to private implementation.
 
@@ -202,13 +202,13 @@ Tests should not be coupled unnecessarily to private implementation.
 
 Static validation should prevent invalid:
 
-* Routes
-* Component IDs
-* Product Status values
-* Analytics events
-* Content metadata
-* Environment variables
-* Translation omissions
+- Routes
+- Component IDs
+- Product Status values
+- Analytics events
+- Content metadata
+- Environment variables
+- Translation omissions
 
 before browser tests are required.
 
@@ -224,26 +224,26 @@ Do not use a unit test when the requirement concerns real browser focus or layou
 
 Use Playwright for:
 
-* Navigation
-* Focus
-* Forms
-* Browser APIs
-* Responsive behavior
-* RTL
-* Reduced motion
-* Cross-browser behavior
-* Full application flows
+- Navigation
+- Focus
+- Forms
+- Browser APIs
+- Responsive behavior
+- RTL
+- Reduced motion
+- Cross-browser behavior
+- Full application flows
 
 ## 4.6 Accessibility Is Not a Separate Final Phase
 
 Accessibility verification begins at:
 
-* Component specification
-* Storybook
-* Component tests
-* Page tests
-* Manual QA
-* Release review
+- Component specification
+- Storybook
+- Component tests
+- Page tests
+- Manual QA
+- Release review
 
 ## 4.7 Clinical and Product Accuracy Require Human Review
 
@@ -255,12 +255,12 @@ Automation cannot independently determine whether a clinical statement, evidence
 
 Test systems must not use:
 
-* Real Patient data
-* Production form submissions
-* Production credentials
-* Real clinical records
-* Identifiable ultrasound information
-* Sensitive analytics payloads
+- Real Patient data
+- Production form submissions
+- Production credentials
+- Real clinical records
+- Identifiable ultrasound information
+- Sensitive analytics payloads
 
 ## 4.9 A Passing Retry Is Still a Quality Signal
 
@@ -274,11 +274,11 @@ They do not redefine the first failure as acceptable.
 
 Production smoke tests must not:
 
-* Submit real leads
-* Trigger real marketing events
-* Create application accounts
-* Send messages to clinicians
-* Alter production state
+- Submit real leads
+- Trigger real marketing events
+- Create application accounts
+- Send messages to clinicians
+- Alter production state
 
 ---
 
@@ -538,11 +538,11 @@ Required tag vocabulary:
 
 Rules:
 
-* `@p0` identifies a release-critical requirement.
-* `@smoke` identifies a non-destructive deployment check.
-* Tags describe risk or test purpose.
-* Tags must not replace meaningful test names.
-* New tag categories require test-owner approval.
+- `@p0` identifies a release-critical requirement.
+- `@smoke` identifies a non-destructive deployment check.
+- Tags describe risk or test purpose.
+- Tags must not replace meaningful test names.
+- New tag categories require test-owner approval.
 
 ---
 
@@ -550,13 +550,13 @@ Rules:
 
 Every material test must map to at least one of:
 
-* Requirement ID
-* Page ID
-* Component ID
-* Integration ID
-* Error code
-* Motion ID
-* Product Status capability ID
+- Requirement ID
+- Page ID
+- Component ID
+- Integration ID
+- Error code
+- Motion ID
+- Product Status capability ID
 
 Recommended test metadata:
 
@@ -580,39 +580,39 @@ Stable identifiers are sufficient.
 
 The author of a behavior change owns:
 
-* Initial tests
-* Fixture changes
-* Expected-output updates
-* Failure investigation during review
+- Initial tests
+- Fixture changes
+- Expected-output updates
+- Failure investigation during review
 
 ## Module Owner
 
 The module owner owns:
 
-* Long-term test maintenance
-* Flaky-test resolution
-* Coverage health
-* Contract updates
+- Long-term test maintenance
+- Flaky-test resolution
+- Coverage health
+- Contract updates
 
 ## QA Owner
 
 The QA owner owns:
 
-* Test strategy
-* Release-gate execution
-* Test registries
-* Defect classification
-* Manual QA coordination
-* Flaky-test governance
+- Test strategy
+- Release-gate execution
+- Test registries
+- Defect classification
+- Manual QA coordination
+- Flaky-test governance
 
 ## Clinical Reviewer
 
 The clinical reviewer owns:
 
-* Clinical-language approval
-* Clinical-boundary review
-* Accuracy of public clinical context
-* Review of illustrative clinical data
+- Clinical-language approval
+- Clinical-boundary review
+- Accuracy of public clinical context
+- Review of illustrative clinical data
 
 The clinical reviewer does not own test-framework implementation.
 
@@ -620,9 +620,9 @@ The clinical reviewer does not own test-framework implementation.
 
 The accessibility reviewer owns:
 
-* Manual interaction review
-* Screen-reader review
-* Exception approval for accessibility-test limitations
+- Manual interaction review
+- Screen-reader review
+- Exception approval for accessibility-test limitations
 
 ---
 
@@ -632,27 +632,27 @@ Static validation is the fastest quality layer and must run before browser tests
 
 Required validations include:
 
-* Formatting
-* ESLint
-* Strict TypeScript
-* Route Registry
-* Page ID uniqueness
-* Component ID uniqueness
-* Product Status vocabulary
-* Content metadata
-* Resource slugs
-* Translation completeness
-* Internal links
-* Analytics event registry
-* Error Catalog references
-* Integration Registry references
-* Environment schema
-* Runtime public-config allowlist
-* Architecture import boundaries
-* Prohibited source patterns
-* Staging indexation configuration
-* Performance budgets
-* Generated-file consistency
+- Formatting
+- ESLint
+- Strict TypeScript
+- Route Registry
+- Page ID uniqueness
+- Component ID uniqueness
+- Product Status vocabulary
+- Content metadata
+- Resource slugs
+- Translation completeness
+- Internal links
+- Analytics event registry
+- Error Catalog references
+- Integration Registry references
+- Environment schema
+- Runtime public-config allowlist
+- Architecture import boundaries
+- Prohibited source patterns
+- Staging indexation configuration
+- Performance budgets
+- Generated-file consistency
 
 Suggested commands:
 
@@ -678,30 +678,30 @@ Placeholder validators that always pass are prohibited.
 
 Unit tests verify isolated:
 
-* Schemas
-* Normalizers
-* Formatters
-* Metadata helpers
-* Route helpers
-* Product Status mappings
-* Consent rules
-* Analytics filtering
-* Error mapping
-* Feature configuration
-* Content transformations
-* Retry decisions
-* URL allowlisting
-* Data-classification guards
-* Public runtime-config allowlisting
+- Schemas
+- Normalizers
+- Formatters
+- Metadata helpers
+- Route helpers
+- Product Status mappings
+- Consent rules
+- Analytics filtering
+- Error mapping
+- Feature configuration
+- Content transformations
+- Retry decisions
+- URL allowlisting
+- Data-classification guards
+- Public runtime-config allowlisting
 
 Unit tests should be:
 
-* Fast
-* Deterministic
-* Isolated
-* Free from network access
-* Free from production configuration
-* Focused on one contract
+- Fast
+- Deterministic
+- Isolated
+- Free from network access
+- Free from production configuration
+- Focused on one contract
 
 ---
 
@@ -721,12 +721,12 @@ createPublicRuntimeConfig
 
 Poor unit-test subjects:
 
-* Complete page journeys
-* Real browser focus
-* Responsive layouts
-* Nginx behavior
-* External provider uptime
-* Actual analytics transmission
+- Complete page journeys
+- Real browser focus
+- Responsive layouts
+- Nginx behavior
+- External provider uptime
+- Actual analytics transmission
 
 Those require other test levels.
 
@@ -736,33 +736,33 @@ Those require other test levels.
 
 Component tests verify:
 
-* Semantic output
-* Accessible name
-* Keyboard behavior
-* Focus movement
-* State transitions
-* Validation messages
-* Loading state
-* Error state
-* Product Status display
-* Patient and Provider variants
-* RTL behavior where DOM-based verification is sufficient
-* Reduced-motion state where component behavior changes
+- Semantic output
+- Accessible name
+- Keyboard behavior
+- Focus movement
+- State transitions
+- Validation messages
+- Loading state
+- Error state
+- Product Status display
+- Patient and Provider variants
+- RTL behavior where DOM-based verification is sufficient
+- Reduced-motion state where component behavior changes
 
 Component tests use:
 
-* React Testing Library
-* User Event
-* Accessible role and label queries
-* JSDOM
-* Approved providers and test wrappers
+- React Testing Library
+- User Event
+- Accessible role and label queries
+- JSDOM
+- Approved providers and test wrappers
 
 Do not query primarily through:
 
-* CSS classes
-* Internal component state
-* Implementation-only IDs
-* DOM structure that users do not perceive
+- CSS classes
+- Internal component state
+- Implementation-only IDs
+- DOM structure that users do not perceive
 
 ---
 
@@ -821,29 +821,29 @@ Storybook is required for approved reusable components.
 
 Stories must include applicable states:
 
-* Default
-* Patient
-* Provider
-* Institutional
-* Long English
-* Arabic
-* RTL
-* Keyboard focus
-* Disabled
-* Loading
-* Error
-* Empty
-* Reduced motion
-* Product Status variants
-* Mobile viewport
+- Default
+- Patient
+- Provider
+- Institutional
+- Long English
+- Arabic
+- RTL
+- Keyboard focus
+- Disabled
+- Loading
+- Error
+- Empty
+- Reduced motion
+- Product Status variants
+- Mobile viewport
 
 Storybook must not contain:
 
-* Production secrets
-* Real lead data
-* Real Patient information
-* Live production integrations
-* Unsupported Product Status claims
+- Production secrets
+- Real lead data
+- Real Patient information
+- Live production integrations
+- Unsupported Product Status claims
 
 ---
 
@@ -870,14 +870,14 @@ Integration tests verify collaboration between first-party modules.
 
 Examples:
 
-* Server Action → validation → application service → fake delivery adapter
-* Consent state → analytics guard → analytics transport
-* Product Status source → capability component model
-* Route Registry → navigation → sitemap
-* Content metadata → resource index → metadata output
-* Runtime environment → public-config allowlist
-* Error mapping → safe form result
-* ODRISC API adapter → response schema → internal model
+- Server Action → validation → application service → fake delivery adapter
+- Consent state → analytics guard → analytics transport
+- Product Status source → capability component model
+- Route Registry → navigation → sitemap
+- Content metadata → resource index → metadata output
+- Runtime environment → public-config allowlist
+- Error mapping → safe form result
+- ODRISC API adapter → response schema → internal model
 
 Integration tests should avoid real external providers by default.
 
@@ -903,12 +903,12 @@ Typed success result
 
 The test should verify:
 
-* Normalized values
-* No prohibited fields
-* Correct adapter request
-* No raw form contents in logs
-* Stable returned result
-* Correct analytics category without personal data
+- Normalized values
+- No prohibited fields
+- Correct adapter request
+- No raw form contents in logs
+- Stable returned result
+- Correct analytics category without personal data
 
 ---
 
@@ -918,18 +918,18 @@ Contract tests verify trust boundaries.
 
 Required contract targets:
 
-* Public ODRISC API responses
-* Form-delivery adapter requests
-* Form-delivery responses
-* Public runtime configuration
-* Product Status records
-* Pricing records
-* Resource metadata
-* Analytics event payloads
-* Consent cookie shape
-* Application-handoff configuration
-* Error payloads
-* Webhooks when introduced
+- Public ODRISC API responses
+- Form-delivery adapter requests
+- Form-delivery responses
+- Public runtime configuration
+- Product Status records
+- Pricing records
+- Resource metadata
+- Analytics event payloads
+- Consent cookie shape
+- Application-handoff configuration
+- Error payloads
+- Webhooks when introduced
 
 A TypeScript type alone is not a contract test.
 
@@ -941,18 +941,18 @@ Fixtures must be parsed through the runtime schema.
 
 A provider contract test may use:
 
-* Recorded approved fixture
-* Provider sandbox
-* Local fake server
-* Schema-level request assertion
+- Recorded approved fixture
+- Provider sandbox
+- Local fake server
+- Schema-level request assertion
 
 It must not:
 
-* Contact production
-* Send a real lead
-* Include real personal data
-* Depend on unstable provider content
-* expose provider credentials in artifacts
+- Contact production
+- Send a real lead
+- Include real personal data
+- Depend on unstable provider content
+- expose provider credentials in artifacts
 
 Sandbox contract tests may run on a controlled schedule rather than every pull request.
 
@@ -964,17 +964,17 @@ Playwright verifies complete public journeys against a running production build.
 
 Required E2E characteristics:
 
-* Real Next.js application
-* Real routing
-* Real localization
-* Real browser interaction
-* Controlled test adapters
-* No production provider dependencies
-* Deterministic test content
-* Isolated browser contexts
-* Accessible selectors
-* Stable assertions
-* No arbitrary sleeps
+- Real Next.js application
+- Real routing
+- Real localization
+- Real browser interaction
+- Controlled test adapters
+- No production provider dependencies
+- Deterministic test content
+- Isolated browser contexts
+- Accessible selectors
+- Stable assertions
+- No arbitrary sleeps
 
 ---
 
@@ -984,79 +984,79 @@ The following are release-critical.
 
 ## Shared Entry
 
-* Load shared root
-* Understand Patient and Provider choices
-* Enter Patient journey
-* Return and enter Provider journey
-* Preserve direct deep links
-* Switch audience safely
+- Load shared root
+- Understand Patient and Provider choices
+- Enter Patient journey
+- Return and enter Provider journey
+- Preserve direct deep links
+- Switch audience safely
 
 ## Patient Journey
 
-* Open Patient homepage
-* Navigate through primary Patient sections
-* View Product Status
-* View clinical boundary
-* Reach operational Patient Start destination
-* Recover from unavailable destination
+- Open Patient homepage
+- Navigate through primary Patient sections
+- View Product Status
+- View clinical boundary
+- Reach operational Patient Start destination
+- Recover from unavailable destination
 
 ## Provider Journey
 
-* Open Provider homepage
-* Navigate Provider sections
-* View current versus future capability
-* View evidence and validation context
-* Start demonstration request
-* Complete demonstration request on staging
-* Recover from simulated delivery failure
+- Open Provider homepage
+- Navigate Provider sections
+- View current versus future capability
+- View evidence and validation context
+- Start demonstration request
+- Complete demonstration request on staging
+- Recover from simulated delivery failure
 
 ## Localization
 
-* Change English to Arabic
-* Preserve equivalent route where available
-* Verify `lang` and `dir`
-* Navigate in RTL
-* Return to English
-* Handle unavailable translation safely
+- Change English to Arabic
+- Preserve equivalent route where available
+- Verify `lang` and `dir`
+- Navigate in RTL
+- Return to English
+- Handle unavailable translation safely
 
 ## Consent
 
-* Load page with non-essential analytics disabled
-* Accept analytics
-* Verify approved analytics initialization
-* Withdraw analytics
-* Verify future events are blocked
-* Preserve access to essential site functions
+- Load page with non-essential analytics disabled
+- Accept analytics
+- Verify approved analytics initialization
+- Withdraw analytics
+- Verify future events are blocked
+- Preserve access to essential site functions
 
 ## Forms
 
-* Required-field validation
-* Invalid email handling
-* Long-input handling
-* Honeypot behavior
-* Duplicate submission prevention
-* Success state
-* Delivery failure
-* Rate limit
-* Privacy notice
-* Keyboard and screen-reader behavior
+- Required-field validation
+- Invalid email handling
+- Long-input handling
+- Honeypot behavior
+- Duplicate submission prevention
+- Success state
+- Delivery failure
+- Rate limit
+- Privacy notice
+- Keyboard and screen-reader behavior
 
 ## Handoffs
 
-* Approved destination only
-* External-origin notice
-* No sensitive query parameters
-* Product Status displayed
-* Unavailable destination recovery
+- Approved destination only
+- External-origin notice
+- No sensitive query parameters
+- Product Status displayed
+- Unavailable destination recovery
 
 ## Errors
 
-* 404
-* Route error
-* Integration unavailable
-* Runtime config failure
-* Accessible recovery
-* Safe public error reference
+- 404
+- Route error
+- Integration unavailable
+- Runtime config failure
+- Accessible recovery
+- Safe public error reference
 
 ---
 
@@ -1084,14 +1084,14 @@ Device descriptors must be confirmed against the installed Playwright version.
 
 Every pull request must run:
 
-* Full relevant Vitest suite
-* Chromium P0 suite
-* Changed-feature Chromium E2E tests
-* Arabic and RTL tests for affected components or pages
-* Reduced-motion tests for affected motion
-* Accessibility tests for affected pages
-* Selected visual tests
-* Cross-browser smoke for changed critical journeys
+- Full relevant Vitest suite
+- Chromium P0 suite
+- Changed-feature Chromium E2E tests
+- Arabic and RTL tests for affected components or pages
+- Reduced-motion tests for affected motion
+- Accessibility tests for affected pages
+- Selected visual tests
+- Cross-browser smoke for changed critical journeys
 
 A documentation-only change may use a reduced test path when no executable or publishable content changes.
 
@@ -1101,16 +1101,16 @@ A documentation-only change may use a reduced test path when no executable or pu
 
 Main-branch validation must run:
 
-* Complete P0 Chromium suite
-* Complete P0 Firefox suite
-* Complete P0 WebKit suite
-* Mobile Chrome P0
-* Mobile Safari P0
-* Arabic RTL P0
-* Reduced-motion suite
-* Accessibility suite
-* Selected visual regression
-* Production build and container build
+- Complete P0 Chromium suite
+- Complete P0 Firefox suite
+- Complete P0 WebKit suite
+- Mobile Chrome P0
+- Mobile Safari P0
+- Arabic RTL P0
+- Reduced-motion suite
+- Accessibility suite
+- Selected visual regression
+- Production build and container build
 
 ---
 
@@ -1118,17 +1118,17 @@ Main-branch validation must run:
 
 Before production promotion:
 
-* All P0 tests pass against staging.
-* All release-target locale tests pass.
-* Cross-browser P0 tests pass.
-* Mobile P0 tests pass.
-* Accessibility automation passes.
-* Manual accessibility review is complete for changed critical areas.
-* Visual changes are approved.
-* Form-delivery staging integration is verified.
-* Analytics consent behavior is verified.
-* Security and performance gates pass.
-* Manual release checklist is approved.
+- All P0 tests pass against staging.
+- All release-target locale tests pass.
+- Cross-browser P0 tests pass.
+- Mobile P0 tests pass.
+- Accessibility automation passes.
+- Manual accessibility review is complete for changed critical areas.
+- Visual changes are approved.
+- Form-delivery staging integration is verified.
+- Analytics consent behavior is verified.
+- Security and performance gates pass.
+- Manual release checklist is approved.
 
 ---
 
@@ -1138,13 +1138,13 @@ Each test must be independent.
 
 A test must not depend on:
 
-* Previous test order
-* Browser state from another test
-* A prior form submission
-* Shared mutable fixture state
-* Production provider state
-* Current real date unless controlled
-* Random generated data without a seed
+- Previous test order
+- Browser state from another test
+- A prior form submission
+- Shared mutable fixture state
+- Production provider state
+- Current real date unless controlled
+- Random generated data without a seed
 
 Playwright browser contexts should remain isolated by default.
 
@@ -1156,16 +1156,16 @@ Unit and component tests must fail unexpected network requests.
 
 Integration tests should use:
 
-* Fake ports
-* Stubbed fetch
-* Local controlled responders
-* Approved fixtures
+- Fake ports
+- Stubbed fetch
+- Local controlled responders
+- Approved fixtures
 
 E2E tests should use:
 
-* The actual website server
-* Test-mode integration adapters
-* Controlled external-route interception only where necessary
+- The actual website server
+- Test-mode integration adapters
+- Controlled external-route interception only where necessary
 
 Do not intercept so much of the application that the end-to-end test no longer tests the real flow.
 
@@ -1177,23 +1177,23 @@ Mock architectural boundaries, not every internal function.
 
 Preferred mocks:
 
-* Lead delivery port
-* Analytics transport
-* Error-monitoring transport
-* Clock
-* Random identifier generator
-* Public API adapter
-* Runtime environment
-* Browser capability
+- Lead delivery port
+- Analytics transport
+- Error-monitoring transport
+- Clock
+- Random identifier generator
+- Public API adapter
+- Runtime environment
+- Browser capability
 
 Avoid mocking:
 
-* The function under test
-* All child components
-* Every formatter
-* Every internal helper
-* React behavior
-* Next.js behavior already exercised by browser tests
+- The function under test
+- All child components
+- Every formatter
+- Every internal helper
+- React behavior
+- Next.js behavior already exercised by browser tests
 
 ---
 
@@ -1201,10 +1201,10 @@ Avoid mocking:
 
 Use terminology consistently:
 
-* **Fake:** working controlled implementation
-* **Stub:** predefined response
-* **Spy:** observes calls
-* **Mock:** configured interaction expectation
+- **Fake:** working controlled implementation
+- **Stub:** predefined response
+- **Spy:** observes calls
+- **Mock:** configured interaction expectation
 
 Prefer a fake adapter when multiple tests require realistic application-service behavior.
 
@@ -1220,17 +1220,17 @@ Tests depending on dates must use a controlled clock.
 
 Use:
 
-* Fixed ISO timestamps
-* Vitest fake time
-* Injected clock interfaces
-* Playwright clock controls where justified
+- Fixed ISO timestamps
+- Vitest fake time
+- Injected clock interfaces
+- Playwright clock controls where justified
 
 Do not rely on:
 
-* Current local time
-* CI timezone
-* Developer timezone
-* Relative dates that become stale
+- Current local time
+- CI timezone
+- Developer timezone
+- Relative dates that become stale
 
 Qatar-specific scenarios should set:
 
@@ -1250,10 +1250,10 @@ Asia/Kolkata
 
 Randomness must be:
 
-* Seeded
-* Injected
-* Replaced with deterministic fixtures
-* Captured in failure output
+- Seeded
+- Injected
+- Replaced with deterministic fixtures
+- Captured in failure output
 
 Do not create random React keys.
 
@@ -1265,13 +1265,13 @@ Do not use random personal information that might resemble a real submission.
 
 All test data must be:
 
-* Synthetic
-* Clearly non-production
-* Safe to commit
-* Free from identifiable health information
-* Free from real partner credentials
-* Free from production email addresses
-* Appropriate for the test purpose
+- Synthetic
+- Clearly non-production
+- Safe to commit
+- Free from identifiable health information
+- Free from real partner credentials
+- Free from production email addresses
+- Appropriate for the test purpose
 
 Approved email domains include:
 
@@ -1296,21 +1296,21 @@ Illustrative maternal or fetal data may be used only for public-preview verifica
 
 Requirements:
 
-* Synthetic
-* Not linked to a real person
-* Approved by the clinical reviewer
-* Clearly labelled as illustrative
-* Not presented as a validated clinical case
-* Not reused as evidence
-* Not used to validate clinical algorithm correctness
+- Synthetic
+- Not linked to a real person
+- Approved by the clinical reviewer
+- Clearly labelled as illustrative
+- Not presented as a validated clinical case
+- Not reused as evidence
+- Not used to validate clinical algorithm correctness
 
 The test suite may verify that:
 
-* Units are shown
-* Labels are present
-* Product-preview status is visible
-* Trends render consistently
-* Missing data is represented
+- Units are shown
+- Labels are present
+- Product-preview status is visible
+- Trends render consistently
+- Missing data is represented
 
 It must not claim that the clinical interpretation is medically correct unless a separate approved clinical test protocol exists.
 
@@ -1330,14 +1330,14 @@ Message: Synthetic test enquiry. No clinical information.
 
 Form fixtures must never include:
 
-* Symptoms
-* Medical history
-* Patient records
-* Pregnancy details
-* Ultrasound values
-* Risk results
-* Real phone numbers
-* Real personal email addresses
+- Symptoms
+- Medical history
+- Patient records
+- Pregnancy details
+- Ultrasound values
+- Risk results
+- Real phone numbers
+- Real personal email addresses
 
 ---
 
@@ -1345,13 +1345,13 @@ Form fixtures must never include:
 
 Every shared fixture must define:
 
-* Purpose
-* Owner
-* Data classification
-* Expected schema
-* Whether it represents success or failure
-* Whether clinical review is required
-* Last review date
+- Purpose
+- Owner
+- Data classification
+- Expected schema
+- Whether it represents success or failure
+- Whether clinical review is required
+- Last review date
 
 Large opaque JSON fixtures are discouraged.
 
@@ -1378,31 +1378,31 @@ They identify detectable failures.
 
 Every approved interactive component must test:
 
-* Accessible name
-* Semantic role
-* Keyboard operation
-* Focus behavior
-* Disabled state
-* Error relationship
-* Expanded and collapsed state
-* Dialog or drawer focus management
-* Touch-target implementation where measurable
-* Axe violations
+- Accessible name
+- Semantic role
+- Keyboard operation
+- Focus behavior
+- Disabled state
+- Error relationship
+- Expanded and collapsed state
+- Dialog or drawer focus management
+- Touch-target implementation where measurable
+- Axe violations
 
 Applicable components include:
 
-* Buttons
-* Links
-* Audience switcher
-* Locale switcher
-* Mobile navigation
-* Dialogs
-* Drawers
-* Accordions
-* Tabs
-* Forms
-* Consent controls
-* Chart interactions
+- Buttons
+- Links
+- Audience switcher
+- Locale switcher
+- Mobile navigation
+- Dialogs
+- Drawers
+- Accordions
+- Tabs
+- Forms
+- Consent controls
+- Chart interactions
 
 ---
 
@@ -1410,25 +1410,25 @@ Applicable components include:
 
 P0 pages must be scanned for:
 
-* Detectable WCAG A and AA failures
-* Heading structure
-* Landmark presence
-* Form labels
-* Duplicate IDs
-* Link names
-* Color contrast where detectable
-* ARIA validity
-* Document language
-* Dialog state
-* Hidden-content errors
+- Detectable WCAG A and AA failures
+- Heading structure
+- Landmark presence
+- Form labels
+- Duplicate IDs
+- Link names
+- Color contrast where detectable
+- ARIA validity
+- Document language
+- Dialog state
+- Hidden-content errors
 
 Approved Axe exclusions must be:
 
-* Narrow
-* Documented
-* Linked to an issue
-* Reviewed by accessibility ownership
-* Time bounded
+- Narrow
+- Documented
+- Linked to an issue
+- Reviewed by accessibility ownership
+- Time bounded
 
 Broad rule disabling is prohibited.
 
@@ -1438,22 +1438,22 @@ Broad rule disabling is prohibited.
 
 Before a major release, manual review must include:
 
-* Keyboard-only navigation
-* Visible focus
-* Skip link
-* Mobile navigation
-* Dialog and drawer focus
-* Form errors
-* Error summary
-* Consent withdrawal
-* Zoom and text enlargement
-* Narrow viewport reflow
-* Reduced motion
-* VoiceOver with Safari
-* At least one additional screen-reader and browser combination
-* Arabic reading and navigation review
-* Chart text alternatives
-* Video captions and transcripts where applicable
+- Keyboard-only navigation
+- Visible focus
+- Skip link
+- Mobile navigation
+- Dialog and drawer focus
+- Form errors
+- Error summary
+- Consent withdrawal
+- Zoom and text enlargement
+- Narrow viewport reflow
+- Reduced motion
+- VoiceOver with Safari
+- At least one additional screen-reader and browser combination
+- Arabic reading and navigation review
+- Chart text alternatives
+- Video captions and transcripts where applicable
 
 ---
 
@@ -1461,11 +1461,11 @@ Before a major release, manual review must include:
 
 Targeted ARIA-tree assertions may be used for:
 
-* Navigation structure
-* Dialog structure
-* Error summary
-* Form grouping
-* Major heading hierarchy
+- Navigation structure
+- Dialog structure
+- Error summary
+- Form grouping
+- Major heading hierarchy
 
 Do not use broad accessibility-tree snapshots as the only accessibility test.
 
@@ -1477,21 +1477,21 @@ Targeted assertions are easier to review and maintain.
 
 Arabic testing must verify:
 
-* Correct translation loaded
-* `lang="ar"`
-* `dir="rtl"`
-* Navigation order
-* Text alignment
-* Logical spacing
-* Directional icons
-* Form labels and errors
-* CTA meaning
-* Product Status meaning
-* Clinical-boundary equivalence
-* Long-content resilience
-* Number and date formatting
-* External handoff behavior
-* Missing-translation behavior
+- Correct translation loaded
+- `lang="ar"`
+- `dir="rtl"`
+- Navigation order
+- Text alignment
+- Logical spacing
+- Directional icons
+- Form labels and errors
+- CTA meaning
+- Product Status meaning
+- Clinical-boundary equivalence
+- Long-content resilience
+- Number and date formatting
+- External handoff behavior
+- Missing-translation behavior
 
 Automated tests cannot approve translation quality.
 
@@ -1503,28 +1503,28 @@ A qualified Arabic reviewer must approve P0 public content.
 
 RTL testing must include:
 
-* Header
-* Mobile drawer
-* Breadcrumbs
-* Audience switcher
-* Locale switcher
-* Forms
-* Accordions
-* Tabs
-* Cards
-* CTA groups
-* Timelines
-* Process flows
-* Charts
-* Dialogs
-* Footer
+- Header
+- Mobile drawer
+- Breadcrumbs
+- Audience switcher
+- Locale switcher
+- Forms
+- Accordions
+- Tabs
+- Cards
+- CTA groups
+- Timelines
+- Process flows
+- Charts
+- Dialogs
+- Footer
 
 Each component must follow its documented classification:
 
-* Mirrored
-* Direction-neutral
-* Chronology-preserving
-* Locale-customized
+- Mirrored
+- Direction-neutral
+- Chronology-preserving
+- Locale-customized
 
 ---
 
@@ -1534,11 +1534,11 @@ Charts and timelines may preserve chronological left-to-right direction when cli
 
 Tests must verify:
 
-* Reading order remains understandable
-* Labels remain Arabic
-* Direction is explained where needed
-* Navigation controls match visual progression
-* Screen-reader order remains logical
+- Reading order remains understandable
+- Labels remain Arabic
+- Direction is explained where needed
+- Navigation controls match visual progression
+- Screen-reader order remains logical
 
 Chronology must not change accidentally through global RTL styling.
 
@@ -1548,16 +1548,16 @@ Chronology must not change accidentally through global RTL styling.
 
 The reduced-motion project must verify:
 
-* Essential content remains present
-* Hero reaches a complete static state
-* Formal value chain remains readable
-* No large translation is required
-* No parallax remains
-* No essential feedback disappears
-* Dialog and drawer state remains understandable
-* Chart values do not depend on animation
-* Loading indicators remain perceivable
-* No continuous non-essential loop remains
+- Essential content remains present
+- Hero reaches a complete static state
+- Formal value chain remains readable
+- No large translation is required
+- No parallax remains
+- No essential feedback disappears
+- Dialog and drawer state remains understandable
+- Chart values do not depend on animation
+- Loading indicators remain perceivable
+- No continuous non-essential loop remains
 
 Reduced motion is not merely a slower version of the standard animation.
 
@@ -1567,16 +1567,16 @@ Reduced motion is not merely a slower version of the standard animation.
 
 Material motion tests should verify:
 
-* Correct trigger
-* Plays once where specified
-* No delayed primary CTA
-* No hidden essential content
-* No repeated clinical-risk animation
-* No count-up clinical value
-* Stable final state
-* Mobile simplification
-* RTL direction
-* Reduced-motion outcome
+- Correct trigger
+- Plays once where specified
+- No delayed primary CTA
+- No hidden essential content
+- No repeated clinical-risk animation
+- No count-up clinical value
+- Stable final state
+- Mobile simplification
+- RTL direction
+- Reduced-motion outcome
 
 Timing assertions should allow reasonable browser tolerance.
 
@@ -1588,16 +1588,16 @@ Avoid testing exact animation frames unless a specific contract requires it.
 
 Visual regression is used for stable:
 
-* Primitives
-* Navigation
-* Product Status
-* Forms
-* Consent
-* Patient and Provider heroes
-* Major diagrams
-* Selected charts
-* Arabic layouts
-* P0 page sections
+- Primitives
+- Navigation
+- Product Status
+- Forms
+- Consent
+- Patient and Provider heroes
+- Major diagrams
+- Selected charts
+- Arabic layouts
+- P0 page sections
 
 It is not required for every page and every state.
 
@@ -1607,16 +1607,16 @@ It is not required for every page and every state.
 
 Visual baselines must be generated using:
 
-* Approved CI operating system
-* Pinned Playwright version
-* Pinned browser binaries
-* Installed approved fonts
-* Fixed viewport
-* Fixed locale
-* Fixed timezone
-* Fixed test data
-* Reduced or disabled non-essential animation
-* Stable network responses
+- Approved CI operating system
+- Pinned Playwright version
+- Pinned browser binaries
+- Installed approved fonts
+- Fixed viewport
+- Fixed locale
+- Fixed timezone
+- Fixed test data
+- Reduced or disabled non-essential animation
+- Stable network responses
 
 Do not approve baselines generated from inconsistent local operating systems.
 
@@ -1626,23 +1626,23 @@ Do not approve baselines generated from inconsistent local operating systems.
 
 A visual test must:
 
-* Wait for approved fonts
-* Wait for stable content
-* Avoid arbitrary timeout sleeps
-* Mask only genuinely dynamic approved regions
-* Use the smallest meaningful screenshot region
-* Document intentional thresholds
-* Fail on unexpected layout shifts
+- Wait for approved fonts
+- Wait for stable content
+- Avoid arbitrary timeout sleeps
+- Mask only genuinely dynamic approved regions
+- Use the smallest meaningful screenshot region
+- Document intentional thresholds
+- Fail on unexpected layout shifts
 
 Do not mask:
 
-* Product Status
-* CTA text
-* Clinical boundaries
-* Errors
-* Navigation
-* Arabic content
-* Form labels
+- Product Status
+- CTA text
+- Clinical boundaries
+- Errors
+- Navigation
+- Arabic content
+- Form labels
 
 ---
 
@@ -1650,13 +1650,13 @@ Do not mask:
 
 A baseline update requires:
 
-* Explanation
-* Screenshot-diff review
-* Design approval for material changes
-* Accessibility consideration
-* Arabic and RTL review where affected
-* Confirmation that content was not truncated
-* Confirmation that Product Status remains accurate
+- Explanation
+- Screenshot-diff review
+- Design approval for material changes
+- Accessibility consideration
+- Arabic and RTL review where affected
+- Confirmation that content was not truncated
+- Confirmation that Product Status remains accurate
 
 Do not accept all changed snapshots automatically.
 
@@ -1666,21 +1666,21 @@ Do not accept all changed snapshots automatically.
 
 Build-time content tests must verify:
 
-* Required fields
-* Page ID
-* Locale
-* Approved status
-* Publication state
-* Review date
-* Clinical reviewer where required
-* Source metadata
-* Unique slug
-* Canonical route
-* Internal links
-* External-link structure
-* Structured-data eligibility
-* Market applicability
-* Translation completeness
+- Required fields
+- Page ID
+- Locale
+- Approved status
+- Publication state
+- Review date
+- Clinical reviewer where required
+- Source metadata
+- Unique slug
+- Canonical route
+- Internal links
+- External-link structure
+- Structured-data eligibility
+- Market applicability
+- Translation completeness
 
 The build must fail for material invalid content.
 
@@ -1690,15 +1690,15 @@ The build must fail for material invalid content.
 
 Tests must verify:
 
-* Only approved status values are used
-* Capability IDs are unique
-* Status is displayed where required
-* `Pilot` is not presented as `Available`
-* Future capability is visibly separated
-* Market availability is accurate
-* Product previews display implementation status
-* Status changes update all dependent pages
-* Unsupported status strings fail validation
+- Only approved status values are used
+- Capability IDs are unique
+- Status is displayed where required
+- `Pilot` is not presented as `Available`
+- Future capability is visibly separated
+- Market availability is accurate
+- Product previews display implementation status
+- Status changes update all dependent pages
+- Unsupported status strings fail validation
 
 Product Status approval remains a human product-governance decision.
 
@@ -1708,24 +1708,24 @@ Product Status approval remains a human product-governance decision.
 
 Automated tests may verify:
 
-* Approved text is present
-* Required disclaimer is present
-* Source metadata is present
-* Clinical boundary is visible
-* Restricted wording is absent
-* Claim status is current
+- Approved text is present
+- Required disclaimer is present
+- Source metadata is present
+- Clinical boundary is visible
+- Restricted wording is absent
+- Claim status is current
 
 Automation does not approve the claim itself.
 
 Clinical review must confirm:
 
-* Accuracy
-* Appropriate uncertainty
-* Intended audience
-* Market applicability
-* Evidence category
-* Limitation
-* No guarantee of outcome
+- Accuracy
+- Appropriate uncertainty
+- Intended audience
+- Market applicability
+- Evidence category
+- Limitation
+- No guarantee of outcome
 
 ---
 
@@ -1747,12 +1747,12 @@ Improved maternal and fetal outcomes
 
 Tests must detect:
 
-* Wording changes
-* Reordered stages
-* Missing stages
-* Added stages
-* Missing outcome-boundary statement
-* Incorrect Arabic equivalence after human approval
+- Wording changes
+- Reordered stages
+- Missing stages
+- Added stages
+- Missing outcome-boundary statement
+- Incorrect Arabic equivalence after human approval
 
 The chain represents intended value.
 
@@ -1764,26 +1764,26 @@ It must not be rendered as a guaranteed clinical outcome.
 
 Each public form requires tests for:
 
-* Schema success
-* Required fields
-* Maximum lengths
-* Email normalization
-* Optional fields
-* Honeypot
-* Origin validation
-* Request-size limit
-* Rate limiting
-* Duplicate submission
-* Pending state
-* Success state
-* Validation failure
-* Provider failure
-* Timeout
-* Safe error code
-* Alternate contact route
-* Privacy notice
-* Analytics without personal data
-* No sensitive logging
+- Schema success
+- Required fields
+- Maximum lengths
+- Email normalization
+- Optional fields
+- Honeypot
+- Origin validation
+- Request-size limit
+- Rate limiting
+- Duplicate submission
+- Pending state
+- Success state
+- Validation failure
+- Provider failure
+- Timeout
+- Safe error code
+- Alternate contact route
+- Privacy notice
+- Analytics without personal data
+- No sensitive logging
 
 ---
 
@@ -1824,17 +1824,17 @@ Form-delivery success in production is monitored operationally through safe deli
 
 Consent tests must verify:
 
-* Essential site operation before selection
-* Non-essential analytics disabled by default where required
-* Consent choices saved
-* Consent version recorded
-* Analytics initialized only after permission
-* Withdrawal works
-* Future events are blocked after withdrawal
-* Consent UI is available again
-* Arabic content is equivalent
-* No dark pattern
-* Marketing remains disabled when unused
+- Essential site operation before selection
+- Non-essential analytics disabled by default where required
+- Consent choices saved
+- Consent version recorded
+- Analytics initialized only after permission
+- Withdrawal works
+- Future events are blocked after withdrawal
+- Consent UI is available again
+- Arabic content is equivalent
+- No dark pattern
+- Marketing remains disabled when unused
 
 ---
 
@@ -1842,17 +1842,17 @@ Consent tests must verify:
 
 Analytics tests must verify:
 
-* Event is in approved registry
-* Event name is stable
-* Consent is checked
-* Page ID is added
-* Audience and locale are added where approved
-* Free-form fields are rejected
-* Email-like values are rejected
-* Phone-like values are rejected
-* Clinical values are rejected
-* Form message is never transmitted
-* Direct provider calls are absent outside the adapter
+- Event is in approved registry
+- Event name is stable
+- Consent is checked
+- Page ID is added
+- Audience and locale are added where approved
+- Free-form fields are rejected
+- Email-like values are rejected
+- Phone-like values are rejected
+- Clinical values are rejected
+- Form message is never transmitted
+- Direct provider calls are absent outside the adapter
 
 Tests should inspect the internal analytics transport.
 
@@ -1864,17 +1864,17 @@ They should not send events to production GA4.
 
 Navigation tests must verify:
 
-* Internal links resolve
-* Localized paths resolve
-* Deep links work
-* Audience switch mapping works
-* Missing equivalent falls back safely
-* Locale switch preserves route where available
-* Current-page state is announced
-* Mobile drawer works by keyboard
-* Focus returns to trigger
-* External links are identified
-* Footer legal routes work
+- Internal links resolve
+- Localized paths resolve
+- Deep links work
+- Audience switch mapping works
+- Missing equivalent falls back safely
+- Locale switch preserves route where available
+- Current-page state is announced
+- Mobile drawer works by keyboard
+- Focus returns to trigger
+- External links are identified
+- Footer legal routes work
 
 ---
 
@@ -1882,16 +1882,16 @@ Navigation tests must verify:
 
 Handoff tests must verify:
 
-* Destination is approved
-* Scheme is HTTPS where required
-* Host is allowlisted
-* Market availability is respected
-* Product Status is visible
-* External-origin notice is visible
-* No sensitive query parameter is present
-* Locale is preserved where supported
-* Unavailable destination has recovery
-* Analytics payload contains no sensitive data
+- Destination is approved
+- Scheme is HTTPS where required
+- Host is allowlisted
+- Market availability is respected
+- Product Status is visible
+- External-origin notice is visible
+- No sensitive query parameter is present
+- Locale is preserved where supported
+- Unavailable destination has recovery
+- Analytics payload contains no sensitive data
 
 Open-redirect attempts must fail.
 
@@ -1901,19 +1901,19 @@ Open-redirect attempts must fail.
 
 Chart tests must verify:
 
-* Title
-* Unit
-* Source
-* Text summary
-* Legend
-* Scale
-* Baseline
-* Missing-data representation
-* Product-preview status
-* Reduced-motion state
-* RTL classification
-* Keyboard access where interactive
-* Tooltip accessibility where used
+- Title
+- Unit
+- Source
+- Text summary
+- Legend
+- Scale
+- Baseline
+- Missing-data representation
+- Product-preview status
+- Reduced-motion state
+- RTL classification
+- Keyboard access where interactive
+- Tooltip accessibility where used
 
 Do not rely only on SVG-path snapshots.
 
@@ -1925,27 +1925,27 @@ The accessible summary is a first-class output.
 
 Every material failure path must test:
 
-* Safe message
-* Error reference
-* Retryability
-* Recovery action
-* Focus behavior
-* Screen-reader announcement
-* No stack trace
-* No vendor message
-* No sensitive data
-* No false success state
+- Safe message
+- Error reference
+- Retryability
+- Recovery action
+- Focus behavior
+- Screen-reader announcement
+- No stack trace
+- No vendor message
+- No sensitive data
+- No false success state
 
 Applicable errors include:
 
-* Validation
-* Rate limit
-* Integration timeout
-* Delivery failure
-* Configuration failure
-* Content failure
-* Rendering failure
-* Handoff unavailable
+- Validation
+- Rate limit
+- Integration timeout
+- Delivery failure
+- Configuration failure
+- Content failure
+- Rendering failure
+- Handoff unavailable
 
 ---
 
@@ -1953,14 +1953,14 @@ Applicable errors include:
 
 Loading tests must verify:
 
-* Accessible busy state
-* Stable layout
-* No indefinite spinner
-* No delayed essential content without reason
-* No synthetic Patient data shown
-* Completion announcement where meaningful
-* Reduced-motion behavior
-* Retry or error transition
+- Accessible busy state
+- Stable layout
+- No indefinite spinner
+- No delayed essential content without reason
+- No synthetic Patient data shown
+- Completion announcement where meaningful
+- Reduced-motion behavior
+- Retry or error transition
 
 Static pages should not add loading states unnecessarily.
 
@@ -1970,16 +1970,16 @@ Static pages should not add loading states unnecessarily.
 
 Route Handler tests must verify:
 
-* Supported method
-* Unsupported method response
-* Content type
-* Schema validation
-* Request-size handling
-* Status code
-* Cache headers
-* Safe response
-* No secrets
-* Error mapping
+- Supported method
+- Unsupported method response
+- Content type
+- Schema validation
+- Request-size handling
+- Status code
+- Cache headers
+- Safe response
+- No secrets
+- Error mapping
 
 Required initial endpoints:
 
@@ -1995,17 +1995,17 @@ Required initial endpoints:
 
 Liveness tests must verify:
 
-* Process responds
-* No external dependency is called
-* Response contains no secrets
+- Process responds
+- No external dependency is called
+- Response contains no secrets
 
 Readiness tests must verify:
 
-* Required configuration loaded
-* Content manifest available
-* Application ready
-* Non-critical analytics outage does not mark the application unavailable
-* Response remains safe
+- Required configuration loaded
+- Content manifest available
+- Application ready
+- Non-critical analytics outage does not mark the application unavailable
+- Response remains safe
 
 ---
 
@@ -2013,13 +2013,13 @@ Readiness tests must verify:
 
 Tests must verify that `/api/config/public`:
 
-* Returns only allowlisted keys
-* Rejects accidental secret inclusion
-* Uses the approved schema
-* Uses `no-store`
-* Includes release identity where approved
-* Does not expose internal hostnames
-* Does not expose server environment values broadly
+- Returns only allowlisted keys
+- Rejects accidental secret inclusion
+- Uses the approved schema
+- Uses `no-store`
+- Includes release identity where approved
+- Does not expose internal hostnames
+- Does not expose server environment values broadly
 
 A snapshot of the approved key set may be used.
 
@@ -2029,17 +2029,17 @@ A snapshot of the approved key set may be used.
 
 SEO validation must verify:
 
-* Unique title
-* Meta description
-* Canonical URL
-* Locale alternate links
-* Indexation state
-* Sitemap inclusion or exclusion
-* Robots behavior
-* Structured-data validity
-* Open Graph metadata
-* Missing translations excluded from alternates
-* Staging noindex
+- Unique title
+- Meta description
+- Canonical URL
+- Locale alternate links
+- Indexation state
+- Sitemap inclusion or exclusion
+- Robots behavior
+- Structured-data validity
+- Open Graph metadata
+- Missing translations excluded from alternates
+- Staging noindex
 
 Search-engine behavior should be tested through generated outputs, not brittle inspection of internal framework code.
 
@@ -2049,13 +2049,13 @@ Search-engine behavior should be tested through generated outputs, not brittle i
 
 The build or CI must detect:
 
-* Broken internal routes
-* Missing localized routes
-* Invalid hash targets
-* Broken resource links
-* Missing legal links
-* Invalid application handoffs
-* Duplicate canonical paths
+- Broken internal routes
+- Missing localized routes
+- Invalid hash targets
+- Broken resource links
+- Missing legal links
+- Invalid application handoffs
+- Duplicate canonical paths
 
 External-link availability checks may run on a schedule because external sites can be unstable.
 
@@ -2067,27 +2067,27 @@ External failures must not create random pull-request failures without review.
 
 Security verification must cover:
 
-* Secret scanning
-* Dependency advisory review
-* Container scanning
-* CSP
-* Security headers
-* HSTS at production edge
-* Frame restrictions
-* Referrer policy
-* Permissions policy
-* Input validation
-* Form abuse controls
-* Open redirects
-* Unsafe URL schemes
-* Runtime-config leakage
-* Sensitive logs
-* Analytics leakage
-* Untrusted HTML
-* Untrusted SVG
-* Request-size limits
-* Origin checking
-* Error-detail leakage
+- Secret scanning
+- Dependency advisory review
+- Container scanning
+- CSP
+- Security headers
+- HSTS at production edge
+- Frame restrictions
+- Referrer policy
+- Permissions policy
+- Input validation
+- Form abuse controls
+- Open redirects
+- Unsafe URL schemes
+- Runtime-config leakage
+- Sensitive logs
+- Analytics leakage
+- Untrusted HTML
+- Untrusted SVG
+- Request-size limits
+- Origin checking
+- Error-detail leakage
 
 Security testing complements code review and security architecture.
 
@@ -2097,13 +2097,13 @@ Security testing complements code review and security architecture.
 
 Staging and production smoke tests should verify approved headers, including:
 
-* Content Security Policy
-* X-Content-Type-Options
-* Referrer Policy
-* Permissions Policy
-* Frame restrictions
-* HSTS in production
-* Staging `X-Robots-Tag`
+- Content Security Policy
+- X-Content-Type-Options
+- Referrer Policy
+- Permissions Policy
+- Frame restrictions
+- HSTS in production
+- Staging `X-Robots-Tag`
 
 Exact values belong in the Security Architecture and Nginx configuration.
 
@@ -2113,17 +2113,17 @@ Exact values belong in the Security Architecture and Nginx configuration.
 
 Performance verification must cover:
 
-* Production build
-* Initial JavaScript budgets
-* Page-specific JavaScript budgets
-* Image-size budgets
-* Font loading
-* Layout stability
-* Major motion cost
-* Chart lazy loading
-* Third-party script loading
-* Consent-controlled script behavior
-* Core Web Vitals monitoring after release
+- Production build
+- Initial JavaScript budgets
+- Page-specific JavaScript budgets
+- Image-size budgets
+- Font loading
+- Layout stability
+- Major motion cost
+- Chart lazy loading
+- Third-party script loading
+- Consent-controlled script behavior
+- Core Web Vitals monitoring after release
 
 CI should enforce deterministic asset and bundle budgets from:
 
@@ -2139,14 +2139,14 @@ A pull request should fail when it materially exceeds a locked budget without an
 
 Tests may verify:
 
-* Compressed JavaScript output
-* Route bundle size
-* Hero image size
-* Content image size
-* Number of early third-party scripts
-* Static-rendering preservation
-* Client Component expansion
-* Major layout shift in browser tests
+- Compressed JavaScript output
+- Route bundle size
+- Hero image size
+- Content image size
+- Number of early third-party scripts
+- Static-rendering preservation
+- Client Component expansion
+- Major layout shift in browser tests
 
 Performance thresholds must not be relaxed merely to pass CI.
 
@@ -2162,14 +2162,14 @@ pnpm build
 
 Build validation confirms:
 
-* Next.js compilation
-* Type integration
-* Content compilation
-* Static route generation
-* Metadata generation
-* Server/client boundary viability
-* Standalone output
-* Environment requirements
+- Next.js compilation
+- Type integration
+- Content compilation
+- Static route generation
+- Metadata generation
+- Server/client boundary viability
+- Standalone output
+- Environment requirements
 
 A successful build does not replace behavioral tests.
 
@@ -2179,17 +2179,17 @@ A successful build does not replace behavioral tests.
 
 Container verification must confirm:
 
-* Image builds
-* Application starts
-* Non-root user
-* Expected port
-* Health check
-* Standalone output
-* No development dependency requirement
-* No secret baked into layers
-* Reasonable image size
-* Runtime variables work
-* Liveness and readiness respond
+- Image builds
+- Application starts
+- Non-root user
+- Expected port
+- Health check
+- Standalone output
+- No development dependency requirement
+- No secret baked into layers
+- Reasonable image size
+- Runtime variables work
+- Liveness and readiness respond
 
 The production image must be tested before publication.
 
@@ -2199,20 +2199,20 @@ The production image must be tested before publication.
 
 Infrastructure verification must cover:
 
-* Configuration syntax
-* TLS routing
-* HTTPS redirect
-* Request ID propagation
-* Proxy headers
-* Static caching
-* No-store routes
-* Request-size limits
-* Rate limiting
-* Security headers
-* Blue-green upstream switching
-* Safe reload
-* Rollback
-* Loopback-only application port
+- Configuration syntax
+- TLS routing
+- HTTPS redirect
+- Request ID propagation
+- Proxy headers
+- Static caching
+- No-store routes
+- Request-size limits
+- Rate limiting
+- Security headers
+- Blue-green upstream switching
+- Safe reload
+- Rollback
+- Loopback-only application port
 
 Infrastructure changes require staging verification.
 
@@ -2222,20 +2222,20 @@ Infrastructure changes require staging verification.
 
 Manual exploratory testing focuses on issues automation may miss:
 
-* Comprehension
-* Clinical tone
-* Confusing Product Status
-* Navigation clarity
-* Visual hierarchy
-* Responsive edge cases
-* Keyboard friction
-* Screen-reader usability
-* Arabic quality
-* Cultural appropriateness
-* Form confidence
-* Trust perception
-* Motion comfort
-* Real-device behavior
+- Comprehension
+- Clinical tone
+- Confusing Product Status
+- Navigation clarity
+- Visual hierarchy
+- Responsive edge cases
+- Keyboard friction
+- Screen-reader usability
+- Arabic quality
+- Cultural appropriateness
+- Form confidence
+- Trust perception
+- Motion comfort
+- Real-device behavior
 
 Exploratory findings must be recorded as defects, questions, or approved observations.
 
@@ -2245,15 +2245,15 @@ Exploratory findings must be recorded as defects, questions, or approved observa
 
 Patient-facing critical flows should be reviewed for:
 
-* Plain-language comprehension
-* Emotional safety
-* Non-stigmatizing weight communication
-* Understanding of risk versus diagnosis
-* Understanding of Product Status
-* Confidence in next action
-* Ability to find professional-care boundaries
-* Mobile usability
-* Arabic comprehension where applicable
+- Plain-language comprehension
+- Emotional safety
+- Non-stigmatizing weight communication
+- Understanding of risk versus diagnosis
+- Understanding of Product Status
+- Confidence in next action
+- Ability to find professional-care boundaries
+- Mobile usability
+- Arabic comprehension where applicable
 
 Usability research is separate from automated QA.
 
@@ -2263,16 +2263,16 @@ Usability research is separate from automated QA.
 
 Provider-facing critical flows should be reviewed for:
 
-* Clinical relevance
-* Explainability
-* Information density
-* Current versus future capability
-* Evidence interpretation
-* Product Status
-* Demonstration-request clarity
-* Patient and Provider role separation
-* Diagram comprehension
-* Arabic professional terminology where applicable
+- Clinical relevance
+- Explainability
+- Information density
+- Current versus future capability
+- Evidence interpretation
+- Product Status
+- Demonstration-request clarity
+- Patient and Provider role separation
+- Diagram comprehension
+- Arabic professional terminology where applicable
 
 ---
 
@@ -2282,54 +2282,54 @@ Provider-facing critical flows should be reviewed for:
 
 Examples:
 
-* Sensitive data exposure
-* Production secret exposure
-* Public collection of prohibited clinical data
-* Critical security vulnerability
-* Incorrect high-impact clinical claim
-* Broken production deployment
-* Unrecoverable data or infrastructure risk
+- Sensitive data exposure
+- Production secret exposure
+- Public collection of prohibited clinical data
+- Critical security vulnerability
+- Incorrect high-impact clinical claim
+- Broken production deployment
+- Unrecoverable data or infrastructure risk
 
 ## Severity 1 — Critical
 
 Examples:
 
-* P0 journey blocked
-* Patient or Provider audience entry unavailable
-* Form submissions falsely report success
-* Product Status materially inaccurate
-* Consent fails to control analytics
-* Keyboard users cannot complete critical journey
-* Arabic P0 route unusable
-* Unsafe application handoff
+- P0 journey blocked
+- Patient or Provider audience entry unavailable
+- Form submissions falsely report success
+- Product Status materially inaccurate
+- Consent fails to control analytics
+- Keyboard users cannot complete critical journey
+- Arabic P0 route unusable
+- Unsafe application handoff
 
 ## Severity 2 — Major
 
 Examples:
 
-* Significant browser incompatibility
-* Important content missing
-* Major visual regression
-* Recovery path broken
-* Non-critical accessibility barrier
-* Provider or Patient subjourney blocked
+- Significant browser incompatibility
+- Important content missing
+- Major visual regression
+- Recovery path broken
+- Non-critical accessibility barrier
+- Provider or Patient subjourney blocked
 
 ## Severity 3 — Moderate
 
 Examples:
 
-* Secondary layout defect
-* Non-critical content inconsistency
-* Minor responsive issue
-* Secondary browser defect with workaround
+- Secondary layout defect
+- Non-critical content inconsistency
+- Minor responsive issue
+- Secondary browser defect with workaround
 
 ## Severity 4 — Minor
 
 Examples:
 
-* Cosmetic issue
-* Non-blocking spacing inconsistency
-* Minor copy issue without safety implications
+- Cosmetic issue
+- Non-blocking spacing inconsistency
+- Minor copy issue without safety implications
 
 ---
 
@@ -2337,14 +2337,14 @@ Examples:
 
 Production release is prohibited when:
 
-* Any Severity 0 defect is open.
-* Any Severity 1 defect is open.
-* A release-critical test is skipped.
-* A P0 test is quarantined.
-* A security, privacy, clinical-safety, or accessibility release gate is unresolved.
-* Product Status is unapproved.
-* Arabic P0 content is unapproved for an Arabic release.
-* Production rollback has not been verified.
+- Any Severity 0 defect is open.
+- Any Severity 1 defect is open.
+- A release-critical test is skipped.
+- A P0 test is quarantined.
+- A security, privacy, clinical-safety, or accessibility release gate is unresolved.
+- Product Status is unapproved.
+- Arabic P0 content is unapproved for an Arabic release.
+- Production rollback has not been verified.
 
 Severity 2 defects require explicit release-owner disposition.
 
@@ -2356,14 +2356,14 @@ A test is flaky when identical code and environment can produce both pass and fa
 
 Signals include:
 
-* Pass on retry
-* Intermittent timeout
-* Order dependency
-* Locale or timezone dependency
-* Uncontrolled network dependency
-* Visual instability
-* Shared mutable state
-* Random-data failure
+- Pass on retry
+- Intermittent timeout
+- Order dependency
+- Locale or timezone dependency
+- Uncontrolled network dependency
+- Visual instability
+- Shared mutable state
+- Random-data failure
 
 Flaky tests are defects in the test system or product behavior.
 
@@ -2415,11 +2415,11 @@ P0, security, privacy, accessibility, and clinical-safety tests may not be quara
 
 `test.skip`, `describe.skip`, and equivalent mechanisms require:
 
-* Issue reference
-* Reason
-* Owner
-* Expiry date
-* Risk assessment
+- Issue reference
+- Reason
+- Owner
+- Expiry date
+- Risk assessment
 
 `test.only` must fail CI.
 
@@ -2437,12 +2437,12 @@ Quarantine is a temporary isolation mechanism.
 
 A quarantined test:
 
-* Remains visible in reporting
-* Has an owner
-* Has a resolution date
-* Runs on a scheduled workflow where possible
-* Cannot cover a P0 requirement alone
-* Cannot hide a product defect
+- Remains visible in reporting
+- Has an owner
+- Has a resolution date
+- Runs on a scheduled workflow where possible
+- Cannot cover a P0 requirement alone
+- Cannot hide a product defect
 
 Quarantine approval belongs to the QA owner and CTO.
 
@@ -2454,12 +2454,12 @@ Coverage measures exercised code.
 
 It does not measure:
 
-* Requirement completeness
-* Assertion quality
-* Accessibility
-* Clinical accuracy
-* Browser compatibility
-* User comprehension
+- Requirement completeness
+- Assertion quality
+- Accessibility
+- Clinical accuracy
+- Browser compatibility
+- User comprehension
 
 Coverage thresholds are a minimum safeguard, not a quality objective by themselves.
 
@@ -2494,26 +2494,26 @@ Vitest supports global and path-specific coverage thresholds, so these requireme
 
 Include:
 
-* `src/lib/`
-* `src/features/`
-* `src/server/application/`
-* `src/server/integrations/`
-* `src/config/`
-* Reusable component behavior
-* Analytics and consent logic
-* Validation schemas
-* Error mapping
+- `src/lib/`
+- `src/features/`
+- `src/server/application/`
+- `src/server/integrations/`
+- `src/config/`
+- Reusable component behavior
+- Analytics and consent logic
+- Validation schemas
+- Error mapping
 
 Exclude where justified:
 
-* Generated code
-* Type-only files
-* Story files
-* Test fixtures
-* Framework boilerplate
-* Static content files
-* Pure token declarations
-* Route files whose behavior is covered through browser tests
+- Generated code
+- Type-only files
+- Story files
+- Test fixtures
+- Framework boilerplate
+- Static content files
+- Pure token declarations
+- Route files whose behavior is covered through browser tests
 
 Exclusions must not hide untested business or security logic.
 
@@ -2523,19 +2523,19 @@ Exclusions must not hide untested business or security logic.
 
 Coverage thresholds may:
 
-* Increase through approved changes
-* Gain path-specific thresholds
-* Be temporarily excepted through the exception process
+- Increase through approved changes
+- Gain path-specific thresholds
+- Be temporarily excepted through the exception process
 
 Coverage thresholds must not be reduced merely because a new change is difficult to test.
 
 A reduction requires:
 
-* Reason
-* Risk
-* Alternative evidence
-* Owner
-* Expiry or review date
+- Reason
+- Risk
+- Alternative evidence
+- Owner
+- Expiry or review date
 
 ---
 
@@ -2543,17 +2543,17 @@ A reduction requires:
 
 CI must publish:
 
-* Vitest result summary
-* Coverage summary
-* Playwright HTML report
-* JUnit or machine-readable results
-* Failure screenshots
-* Failure traces
-* Failure video where enabled
-* Accessibility report
-* Visual diff
-* Build result
-* Container result
+- Vitest result summary
+- Coverage summary
+- Playwright HTML report
+- JUnit or machine-readable results
+- Failure screenshots
+- Failure traces
+- Failure video where enabled
+- Accessibility report
+- Visual diff
+- Build result
+- Container result
 
 Reports must not contain sensitive information.
 
@@ -2572,10 +2572,10 @@ HTML report: retained for failed jobs
 
 Artifact retention must balance:
 
-* Diagnostic value
-* Storage
-* Privacy
-* Release audit needs
+- Diagnostic value
+- Storage
+- Privacy
+- Release audit needs
 
 Release artifacts should be retained longer than routine pull-request artifacts.
 
@@ -2585,14 +2585,14 @@ Release artifacts should be retained longer than routine pull-request artifacts.
 
 Before publishing artifacts, verify they do not contain:
 
-* Form contents
-* Contact information
-* Real credentials
-* Cookies
-* Tokens
-* Clinical data
-* Production provider payloads
-* Internal hostnames beyond approved operational use
+- Form contents
+- Contact information
+- Real credentials
+- Cookies
+- Tokens
+- Clinical data
+- Production provider payloads
+- Internal hostnames beyond approved operational use
 
 Sensitive traces must not be exposed publicly.
 
@@ -2650,15 +2650,15 @@ A required gate may not be marked optional solely to merge a failing change.
 
 Main branch additionally requires:
 
-* Full P0 cross-browser suite
-* Mobile P0 suite
-* Full Arabic P0 suite
-* Full reduced-motion suite
-* Page-level accessibility suite
-* Visual-regression suite
-* Container scan
-* Standalone image start and health checks
-* Staging deployment readiness
+- Full P0 cross-browser suite
+- Mobile P0 suite
+- Full Arabic P0 suite
+- Full reduced-motion suite
+- Page-level accessibility suite
+- Visual-regression suite
+- Container scan
+- Standalone image start and health checks
+- Staging deployment readiness
 
 ---
 
@@ -2666,16 +2666,16 @@ Main branch additionally requires:
 
 A scheduled nightly workflow may run:
 
-* Full cross-browser suite
-* Full resource link verification
-* External-link checks
-* Extended accessibility scans
-* Full visual suite
-* Repeated flaky-test detection
-* Dependency advisory review
-* Sandbox integration contract tests
-* Extended performance checks
-* Production non-destructive smoke
+- Full cross-browser suite
+- Full resource link verification
+- External-link checks
+- Extended accessibility scans
+- Full visual suite
+- Repeated flaky-test detection
+- Dependency advisory review
+- Sandbox integration contract tests
+- Extended performance checks
+- Production non-destructive smoke
 
 Nightly failures must create visible ownership.
 
@@ -2687,11 +2687,11 @@ Playwright sharding may be introduced when the complete suite becomes too slow f
 
 Sharding must:
 
-* Preserve deterministic isolation
-* Preserve report merging
-* Preserve failure artifacts
-* Avoid uneven test distribution
-* Not hide serial dependencies
+- Preserve deterministic isolation
+- Preserve report merging
+- Preserve failure artifacts
+- Avoid uneven test distribution
+- Not hide serial dependencies
 
 Playwright supports splitting tests across CI shards, including more balanced test-level distribution when full parallelism is enabled.
 
@@ -2705,11 +2705,11 @@ It is not required before suite duration justifies it.
 
 Tests may run in parallel when they:
 
-* Have isolated state
-* Use unique controlled data
-* Do not depend on shared provider state
-* Do not mutate global fixtures
-* Do not share a rate-limit identity unintentionally
+- Have isolated state
+- Use unique controlled data
+- Do not depend on shared provider state
+- Do not mutate global fixtures
+- Do not share a rate-limit identity unintentionally
 
 Tests requiring serial execution must explain why.
 
@@ -2745,27 +2745,27 @@ Staging must use the same image intended for production.
 
 Production smoke tests must verify:
 
-* Homepage responds
-* Patient homepage responds
-* Provider homepage responds
-* English and Arabic routes respond
-* Navigation works
-* Product Status appears
-* Legal pages respond
-* Health endpoints respond
-* Security headers appear
-* Production is indexable as approved
-* Static assets load
-* Primary handoff host is correct
-* Release identity matches deployment
+- Homepage responds
+- Patient homepage responds
+- Provider homepage responds
+- English and Arabic routes respond
+- Navigation works
+- Product Status appears
+- Legal pages respond
+- Health endpoints respond
+- Security headers appear
+- Production is indexable as approved
+- Static assets load
+- Primary handoff host is correct
+- Release identity matches deployment
 
 Production smoke must not:
 
-* Submit forms
-* alter consent beyond isolated test context
-* generate identifiable analytics
-* create records
-* trigger external operational workflows
+- Submit forms
+- alter consent beyond isolated test context
+- generate identifiable analytics
+- create records
+- trigger external operational workflows
 
 ---
 
@@ -2773,17 +2773,17 @@ Production smoke must not:
 
 After production deployment, monitor:
 
-* HTTP errors
-* Readiness
-* Form-delivery failure rate
-* Safe analytics initialization
-* Core Web Vitals
-* JavaScript errors
-* CSP violations
-* Broken handoffs
-* Unexpected 404s
-* Deployment release identity
-* Nginx errors
+- HTTP errors
+- Readiness
+- Form-delivery failure rate
+- Safe analytics initialization
+- Core Web Vitals
+- JavaScript errors
+- CSP violations
+- Broken handoffs
+- Unexpected 404s
+- Deployment release identity
+- Nginx errors
 
 Monitoring thresholds and incident actions belong in the operational runbook.
 
@@ -2795,14 +2795,14 @@ Every release must preserve a tested rollback route.
 
 Rollback verification must confirm:
 
-* Previous image exists
-* Previous slot starts
-* Health check passes
-* Nginx can switch safely
-* Public routes respond
-* Release identity changes correctly
-* Failed release artifacts remain available
-* Rollback reason is recorded
+- Previous image exists
+- Previous slot starts
+- Health check passes
+- Nginx can switch safely
+- Public routes respond
+- Release identity changes correctly
+- Failed release artifacts remain available
+- Rollback reason is recorded
 
 Rollback must not require rebuilding the prior release.
 
@@ -2812,24 +2812,24 @@ Rollback must not require rebuilding the prior release.
 
 A release reviewer must confirm:
 
-* Locked requirements implemented
-* Product Status approved
-* Clinical wording approved
-* English content approved
-* Arabic content approved where released
-* Navigation operational
-* Forms operational on staging
-* Consent operational
-* Accessibility review complete
-* Visual review complete
-* Cross-browser tests pass
-* Mobile review complete
-* Performance budgets pass
-* Security review complete
-* No blocking defects
-* Rollback ready
-* Deployment owner assigned
-* Incident owner assigned
+- Locked requirements implemented
+- Product Status approved
+- Clinical wording approved
+- English content approved
+- Arabic content approved where released
+- Navigation operational
+- Forms operational on staging
+- Consent operational
+- Accessibility review complete
+- Visual review complete
+- Cross-browser tests pass
+- Mobile review complete
+- Performance budgets pass
+- Security review complete
+- No blocking defects
+- Rollback ready
+- Deployment owner assigned
+- Incident owner assigned
 
 ---
 
@@ -2839,20 +2839,20 @@ A release is approved only when all applicable evidence is present.
 
 Required evidence:
 
-* CI result
-* Requirement traceability
-* Test Case Registry
-* Coverage report
-* E2E report
-* Accessibility report
-* Visual approval
-* Manual QA approval
-* Product approval
-* Clinical approval where applicable
-* Arabic approval where applicable
-* Security approval where applicable
-* Staging smoke
-* Rollback readiness
+- CI result
+- Requirement traceability
+- Test Case Registry
+- Coverage report
+- E2E report
+- Accessibility report
+- Visual approval
+- Manual QA approval
+- Product approval
+- Clinical approval where applicable
+- Arabic approval where applicable
+- Security approval where applicable
+- Staging smoke
+- Rollback readiness
 
 Verbal confirmation alone is insufficient for a material release.
 
@@ -2864,17 +2864,17 @@ The Test Case Registry tracks material tests rather than every low-level asserti
 
 It must include:
 
-* Test ID
-* Requirement ID
-* Page or Component ID
-* Risk
-* Test level
-* Automation status
-* Browser scope
-* Locale scope
-* Owner
-* Last result
-* Release-blocking status
+- Test ID
+- Requirement ID
+- Page or Component ID
+- Risk
+- Test level
+- Automation status
+- Browser scope
+- Locale scope
+- Owner
+- Last result
+- Release-blocking status
 
 Example Test ID:
 
@@ -2893,11 +2893,11 @@ Every defect fix must add or update a test at the lowest sufficient level.
 
 Regression coverage should verify:
 
-* Original failure
-* Correct recovery
-* Adjacent high-risk behavior
-* Cross-browser impact where relevant
-* Locale and accessibility impact where relevant
+- Original failure
+- Correct recovery
+- Adjacent high-risk behavior
+- Cross-browser impact where relevant
+- Locale and accessibility impact where relevant
 
 Do not add a broad E2E test when a focused integration test is sufficient.
 
@@ -2907,16 +2907,16 @@ Do not add a broad E2E test when a focused integration test is sufficient.
 
 Tests must be reviewed when:
 
-* Requirement changes
-* Component contract changes
-* Route changes
-* Product Status changes
-* Localization changes
-* Provider changes
-* Browser versions change
-* Framework or library versions change
-* Accessibility behavior changes
-* Deployment topology changes
+- Requirement changes
+- Component contract changes
+- Route changes
+- Product Status changes
+- Localization changes
+- Provider changes
+- Browser versions change
+- Framework or library versions change
+- Accessibility behavior changes
+- Deployment topology changes
 
 Stale tests create false confidence.
 
@@ -2926,17 +2926,17 @@ Stale tests create false confidence.
 
 A test may be removed only when:
 
-* Requirement is retired
-* Component is retired
-* Test is replaced by stronger evidence
-* Duplicate coverage is removed deliberately
-* Obsolete behavior is no longer supported
+- Requirement is retired
+- Component is retired
+- Test is replaced by stronger evidence
+- Duplicate coverage is removed deliberately
+- Obsolete behavior is no longer supported
 
 The pull request must state:
 
-* Why the test is removed
-* Which requirement changed
-* What evidence replaces it
+- Why the test is removed
+- Which requirement changed
+- What evidence replaces it
 
 Do not delete a failing test only to restore CI.
 
@@ -2948,18 +2948,18 @@ Test code receives the same review as production code.
 
 Reviewers assess:
 
-* Correct requirement
-* Correct test level
-* Useful assertion
-* Determinism
-* Privacy
-* Readability
-* Fixture safety
-* Mocking appropriateness
-* Failure-message quality
-* Accessibility relevance
-* Locale relevance
-* Maintenance cost
+- Correct requirement
+- Correct test level
+- Useful assertion
+- Determinism
+- Privacy
+- Readability
+- Fixture safety
+- Mocking appropriateness
+- Failure-message quality
+- Accessibility relevance
+- Locale relevance
+- Maintenance cost
 
 ---
 
@@ -2985,19 +2985,19 @@ Before creating or modifying tests, AI agents must:
 
 AI agents must not:
 
-* Claim a test passed without running it
-* Create tests that always pass
-* weaken assertions to avoid failure
-* add broad skips
-* update all visual baselines automatically
-* use real Patient data
-* contact production providers
-* treat Axe as complete accessibility proof
-* treat coverage percentage as complete quality proof
-* convert async Server Components into Client Components for easier tests
-* remove tests merely because they fail
-* quarantine P0 or safety-critical tests
-* use fixed sleeps where observable conditions exist
+- Claim a test passed without running it
+- Create tests that always pass
+- weaken assertions to avoid failure
+- add broad skips
+- update all visual baselines automatically
+- use real Patient data
+- contact production providers
+- treat Axe as complete accessibility proof
+- treat coverage percentage as complete quality proof
+- convert async Server Components into Client Components for easier tests
+- remove tests merely because they fail
+- quarantine P0 or safety-critical tests
+- use fixed sleeps where observable conditions exist
 
 ---
 
@@ -3059,43 +3059,43 @@ The following decisions are locked unless formally changed:
 
 The following remain unresolved:
 
-* Which exact Vitest and Playwright patch versions are pinned?
-* Which Playwright mobile-device descriptors are approved?
-* Which additional screen-reader and browser combination is required?
-* Which physical mobile devices are available for release QA?
-* Who owns the Test Case Registry?
-* Who is the formal QA owner?
-* Which P0 pages are included in Qatar V1?
-* Which Patient forms are operational at Qatar launch?
-* Which Provider forms are operational at Qatar launch?
-* Which form-delivery sandbox is used?
-* Which analytics test container is used?
-* Which Product Status capabilities are release blocking?
-* Which Arabic P0 pages launch first?
-* Who approves Arabic clinical terminology?
-* Which visual snapshots run on every pull request?
-* Which visual snapshots run only on main or release?
-* What CI duration target triggers Playwright sharding?
-* How many Playwright shards are initially approved?
-* Which test artifacts are retained and for how long?
-* Which external-link checks run on pull requests versus nightly?
-* Is Storybook published privately or retained as a CI artifact?
-* Is Storybook accessibility configured to fail every applicable story?
-* Which Axe exclusions, if any, are initially approved?
-* Which performance checks are fully automated?
-* Which security scanners are release blocking?
-* What form rate-limit values are used in test environments?
-* What is the approved production form-delivery verification process?
-* Which defects require Founder approval before release disposition?
-* Who may approve quarantine of a non-P0 test?
-* Who approves temporary coverage exceptions?
-* Which test commands are mandatory before AI-authored review requests?
-* Which tests are allowed to run against production?
-* What is the release-artifact retention period?
-* Which nightly workflow failures create automatic issues?
-* Which manual QA evidence format is required?
-* When is formal Patient usability testing scheduled?
-* When is formal Provider usability testing scheduled?
+- Which exact Vitest and Playwright patch versions are pinned?
+- Which Playwright mobile-device descriptors are approved?
+- Which additional screen-reader and browser combination is required?
+- Which physical mobile devices are available for release QA?
+- Who owns the Test Case Registry?
+- Who is the formal QA owner?
+- Which P0 pages are included in Qatar V1?
+- Which Patient forms are operational at Qatar launch?
+- Which Provider forms are operational at Qatar launch?
+- Which form-delivery sandbox is used?
+- Which analytics test container is used?
+- Which Product Status capabilities are release blocking?
+- Which Arabic P0 pages launch first?
+- Who approves Arabic clinical terminology?
+- Which visual snapshots run on every pull request?
+- Which visual snapshots run only on main or release?
+- What CI duration target triggers Playwright sharding?
+- How many Playwright shards are initially approved?
+- Which test artifacts are retained and for how long?
+- Which external-link checks run on pull requests versus nightly?
+- Is Storybook published privately or retained as a CI artifact?
+- Is Storybook accessibility configured to fail every applicable story?
+- Which Axe exclusions, if any, are initially approved?
+- Which performance checks are fully automated?
+- Which security scanners are release blocking?
+- What form rate-limit values are used in test environments?
+- What is the approved production form-delivery verification process?
+- Which defects require Founder approval before release disposition?
+- Who may approve quarantine of a non-P0 test?
+- Who approves temporary coverage exceptions?
+- Which test commands are mandatory before AI-authored review requests?
+- Which tests are allowed to run against production?
+- What is the release-artifact retention period?
+- Which nightly workflow failures create automatic issues?
+- Which manual QA evidence format is required?
+- When is formal Patient usability testing scheduled?
+- When is formal Provider usability testing scheduled?
 
 These questions must remain in:
 
@@ -3131,15 +3131,15 @@ Verified rollback
 
 Every release must remain:
 
-* Requirement traceable
-* Product-status accurate
-* Clinically responsible
-* Accessible
-* Arabic and RTL ready
-* Privacy preserving
-* Secure
-* Cross-browser verified
-* Mobile verified
-* Performance governed
-* Operationally reversible
-* Supported by recorded evidence
+- Requirement traceable
+- Product-status accurate
+- Clinically responsible
+- Accessible
+- Arabic and RTL ready
+- Privacy preserving
+- Secure
+- Cross-browser verified
+- Mobile verified
+- Performance governed
+- Operationally reversible
+- Supported by recorded evidence

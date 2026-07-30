@@ -16,27 +16,27 @@
 
 ## Related Documents
 
-* `PROJECT_CONTEXT.md`
-* `docs/project/SOURCE_OF_TRUTH.md`
-* `docs/project/ASSUMPTIONS.md`
-* `docs/project/OPEN_QUESTIONS.md`
-* `docs/project/GLOSSARY.md`
-* `docs/product/PRODUCT_VISION.md`
-* `docs/product/AUDIENCE.md`
-* `docs/product/WEBSITE_OBJECTIVES.md`
-* `docs/product/WEBSITE_STORY.md`
-* `docs/product/PRODUCT_STATUS.md`
-* `docs/product/PAGE_REQUIREMENTS.md`
-* `docs/design/BRAND_FOUNDATION.md`
-* `docs/design/DESIGN_SYSTEM.md`
-* `docs/design/ANIMATION_GUIDELINES.md`
-* `docs/engineering/TECH_STACK.md`
-* `docs/engineering/ARCHITECTURE.md`
-* `docs/engineering/COMPONENT_LIBRARY.md`
-* `docs/engineering/CODING_STANDARDS.md`
-* `docs/engineering/TESTING_STRATEGY.md`
-* `ai/rules/NON_NEGOTIABLES.md`
-* `ai/rules/AI_BEHAVIOR.md`
+- `PROJECT_CONTEXT.md`
+- `docs/project/SOURCE_OF_TRUTH.md`
+- `docs/project/ASSUMPTIONS.md`
+- `docs/project/OPEN_QUESTIONS.md`
+- `docs/project/GLOSSARY.md`
+- `docs/product/PRODUCT_VISION.md`
+- `docs/product/AUDIENCE.md`
+- `docs/product/WEBSITE_OBJECTIVES.md`
+- `docs/product/WEBSITE_STORY.md`
+- `docs/product/PRODUCT_STATUS.md`
+- `docs/product/PAGE_REQUIREMENTS.md`
+- `docs/design/BRAND_FOUNDATION.md`
+- `docs/design/DESIGN_SYSTEM.md`
+- `docs/design/ANIMATION_GUIDELINES.md`
+- `docs/engineering/TECH_STACK.md`
+- `docs/engineering/ARCHITECTURE.md`
+- `docs/engineering/COMPONENT_LIBRARY.md`
+- `docs/engineering/CODING_STANDARDS.md`
+- `docs/engineering/TESTING_STRATEGY.md`
+- `ai/rules/NON_NEGOTIABLES.md`
+- `ai/rules/AI_BEHAVIOR.md`
 
 ---
 
@@ -50,15 +50,15 @@ It translates the approved product vision, audience strategy, website objectives
 
 The PRD defines:
 
-* What the public website must do
-* Which audience experiences must exist
-* Which website capabilities are required
-* Which requirements are mandatory at launch
-* Which requirements may be delivered later
-* How Patient and Provider journeys must remain connected
-* How clinical claims and product capabilities must be governed
-* How website success must be measured
-* How design and engineering work will be accepted
+- What the public website must do
+- Which audience experiences must exist
+- Which website capabilities are required
+- Which requirements are mandatory at launch
+- Which requirements may be delivered later
+- How Patient and Provider journeys must remain connected
+- How clinical claims and product capabilities must be governed
+- How website success must be measured
+- How design and engineering work will be accepted
 
 This PRD is the primary requirements bridge between strategy and implementation.
 
@@ -70,20 +70,20 @@ This PRD defines the requirements for the public ODRISC website.
 
 It does not define the complete requirements of:
 
-* The ODRISC Patient application
-* The Provider platform
-* Clinical intelligence engines
-* Gestational diabetes risk algorithms
-* Weight-monitoring algorithms
-* Maternal intelligence algorithms
-* Fetal-growth intelligence algorithms
-* Ultrasound optical character recognition
-* Hospital integrations
-* Electronic-health-record integrations
-* Clinical alert systems
-* Subscription billing systems
-* Professional care-delivery workflows
-* Internal administration systems
+- The ODRISC Patient application
+- The Provider platform
+- Clinical intelligence engines
+- Gestational diabetes risk algorithms
+- Weight-monitoring algorithms
+- Maternal intelligence algorithms
+- Fetal-growth intelligence algorithms
+- Ultrasound optical character recognition
+- Hospital integrations
+- Electronic-health-record integrations
+- Clinical alert systems
+- Subscription billing systems
+- Professional care-delivery workflows
+- Internal administration systems
 
 Those systems require separate product requirements documents.
 
@@ -101,13 +101,13 @@ The public website must explain how ODRISC helps patients and healthcare profess
 
 The website must communicate that:
 
-* Pregnancy information is often fragmented
-* Isolated measurements may not explain progression
-* Maternal and fetal information becomes more useful when reviewed longitudinally
-* ODRISC connects relevant information across the pregnancy journey
-* ODRISC supports earlier recognition and better monitoring
-* ODRISC strengthens Patient-Provider collaboration
-* ODRISC supports and does not replace healthcare professionals
+- Pregnancy information is often fragmented
+- Isolated measurements may not explain progression
+- Maternal and fetal information becomes more useful when reviewed longitudinally
+- ODRISC connects relevant information across the pregnancy journey
+- ODRISC supports earlier recognition and better monitoring
+- ODRISC strengthens Patient-Provider collaboration
+- ODRISC supports and does not replace healthcare professionals
 
 The website must serve two primary audiences through one brand and one domain:
 
@@ -148,17 +148,17 @@ It must not be presented as proof that use of ODRISC automatically produces impr
 
 The website should become the primary public source for understanding:
 
-* Why ODRISC exists
-* Which problem it addresses
-* Who it serves
-* How the Patient and Provider experiences connect
-* Which capabilities are currently available
-* Which capabilities are being piloted or developed
-* Which clinical and technological principles guide the platform
-* How patients can access relevant support
-* How healthcare professionals can evaluate or engage with ODRISC
-* How hospitals and institutional partners can begin a conversation
-* How ODRISC is preparing for Qatar and GCC markets
+- Why ODRISC exists
+- Which problem it addresses
+- Who it serves
+- How the Patient and Provider experiences connect
+- Which capabilities are currently available
+- Which capabilities are being piloted or developed
+- Which clinical and technological principles guide the platform
+- How patients can access relevant support
+- How healthcare professionals can evaluate or engage with ODRISC
+- How hospitals and institutional partners can begin a conversation
+- How ODRISC is preparing for Qatar and GCC markets
 
 The website must build trust before asking for conversion.
 
@@ -170,48 +170,48 @@ The website must build trust before asking for conversion.
 
 The website must:
 
-* Establish ODRISC as a credible maternal and fetal intelligence platform
-* Explain the longitudinal pregnancy-care problem
-* Communicate the connection between Patient and Provider experiences
-* Route visitors to the appropriate audience journey
-* Build clinical, product, and organizational trust
-* Communicate product status transparently
-* Support search visibility
-* Support international market readiness
-* Generate measurable Patient and Provider actions
+- Establish ODRISC as a credible maternal and fetal intelligence platform
+- Explain the longitudinal pregnancy-care problem
+- Communicate the connection between Patient and Provider experiences
+- Route visitors to the appropriate audience journey
+- Build clinical, product, and organizational trust
+- Communicate product status transparently
+- Support search visibility
+- Support international market readiness
+- Generate measurable Patient and Provider actions
 
 ## 6.2 Patient Goals
 
 The Patient experience must:
 
-* Help women understand whether ODRISC is relevant to them
-* Explain Patient-facing capabilities in accessible language
-* Support risk awareness without implying diagnosis
-* Explain weight, nutrition, physical activity, and pregnancy monitoring appropriately
-* Reinforce the role of healthcare professionals
-* Reduce confusion without creating false reassurance
-* Guide visitors toward the approved Patient conversion
+- Help women understand whether ODRISC is relevant to them
+- Explain Patient-facing capabilities in accessible language
+- Support risk awareness without implying diagnosis
+- Explain weight, nutrition, physical activity, and pregnancy monitoring appropriately
+- Reinforce the role of healthcare professionals
+- Reduce confusion without creating false reassurance
+- Guide visitors toward the approved Patient conversion
 
 ## 6.3 Provider Goals
 
 The Provider experience must:
 
-* Establish clinical relevance quickly
-* Explain the fragmentation problem
-* Explain longitudinal maternal and fetal intelligence
-* Demonstrate how ODRISC may support monitoring and workflow
-* Explain clinical boundaries
-* Present methodology, validation, privacy, and implementation information
-* Guide visitors toward the approved Provider conversion
+- Establish clinical relevance quickly
+- Explain the fragmentation problem
+- Explain longitudinal maternal and fetal intelligence
+- Demonstrate how ODRISC may support monitoring and workflow
+- Explain clinical boundaries
+- Present methodology, validation, privacy, and implementation information
+- Guide visitors toward the approved Provider conversion
 
 ## 6.4 Institutional Goals
 
 The website should:
 
-* Support hospital, clinic, insurer, employer, government, and strategic-partner evaluation
-* Explain implementation and enterprise direction without overstating readiness
-* Provide an appropriate contact or briefing pathway
-* Support Qatar commercialization and future GCC expansion
+- Support hospital, clinic, insurer, employer, government, and strategic-partner evaluation
+- Explain implementation and enterprise direction without overstating readiness
+- Provide an appropriate contact or briefing pathway
+- Support Qatar commercialization and future GCC expansion
 
 ---
 
@@ -219,21 +219,21 @@ The website should:
 
 The public website is not intended to:
 
-* Diagnose a pregnancy complication
-* Replace antenatal care
-* Replace a healthcare professional
-* Provide emergency medical care
-* Deliver individualized medical treatment through static website content
-* Operate as the full Patient application
-* Operate as the full Provider dashboard
-* Publish unapproved clinical algorithms
-* Present all roadmap concepts as available
-* Function as a general pregnancy-content portal
-* Function as a social network
-* Function as a marketplace
-* Lead with generic artificial-intelligence messaging
-* Present ODRISC as a guaranteed prevention system
-* Publish unsupported regulatory or validation claims
+- Diagnose a pregnancy complication
+- Replace antenatal care
+- Replace a healthcare professional
+- Provide emergency medical care
+- Deliver individualized medical treatment through static website content
+- Operate as the full Patient application
+- Operate as the full Provider dashboard
+- Publish unapproved clinical algorithms
+- Present all roadmap concepts as available
+- Function as a general pregnancy-content portal
+- Function as a social network
+- Function as a marketplace
+- Lead with generic artificial-intelligence messaging
+- Present ODRISC as a guaranteed prevention system
+- Publish unsupported regulatory or validation claims
 
 ---
 
@@ -295,46 +295,46 @@ This PRD uses the following primary user groups.
 
 Patient users may include:
 
-* Women planning pregnancy
-* Women preparing for IVF or assisted reproduction
-* Pregnant women
-* Women with increased metabolic risk
-* Women with PCOS
-* Women monitoring weight before or during pregnancy
-* Women receiving high-risk pregnancy care
-* Partners or family supporters
+- Women planning pregnancy
+- Women preparing for IVF or assisted reproduction
+- Pregnant women
+- Women with increased metabolic risk
+- Women with PCOS
+- Women monitoring weight before or during pregnancy
+- Women receiving high-risk pregnancy care
+- Partners or family supporters
 
 ## 9.2 Provider Users
 
 Provider users may include:
 
-* Obstetricians and gynecologists
-* Maternal-fetal medicine specialists
-* Fertility and IVF specialists
-* Maternity clinics
-* Hospitals
-* Nutrition professionals
-* Women's health physiotherapists
-* Nurses
-* Midwives
-* Diabetes educators
-* Care coordinators
-* Healthcare administrators
-* Clinical and institutional decision-makers
+- Obstetricians and gynecologists
+- Maternal-fetal medicine specialists
+- Fertility and IVF specialists
+- Maternity clinics
+- Hospitals
+- Nutrition professionals
+- Women's health physiotherapists
+- Nurses
+- Midwives
+- Diabetes educators
+- Care coordinators
+- Healthcare administrators
+- Clinical and institutional decision-makers
 
 ## 9.3 Shared Secondary Users
 
 Shared secondary users may include:
 
-* Investors
-* Startup programs
-* Government stakeholders
-* Insurers
-* Employers
-* Researchers
-* Technology partners
-* Media
-* Job candidates
+- Investors
+- Startup programs
+- Government stakeholders
+- Insurers
+- Employers
+- Researchers
+- Technology partners
+- Media
+- Job candidates
 
 These users must not be added to the primary audience gateway.
 
@@ -368,14 +368,14 @@ odrisc.com
 
 The shared entry experience must:
 
-* Introduce the ODRISC premise
-* Communicate one unified brand
-* Allow visitors to select Patient or Healthcare Provider
-* Explain that users may switch later
-* Avoid adding unnecessary audience choices
-* Work without authentication
-* Work on mobile and desktop
-* Support analytics tracking
+- Introduce the ODRISC premise
+- Communicate one unified brand
+- Allow visitors to select Patient or Healthcare Provider
+- Explain that users may switch later
+- Avoid adding unnecessary audience choices
+- Work without authentication
+- Work on mobile and desktop
+- Support analytics tracking
 
 ## 10.2 Patient Experience
 
@@ -389,18 +389,18 @@ The Provider experience must include a complete navigation and content journey a
 
 Shared pages may include:
 
-* About
-* Company
-* Founder story
-* Team
-* Resources
-* Contact
-* Partnerships
-* Careers
-* Privacy
-* Terms
-* Cookie information
-* Accessibility information
+- About
+- Company
+- Founder story
+- Team
+- Resources
+- Contact
+- Partnerships
+- Careers
+- Privacy
+- Terms
+- Cookie information
+- Accessibility information
 
 ## 10.5 Audience Switching
 
@@ -421,20 +421,20 @@ Requirements use the following priority labels:
 
 Requirements use the following identifiers:
 
-* `SHR` — Shared experience
-* `PAT` — Patient experience
-* `PRO` — Provider experience
-* `CON` — Content
-* `UX` — User experience
-* `SEO` — Search
-* `ANL` — Analytics
-* `ACC` — Accessibility
-* `PER` — Performance
-* `SEC` — Security
-* `PRV` — Privacy
-* `LOC` — Localization
-* `INT` — Integration
-* `OPS` — Operations and governance
+- `SHR` — Shared experience
+- `PAT` — Patient experience
+- `PRO` — Provider experience
+- `CON` — Content
+- `UX` — User experience
+- `SEO` — Search
+- `ANL` — Analytics
+- `ACC` — Accessibility
+- `PER` — Performance
+- `SEC` — Security
+- `PRV` — Privacy
+- `LOC` — Localization
+- `INT` — Integration
+- `OPS` — Operations and governance
 
 ---
 
@@ -452,11 +452,11 @@ The website must not present Patient and Provider experiences as separate brands
 
 ### Acceptance Criteria
 
-* Patient pages use the ODRISC brand
-* Provider pages use the ODRISC brand
-* Audience switching remains within the same domain
-* Core design tokens are shared
-* Shared company and legal pages are accessible from both journeys
+- Patient pages use the ODRISC brand
+- Provider pages use the ODRISC brand
+- Audience switching remains within the same domain
+- Core design tokens are shared
+- Shared company and legal pages are accessible from both journeys
 
 ---
 
@@ -466,20 +466,20 @@ The website must not present Patient and Provider experiences as separate brands
 
 The website must provide a clear entry choice between:
 
-* Patient
-* Healthcare Provider
+- Patient
+- Healthcare Provider
 
 Final user-facing labels remain subject to approval.
 
 ### Acceptance Criteria
 
-* The two choices are visually distinct
-* Both choices are accessible by keyboard
-* Both choices work on mobile
-* Both choices have descriptive accessible labels
-* The interaction is tracked
-* The selector does not imply separate companies
-* Users may continue even if audience persistence is unavailable
+- The two choices are visually distinct
+- Both choices are accessible by keyboard
+- Both choices work on mobile
+- Both choices have descriptive accessible labels
+- The interaction is tracked
+- The selector does not imply separate companies
+- Users may continue even if audience persistence is unavailable
 
 ---
 
@@ -491,13 +491,13 @@ Users must be able to switch between Patient and Provider journeys.
 
 ### Acceptance Criteria
 
-* The switch is available in persistent navigation or an equally discoverable location
-* The switch does not require authentication
-* The switch works on mobile and desktop
-* The switch updates audience-specific navigation
-* The switch updates the primary audience context
-* The switch is tracked through analytics
-* The visitor is not sent to a separate brand or domain
+- The switch is available in persistent navigation or an equally discoverable location
+- The switch does not require authentication
+- The switch works on mobile and desktop
+- The switch updates audience-specific navigation
+- The switch updates the primary audience context
+- The switch is tracked through analytics
+- The visitor is not sent to a separate brand or domain
 
 ---
 
@@ -509,13 +509,13 @@ Both journeys must use one design foundation.
 
 ### Acceptance Criteria
 
-* Shared typography
-* Shared color system
-* Shared spacing system
-* Shared interaction principles
-* Shared icon principles
-* Audience differentiation does not create inconsistent brands
-* The approved gradient and text colors are used according to the design system
+- Shared typography
+- Shared color system
+- Shared spacing system
+- Shared interaction principles
+- Shared icon principles
+- Audience differentiation does not create inconsistent brands
+- The approved gradient and text colors are used according to the design system
 
 ---
 
@@ -525,21 +525,21 @@ Both journeys must use one design foundation.
 
 The website must support:
 
-* Mobile
-* Tablet
-* Laptop
-* Desktop
-* Large desktop
+- Mobile
+- Tablet
+- Laptop
+- Desktop
+- Large desktop
 
 ### Acceptance Criteria
 
-* No essential information is hidden on smaller screens
-* Navigation remains usable
-* Forms remain usable
-* Data visuals remain legible
-* CTAs remain available
-* No horizontal scrolling occurs for normal page content
-* Audience switching remains available
+- No essential information is hidden on smaller screens
+- Navigation remains usable
+- Forms remain usable
+- Data visuals remain legible
+- CTAs remain available
+- No horizontal scrolling occurs for normal page content
+- Audience switching remains available
 
 ---
 
@@ -551,12 +551,12 @@ The website must provide audience-relevant navigation.
 
 ### Acceptance Criteria
 
-* Patient navigation does not expose unnecessary clinical complexity
-* Provider navigation provides direct access to clinical, methodology, validation, and workflow content
-* Shared pages remain accessible
-* Current-page state is visible
-* Navigation is usable with keyboard and assistive technology
-* Mobile navigation has clear hierarchy
+- Patient navigation does not expose unnecessary clinical complexity
+- Provider navigation provides direct access to clinical, methodology, validation, and workflow content
+- Shared pages remain accessible
+- Current-page state is visible
+- Navigation is usable with keyboard and assistive technology
+- Mobile navigation has clear hierarchy
 
 ---
 
@@ -568,13 +568,13 @@ The website must provide a general contact pathway.
 
 ### Acceptance Criteria
 
-* A visible Contact page or contact route exists
-* Submitted information is delivered to an approved recipient or system
-* Users receive a clear success or failure state
-* Required consent language is shown
-* Form fields are minimized
-* Spam prevention is implemented without creating unnecessary friction
-* Sensitive medical information is not requested through general forms
+- A visible Contact page or contact route exists
+- Submitted information is delivered to an approved recipient or system
+- Users receive a clear success or failure state
+- Required consent language is shown
+- Form fields are minimized
+- Spam prevention is implemented without creating unnecessary friction
+- Sensitive medical information is not requested through general forms
 
 ---
 
@@ -588,12 +588,12 @@ All capability descriptions must be checked against:
 
 ### Acceptance Criteria
 
-* No planned feature is presented as available
-* Pilot capabilities are labeled appropriately
-* In-development capabilities use approved wording
-* Restricted internal capabilities are not published
-* Product-status review is included in the content approval process
-* Status changes can be updated without restructuring the entire website
+- No planned feature is presented as available
+- Pilot capabilities are labeled appropriately
+- In-development capabilities use approved wording
+- Restricted internal capabilities are not published
+- Product-status review is included in the content approval process
+- Status changes can be updated without restructuring the entire website
 
 ---
 
@@ -605,12 +605,12 @@ The website must communicate that ODRISC supports and does not replace healthcar
 
 ### Acceptance Criteria
 
-* Appropriate boundary language appears on relevant Patient and Provider pages
-* Risk assessment is not described as diagnosis
-* Urgent symptoms are not routed through marketing or sales forms
-* Patient content encourages appropriate professional care
-* Provider content preserves clinical judgment
-* No automated outcome guarantee is made
+- Appropriate boundary language appears on relevant Patient and Provider pages
+- Risk assessment is not described as diagnosis
+- Urgent symptoms are not routed through marketing or sales forms
+- Patient content encourages appropriate professional care
+- Provider content preserves clinical judgment
+- No automated outcome guarantee is made
 
 ---
 
@@ -622,11 +622,11 @@ The website should provide search when the volume of resources makes navigation 
 
 ### Acceptance Criteria
 
-* Search is added only when content volume justifies it
-* Results identify Patient, Provider, and shared content
-* Search does not surface restricted or draft content
-* No-result states guide users appropriately
-* Search terms may be analyzed in a privacy-conscious way
+- Search is added only when content volume justifies it
+- Results identify Patient, Provider, and shared content
+- Search does not surface restricted or draft content
+- No-result states guide users appropriately
+- Search terms may be analyzed in a privacy-conscious way
 
 ---
 
@@ -640,22 +640,22 @@ A dedicated Patient homepage must exist.
 
 It must explain:
 
-* Who ODRISC is for
-* Which Patient problem it addresses
-* How ODRISC supports pregnancy understanding
-* Which Patient capabilities are available
-* The role of healthcare professionals
-* The approved next action
+- Who ODRISC is for
+- Which Patient problem it addresses
+- How ODRISC supports pregnancy understanding
+- Which Patient capabilities are available
+- The role of healthcare professionals
+- The approved next action
 
 ### Acceptance Criteria
 
-* Patient language is understandable without clinical training
-* The page follows the approved Patient story
-* The primary CTA is clear
-* Product-status wording is accurate
-* Weight content is non-stigmatizing
-* Medical boundaries are visible
-* The page works on mobile
+- Patient language is understandable without clinical training
+- The page follows the approved Patient story
+- The primary CTA is clear
+- Product-status wording is accurate
+- Weight content is non-stigmatizing
+- Medical boundaries are visible
+- The page works on mobile
 
 ---
 
@@ -665,15 +665,15 @@ It must explain:
 
 The Patient experience should support relevant pathways for:
 
-* Preconception
-* Pregnancy
-* Increased metabolic risk
-* PCOS
-* IVF or assisted reproduction
-* Weight monitoring
-* Nutrition
-* Physical activity
-* Maternal and fetal progress
+- Preconception
+- Pregnancy
+- Increased metabolic risk
+- PCOS
+- IVF or assisted reproduction
+- Weight monitoring
+- Nutrition
+- Physical activity
+- Maternal and fetal progress
 
 Not every pathway requires an independent page at launch.
 
@@ -689,13 +689,13 @@ The website must provide an approved route toward the gestational diabetes risk 
 
 ### Acceptance Criteria
 
-* The route uses approved terminology
-* The assessment is not described as diagnostic
-* Users understand what the result represents
-* Users understand that clinical testing may still be required
-* Users receive appropriate privacy information
-* The CTA does not appear if the capability is not publicly available
-* Tracking distinguishes CTA clicks from completed assessments where technically possible
+- The route uses approved terminology
+- The assessment is not described as diagnostic
+- Users understand what the result represents
+- Users understand that clinical testing may still be required
+- Users receive appropriate privacy information
+- The CTA does not appear if the capability is not publicly available
+- Tracking distinguishes CTA clicks from completed assessments where technically possible
 
 ---
 
@@ -707,12 +707,12 @@ The website must explain weight monitoring as health-focused longitudinal suppor
 
 ### Acceptance Criteria
 
-* No appearance-based messaging
-* No shame or blame
-* No universal target presented without context
-* Preconception and pregnancy monitoring are distinguished
-* The role of professional guidance is stated
-* Product-status wording is accurate
+- No appearance-based messaging
+- No shame or blame
+- No universal target presented without context
+- Preconception and pregnancy monitoring are distinguished
+- The role of professional guidance is stated
+- Product-status wording is accurate
 
 ---
 
@@ -724,12 +724,12 @@ The website must explain Medical Nutrition Therapy and nutrition support accurat
 
 ### Acceptance Criteria
 
-* Qualified professional involvement is described accurately
-* Personalized plans are not implied if they are not available
-* Generic content and professional care are distinguished
-* Pregnancy-stage relevance is explained
-* No guaranteed treatment outcome is claimed
-* Dietary restrictions or medical conditions are not managed through generic website text
+- Qualified professional involvement is described accurately
+- Personalized plans are not implied if they are not available
+- Generic content and professional care are distinguished
+- Pregnancy-stage relevance is explained
+- No guaranteed treatment outcome is claimed
+- Dietary restrictions or medical conditions are not managed through generic website text
 
 ---
 
@@ -741,11 +741,11 @@ The website must explain pregnancy-appropriate physical activity support.
 
 ### Acceptance Criteria
 
-* Safety and contraindication boundaries are acknowledged
-* The website does not prescribe individualized exercise for medically complex situations
-* Qualified professional involvement is accurately described
-* Product-status wording is correct
-* Users are encouraged to follow healthcare guidance where necessary
+- Safety and contraindication boundaries are acknowledged
+- The website does not prescribe individualized exercise for medically complex situations
+- Qualified professional involvement is accurately described
+- Product-status wording is correct
+- Users are encouraged to follow healthcare guidance where necessary
 
 ---
 
@@ -757,11 +757,11 @@ Relevant Patient pages must provide appropriate safety direction.
 
 ### Acceptance Criteria
 
-* ODRISC is not presented as an emergency service
-* Users are directed to local emergency or professional care for urgent concerns
-* The website does not attempt to triage emergencies through a marketing form
-* Safety language is reviewed before publication
-* Country-specific emergency wording is added only when legally and operationally approved
+- ODRISC is not presented as an emergency service
+- Users are directed to local emergency or professional care for urgent concerns
+- The website does not attempt to triage emergencies through a marketing form
+- Safety language is reviewed before publication
+- Country-specific emergency wording is added only when legally and operationally approved
 
 ---
 
@@ -773,23 +773,23 @@ The Patient journey must have one approved primary conversion.
 
 Possible actions include:
 
-* Begin risk assessment
-* Create an account
-* Start monitoring
-* View membership
-* Access the Patient application
+- Begin risk assessment
+- Create an account
+- Start monitoring
+- View membership
+- Access the Patient application
 
 The final conversion remains subject to approval.
 
 ### Acceptance Criteria
 
-* The action is available
-* The CTA accurately describes what happens next
-* The destination works
-* The action is tracked
-* No conflicting primary CTA dominates the same page
-* Failure states are handled
-* Product and commercial terms are visible where relevant
+- The action is available
+- The CTA accurately describes what happens next
+- The destination works
+- The action is tracked
+- No conflicting primary CTA dominates the same page
+- Failure states are handled
+- Product and commercial terms are visible where relevant
 
 ---
 
@@ -799,25 +799,25 @@ The final conversion remains subject to approval.
 
 When public purchase is available, the website must explain:
 
-* Plan name
-* Included services
-* Duration
-* Price
-* Taxes
-* Payment terms
-* Refund terms
-* Professional-support boundaries
-* Market availability
+- Plan name
+- Included services
+- Duration
+- Price
+- Taxes
+- Payment terms
+- Refund terms
+- Professional-support boundaries
+- Market availability
 
 ### Acceptance Criteria
 
-* Pricing is current
-* Currency matches market context
-* Taxes are communicated appropriately
-* Features match actual delivery
-* Roadmap features are not included in current plans
-* Purchase terms are accessible before payment
-* Pricing content can be updated centrally
+- Pricing is current
+- Currency matches market context
+- Taxes are communicated appropriately
+- Features match actual delivery
+- Roadmap features are not included in current plans
+- Purchase terms are accessible before payment
+- Pricing content can be updated centrally
 
 ---
 
@@ -829,12 +829,12 @@ The Patient journey must explain relevant privacy practices in understandable la
 
 ### Acceptance Criteria
 
-* Users can access the Privacy Policy
-* Data collection purpose is explained
-* Sharing with Providers is not implied without consent
-* General contact forms do not request unnecessary medical information
-* Tracking consent is handled according to applicable requirements
-* Sensitive data practices are not hidden only in legal text
+- Users can access the Privacy Policy
+- Data collection purpose is explained
+- Sharing with Providers is not implied without consent
+- General contact forms do not request unnecessary medical information
+- Tracking consent is handled according to applicable requirements
+- Sensitive data practices are not hidden only in legal text
 
 ---
 
@@ -848,23 +848,23 @@ A dedicated Provider homepage must exist.
 
 It must explain:
 
-* The clinical fragmentation problem
-* The value of longitudinal review
-* The ODRISC platform identity
-* The relationship between maternal and fetal intelligence
-* The role of clinical decision support
-* Current product status
-* The approved professional next action
+- The clinical fragmentation problem
+- The value of longitudinal review
+- The ODRISC platform identity
+- The relationship between maternal and fetal intelligence
+- The role of clinical decision support
+- Current product status
+- The approved professional next action
 
 ### Acceptance Criteria
 
-* Clinical relevance is established early
-* Provider terminology is used accurately
-* Clinical judgment remains central
-* The page follows the approved Provider story
-* Methodology and validation routes are visible
-* The primary Provider CTA is clear
-* No unsupported regulatory claim is made
+- Clinical relevance is established early
+- Provider terminology is used accurately
+- Clinical judgment remains central
+- The page follows the approved Provider story
+- Methodology and validation routes are visible
+- The primary Provider CTA is clear
+- No unsupported regulatory claim is made
 
 ---
 
@@ -876,24 +876,24 @@ The Provider journey must include a structured overview of the clinical platform
 
 The overview may include:
 
-* Maternal monitoring
-* Fetal-growth intelligence
-* Longitudinal timelines
-* Risk information
-* Weight trajectory
-* Patient-reported information
-* Clinical summaries
-* Collaboration
-* Workflow
-* Future integrations
+- Maternal monitoring
+- Fetal-growth intelligence
+- Longitudinal timelines
+- Risk information
+- Weight trajectory
+- Patient-reported information
+- Clinical summaries
+- Collaboration
+- Workflow
+- Future integrations
 
 ### Acceptance Criteria
 
-* Capability statuses are visible where required
-* The page does not present a disconnected feature catalogue
-* Each capability is related to a clinical need
-* Patient and Provider roles are distinguished
-* Roadmap capabilities are clearly labeled
+- Capability statuses are visible where required
+- The page does not present a disconnected feature catalogue
+- Each capability is related to a clinical need
+- Patient and Provider roles are distinguished
+- Roadmap capabilities are clearly labeled
 
 ---
 
@@ -905,11 +905,11 @@ The website should explain the intended maternal-intelligence layer.
 
 ### Acceptance Criteria
 
-* Inputs are described accurately
-* Outputs are not described as autonomous diagnosis
-* Available and planned elements are distinguished
-* The relationship to monitoring is clear
-* The explanation is reviewable by clinical stakeholders
+- Inputs are described accurately
+- Outputs are not described as autonomous diagnosis
+- Available and planned elements are distinguished
+- The relationship to monitoring is clear
+- The explanation is reviewable by clinical stakeholders
 
 ---
 
@@ -921,25 +921,25 @@ The website should explain the intended fetal-growth intelligence layer.
 
 Potential topics include:
 
-* Gestational-age anchoring
-* Longitudinal scan review
-* Fetal biometry
-* Estimated fetal weight
-* Percentiles
-* Z-scores
-* Growth velocity
-* Centile movement
-* Customized growth
-* Doppler context
+- Gestational-age anchoring
+- Longitudinal scan review
+- Fetal biometry
+- Estimated fetal weight
+- Percentiles
+- Z-scores
+- Growth velocity
+- Centile movement
+- Customized growth
+- Doppler context
 
 ### Acceptance Criteria
 
-* No calculation or methodology is presented inaccurately
-* Clinical standards are cited appropriately
-* Product status is visible
-* Decision support is distinguished from diagnosis
-* Professional interpretation remains central
-* Specialist terminology is defined where required
+- No calculation or methodology is presented inaccurately
+- Clinical standards are cited appropriately
+- Product status is visible
+- Decision support is distinguished from diagnosis
+- Professional interpretation remains central
+- Specialist terminology is defined where required
 
 ---
 
@@ -951,12 +951,12 @@ The Provider journey must explain how ODRISC may fit into clinical workflow.
 
 ### Acceptance Criteria
 
-* The workflow identifies Patient and Provider actions
-* Data entry or collection sources are represented accurately
-* The workflow identifies where professional review occurs
-* The workflow avoids implying real-time monitoring unless implemented
-* Responsibility for alerts or escalation is not left ambiguous
-* Current workflow and future workflow are distinguished
+- The workflow identifies Patient and Provider actions
+- Data entry or collection sources are represented accurately
+- The workflow identifies where professional review occurs
+- The workflow avoids implying real-time monitoring unless implemented
+- Responsibility for alerts or escalation is not left ambiguous
+- Current workflow and future workflow are distinguished
 
 ---
 
@@ -968,14 +968,14 @@ A validation or evidence route must exist before strong clinical adoption claims
 
 ### Acceptance Criteria
 
-* Validation types are distinguished
-* Panel participation is not described as clinical validation
-* Pilot use is not described as proven effectiveness
-* Methodology is summarized
-* Limitations are visible
-* Evidence sources are cited
-* Product status and regulatory status are accurate
-* Unsupported claims are excluded
+- Validation types are distinguished
+- Panel participation is not described as clinical validation
+- Pilot use is not described as proven effectiveness
+- Methodology is summarized
+- Limitations are visible
+- Evidence sources are cited
+- Product status and regulatory status are accurate
+- Unsupported claims are excluded
 
 ---
 
@@ -987,12 +987,12 @@ The Provider journey should provide methodology information appropriate to the p
 
 ### Acceptance Criteria
 
-* It explains relevant logic without exposing restricted intellectual property
-* Clinical standards are referenced accurately
-* Versions and dates are included where material
-* Limitations are acknowledged
-* Conflicting standards are not combined without explanation
-* The content is reviewed by the appropriate clinical owner
+- It explains relevant logic without exposing restricted intellectual property
+- Clinical standards are referenced accurately
+- Versions and dates are included where material
+- Limitations are acknowledged
+- Conflicting standards are not combined without explanation
+- The content is reviewed by the appropriate clinical owner
 
 ---
 
@@ -1004,14 +1004,14 @@ The website must provide a route for qualified Providers to request a demonstrat
 
 ### Acceptance Criteria
 
-* The form identifies the visitor's professional role
-* The form collects only necessary information
-* The visitor understands what will happen after submission
-* Consent language is visible
-* Submissions are routed to an approved owner
-* The action is tracked
-* A success message is shown
-* The form does not request patient medical information
+- The form identifies the visitor's professional role
+- The form collects only necessary information
+- The visitor understands what will happen after submission
+- Consent language is visible
+- Submissions are routed to an approved owner
+- The action is tracked
+- A success message is shown
+- The form does not request patient medical information
 
 ---
 
@@ -1023,12 +1023,12 @@ When pilots are available, the Provider journey should support pilot enquiries.
 
 ### Acceptance Criteria
 
-* Pilot availability is accurate
-* Suitable organization types are explained
-* Expected commitment is described at an appropriate level
-* The enquiry does not imply automatic acceptance
-* Product status and validation status remain clear
-* The action is tracked separately from demonstration requests
+- Pilot availability is accurate
+- Suitable organization types are explained
+- Expected commitment is described at an appropriate level
+- The enquiry does not imply automatic acceptance
+- Product status and validation status remain clear
+- The action is tracked separately from demonstration requests
 
 ---
 
@@ -1040,12 +1040,12 @@ The website should provide an institutional pathway for hospitals, healthcare sy
 
 ### Acceptance Criteria
 
-* Institutional value is explained separately from individual Provider value
-* Implementation, governance, security, and integration topics are addressed
-* Enterprise readiness is not overstated
-* A relevant contact route is provided
-* Qatar and GCC context may be included where approved
-* Institutional visitors are not added to the primary audience gateway
+- Institutional value is explained separately from individual Provider value
+- Implementation, governance, security, and integration topics are addressed
+- Enterprise readiness is not overstated
+- A relevant contact route is provided
+- Qatar and GCC context may be included where approved
+- Institutional visitors are not added to the primary audience gateway
 
 ---
 
@@ -1057,12 +1057,12 @@ The Provider journey must provide appropriate security and privacy information.
 
 ### Acceptance Criteria
 
-* Claims match actual implementation
-* Compliance is not implied without confirmation
-* Role-based access is only described if implemented or clearly marked as planned
-* Data-hosting claims are accurate
-* Privacy and security contacts are available where required
-* The page does not reveal sensitive infrastructure details
+- Claims match actual implementation
+- Compliance is not implied without confirmation
+- Role-based access is only described if implemented or clearly marked as planned
+- Data-hosting claims are accurate
+- Privacy and security contacts are available where required
+- The page does not reveal sensitive infrastructure details
 
 ---
 
@@ -1074,12 +1074,12 @@ Provider pages may include screenshots, prototypes, diagrams, or videos.
 
 ### Acceptance Criteria
 
-* Visuals are labeled as current, prototype, concept, or future where required
-* No fabricated operational data is presented as real patient data
-* Patient information is de-identified
-* Product status matches the visual
-* Interfaces are readable
-* Visuals support the story rather than act as decoration
+- Visuals are labeled as current, prototype, concept, or future where required
+- No fabricated operational data is presented as real patient data
+- Patient information is de-identified
+- Product status matches the visual
+- Interfaces are readable
+- Visuals support the story rather than act as decoration
 
 ---
 
@@ -1091,21 +1091,21 @@ Provider pages may include screenshots, prototypes, diagrams, or videos.
 
 The website must include an About page explaining:
 
-* Why ODRISC exists
-* The product mission
-* The Patient and Provider connection
-* The company direction
-* The founder motivation
-* The team's relevant expertise
+- Why ODRISC exists
+- The product mission
+- The Patient and Provider connection
+- The company direction
+- The founder motivation
+- The team's relevant expertise
 
 ### Acceptance Criteria
 
-* Founder story is accurate
-* Personal history is not presented as clinical evidence
-* Team roles are current
-* Unsupported credentials are excluded
-* The mission aligns with Product Vision
-* The page does not replace product explanation with biography
+- Founder story is accurate
+- Personal history is not presented as clinical evidence
+- Team roles are current
+- Unsupported credentials are excluded
+- The mission aligns with Product Vision
+- The page does not replace product explanation with biography
 
 ---
 
@@ -1117,11 +1117,11 @@ The website should present relevant team members and roles.
 
 ### Acceptance Criteria
 
-* Names and titles are approved
-* Employment or advisory status is accurate
-* Professional qualifications are represented correctly
-* Former or unconfirmed roles are not presented as current
-* Contact details are not exposed without consent
+- Names and titles are approved
+- Employment or advisory status is accurate
+- Professional qualifications are represented correctly
+- Former or unconfirmed roles are not presented as current
+- Contact details are not exposed without consent
 
 ---
 
@@ -1133,11 +1133,11 @@ The website may include partnership information.
 
 ### Acceptance Criteria
 
-* Partnerships are verified
-* Discussions are not presented as signed partnerships
-* Pilot interest is not presented as implementation
-* Logos are used only with permission
-* Strategic programs are described accurately
+- Partnerships are verified
+- Discussions are not presented as signed partnerships
+- Pilot interest is not presented as implementation
+- Logos are used only with permission
+- Strategic programs are described accurately
 
 ---
 
@@ -1149,13 +1149,13 @@ The website should support Patient and Provider resources.
 
 ### Acceptance Criteria
 
-* Resources identify the intended audience
-* Clinical content is reviewed
-* Publication and review dates are shown where appropriate
-* References are included
-* Outdated content can be archived
-* Resource pages link back to relevant product journeys
-* Patient and Provider content are not duplicated unnecessarily
+- Resources identify the intended audience
+- Clinical content is reviewed
+- Publication and review dates are shown where appropriate
+- References are included
+- Outdated content can be archived
+- Resource pages link back to relevant product journeys
+- Patient and Provider content are not duplicated unnecessarily
 
 ---
 
@@ -1167,12 +1167,12 @@ Patient and Provider journeys must address common questions.
 
 ### Acceptance Criteria
 
-* Patient and Provider FAQs are separated or clearly labeled
-* Clinical boundaries are included
-* Product availability is accurate
-* Privacy concerns are addressed
-* Pricing questions are current where relevant
-* FAQs are searchable and accessible
+- Patient and Provider FAQs are separated or clearly labeled
+- Clinical boundaries are included
+- Product availability is accurate
+- Privacy concerns are addressed
+- Pricing questions are current where relevant
+- FAQs are searchable and accessible
 
 ---
 
@@ -1190,24 +1190,24 @@ Every clinical, product, validation, market, regulatory, or outcome claim must b
 
 Content must use the approved status labels:
 
-* Available
-* Limited availability
-* Pilot
-* In validation
-* In development
-* Planned
-* Future roadmap
-* Not publicly announced
+- Available
+- Limited availability
+- Pilot
+- In validation
+- In development
+- Planned
+- Future roadmap
+- Not publicly announced
 
 ## 16.4 Source and Review Dates
 
 Clinical and market content should include:
 
-* Source
-* Publication date
-* Review date
-* Reviewer where required
-* Geographic or population context
+- Source
+- Publication date
+- Review date
+- Reviewer where required
+- Geographic or population context
 
 ## 16.5 Terminology
 
@@ -1229,13 +1229,13 @@ Qatar, India, GCC, and global claims must not be used interchangeably.
 
 Repeated content such as:
 
-* Contact information
-* Product status
-* Pricing
-* Team roles
-* Legal entity information
-* Market availability
-* Common disclaimers
+- Contact information
+- Product status
+- Pricing
+- Team roles
+- Legal entity information
+- Market availability
+- Common disclaimers
 
 should be maintained from a controlled source wherever technically practical.
 
@@ -1245,28 +1245,28 @@ should be maintained from a controlled source wherever technically practical.
 
 The future `INFORMATION_ARCHITECTURE.md` must define:
 
-* Full sitemap
-* URL structure
-* Audience-routing rules
-* Navigation labels
-* Shared and audience-specific pages
-* Parent-child page relationships
-* Breadcrumb behavior
-* Footer architecture
-* Resource taxonomy
-* Content ownership
-* Redirect strategy
-* Localization structure
+- Full sitemap
+- URL structure
+- Audience-routing rules
+- Navigation labels
+- Shared and audience-specific pages
+- Parent-child page relationships
+- Breadcrumb behavior
+- Footer architecture
+- Resource taxonomy
+- Content ownership
+- Redirect strategy
+- Localization structure
 
 The information architecture must preserve:
 
-* One domain
-* Two primary journeys
-* Shared company pages
-* Shared legal pages
-* Clear audience switching
-* Search-intent separation
-* Product-status transparency
+- One domain
+- Two primary journeys
+- Shared company pages
+- Shared legal pages
+- Clear audience switching
+- Search-intent separation
+- Product-status transparency
 
 ---
 
@@ -1320,10 +1320,10 @@ The narrative sequence must remain coherent on mobile.
 
 Animation must support:
 
-* Progression
-* Connection
-* Hierarchy
-* Data transformation
+- Progression
+- Connection
+- Hierarchy
+- Data transformation
 
 Animation must not block reading or interaction.
 
@@ -1333,10 +1333,10 @@ Animation must not block reading or interaction.
 
 Users must be able to:
 
-* Pause or reduce non-essential motion where required
-* Navigate without scroll hijacking
-* Access content without waiting for decorative animation
-* Use the website with keyboard interaction
+- Pause or reduce non-essential motion where required
+- Navigate without scroll hijacking
+- Access content without waiting for decorative animation
+- Use the website with keyboard interaction
 
 ## UX-010 — Form Clarity
 
@@ -1344,10 +1344,10 @@ Users must be able to:
 
 Forms must clearly explain:
 
-* Why information is collected
-* Which fields are required
-* What happens after submission
-* How information will be used
+- Why information is collected
+- Which fields are required
+- What happens after submission
+- How information will be used
 
 ---
 
@@ -1355,9 +1355,9 @@ Forms must clearly explain:
 
 Detailed decisions belong in:
 
-* `docs/design/BRAND_FOUNDATION.md`
-* `docs/design/DESIGN_SYSTEM.md`
-* `docs/design/ANIMATION_GUIDELINES.md`
+- `docs/design/BRAND_FOUNDATION.md`
+- `docs/design/DESIGN_SYSTEM.md`
+- `docs/design/ANIMATION_GUIDELINES.md`
 
 The website must follow these approved high-level requirements:
 
@@ -1365,25 +1365,25 @@ The website must follow these approved high-level requirements:
 
 The website must feel:
 
-* Premium
-* Minimalist
-* Clinical
-* Calm
-* Trustworthy
-* Modern
-* Human
-* Precise
+- Premium
+- Minimalist
+- Clinical
+- Calm
+- Trustworthy
+- Modern
+- Human
+- Precise
 
 ## 19.2 Core Visual Foundation
 
-* White background
-* High negative space
-* Primary text color `#4d4d4d`
-* Linear gradient using `#ff7680` and `#80ffcc`
-* Restrained use of icons
-* Clear typography
-* Minimalist components
-* Accessible contrast
+- White background
+- High negative space
+- Primary text color `#4d4d4d`
+- Linear gradient using `#ff7680` and `#80ffcc`
+- Restrained use of icons
+- Clear typography
+- Minimalist components
+- Accessible contrast
 
 ## 19.3 Visual Storytelling
 
@@ -1405,36 +1405,36 @@ Collaboration
 
 Patient design should prioritize:
 
-* Clarity
-* Reassurance
-* Progress
-* Guided actions
-* Understandable visualizations
-* Non-stigmatizing presentation
+- Clarity
+- Reassurance
+- Progress
+- Guided actions
+- Understandable visualizations
+- Non-stigmatizing presentation
 
 ## 19.5 Provider Design
 
 Provider design should prioritize:
 
-* Clinical hierarchy
-* Data progression
-* Efficient review
-* Explainability
-* Detail on demand
-* Workflow context
+- Clinical hierarchy
+- Data progression
+- Efficient review
+- Explainability
+- Detail on demand
+- Workflow context
 
 ## 19.6 Visual Restrictions
 
 Avoid:
 
-* Excessive decorative gradients
-* Generic AI imagery
-* Robots or neural-network imagery
-* Alarmist medical graphics
-* Excessive stock photography
-* Dense dashboards without explanation
-* Pregnancy stereotypes
-* Weight-shaming imagery
+- Excessive decorative gradients
+- Generic AI imagery
+- Robots or neural-network imagery
+- Alarmist medical graphics
+- Excessive stock photography
+- Dense dashboards without explanation
+- Pregnancy stereotypes
+- Weight-shaming imagery
 
 ---
 
@@ -1528,11 +1528,11 @@ Public content intended for discovery must be indexable.
 
 Every public page must have:
 
-* Unique title
-* Unique meta description
-* Canonical URL
-* Appropriate social metadata
-* Audience-appropriate wording
+- Unique title
+- Unique meta description
+- Canonical URL
+- Appropriate social metadata
+- Audience-appropriate wording
 
 ## SEO-004 — Structured Data
 
@@ -1540,13 +1540,13 @@ Every public page must have:
 
 Applicable structured data may include:
 
-* Organization
-* Website
-* Article
-* FAQ
-* Breadcrumb
-* Person
-* Software or application information where appropriate
+- Organization
+- Website
+- Article
+- FAQ
+- Breadcrumb
+- Person
+- Software or application information where appropriate
 
 Structured data must not make unsupported claims.
 
@@ -1556,14 +1556,14 @@ Structured data must not make unsupported claims.
 
 The website must support:
 
-* XML sitemap
-* Robots directives
-* Canonical tags
-* Redirect management
-* Error-page handling
-* Clean URL structure
-* Mobile usability
-* Performance monitoring
+- XML sitemap
+- Robots directives
+- Canonical tags
+- Redirect management
+- Error-page handling
+- Clean URL structure
+- Mobile usability
+- Performance monitoring
 
 ## SEO-006 — Medical Content Quality
 
@@ -1571,11 +1571,11 @@ The website must support:
 
 Clinical content must demonstrate:
 
-* Relevant authorship or review
-* Source references
-* Review dates
-* Responsible language
-* Clear limitations
+- Relevant authorship or review
+- Source references
+- Review dates
+- Responsible language
+- Clear limitations
 
 ## SEO-007 — International SEO
 
@@ -1593,69 +1593,69 @@ Analytics must be implemented in a privacy-conscious manner.
 
 Track:
 
-* Audience selector viewed
-* Patient selected
-* Provider selected
-* Audience switched
+- Audience selector viewed
+- Patient selected
+- Provider selected
+- Audience switched
 
 ## ANL-002 — Patient Conversion Events
 
 Track as applicable:
 
-* Risk assessment CTA clicked
-* Risk assessment started
-* Risk assessment completed
-* Patient account CTA clicked
-* Registration started
-* Registration completed
-* Membership viewed
-* Purchase initiated
-* Purchase completed
-* Application access clicked
+- Risk assessment CTA clicked
+- Risk assessment started
+- Risk assessment completed
+- Patient account CTA clicked
+- Registration started
+- Registration completed
+- Membership viewed
+- Purchase initiated
+- Purchase completed
+- Application access clicked
 
 ## ANL-003 — Provider Conversion Events
 
 Track:
 
-* Demonstration CTA clicked
-* Demonstration form started
-* Demonstration form submitted
-* Pilot enquiry started
-* Pilot enquiry submitted
-* Clinical resource viewed
-* Validation page viewed
-* Hospital page viewed
+- Demonstration CTA clicked
+- Demonstration form started
+- Demonstration form submitted
+- Pilot enquiry started
+- Pilot enquiry submitted
+- Clinical resource viewed
+- Validation page viewed
+- Hospital page viewed
 
 ## ANL-004 — Content Engagement
 
 Track:
 
-* Resource views
-* Scroll milestones where meaningful
-* Video engagement
-* FAQ interaction
-* Downloads
-* Outbound platform links
+- Resource views
+- Scroll milestones where meaningful
+- Video engagement
+- FAQ interaction
+- Downloads
+- Outbound platform links
 
 ## ANL-005 — Error Events
 
 Track:
 
-* Form failure
-* Broken route
-* Missing destination
-* Failed conversion handoff
-* Technical errors that affect user experience
+- Form failure
+- Broken route
+- Missing destination
+- Failed conversion handoff
+- Technical errors that affect user experience
 
 ## ANL-006 — Audience Segmentation
 
 Reporting should distinguish:
 
-* Shared journey
-* Patient journey
-* Provider journey
-* Institutional journey
-* Market or language where legally appropriate
+- Shared journey
+- Patient journey
+- Provider journey
+- Institutional journey
+- Market or language where legally appropriate
 
 ## ANL-007 — Consent
 
@@ -1713,10 +1713,10 @@ Essential content must not depend on unnecessary client-side JavaScript.
 
 Third-party scripts must be reviewed for:
 
-* Performance
-* Privacy
-* Security
-* Necessity
+- Performance
+- Privacy
+- Security
+- Necessity
 
 ## PER-008 — Monitoring
 
@@ -1792,10 +1792,10 @@ A current Privacy Policy must be publicly accessible.
 
 Consent must be obtained where required for:
 
-* Analytics
-* Marketing communication
-* Contact submission
-* Account or application handoff
+- Analytics
+- Marketing communication
+- Contact submission
+- Account or application handoff
 
 ## PRV-003 — Data Minimization
 
@@ -1851,16 +1851,16 @@ The Qatar launch architecture must prepare for Arabic.
 
 This includes:
 
-* Right-to-left layout
-* Navigation
-* Form alignment
-* Typography
-* Icons
-* Charts
-* Animation direction
-* Mixed-language content
-* Metadata
-* Structured data
+- Right-to-left layout
+- Navigation
+- Form alignment
+- Typography
+- Icons
+- Charts
+- Animation direction
+- Mixed-language content
+- Metadata
+- Structured data
 
 ## LOC-004 — Translation Governance
 
@@ -1892,12 +1892,12 @@ The website must provide a clear transition to the approved Patient application 
 
 ### Acceptance Criteria
 
-* The destination is correct
-* The user understands they are leaving the informational website if applicable
-* Tracking is implemented
-* Authentication status is handled appropriately
-* Failure states are addressed
-* Market availability is checked
+- The destination is correct
+- The user understands they are leaving the informational website if applicable
+- Tracking is implemented
+- Authentication status is handled appropriately
+- Failure states are addressed
+- Market availability is checked
 
 ---
 
@@ -1909,11 +1909,11 @@ When Provider access is available, the website must provide an approved login or
 
 ### Acceptance Criteria
 
-* The login route is clearly distinguished from demo or pilot enquiry
-* Unavailable access is not presented
-* Security is appropriate
-* Audience context is preserved
-* The destination is tracked
+- The login route is clearly distinguished from demo or pilot enquiry
+- Unavailable access is not presented
+- Security is appropriate
+- Audience context is preserved
+- The destination is tracked
 
 ---
 
@@ -1925,11 +1925,11 @@ Contact and conversion forms must route submissions reliably.
 
 ### Acceptance Criteria
 
-* Approved recipients are configured
-* Duplicate submission handling is defined
-* Failure notifications are available
-* Submission records are retained according to policy
-* No sensitive information is exposed in email subject lines or analytics
+- Approved recipients are configured
+- Duplicate submission handling is defined
+- Failure notifications are available
+- Submission records are retained according to policy
+- No sensitive information is exposed in email subject lines or analytics
 
 ---
 
@@ -1969,26 +1969,26 @@ Professional enquiries may later support calendar scheduling if operationally ap
 
 The content-management approach must support:
 
-* Draft
-* Review
-* Approval
-* Publication
-* Update
-* Archive
-* Product-status change
-* Clinical review
-* Legal review
-* Localization
-* Version history where practical
+- Draft
+- Review
+- Approval
+- Publication
+- Update
+- Archive
+- Product-status change
+- Clinical review
+- Legal review
+- Localization
+- Version history where practical
 
 Content roles may include:
 
-* Author
-* Clinical reviewer
-* Product reviewer
-* Legal or privacy reviewer
-* Localization reviewer
-* Publisher
+- Author
+- Clinical reviewer
+- Product reviewer
+- Legal or privacy reviewer
+- Localization reviewer
+- Publisher
 
 The final workflow will be documented in content-governance documentation.
 
@@ -2032,13 +2032,13 @@ Primary Provider action
 
 Conversions must:
 
-* Match visitor readiness
-* Match product availability
-* Explain what happens next
-* Avoid deceptive urgency
-* Avoid unsupported benefit claims
-* Avoid inaccessible or unavailable destinations
-* Be measurable
+- Match visitor readiness
+- Match product availability
+- Explain what happens next
+- Avoid deceptive urgency
+- Avoid unsupported benefit claims
+- Avoid inaccessible or unavailable destinations
+- Be measurable
 
 ---
 
@@ -2052,49 +2052,49 @@ A recommended minimum public launch scope is listed below.
 
 ## 30.1 P0 Shared Launch Scope
 
-* Shared audience entry
-* Patient homepage
-* Provider homepage
-* Audience switching
-* About page
-* Contact page
-* Privacy Policy
-* Terms
-* Core FAQs
-* Product-status governance
-* Analytics
-* SEO foundations
-* Accessibility foundations
-* Responsive design
-* Performance monitoring
-* Error pages
-* Sitemap and robots configuration
+- Shared audience entry
+- Patient homepage
+- Provider homepage
+- Audience switching
+- About page
+- Contact page
+- Privacy Policy
+- Terms
+- Core FAQs
+- Product-status governance
+- Analytics
+- SEO foundations
+- Accessibility foundations
+- Responsive design
+- Performance monitoring
+- Error pages
+- Sitemap and robots configuration
 
 ## 30.2 Conditional Patient Launch Scope
 
 Include only when operationally available:
 
-* Risk-assessment route
-* Patient account route
-* Weight-monitoring route
-* Membership or pricing
-* Nutrition route
-* Physical-activity route
-* Application access
+- Risk-assessment route
+- Patient account route
+- Weight-monitoring route
+- Membership or pricing
+- Nutrition route
+- Physical-activity route
+- Application access
 
 ## 30.3 Conditional Provider Launch Scope
 
 Include only when approved:
 
-* Clinical platform overview
-* Maternal intelligence
-* Fetal-growth intelligence
-* Workflow
-* Validation
-* Methodology
-* Demonstration request
-* Pilot enquiry
-* Hospital or enterprise pathway
+- Clinical platform overview
+- Maternal intelligence
+- Fetal-growth intelligence
+- Workflow
+- Validation
+- Methodology
+- Demonstration request
+- Pilot enquiry
+- Hospital or enterprise pathway
 
 ---
 
@@ -2102,23 +2102,23 @@ Include only when approved:
 
 Unless separately approved, the initial website launch should not require:
 
-* Full Patient account management
-* Full Provider dashboard
-* Live clinical data
-* Real patient records
-* Real-time alerts
-* Clinical chat
-* Emergency triage
-* FHIR integration
-* Electronic-health-record integration
-* Hospital administration
-* Patient-provider messaging
-* Automated report interpretation
-* Full Arabic launch
-* Complex content personalization
-* Multi-market pricing engine
-* Public clinical algorithm documentation
-* Investor data room
+- Full Patient account management
+- Full Provider dashboard
+- Live clinical data
+- Real patient records
+- Real-time alerts
+- Clinical chat
+- Emergency triage
+- FHIR integration
+- Electronic-health-record integration
+- Hospital administration
+- Patient-provider messaging
+- Automated report interpretation
+- Full Arabic launch
+- Complex content personalization
+- Multi-market pricing engine
+- Public clinical algorithm documentation
+- Investor data room
 
 ---
 
@@ -2128,44 +2128,44 @@ Every major page must pass the following review.
 
 ## 32.1 Strategic Acceptance
 
-* Does the page support an approved website objective?
-* Does it serve a defined audience?
-* Does it fit the Website Story?
-* Does it preserve Product Vision?
+- Does the page support an approved website objective?
+- Does it serve a defined audience?
+- Does it fit the Website Story?
+- Does it preserve Product Vision?
 
 ## 32.2 Content Acceptance
 
-* Are claims approved?
-* Is product status accurate?
-* Is terminology correct?
-* Is the audience clear?
-* Is the CTA available?
-* Are limitations included?
+- Are claims approved?
+- Is product status accurate?
+- Is terminology correct?
+- Is the audience clear?
+- Is the CTA available?
+- Are limitations included?
 
 ## 32.3 UX Acceptance
 
-* Is the next action clear?
-* Is the page understandable on mobile?
-* Is the hierarchy clear?
-* Can the page be used with keyboard?
-* Are error states defined?
+- Is the next action clear?
+- Is the page understandable on mobile?
+- Is the hierarchy clear?
+- Can the page be used with keyboard?
+- Are error states defined?
 
 ## 32.4 Design Acceptance
 
-* Does the page follow the Design System?
-* Is contrast sufficient?
-* Is animation purposeful?
-* Are visuals understandable?
-* Does the page preserve the unified brand?
+- Does the page follow the Design System?
+- Is contrast sufficient?
+- Is animation purposeful?
+- Are visuals understandable?
+- Does the page preserve the unified brand?
 
 ## 32.5 Engineering Acceptance
 
-* Does the page meet performance expectations?
-* Does tracking work?
-* Does the page render correctly?
-* Are metadata and canonical tags correct?
-* Are security and privacy requirements met?
-* Are broken links absent?
+- Does the page meet performance expectations?
+- Does tracking work?
+- Does the page render correctly?
+- Are metadata and canonical tags correct?
+- Are security and privacy requirements met?
+- Are broken links absent?
 
 ---
 
@@ -2173,26 +2173,26 @@ Every major page must pass the following review.
 
 Testing must cover:
 
-* Desktop browsers
-* Mobile browsers
-* Responsive breakpoints
-* Keyboard navigation
-* Screen-reader basics
-* Form validation
-* Form submission
-* Error states
-* Audience switching
-* Analytics events
-* Metadata
-* Search-engine indexability
-* Redirects
-* Broken links
-* Image loading
-* Reduced motion
-* Right-to-left readiness where applicable
-* Performance
-* Security headers
-* Cookie and consent behavior
+- Desktop browsers
+- Mobile browsers
+- Responsive breakpoints
+- Keyboard navigation
+- Screen-reader basics
+- Form validation
+- Form submission
+- Error states
+- Audience switching
+- Analytics events
+- Metadata
+- Search-engine indexability
+- Redirects
+- Broken links
+- Image loading
+- Reduced motion
+- Right-to-left readiness where applicable
+- Performance
+- Security headers
+- Cookie and consent behavior
 
 A separate testing specification may be created later.
 
@@ -2204,57 +2204,57 @@ Final numerical targets must be defined through approved analytics and commercia
 
 ## 34.1 Shared Metrics
 
-* Audience selector completion rate
-* Patient versus Provider selection
-* Audience-switch rate
-* Homepage engagement
-* Navigation success
-* Contact conversion
-* Organic search traffic
-* Returning visitors
-* Mobile performance
-* Accessibility issue rate
+- Audience selector completion rate
+- Patient versus Provider selection
+- Audience-switch rate
+- Homepage engagement
+- Navigation success
+- Contact conversion
+- Organic search traffic
+- Returning visitors
+- Mobile performance
+- Accessibility issue rate
 
 ## 34.2 Patient Metrics
 
-* Patient CTA click rate
-* Risk-assessment starts
-* Risk-assessment completion
-* Registration starts
-* Registration completion
-* Membership-page engagement
-* Application handoff
-* Patient-resource engagement
+- Patient CTA click rate
+- Risk-assessment starts
+- Risk-assessment completion
+- Registration starts
+- Registration completion
+- Membership-page engagement
+- Application handoff
+- Patient-resource engagement
 
 ## 34.3 Provider Metrics
 
-* Demonstration CTA click rate
-* Demonstration submissions
-* Pilot enquiries
-* Validation-page engagement
-* Methodology-page engagement
-* Clinical-resource engagement
-* Hospital-page engagement
-* Qualified Provider conversion
+- Demonstration CTA click rate
+- Demonstration submissions
+- Pilot enquiries
+- Validation-page engagement
+- Methodology-page engagement
+- Clinical-resource engagement
+- Hospital-page engagement
+- Qualified Provider conversion
 
 ## 34.4 Technical Metrics
 
-* Core Web Vitals
-* Error rate
-* Form failure rate
-* Broken-link rate
-* Uptime
-* Page-load performance
-* Accessibility compliance
-* Search indexing coverage
+- Core Web Vitals
+- Error rate
+- Form failure rate
+- Broken-link rate
+- Uptime
+- Page-load performance
+- Accessibility compliance
+- Search indexing coverage
 
 ## 34.5 Content Metrics
 
-* Resource engagement
-* Search visibility
-* Time to update changed product status
-* Content review completion
-* Outdated-content rate
+- Resource engagement
+- Search visibility
+- Time to update changed product status
+- Content review completion
+- Outdated-content rate
 
 ---
 
@@ -2262,27 +2262,27 @@ Final numerical targets must be defined through approved analytics and commercia
 
 Website delivery depends on:
 
-* Approved Product Status
-* Approved Patient conversion
-* Approved Provider conversion
-* Final Information Architecture
-* Approved page inventory
-* Brand Foundation
-* Design System
-* Animation Guidelines
-* Technical stack
-* Hosting and deployment decision
-* Form-delivery system
-* Analytics decision
-* Privacy and legal documents
-* Clinical claim review
-* Validation wording
-* Product screenshots or prototypes
-* Qatar market requirements
-* Arabic localization decision
-* Current team information
-* Current pricing and availability
-* Application and platform destinations
+- Approved Product Status
+- Approved Patient conversion
+- Approved Provider conversion
+- Final Information Architecture
+- Approved page inventory
+- Brand Foundation
+- Design System
+- Animation Guidelines
+- Technical stack
+- Hosting and deployment decision
+- Form-delivery system
+- Analytics decision
+- Privacy and legal documents
+- Clinical claim review
+- Validation wording
+- Product screenshots or prototypes
+- Qatar market requirements
+- Arabic localization decision
+- Current team information
+- Current pricing and availability
+- Application and platform destinations
 
 ---
 
@@ -2382,25 +2382,25 @@ The PRD must not create a separate unmanaged question register.
 
 Blocking questions include:
 
-* Final Patient primary conversion
-* Final Provider primary conversion
-* Launch capability statuses
-* Launch page inventory
-* Shared gateway behavior
-* Audience persistence
-* Patient and Provider URL structures
-* Pricing availability
-* Validation claims
-* Regulatory positioning
-* Qatar-specific content
-* Arabic launch timing
-* Application handoff
-* Provider platform access
-* Form ownership
-* Analytics and consent system
-* Content-management approach
-* Hosting and deployment
-* Clinical review process
+- Final Patient primary conversion
+- Final Provider primary conversion
+- Launch capability statuses
+- Launch page inventory
+- Shared gateway behavior
+- Audience persistence
+- Patient and Provider URL structures
+- Pricing availability
+- Validation claims
+- Regulatory positioning
+- Qatar-specific content
+- Arabic launch timing
+- Application handoff
+- Provider platform access
+- Form ownership
+- Analytics and consent system
+- Content-management approach
+- Hosting and deployment
+- Clinical review process
 
 ---
 
@@ -2452,14 +2452,14 @@ Provider demonstration form
 
 The Page Requirements document should map every page to:
 
-* Audience
-* Website objective
-* Website-story stage
-* PRD requirements
-* Product-status dependencies
-* Primary CTA
-* Analytics events
-* Acceptance criteria
+- Audience
+- Website objective
+- Website-story stage
+- PRD requirements
+- Product-status dependencies
+- Primary CTA
+- Analytics events
+- Acceptance criteria
 
 ---
 
@@ -2480,29 +2480,29 @@ Before generating website code, content, page layouts, or components, AI agents 
 
 AI agents must:
 
-* Identify the relevant PRD requirement IDs
-* Identify the audience
-* Identify the story stage
-* Check product status
-* Preserve clinical boundaries
-* Use approved terminology
-* Implement measurable interactions
-* Record material assumptions
-* Avoid creating requirements that conflict with this PRD
+- Identify the relevant PRD requirement IDs
+- Identify the audience
+- Identify the story stage
+- Check product status
+- Preserve clinical boundaries
+- Use approved terminology
+- Implement measurable interactions
+- Record material assumptions
+- Avoid creating requirements that conflict with this PRD
 
 AI agents must not:
 
-* Invent capabilities
-* Invent availability
-* Invent validation
-* Invent regulatory approval
-* Create a separate Patient or Provider brand
-* Replace the website story with generic AI messaging
-* Build application functionality inside the public website without approval
-* Change conversion actions without approval
-* Publish sensitive or restricted information
-* Treat mockups as evidence of implementation
-* Skip accessibility, analytics, performance, or privacy requirements
+- Invent capabilities
+- Invent availability
+- Invent validation
+- Invent regulatory approval
+- Create a separate Patient or Provider brand
+- Replace the website story with generic AI messaging
+- Build application functionality inside the public website without approval
+- Change conversion actions without approval
+- Publish sensitive or restricted information
+- Treat mockups as evidence of implementation
+- Skip accessibility, analytics, performance, or privacy requirements
 
 ---
 
@@ -2512,49 +2512,49 @@ The website is launch ready only when:
 
 ## Product
 
-* Launch scope is approved
-* Product Status is current
-* Patient and Provider conversions are approved
-* Page inventory is complete
-* Required destinations work
+- Launch scope is approved
+- Product Status is current
+- Patient and Provider conversions are approved
+- Page inventory is complete
+- Required destinations work
 
 ## Content
 
-* Patient and Provider copy is approved
-* Clinical claims are reviewed
-* Validation wording is approved
-* Founder and team information is current
-* Legal content is current
-* Product-status language is accurate
+- Patient and Provider copy is approved
+- Clinical claims are reviewed
+- Validation wording is approved
+- Founder and team information is current
+- Legal content is current
+- Product-status language is accurate
 
 ## Design
 
-* Design System is implemented
-* Responsive behavior is approved
-* Accessibility is reviewed
-* Animation is purposeful
-* Patient and Provider experiences remain connected
+- Design System is implemented
+- Responsive behavior is approved
+- Accessibility is reviewed
+- Animation is purposeful
+- Patient and Provider experiences remain connected
 
 ## Engineering
 
-* Production deployment is stable
-* Forms work
-* Analytics works
-* SEO foundations are complete
-* Performance is acceptable
-* Security controls are configured
-* Error pages work
-* Redirects work
-* Monitoring is enabled
+- Production deployment is stable
+- Forms work
+- Analytics works
+- SEO foundations are complete
+- Performance is acceptable
+- Security controls are configured
+- Error pages work
+- Redirects work
+- Monitoring is enabled
 
 ## Operations
 
-* Form recipients are defined
-* Lead follow-up ownership is assigned
-* Content ownership is assigned
-* Product-status review ownership is assigned
-* Security and privacy contacts are defined
-* Update procedures are documented
+- Form recipients are defined
+- Lead follow-up ownership is assigned
+- Content ownership is assigned
+- Product-status review ownership is assigned
+- Security and privacy contacts are defined
+- Update procedures are documented
 
 ---
 
@@ -2564,16 +2564,16 @@ The ODRISC website must be one unified public platform serving Patients and heal
 
 The website must:
 
-* Explain pregnancy as a longitudinal story
-* Present fragmentation as the central problem
-* Present longitudinal maternal and fetal intelligence as the ODRISC response
-* Support Patient understanding and informed participation
-* Support Provider evaluation and adoption
-* Strengthen Patient-Provider collaboration
-* Preserve clinical judgment
-* Distinguish current, pilot, developing, and future capabilities
-* Build trust through evidence, transparency, privacy, and responsible language
-* Remain accessible, responsive, performant, secure, measurable, and localization-ready
+- Explain pregnancy as a longitudinal story
+- Present fragmentation as the central problem
+- Present longitudinal maternal and fetal intelligence as the ODRISC response
+- Support Patient understanding and informed participation
+- Support Provider evaluation and adoption
+- Strengthen Patient-Provider collaboration
+- Preserve clinical judgment
+- Distinguish current, pilot, developing, and future capabilities
+- Build trust through evidence, transparency, privacy, and responsible language
+- Remain accessible, responsive, performant, secure, measurable, and localization-ready
 
 The public website must not attempt to become the full clinical platform.
 

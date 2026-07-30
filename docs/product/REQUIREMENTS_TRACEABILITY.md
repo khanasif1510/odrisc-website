@@ -26,7 +26,6 @@ It must be completed progressively after Information Architecture and page requi
 | SHR-019 | All applicable Page IDs and shared modules | P0 | Shared | Consistent, secure, typed, and reviewable implementation | All stages | Entire public website | Coding Standards | Code-specific | CI and code review | Not started |
 | SHR-020 | All applicable Page IDs and shared modules | P0 | Shared | Verifiable, accessible, safe, and release-ready implementation | All stages | Entire public website | Testing Strategy | Test-specific | CI, manual QA, staging, and production smoke | Not started |
 
-
 ## SHR-011 — Information Architecture Compliance
 
 **Priority:** P0

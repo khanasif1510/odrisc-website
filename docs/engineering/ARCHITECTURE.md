@@ -18,39 +18,39 @@
 
 ## Related Documents
 
-* `PROJECT_CONTEXT.md`
-* `README.md`
-* `AGENTS.md`
-* `CLAUDE.md`
-* `docs/project/SOURCE_OF_TRUTH.md`
-* `docs/project/ASSUMPTIONS.md`
-* `docs/project/OPEN_QUESTIONS.md`
-* `docs/project/GLOSSARY.md`
-* `docs/product/PRODUCT_VISION.md`
-* `docs/product/AUDIENCE.md`
-* `docs/product/WEBSITE_OBJECTIVES.md`
-* `docs/product/WEBSITE_STORY.md`
-* `docs/product/PRD.md`
-* `docs/product/PRODUCT_STATUS.md`
-* `docs/product/INFORMATION_ARCHITECTURE.md`
-* `docs/product/PAGE_REQUIREMENTS.md`
-* `docs/product/ROUTE_REGISTRY.md`
-* `docs/product/REQUIREMENTS_TRACEABILITY.md`
-* `docs/product/PAGE_IMPLEMENTATION_TRACKER.md`
-* `docs/design/BRAND_FOUNDATION.md`
-* `docs/design/DESIGN_SYSTEM.md`
-* `docs/design/ANIMATION_GUIDELINES.md`
-* `docs/engineering/TECH_STACK.md`
-* `docs/engineering/DEPENDENCY_POLICY.md`
-* `docs/engineering/ENVIRONMENT_VARIABLES.md`
-* `docs/engineering/PERFORMANCE_BUDGET.md`
-* `docs/engineering/COMPONENT_LIBRARY.md`
-* `docs/engineering/CODING_STANDARDS.md`
-* `docs/engineering/TESTING_STRATEGY.md`
-* `docs/engineering/SECURITY_ARCHITECTURE.md`
-* `docs/engineering/DEPLOYMENT_RUNBOOK.md`
-* `ai/rules/NON_NEGOTIABLES.md`
-* `ai/rules/AI_BEHAVIOR.md`
+- `PROJECT_CONTEXT.md`
+- `README.md`
+- `AGENTS.md`
+- `CLAUDE.md`
+- `docs/project/SOURCE_OF_TRUTH.md`
+- `docs/project/ASSUMPTIONS.md`
+- `docs/project/OPEN_QUESTIONS.md`
+- `docs/project/GLOSSARY.md`
+- `docs/product/PRODUCT_VISION.md`
+- `docs/product/AUDIENCE.md`
+- `docs/product/WEBSITE_OBJECTIVES.md`
+- `docs/product/WEBSITE_STORY.md`
+- `docs/product/PRD.md`
+- `docs/product/PRODUCT_STATUS.md`
+- `docs/product/INFORMATION_ARCHITECTURE.md`
+- `docs/product/PAGE_REQUIREMENTS.md`
+- `docs/product/ROUTE_REGISTRY.md`
+- `docs/product/REQUIREMENTS_TRACEABILITY.md`
+- `docs/product/PAGE_IMPLEMENTATION_TRACKER.md`
+- `docs/design/BRAND_FOUNDATION.md`
+- `docs/design/DESIGN_SYSTEM.md`
+- `docs/design/ANIMATION_GUIDELINES.md`
+- `docs/engineering/TECH_STACK.md`
+- `docs/engineering/DEPENDENCY_POLICY.md`
+- `docs/engineering/ENVIRONMENT_VARIABLES.md`
+- `docs/engineering/PERFORMANCE_BUDGET.md`
+- `docs/engineering/COMPONENT_LIBRARY.md`
+- `docs/engineering/CODING_STANDARDS.md`
+- `docs/engineering/TESTING_STRATEGY.md`
+- `docs/engineering/SECURITY_ARCHITECTURE.md`
+- `docs/engineering/DEPLOYMENT_RUNBOOK.md`
+- `ai/rules/NON_NEGOTIABLES.md`
+- `ai/rules/AI_BEHAVIOR.md`
 
 The reusable presentation architecture, component hierarchy, Server and Client classifications, Component IDs, composition rules, and component-level contracts are defined in:
 
@@ -64,39 +64,39 @@ This document defines how the approved ODRISC public-website technologies are or
 
 It establishes:
 
-* System context
-* System boundaries
-* Trust boundaries
-* Repository architecture
-* Application layers
-* Module boundaries
-* Dependency direction
-* Routing
-* Localization
-* Rendering
-* Server and Client Component boundaries
-* Content architecture
-* Product Status architecture
-* Design-system implementation
-* Motion implementation
-* API integration
-* Form processing
-* Consent and analytics
-* SEO
-* Caching
-* Runtime configuration
-* Security controls
-* Error handling
-* Logging
-* Observability
-* Testing
-* Continuous integration
-* Docker topology
-* Nginx routing
-* Deployment
-* Health checks
-* Rollback
-* Architecture governance
+- System context
+- System boundaries
+- Trust boundaries
+- Repository architecture
+- Application layers
+- Module boundaries
+- Dependency direction
+- Routing
+- Localization
+- Rendering
+- Server and Client Component boundaries
+- Content architecture
+- Product Status architecture
+- Design-system implementation
+- Motion implementation
+- API integration
+- Form processing
+- Consent and analytics
+- SEO
+- Caching
+- Runtime configuration
+- Security controls
+- Error handling
+- Logging
+- Observability
+- Testing
+- Continuous integration
+- Docker topology
+- Nginx routing
+- Deployment
+- Health checks
+- Rollback
+- Architecture governance
 
 This document answers:
 
@@ -112,32 +112,32 @@ This architecture applies to the public ODRISC website at:
 
 It includes:
 
-* Shared audience entry
-* Patient public pages
-* Provider public pages
-* Institutional pages
-* Resource content
-* Company pages
-* Legal pages
-* Public forms
-* Public product previews
-* Analytics and consent
-* Application handoffs
-* Approved public API integrations
-* Self-hosted deployment
+- Shared audience entry
+- Patient public pages
+- Provider public pages
+- Institutional pages
+- Resource content
+- Company pages
+- Legal pages
+- Public forms
+- Public product previews
+- Analytics and consent
+- Application handoffs
+- Approved public API integrations
+- Self-hosted deployment
 
 It does not define the internal architecture of:
 
-* The Patient application
-* The Provider platform
-* Existing `.NET 6` APIs
-* SQL Server databases
-* Clinical intelligence engines
-* OCR processing
-* FHIR integrations
-* Hospital systems
-* Native mobile applications
-* Internal administrative systems
+- The Patient application
+- The Provider platform
+- Existing `.NET 6` APIs
+- SQL Server databases
+- Clinical intelligence engines
+- OCR processing
+- FHIR integrations
+- Hospital systems
+- Native mobile applications
+- Internal administrative systems
 
 The website must remain separated from clinical systems by approved API boundaries.
 
@@ -180,24 +180,24 @@ The architecture must support:
 
 The public website is responsible for:
 
-* Explanation
-* Trust
-* Education
-* Search discovery
-* Public resources
-* Conversion
-* Demonstration requests
-* Application handoff
+- Explanation
+- Trust
+- Education
+- Search discovery
+- Public resources
+- Conversion
+- Demonstration requests
+- Application handoff
 
 It is not responsible for:
 
-* Storing clinical records
-* Calculating clinical risk
-* Interpreting fetal growth
-* Managing care
-* Authenticating application users
-* Operating clinical alerts
-* Accessing SQL Server directly
+- Storing clinical records
+- Calculating clinical risk
+- Interpreting fetal growth
+- Managing care
+- Authenticating application users
+- Operating clinical alerts
+- Accessing SQL Server directly
 
 ## 4.2 Static Before Dynamic
 
@@ -207,23 +207,23 @@ A page should be static unless a documented requirement needs request-time execu
 
 A component should remain server-rendered unless it needs:
 
-* Browser state
-* Interaction
-* Motion
-* Consent state
-* Client analytics
-* Browser APIs
-* Interactive charts
+- Browser state
+- Interaction
+- Motion
+- Consent state
+- Client analytics
+- Browser APIs
+- Interactive charts
 
 ## 4.4 Composition Before Duplication
 
 Pages should be composed from:
 
-* Shared primitives
-* Shared UI components
-* Audience-aware patterns
-* Page sections
-* Typed content
+- Shared primitives
+- Shared UI components
+- Audience-aware patterns
+- Page sections
+- Typed content
 
 Patient and Provider pages must not create separate component systems.
 
@@ -231,13 +231,13 @@ Patient and Provider pages must not create separate component systems.
 
 The architecture must make clear which code belongs to:
 
-* Presentation
-* Content
-* Application logic
-* Integrations
-* Server-only operations
-* Client-only behavior
-* Configuration
+- Presentation
+- Content
+- Application logic
+- Integrations
+- Server-only operations
+- Client-only behavior
+- Configuration
 
 ## 4.6 Dependencies Point Inward
 
@@ -273,15 +273,15 @@ The public website uses a:
 
 This means:
 
-* One deployable Next.js application
-* One source repository
-* One build artifact
-* Clearly separated internal modules
-* External integrations behind adapters
-* No independent website microservices
-* No website-owned database
-* No distributed event system
-* No separate Patient and Provider frontends
+- One deployable Next.js application
+- One source repository
+- One build artifact
+- Clearly separated internal modules
+- External integrations behind adapters
+- No independent website microservices
+- No website-owned database
+- No distributed event system
+- No separate Patient and Provider frontends
 
 The modular monolith may be decomposed later only when an operational requirement justifies it.
 
@@ -295,22 +295,22 @@ The public website will use a dedicated single-application repository.
 
 The repository contains:
 
-* Public website application
-* Public website documentation
-* Design tokens
-* Tests
-* Storybook
-* Infrastructure configuration
-* Deployment scripts
+- Public website application
+- Public website documentation
+- Design tokens
+- Tests
+- Storybook
+- Infrastructure configuration
+- Deployment scripts
 
 It does not contain:
 
-* Clinical backend source
-* SQL Server credentials
-* Patient application source
-* Provider-platform source
-* Production clinical data
-* Native mobile application source
+- Clinical backend source
+- SQL Server credentials
+- Patient application source
+- Provider-platform source
+- Production clinical data
+- Native mobile application source
 
 ## 6.2 Monorepo Position
 
@@ -369,12 +369,12 @@ Untrusted.
 
 May provide:
 
-* Navigation requests
-* Locale preference
-* Audience preference
-* Consent preference
-* Public form data
-* Search-engine requests
+- Navigation requests
+- Locale preference
+- Audience preference
+- Consent preference
+- Public form data
+- Search-engine requests
 
 All browser-supplied information must be treated as untrusted.
 
@@ -384,14 +384,14 @@ Controlled infrastructure.
 
 Responsible for:
 
-* TLS
-* Request limits
-* Proxying
-* Security headers
-* Rate limiting
-* Request IDs
-* Static-asset caching
-* Environment-level noindex controls
+- TLS
+- Request limits
+- Proxying
+- Security headers
+- Rate limiting
+- Request IDs
+- Static-asset caching
+- Environment-level noindex controls
 
 ## Zone 3 — Website Application Container
 
@@ -399,14 +399,14 @@ Trusted application runtime.
 
 Responsible for:
 
-* Rendering
-* Content
-* Validation
-* Forms
-* Approved external requests
-* Analytics configuration
-* Logging
-* Error mapping
+- Rendering
+- Content
+- Validation
+- Forms
+- Approved external requests
+- Analytics configuration
+- Logging
+- Error mapping
 
 ## Zone 4 — Approved External Services
 
@@ -414,12 +414,12 @@ Partially trusted.
 
 Includes:
 
-* Form delivery
-* Analytics
-* Error monitoring
-* Email
-* CRM
-* Public ODRISC APIs
+- Form delivery
+- Analytics
+- Error monitoring
+- Email
+- CRM
+- Public ODRISC APIs
 
 All external responses require validation and controlled error handling.
 
@@ -429,12 +429,12 @@ Highly restricted.
 
 The public website must not directly access:
 
-* Clinical database
-* Patient records
-* Ultrasound records
-* Internal clinical algorithms
-* Internal Provider notes
-* SQL Server credentials
+- Clinical database
+- Patient records
+- Ultrasound records
+- Internal clinical algorithms
+- Internal Provider notes
+- SQL Server credentials
 
 Access may occur only through an approved public API designed for that specific purpose.
 
@@ -609,13 +609,13 @@ The exact folder structure may evolve without changing the architectural boundar
 
 The route layer is responsible for:
 
-* URL ownership
-* Layout composition
-* Metadata connection
-* Content loading
-* Page-section composition
-* Error and loading boundaries
-* Static-parameter generation
+- URL ownership
+- Layout composition
+- Metadata connection
+- Content loading
+- Page-section composition
+- Error and loading boundaries
+- Static-parameter generation
 
 Route files should remain thin.
 
@@ -631,12 +631,12 @@ A route file should generally:
 
 Route files must not:
 
-* Call vendor SDKs directly
-* Define reusable design rules
-* Contain complex form-delivery logic
-* Send analytics directly
-* Duplicate content schemas
-* Implement clinical calculations
+- Call vendor SDKs directly
+- Define reusable design rules
+- Contain complex form-delivery logic
+- Send analytics directly
+- Duplicate content schemas
+- Implement clinical calculations
 
 ---
 
@@ -651,20 +651,20 @@ export const pageDefinition = {
   id: "PAT-PG-001",
   routeKey: "patients.home",
   audience: "patient",
-  pageType: "audience-homepage"
+  pageType: "audience-homepage",
 } as const;
 ```
 
 The Page ID is used for:
 
-* Content lookup
-* Metadata
-* Analytics
-* Testing
-* Implementation tracking
-* Requirements traceability
-* Product Status checks
-* Brand and accessibility review
+- Content lookup
+- Metadata
+- Analytics
+- Testing
+- Implementation tracking
+- Requirements traceability
+- Product Status checks
+- Brand and accessibility review
 
 Visible page titles may change without changing the Page ID.
 
@@ -682,15 +682,15 @@ src/config/routes.ts
 
 It should contain:
 
-* Route key
-* Page ID
-* Audience
-* Page type
-* Indexation
-* Locale support
-* Canonical path definition
-* Audience-switch equivalent
-* Primary CTA identifier
+- Route key
+- Page ID
+- Audience
+- Page type
+- Indexation
+- Locale support
+- Canonical path definition
+- Audience-switch equivalent
+- Primary CTA identifier
 
 The registry must not become a second Information Architecture.
 
@@ -698,11 +698,11 @@ It is the typed implementation of approved architecture.
 
 CI should detect:
 
-* Duplicate Page IDs
-* Duplicate canonical paths
-* Missing route definitions
-* Unsupported status values
-* Broken audience-switch mappings
+- Duplicate Page IDs
+- Duplicate canonical paths
+- Missing route definitions
+- Unsupported status values
+- Broken audience-switch mappings
 
 ---
 
@@ -734,20 +734,20 @@ This allows the approved policy to be changed without rewriting page components.
 
 The policy may later support:
 
-* Always-prefixed locale routes
-* Default-locale optional prefix
-* Market-language combinations
-* Localized public pathnames
+- Always-prefixed locale routes
+- Default-locale optional prefix
+- Market-language combinations
+- Localized public pathnames
 
 ## 14.3 Locale Resolution
 
 `src/proxy.ts` is responsible for:
 
-* Locale negotiation
-* Approved locale redirects
-* Locale cookie handling
-* Excluding API and static-asset routes
-* Preserving direct deep links
+- Locale negotiation
+- Approved locale redirects
+- Locale cookie handling
+- Excluding API and static-asset routes
+- Preserving direct deep links
 
 ## 14.4 Navigation
 
@@ -764,13 +764,13 @@ Page components should not manually concatenate locale prefixes.
 The locale layout must set:
 
 ```html
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl"></html>
 ```
 
 or:
 
 ```html
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr"></html>
 ```
 
 according to the active locale.
@@ -781,9 +781,9 @@ The application must not silently hide missing translations.
 
 Missing translations should:
 
-* Fail validation in CI for required P0 content
-* Produce a visible controlled fallback only where approved
-* Never expose raw translation keys publicly
+- Fail validation in CI for required P0 content
+- Produce a visible controlled fallback only where approved
+- Never expose raw translation keys publicly
 
 ## 14.7 Content Equivalence
 
@@ -797,17 +797,17 @@ Legal, clinical, Product Status, CTA, and safety content must preserve equivalen
 
 The following should be statically rendered:
 
-* Shared entry
-* Patient public pages
-* Provider public pages
-* About pages
-* Resources
-* Validation
-* Methodology
-* FAQs
-* Legal pages
-* Accessibility
-* Login handoff page
+- Shared entry
+- Patient public pages
+- Provider public pages
+- About pages
+- Resources
+- Validation
+- Methodology
+- FAQs
+- Legal pages
+- Accessibility
+- Login handoff page
 
 ## 15.2 Static Resource Generation
 
@@ -815,20 +815,20 @@ Resource detail routes should use approved resource metadata and static paramete
 
 The build should fail for:
 
-* Duplicate slugs
-* Unsupported locales
-* Missing required metadata
-* Invalid references
-* Missing required review dates
+- Duplicate slugs
+- Unsupported locales
+- Missing required metadata
+- Invalid references
+- Missing required review dates
 
 ## 15.3 Dynamic Endpoints
 
 The following remain request-time endpoints:
 
-* Health checks
-* Public runtime configuration
-* Approved webhooks
-* Future external API endpoints
+- Health checks
+- Public runtime configuration
+- Approved webhooks
+- Future external API endpoints
 
 ## 15.4 Static Shell With Server Mutation
 
@@ -867,33 +867,33 @@ Public page copy should not depend on a request-time CMS or external content API
 
 Server Components are the default for:
 
-* Page layouts
-* Page sections
-* Content rendering
-* Metadata
-* Resource indexes
-* Team data
-* Product Status
-* Pricing
-* Validation data
-* Structured data
-* Application-handoff configuration
-* Server-side API reads
+- Page layouts
+- Page sections
+- Content rendering
+- Metadata
+- Resource indexes
+- Team data
+- Product Status
+- Pricing
+- Validation data
+- Structured data
+- Application-handoff configuration
+- Server-side API reads
 
 Benefits sought by this architecture include:
 
-* Reduced client JavaScript
-* Controlled server-only access
-* Direct content loading
-* Clear separation of interaction
+- Reduced client JavaScript
+- Controlled server-only access
+- Direct content loading
+- Clear separation of interaction
 
 Server Components must not pass:
 
-* Secrets
-* Full environment objects
-* Vendor clients
-* Server-only error details
-* Sensitive API responses
+- Secrets
+- Full environment objects
+- Vendor clients
+- Server-only error details
+- Sensitive API responses
 
 to Client Components.
 
@@ -903,17 +903,17 @@ to Client Components.
 
 A component may become a Client Component only when it needs:
 
-* Event handlers
-* State
-* Effects
-* Browser APIs
-* Motion
-* Consent
-* Interactive form feedback
-* Interactive chart behavior
-* Audience preference
-* Locale-switch interaction
-* Modal, drawer, tabs, or accordion behavior
+- Event handlers
+- State
+- Effects
+- Browser APIs
+- Motion
+- Consent
+- Interactive form feedback
+- Interactive chart behavior
+- Audience preference
+- Locale-switch interaction
+- Modal, drawer, tabs, or accordion behavior
 
 ## 18.1 Small Boundary Rule
 
@@ -936,11 +936,11 @@ Client page
 
 Props crossing the server-to-client boundary must be:
 
-* Minimal
-* Serializable
-* Validated where externally sourced
-* Free from secrets
-* Free from unnecessary content duplication
+- Minimal
+- Serializable
+- Validated where externally sourced
+- Free from secrets
+- Free from unnecessary content duplication
 
 ---
 
@@ -964,9 +964,9 @@ CI or code review should detect pages unnecessarily marked with:
 
 The Component Library should identify which components are:
 
-* Server-safe
-* Client-only
-* Server-composed with Client internals
+- Server-safe
+- Client-only
+- Server-composed with Client internals
 
 ---
 
@@ -1021,23 +1021,23 @@ UI components must not import:
 
 ## 20.2 Prohibited Direction
 
-* `components` must not import from `app`
-* Client Components must not import from `server`
-* `server` must not import UI components
-* `content` must not import page components
-* `lib` must not depend on feature-specific UI
-* Vendor SDKs must not be imported directly by page components
-* Integration adapters must not import route files
+- `components` must not import from `app`
+- Client Components must not import from `server`
+- `server` must not import UI components
+- `content` must not import page components
+- `lib` must not depend on feature-specific UI
+- Vendor SDKs must not be imported directly by page components
+- Integration adapters must not import route files
 
 ## 20.3 Enforcement
 
 Use:
 
-* TypeScript path aliases
-* ESLint `no-restricted-imports`
-* `server-only` markers
-* Code review
-* Architecture tests
+- TypeScript path aliases
+- ESLint `no-restricted-imports`
+- `server-only` markers
+- Code review
+- Architecture tests
 
 ---
 
@@ -1049,47 +1049,47 @@ Presentation code is divided into four levels.
 
 Examples:
 
-* Button
-* Link
-* Input
-* Label
-* Dialog
-* Tabs
-* Accordion
-* Badge
+- Button
+- Link
+- Input
+- Label
+- Dialog
+- Tabs
+- Accordion
+- Badge
 
 ## Level 2 — UI Components
 
 Examples:
 
-* Product Status Badge
-* Evidence Card
-* Clinical Boundary Callout
-* Audience Card
-* Metric Card
-* Form Field
-* Breadcrumbs
+- Product Status Badge
+- Evidence Card
+- Clinical Boundary Callout
+- Audience Card
+- Metric Card
+- Form Field
+- Breadcrumbs
 
 ## Level 3 — Patterns
 
 Examples:
 
-* Audience Selector
-* Patient Capability Grid
-* Provider Intelligence Flow
-* Resource Metadata
-* Demo Request Form
-* Narrative Timeline
+- Audience Selector
+- Patient Capability Grid
+- Provider Intelligence Flow
+- Resource Metadata
+- Demo Request Form
+- Narrative Timeline
 
 ## Level 4 — Page Sections
 
 Examples:
 
-* Patient Hero
-* Provider Platform Overview
-* Validation Evidence Section
-* Shared Final CTA
-* Hospital Implementation Section
+- Patient Hero
+- Provider Platform Overview
+- Validation Evidence Section
+- Shared Final CTA
+- Hospital Implementation Section
 
 Page sections may compose lower-level components but should not become globally reusable without evidence.
 
@@ -1123,12 +1123,12 @@ CSS variables are the runtime styling source.
 
 Typed exports support:
 
-* Charts
-* JavaScript calculations
-* Storybook controls
-* Tests
-* Motion
-* Metadata images
+- Charts
+- JavaScript calculations
+- Storybook controls
+- Tests
+- Motion
+- Metadata images
 
 Token values must not be copied manually across multiple files.
 
@@ -1138,31 +1138,28 @@ Token values must not be copied manually across multiple files.
 
 Component variants may represent:
 
-* Size
-* Semantic state
-* Audience density
-* Product Status
-* Clinical context
-* Surface context
+- Size
+- Semantic state
+- Audience density
+- Product Status
+- Clinical context
+- Surface context
 
 Variants must not represent arbitrary page-specific preferences.
 
 Example:
 
 ```ts
-type CapabilityCardVariant =
-  | "patient"
-  | "provider"
-  | "institutional";
+type CapabilityCardVariant = "patient" | "provider" | "institutional";
 ```
 
 Patient and Provider variants must share:
 
-* Anatomy
-* Accessibility
-* Token system
-* Core interaction
-* Responsive rules
+- Anatomy
+- Accessibility
+- Token system
+- Core interaction
+- Responsive rules
 
 ---
 
@@ -1176,13 +1173,13 @@ src/components/motion/
 
 Potential primitives:
 
-* `MotionReveal`
-* `MotionStagger`
-* `MotionLineDraw`
-* `MotionTimeline`
-* `MotionDrawer`
-* `MotionDialog`
-* `ReducedMotionBoundary`
+- `MotionReveal`
+- `MotionStagger`
+- `MotionLineDraw`
+- `MotionTimeline`
+- `MotionDrawer`
+- `MotionDialog`
+- `ReducedMotionBoundary`
 
 Motion configuration belongs in design tokens and Motion Specifications.
 
@@ -1218,37 +1215,37 @@ src/content/
 
 Use MDX for:
 
-* Resources
-* Clinical briefs
-* Evidence summaries
-* Methodology notes
-* Long explanatory sections
+- Resources
+- Clinical briefs
+- Evidence summaries
+- Methodology notes
+- Long explanatory sections
 
 ### Structured Data
 
 Use TypeScript or JSON for:
 
-* Navigation
-* Product Status
-* Team
-* Contributors
-* FAQs
-* Pricing
-* Market availability
-* Validation records
-* Contact categories
-* Audience-switch mappings
+- Navigation
+- Product Status
+- Team
+- Contributors
+- FAQs
+- Pricing
+- Market availability
+- Validation records
+- Contact categories
+- Audience-switch mappings
 
 ### Interface Copy
 
 Use localization messages for:
 
-* Buttons
-* Labels
-* Navigation
-* Form errors
-* Consent
-* Utility states
+- Buttons
+- Labels
+- Navigation
+- Form errors
+- Consent
+- Utility states
 
 ## 25.3 Content Separation
 
@@ -1256,11 +1253,11 @@ Content should be separated from component logic.
 
 Avoid:
 
-* Long page copy embedded in TSX
-* Pricing duplicated across pages
-* Product Status strings defined in components
-* Market availability encoded in conditional JSX
-* Translation strings constructed through concatenation
+- Long page copy embedded in TSX
+- Pricing duplicated across pages
+- Product Status strings defined in components
+- Market availability encoded in conditional JSX
+- Translation strings constructed through concatenation
 
 ---
 
@@ -1340,13 +1337,13 @@ The build must fail for material content errors.
 
 Warnings alone are insufficient for:
 
-* Invalid Product Status
-* Duplicate resource slug
-* Missing P0 translation
-* Missing required clinical reviewer
-* Invalid route
-* Missing canonical metadata
-* Invalid pricing structure
+- Invalid Product Status
+- Duplicate resource slug
+- Missing P0 translation
+- Missing required clinical reviewer
+- Invalid route
+- Missing canonical metadata
+- Invalid pricing structure
 
 ---
 
@@ -1360,14 +1357,14 @@ src/content/data/product-status.ts
 
 It must use the approved status vocabulary:
 
-* Available
-* Limited availability
-* Pilot
-* In validation
-* In development
-* Planned
-* Future roadmap
-* Not publicly announced
+- Available
+- Limited availability
+- Pilot
+- In validation
+- In development
+- Planned
+- Future roadmap
+- Not publicly announced
 
 Each public capability record should include:
 
@@ -1416,14 +1413,14 @@ Navigation data belongs in one typed source.
 
 It should define:
 
-* Shared navigation
-* Patient navigation
-* Provider navigation
-* Footer navigation
-* Audience switching
-* Locale switching
-* Conditional login links
-* Conditional market routes
+- Shared navigation
+- Patient navigation
+- Provider navigation
+- Footer navigation
+- Audience switching
+- Locale switching
+- Conditional login links
+- Conditional market routes
 
 Navigation components should not hard-code route strings.
 
@@ -1445,7 +1442,7 @@ Example:
 const equivalentRoutes = {
   "patients.home": "providers.home",
   "patients.progress": "providers.intelligence",
-  "patients.faq": "providers.faq"
+  "patients.faq": "providers.faq",
 } as const;
 ```
 
@@ -1455,10 +1452,10 @@ Audience preference may be stored in a first-party cookie.
 
 The preference must not:
 
-* Override direct deep links
-* Become a health profile
-* Be used for advertising
-* Block audience switching
+- Override direct deep links
+- Become a health profile
+- Be used for advertising
+- Block audience switching
 
 ---
 
@@ -1468,18 +1465,18 @@ Market and locale are separate concepts.
 
 Examples:
 
-* English in Qatar
-* Arabic in Qatar
-* English in India
+- English in Qatar
+- Arabic in Qatar
+- English in India
 
 Market configuration may control:
 
-* Availability
-* Pricing
-* CTA destination
-* Contact route
-* Legal applicability
-* Login handoff
+- Availability
+- Pricing
+- CTA destination
+- Contact route
+- Legal applicability
+- Login handoff
 
 V1 must not infer market solely from language.
 
@@ -1491,14 +1488,14 @@ A general market selector should not be introduced until market differences mate
 
 The V1 application may use typed feature configuration for:
 
-* Page publication
-* CTA availability
-* Login handoff
-* Public risk-assessment access
-* Demonstration availability
-* Pilot availability
-* Analytics activation
-* Locale availability
+- Page publication
+- CTA availability
+- Login handoff
+- Public risk-assessment access
+- Demonstration availability
+- Pilot availability
+- Analytics activation
+- Locale availability
 
 Feature configuration must not become an uncontrolled feature-flag platform.
 
@@ -1506,11 +1503,11 @@ Feature configuration must not become an uncontrolled feature-flag platform.
 
 A/B testing involving:
 
-* Clinical wording
-* Risk communication
-* Patient safety
-* Product Status
-* Medical claims
+- Clinical wording
+- Risk communication
+- Patient safety
+- Product Status
+- Medical claims
 
 requires explicit product, clinical, privacy, and ethics review.
 
@@ -1550,11 +1547,11 @@ type PublicRuntimeConfig = {
 
 The endpoint must:
 
-* Return only allowlisted fields
-* Use `no-store`
-* Never expose secrets
-* Be schema validated
-* Avoid health or user information
+- Return only allowlisted fields
+- Use `no-store`
+- Never expose secrets
+- Be schema validated
+- Avoid health or user information
 
 ## 34.3 `NEXT_PUBLIC_*` Policy
 
@@ -1570,13 +1567,13 @@ The same immutable application image should be promotable from staging to produc
 
 To support this:
 
-* Secrets remain runtime variables
-* External service endpoints remain runtime variables
-* Analytics identifiers remain runtime configuration
-* Deployment version is injected by CI
-* Staging receives noindex controls at the edge
-* Production canonical metadata remains stable
-* Environment-specific logic remains outside compiled client constants
+- Secrets remain runtime variables
+- External service endpoints remain runtime variables
+- Analytics identifiers remain runtime configuration
+- Deployment version is injected by CI
+- Staging receives noindex controls at the edge
+- Production canonical metadata remains stable
+- Environment-specific logic remains outside compiled client constants
 
 A value that materially changes the static content may still require a new build.
 
@@ -1619,14 +1616,14 @@ src/server/integrations/odrisc-api/
 
 Responsibilities:
 
-* Base URL
-* Authentication where approved
-* Timeout
-* Request headers
-* Response validation
-* Error normalization
-* Request ID propagation
-* Safe logging
+- Base URL
+- Authentication where approved
+- Timeout
+- Request headers
+- Response validation
+- Error normalization
+- Request ID propagation
+- Safe logging
 
 The adapter must not expose backend response structures directly to UI components.
 
@@ -1652,16 +1649,16 @@ At runtime, external responses must still be validated at important trust bounda
 
 Every external request must define:
 
-* Purpose
-* Method
-* Timeout
-* Idempotency
-* Retry behavior
-* Request-size limit
-* Response schema
-* Error mapping
-* Logging policy
-* Privacy classification
+- Purpose
+- Method
+- Timeout
+- Idempotency
+- Retry behavior
+- Request-size limit
+- Response schema
+- Error mapping
+- Logging policy
+- Privacy classification
 
 ## 39.1 Retry Policy
 
@@ -1675,10 +1672,10 @@ Form submissions and other mutations must not retry automatically unless an idem
 
 Server Actions are used for same-origin website mutations such as:
 
-* Contact form
-* Demonstration request
-* Pilot enquiry
-* Future controlled preference updates
+- Contact form
+- Demonstration request
+- Pilot enquiry
+- Future controlled preference updates
 
 A Server Action must:
 
@@ -1701,11 +1698,11 @@ Server Actions must be treated as publicly reachable server endpoints.
 
 Route Handlers are reserved for:
 
-* Health checks
-* Public runtime configuration
-* Approved webhooks
-* Machine-oriented integration endpoints
-* Future API routes not tied to a React form
+- Health checks
+- Public runtime configuration
+- Approved webhooks
+- Machine-oriented integration endpoints
+- Future API routes not tied to a React form
 
 Route Handlers should not duplicate Server Actions.
 
@@ -1767,10 +1764,10 @@ src/server/application/forms/
 
 Suggested services:
 
-* `submitGeneralEnquiry`
-* `submitDemoRequest`
-* `submitPilotEnquiry`
-* `submitPrivacyRequest`
+- `submitGeneralEnquiry`
+- `submitDemoRequest`
+- `submitPilotEnquiry`
+- `submitPrivacyRequest`
 
 These services depend on interfaces such as:
 
@@ -1792,12 +1789,12 @@ A submission is considered successful only when the approved delivery service ac
 
 If delivery fails:
 
-* Do not falsely show success
-* Preserve non-sensitive form state where practical
-* Provide a retry option
-* Provide an alternate contact route
-* Log a safe operational error
-* Do not automatically retry non-idempotent delivery
+- Do not falsely show success
+- Preserve non-sensitive form state where practical
+- Provide a retry option
+- Provide an alternate contact route
+- Log a safe operational error
+- Do not automatically retry non-idempotent delivery
 
 A persistent queue requires a future architecture decision.
 
@@ -1809,26 +1806,26 @@ Public forms use layered controls.
 
 ## Edge Controls
 
-* Request-size limits
-* Request-rate limits
-* Connection limits
-* Known malicious-request blocking
+- Request-size limits
+- Request-rate limits
+- Connection limits
+- Known malicious-request blocking
 
 ## Application Controls
 
-* Honeypot
-* Time-to-submit heuristics where appropriate
-* Input normalization
-* Schema validation
-* Per-action rate limits
-* Duplicate-submission protection
-* Approved origin checking
+- Honeypot
+- Time-to-submit heuristics where appropriate
+- Input normalization
+- Schema validation
+- Per-action rate limits
+- Duplicate-submission protection
+- Approved origin checking
 
 ## Optional Future Controls
 
-* Cloudflare Turnstile
-* WAF-managed challenge
-* External abuse scoring
+- Cloudflare Turnstile
+- WAF-managed challenge
+- External abuse scoring
 
 Challenge systems must remain accessible and privacy reviewed.
 
@@ -1838,8 +1835,8 @@ Challenge systems must remain accessible and privacy reviewed.
 
 V1 rate limiting may use:
 
-* Nginx request limits
-* Small application-level in-memory limits for defense in depth
+- Nginx request limits
+- Small application-level in-memory limits for defense in depth
 
 Application memory must not be treated as a durable global limit.
 
@@ -1847,10 +1844,10 @@ When the application scales to multiple instances, use an approved shared rate-l
 
 Rate-limit responses must:
 
-* Use appropriate HTTP status
-* Avoid revealing abuse-detection logic
-* Provide accessible recovery guidance
-* Avoid collecting unnecessary identifiers
+- Use appropriate HTTP status
+- Avoid revealing abuse-detection logic
+- Provide accessible recovery guidance
+- Avoid collecting unnecessary identifiers
 
 ---
 
@@ -1878,11 +1875,11 @@ Analytics wrapper permits allowed events
 
 Consent must not block:
 
-* Reading content
-* Navigation
-* Contact access
-* Safety information
-* Legal pages
+- Reading content
+- Navigation
+- Contact access
+- Safety information
+- Legal pages
 
 ---
 
@@ -1905,13 +1902,13 @@ type ConsentState = {
 
 Requirements:
 
-* Essential is always active
-* Marketing defaults to disabled unless genuinely used
-* Withdrawal is possible
-* Policy version is recorded
-* Consent UI is localized
-* No dark patterns
-* Consent values are not treated as health information
+- Essential is always active
+- Marketing defaults to disabled unless genuinely used
+- Withdrawal is possible
+- Policy version is recorded
+- Consent UI is localized
+- No dark patterns
+- Consent values are not treated as health information
 
 ---
 
@@ -1940,7 +1937,7 @@ Components must call internal functions such as:
 ```ts
 trackEvent({
   name: "provider_demo_requested",
-  pageId: "PRO-PG-016"
+  pageId: "PRO-PG-016",
 });
 ```
 
@@ -1961,14 +1958,14 @@ Analytics events must be validated before transmission.
 
 The validation layer should:
 
-* Restrict event names
-* Restrict property names
-* Reject email-like values
-* Reject phone-like values
-* Reject free-form message content
-* Reject clinical values
-* Reject health-assessment results
-* Add Page ID, audience, locale, and release automatically
+- Restrict event names
+- Restrict property names
+- Reject email-like values
+- Reject phone-like values
+- Reject free-form message content
+- Reject clinical values
+- Reject health-assessment results
+- Add Page ID, audience, locale, and release automatically
 
 The event registry remains the authority for permitted events.
 
@@ -1978,12 +1975,12 @@ The event registry remains the authority for permitted events.
 
 SEO is generated through:
 
-* Route registry
-* Page definitions
-* Page content metadata
-* Resource metadata
-* Locale configuration
-* Structured-data helpers
+- Route registry
+- Page definitions
+- Page content metadata
+- Resource metadata
+- Locale configuration
+- Structured-data helpers
 
 Recommended structure:
 
@@ -2008,20 +2005,20 @@ src/lib/structured-data/
 
 Canonical URL generation must use:
 
-* Approved site origin
-* Approved locale strategy
-* Approved route registry
-* Page availability
-* Market applicability
+- Approved site origin
+- Approved locale strategy
+- Approved route registry
+- Page availability
+- Market applicability
 
 Hreflang entries should appear only for published equivalent pages.
 
 Do not generate alternates for:
 
-* Missing translations
-* Unpublished pages
-* Restricted routes
-* Market-inapplicable content
+- Missing translations
+- Unpublished pages
+- Restricted routes
+- Market-inapplicable content
 
 ---
 
@@ -2037,13 +2034,13 @@ The sitemap is generated from:
 
 The sitemap must exclude:
 
-* Drafts
-* Restricted pages
-* Noindex pages
-* Conversion endpoints marked noindex
-* Internal APIs
-* Application dashboards
-* Preview routes
+- Drafts
+- Restricted pages
+- Noindex pages
+- Conversion endpoints marked noindex
+- Internal APIs
+- Application dashboards
+- Preview routes
 
 ---
 
@@ -2051,10 +2048,10 @@ The sitemap must exclude:
 
 Staging must be protected from search indexation through multiple layers:
 
-* `X-Robots-Tag: noindex, nofollow`
-* Staging-specific robots behavior
-* No production sitemap submission
-* Optional access control where required
+- `X-Robots-Tag: noindex, nofollow`
+- Staging-specific robots behavior
+- No production sitemap submission
+- Optional access control where required
 
 Staging must not rely only on a `robots.txt` rule.
 
@@ -2064,12 +2061,12 @@ Staging must not rely only on a `robots.txt` rule.
 
 Public images use:
 
-* Approved local assets
-* Explicitly approved remote hosts
-* Responsive image sizing
-* Width and height reservation
-* Accessible alternative text
-* Controlled priority loading
+- Approved local assets
+- Explicitly approved remote hosts
+- Responsive image sizing
+- Width and height reservation
+- Accessible alternative text
+- Controlled priority loading
 
 Image metadata should define:
 
@@ -2102,15 +2099,15 @@ Chart pages and sections must not import Recharts directly outside the chart mod
 
 A chart wrapper provides:
 
-* Accessible heading
-* Text summary
-* Unit
-* Legend
-* Color tokens
-* RTL behavior
-* Reduced-motion behavior
-* Product Status
-* Data-source context
+- Accessible heading
+- Text summary
+- Unit
+- Legend
+- Color tokens
+- RTL behavior
+- Reduced-motion behavior
+- Product Status
+- Data-source context
 
 This boundary allows the charting library to change without rewriting pages.
 
@@ -2146,16 +2143,16 @@ Recommended cache behavior:
 
 Nginx may cache:
 
-* Immutable Next.js static assets
-* Approved image-optimization responses
+- Immutable Next.js static assets
+- Approved image-optimization responses
 
 Nginx should not cache:
 
-* Form responses
-* Health checks
-* Runtime config
-* Error responses
-* Pages with request-specific state
+- Form responses
+- Health checks
+- Runtime config
+- Error responses
+- Pages with request-specific state
 
 ---
 
@@ -2163,20 +2160,20 @@ Nginx should not cache:
 
 On-demand revalidation may be introduced when:
 
-* An external CMS is approved
-* Product Status requires independent publishing
-* Resource publication volume increases
-* Pricing changes require faster controlled release
+- An external CMS is approved
+- Product Status requires independent publishing
+- Resource publication volume increases
+- Pricing changes require faster controlled release
 
 A future revalidation system must address:
 
-* Authentication
-* Shared cache
-* Multiple application instances
-* Audit logging
-* Content versioning
-* Rollback
-* Webhook security
+- Authentication
+- Shared cache
+- Multiple application instances
+- Audit logging
+- Content versioning
+- Rollback
+- Webhook security
 
 ---
 
@@ -2195,12 +2192,12 @@ Errors are divided into:
 
 Each error category must define:
 
-* Internal code
-* Log level
-* Public message
-* Retry behavior
-* Monitoring behavior
-* Sensitive-data handling
+- Internal code
+- Log level
+- Public message
+- Retry behavior
+- Monitoring behavior
+- Sensitive-data handling
 
 ---
 
@@ -2212,12 +2209,7 @@ Recommended internal shape:
 type ApplicationError = {
   code: string;
   category:
-    | "validation"
-    | "rate_limit"
-    | "integration"
-    | "configuration"
-    | "content"
-    | "unexpected";
+    "validation" | "rate_limit" | "integration" | "configuration" | "content" | "unexpected";
   safeMessage: string;
   retryable: boolean;
   cause?: unknown;
@@ -2232,20 +2224,20 @@ The `cause` must not cross into the browser.
 
 Use:
 
-* Route-level `error.tsx`
-* Local component error boundaries where recovery is possible
-* `global-error.tsx` for root failures
-* Localized `not-found.tsx`
-* Controlled form-result states
+- Route-level `error.tsx`
+- Local component error boundaries where recovery is possible
+- `global-error.tsx` for root failures
+- Localized `not-found.tsx`
+- Controlled form-result states
 
 Error boundaries must:
 
-* Preserve ODRISC branding
-* Avoid technical details
-* Offer recovery
-* Report safe error context
-* Avoid infinite retry loops
-* Remain accessible
+- Preserve ODRISC branding
+- Avoid technical details
+- Offer recovery
+- Report safe error context
+- Avoid infinite retry loops
+- Remain accessible
 
 ---
 
@@ -2269,28 +2261,28 @@ Server logs use structured Pino output.
 
 Recommended context:
 
-* Request ID
-* Release
-* Environment
-* Route
-* Page ID
-* Locale
-* Operation
-* Duration
-* Status
-* Error code
+- Request ID
+- Release
+- Environment
+- Route
+- Page ID
+- Locale
+- Operation
+- Duration
+- Status
+- Error code
 
 Logs must not contain:
 
-* Form content
-* Medical information
-* Email addresses by default
-* Phone numbers
-* Risk results
-* Cookies
-* Tokens
-* Secrets
-* Clinical identifiers
+- Form content
+- Medical information
+- Email addresses by default
+- Phone numbers
+- Risk results
+- Cookies
+- Tokens
+- Secrets
+- Clinical identifiers
 
 ---
 
@@ -2300,11 +2292,11 @@ Nginx should accept or generate a request ID.
 
 The request ID should be:
 
-* Forwarded to the Next.js application
-* Included in server logs
-* Forwarded to approved external services where safe
-* Returned in error responses where useful
-* Free from user-supplied unsafe characters
+- Forwarded to the Next.js application
+- Included in server logs
+- Forwarded to approved external services where safe
+- Returned in error responses where useful
+- Free from user-supplied unsafe characters
 
 The request ID must not encode personal information.
 
@@ -2314,14 +2306,14 @@ The request ID must not encode personal information.
 
 The V1 observability foundation includes:
 
-* Structured application logs
-* Nginx access and error logs
-* Health checks
-* Deployment version
-* Form-delivery success and failure metrics
-* External error-monitoring adapter
-* Core Web Vitals
-* CI and deployment status
+- Structured application logs
+- Nginx access and error logs
+- Health checks
+- Deployment version
+- Form-delivery success and failure metrics
+- External error-monitoring adapter
+- Core Web Vitals
+- CI and deployment status
 
 OpenTelemetry may be introduced later without changing application-service contracts.
 
@@ -2339,7 +2331,7 @@ Route:
 
 Purpose:
 
-* Confirm the process is running
+- Confirm the process is running
 
 It should not call external services.
 
@@ -2353,9 +2345,9 @@ Route:
 
 Purpose:
 
-* Confirm required configuration loaded
-* Confirm content manifest loaded
-* Confirm application is ready to serve requests
+- Confirm required configuration loaded
+- Confirm content manifest loaded
+- Confirm application is ready to serve requests
 
 Readiness should not become unavailable because a non-critical analytics provider is down.
 
@@ -2363,18 +2355,18 @@ Readiness should not become unavailable because a non-critical analytics provide
 
 Health responses may include:
 
-* Status
-* Release
-* Timestamp
-* Service name
+- Status
+- Release
+- Timestamp
+- Service name
 
 They must not expose:
 
-* Environment values
-* Secrets
-* Internal hostnames
-* Dependency credentials
-* Stack traces
+- Environment values
+- Secrets
+- Internal hostnames
+- Dependency credentials
+- Stack traces
 
 ---
 
@@ -2384,43 +2376,43 @@ Security controls exist at multiple layers.
 
 ## Edge
 
-* TLS
-* HSTS
-* Request limits
-* Rate limiting
-* Security headers
-* Deny invalid methods where appropriate
-* Staging noindex controls
+- TLS
+- HSTS
+- Request limits
+- Rate limiting
+- Security headers
+- Deny invalid methods where appropriate
+- Staging noindex controls
 
 ## Application
 
-* Schema validation
-* Origin checking
-* Server-only secrets
-* Safe error mapping
-* Controlled outbound hosts
-* Sensitive-log filtering
-* Consent controls
-* Trusted MDX only
+- Schema validation
+- Origin checking
+- Server-only secrets
+- Safe error mapping
+- Controlled outbound hosts
+- Sensitive-log filtering
+- Consent controls
+- Trusted MDX only
 
 ## Integration
 
-* Timeout
-* Authentication
-* Response validation
-* Request ID
-* Least privilege
-* Secret rotation
-* Vendor privacy review
+- Timeout
+- Authentication
+- Response validation
+- Request ID
+- Least privilege
+- Secret rotation
+- Vendor privacy review
 
 ## CI/CD
 
-* Dependency scanning
-* Secret scanning
-* Container scanning
-* Code review
-* Protected branches
-* Controlled deployment credentials
+- Dependency scanning
+- Secret scanning
+- Container scanning
+- Code review
+- Protected branches
+- Controlled deployment credentials
 
 ---
 
@@ -2430,23 +2422,23 @@ The website must use an explicit Content Security Policy.
 
 The policy should define approved sources for:
 
-* Scripts
-* Styles
-* Images
-* Fonts
-* Connections
-* Frames
-* Media
+- Scripts
+- Styles
+- Images
+- Fonts
+- Connections
+- Frames
+- Media
 
 Requirements:
 
-* No unrestricted wildcard sources
-* No `unsafe-eval`
-* Narrowly documented exceptions
-* GTM and analytics included only when approved
-* Frame ancestors restricted
-* External image sources explicitly allowed
-* Report-only testing before enforcement changes
+- No unrestricted wildcard sources
+- No `unsafe-eval`
+- Narrowly documented exceptions
+- GTM and analytics included only when approved
+- Frame ancestors restricted
+- External image sources explicitly allowed
+- Report-only testing before enforcement changes
 
 A nonce-based approach may be evaluated where third-party scripts require it.
 
@@ -2458,11 +2450,11 @@ CSP implementation must not silently force all routes into dynamic rendering wit
 
 Default policy:
 
-* Public website browser requests are same-origin
-* External API calls occur server-side
-* CORS is not broadly enabled
-* Webhooks use dedicated authenticated endpoints
-* Public APIs are introduced only for documented clients
+- Public website browser requests are same-origin
+- External API calls occur server-side
+- CORS is not broadly enabled
+- Webhooks use dedicated authenticated endpoints
+- Public APIs are introduced only for documented clients
 
 Outbound integration hosts should be allowlisted through configuration.
 
@@ -2472,22 +2464,22 @@ Outbound integration hosts should be allowlisted through configuration.
 
 Secrets may exist only in:
 
-* Approved runtime environment variables
-* CI secret storage
-* Server-only modules
-* Infrastructure secret configuration
+- Approved runtime environment variables
+- CI secret storage
+- Server-only modules
+- Infrastructure secret configuration
 
 Secrets must never appear in:
 
-* `NEXT_PUBLIC_*`
-* Client Component props
-* Static content
-* Storybook
-* Tests
-* Documentation examples
-* Public runtime configuration
-* Logs
-* Browser error messages
+- `NEXT_PUBLIC_*`
+- Client Component props
+- Static content
+- Storybook
+- Tests
+- Documentation examples
+- Public runtime configuration
+- Logs
+- Browser error messages
 
 ---
 
@@ -2497,12 +2489,12 @@ Secrets must never appear in:
 
 Examples:
 
-* Public page copy
-* Product Status approved for publication
-* Team profiles
-* Public resources
-* Public pricing
-* Public routes
+- Public page copy
+- Product Status approved for publication
+- Team profiles
+- Public resources
+- Public pricing
+- Public routes
 
 May be stored in the repository.
 
@@ -2510,11 +2502,11 @@ May be stored in the repository.
 
 Examples:
 
-* Name
-* Work email
-* Organization
-* Professional role
-* General enquiry message
+- Name
+- Work email
+- Organization
+- Professional role
+- General enquiry message
 
 May be processed only through approved form workflows.
 
@@ -2524,13 +2516,13 @@ Must not be stored in application logs.
 
 Examples:
 
-* Medical history
-* Symptoms
-* Risk answers
-* Risk results linked to identity
-* Pregnancy records
-* Ultrasound values
-* Fetal measurements
+- Medical history
+- Symptoms
+- Risk answers
+- Risk results linked to identity
+- Pregnancy records
+- Ultrasound values
+- Fetal measurements
 
 Must not be collected by the public website.
 
@@ -2538,10 +2530,10 @@ Must not be collected by the public website.
 
 Examples:
 
-* API keys
-* Provider secrets
-* Deployment tokens
-* Signing secrets
+- API keys
+- Provider secrets
+- Deployment tokens
+- Signing secrets
 
 Must remain server-side and access controlled.
 
@@ -2551,23 +2543,23 @@ Must remain server-side and access controlled.
 
 Privacy must be designed into:
 
-* Forms
-* Analytics
-* Consent
-* Logs
-* Error monitoring
-* External services
-* Runtime configuration
-* Resource downloads
-* Application handoffs
+- Forms
+- Analytics
+- Consent
+- Logs
+- Error monitoring
+- External services
+- Runtime configuration
+- Resource downloads
+- Application handoffs
 
 The website should minimize:
 
-* Data collected
-* Fields shown
-* Retention
-* Third-party transmission
-* Persistent identifiers
+- Data collected
+- Fields shown
+- Retention
+- Third-party transmission
+- Persistent identifiers
 
 A public form should ask only for information necessary to complete its purpose.
 
@@ -2577,11 +2569,11 @@ A public form should ask only for information necessary to complete its purpose.
 
 The website may route users to:
 
-* Patient application
-* Provider application
-* Risk assessment
-* Approved registration
-* Approved payment workflow
+- Patient application
+- Provider application
+- Risk assessment
+- Approved registration
+- Approved payment workflow
 
 Handoff configuration belongs in typed availability data.
 
@@ -2600,11 +2592,11 @@ type ApplicationHandoff = {
 
 Handoffs must:
 
-* Use approved destinations
-* Explain when users leave the website
-* Avoid passing sensitive information through URL parameters
-* Preserve locale where supported
-* Provide recovery if the destination is unavailable
+- Use approved destinations
+- Explain when users leave the website
+- Avoid passing sensitive information through URL parameters
+- Preserve locale where supported
+- Provide recovery if the destination is unavailable
 
 ---
 
@@ -2612,12 +2604,12 @@ Handoffs must:
 
 The public website does not implement:
 
-* User sessions
-* Passwords
-* OAuth
-* Patient accounts
-* Provider accounts
-* Role-based authorization
+- User sessions
+- Passwords
+- OAuth
+- Patient accounts
+- Provider accounts
+- Role-based authorization
 
 Login routes are public handoff pages.
 
@@ -2631,12 +2623,12 @@ The website does not own a database.
 
 This means:
 
-* Content is repository controlled
-* Forms are delivered synchronously
-* Consent is stored client-side where legally appropriate
-* No account state is stored
-* No clinical data is stored
-* No lead queue is owned by the website
+- Content is repository controlled
+- Forms are delivered synchronously
+- Consent is stored client-side where legally appropriate
+- No account state is stored
+- No clinical data is stored
+- No lead queue is owned by the website
 
 A database may be introduced only after data classification, retention, deletion, encryption, region, backup, and ownership are approved.
 
@@ -2670,18 +2662,18 @@ Production smoke tests
 
 Build-time validation should cover:
 
-* Environment schema
-* Route registry
-* Page ID uniqueness
-* Navigation targets
-* Audience-switch mappings
-* Product Status
-* Content metadata
-* Translation completeness
-* Resource slugs
-* Structured data
-* Analytics event registry
-* Broken internal links
+- Environment schema
+- Route registry
+- Page ID uniqueness
+- Navigation targets
+- Audience-switch mappings
+- Product Status
+- Content metadata
+- Translation completeness
+- Resource slugs
+- Structured data
+- Analytics event registry
+- Broken internal links
 
 Recommended scripts:
 
@@ -2699,16 +2691,16 @@ pnpm validate:architecture
 
 Unit tests should cover:
 
-* Schemas
-* Formatting
-* Metadata creation
-* Route helpers
-* Product Status rules
-* Error mapping
-* Consent rules
-* Analytics payload filtering
-* Integration-response parsing
-* Feature configuration
+- Schemas
+- Formatting
+- Metadata creation
+- Route helpers
+- Product Status rules
+- Error mapping
+- Consent rules
+- Analytics payload filtering
+- Integration-response parsing
+- Feature configuration
 
 ---
 
@@ -2716,18 +2708,18 @@ Unit tests should cover:
 
 Component tests should cover:
 
-* Buttons and links
-* Forms
-* Dialogs
-* Tabs
-* Accordions
-* Navigation
-* Audience switch
-* Product Status badges
-* Error states
-* Consent controls
-* RTL behavior
-* Reduced motion
+- Buttons and links
+- Forms
+- Dialogs
+- Tabs
+- Accordions
+- Navigation
+- Audience switch
+- Product Status badges
+- Error states
+- Consent controls
+- RTL behavior
+- Reduced motion
 
 Tests should focus on user-observable behavior.
 
@@ -2737,14 +2729,14 @@ Tests should focus on user-observable behavior.
 
 Integration tests should cover:
 
-* Server Action to application service
-* Application service to mocked delivery adapter
-* Public API adapter response validation
-* Runtime-config allowlist
-* Content compilation
-* Route and page registry consistency
-* Consent to analytics adapter
-* Error-monitoring scrubbing
+- Server Action to application service
+- Application service to mocked delivery adapter
+- Public API adapter response validation
+- Runtime-config allowlist
+- Content compilation
+- Route and page registry consistency
+- Consent to analytics adapter
+- Error-monitoring scrubbing
 
 External services must be mocked or replaced with approved test environments.
 
@@ -2754,22 +2746,22 @@ External services must be mocked or replaced with approved test environments.
 
 Required journeys include:
 
-* Shared entry to Patient journey
-* Shared entry to Provider journey
-* Audience switching
-* English and Arabic navigation
-* RTL mobile navigation
-* Contact submission
-* Demo request
-* Form validation
-* Form-provider failure
-* Consent acceptance and withdrawal
-* Analytics blocked before consent
-* Application handoff
-* 404
-* Error recovery
-* Reduced motion
-* Staging noindex verification
+- Shared entry to Patient journey
+- Shared entry to Provider journey
+- Audience switching
+- English and Arabic navigation
+- RTL mobile navigation
+- Contact submission
+- Demo request
+- Form validation
+- Form-provider failure
+- Consent acceptance and withdrawal
+- Analytics blocked before consent
+- Application handoff
+- 404
+- Error recovery
+- Reduced motion
+- Staging noindex verification
 
 ---
 
@@ -2777,22 +2769,22 @@ Required journeys include:
 
 Architecture tests should detect:
 
-* Client import of server-only module
-* Component import of route module
-* Vendor SDK imported outside adapter
-* Direct analytics-provider calls
-* Direct Recharts import outside chart module
-* Hard-coded canonical routes
-* Unsupported Product Status
-* Missing Page ID
-* Undocumented public API endpoint
+- Client import of server-only module
+- Component import of route module
+- Vendor SDK imported outside adapter
+- Direct analytics-provider calls
+- Direct Recharts import outside chart module
+- Hard-coded canonical routes
+- Unsupported Product Status
+- Missing Page ID
+- Undocumented public API endpoint
 
 Enforcement may use:
 
-* ESLint restrictions
-* Static scripts
-* TypeScript
-* Repository search checks
+- ESLint restrictions
+- Static scripts
+- TypeScript
+- Repository search checks
 
 ---
 
@@ -2868,13 +2860,13 @@ Retain previous image for rollback
 
 The V1 deployment uses:
 
-* One production server
-* Host-managed Nginx
-* Docker Compose-managed Next.js container
-* Versioned images from GHCR
-* Loopback-only application port
-* TLS at Nginx
-* Health-based deployment checks
+- One production server
+- Host-managed Nginx
+- Docker Compose-managed Next.js container
+- Versioned images from GHCR
+- Loopback-only application port
+- TLS at Nginx
+- Health-based deployment checks
 
 ```text
 Internet
@@ -2935,14 +2927,14 @@ Standalone production runner
 
 The production container must:
 
-* Run as non-root
-* Contain no development dependencies
-* Contain no Git metadata
-* Contain no secrets
-* Expose one internal port
-* Use a read-only filesystem where practical
-* Write temporary data only to approved locations
-* Include a container health check where practical
+- Run as non-root
+- Contain no development dependencies
+- Contain no Git metadata
+- Contain no secrets
+- Expose one internal port
+- Use a read-only filesystem where practical
+- Write temporary data only to approved locations
+- Include a container health check where practical
 
 ---
 
@@ -2950,24 +2942,24 @@ The production container must:
 
 Nginx is responsible for:
 
-* TLS termination
-* HTTPS redirect
-* Request ID
-* Proxy headers
-* Static asset caching
-* Request-size limits
-* Rate limiting
-* Security headers
-* Staging noindex
-* Proxying to the active application slot
-* Access and error logging
+- TLS termination
+- HTTPS redirect
+- Request ID
+- Proxy headers
+- Static asset caching
+- Request-size limits
+- Rate limiting
+- Security headers
+- Staging noindex
+- Proxying to the active application slot
+- Access and error logging
 
 Nginx must forward:
 
-* Host
-* Scheme
-* Client IP chain
-* Request ID
+- Host
+- Scheme
+- Client IP chain
+- Request ID
 
 Forwarded-header trust must be configured safely.
 
@@ -2977,8 +2969,8 @@ Forwarded-header trust must be configured safely.
 
 V1 should support two logical deployment slots:
 
-* Blue
-* Green
+- Blue
+- Green
 
 Only one slot receives public traffic at a time.
 
@@ -3020,18 +3012,18 @@ Rollback must not require rebuilding the previous release.
 
 Every image and deployment should expose:
 
-* Application version
-* Git commit SHA
-* Build timestamp
-* Release identifier
-* Environment
+- Application version
+- Git commit SHA
+- Build timestamp
+- Release identifier
+- Environment
 
 The release identifier should appear in:
 
-* Logs
-* Health responses
-* Error-monitoring context
-* Deployment records
+- Logs
+- Health responses
+- Error-monitoring context
+- Deployment records
 
 It should not dominate the public interface.
 
@@ -3041,22 +3033,22 @@ It should not dominate the public interface.
 
 Staging should match production in:
 
-* Node version
-* Container image
-* Nginx behavior
-* Locale support
-* Content structure
-* Security headers
-* Form integration shape
-* Analytics consent behavior
+- Node version
+- Container image
+- Nginx behavior
+- Locale support
+- Content structure
+- Security headers
+- Form integration shape
+- Analytics consent behavior
 
 Staging may use:
 
-* Non-production delivery adapters
-* Test analytics identifiers
-* Restricted access
-* Noindex headers
-* Sandbox API endpoints
+- Non-production delivery adapters
+- Test analytics identifiers
+- Restricted access
+- Noindex headers
+- Sandbox API endpoints
 
 Staging must not use production clinical data.
 
@@ -3068,14 +3060,14 @@ The V1 architecture uses one active application instance.
 
 Future horizontal scaling requires:
 
-* Shared rate limiting
-* Shared cache strategy
-* Coordinated revalidation
-* Central logging
-* Load balancing
-* Multi-instance health checks
-* Session strategy if authentication is later added
-* Queue strategy if forms become asynchronous
+- Shared rate limiting
+- Shared cache strategy
+- Coordinated revalidation
+- Central logging
+- Load balancing
+- Multi-instance health checks
+- Session strategy if authentication is later added
+- Queue strategy if forms become asynchronous
 
 The current modular structure should support scaling without changing page and component architecture.
 
@@ -3093,12 +3085,12 @@ Page components should depend on internal content models rather than MDX-specifi
 
 A CMS must not be introduced until:
 
-* Editorial roles are defined
-* Clinical review workflow is defined
-* Arabic workflow is defined
-* Preview security is defined
-* Product Status governance is preserved
-* Content versioning and rollback are available
+- Editorial roles are defined
+- Clinical review workflow is defined
+- Arabic workflow is defined
+- Preview security is defined
+- Product Status governance is preserved
+- Content versioning and rollback are available
 
 ---
 
@@ -3108,12 +3100,12 @@ A future search system should consume a generated public-content index.
 
 Search must not index:
 
-* Drafts
-* Restricted pages
-* Application data
-* Form content
-* Clinical records
-* Internal documentation
+- Drafts
+- Restricted pages
+- Application data
+- Form content
+- Clinical records
+- Internal documentation
 
 The search interface should remain independent of the eventual search provider.
 
@@ -3139,17 +3131,17 @@ Changing a vendor should not require editing page components.
 
 Every material architecture feature must document:
 
-* Purpose
-* Owner
-* Data classification
-* Trust boundary
-* Dependencies
-* Failure behavior
-* Security requirements
-* Privacy requirements
-* Tests
-* Operational requirements
-* Rollback or exit strategy
+- Purpose
+- Owner
+- Data classification
+- Trust boundary
+- Dependencies
+- Failure behavior
+- Security requirements
+- Privacy requirements
+- Tests
+- Operational requirements
+- Rollback or exit strategy
 
 ---
 
@@ -3179,21 +3171,21 @@ A material change requires:
 
 Examples include:
 
-* New database
-* Website authentication
-* External CMS
-* New deployment platform
-* Multi-region deployment
-* Message queue
-* Horizontal scaling
-* New public API
-* Direct browser-to-backend integration
-* Changing locale URL strategy
-* Adding a CDN or WAF
-* Replacing Next.js
-* Introducing a second application
-* Introducing an experimentation platform
-* Collecting health information
+- New database
+- Website authentication
+- External CMS
+- New deployment platform
+- Multi-region deployment
+- Message queue
+- Horizontal scaling
+- New public API
+- Direct browser-to-backend integration
+- Changing locale URL strategy
+- Adding a CDN or WAF
+- Replacing Next.js
+- Introducing a second application
+- Introducing an experimentation platform
+- Collecting health information
 
 ---
 
@@ -3203,64 +3195,64 @@ The architecture is correctly implemented when:
 
 ## Boundaries
 
-* Public website and clinical systems remain separated
-* No direct SQL Server connection exists
-* No clinical logic is duplicated
-* Vendor SDKs remain behind adapters
+- Public website and clinical systems remain separated
+- No direct SQL Server connection exists
+- No clinical logic is duplicated
+- Vendor SDKs remain behind adapters
 
 ## Rendering
 
-* Public pages are static-first
-* Server Components are the default
-* Client boundaries are small and justified
-* Essential content appears in initial HTML
+- Public pages are static-first
+- Server Components are the default
+- Client boundaries are small and justified
+- Essential content appears in initial HTML
 
 ## Content
 
-* Runtime does not parse internal documentation
-* Website content is validated
-* Product Status has one controlled implementation
-* Translation completeness is checked
+- Runtime does not parse internal documentation
+- Website content is validated
+- Product Status has one controlled implementation
+- Translation completeness is checked
 
 ## Integrations
 
-* Forms pass through application services
-* External responses are validated
-* Timeouts and errors are controlled
-* Mutations are not retried unsafely
+- Forms pass through application services
+- External responses are validated
+- Timeouts and errors are controlled
+- Mutations are not retried unsafely
 
 ## Security
 
-* Secrets remain server-side
-* Inputs are validated
-* CSP and security headers are present
-* Logs exclude sensitive content
-* Public forms do not collect clinical data
+- Secrets remain server-side
+- Inputs are validated
+- CSP and security headers are present
+- Logs exclude sensitive content
+- Public forms do not collect clinical data
 
 ## Analytics
 
-* Consent is checked before analytics
-* Events use the internal registry
-* Sensitive values are rejected
-* Direct provider calls are absent
+- Consent is checked before analytics
+- Events use the internal registry
+- Sensitive values are rejected
+- Direct provider calls are absent
 
 ## Deployment
 
-* Standalone container builds
-* Application port is not public
-* Health checks work
-* Blue-green switching works
-* Rollback works
-* Release identity is traceable
+- Standalone container builds
+- Application port is not public
+- Health checks work
+- Blue-green switching works
+- Rollback works
+- Release identity is traceable
 
 ## Quality
 
-* Architecture tests pass
-* Accessibility tests pass
-* E2E tests pass
-* Content validation passes
-* Staging remains noindex
-* Performance budgets are respected
+- Architecture tests pass
+- Accessibility tests pass
+- E2E tests pass
+- Content validation passes
+- Staging remains noindex
+- Performance budgets are respected
 
 ---
 
@@ -3285,25 +3277,25 @@ Before creating or modifying implementation architecture, AI agents must:
 
 AI agents must not:
 
-* Place integration logic in page components
-* Mark entire pages as Client Components without need
-* Import server modules into Client Components
-* Parse internal documentation at runtime
-* Hard-code routes in arbitrary components
-* Duplicate Product Status
-* Call analytics providers directly
-* Call external services directly from UI components
-* connect to SQL Server
-* create a public API without approval
-* add a database
-* add authentication
-* add a CMS
-* collect clinical data
-* expose runtime secrets
-* weaken validation to complete a task
-* bypass the adapter layer
-* introduce persistent infrastructure without an ADR
-* change deployment topology without approval
+- Place integration logic in page components
+- Mark entire pages as Client Components without need
+- Import server modules into Client Components
+- Parse internal documentation at runtime
+- Hard-code routes in arbitrary components
+- Duplicate Product Status
+- Call analytics providers directly
+- Call external services directly from UI components
+- connect to SQL Server
+- create a public API without approval
+- add a database
+- add authentication
+- add a CMS
+- collect clinical data
+- expose runtime secrets
+- weaken validation to complete a task
+- bypass the adapter layer
+- introduce persistent infrastructure without an ADR
+- change deployment topology without approval
 
 ---
 
@@ -3370,36 +3362,36 @@ The following decisions are locked unless formally changed:
 
 The following remain unresolved:
 
-* What is the final public locale-prefix policy?
-* Are public pathnames translated into Arabic or only locale prefixed?
-* Which pages must be translated for the first Qatar release?
-* Which service receives general enquiries?
-* Which service receives Provider demonstration requests?
-* Is form delivery email-based, CRM-based, or API-based?
-* Is a persistent form queue required after launch?
-* Is Cloudflare used at the edge?
-* What production Linux distribution is used?
-* What exact ports are allocated to blue and green slots?
-* Does the server already use host-level Docker Compose conventions?
-* Which error-monitoring provider is approved?
-* Is OpenTelemetry included in V1?
-* Which ODRISC public API endpoints are available?
-* Is an OpenAPI document available?
-* Which application-handoff domains are approved?
-* Is the risk assessment embedded or externally linked?
-* Which Product Status values are public at launch?
-* Which runtime configuration values are needed by the browser?
-* Is a nonce-based CSP required for GTM?
-* Which analytics events are permitted before explicit analytics consent, if any?
-* What retention applies to operational form submissions?
-* Which rate-limit thresholds are approved?
-* Is Turnstile required at launch or only after abuse appears?
-* Which Storybook environment is used?
-* Which architecture tests are release blocking?
-* What is the exact blue-green Nginx-switch mechanism?
-* How long is the previous deployment slot retained?
-* Who owns production incident response?
-* Who approves architecture changes?
+- What is the final public locale-prefix policy?
+- Are public pathnames translated into Arabic or only locale prefixed?
+- Which pages must be translated for the first Qatar release?
+- Which service receives general enquiries?
+- Which service receives Provider demonstration requests?
+- Is form delivery email-based, CRM-based, or API-based?
+- Is a persistent form queue required after launch?
+- Is Cloudflare used at the edge?
+- What production Linux distribution is used?
+- What exact ports are allocated to blue and green slots?
+- Does the server already use host-level Docker Compose conventions?
+- Which error-monitoring provider is approved?
+- Is OpenTelemetry included in V1?
+- Which ODRISC public API endpoints are available?
+- Is an OpenAPI document available?
+- Which application-handoff domains are approved?
+- Is the risk assessment embedded or externally linked?
+- Which Product Status values are public at launch?
+- Which runtime configuration values are needed by the browser?
+- Is a nonce-based CSP required for GTM?
+- Which analytics events are permitted before explicit analytics consent, if any?
+- What retention applies to operational form submissions?
+- Which rate-limit thresholds are approved?
+- Is Turnstile required at launch or only after abuse appears?
+- Which Storybook environment is used?
+- Which architecture tests are release blocking?
+- What is the exact blue-green Nginx-switch mechanism?
+- How long is the previous deployment slot retained?
+- Who owns production incident response?
+- Who approves architecture changes?
 
 These questions must remain in:
 
@@ -3439,17 +3431,17 @@ Blue-green low-downtime release and rollback
 
 The architecture keeps the public website:
 
-* Separate from clinical data
-* Separate from application authentication
-* Searchable
-* Accessible
-* Localization-ready
-* Product-status accurate
-* Secure
-* Portable
-* Testable
-* Maintainable by human and AI contributors
-* Capable of future growth without premature infrastructure complexity
+- Separate from clinical data
+- Separate from application authentication
+- Searchable
+- Accessible
+- Localization-ready
+- Product-status accurate
+- Secure
+- Portable
+- Testable
+- Maintainable by human and AI contributors
+- Capable of future growth without premature infrastructure complexity
 
 ---
 

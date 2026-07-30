@@ -24,7 +24,7 @@
    - `docs/product/INFORMATION_ARCHITECTURE.md`
    - `docs/product/PAGE_REQUIREMENTS.md`
    - `docs/product/ROUTE_REGISTRY.md`
-   
+
    **Project**
    - `docs/project/GLOSSARY.md`
 

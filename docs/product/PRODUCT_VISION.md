@@ -28,30 +28,30 @@ This document defines the long-term product vision for ODRISC.
 
 It explains:
 
-* What ODRISC is becoming
-* Which problem the platform exists to solve
-* How the Patient and Provider experiences connect
-* Which capabilities belong within the ODRISC product ecosystem
-* How the platform should evolve over time
-* Which principles must guide product decisions
-* Which boundaries must remain intact
-* How the public website should represent the product vision
+- What ODRISC is becoming
+- Which problem the platform exists to solve
+- How the Patient and Provider experiences connect
+- Which capabilities belong within the ODRISC product ecosystem
+- How the platform should evolve over time
+- Which principles must guide product decisions
+- Which boundaries must remain intact
+- How the public website should represent the product vision
 
 This document must guide:
 
-* Product strategy
-* Website strategy
-* Product requirements
-* Information architecture
-* Messaging
-* Design
-* Engineering
-* Clinical logic
-* Partnerships
-* Commercial planning
-* Roadmap decisions
-* Future integrations
-* AI-assisted product work
+- Product strategy
+- Website strategy
+- Product requirements
+- Information architecture
+- Messaging
+- Design
+- Engineering
+- Clinical logic
+- Partnerships
+- Commercial planning
+- Roadmap decisions
+- Future integrations
+- AI-assisted product work
 
 This document describes the intended direction of ODRISC. It does not imply that every capability described is currently available.
 
@@ -67,12 +67,12 @@ The long-term vision is to help patients and healthcare providers understand how
 
 ODRISC aims to transform fragmented pregnancy information into structured, longitudinal, and explainable intelligence that supports:
 
-* Earlier recognition of emerging concerns
-* More informed monitoring
-* Better patient understanding
-* Stronger patient-provider collaboration
-* More coordinated multidisciplinary care
-* Improved maternal and fetal outcomes
+- Earlier recognition of emerging concerns
+- More informed monitoring
+- Better patient understanding
+- Stronger patient-provider collaboration
+- More coordinated multidisciplinary care
+- Improved maternal and fetal outcomes
 
 ---
 
@@ -82,58 +82,58 @@ Pregnancy care produces a large amount of information.
 
 This may include:
 
-* Maternal medical history
-* Preconception risk factors
-* Weight and body composition
-* Metabolic risk
-* Blood pressure
-* Symptoms
-* Laboratory investigations
-* Ultrasound measurements
-* Estimated fetal weight
-* Fetal biometry
-* Doppler findings
-* Nutrition
-* Physical activity
-* Medications
-* Clinical observations
-* Patient-reported information
-* Specialist assessments
+- Maternal medical history
+- Preconception risk factors
+- Weight and body composition
+- Metabolic risk
+- Blood pressure
+- Symptoms
+- Laboratory investigations
+- Ultrasound measurements
+- Estimated fetal weight
+- Fetal biometry
+- Doppler findings
+- Nutrition
+- Physical activity
+- Medications
+- Clinical observations
+- Patient-reported information
+- Specialist assessments
 
 This information is often distributed across:
 
-* Multiple clinicians
-* Different hospitals or clinics
-* Diagnostic centers
-* Paper reports
-* Electronic records
-* Patient-held documents
-* Separate mobile applications
-* Independent care pathways
-* Different stages of pregnancy
+- Multiple clinicians
+- Different hospitals or clinics
+- Diagnostic centers
+- Paper reports
+- Electronic records
+- Patient-held documents
+- Separate mobile applications
+- Independent care pathways
+- Different stages of pregnancy
 
 The problem is not simply the absence of data.
 
 The deeper problem is that the data may not be:
 
-* Connected
-* Synchronized
-* Interpreted longitudinally
-* Presented with appropriate context
-* Compared consistently over time
-* Shared clearly between patients and providers
-* Converted into understandable monitoring signals
+- Connected
+- Synchronized
+- Interpreted longitudinally
+- Presented with appropriate context
+- Compared consistently over time
+- Shared clearly between patients and providers
+- Converted into understandable monitoring signals
 
 A single value may appear normal or abnormal at one moment, but its meaning may depend on:
 
-* The previous value
-* The rate of change
-* The gestational age
-* The maternal context
-* The fetal context
-* The relevant clinical standard
-* The relationship between multiple measurements
-* Whether the change is temporary or sustained
+- The previous value
+- The rate of change
+- The gestational age
+- The maternal context
+- The fetal context
+- The relevant clinical standard
+- The relationship between multiple measurements
+- Whether the change is temporary or sustained
 
 ODRISC is intended to make these relationships more visible.
 
@@ -147,15 +147,15 @@ ODRISC is built on the following belief:
 
 The platform should help reveal:
 
-* Change over time
-* Direction of change
-* Velocity
-* Variation
-* Emerging deviation
-* Maternal and fetal relationships
-* Relevant clinical context
-* Monitoring priorities
-* The next meaningful question
+- Change over time
+- Direction of change
+- Velocity
+- Variation
+- Emerging deviation
+- Maternal and fetal relationships
+- Relevant clinical context
+- Monitoring priorities
+- The next meaningful question
 
 The product must not reduce pregnancy care to a single score, alert, or automated conclusion.
 
@@ -167,15 +167,15 @@ It must support a deeper and more explainable understanding of progression.
 
 ODRISC is not intended to be only:
 
-* A pregnancy-content application
-* A diet-plan application
-* A weight tracker
-* A fetal growth calculator
-* A risk-assessment form
-* A patient portal
-* A provider dashboard
-* An artificial-intelligence chatbot
-* A collection of independent wellness tools
+- A pregnancy-content application
+- A diet-plan application
+- A weight tracker
+- A fetal growth calculator
+- A risk-assessment form
+- A patient portal
+- A provider dashboard
+- An artificial-intelligence chatbot
+- A collection of independent wellness tools
 
 ODRISC is intended to become an integrated maternal and fetal intelligence platform.
 
@@ -234,33 +234,33 @@ They are two views of the same pregnancy journey.
 
 The Patient experience should help women:
 
-* Understand relevant risk factors
-* Prepare before pregnancy
-* Monitor changes during pregnancy
-* Follow structured weight guidance
-* Access nutrition support
-* Access physical-activity support
-* Understand maternal and fetal progress
-* Record relevant information
-* Prepare for clinical appointments
-* Participate more meaningfully in care
-* Know when professional review may be important
+- Understand relevant risk factors
+- Prepare before pregnancy
+- Monitor changes during pregnancy
+- Follow structured weight guidance
+- Access nutrition support
+- Access physical-activity support
+- Understand maternal and fetal progress
+- Record relevant information
+- Prepare for clinical appointments
+- Participate more meaningfully in care
+- Know when professional review may be important
 
 ## 6.2 Provider Perspective
 
 The Provider experience should help healthcare professionals:
 
-* Review longitudinal maternal information
-* Review fetal growth across multiple scans
-* Identify changes in velocity and trajectory
-* Understand relationships among measurements
-* Monitor selected patients between appointments
-* Review patient-entered information
-* Access explainable summaries
-* Collaborate across disciplines
-* Prioritize attention
-* Support clinical decision-making
-* Implement ODRISC within care workflows
+- Review longitudinal maternal information
+- Review fetal growth across multiple scans
+- Identify changes in velocity and trajectory
+- Understand relationships among measurements
+- Monitor selected patients between appointments
+- Review patient-entered information
+- Access explainable summaries
+- Collaborate across disciplines
+- Prioritize attention
+- Support clinical decision-making
+- Implement ODRISC within care workflows
 
 ## 6.3 Shared Product Value
 
@@ -282,15 +282,15 @@ A feature should not be added solely because it is technically possible or comme
 
 It should contribute to one or more of the following:
 
-* Better understanding
-* Earlier recognition
-* More effective monitoring
-* Safer patient participation
-* Better clinical collaboration
-* More coordinated care
-* Improved accessibility
-* Greater continuity
-* More explainable information
+- Better understanding
+- Earlier recognition
+- More effective monitoring
+- Safer patient participation
+- Better clinical collaboration
+- More coordinated care
+- Improved accessibility
+- Greater continuity
+- More explainable information
 
 ---
 
@@ -340,14 +340,14 @@ Artificial intelligence, automation, analytics, and data visualization should ne
 
 The product should be built to support differences in:
 
-* Language
-* Population characteristics
-* Clinical guidance
-* Care pathways
-* Pricing
-* Regulation
-* Healthcare systems
-* Cultural context
+- Language
+- Population characteristics
+- Clinical guidance
+- Care pathways
+- Pricing
+- Regulation
+- Healthcare systems
+- Cultural context
 
 ## 8.10 Reusable Before Duplicated
 
@@ -365,17 +365,17 @@ The product should help women and providers understand readiness before pregnanc
 
 Potential areas include:
 
-* Health assessment
-* Risk awareness
-* Weight optimization
-* Nutrition
-* Physical activity
-* Metabolic risk
-* Previous pregnancy history
-* PCOS context
-* IVF preparation
-* Lifestyle planning
-* Professional referral
+- Health assessment
+- Risk awareness
+- Weight optimization
+- Nutrition
+- Physical activity
+- Metabolic risk
+- Previous pregnancy history
+- PCOS context
+- IVF preparation
+- Lifestyle planning
+- Professional referral
 
 ## 9.2 Early Pregnancy
 
@@ -383,16 +383,16 @@ The product should help establish a reliable foundation for monitoring.
 
 Potential areas include:
 
-* Pregnancy confirmation context
-* Gestational-age anchoring
-* Estimated due date
-* IVF dating
-* Early risk assessment
-* Baseline maternal information
-* Starting weight
-* Relevant symptoms
-* Early laboratory information
-* Care-plan initiation
+- Pregnancy confirmation context
+- Gestational-age anchoring
+- Estimated due date
+- IVF dating
+- Early risk assessment
+- Baseline maternal information
+- Starting weight
+- Relevant symptoms
+- Early laboratory information
+- Care-plan initiation
 
 ## 9.3 Ongoing Pregnancy
 
@@ -400,42 +400,42 @@ The product should help build the longitudinal maternal and fetal record.
 
 Potential areas include:
 
-* Maternal weight trajectory
-* Symptoms
-* Nutrition adherence
-* Physical activity
-* Laboratory trends
-* Ultrasound measurements
-* Fetal growth
-* Doppler findings
-* Clinical appointments
-* Monitoring alerts
-* Provider notes
-* Patient summaries
+- Maternal weight trajectory
+- Symptoms
+- Nutrition adherence
+- Physical activity
+- Laboratory trends
+- Ultrasound measurements
+- Fetal growth
+- Doppler findings
+- Clinical appointments
+- Monitoring alerts
+- Provider notes
+- Patient summaries
 
 ## 9.4 Late Pregnancy and Delivery Preparation
 
 The product may support:
 
-* Continued growth monitoring
-* Maternal change monitoring
-* Care-team communication
-* Delivery preparation
-* Risk-informed review
-* Patient education
-* Transition planning
+- Continued growth monitoring
+- Maternal change monitoring
+- Care-team communication
+- Delivery preparation
+- Risk-informed review
+- Patient education
+- Transition planning
 
 ## 9.5 Postpartum and Future Pregnancy Readiness
 
 Future ODRISC development may include:
 
-* Postpartum metabolic follow-up
-* Weight and nutrition support
-* Diabetes-risk follow-up
-* Recovery and physical activity
-* Long-term maternal health
-* Future pregnancy planning
-* Interpregnancy health
+- Postpartum metabolic follow-up
+- Weight and nutrition support
+- Diabetes-risk follow-up
+- Recovery and physical activity
+- Long-term maternal health
+- Future pregnancy planning
+- Interpregnancy health
 
 Postpartum capabilities are part of the broader vision but must not be represented as available unless formally implemented and approved.
 
@@ -451,19 +451,19 @@ The long-term ODRISC platform should be understood through connected product lay
 
 This layer may include:
 
-* Demographic information
-* Pregnancy history
-* Medical history
-* Family history
-* Metabolic risk
-* Relevant ethnicity context
-* Previous gestational diabetes
-* Previous macrosomia
-* PCOS
-* IVF or assisted reproduction
-* Lifestyle context
-* Patient goals
-* Relevant symptoms
+- Demographic information
+- Pregnancy history
+- Medical history
+- Family history
+- Metabolic risk
+- Relevant ethnicity context
+- Previous gestational diabetes
+- Previous macrosomia
+- PCOS
+- IVF or assisted reproduction
+- Lifestyle context
+- Patient goals
+- Relevant symptoms
 
 Its purpose is to establish the context within which later information is interpreted.
 
@@ -473,18 +473,18 @@ Its purpose is to establish the context within which later information is interp
 
 This layer may include:
 
-* Preconception weight
-* Pregnancy starting weight
-* Body mass index
-* Gestational weight gain
-* Weight-change velocity
-* Blood pressure where available
-* Symptoms
-* Laboratory values
-* Glucose-related information
-* Maternal timeline
-* Trend interpretation
-* Approved alerts
+- Preconception weight
+- Pregnancy starting weight
+- Body mass index
+- Gestational weight gain
+- Weight-change velocity
+- Blood pressure where available
+- Symptoms
+- Laboratory values
+- Glucose-related information
+- Maternal timeline
+- Trend interpretation
+- Approved alerts
 
 Its purpose is to show how maternal health is evolving.
 
@@ -494,19 +494,19 @@ Its purpose is to show how maternal health is evolving.
 
 This layer may include:
 
-* Medical nutrition therapy
-* Trimester-specific nutrition
-* Regionally appropriate meal planning
-* Portion guidance
-* Macronutrient planning
-* Glycemic-awareness support
-* Physical-activity plans
-* Pelvic-floor guidance
-* Mobility
-* Strengthening
-* Safety guidance
-* Adherence support
-* Professional review
+- Medical nutrition therapy
+- Trimester-specific nutrition
+- Regionally appropriate meal planning
+- Portion guidance
+- Macronutrient planning
+- Glycemic-awareness support
+- Physical-activity plans
+- Pelvic-floor guidance
+- Mobility
+- Strengthening
+- Safety guidance
+- Adherence support
+- Professional review
 
 Its purpose is to support structured and individualized health behavior within appropriate clinical boundaries.
 
@@ -516,22 +516,22 @@ Its purpose is to support structured and individualized health behavior within a
 
 This layer may include:
 
-* Gestational-age anchoring
-* Estimated due date consistency
-* Ultrasound measurements
-* Biparietal diameter
-* Head circumference
-* Abdominal circumference
-* Femur length
-* Estimated fetal weight
-* Growth standards
-* Percentiles
-* Z-scores
-* Growth velocity
-* Centile crossing
-* Customized growth expectations
-* Longitudinal scan comparison
-* Fetal growth timeline
+- Gestational-age anchoring
+- Estimated due date consistency
+- Ultrasound measurements
+- Biparietal diameter
+- Head circumference
+- Abdominal circumference
+- Femur length
+- Estimated fetal weight
+- Growth standards
+- Percentiles
+- Z-scores
+- Growth velocity
+- Centile crossing
+- Customized growth expectations
+- Longitudinal scan comparison
+- Fetal growth timeline
 
 Its purpose is to help providers understand fetal development across time rather than scan by scan.
 
@@ -541,13 +541,13 @@ Its purpose is to help providers understand fetal development across time rather
 
 This layer may include:
 
-* Umbilical artery information
-* Middle cerebral artery information
-* Cerebroplacental ratio
-* Relevant percentile or threshold context
-* Longitudinal Doppler review
-* Guideline-informed staging support
-* Relationship with fetal-growth patterns
+- Umbilical artery information
+- Middle cerebral artery information
+- Cerebroplacental ratio
+- Relevant percentile or threshold context
+- Longitudinal Doppler review
+- Guideline-informed staging support
+- Relationship with fetal-growth patterns
 
 Its purpose is to add hemodynamic context where appropriate.
 
@@ -559,17 +559,17 @@ This layer must remain clinically precise and must not independently determine d
 
 This layer may include:
 
-* Change detection
-* Velocity analysis
-* Pattern recognition
-* Correlation across maternal and fetal information
-* Deviation from expected trajectory
-* Monitoring prompts
-* Explainable alerts
-* Prioritization support
-* Guideline-informed logic
-* Clinical summaries
-* Suggested areas for review
+- Change detection
+- Velocity analysis
+- Pattern recognition
+- Correlation across maternal and fetal information
+- Deviation from expected trajectory
+- Monitoring prompts
+- Explainable alerts
+- Prioritization support
+- Guideline-informed logic
+- Clinical summaries
+- Suggested areas for review
 
 Its purpose is to convert structured longitudinal data into useful, explainable decision support.
 
@@ -579,18 +579,18 @@ Its purpose is to convert structured longitudinal data into useful, explainable 
 
 This layer may include:
 
-* Patient-provider data sharing
-* Provider notes
-* Patient summaries
-* Clinical reports
-* Referral workflows
-* Multidisciplinary access
-* Patient enrolment
-* Provider dashboards
-* Cohort review
-* Follow-up workflows
-* Escalation pathways
-* Audit history
+- Patient-provider data sharing
+- Provider notes
+- Patient summaries
+- Clinical reports
+- Referral workflows
+- Multidisciplinary access
+- Patient enrolment
+- Provider dashboards
+- Cohort review
+- Follow-up workflows
+- Escalation pathways
+- Audit history
 
 Its purpose is to strengthen continuity and coordination.
 
@@ -600,19 +600,19 @@ Its purpose is to strengthen continuity and coordination.
 
 This layer may include:
 
-* Manual entry
-* Optical character recognition
-* Ultrasound report extraction
-* Structured data capture
-* PDF reports
-* FHIR-based interoperability
-* Electronic-health-record integration
-* Hospital-system integration
-* Role-based access
-* Audit logs
-* Localization
-* Analytics
-* Secure cloud infrastructure
+- Manual entry
+- Optical character recognition
+- Ultrasound report extraction
+- Structured data capture
+- PDF reports
+- FHIR-based interoperability
+- Electronic-health-record integration
+- Hospital-system integration
+- Role-based access
+- Audit logs
+- Localization
+- Analytics
+- Secure cloud infrastructure
 
 Its purpose is to make the platform usable across real care environments.
 
@@ -626,14 +626,14 @@ Every capability must be assigned an approved product status before it is public
 
 Recommended status labels are:
 
-* Available
-* Limited availability
-* Pilot
-* In validation
-* In development
-* Planned
-* Future roadmap
-* Not publicly announced
+- Available
+- Limited availability
+- Pilot
+- In validation
+- In development
+- Planned
+- Future roadmap
+- Not publicly announced
 
 ---
 
@@ -643,20 +643,20 @@ ODRISC includes a risk-assessment capability intended to support early awareness
 
 Potential inputs include:
 
-* Age
-* Pregnancy history
-* Anthropometric information
-* Ethnicity
-* Family history
-* Personal history
-* Relevant medical history
+- Age
+- Pregnancy history
+- Anthropometric information
+- Ethnicity
+- Family history
+- Personal history
+- Relevant medical history
 
 Potential outputs include:
 
-* Risk category
-* Contributing risk factors
-* Plain-language explanation
-* Suggested discussion with a healthcare provider
+- Risk category
+- Contributing risk factors
+- Plain-language explanation
+- Suggested discussion with a healthcare provider
 
 The tool must be positioned as risk assessment, not diagnosis.
 
@@ -670,19 +670,19 @@ ODRISC includes structured weight monitoring for preconception and pregnancy.
 
 Potential capabilities include:
 
-* Starting weight
-* Body mass index
-* Goal weight
-* Target date
-* Preconception weight change
-* Trimester-specific gestational weight monitoring
-* Daily or periodic logging
-* Progress visualization
-* Weekly trends
-* Monthly comparison
-* Remaining pregnancy timeline
-* Approved alerts
-* Patient and Provider views
+- Starting weight
+- Body mass index
+- Goal weight
+- Target date
+- Preconception weight change
+- Trimester-specific gestational weight monitoring
+- Daily or periodic logging
+- Progress visualization
+- Weekly trends
+- Monthly comparison
+- Remaining pregnancy timeline
+- Approved alerts
+- Patient and Provider views
 
 The tool should support health-focused monitoring without stigma.
 
@@ -694,16 +694,16 @@ ODRISC includes or plans structured nutrition support developed with qualified n
 
 Potential capabilities include:
 
-* Personalized diet plans
-* Trimester-specific planning
-* Vegetarian and non-vegetarian options
-* Portion guidance
-* Gram and household-measure formats
-* Macronutrient planning
-* Glycemic-awareness considerations
-* Regionally appropriate foods
-* Dietitian review
-* One-to-one professional support
+- Personalized diet plans
+- Trimester-specific planning
+- Vegetarian and non-vegetarian options
+- Portion guidance
+- Gram and household-measure formats
+- Macronutrient planning
+- Glycemic-awareness considerations
+- Regionally appropriate foods
+- Dietitian review
+- One-to-one professional support
 
 The product must distinguish structured professional support from generic nutrition content.
 
@@ -715,15 +715,15 @@ ODRISC includes or plans structured physical-activity guidance developed with wo
 
 Potential capabilities include:
 
-* Trimester-specific plans
-* Upper-body activity
-* Lower-body activity
-* Back and mobility routines
-* Pelvic-floor training
-* Frequency, intensity, time, and type guidance
-* Safety cautions
-* Adherence tracking
-* Professional support
+- Trimester-specific plans
+- Upper-body activity
+- Lower-body activity
+- Back and mobility routines
+- Pelvic-floor training
+- Frequency, intensity, time, and type guidance
+- Safety cautions
+- Adherence tracking
+- Professional support
 
 Contraindications and medical guidance must be respected.
 
@@ -733,14 +733,14 @@ Contraindications and medical guidance must be respected.
 
 The maternal-intelligence layer is intended to connect:
 
-* Risk factors
-* Maternal history
-* Weight trajectory
-* Symptoms
-* Laboratory information
-* Metabolic context
-* Pregnancy stage
-* Patient-reported information
+- Risk factors
+- Maternal history
+- Weight trajectory
+- Symptoms
+- Laboratory information
+- Metabolic context
+- Pregnancy stage
+- Patient-reported information
 
 The long-term goal is to support more meaningful recognition of maternal change over time.
 
@@ -750,19 +750,19 @@ The long-term goal is to support more meaningful recognition of maternal change 
 
 The fetal growth-intelligence layer is intended to support:
 
-* Reliable pregnancy dating
-* Consistent estimated due date
-* Longitudinal scan review
-* Growth-standard comparison
-* Estimated fetal weight
-* Biometric trends
-* Growth velocity
-* Centile crossing
-* Customized growth expectations
-* Small-for-gestational-age context
-* Fetal-growth-restriction monitoring support
-* Doppler context
-* Explainable reporting
+- Reliable pregnancy dating
+- Consistent estimated due date
+- Longitudinal scan review
+- Growth-standard comparison
+- Estimated fetal weight
+- Biometric trends
+- Growth velocity
+- Centile crossing
+- Customized growth expectations
+- Small-for-gestational-age context
+- Fetal-growth-restriction monitoring support
+- Doppler context
+- Explainable reporting
 
 The platform must remain decision-supportive rather than autonomously diagnostic.
 
@@ -774,13 +774,13 @@ The product may use optical character recognition and structured extraction to h
 
 Potential capabilities include extraction of:
 
-* Gestational age
-* Estimated fetal weight
-* Head circumference
-* Abdominal circumference
-* Femur length
-* Biparietal diameter
-* Doppler values
+- Gestational age
+- Estimated fetal weight
+- Head circumference
+- Abdominal circumference
+- Femur length
+- Biparietal diameter
+- Doppler values
 
 Extracted data must be reviewable and confirmable.
 
@@ -792,18 +792,18 @@ OCR output must not be treated as automatically accurate without validation.
 
 The Provider platform may include:
 
-* Patient list
-* Risk stratification
-* Monitoring status
-* Maternal timeline
-* Fetal growth timeline
-* Alerts
-* Clinical summaries
-* Notes
-* Reports
-* Patient engagement status
-* Cohort-level information
-* Filtering and prioritization
+- Patient list
+- Risk stratification
+- Monitoring status
+- Maternal timeline
+- Fetal growth timeline
+- Alerts
+- Clinical summaries
+- Notes
+- Reports
+- Patient engagement status
+- Cohort-level information
+- Filtering and prioritization
 
 The dashboard should reduce fragmentation rather than add unnecessary administrative burden.
 
@@ -813,20 +813,20 @@ The dashboard should reduce fragmentation rather than add unnecessary administra
 
 The Patient application may include:
 
-* Registration
-* Risk assessment
-* Pregnancy setup
-* Weight logging
-* Nutrition plans
-* Physical-activity plans
-* Pregnancy timeline
-* Maternal progress
-* Fetal growth summaries
-* Alerts
-* Educational content
-* Professional support
-* Appointment preparation
-* Clinician-sharing features
+- Registration
+- Risk assessment
+- Pregnancy setup
+- Weight logging
+- Nutrition plans
+- Physical-activity plans
+- Pregnancy timeline
+- Maternal progress
+- Fetal growth summaries
+- Alerts
+- Educational content
+- Professional support
+- Appointment preparation
+- Clinician-sharing features
 
 Patient-facing outputs must remain understandable and clinically bounded.
 
@@ -866,32 +866,32 @@ Automation should enhance attention and understanding, not bypass professional r
 
 The long-term Patient experience should help a woman understand:
 
-* Where she is in the pregnancy journey
-* Which information matters
-* How her health is changing
-* How her baby's growth is progressing
-* Which actions support her care plan
-* Which information should be shared
-* When she may need to contact her healthcare provider
-* How separate reports and observations connect
+- Where she is in the pregnancy journey
+- Which information matters
+- How her health is changing
+- How her baby's growth is progressing
+- Which actions support her care plan
+- Which information should be shared
+- When she may need to contact her healthcare provider
+- How separate reports and observations connect
 
 The Patient product should feel like:
 
-* A structured guide
-* A monitoring companion
-* A communication aid
-* A trusted source of approved information
-* A bridge to the healthcare team
+- A structured guide
+- A monitoring companion
+- A communication aid
+- A trusted source of approved information
+- A bridge to the healthcare team
 
 It must not feel like:
 
-* A diagnostic authority
-* A substitute clinician
-* A fear-based alert system
-* A generic content library
-* A weight-loss application
-* A pregnancy social network
-* An opaque artificial-intelligence tool
+- A diagnostic authority
+- A substitute clinician
+- A fear-based alert system
+- A generic content library
+- A weight-loss application
+- A pregnancy social network
+- An opaque artificial-intelligence tool
 
 ---
 
@@ -899,33 +899,33 @@ It must not feel like:
 
 The long-term Provider experience should help clinicians:
 
-* Review pregnancy progression efficiently
-* Compare information across time
-* Recognize emerging deviations
-* Understand growth velocity
-* Review maternal and fetal relationships
-* Prioritize patients requiring attention
-* Receive explainable summaries
-* Collaborate with patients and colleagues
-* Reduce fragmentation
-* Integrate ODRISC into existing workflows
+- Review pregnancy progression efficiently
+- Compare information across time
+- Recognize emerging deviations
+- Understand growth velocity
+- Review maternal and fetal relationships
+- Prioritize patients requiring attention
+- Receive explainable summaries
+- Collaborate with patients and colleagues
+- Reduce fragmentation
+- Integrate ODRISC into existing workflows
 
 The Provider product should feel like:
 
-* A longitudinal review system
-* A maternal and fetal intelligence layer
-* A structured decision-support environment
-* A patient-monitoring platform
-* A collaboration tool
+- A longitudinal review system
+- A maternal and fetal intelligence layer
+- A structured decision-support environment
+- A patient-monitoring platform
+- A collaboration tool
 
 It must not feel like:
 
-* A black-box diagnostic engine
-* A replacement for specialist interpretation
-* An alert generator without context
-* An administrative burden
-* A generic electronic-health-record clone
-* A collection of disconnected calculators
+- A black-box diagnostic engine
+- A replacement for specialist interpretation
+- An alert generator without context
+- An administrative burden
+- A generic electronic-health-record clone
+- A collection of disconnected calculators
 
 ---
 
@@ -935,16 +935,16 @@ The long-term product must create a responsible connection between Patient and P
 
 Potential interactions include:
 
-* Provider invitation of a patient
-* Patient consent to share information
-* Shared pregnancy timeline
-* Provider review of patient-entered data
-* Patient receipt of approved summaries
-* Structured questions for appointments
-* Monitoring instructions
-* Professional escalation
-* Multidisciplinary collaboration
-* Follow-up tasks
+- Provider invitation of a patient
+- Patient consent to share information
+- Shared pregnancy timeline
+- Provider review of patient-entered data
+- Patient receipt of approved summaries
+- Structured questions for appointments
+- Monitoring instructions
+- Professional escalation
+- Multidisciplinary collaboration
+- Follow-up tasks
 
 The Patient and Provider interfaces should not display identical levels of clinical information.
 
@@ -960,23 +960,23 @@ ODRISC may provide clinical decision support.
 
 This means the platform may help:
 
-* Organize information
-* Compare values
-* Calculate trends
-* Apply approved rules
-* Surface patterns
-* Generate prompts
-* Support prioritization
-* Present guideline-informed context
+- Organize information
+- Compare values
+- Calculate trends
+- Apply approved rules
+- Surface patterns
+- Generate prompts
+- Support prioritization
+- Present guideline-informed context
 
 Clinical decision support does not mean:
 
-* Independent diagnosis
-* Autonomous treatment
-* Replacement of clinical judgment
-* Guaranteed identification of every complication
-* Automated clinical management
-* Removal of professional responsibility
+- Independent diagnosis
+- Autonomous treatment
+- Replacement of clinical judgment
+- Guaranteed identification of every complication
+- Automated clinical management
+- Removal of professional responsibility
 
 All decision-support functionality must remain explainable, reviewable, and appropriately governed.
 
@@ -988,27 +988,27 @@ Artificial intelligence may support parts of the ODRISC platform.
 
 Potential uses include:
 
-* Data extraction
-* Pattern recognition
-* Trend analysis
-* Clinical summarization
-* Natural-language explanation
-* Workflow support
-* Personalization
-* Document processing
-* Cohort analysis
+- Data extraction
+- Pattern recognition
+- Trend analysis
+- Clinical summarization
+- Natural-language explanation
+- Workflow support
+- Personalization
+- Document processing
+- Cohort analysis
 
 Artificial intelligence must not become an unsupported marketing claim.
 
 The product should communicate:
 
-* What the system does
-* Which data it uses
-* How outputs are generated
-* Where human review is required
-* Which limitations exist
-* Whether the capability is validated
-* Whether the capability is available
+- What the system does
+- Which data it uses
+- How outputs are generated
+- Where human review is required
+- Which limitations exist
+- Whether the capability is validated
+- Whether the capability is available
 
 The preferred product message is not “AI for pregnancy.”
 
@@ -1024,25 +1024,25 @@ ODRISC may use or reference recognized clinical standards, growth references, or
 
 Potential areas include:
 
-* Gestational weight-gain guidance
-* Pregnancy dating
-* Fetal biometric standards
-* Estimated fetal-weight standards
-* Customized growth standards
-* Doppler interpretation
-* Fetal growth restriction frameworks
-* Gestational diabetes risk
-* Maternal risk assessment
+- Gestational weight-gain guidance
+- Pregnancy dating
+- Fetal biometric standards
+- Estimated fetal-weight standards
+- Customized growth standards
+- Doppler interpretation
+- Fetal growth restriction frameworks
+- Gestational diabetes risk
+- Maternal risk assessment
 
 Any use of a standard must document:
 
-* The source
-* The version
-* The population
-* The intended use
-* The calculation
-* The limitations
-* The implementation status
+- The source
+- The version
+- The population
+- The intended use
+- The calculation
+- The limitations
+- The implementation status
 
 The platform must not combine clinical frameworks without documenting how conflicts are resolved.
 
@@ -1054,13 +1054,13 @@ The platform must not combine clinical frameworks without documenting how confli
 
 India serves as an important environment for:
 
-* Product development
-* Validation
-* Clinical engagement
-* User feedback
-* Initial patient use
-* Professional-panel involvement
-* Operational learning
+- Product development
+- Validation
+- Clinical engagement
+- User feedback
+- Initial patient use
+- Professional-panel involvement
+- Operational learning
 
 ## 19.2 Qatar
 
@@ -1068,26 +1068,26 @@ Qatar is the primary planned commercial market.
 
 The product should support:
 
-* English and Arabic
-* Local healthcare workflows
-* Private provider adoption
-* Hospital partnerships
-* Self-pay patients
-* Provider subscriptions
-* Enterprise deployment
-* Regional data and privacy requirements
-* Localized pricing
-* Qatar-specific implementation
+- English and Arabic
+- Local healthcare workflows
+- Private provider adoption
+- Hospital partnerships
+- Self-pay patients
+- Provider subscriptions
+- Enterprise deployment
+- Regional data and privacy requirements
+- Localized pricing
+- Qatar-specific implementation
 
 ## 19.3 GCC Expansion
 
 The long-term GCC roadmap may include:
 
-* United Arab Emirates
-* Saudi Arabia
-* Kuwait
-* Bahrain
-* Oman
+- United Arab Emirates
+- Saudi Arabia
+- Kuwait
+- Bahrain
+- Oman
 
 The product should be designed so that new markets can be added without rebuilding the entire platform.
 
@@ -1095,13 +1095,13 @@ The product should be designed so that new markets can be added without rebuildi
 
 The global vision is a platform that can adapt to:
 
-* Different pregnancy populations
-* Different healthcare systems
-* Different clinical guidance
-* Different languages
-* Different data-governance requirements
-* Different provider workflows
-* Different commercial models
+- Different pregnancy populations
+- Different healthcare systems
+- Different clinical guidance
+- Different languages
+- Different data-governance requirements
+- Different provider workflows
+- Different commercial models
 
 Global expansion must not result in careless reuse of clinical assumptions across populations.
 
@@ -1115,48 +1115,48 @@ ODRISC may support multiple commercial models.
 
 Potential Patient models include:
 
-* Weekly membership
-* Monthly membership
-* Pregnancy-period membership
-* Annual access
-* Premium professional support
-* Employer-sponsored access
-* Insurer-sponsored access
-* Hospital-sponsored access
+- Weekly membership
+- Monthly membership
+- Pregnancy-period membership
+- Annual access
+- Premium professional support
+- Employer-sponsored access
+- Insurer-sponsored access
+- Hospital-sponsored access
 
 ## 20.2 Provider Model
 
 Potential Provider models include:
 
-* Individual provider subscription
-* Clinic subscription
-* Per-provider annual license
-* Setup or onboarding fee
-* Pilot agreement
-* Referral-based collaboration
-* Practice-level deployment
+- Individual provider subscription
+- Clinic subscription
+- Per-provider annual license
+- Setup or onboarding fee
+- Pilot agreement
+- Referral-based collaboration
+- Practice-level deployment
 
 ## 20.3 Enterprise Model
 
 Potential Enterprise models include:
 
-* Hospital license
-* Healthcare-network deployment
-* Implementation fee
-* Training
-* Support
-* Customization
-* Integration
-* Analytics
-* Multi-site access
+- Hospital license
+- Healthcare-network deployment
+- Implementation fee
+- Training
+- Support
+- Customization
+- Integration
+- Analytics
+- Multi-site access
 
 Commercial decisions must not compromise:
 
-* Clinical integrity
-* Patient safety
-* Data privacy
-* Trust
-* Product transparency
+- Clinical integrity
+- Patient safety
+- Data privacy
+- Trust
+- Product transparency
 
 ---
 
@@ -1164,26 +1164,26 @@ Commercial decisions must not compromise:
 
 ODRISC should differentiate through the combination of:
 
-* Patient participation
-* Provider intelligence
-* Maternal monitoring
-* Fetal growth monitoring
-* Longitudinal analysis
-* Explainable clinical logic
-* Weight, nutrition, and activity support
-* Connected maternal and fetal context
-* Multidisciplinary workflows
-* Regional adaptability
-* Patient-provider collaboration
+- Patient participation
+- Provider intelligence
+- Maternal monitoring
+- Fetal growth monitoring
+- Longitudinal analysis
+- Explainable clinical logic
+- Weight, nutrition, and activity support
+- Connected maternal and fetal context
+- Multidisciplinary workflows
+- Regional adaptability
+- Patient-provider collaboration
 
 The product should not differentiate primarily through:
 
-* Generic artificial-intelligence claims
-* Large numbers of disconnected features
-* Decorative dashboards
-* Unsupported predictions
-* Broad promises of preventing complications
-* Claims of replacing existing clinical systems
+- Generic artificial-intelligence claims
+- Large numbers of disconnected features
+- Decorative dashboards
+- Unsupported predictions
+- Broad promises of preventing complications
+- Claims of replacing existing clinical systems
 
 ---
 
@@ -1191,17 +1191,17 @@ The product should not differentiate primarily through:
 
 ODRISC should aim to contribute to outcomes such as:
 
-* Better patient awareness
-* More structured monitoring
-* Earlier professional review
-* Greater continuity
-* Improved patient engagement
-* More informed consultations
-* Better visibility into growth progression
-* Improved multidisciplinary communication
-* More consistent data review
-* Greater provider confidence in longitudinal information
-* Improved maternal and fetal outcomes
+- Better patient awareness
+- More structured monitoring
+- Earlier professional review
+- Greater continuity
+- Improved patient engagement
+- More informed consultations
+- Better visibility into growth progression
+- Improved multidisciplinary communication
+- More consistent data review
+- Greater provider confidence in longitudinal information
+- Improved maternal and fetal outcomes
 
 The platform must not claim causation or outcome improvement unless supported by appropriate evidence.
 
@@ -1217,65 +1217,65 @@ Product success should eventually be measured across multiple dimensions.
 
 Potential metrics include:
 
-* Risk assessments completed
-* Patient registrations
-* Monitoring activation
-* Weight logs completed
-* Nutrition-plan adherence
-* Physical-activity engagement
-* Patient retention
-* Provider sharing
-* Appointment-preparation use
-* Patient-reported understanding
-* Appropriate escalation
-* Subscription conversion
+- Risk assessments completed
+- Patient registrations
+- Monitoring activation
+- Weight logs completed
+- Nutrition-plan adherence
+- Physical-activity engagement
+- Patient retention
+- Provider sharing
+- Appointment-preparation use
+- Patient-reported understanding
+- Appropriate escalation
+- Subscription conversion
 
 ## 23.2 Provider Metrics
 
 Potential metrics include:
 
-* Provider registrations
-* Active providers
-* Patients enrolled
-* Dashboard use
-* Longitudinal reviews completed
-* Alerts reviewed
-* Reports generated
-* Pilot conversion
-* Provider renewal
-* Clinical-panel engagement
-* Workflow time
-* Provider satisfaction
+- Provider registrations
+- Active providers
+- Patients enrolled
+- Dashboard use
+- Longitudinal reviews completed
+- Alerts reviewed
+- Reports generated
+- Pilot conversion
+- Provider renewal
+- Clinical-panel engagement
+- Workflow time
+- Provider satisfaction
 
 ## 23.3 Enterprise Metrics
 
 Potential metrics include:
 
-* Sites implemented
-* Providers activated
-* Patients enrolled
-* Integration completion
-* Training completion
-* Cohort usage
-* Renewal
-* Expansion
-* Support requirements
-* Implementation time
-* Data-quality indicators
+- Sites implemented
+- Providers activated
+- Patients enrolled
+- Integration completion
+- Training completion
+- Cohort usage
+- Renewal
+- Expansion
+- Support requirements
+- Implementation time
+- Data-quality indicators
 
 ## 23.4 Clinical and Research Metrics
 
 Potential metrics may include:
 
-* Data completeness
-* Dating consistency
-* Growth-trajectory detection
-* Alert sensitivity and specificity
-* Agreement with expert review
-* Time to professional review
-* Patient adherence
-* Clinician usability
-* Clinical workflow impact
+- Data completeness
+- Dating consistency
+- Growth-trajectory detection
+- Alert sensitivity and specificity
+- Agreement with expert review
+- Time to professional review
+- Patient adherence
+- Clinician usability
+- Clinical workflow impact
 
 Clinical performance metrics require formal methodology and appropriate governance.
 
@@ -1289,74 +1289,74 @@ The roadmap should be organized by product maturity rather than by speculative f
 
 Focus:
 
-* Patient risk assessment
-* Weight monitoring
-* Nutrition
-* Physical activity
-* Patient onboarding
-* Core data capture
-* Basic Provider visibility
-* Clinical-panel feedback
-* Documentation
-* Privacy and security foundations
-* Product-status governance
+- Patient risk assessment
+- Weight monitoring
+- Nutrition
+- Physical activity
+- Patient onboarding
+- Core data capture
+- Basic Provider visibility
+- Clinical-panel feedback
+- Documentation
+- Privacy and security foundations
+- Product-status governance
 
 ## 24.2 Horizon Two — Connected Monitoring
 
 Focus:
 
-* Shared Patient and Provider workflows
-* Maternal timeline
-* Fetal growth timeline
-* Ultrasound-data capture
-* Report extraction
-* Structured alerts
-* Provider dashboard
-* Clinical summaries
-* Pilot programs
-* Improved analytics
+- Shared Patient and Provider workflows
+- Maternal timeline
+- Fetal growth timeline
+- Ultrasound-data capture
+- Report extraction
+- Structured alerts
+- Provider dashboard
+- Clinical summaries
+- Pilot programs
+- Improved analytics
 
 ## 24.3 Horizon Three — Maternal-Fetal Intelligence
 
 Focus:
 
-* Advanced growth analysis
-* Velocity
-* Centile crossing
-* Customized growth
-* Doppler context
-* Guideline-informed staging support
-* Cross-domain maternal and fetal analysis
-* Explainable intelligence
-* Specialist workflows
-* Validation
+- Advanced growth analysis
+- Velocity
+- Centile crossing
+- Customized growth
+- Doppler context
+- Guideline-informed staging support
+- Cross-domain maternal and fetal analysis
+- Explainable intelligence
+- Specialist workflows
+- Validation
 
 ## 24.4 Horizon Four — Enterprise Integration
 
 Focus:
 
-* Hospital deployment
-* FHIR integration
-* Electronic-health-record connectivity
-* Role-based access
-* Audit logs
-* Cohort analytics
-* Multisite implementation
-* Security maturity
-* Enterprise reporting
+- Hospital deployment
+- FHIR integration
+- Electronic-health-record connectivity
+- Role-based access
+- Audit logs
+- Cohort analytics
+- Multisite implementation
+- Security maturity
+- Enterprise reporting
 
 ## 24.5 Horizon Five — Regional and Population Scale
 
 Focus:
 
-* Qatar commercialization
-* GCC expansion
-* Arabic localization
-* Market-specific standards
-* Institutional partnerships
-* Employer and insurer programs
-* Population-level analytics
-* Research collaboration
+- Qatar commercialization
+- GCC expansion
+- Arabic localization
+- Market-specific standards
+- Institutional partnerships
+- Employer and insurer programs
+- Population-level analytics
+- Research collaboration
 
 Roadmap horizons do not imply approved delivery dates.
 
@@ -1368,17 +1368,17 @@ Specific timing belongs in the roadmap and implementation documentation.
 
 ODRISC must not become:
 
-* A replacement for antenatal care
-* An emergency service
-* An autonomous diagnostic tool
-* A general-purpose health application
-* A social-media platform
-* A marketplace for unverified services
-* A source of unsupported treatment advice
-* A substitute for laboratory testing
-* A substitute for ultrasound interpretation
-* A substitute for maternal-fetal medicine review
-* A tool that places clinical responsibility on patients
+- A replacement for antenatal care
+- An emergency service
+- An autonomous diagnostic tool
+- A general-purpose health application
+- A social-media platform
+- A marketplace for unverified services
+- A source of unsupported treatment advice
+- A substitute for laboratory testing
+- A substitute for ultrasound interpretation
+- A substitute for maternal-fetal medicine review
+- A tool that places clinical responsibility on patients
 
 These boundaries should be reinforced across product, content, design, legal, and support workflows.
 
@@ -1388,18 +1388,18 @@ These boundaries should be reinforced across product, content, design, legal, an
 
 Product safety requires:
 
-* Appropriate disclaimers
-* Clear escalation language
-* Human review
-* Data validation
-* Explainable alerts
-* Conservative handling of uncertainty
-* Auditability
-* Version control for clinical logic
-* Approval of clinical rules
-* Transparent capability status
-* Secure data handling
-* Defined roles and responsibilities
+- Appropriate disclaimers
+- Clear escalation language
+- Human review
+- Data validation
+- Explainable alerts
+- Conservative handling of uncertainty
+- Auditability
+- Version control for clinical logic
+- Approval of clinical rules
+- Transparent capability status
+- Secure data handling
+- Defined roles and responsibilities
 
 Where data may be incomplete, incorrect, delayed, or conflicting, the product should clearly communicate uncertainty.
 
@@ -1413,27 +1413,27 @@ ODRISC will handle sensitive maternal and fetal information.
 
 The platform must be designed around:
 
-* Informed consent
-* Data minimization
-* Purpose limitation
-* Role-based access
-* Secure storage
-* Secure transmission
-* Auditability
-* Access control
-* Appropriate retention
-* Deletion workflows
-* Regional compliance
-* Transparent privacy communication
+- Informed consent
+- Data minimization
+- Purpose limitation
+- Role-based access
+- Secure storage
+- Secure transmission
+- Auditability
+- Access control
+- Appropriate retention
+- Deletion workflows
+- Regional compliance
+- Transparent privacy communication
 
 Patients should understand:
 
-* What information is collected
-* Why it is collected
-* Who can access it
-* How it is used
-* How sharing works
-* How consent can be managed
+- What information is collected
+- Why it is collected
+- Who can access it
+- How it is used
+- How sharing works
+- How consent can be managed
 
 Privacy must be treated as a product capability, not only a legal document.
 
@@ -1447,54 +1447,54 @@ The product experience should communicate intelligence without appearing cold, c
 
 The Patient and Provider products should feel:
 
-* Connected
-* Calm
-* Modern
-* Precise
-* Trustworthy
-* Premium
-* Human
-* Clinically responsible
+- Connected
+- Calm
+- Modern
+- Precise
+- Trustworthy
+- Premium
+- Human
+- Clinically responsible
 
 ## 28.2 Patient Product Design
 
 The Patient experience should emphasize:
 
-* Clarity
-* Progress
-* Reassurance
-* Guided actions
-* Understandable language
-* Simple visualizations
-* Accessible monitoring
-* Clear next steps
+- Clarity
+- Progress
+- Reassurance
+- Guided actions
+- Understandable language
+- Simple visualizations
+- Accessible monitoring
+- Clear next steps
 
 ## 28.3 Provider Product Design
 
 The Provider experience should emphasize:
 
-* Information hierarchy
-* Longitudinal comparison
-* Clinical relevance
-* Efficient review
-* Explainability
-* Prioritization
-* Detail on demand
-* Workflow continuity
+- Information hierarchy
+- Longitudinal comparison
+- Clinical relevance
+- Efficient review
+- Explainability
+- Prioritization
+- Detail on demand
+- Workflow continuity
 
 ## 28.4 Shared Visual Foundation
 
 The established visual foundation includes:
 
-* White backgrounds
-* High negative space
-* Text color `#4d4d4d`
-* Gradient using `#ff7680` and `#80ffcc`
-* Minimalist components
-* Controlled use of motion
-* Clear data visualizations
-* Accessible contrast
-* Restrained decorative elements
+- White backgrounds
+- High negative space
+- Text color `#4d4d4d`
+- Gradient using `#ff7680` and `#80ffcc`
+- Minimalist components
+- Controlled use of motion
+- Clear data visualizations
+- Accessible contrast
+- Restrained decorative elements
 
 ---
 
@@ -1504,23 +1504,23 @@ The public website must communicate the product vision without presenting the en
 
 The website should explain:
 
-* The problem ODRISC solves
-* Why longitudinal understanding matters
-* How the Patient and Provider experiences connect
-* Which capabilities are currently available
-* Which capabilities are in development
-* Which professional and institutional pathways exist
-* Why ODRISC supports collaboration
-* How visitors can take the next relevant action
+- The problem ODRISC solves
+- Why longitudinal understanding matters
+- How the Patient and Provider experiences connect
+- Which capabilities are currently available
+- Which capabilities are in development
+- Which professional and institutional pathways exist
+- Why ODRISC supports collaboration
+- How visitors can take the next relevant action
 
 The website should not:
 
-* Present concepts as completed products
-* Publish speculative interfaces as active features
-* Conceal product limitations
-* Use unsupported validation language
-* Use future integrations as proof of current capability
-* Imply regulatory status that has not been achieved
+- Present concepts as completed products
+- Publish speculative interfaces as active features
+- Conceal product limitations
+- Use unsupported validation language
+- Use future integrations as proof of current capability
+- Imply regulatory status that has not been achieved
 
 ---
 
@@ -1549,37 +1549,37 @@ A feature that fails these questions should be reconsidered.
 
 AI agents must use this document when:
 
-* Defining product requirements
-* Suggesting features
-* Writing product copy
-* Designing product interfaces
-* Planning architecture
-* Creating roadmaps
-* Reviewing implementation
-* Producing diagrams
-* Generating Patient or Provider journeys
+- Defining product requirements
+- Suggesting features
+- Writing product copy
+- Designing product interfaces
+- Planning architecture
+- Creating roadmaps
+- Reviewing implementation
+- Producing diagrams
+- Generating Patient or Provider journeys
 
 AI agents must not:
 
-* Invent product capabilities
-* Treat future roadmap items as available
-* Add unrelated health categories
-* Reposition ODRISC as a generic pregnancy application
-* Reposition ODRISC as an autonomous AI diagnostic platform
-* Separate Patient and Provider products into unrelated ecosystems
-* Remove the longitudinal intelligence foundation
-* Ignore clinical or privacy boundaries
-* Create unsupported medical claims
-* Assume regulatory approval
-* Add technology solely for novelty
-* Change locked product decisions without approval
+- Invent product capabilities
+- Treat future roadmap items as available
+- Add unrelated health categories
+- Reposition ODRISC as a generic pregnancy application
+- Reposition ODRISC as an autonomous AI diagnostic platform
+- Separate Patient and Provider products into unrelated ecosystems
+- Remove the longitudinal intelligence foundation
+- Ignore clinical or privacy boundaries
+- Create unsupported medical claims
+- Assume regulatory approval
+- Add technology solely for novelty
+- Change locked product decisions without approval
 
 When uncertainty exists, the AI agent must:
 
-* State the uncertainty
-* Check the relevant source-of-truth document
-* Use the approved product-status register
-* Record material unresolved issues in `docs/project/OPEN_QUESTIONS.md`
+- State the uncertainty
+- Check the relevant source-of-truth document
+- Use the approved product-status register
+- Record material unresolved issues in `docs/project/OPEN_QUESTIONS.md`
 
 ---
 
@@ -1614,31 +1614,31 @@ The following product decisions are currently locked:
 
 The following questions require later approval:
 
-* Which capabilities are available at the first website launch?
-* Which capabilities are available in the Patient application?
-* Which capabilities are available in the Provider platform?
-* Which features are pilot-only?
-* Which features remain in development?
-* What is the approved product-status register?
-* What is the first Patient primary conversion?
-* What is the first Provider primary conversion?
-* What Patient data can be shared with Providers?
-* How will Patient consent be managed?
-* Can Providers invite Patients?
-* Which Provider roles receive platform access?
-* Which clinical alerts are active at launch?
-* Which growth standards are implemented first?
-* Which Doppler frameworks are implemented first?
-* Which clinical rules require formal validation?
-* Which OCR provider will be used?
-* Which data require manual verification?
-* Which hospital systems are prioritized for integration?
-* What is the regulatory classification strategy?
-* Which countries are included in the first commercial release?
-* Which languages are included at launch?
-* Which postpartum capabilities belong in the roadmap?
-* Which employer and insurer capabilities are approved?
-* Which clinical outcomes can be publicly discussed?
+- Which capabilities are available at the first website launch?
+- Which capabilities are available in the Patient application?
+- Which capabilities are available in the Provider platform?
+- Which features are pilot-only?
+- Which features remain in development?
+- What is the approved product-status register?
+- What is the first Patient primary conversion?
+- What is the first Provider primary conversion?
+- What Patient data can be shared with Providers?
+- How will Patient consent be managed?
+- Can Providers invite Patients?
+- Which Provider roles receive platform access?
+- Which clinical alerts are active at launch?
+- Which growth standards are implemented first?
+- Which Doppler frameworks are implemented first?
+- Which clinical rules require formal validation?
+- Which OCR provider will be used?
+- Which data require manual verification?
+- Which hospital systems are prioritized for integration?
+- What is the regulatory classification strategy?
+- Which countries are included in the first commercial release?
+- Which languages are included at launch?
+- Which postpartum capabilities belong in the roadmap?
+- Which employer and insurer capabilities are approved?
+- Which clinical outcomes can be publicly discussed?
 
 These questions must be tracked in:
 
@@ -1652,33 +1652,33 @@ The product vision is being achieved when:
 
 ## Patient Success
 
-* Patients understand their pregnancy more clearly
-* Monitoring feels structured rather than fragmented
-* Patients know the limits of the platform
-* Patients communicate more effectively with Providers
-* Patient-facing information remains understandable
-* Weight and risk information remain non-judgmental
-* Appropriate professional review is encouraged
+- Patients understand their pregnancy more clearly
+- Monitoring feels structured rather than fragmented
+- Patients know the limits of the platform
+- Patients communicate more effectively with Providers
+- Patient-facing information remains understandable
+- Weight and risk information remain non-judgmental
+- Appropriate professional review is encouraged
 
 ## Provider Success
 
-* Providers gain clearer longitudinal visibility
-* Maternal and fetal information can be reviewed together
-* Clinical logic is explainable
-* Workflow burden is minimized
-* Alerts support prioritization
-* Providers retain clinical authority
-* The platform supports multidisciplinary collaboration
+- Providers gain clearer longitudinal visibility
+- Maternal and fetal information can be reviewed together
+- Clinical logic is explainable
+- Workflow burden is minimized
+- Alerts support prioritization
+- Providers retain clinical authority
+- The platform supports multidisciplinary collaboration
 
 ## Platform Success
 
-* Patient and Provider experiences remain connected
-* Product capabilities share one longitudinal foundation
-* Data silos are reduced
-* Available and future capabilities are clearly separated
-* The platform can scale across markets
-* Privacy and safety remain embedded
-* Product development remains aligned to maternal and fetal outcomes
+- Patient and Provider experiences remain connected
+- Product capabilities share one longitudinal foundation
+- Data silos are reduced
+- Available and future capabilities are clearly separated
+- The platform can scale across markets
+- Privacy and safety remain embedded
+- Product development remains aligned to maternal and fetal outcomes
 
 ---
 

@@ -16,31 +16,31 @@
 
 ## Related Documents
 
-* `PROJECT_CONTEXT.md`
-* `docs/project/SOURCE_OF_TRUTH.md`
-* `docs/project/ASSUMPTIONS.md`
-* `docs/project/OPEN_QUESTIONS.md`
-* `docs/project/GLOSSARY.md`
-* `docs/product/PRODUCT_VISION.md`
-* `docs/product/AUDIENCE.md`
-* `docs/product/WEBSITE_OBJECTIVES.md`
-* `docs/product/WEBSITE_STORY.md`
-* `docs/product/PRD.md`
-* `docs/product/PRODUCT_STATUS.md`
-* `docs/product/INFORMATION_ARCHITECTURE.md`
-* `docs/product/ROUTE_REGISTRY.md`
-* `docs/product/REQUIREMENTS_TRACEABILITY.md`
-* `docs/design/BRAND_FOUNDATION.md`
-* `docs/design/DESIGN_SYSTEM.md`
-* `docs/design/ANIMATION_GUIDELINES.md`
-* `docs/engineering/TECH_STACK.md`
-* `docs/engineering/ARCHITECTURE.md`
-* `docs/engineering/COMPONENT_LIBRARY.md`
-* `docs/engineering/CODING_STANDARDS.md`
-* `docs/engineering/TESTING_STRATEGY.md`
-* `docs/content/STORY_TO_PAGE_MATRIX.md`
-* `ai/rules/NON_NEGOTIABLES.md`
-* `ai/rules/AI_BEHAVIOR.md`
+- `PROJECT_CONTEXT.md`
+- `docs/project/SOURCE_OF_TRUTH.md`
+- `docs/project/ASSUMPTIONS.md`
+- `docs/project/OPEN_QUESTIONS.md`
+- `docs/project/GLOSSARY.md`
+- `docs/product/PRODUCT_VISION.md`
+- `docs/product/AUDIENCE.md`
+- `docs/product/WEBSITE_OBJECTIVES.md`
+- `docs/product/WEBSITE_STORY.md`
+- `docs/product/PRD.md`
+- `docs/product/PRODUCT_STATUS.md`
+- `docs/product/INFORMATION_ARCHITECTURE.md`
+- `docs/product/ROUTE_REGISTRY.md`
+- `docs/product/REQUIREMENTS_TRACEABILITY.md`
+- `docs/design/BRAND_FOUNDATION.md`
+- `docs/design/DESIGN_SYSTEM.md`
+- `docs/design/ANIMATION_GUIDELINES.md`
+- `docs/engineering/TECH_STACK.md`
+- `docs/engineering/ARCHITECTURE.md`
+- `docs/engineering/COMPONENT_LIBRARY.md`
+- `docs/engineering/CODING_STANDARDS.md`
+- `docs/engineering/TESTING_STRATEGY.md`
+- `docs/content/STORY_TO_PAGE_MATRIX.md`
+- `ai/rules/NON_NEGOTIABLES.md`
+- `ai/rules/AI_BEHAVIOR.md`
 
 ---
 
@@ -50,20 +50,20 @@ This document defines the requirements of every approved public page within the 
 
 It determines:
 
-* Why each page exists
-* Which audience it serves
-* Which visitor question it must answer
-* Which part of the ODRISC website story it communicates
-* Which sections must appear
-* Which content is required
-* Which content is conditional
-* Which claims are prohibited
-* Which product-status dependencies apply
-* Which primary action the page supports
-* Which search intent it targets
-* Which analytics events must be captured
-* Which accessibility and performance requirements apply
-* Which acceptance criteria must be satisfied
+- Why each page exists
+- Which audience it serves
+- Which visitor question it must answer
+- Which part of the ODRISC website story it communicates
+- Which sections must appear
+- Which content is required
+- Which content is conditional
+- Which claims are prohibited
+- Which product-status dependencies apply
+- Which primary action the page supports
+- Which search intent it targets
+- Which analytics events must be captured
+- Which accessibility and performance requirements apply
+- Which acceptance criteria must be satisfied
 
 This document is the primary page-level bridge between:
 
@@ -93,26 +93,26 @@ This document governs the public website at:
 
 It covers:
 
-* Shared entry pages
-* Patient pages
-* Provider pages
-* Institutional pages
-* Resource pages
-* Company pages
-* Conversion pages
-* Legal pages
-* Search and utility pages
-* Error pages
+- Shared entry pages
+- Patient pages
+- Provider pages
+- Institutional pages
+- Resource pages
+- Company pages
+- Conversion pages
+- Legal pages
+- Search and utility pages
+- Error pages
 
 It does not define the detailed screens of:
 
-* The Patient application
-* The Provider platform
-* Clinical intelligence dashboards
-* Hospital administration interfaces
-* Internal operational systems
-* Authentication systems
-* Clinical algorithm interfaces
+- The Patient application
+- The Provider platform
+- Clinical intelligence dashboards
+- Hospital administration interfaces
+- Internal operational systems
+- Authentication systems
+- Clinical algorithm interfaces
 
 Public pages may link to these systems only when the destination, market availability, and public communication status are approved.
 
@@ -165,11 +165,11 @@ PRO-PG-001
 
 Page identifiers must not change when:
 
-* The visible page title changes
-* The route label is refined
-* The visual layout changes
-* A page is localized
-* The implementation framework changes
+- The visible page title changes
+- The route label is refined
+- The visual layout changes
+- A page is localized
+- The implementation framework changes
 
 ---
 
@@ -229,10 +229,10 @@ Page motion must:
 
 Every page must identify one primary audience:
 
-* Shared
-* Patient
-* Provider
-* Institutional
+- Shared
+- Patient
+- Provider
+- Institutional
 
 Secondary audiences may be documented but must not dilute the primary purpose.
 
@@ -242,12 +242,12 @@ Every page must have one primary purpose.
 
 A page must not be published merely because:
 
-* A competitor has one
-* A keyword exists
-* A mockup was created
-* A capability is planned
-* A navigation gap needs filling
-* A presentation slide exists
+- A competitor has one
+- A keyword exists
+- A mockup was created
+- A capability is planned
+- A navigation gap needs filling
+- A presentation slide exists
 
 ## 7.3 Primary Visitor Question
 
@@ -271,12 +271,12 @@ All capability claims must be verified against:
 
 Relevant pages must make clear that:
 
-* ODRISC supports healthcare professionals
-* ODRISC does not replace professional care
-* Risk assessment is not diagnosis
-* Website content is not individualized medical advice
-* ODRISC is not an emergency service
-* Professional interpretation remains necessary
+- ODRISC supports healthcare professionals
+- ODRISC does not replace professional care
+- Risk assessment is not diagnosis
+- Website content is not individualized medical advice
+- ODRISC is not an emergency service
+- Professional interpretation remains necessary
 
 ## 7.7 Claim Traceability
 
@@ -292,67 +292,67 @@ Essential content must not disappear at smaller breakpoints.
 
 Pages must support:
 
-* Semantic heading structure
-* Keyboard access
-* Visible focus
-* Accessible controls
-* Alternative text
-* Sufficient contrast
-* Reduced-motion preferences
-* Non-color-dependent meaning
-* Understandable forms and errors
+- Semantic heading structure
+- Keyboard access
+- Visible focus
+- Accessible controls
+- Alternative text
+- Sufficient contrast
+- Reduced-motion preferences
+- Non-color-dependent meaning
+- Understandable forms and errors
 
 ## 7.10 SEO
 
 Every indexable page must contain:
 
-* Unique title
-* Unique meta description
-* Canonical URL
-* One clear primary heading
-* Search-intent-aligned content
-* Internal links
-* Appropriate structured data where applicable
-* Indexation status
+- Unique title
+- Unique meta description
+- Canonical URL
+- One clear primary heading
+- Search-intent-aligned content
+- Internal links
+- Appropriate structured data where applicable
+- Indexation status
 
 ## 7.11 Analytics
 
 Analytics must not collect:
 
-* Health assessment responses
-* Medical history
-* Symptoms
-* Patient names linked with health data
-* Clinical report data
-* Identifiable patient information
-* Sensitive form content
+- Health assessment responses
+- Medical history
+- Symptoms
+- Patient names linked with health data
+- Clinical report data
+- Identifiable patient information
+- Sensitive form content
 
 ## 7.12 Performance
 
 Pages must avoid:
 
-* Unnecessary blocking scripts
-* Oversized media
-* Decorative video that impairs loading
-* Excessive scroll animation
-* Layout shifts
-* Unoptimized third-party embeds
+- Unnecessary blocking scripts
+- Oversized media
+- Decorative video that impairs loading
+- Excessive scroll animation
+- Layout shifts
+- Unoptimized third-party embeds
 
 ## 7.13 Publication Readiness
 
 A page may be published only after:
 
-* Page requirement approval
-* Content approval
-* Product-status review
-* Clinical review where required
-* Legal and privacy review where required
-* CTA destination verification
-* Design review
-* Accessibility review
-* SEO review
-* Analytics verification
-* Technical QA
+- Page requirement approval
+- Content approval
+- Product-status review
+- Clinical review where required
+- Legal and privacy review where required
+- CTA destination verification
+- Design review
+- Accessibility review
+- SEO review
+- Analytics verification
+- Technical QA
 
 ---
 
@@ -386,27 +386,27 @@ Pages must not open with an unstructured feature catalogue.
 
 Every page specification includes:
 
-* Page ID
-* Route
-* Priority
-* Status
-* Audience
-* Page type
-* PRD requirements
-* Primary purpose
-* Primary visitor question
-* Narrative role
-* Primary CTA
-* Secondary CTA
-* Product-status dependency
-* Required section sequence
-* Required content
-* Conditional content
-* Prohibited content
-* SEO intent
-* Analytics
-* Accessibility considerations
-* Acceptance criteria
+- Page ID
+- Route
+- Priority
+- Status
+- Audience
+- Page type
+- PRD requirements
+- Primary purpose
+- Primary visitor question
+- Narrative role
+- Primary CTA
+- Secondary CTA
+- Product-status dependency
+- Required section sequence
+- Required content
+- Conditional content
+- Prohibited content
+- SEO intent
+- Analytics
+- Accessibility considerations
+- Acceptance criteria
 
 ---
 
@@ -439,14 +439,14 @@ Establish one connected brand before audience selection.
 
 ### Primary CTA
 
-* Patient
-* Healthcare Provider
+- Patient
+- Healthcare Provider
 
 These are two equal audience choices rather than a primary and secondary CTA.
 
 ### Secondary CTA
 
-* Learn about ODRISC
+- Learn about ODRISC
 
 Optional and subordinate to audience selection.
 
@@ -469,40 +469,40 @@ The wording must not imply that all platform capabilities are available.
 
 ### Required Content
 
-* ODRISC name and identity
-* Foundational narrative
-* Patient option
-* Provider option
-* Explanation that users may switch later
-* Access to About, Resources, Contact, Privacy, and Terms
-* Appropriate login route only when available
+- ODRISC name and identity
+- Foundational narrative
+- Patient option
+- Provider option
+- Explanation that users may switch later
+- Access to About, Resources, Contact, Privacy, and Terms
+- Appropriate login route only when available
 
 ### Conditional Content
 
-* Short product animation
-* Brief Patient and Provider summaries
-* Returning-audience preference
-* Language or market selector
-* Founder or team trust cue
+- Short product animation
+- Brief Patient and Provider summaries
+- Returning-audience preference
+- Language or market selector
+- Founder or team trust cue
 
 ### Prohibited Content
 
-* Full Patient and Provider navigation simultaneously
-* A third primary option for investors or institutions
-* Product feature overload
-* Forced registration
-* Forced questionnaire
-* Automatic redirection without approval
-* Unsupported product-status language
-* Clinical burden statistics presented without narrative context
+- Full Patient and Provider navigation simultaneously
+- A third primary option for investors or institutions
+- Product feature overload
+- Forced registration
+- Forced questionnaire
+- Automatic redirection without approval
+- Unsupported product-status language
+- Clinical burden statistics presented without narrative context
 
 ### SEO Intent
 
 Primary intent:
 
-* ODRISC
-* ODRISC maternal and fetal intelligence
-* ODRISC pregnancy care
+- ODRISC
+- ODRISC maternal and fetal intelligence
+- ODRISC pregnancy care
 
 The root page is the primary brand page.
 
@@ -510,32 +510,32 @@ The root page is the primary brand page.
 
 Track:
 
-* Gateway viewed
-* Patient selected
-* Provider selected
-* About selected
-* Language selected
-* Login selected
-* Audience preference used
+- Gateway viewed
+- Patient selected
+- Provider selected
+- About selected
+- Language selected
+- Login selected
+- Audience preference used
 
 ### Accessibility Considerations
 
-* Audience cards must be keyboard-operable
-* Audience choices must use descriptive labels
-* Selection must not depend on hover
-* Motion must respect reduced-motion preferences
-* The two options must have equal semantic importance
+- Audience cards must be keyboard-operable
+- Audience choices must use descriptive labels
+- Selection must not depend on hover
+- Motion must respect reduced-motion preferences
+- The two options must have equal semantic importance
 
 ### Acceptance Criteria
 
-* ODRISC is clearly presented as one platform
-* Patient and Provider choices are immediately understandable
-* Direct audience selection works on mobile and desktop
-* No authentication is required
-* Shared footer links work
-* Analytics events fire once per valid interaction
-* The gateway does not block deep links
-* The gateway passes keyboard and focus testing
+- ODRISC is clearly presented as one platform
+- Patient and Provider choices are immediately understandable
+- Direct audience selection works on mobile and desktop
+- No authentication is required
+- Shared footer links work
+- Analytics events fire once per valid interaction
+- The gateway does not block deep links
+- The gateway passes keyboard and focus testing
 
 ---
 
@@ -568,16 +568,16 @@ Move the visitor from uncertainty toward understanding and informed participatio
 
 Potential approved actions:
 
-* Assess My Risk
-* Start My Journey
-* Begin Monitoring
-* Access ODRISC
+- Assess My Risk
+- Start My Journey
+- Begin Monitoring
+- Access ODRISC
 
 Only one may be primary at launch.
 
 ### Secondary CTA
 
-* Learn How ODRISC Helps
+- Learn How ODRISC Helps
 
 ### Product-Status Dependency
 
@@ -599,46 +599,46 @@ All Patient-facing capability descriptions must reflect the Product Status regis
 
 ### Required Content
 
-* Plain-language product explanation
-* Preconception and pregnancy relevance
-* Risk-awareness explanation
-* Weight, nutrition, and physical-activity overview where approved
-* Maternal and fetal progress explanation
-* Professional-care boundary
-* Privacy reassurance
-* Approved availability statement
-* Clear next action
+- Plain-language product explanation
+- Preconception and pregnancy relevance
+- Risk-awareness explanation
+- Weight, nutrition, and physical-activity overview where approved
+- Maternal and fetal progress explanation
+- Professional-care boundary
+- Privacy reassurance
+- Approved availability statement
+- Clear next action
 
 ### Conditional Content
 
-* Membership
-* Patient application screenshots
-* Testimonials
-* Professional-support plans
-* IVF pathway
-* PCOS pathway
-* Arabic availability
-* Market-specific pricing
+- Membership
+- Patient application screenshots
+- Testimonials
+- Professional-support plans
+- IVF pathway
+- PCOS pathway
+- Arabic availability
+- Market-specific pricing
 
 ### Prohibited Content
 
-* Autonomous medical advice
-* Guaranteed prevention
-* Diagnostic claims
-* Weight-shaming language
-* Appearance-focused language
-* Excessive clinical terminology
-* Generic pregnancy-content positioning
-* Roadmap features presented as active
+- Autonomous medical advice
+- Guaranteed prevention
+- Diagnostic claims
+- Weight-shaming language
+- Appearance-focused language
+- Excessive clinical terminology
+- Generic pregnancy-content positioning
+- Roadmap features presented as active
 
 ### SEO Intent
 
 Primary themes:
 
-* Pregnancy monitoring support
-* Pregnancy wellness and monitoring
-* Preconception and pregnancy support
-* Maternal and fetal progress
+- Pregnancy monitoring support
+- Pregnancy wellness and monitoring
+- Preconception and pregnancy support
+- Maternal and fetal progress
 
 The title must not imply medical-device approval unless confirmed.
 
@@ -646,33 +646,33 @@ The title must not imply medical-device approval unless confirmed.
 
 Track:
 
-* Patient homepage viewed
-* Primary CTA clicked
-* Capability card selected
-* Preconception pathway selected
-* Pregnancy pathway selected
-* FAQ opened
-* Provider switch selected
-* Application handoff selected
+- Patient homepage viewed
+- Primary CTA clicked
+- Capability card selected
+- Preconception pathway selected
+- Pregnancy pathway selected
+- FAQ opened
+- Provider switch selected
+- Application handoff selected
 
 ### Accessibility Considerations
 
-* Plain-language headings
-* Accessible diagrams
-* No reliance on gradient text for essential meaning
-* Patient progress visuals must have text alternatives
-* CTA sequence must remain clear on mobile
+- Plain-language headings
+- Accessible diagrams
+- No reliance on gradient text for essential meaning
+- Patient progress visuals must have text alternatives
+- CTA sequence must remain clear on mobile
 
 ### Acceptance Criteria
 
-* A Patient can explain ODRISC in simple language after reviewing the page
-* The healthcare professional remains central
-* The primary CTA has a working destination
-* Capability wording matches Product Status
-* Patient content remains non-stigmatizing
-* Mobile narrative order remains coherent
-* Audience switch is visible
-* Patient and Provider language are not mixed
+- A Patient can explain ODRISC in simple language after reviewing the page
+- The healthcare professional remains central
+- The primary CTA has a working destination
+- Capability wording matches Product Status
+- Patient content remains non-stigmatizing
+- Mobile narrative order remains coherent
+- Audience switch is visible
+- Patient and Provider language are not mixed
 
 ---
 
@@ -699,11 +699,11 @@ Translate fragmented pregnancy information into a clear Patient-level longitudin
 
 ### Primary CTA
 
-* Start My Journey, subject to approval
+- Start My Journey, subject to approval
 
 ### Secondary CTA
 
-* Explore Patient Support
+- Explore Patient Support
 
 ### Product-Status Dependency
 
@@ -725,49 +725,49 @@ Every described capability must use approved availability wording.
 
 ### Required Content
 
-* Plain-language explanation of longitudinal monitoring
-* Patient role
-* Provider role
-* Overview of available Patient capabilities
-* Privacy and consent principles
-* Explanation that ODRISC is not an emergency service
+- Plain-language explanation of longitudinal monitoring
+- Patient role
+- Provider role
+- Overview of available Patient capabilities
+- Privacy and consent principles
+- Explanation that ODRISC is not an emergency service
 
 ### Conditional Content
 
-* Shared timeline demonstration
-* Patient application preview
-* Provider-sharing workflow
-* Professional-support tiers
+- Shared timeline demonstration
+- Patient application preview
+- Provider-sharing workflow
+- Professional-support tiers
 
 ### Prohibited Content
 
-* Technical architecture
-* FHIR explanations
-* Specialist fetal-growth terminology as primary content
-* “AI manages your pregnancy”
-* “Never miss a complication”
+- Technical architecture
+- FHIR explanations
+- Specialist fetal-growth terminology as primary content
+- “AI manages your pregnancy”
+- “Never miss a complication”
 
 ### SEO Intent
 
-* How pregnancy monitoring works
-* Pregnancy tracking with professional support
-* Understanding pregnancy progress
+- How pregnancy monitoring works
+- Pregnancy tracking with professional support
+- Understanding pregnancy progress
 
 ### Analytics
 
-* Page viewed
-* Capability selected
-* Safety section viewed
-* Start CTA clicked
-* Relevant Patient page selected
+- Page viewed
+- Capability selected
+- Safety section viewed
+- Start CTA clicked
+- Relevant Patient page selected
 
 ### Acceptance Criteria
 
-* The page explains the Patient product without becoming a feature grid
-* Longitudinal understanding is clearly communicated
-* Product limitations are visible
-* The page routes to relevant Patient capabilities
-* No unavailable feature is presented as active
+- The page explains the Patient product without becoming a feature grid
+- Longitudinal understanding is clearly communicated
+- Product limitations are visible
+- The page routes to relevant Patient capabilities
+- No unavailable feature is presented as active
 
 ---
 
@@ -794,21 +794,21 @@ Move from preparation uncertainty toward structured readiness and professional d
 
 ### Primary CTA
 
-* Explore Preconception Support
+- Explore Preconception Support
 
 ### Secondary CTA
 
-* Understand My Risk
+- Understand My Risk
 
 Only when risk assessment is publicly available.
 
 ### Product-Status Dependency
 
-* Risk assessment
-* Preconception weight monitoring
-* Nutrition
-* Physical activity
-* IVF readiness tools
+- Risk assessment
+- Preconception weight monitoring
+- Nutrition
+- Physical activity
+- IVF readiness tools
 
 ### Required Section Sequence
 
@@ -825,51 +825,51 @@ Only when risk assessment is publicly available.
 
 ### Required Content
 
-* Non-alarmist preparation message
-* Recognition of individual differences
-* Professional-care guidance
-* Clear distinction between available capabilities and future readiness tools
-* Links to Risk Awareness, Weight Monitoring, Nutrition, and Physical Activity
+- Non-alarmist preparation message
+- Recognition of individual differences
+- Professional-care guidance
+- Clear distinction between available capabilities and future readiness tools
+- Links to Risk Awareness, Weight Monitoring, Nutrition, and Physical Activity
 
 ### Conditional Content
 
-* PCOS child page
-* IVF readiness child page
-* Preconception assessment
-* Market-specific professional programs
+- PCOS child page
+- IVF readiness child page
+- Preconception assessment
+- Market-specific professional programs
 
 ### Prohibited Content
 
-* Guaranteed conception
-* Universal weight-loss requirements
-* Fertility-treatment claims
-* Prevention guarantees
-* Implication that all women require the same preparation plan
+- Guaranteed conception
+- Universal weight-loss requirements
+- Fertility-treatment claims
+- Prevention guarantees
+- Implication that all women require the same preparation plan
 
 ### SEO Intent
 
-* Preconception health
-* Preparing for pregnancy
-* PCOS pregnancy preparation
-* IVF pregnancy preparation
-* Pregnancy metabolic health preparation
+- Preconception health
+- Preparing for pregnancy
+- PCOS pregnancy preparation
+- IVF pregnancy preparation
+- Pregnancy metabolic health preparation
 
 ### Analytics
 
-* Page viewed
-* Risk pathway selected
-* PCOS pathway selected
-* IVF pathway selected
-* Weight support selected
-* CTA clicked
+- Page viewed
+- Risk pathway selected
+- PCOS pathway selected
+- IVF pathway selected
+- Weight support selected
+- CTA clicked
 
 ### Acceptance Criteria
 
-* Preconception support is distinct from pregnancy support
-* PCOS and IVF language remains responsible
-* No future readiness score is presented as available without approval
-* Links route to canonical Patient pages
-* Professional involvement is visible
+- Preconception support is distinct from pregnancy support
+- PCOS and IVF language remains responsible
+- No future readiness score is presented as available without approval
+- Links route to canonical Patient pages
+- Professional involvement is visible
 
 ---
 
@@ -892,11 +892,11 @@ Provide one Patient-oriented overview of how ODRISC may support the pregnancy jo
 
 ### Primary CTA
 
-* Explore Pregnancy Monitoring
+- Explore Pregnancy Monitoring
 
 ### Secondary CTA
 
-* View Patient Support Areas
+- View Patient Support Areas
 
 ### Product-Status Dependency
 
@@ -917,50 +917,50 @@ All Patient monitoring and support capabilities.
 
 ### Required Content
 
-* Trimester-aware but not week-by-week generic content
-* Longitudinal progress explanation
-* Links to canonical capability pages
-* Clear safety language
-* Provider collaboration message
+- Trimester-aware but not week-by-week generic content
+- Longitudinal progress explanation
+- Links to canonical capability pages
+- Clear safety language
+- Provider collaboration message
 
 ### Conditional Content
 
-* Patient timeline preview
-* Weekly or monthly monitoring demonstrations
-* App screenshots
-* Professional-support plans
+- Patient timeline preview
+- Weekly or monthly monitoring demonstrations
+- App screenshots
+- Professional-support plans
 
 ### Prohibited Content
 
-* Generic pregnancy encyclopedia structure
-* Emergency triage
-* Diagnosis
-* Unapproved symptom-alert functionality
-* Universal dietary or activity instructions
+- Generic pregnancy encyclopedia structure
+- Emergency triage
+- Diagnosis
+- Unapproved symptom-alert functionality
+- Universal dietary or activity instructions
 
 ### SEO Intent
 
-* Pregnancy progress monitoring
-* Pregnancy weight and nutrition support
-* Understanding pregnancy changes
+- Pregnancy progress monitoring
+- Pregnancy weight and nutrition support
+- Understanding pregnancy changes
 
 ### Analytics
 
-* Page viewed
-* Trimester content selected
-* Weight page selected
-* Nutrition page selected
-* Physical-activity page selected
-* Progress page selected
-* CTA clicked
+- Page viewed
+- Trimester content selected
+- Weight page selected
+- Nutrition page selected
+- Physical-activity page selected
+- Progress page selected
+- CTA clicked
 
 ### Acceptance Criteria
 
-* The page connects support areas into one pregnancy journey
-* It does not duplicate detailed capability pages
-* It avoids generic pregnancy-content positioning
-* Professional care remains central
-* Patient safety language is present
+- The page connects support areas into one pregnancy journey
+- It does not duplicate detailed capability pages
+- It avoids generic pregnancy-content positioning
+- Professional care remains central
+- Patient safety language is present
 
 ---
 
@@ -983,13 +983,13 @@ Help women understand pregnancy-related risk factors and the difference between 
 
 ### Primary CTA
 
-* Assess My Risk
+- Assess My Risk
 
 Only when the risk assessment is publicly available.
 
 ### Secondary CTA
 
-* Discuss Risk With My Healthcare Professional
+- Discuss Risk With My Healthcare Professional
 
 ### Product-Status Dependency
 
@@ -1010,60 +1010,60 @@ Gestational Diabetes Risk Assessment.
 
 ### Required Content
 
-* Risk categories only when approved
-* Contributing-factor explanation
-* Clear clinical-testing boundary
-* Population and evidence context
-* Appropriate self-blame prevention
-* Privacy explanation
+- Risk categories only when approved
+- Contributing-factor explanation
+- Clear clinical-testing boundary
+- Population and evidence context
+- Appropriate self-blame prevention
+- Privacy explanation
 
 ### Conditional Content
 
-* Assessment embed
-* Assessment handoff
-* Sample result
-* Downloadable summary
-* Provider-sharing option
+- Assessment embed
+- Assessment handoff
+- Sample result
+- Downloadable summary
+- Provider-sharing option
 
 ### Prohibited Content
 
-* Diagnosis
-* Certainty language
-* “Prevent gestational diabetes”
-* Replacement of OGTT or other approved testing
-* Unsupported risk accuracy
-* Fear-based complication imagery
+- Diagnosis
+- Certainty language
+- “Prevent gestational diabetes”
+- Replacement of OGTT or other approved testing
+- Unsupported risk accuracy
+- Fear-based complication imagery
 
 ### SEO Intent
 
-* Gestational diabetes risk assessment
-* Pregnancy diabetes risk factors
-* GDM risk awareness
-* Pregnancy metabolic risk
+- Gestational diabetes risk assessment
+- Pregnancy diabetes risk factors
+- GDM risk awareness
+- Pregnancy metabolic risk
 
 ### Analytics
 
 Permitted:
 
-* Assessment CTA clicked
-* Assessment started
-* Assessment completed
-* General result-screen reached
+- Assessment CTA clicked
+- Assessment started
+- Assessment completed
+- General result-screen reached
 
 Not permitted in general analytics:
 
-* Individual risk answers
-* Risk category linked to identity
-* Medical-history responses
+- Individual risk answers
+- Risk category linked to identity
+- Medical-history responses
 
 ### Acceptance Criteria
 
-* Risk and diagnosis are clearly distinguished
-* Clinical testing remains necessary
-* The CTA appears only when the assessment is available
-* Product-status wording is current
-* Analytics does not collect sensitive answers
-* Sources and review dates are available
+- Risk and diagnosis are clearly distinguished
+- Clinical testing remains necessary
+- The CTA appears only when the assessment is available
+- Product-status wording is current
+- Analytics does not collect sensitive answers
+- Sources and review dates are available
 
 ---
 
@@ -1086,13 +1086,13 @@ Explain health-focused, longitudinal weight monitoring before and during pregnan
 
 ### Primary CTA
 
-* Start Weight Monitoring
+- Start Weight Monitoring
 
 Only when available.
 
 ### Secondary CTA
 
-* Learn About Pregnancy Support
+- Learn About Pregnancy Support
 
 ### Product-Status Dependency
 
@@ -1111,55 +1111,55 @@ Weight Monitoring Tool.
 
 ### Required Content
 
-* Starting context
-* Trend and progression
-* Pregnancy-stage relevance
-* Non-stigmatizing language
-* Individual variation
-* Appropriate professional review
-* Approved alerts only if publicly supported
+- Starting context
+- Trend and progression
+- Pregnancy-stage relevance
+- Non-stigmatizing language
+- Individual variation
+- Appropriate professional review
+- Approved alerts only if publicly supported
 
 ### Conditional Content
 
-* Tool screenshots
-* Daily logging
-* Weekly trends
-* Pregnancy timeline
-* Goal views
-* Membership inclusion
+- Tool screenshots
+- Daily logging
+- Weekly trends
+- Pregnancy timeline
+- Goal views
+- Membership inclusion
 
 ### Prohibited Content
 
-* Appearance-focused imagery
-* Shame or blame
-* Guaranteed healthy weight gain
-* Universal targets without context
-* General weight-loss marketing
-* Unapproved medical-alert claims
+- Appearance-focused imagery
+- Shame or blame
+- Guaranteed healthy weight gain
+- Universal targets without context
+- General weight-loss marketing
+- Unapproved medical-alert claims
 
 ### SEO Intent
 
-* Pregnancy weight monitoring
-* Gestational weight gain tracking
-* Preconception weight monitoring
-* Healthy pregnancy weight progression
+- Pregnancy weight monitoring
+- Gestational weight gain tracking
+- Preconception weight monitoring
+- Healthy pregnancy weight progression
 
 ### Analytics
 
-* Page viewed
-* Preconception tab selected
-* Pregnancy tab selected
-* Tool preview viewed
-* Start CTA clicked
-* Membership selected
+- Page viewed
+- Preconception tab selected
+- Pregnancy tab selected
+- Tool preview viewed
+- Start CTA clicked
+- Membership selected
 
 ### Acceptance Criteria
 
-* Preconception and gestational monitoring are clearly separated
-* Language is non-stigmatizing
-* Clinical context is visible
-* CTA and feature descriptions match Product Status
-* Visualizations include accessible explanations
+- Preconception and gestational monitoring are clearly separated
+- Language is non-stigmatizing
+- Clinical context is visible
+- CTA and feature descriptions match Product Status
+- Visualizations include accessible explanations
 
 ---
 
@@ -1182,11 +1182,11 @@ Explain ODRISC Medical Nutrition Therapy and structured pregnancy nutrition supp
 
 ### Primary CTA
 
-* Explore Nutrition Support
+- Explore Nutrition Support
 
 ### Secondary CTA
 
-* View Membership
+- View Membership
 
 When commercial access is active.
 
@@ -1207,53 +1207,53 @@ Medical Nutrition Therapy and professional-support availability.
 
 ### Required Content
 
-* Qualified professional involvement
-* Pregnancy-stage relevance
-* Vegetarian and non-vegetarian support where available
-* Regionally appropriate meal planning where available
-* Portion formats where available
-* Medical-condition boundary
-* Availability and plan status
+- Qualified professional involvement
+- Pregnancy-stage relevance
+- Vegetarian and non-vegetarian support where available
+- Regionally appropriate meal planning where available
+- Portion formats where available
+- Medical-condition boundary
+- Availability and plan status
 
 ### Conditional Content
 
-* Sample plan
-* Professional profile
-* One-to-one support
-* Market-specific foods
-* Arabic nutrition content
-* Glycemic-awareness guidance
+- Sample plan
+- Professional profile
+- One-to-one support
+- Market-specific foods
+- Arabic nutrition content
+- Glycemic-awareness guidance
 
 ### Prohibited Content
 
-* Treatment guarantees
-* Generic plan presented as personalized care
-* Unqualified dietary prescriptions
-* Disease-management claims without professional review
-* Weight-loss framing
+- Treatment guarantees
+- Generic plan presented as personalized care
+- Unqualified dietary prescriptions
+- Disease-management claims without professional review
+- Weight-loss framing
 
 ### SEO Intent
 
-* Pregnancy nutrition support
-* Medical nutrition therapy pregnancy
-* Preconception nutrition
-* Gestational diabetes nutrition support
+- Pregnancy nutrition support
+- Medical nutrition therapy pregnancy
+- Preconception nutrition
+- Gestational diabetes nutrition support
 
 ### Analytics
 
-* Page viewed
-* Plan preview viewed
-* Professional-support selected
-* Membership selected
-* CTA clicked
+- Page viewed
+- Plan preview viewed
+- Professional-support selected
+- Membership selected
+- CTA clicked
 
 ### Acceptance Criteria
 
-* Generic content and professional support are distinguished
-* Personalization claims match real delivery
-* The page does not provide unsafe individualized advice
-* Product availability is accurate
-* Professional involvement is represented correctly
+- Generic content and professional support are distinguished
+- Personalization claims match real delivery
+- The page does not provide unsafe individualized advice
+- Product availability is accurate
+- Professional involvement is represented correctly
 
 ---
 
@@ -1276,11 +1276,11 @@ Explain structured and pregnancy-appropriate physical-activity support.
 
 ### Primary CTA
 
-* Explore Physical Activity Support
+- Explore Physical Activity Support
 
 ### Secondary CTA
 
-* View Membership
+- View Membership
 
 ### Product-Status Dependency
 
@@ -1298,51 +1298,51 @@ Physical Activity Training.
 
 ### Required Content
 
-* Trimester-specific positioning where available
-* F.I.T.T. framework where approved
-* Mobility, strength, back, and pelvic-floor categories where available
-* Safety cautions
-* Professional-guidance boundary
-* Availability status
+- Trimester-specific positioning where available
+- F.I.T.T. framework where approved
+- Mobility, strength, back, and pelvic-floor categories where available
+- Safety cautions
+- Professional-guidance boundary
+- Availability status
 
 ### Conditional Content
 
-* Exercise demonstrations
-* Checklists
-* One-to-one physiotherapy
-* Adherence tracking
-* Sample weekly plan
+- Exercise demonstrations
+- Checklists
+- One-to-one physiotherapy
+- Adherence tracking
+- Sample weekly plan
 
 ### Prohibited Content
 
-* Universal exercise prescriptions
-* Claims that activity is safe for every pregnancy
-* Exercise demonstrations without safety context
-* Treatment claims
-* Replacement of medical clearance
+- Universal exercise prescriptions
+- Claims that activity is safe for every pregnancy
+- Exercise demonstrations without safety context
+- Treatment claims
+- Replacement of medical clearance
 
 ### SEO Intent
 
-* Pregnancy physical activity
-* Pregnancy exercise support
-* Prenatal movement guidance
-* Women's health physiotherapy pregnancy
+- Pregnancy physical activity
+- Pregnancy exercise support
+- Prenatal movement guidance
+- Women's health physiotherapy pregnancy
 
 ### Analytics
 
-* Page viewed
-* Safety section viewed
-* Activity category selected
-* Professional-support selected
-* CTA clicked
+- Page viewed
+- Safety section viewed
+- Activity category selected
+- Professional-support selected
+- CTA clicked
 
 ### Acceptance Criteria
 
-* Safety information is prominent
-* Contraindications are acknowledged
-* Professional involvement is accurate
-* Product Status is current
-* Demonstrations are accessible and appropriately qualified
+- Safety information is prominent
+- Contraindications are acknowledged
+- Professional involvement is accurate
+- Product Status is current
+- Demonstrations are accessible and appropriately qualified
 
 ---
 
@@ -1365,11 +1365,11 @@ Explain maternal and fetal progression in accessible language without transferri
 
 ### Primary CTA
 
-* See How ODRISC Connects Progress
+- See How ODRISC Connects Progress
 
 ### Secondary CTA
 
-* Explore Patient Support
+- Explore Patient Support
 
 ### Product-Status Dependency
 
@@ -1389,50 +1389,50 @@ Maternal Intelligence, Fetal Growth Intelligence, Patient summaries, and timelin
 
 ### Required Content
 
-* Plain-language trend explanation
-* Distinction between Patient summary and Provider interpretation
-* Explanation of multiple measurements over time
-* Clear professional-care boundary
-* Honest capability status
+- Plain-language trend explanation
+- Distinction between Patient summary and Provider interpretation
+- Explanation of multiple measurements over time
+- Clear professional-care boundary
+- Honest capability status
 
 ### Conditional Content
 
-* Patient timeline prototype
-* Scan sequence visualization
-* Maternal weight and fetal-growth relationship
-* Share-with-provider workflow
+- Patient timeline prototype
+- Scan sequence visualization
+- Maternal weight and fetal-growth relationship
+- Share-with-provider workflow
 
 ### Prohibited Content
 
-* Patient self-diagnosis
-* Raw specialist staging systems
-* Independent fetal-growth interpretation
-* Guaranteed earlier detection
-* Roadmap screens presented as operational
+- Patient self-diagnosis
+- Raw specialist staging systems
+- Independent fetal-growth interpretation
+- Guaranteed earlier detection
+- Roadmap screens presented as operational
 
 ### SEO Intent
 
-* Understanding fetal growth reports
-* Pregnancy progress timeline
-* Maternal and fetal monitoring
-* Understanding pregnancy measurements over time
+- Understanding fetal growth reports
+- Pregnancy progress timeline
+- Maternal and fetal monitoring
+- Understanding pregnancy measurements over time
 
 ### Analytics
 
-* Page viewed
-* Maternal section viewed
-* Fetal section viewed
-* Timeline interaction
-* Provider-information link selected
-* CTA clicked
+- Page viewed
+- Maternal section viewed
+- Fetal section viewed
+- Timeline interaction
+- Provider-information link selected
+- CTA clicked
 
 ### Acceptance Criteria
 
-* The page remains understandable to non-clinicians
-* Clinical responsibility remains with healthcare professionals
-* Prototype or roadmap visuals are labeled
-* Advanced terms are progressively disclosed
-* The page does not imply diagnostic functionality
+- The page remains understandable to non-clinicians
+- Clinical responsibility remains with healthcare professionals
+- Prototype or roadmap visuals are labeled
+- Advanced terms are progressively disclosed
+- The page does not imply diagnostic functionality
 
 ---
 
@@ -1455,14 +1455,14 @@ Explain available Patient plans, services, pricing, duration, and terms.
 
 ### Primary CTA
 
-* Select Plan
-* Join ODRISC
+- Select Plan
+- Join ODRISC
 
 Final wording depends on payment flow.
 
 ### Secondary CTA
 
-* Compare Support
+- Compare Support
 
 ### Product-Status Dependency
 
@@ -1482,59 +1482,59 @@ All included capabilities and professional services.
 
 ### Required Content
 
-* Current plan names
-* Current currency
-* Tax treatment
-* Included and excluded services
-* Duration
-* Support format
-* Payment terms
-* Refund terms
-* Market availability
-* Contact or support route
+- Current plan names
+- Current currency
+- Tax treatment
+- Included and excluded services
+- Duration
+- Support format
+- Payment terms
+- Refund terms
+- Market availability
+- Contact or support route
 
 ### Conditional Content
 
-* Weekly, monthly, annual, or pregnancy-period plans
-* Gold and Platinum plans
-* Provider referral arrangement
-* Promotional discounts
-* EMI or payment options
+- Weekly, monthly, annual, or pregnancy-period plans
+- Gold and Platinum plans
+- Provider referral arrangement
+- Promotional discounts
+- EMI or payment options
 
 ### Prohibited Content
 
-* Outdated pricing
-* Hidden fees
-* Roadmap capabilities included as active services
-* Guaranteed clinical outcomes
-* Unclear non-refundable terms
-* Unavailable market offers
+- Outdated pricing
+- Hidden fees
+- Roadmap capabilities included as active services
+- Guaranteed clinical outcomes
+- Unclear non-refundable terms
+- Unavailable market offers
 
 ### SEO Intent
 
-* ODRISC pricing
-* Pregnancy support membership
-* ODRISC Patient plans
+- ODRISC pricing
+- Pregnancy support membership
+- ODRISC Patient plans
 
 Pricing pages must not create conflicting market versions.
 
 ### Analytics
 
-* Page viewed
-* Plan compared
-* Plan selected
-* Payment initiated
-* Payment completed
-* Terms opened
-* Purchase failure
+- Page viewed
+- Plan compared
+- Plan selected
+- Payment initiated
+- Payment completed
+- Terms opened
+- Purchase failure
 
 ### Acceptance Criteria
 
-* Price and included services match operational delivery
-* Market and currency are clear
-* Terms are visible before payment
-* Each CTA reaches a working purchase or registration destination
-* Product-status changes can be updated centrally
+- Price and included services match operational delivery
+- Market and currency are clear
+- Terms are visible before payment
+- Each CTA reaches a working purchase or registration destination
+- Product-status changes can be updated centrally
 
 ---
 
@@ -1557,31 +1557,31 @@ Resolve common Patient concerns before conversion.
 
 ### Primary CTA
 
-* Start My Journey, subject to approval
+- Start My Journey, subject to approval
 
 ### Required FAQ Categories
 
-* What ODRISC is
-* Who it is for
-* Clinical boundaries
-* Risk assessment
-* Weight monitoring
-* Nutrition
-* Physical activity
-* Maternal and fetal progress
-* Privacy
-* Professional involvement
-* Pricing
-* Availability
-* Application access
-* Urgent concerns
+- What ODRISC is
+- Who it is for
+- Clinical boundaries
+- Risk assessment
+- Weight monitoring
+- Nutrition
+- Physical activity
+- Maternal and fetal progress
+- Privacy
+- Professional involvement
+- Pricing
+- Availability
+- Application access
+- Urgent concerns
 
 ### Prohibited Content
 
-* Personalized clinical answers
-* Emergency triage
-* Unsupported product claims
-* Market availability assumptions
+- Personalized clinical answers
+- Emergency triage
+- Unsupported product claims
+- Market availability assumptions
 
 ### SEO Intent
 
@@ -1589,19 +1589,19 @@ Patient FAQ search intent and approved FAQ structured data.
 
 ### Analytics
 
-* FAQ page viewed
-* FAQ opened by category
-* CTA clicked
-* Contact selected
-* Safety information selected
+- FAQ page viewed
+- FAQ opened by category
+- CTA clicked
+- Contact selected
+- Safety information selected
 
 ### Acceptance Criteria
 
-* Questions use Patient language
-* Answers are concise and accurate
-* Clinical and emergency boundaries are clear
-* Product availability is current
-* FAQ structured data matches visible content
+- Questions use Patient language
+- Answers are concise and accurate
+- Clinical and emergency boundaries are clear
+- Product availability is current
+- FAQ structured data matches visible content
 
 ---
 
@@ -1626,11 +1626,11 @@ Route Patients to the correct available action based on market and product avail
 
 One of:
 
-* Begin Risk Assessment
-* Create Patient Account
-* Access ODRISC
-* Choose Membership
-* Join Waiting List
+- Begin Risk Assessment
+- Create Patient Account
+- Access ODRISC
+- Choose Membership
+- Join Waiting List
 
 Only approved available options may appear.
 
@@ -1645,10 +1645,10 @@ Only approved available options may appear.
 
 ### Prohibited Content
 
-* Empty handoff
-* Unavailable account route
-* Multiple competing primary actions
-* Market promises without operational support
+- Empty handoff
+- Unavailable account route
+- Multiple competing primary actions
+- Market promises without operational support
 
 ### SEO Intent
 
@@ -1656,19 +1656,19 @@ Normally noindex if it primarily routes authenticated or commercial traffic.
 
 ### Analytics
 
-* Start page viewed
-* Market selected
-* Destination selected
-* Handoff successful
-* Handoff failed
+- Start page viewed
+- Market selected
+- Destination selected
+- Handoff successful
+- Handoff failed
 
 ### Acceptance Criteria
 
-* Every displayed option works
-* Market-specific availability is accurate
-* The user understands whether they are leaving the website
-* Tracking does not capture health data
-* Failure states provide recovery
+- Every displayed option works
+- Market-specific availability is accurate
+- The user understands whether they are leaving the website
+- Tracking does not capture health data
+- Failure states provide recovery
 
 ---
 
@@ -1697,11 +1697,11 @@ Move from clinical fragmentation toward longitudinal visibility, trust, and adop
 
 ### Primary CTA
 
-* Request Demonstration
+- Request Demonstration
 
 ### Secondary CTA
 
-* Explore the Clinical Platform
+- Explore the Clinical Platform
 
 ### Product-Status Dependency
 
@@ -1723,68 +1723,68 @@ All Provider platform claims.
 
 ### Required Content
 
-* Clinical problem
-* Product role
-* Decision-support boundary
-* Patient-Provider connection
-* Current versus planned capabilities
-* Workflow relevance
-* Validation route
-* Security route
-* Professional next action
+- Clinical problem
+- Product role
+- Decision-support boundary
+- Patient-Provider connection
+- Current versus planned capabilities
+- Workflow relevance
+- Validation route
+- Security route
+- Professional next action
 
 ### Conditional Content
 
-* Current dashboard screenshots
-* Prototype demonstrations
-* Clinical-panel information
-* Pilot availability
-* Hospital implementation
-* Integration roadmap
+- Current dashboard screenshots
+- Prototype demonstrations
+- Clinical-panel information
+- Pilot availability
+- Hospital implementation
+- Integration roadmap
 
 ### Prohibited Content
 
-* Autonomous diagnosis
-* “Never miss a complication”
-* Unqualified AI claims
-* Medical-device approval implication
-* Workflow claims not operationally supported
-* Roadmap capabilities presented as deployed
+- Autonomous diagnosis
+- “Never miss a complication”
+- Unqualified AI claims
+- Medical-device approval implication
+- Workflow claims not operationally supported
+- Roadmap capabilities presented as deployed
 
 ### SEO Intent
 
-* Maternal health monitoring platform
-* Fetal growth monitoring software
-* Pregnancy clinical decision support
-* Longitudinal pregnancy monitoring
-* Maternal and fetal intelligence
+- Maternal health monitoring platform
+- Fetal growth monitoring software
+- Pregnancy clinical decision support
+- Longitudinal pregnancy monitoring
+- Maternal and fetal intelligence
 
 ### Analytics
 
-* Provider homepage viewed
-* Clinical platform selected
-* Monitoring selected
-* Intelligence selected
-* Validation selected
-* Demo CTA clicked
-* Pilot CTA clicked
-* Patient switch selected
+- Provider homepage viewed
+- Clinical platform selected
+- Monitoring selected
+- Intelligence selected
+- Validation selected
+- Demo CTA clicked
+- Pilot CTA clicked
+- Patient switch selected
 
 ### Accessibility Considerations
 
-* Complex diagrams require accessible summaries
-* Data visuals must not rely on color
-* Technical details should use progressive disclosure
-* Tables must remain usable on mobile
+- Complex diagrams require accessible summaries
+- Data visuals must not rely on color
+- Technical details should use progressive disclosure
+- Tables must remain usable on mobile
 
 ### Acceptance Criteria
 
-* A Provider can identify the clinical problem and ODRISC role quickly
-* Clinical judgment remains central
-* Product Status is transparent
-* Validation and methodology routes are available
-* Demo CTA works
-* The page remains operationally realistic
+- A Provider can identify the clinical problem and ODRISC role quickly
+- Clinical judgment remains central
+- Product Status is transparent
+- Validation and methodology routes are available
+- Demo CTA works
+- The page remains operationally realistic
 
 ---
 
@@ -1807,11 +1807,11 @@ Explain how ODRISC connects Patient, maternal, fetal, and clinical information i
 
 ### Primary CTA
 
-* Request Demonstration
+- Request Demonstration
 
 ### Secondary CTA
 
-* Explore Monitoring
+- Explore Monitoring
 
 ### Product-Status Dependency
 
@@ -1833,50 +1833,50 @@ High.
 
 ### Required Content
 
-* Connected product ecosystem
-* Patient and Provider perspectives
-* Information flow
-* Clinical review points
-* Available and roadmap distinction
-* Decision-support boundary
+- Connected product ecosystem
+- Patient and Provider perspectives
+- Information flow
+- Clinical review points
+- Available and roadmap distinction
+- Decision-support boundary
 
 ### Conditional Content
 
-* OCR
-* Doppler
-* Cohort analytics
-* FHIR integration
-* Hospital workflows
-* Role-based access
+- OCR
+- Doppler
+- Cohort analytics
+- FHIR integration
+- Hospital workflows
+- Role-based access
 
 ### Prohibited Content
 
-* Feature catalogue without clinical context
-* Active integration claims when only planned
-* AI black-box positioning
-* Unsupported workflow-efficiency claims
+- Feature catalogue without clinical context
+- Active integration claims when only planned
+- AI black-box positioning
+- Unsupported workflow-efficiency claims
 
 ### SEO Intent
 
-* Pregnancy clinical platform
-* Maternal fetal monitoring platform
-* Longitudinal pregnancy data platform
+- Pregnancy clinical platform
+- Maternal fetal monitoring platform
+- Longitudinal pregnancy data platform
 
 ### Analytics
 
-* Page viewed
-* Platform layer selected
-* Workflow selected
-* Validation selected
-* Demo CTA clicked
+- Page viewed
+- Platform layer selected
+- Workflow selected
+- Validation selected
+- Demo CTA clicked
 
 ### Acceptance Criteria
 
-* Platform layers are understandable
-* Patient and Provider roles are distinct
-* Current and future capabilities are labeled
-* Clinical review remains visible
-* No restricted intellectual property is exposed
+- Platform layers are understandable
+- Patient and Provider roles are distinct
+- Current and future capabilities are labeled
+- Clinical review remains visible
+- No restricted intellectual property is exposed
 
 ---
 
@@ -1899,11 +1899,11 @@ Explain how ODRISC may support longitudinal review and selected Patient monitori
 
 ### Primary CTA
 
-* Request Demonstration
+- Request Demonstration
 
 ### Secondary CTA
 
-* Explore Intelligence
+- Explore Intelligence
 
 ### Product-Status Dependency
 
@@ -1924,47 +1924,47 @@ Provider dashboard, Patient data sharing, monitoring summaries, alerts.
 
 ### Required Content
 
-* What is monitored
-* Who enters information
-* How Providers review it
-* Whether monitoring is active, periodic, or retrospective
-* Alert and escalation responsibility
-* Current status
+- What is monitored
+- Who enters information
+- How Providers review it
+- Whether monitoring is active, periodic, or retrospective
+- Alert and escalation responsibility
+- Current status
 
 ### Conditional Content
 
-* Daily high-risk monitoring
-* Cohort view
-* Alert inbox
-* Provider notes
-* Patient adherence
+- Daily high-risk monitoring
+- Cohort view
+- Alert inbox
+- Provider notes
+- Patient adherence
 
 ### Prohibited Content
 
-* Real-time monitoring unless implemented
-* Guaranteed alerts
-* Automatic escalation claims
-* Ambiguous clinical responsibility
+- Real-time monitoring unless implemented
+- Guaranteed alerts
+- Automatic escalation claims
+- Ambiguous clinical responsibility
 
 ### SEO Intent
 
-* Pregnancy monitoring platform for clinicians
-* Maternal monitoring software
-* Patient monitoring between antenatal visits
+- Pregnancy monitoring platform for clinicians
+- Maternal monitoring software
+- Patient monitoring between antenatal visits
 
 ### Analytics
 
-* Page viewed
-* Monitoring workflow viewed
-* Alert explanation viewed
-* Demo CTA clicked
+- Page viewed
+- Monitoring workflow viewed
+- Alert explanation viewed
+- Demo CTA clicked
 
 ### Acceptance Criteria
 
-* Monitoring frequency and responsibility are unambiguous
-* Real-time capability is not implied without implementation
-* Patient-entered and clinician-verified data are distinguished
-* Alert limitations are stated
+- Monitoring frequency and responsibility are unambiguous
+- Real-time capability is not implied without implementation
+- Patient-entered and clinician-verified data are distinguished
+- Alert limitations are stated
 
 ---
 
@@ -1987,13 +1987,13 @@ Explain the ODRISC intelligence model and route Providers toward maternal and fe
 
 ### Primary CTA
 
-* Explore Fetal Growth Intelligence or Request Demonstration
+- Explore Fetal Growth Intelligence or Request Demonstration
 
 Final hierarchy depends on launch status.
 
 ### Secondary CTA
 
-* Explore Maternal Intelligence
+- Explore Maternal Intelligence
 
 ### Required Section Sequence
 
@@ -2010,46 +2010,46 @@ Final hierarchy depends on launch status.
 
 ### Required Content
 
-* Data-to-insight sequence
-* Explainability principles
-* Decision-support boundary
-* Product-status distinction
-* Relationship to Provider workflow
+- Data-to-insight sequence
+- Explainability principles
+- Decision-support boundary
+- Product-status distinction
+- Relationship to Provider workflow
 
 ### Conditional Content
 
-* Pattern recognition
-* Clinical summaries
-* Cross-domain analysis
-* AI-supported functions
+- Pattern recognition
+- Clinical summaries
+- Cross-domain analysis
+- AI-supported functions
 
 ### Prohibited Content
 
-* Black-box AI
-* Autonomous conclusions
-* Predictive claims without validation
-* Unsupported accuracy statements
+- Black-box AI
+- Autonomous conclusions
+- Predictive claims without validation
+- Unsupported accuracy statements
 
 ### SEO Intent
 
-* Maternal fetal intelligence
-* Longitudinal pregnancy intelligence
-* Pregnancy clinical intelligence platform
+- Maternal fetal intelligence
+- Longitudinal pregnancy intelligence
+- Pregnancy clinical intelligence platform
 
 ### Analytics
 
-* Page viewed
-* Maternal Intelligence selected
-* Fetal Growth Intelligence selected
-* Methodology selected
-* Demo CTA clicked
+- Page viewed
+- Maternal Intelligence selected
+- Fetal Growth Intelligence selected
+- Methodology selected
+- Demo CTA clicked
 
 ### Acceptance Criteria
 
-* Intelligence is explained without generic AI slogans
-* Explainability and human review are central
-* Maternal and fetal pathways are distinct
-* Product status is transparent
+- Intelligence is explained without generic AI slogans
+- Explainability and human review are central
+- Maternal and fetal pathways are distinct
+- Product status is transparent
 
 ---
 
@@ -2072,11 +2072,11 @@ Explain the intended maternal-intelligence layer and its clinical-monitoring rol
 
 ### Primary CTA
 
-* Discuss the Clinical Platform
+- Discuss the Clinical Platform
 
 ### Secondary CTA
 
-* Explore Monitoring
+- Explore Monitoring
 
 ### Product-Status Dependency
 
@@ -2097,48 +2097,48 @@ Maternal Intelligence development and validation status.
 
 ### Required Content
 
-* Input categories
-* Trend and velocity concepts
-* Data-quality limitations
-* Decision-support boundary
-* Current status
+- Input categories
+- Trend and velocity concepts
+- Data-quality limitations
+- Decision-support boundary
+- Current status
 
 ### Conditional Content
 
-* Blood pressure
-* Glucose information
-* Laboratory trends
-* Symptoms
-* Risk stratification
-* Clinical alerts
+- Blood pressure
+- Glucose information
+- Laboratory trends
+- Symptoms
+- Risk stratification
+- Clinical alerts
 
 ### Prohibited Content
 
-* Autonomous maternal diagnosis
-* Active alert claims if not implemented
-* Outcome-prediction claims
-* Unvalidated accuracy claims
+- Autonomous maternal diagnosis
+- Active alert claims if not implemented
+- Outcome-prediction claims
+- Unvalidated accuracy claims
 
 ### SEO Intent
 
-* Maternal monitoring intelligence
-* Pregnancy maternal health analytics
-* Longitudinal maternal data
+- Maternal monitoring intelligence
+- Pregnancy maternal health analytics
+- Longitudinal maternal data
 
 ### Analytics
 
-* Page viewed
-* Methodology selected
-* Validation selected
-* Monitoring selected
-* CTA clicked
+- Page viewed
+- Methodology selected
+- Validation selected
+- Monitoring selected
+- CTA clicked
 
 ### Acceptance Criteria
 
-* Inputs and outputs are accurately represented
-* Available and planned components are distinguished
-* Professional interpretation remains central
-* Validation status is visible
+- Inputs and outputs are accurately represented
+- Available and planned components are distinguished
+- Professional interpretation remains central
+- Validation status is visible
 
 ---
 
@@ -2161,11 +2161,11 @@ Explain longitudinal fetal-growth review, growth velocity, gestational-age ancho
 
 ### Primary CTA
 
-* Request a Clinical Demonstration
+- Request a Clinical Demonstration
 
 ### Secondary CTA
 
-* Review Methodology
+- Review Methodology
 
 ### Product-Status Dependency
 
@@ -2187,63 +2187,63 @@ Fetal Growth Intelligence, standards, Doppler, OCR, and validation.
 
 ### Required Content
 
-* Golden gestational-age anchor concept
-* Fixed EDD principles where approved
-* Biometric measurements
-* Growth-standard status
-* Velocity concept
-* Centile-crossing context
-* Clinical interpretation boundary
-* Status and validation
+- Golden gestational-age anchor concept
+- Fixed EDD principles where approved
+- Biometric measurements
+- Growth-standard status
+- Velocity concept
+- Centile-crossing context
+- Clinical interpretation boundary
+- Status and validation
 
 ### Conditional Content
 
-* Customized TOW
-* GROW
-* WHO
-* NICHD
-* Hadlock
-* INTERGROWTH-21st
-* Doppler staging
-* SGA versus FGR support
-* OCR
+- Customized TOW
+- GROW
+- WHO
+- NICHD
+- Hadlock
+- INTERGROWTH-21st
+- Doppler staging
+- SGA versus FGR support
+- OCR
 
 Only implemented or approved roadmap items may appear.
 
 ### Prohibited Content
 
-* Independent FGR diagnosis
-* Autonomous staging
-* Management recommendations
-* Unsupported standard combinations
-* Unverified accuracy claims
-* Roadmap capabilities displayed as live
+- Independent FGR diagnosis
+- Autonomous staging
+- Management recommendations
+- Unsupported standard combinations
+- Unverified accuracy claims
+- Roadmap capabilities displayed as live
 
 ### SEO Intent
 
-* Fetal growth monitoring software
-* Fetal growth velocity
-* Longitudinal fetal biometry
-* Fetal growth intelligence
-* Pregnancy ultrasound growth monitoring
+- Fetal growth monitoring software
+- Fetal growth velocity
+- Longitudinal fetal biometry
+- Fetal growth intelligence
+- Pregnancy ultrasound growth monitoring
 
 ### Analytics
 
-* Page viewed
-* Growth concept selected
-* Methodology selected
-* Validation selected
-* Demo CTA clicked
-* Download selected
+- Page viewed
+- Growth concept selected
+- Methodology selected
+- Validation selected
+- Demo CTA clicked
+- Download selected
 
 ### Acceptance Criteria
 
-* Clinical terminology is accurate
-* Standards and versions are traceable
-* Status and limitations are clear
-* Professional interpretation remains central
-* Specialist diagrams are accessible
-* Restricted algorithms are not exposed
+- Clinical terminology is accurate
+- Standards and versions are traceable
+- Status and limitations are clear
+- Professional interpretation remains central
+- Specialist diagrams are accessible
+- Restricted algorithms are not exposed
 
 ---
 
@@ -2266,11 +2266,11 @@ Show how ODRISC may fit into Patient enrolment, data capture, Provider review, c
 
 ### Primary CTA
 
-* Request Demonstration
+- Request Demonstration
 
 ### Secondary CTA
 
-* Discuss a Pilot
+- Discuss a Pilot
 
 When available.
 
@@ -2294,52 +2294,52 @@ Provider dashboard, Patient invitation, data sharing, reports, alerts, and integ
 
 ### Required Content
 
-* Patient actions
-* Provider actions
-* Human-review points
-* Data-source distinctions
-* Current and future workflow
-* Responsibility for follow-up
-* Expected operational effort
+- Patient actions
+- Provider actions
+- Human-review points
+- Data-source distinctions
+- Current and future workflow
+- Responsibility for follow-up
+- Expected operational effort
 
 ### Conditional Content
 
-* Provider invitation
-* OCR
-* FHIR
-* Hospital integration
-* Multidisciplinary roles
-* Audit log
-* Cohort review
+- Provider invitation
+- OCR
+- FHIR
+- Hospital integration
+- Multidisciplinary roles
+- Audit log
+- Cohort review
 
 ### Prohibited Content
 
-* Undefined alert ownership
-* “Zero workflow burden”
-* Integration claims without implementation
-* Real-time monitoring assumptions
+- Undefined alert ownership
+- “Zero workflow burden”
+- Integration claims without implementation
+- Real-time monitoring assumptions
 
 ### SEO Intent
 
-* Pregnancy monitoring clinical workflow
-* Maternal health digital workflow
-* Fetal growth software workflow
+- Pregnancy monitoring clinical workflow
+- Maternal health digital workflow
+- Fetal growth software workflow
 
 ### Analytics
 
-* Page viewed
-* Workflow step interacted
-* Integration section viewed
-* Demo CTA clicked
-* Pilot CTA clicked
+- Page viewed
+- Workflow step interacted
+- Integration section viewed
+- Demo CTA clicked
+- Pilot CTA clicked
 
 ### Acceptance Criteria
 
-* Current and future workflow are distinguishable
-* Human review is explicit
-* Clinical responsibility is not ambiguous
-* Operational requirements are realistic
-* CTA destination works
+- Current and future workflow are distinguishable
+- Human review is explicit
+- Clinical responsibility is not ambiguous
+- Operational requirements are realistic
+- CTA destination works
 
 ---
 
@@ -2362,11 +2362,11 @@ Present the current validation position transparently and distinguish different 
 
 ### Primary CTA
 
-* Discuss Validation or Request Demonstration
+- Discuss Validation or Request Demonstration
 
 ### Secondary CTA
 
-* Review Methodology
+- Review Methodology
 
 ### Product-Status Dependency
 
@@ -2390,57 +2390,57 @@ All validation, pilot, and regulatory claims.
 
 For every validation claim:
 
-* What was evaluated
-* Who evaluated it
-* Method
-* Sample or scale
-* Date
-* Result
-* Limitation
-* Status
+- What was evaluated
+- Who evaluated it
+- Method
+- Sample or scale
+- Date
+- Result
+- Limitation
+- Status
 
 ### Conditional Content
 
-* Eight-OB-GYN panel
-* Pilot study
-* Ten-user pilot
-* TRL statement
-* External institutional validation
-* Research publications
+- Eight-OB-GYN panel
+- Pilot study
+- Ten-user pilot
+- TRL statement
+- External institutional validation
+- Research publications
 
 Each must use precise approved wording.
 
 ### Prohibited Content
 
-* Panel feedback described as clinical validation
-* Pilot described as proven effectiveness
-* TRL described as medical-device approval
-* Interest described as adoption
-* Unsupported clinical-outcome claims
+- Panel feedback described as clinical validation
+- Pilot described as proven effectiveness
+- TRL described as medical-device approval
+- Interest described as adoption
+- Unsupported clinical-outcome claims
 
 ### SEO Intent
 
-* ODRISC validation
-* Maternal health platform validation
-* Fetal growth software validation
-* Pregnancy monitoring clinical evidence
+- ODRISC validation
+- Maternal health platform validation
+- Fetal growth software validation
+- Pregnancy monitoring clinical evidence
 
 ### Analytics
 
-* Page viewed
-* Validation category selected
-* Evidence downloaded
-* Methodology selected
-* Demo CTA clicked
+- Page viewed
+- Validation category selected
+- Evidence downloaded
+- Methodology selected
+- Demo CTA clicked
 
 ### Acceptance Criteria
 
-* Validation types are clearly separated
-* Every claim is traceable
-* Limitations are visible
-* Regulatory status is accurate
-* Outdated validation statements are not published
-* The page is reviewed by the designated clinical owner
+- Validation types are clearly separated
+- Every claim is traceable
+- Limitations are visible
+- Regulatory status is accurate
+- Outdated validation statements are not published
+- The page is reviewed by the designated clinical owner
 
 ---
 
@@ -2463,11 +2463,11 @@ Explain publicly approved clinical and computational methodology without exposin
 
 ### Primary CTA
 
-* Request Methodology Discussion
+- Request Methodology Discussion
 
 ### Secondary CTA
 
-* Review Validation
+- Review Validation
 
 ### Product-Status Dependency
 
@@ -2490,43 +2490,43 @@ Implemented standards and approved public methodology.
 
 ### Required Content
 
-* Source and version
-* Population applicability
-* Calculation category
-* Human-review role
-* Conflict-resolution approach
-* Implementation status
-* Limitations
+- Source and version
+- Population applicability
+- Calculation category
+- Human-review role
+- Conflict-resolution approach
+- Implementation status
+- Limitations
 
 ### Prohibited Content
 
-* Unimplemented standards presented as active
-* Proprietary source code
-* Restricted algorithms
-* Unsupported standard mixing
-* Diagnostic or treatment recommendations
+- Unimplemented standards presented as active
+- Proprietary source code
+- Restricted algorithms
+- Unsupported standard mixing
+- Diagnostic or treatment recommendations
 
 ### SEO Intent
 
-* ODRISC methodology
-* Fetal growth monitoring methodology
-* Pregnancy clinical decision support methodology
+- ODRISC methodology
+- Fetal growth monitoring methodology
+- Pregnancy clinical decision support methodology
 
 ### Analytics
 
-* Page viewed
-* Methodology section selected
-* Reference opened
-* Validation selected
-* Contact CTA clicked
+- Page viewed
+- Methodology section selected
+- Reference opened
+- Validation selected
+- Contact CTA clicked
 
 ### Acceptance Criteria
 
-* Standards are accurately named and versioned
-* Implementation status is visible
-* Conflicting frameworks are not silently combined
-* Restricted intellectual property is protected
-* Clinical review is complete
+- Standards are accurately named and versioned
+- Implementation status is visible
+- Conflicting frameworks are not silently combined
+- Restricted intellectual property is protected
+- Clinical review is complete
 
 ---
 
@@ -2549,22 +2549,22 @@ Organize Provider-oriented clinical, methodology, evidence, and implementation c
 
 ### Primary CTA
 
-* Explore Clinical Platform
+- Explore Clinical Platform
 
 ### Secondary CTA
 
-* Request Demonstration
+- Request Demonstration
 
 ### Required Content Categories
 
-* Maternal intelligence
-* Fetal growth
-* Monitoring
-* Methodology
-* Validation
-* Workflow
-* Implementation
-* Research
+- Maternal intelligence
+- Fetal growth
+- Monitoring
+- Methodology
+- Validation
+- Workflow
+- Implementation
+- Research
 
 ### Architecture Decision Dependency
 
@@ -2572,9 +2572,9 @@ Whether this remains a separate route or becomes a filtered Provider Resources v
 
 ### Prohibited Content
 
-* Duplicate content competing with `/resources/providers/`
-* Unreviewed medical content
-* Product news presented as evidence
+- Duplicate content competing with `/resources/providers/`
+- Unreviewed medical content
+- Product news presented as evidence
 
 ### SEO Intent
 
@@ -2582,16 +2582,16 @@ Provider research and insight discovery.
 
 ### Analytics
 
-* Hub viewed
-* Filter used
-* Resource selected
-* CTA clicked
+- Hub viewed
+- Filter used
+- Resource selected
+- CTA clicked
 
 ### Acceptance Criteria
 
-* The page provides unique navigational value
-* It does not duplicate the shared resource hub
-* All clinical resources show authorship and review metadata
+- The page provides unique navigational value
+- It does not duplicate the shared resource hub
+- All clinical resources show authorship and review metadata
 
 ---
 
@@ -2614,11 +2614,11 @@ Support evaluation by hospitals, maternity systems, and healthcare networks.
 
 ### Primary CTA
 
-* Request Enterprise Briefing
+- Request Enterprise Briefing
 
 ### Secondary CTA
 
-* Discuss Implementation
+- Discuss Implementation
 
 ### Product-Status Dependency
 
@@ -2641,52 +2641,52 @@ Enterprise deployment, security, implementation, cohort analytics, integration, 
 
 ### Required Content
 
-* Organizational use cases
-* Current implementation readiness
-* Market context
-* Security claims
-* Training and support
-* Integration status
-* Contact process
+- Organizational use cases
+- Current implementation readiness
+- Market context
+- Security claims
+- Training and support
+- Integration status
+- Contact process
 
 ### Conditional Content
 
-* Enterprise pricing
-* FHIR
-* Cohort analytics
-* Multisite deployment
-* Customization
-* Hospital pilot
+- Enterprise pricing
+- FHIR
+- Cohort analytics
+- Multisite deployment
+- Customization
+- Hospital pilot
 
 ### Prohibited Content
 
-* Enterprise readiness beyond actual status
-* Named integrations not implemented
-* Compliance certifications not obtained
-* Outcome guarantees
-* Unverified hospital partnerships
+- Enterprise readiness beyond actual status
+- Named integrations not implemented
+- Compliance certifications not obtained
+- Outcome guarantees
+- Unverified hospital partnerships
 
 ### SEO Intent
 
-* Hospital maternal health platform
-* Maternity hospital monitoring software
-* Enterprise pregnancy monitoring
-* Maternal fetal analytics for hospitals
+- Hospital maternal health platform
+- Maternity hospital monitoring software
+- Enterprise pregnancy monitoring
+- Maternal fetal analytics for hospitals
 
 ### Analytics
 
-* Page viewed
-* Security section viewed
-* Implementation section viewed
-* Enterprise CTA clicked
-* Briefing form submitted
+- Page viewed
+- Security section viewed
+- Implementation section viewed
+- Enterprise CTA clicked
+- Briefing form submitted
 
 ### Acceptance Criteria
 
-* Implementation maturity is transparent
-* Security and compliance statements are accurate
-* Enterprise CTA reaches an owned workflow
-* No unverified customer or partner claim appears
+- Implementation maturity is transparent
+- Security and compliance statements are accurate
+- Enterprise CTA reaches an owned workflow
+- No unverified customer or partner claim appears
 
 ---
 
@@ -2709,11 +2709,11 @@ Explain ODRISC relevance to preconception, IVF preparation, pregnancy dating, an
 
 ### Primary CTA
 
-* Discuss a Fertility-Center Pilot
+- Discuss a Fertility-Center Pilot
 
 ### Secondary CTA
 
-* Explore Preconception Support
+- Explore Preconception Support
 
 ### Product-Status Dependency
 
@@ -2733,30 +2733,30 @@ Preconception tools, IVF readiness, IVF gestational-age anchoring, Patient monit
 
 ### Prohibited Content
 
-* Improved IVF success claims
-* Guaranteed conception
-* IVF readiness score presented as available without approval
-* Unsupported fertility outcomes
+- Improved IVF success claims
+- Guaranteed conception
+- IVF readiness score presented as available without approval
+- Unsupported fertility outcomes
 
 ### SEO Intent
 
-* IVF Patient preparation platform
-* Fertility center pregnancy monitoring
-* IVF gestational age monitoring
+- IVF Patient preparation platform
+- Fertility center pregnancy monitoring
+- IVF gestational age monitoring
 
 ### Analytics
 
-* Page viewed
-* Preconception support selected
-* Pilot CTA clicked
-* Pilot form submitted
+- Page viewed
+- Preconception support selected
+- Pilot CTA clicked
+- Pilot form submitted
 
 ### Acceptance Criteria
 
-* Fertility outcomes are not overstated
-* Current and future capabilities are clearly separated
-* Pilot availability is accurate
-* IVF dating language is clinically reviewed
+- Fertility outcomes are not overstated
+- Current and future capabilities are clearly separated
+- Pilot availability is accurate
+- IVF dating language is clinically reviewed
 
 ---
 
@@ -2779,11 +2779,11 @@ Explain how ODRISC may support coordinated maternal care across clinical and all
 
 ### Primary CTA
 
-* Discuss Multidisciplinary Use
+- Discuss Multidisciplinary Use
 
 ### Secondary CTA
 
-* Explore Workflow
+- Explore Workflow
 
 ### Product-Status Dependency
 
@@ -2804,38 +2804,38 @@ Role-based access, shared timelines, nutrition, physical activity, Provider note
 
 ### Required Content
 
-* Role boundaries
-* Professional responsibility
-* Patient consent
-* Current collaboration capability
-* Future role-based access status
+- Role boundaries
+- Professional responsibility
+- Patient consent
+- Current collaboration capability
+- Future role-based access status
 
 ### Prohibited Content
 
-* Identical interfaces implied for all professionals
-* Role substitution
-* Unapproved shared-record access
-* Patient consent assumptions
+- Identical interfaces implied for all professionals
+- Role substitution
+- Unapproved shared-record access
+- Patient consent assumptions
 
 ### SEO Intent
 
-* Multidisciplinary pregnancy care platform
-* Maternal health care coordination
-* Pregnancy nutrition and physiotherapy collaboration
+- Multidisciplinary pregnancy care platform
+- Maternal health care coordination
+- Pregnancy nutrition and physiotherapy collaboration
 
 ### Analytics
 
-* Page viewed
-* Role selected
-* Workflow selected
-* CTA clicked
+- Page viewed
+- Role selected
+- Workflow selected
+- CTA clicked
 
 ### Acceptance Criteria
 
-* Roles are accurately represented
-* Consent and access boundaries are visible
-* Collaboration status is transparent
-* No profession is described outside its scope
+- Roles are accurately represented
+- Consent and access boundaries are visible
+- Collaboration status is transparent
+- No profession is described outside its scope
 
 ---
 
@@ -2858,11 +2858,11 @@ Explain implemented security, privacy, consent, and data-governance principles.
 
 ### Primary CTA
 
-* Contact the Security or Enterprise Team
+- Contact the Security or Enterprise Team
 
 ### Secondary CTA
 
-* Review Privacy Policy
+- Review Privacy Policy
 
 ### Product-Status Dependency
 
@@ -2883,32 +2883,32 @@ All security and privacy controls described.
 
 ### Prohibited Content
 
-* Compliance certifications not obtained
-* Infrastructure details that create security risk
-* “Fully secure” or absolute claims
-* Unimplemented role-based access
-* Unconfirmed data residency
+- Compliance certifications not obtained
+- Infrastructure details that create security risk
+- “Fully secure” or absolute claims
+- Unimplemented role-based access
+- Unconfirmed data residency
 
 ### SEO Intent
 
-* ODRISC security
-* Maternal health platform privacy
-* Pregnancy data security
+- ODRISC security
+- Maternal health platform privacy
+- Pregnancy data security
 
 ### Analytics
 
-* Page viewed
-* Privacy Policy selected
-* Security contact selected
-* Enterprise CTA clicked
+- Page viewed
+- Privacy Policy selected
+- Security contact selected
+- Enterprise CTA clicked
 
 ### Acceptance Criteria
 
-* Every security claim is technically verified
-* Privacy and security are distinguished
-* Compliance language is accurate
-* Contact pathways are owned
-* Sensitive architecture is not exposed
+- Every security claim is technically verified
+- Privacy and security are distinguished
+- Compliance language is accurate
+- Contact pathways are owned
+- Sensitive architecture is not exposed
 
 ---
 
@@ -2923,35 +2923,35 @@ All security and privacy controls described.
 
 ### Required FAQ Categories
 
-* Product role
-* Clinical judgment
-* Product status
-* Data inputs
-* Monitoring
-* Maternal intelligence
-* Fetal growth intelligence
-* Validation
-* Methodology
-* Workflow
-* Patient consent
-* Security
-* Integration
-* Demonstrations
-* Pilots
-* Commercial terms
-* Market availability
-* Regulatory status
+- Product role
+- Clinical judgment
+- Product status
+- Data inputs
+- Monitoring
+- Maternal intelligence
+- Fetal growth intelligence
+- Validation
+- Methodology
+- Workflow
+- Patient consent
+- Security
+- Integration
+- Demonstrations
+- Pilots
+- Commercial terms
+- Market availability
+- Regulatory status
 
 ### Primary CTA
 
-* Request Demonstration
+- Request Demonstration
 
 ### Prohibited Content
 
-* Unreviewed technical commitments
-* Legal advice
-* Patient-specific clinical questions
-* Unsupported validation claims
+- Unreviewed technical commitments
+- Legal advice
+- Patient-specific clinical questions
+- Unsupported validation claims
 
 ### SEO Intent
 
@@ -2959,18 +2959,18 @@ Provider FAQ intent with visible and accurate FAQ structured data.
 
 ### Analytics
 
-* Page viewed
-* Question opened
-* Demo CTA clicked
-* Validation selected
-* Contact selected
+- Page viewed
+- Question opened
+- Demo CTA clicked
+- Validation selected
+- Contact selected
 
 ### Acceptance Criteria
 
-* Answers are concise, precise, and current
-* Clinical and regulatory boundaries are visible
-* Product Status is accurate
-* FAQ schema matches visible answers
+- Answers are concise, precise, and current
+- Clinical and regulatory boundaries are visible
+- Product Status is accurate
+- FAQ schema matches visible answers
 
 ---
 
@@ -2993,7 +2993,7 @@ Collect qualified Provider and institutional demonstration requests.
 
 ### Primary CTA
 
-* Request Demonstration
+- Request Demonstration
 
 ### Required Section Sequence
 
@@ -3007,24 +3007,24 @@ Collect qualified Provider and institutional demonstration requests.
 
 ### Recommended Form Fields
 
-* Name
-* Professional role
-* Organization
-* Work email
-* Country or market
-* Organization type
-* Area of interest
-* Optional brief message
-* Consent
+- Name
+- Professional role
+- Organization
+- Work email
+- Country or market
+- Organization type
+- Area of interest
+- Optional brief message
+- Consent
 
 Do not request patient information.
 
 ### Prohibited Content
 
-* Guaranteed response time unless operationally supported
-* Sensitive patient data
-* Unavailable demonstration promises
-* Automatic pilot acceptance
+- Guaranteed response time unless operationally supported
+- Sensitive patient data
+- Unavailable demonstration promises
+- Automatic pilot acceptance
 
 ### SEO Intent
 
@@ -3032,22 +3032,22 @@ May be indexable for brand and conversion intent.
 
 ### Analytics
 
-* Page viewed
-* Form started
-* Field error
-* Form submitted
-* Submission failed
-* Alternative contact selected
+- Page viewed
+- Form started
+- Field error
+- Form submitted
+- Submission failed
+- Alternative contact selected
 
 ### Acceptance Criteria
 
-* Form routes to an approved owner
-* Success and error states work
-* Spam protection is present
-* No patient data is requested
-* Consent language is visible
-* Analytics excludes message contents
-* Follow-up process is documented
+- Form routes to an approved owner
+- Success and error states work
+- Spam protection is present
+- No patient data is requested
+- Consent language is visible
+- Analytics excludes message contents
+- Follow-up process is documented
 
 ---
 
@@ -3070,7 +3070,7 @@ Collect controlled enquiries from organizations interested in a pilot.
 
 ### Primary CTA
 
-* Submit Pilot Enquiry
+- Submit Pilot Enquiry
 
 ### Product-Status Dependency
 
@@ -3078,22 +3078,22 @@ Pilot availability and operational capacity.
 
 ### Required Content
 
-* Pilot purpose
-* Suitable organization types
-* Current market
-* Expected involvement
-* Selection process
-* Data and governance expectations
-* What happens next
-* Form
+- Pilot purpose
+- Suitable organization types
+- Current market
+- Expected involvement
+- Selection process
+- Data and governance expectations
+- What happens next
+- Form
 
 ### Prohibited Content
 
-* Automatic acceptance
-* Free implementation promises
-* Proven outcome claims
-* Unapproved markets
-* Patient data collection through the form
+- Automatic acceptance
+- Free implementation promises
+- Proven outcome claims
+- Unapproved markets
+- Patient data collection through the form
 
 ### SEO Intent
 
@@ -3101,18 +3101,18 @@ May be noindex when pilots are restricted.
 
 ### Analytics
 
-* Page viewed
-* Form started
-* Form submitted
-* Form failed
-* Demo route selected
+- Page viewed
+- Form started
+- Form submitted
+- Form failed
+- Demo route selected
 
 ### Acceptance Criteria
 
-* Pilot availability is current
-* Eligibility wording is accurate
-* Form ownership is defined
-* Product and validation status remain transparent
+- Pilot availability is current
+- Eligibility wording is accurate
+- Form ownership is defined
+- Product and validation status remain transparent
 
 ---
 
@@ -3137,8 +3137,8 @@ Provide organized access to Patient, Provider, and shared educational content.
 
 ### Primary CTA
 
-* Choose Patient Resources
-* Choose Provider Resources
+- Choose Patient Resources
+- Choose Provider Resources
 
 ### Required Section Sequence
 
@@ -3152,19 +3152,19 @@ Provide organized access to Patient, Provider, and shared educational content.
 
 ### Required Metadata Display
 
-* Audience
-* Content type
-* Author
-* Reviewer where relevant
-* Publication or review date
-* Market applicability
+- Audience
+- Content type
+- Author
+- Reviewer where relevant
+- Publication or review date
+- Market applicability
 
 ### Prohibited Content
 
-* Unreviewed clinical articles
-* Draft resources
-* Mixed Patient and Provider content without labels
-* An unmanaged chronological blog feed
+- Unreviewed clinical articles
+- Draft resources
+- Mixed Patient and Provider content without labels
+- An unmanaged chronological blog feed
 
 ### SEO Intent
 
@@ -3172,18 +3172,18 @@ ODRISC resources and topic discovery.
 
 ### Analytics
 
-* Hub viewed
-* Audience filter selected
-* Topic selected
-* Resource selected
-* Search used
+- Hub viewed
+- Audience filter selected
+- Topic selected
+- Resource selected
+- Search used
 
 ### Acceptance Criteria
 
-* Patient and Provider resources are clearly distinguished
-* Every clinical resource has review metadata
-* Filtering is accessible
-* Resource taxonomy is controlled
+- Patient and Provider resources are clearly distinguished
+- Every clinical resource has review metadata
+- Filtering is accessible
+- Resource taxonomy is controlled
 
 ---
 
@@ -3200,24 +3200,24 @@ Organize Patient-appropriate education by pregnancy stage and topic.
 
 ### Required Categories
 
-* Preparing for pregnancy
-* Risk awareness
-* Weight
-* Nutrition
-* Physical activity
-* Understanding progress
-* Appointment preparation
+- Preparing for pregnancy
+- Risk awareness
+- Weight
+- Nutrition
+- Physical activity
+- Understanding progress
+- Appointment preparation
 
 ### Primary CTA
 
-* Explore Patient Support
+- Explore Patient Support
 
 ### Acceptance Criteria
 
-* Content uses Patient language
-* Clinical resources show review dates
-* Resources link to canonical Patient pages
-* No Provider-only content is surfaced without explanation
+- Content uses Patient language
+- Clinical resources show review dates
+- Resources link to canonical Patient pages
+- No Provider-only content is surfaced without explanation
 
 ---
 
@@ -3230,24 +3230,24 @@ Organize Patient-appropriate education by pregnancy stage and topic.
 
 ### Required Categories
 
-* Monitoring
-* Maternal intelligence
-* Fetal growth
-* Methodology
-* Validation
-* Workflow
-* Implementation
-* Research
+- Monitoring
+- Maternal intelligence
+- Fetal growth
+- Methodology
+- Validation
+- Workflow
+- Implementation
+- Research
 
 ### Primary CTA
 
-* Explore Clinical Platform
+- Explore Clinical Platform
 
 ### Acceptance Criteria
 
-* Professional content shows authorship and references
-* Content is distinct from Patient resources
-* Product material and independent evidence are clearly distinguished
+- Professional content shows authorship and references
+- Content is distinct from Patient resources
+- Product material and independent evidence are clearly distinguished
 
 ---
 
@@ -3264,11 +3264,11 @@ Explain approved maternal, fetal, product, and monitoring terminology to public 
 
 ### Requirements
 
-* Definitions must derive from the internal glossary
-* Patient and Provider depth may be layered
-* Alphabetical navigation must be accessible
-* Terms must link to relevant canonical pages
-* Definitions must not provide diagnosis
+- Definitions must derive from the internal glossary
+- Patient and Provider depth may be layered
+- Alphabetical navigation must be accessible
+- Terms must link to relevant canonical pages
+- Definitions must not provide diagnosis
 
 ### SEO Intent
 
@@ -3276,10 +3276,10 @@ Approved public terminology and definitions.
 
 ### Acceptance Criteria
 
-* Definitions are current
-* Internal-only terms are excluded
-* Public wording is understandable
-* Search and alphabetical navigation work
+- Definitions are current
+- Internal-only terms are excluded
+- Public wording is understandable
+- Search and alphabetical navigation work
 
 ---
 
@@ -3294,12 +3294,12 @@ Approved public terminology and definitions.
 
 A topic hub may be created only when:
 
-* At least several unique resources exist
-* The topic has stable search intent
-* The page provides unique value
-* Audience applicability is defined
-* A content owner is assigned
-* Clinical review is available
+- At least several unique resources exist
+- The topic has stable search intent
+- The page provides unique value
+- Audience applicability is defined
+- A content owner is assigned
+- Clinical review is available
 
 ### Required Structure
 
@@ -3312,9 +3312,9 @@ A topic hub may be created only when:
 
 ### Prohibited Content
 
-* Thin keyword pages
-* Duplicated capability content
-* Unreviewed medical summaries
+- Thin keyword pages
+- Duplicated capability content
+- Unreviewed medical summaries
 
 ---
 
@@ -3327,17 +3327,17 @@ A topic hub may be created only when:
 
 ### Required Metadata
 
-* Title
-* Summary
-* Audience
-* Author
-* Reviewer
-* Publication date
-* Last reviewed date
-* Market applicability
-* References
-* Related pages
-* Content status
+- Title
+- Summary
+- Audience
+- Author
+- Reviewer
+- Publication date
+- Last reviewed date
+- Market applicability
+- References
+- Related pages
+- Content status
 
 ### Required Structure
 
@@ -3353,18 +3353,18 @@ A topic hub may be created only when:
 
 ### Prohibited Content
 
-* Hidden sponsorship
-* Unsupported medical claims
-* Missing references for clinical content
-* Generic AI-generated content without review
+- Hidden sponsorship
+- Unsupported medical claims
+- Missing references for clinical content
+- Generic AI-generated content without review
 
 ### Acceptance Criteria
 
-* Metadata is complete
-* Clinical review is documented
-* References are accurate
-* CTA is relevant and not intrusive
-* Archived content is no longer promoted
+- Metadata is complete
+- Clinical review is documented
+- References are accurate
+- CTA is relevant and not intrusive
+- Archived content is no longer promoted
 
 ---
 
@@ -3388,8 +3388,8 @@ Explain why ODRISC exists, what it is building, and whom it serves.
 
 ### Primary CTA
 
-* Explore Patient Experience
-* Explore Provider Experience
+- Explore Patient Experience
+- Explore Provider Experience
 
 Equal audience pathways.
 
@@ -3407,23 +3407,23 @@ Equal audience pathways.
 
 ### Prohibited Content
 
-* Founder story used as clinical proof
-* Unsupported market leadership claims
-* Unconfirmed regulatory status
-* Outdated legal entity details
+- Founder story used as clinical proof
+- Unsupported market leadership claims
+- Unconfirmed regulatory status
+- Outdated legal entity details
 
 ### SEO Intent
 
-* About ODRISC
-* ODRISC Technologies
-* Maternal and fetal intelligence company
+- About ODRISC
+- ODRISC Technologies
+- Maternal and fetal intelligence company
 
 ### Acceptance Criteria
 
-* Company and product identity are coherent
-* Patient and Provider audiences are equally represented
-* Founder story remains proportionate
-* Team and entity information are current
+- Company and product identity are coherent
+- Patient and Provider audiences are equally represented
+- Founder story remains proportionate
+- Team and entity information are current
 
 ---
 
@@ -3444,30 +3444,30 @@ Present the personal motivation behind ODRISC and connect it to the product miss
 
 ### Required Content
 
-* Mother's gestational diabetes
-* Founder born macrosomic
-* Later maternal type 2 diabetes
-* Founder recognition of the longer pregnancy-health story
-* Transition from personal experience to product mission
-* Clear statement that one story is not clinical evidence
+- Mother's gestational diabetes
+- Founder born macrosomic
+- Later maternal type 2 diabetes
+- Founder recognition of the longer pregnancy-health story
+- Transition from personal experience to product mission
+- Clear statement that one story is not clinical evidence
 
 ### Prohibited Content
 
-* Emotional manipulation
-* Claim that ODRISC would have prevented the outcome
-* Generalization to every pregnancy
-* Founder story replacing scientific justification
+- Emotional manipulation
+- Claim that ODRISC would have prevented the outcome
+- Generalization to every pregnancy
+- Founder story replacing scientific justification
 
 ### Primary CTA
 
-* Understand the ODRISC Vision
+- Understand the ODRISC Vision
 
 ### Acceptance Criteria
 
-* Personal facts are approved
-* Tone is respectful
-* The story supports rather than dominates the product narrative
-* Clinical claims remain evidence-based elsewhere
+- Personal facts are approved
+- Tone is respectful
+- The story supports rather than dominates the product narrative
+- Clinical claims remain evidence-based elsewhere
 
 ---
 
@@ -3483,27 +3483,27 @@ Present the personal motivation behind ODRISC and connect it to the product miss
 
 For each listed member:
 
-* Approved name
-* Current role
-* Employment or contribution status
-* Relevant qualification
-* Short approved biography
-* Optional professional profile link
+- Approved name
+- Current role
+- Employment or contribution status
+- Relevant qualification
+- Short approved biography
+- Optional professional profile link
 
 ### Prohibited Content
 
-* Unconfirmed roles
-* Former members as current
-* Inflated credentials
-* Adviser status without agreement
-* Personal contact details without consent
+- Unconfirmed roles
+- Former members as current
+- Inflated credentials
+- Adviser status without agreement
+- Personal contact details without consent
 
 ### Acceptance Criteria
 
-* Team data is current
-* Role terminology is consistent
-* Professional qualifications are accurate
-* Update ownership is defined
+- Team data is current
+- Role terminology is consistent
+- Professional qualifications are accurate
+- Update ownership is defined
 
 ---
 
@@ -3520,24 +3520,24 @@ Present formally confirmed clinical advisers, panel members, reviewers, and prof
 
 ### Required Content
 
-* Contributor role
-* Nature of contribution
-* Current status
-* Relevant qualification
-* Disclosure where required
+- Contributor role
+- Nature of contribution
+- Current status
+- Relevant qualification
+- Disclosure where required
 
 ### Prohibited Content
 
-* Informal interest described as advisory participation
-* Panel membership described as product validation
-* Institutional affiliation used without approval
+- Informal interest described as advisory participation
+- Panel membership described as product validation
+- Institutional affiliation used without approval
 
 ### Acceptance Criteria
 
-* Every listed contributor is confirmed
-* Contribution type is precise
-* Logos and affiliations have permission
-* Clinical input is not equated with validation
+- Every listed contributor is confirmed
+- Contribution type is precise
+- Logos and affiliations have permission
+- Clinical input is not equated with validation
 
 ---
 
@@ -3551,23 +3551,23 @@ Present formally confirmed clinical advisers, panel members, reviewers, and prof
 
 ### Required Content
 
-* Confirmed partnerships
-* Approved collaboration categories
-* Partnership enquiry route
-* Program participation where verified
+- Confirmed partnerships
+- Approved collaboration categories
+- Partnership enquiry route
+- Program participation where verified
 
 ### Prohibited Content
 
-* Prospects presented as partners
-* Applications presented as selection
-* Discussions presented as agreements
-* Logos without permission
+- Prospects presented as partners
+- Applications presented as selection
+- Discussions presented as agreements
+- Logos without permission
 
 ### Acceptance Criteria
 
-* Every published relationship is verified
-* Partnership status is unambiguous
-* Contact route works
+- Every published relationship is verified
+- Partnership status is unambiguous
+- Contact route works
 
 ---
 
@@ -3584,17 +3584,17 @@ Present current roles and company employment information.
 
 ### Requirements
 
-* Publish only active approved roles
-* Include location, employment type, responsibilities, requirements, and application process
-* Archive closed roles
-* Avoid collecting unnecessary sensitive information
+- Publish only active approved roles
+- Include location, employment type, responsibilities, requirements, and application process
+- Archive closed roles
+- Avoid collecting unnecessary sensitive information
 
 ### Acceptance Criteria
 
-* Open roles are current
-* Application destination works
-* Closed roles are removed or marked
-* Employment claims are accurate
+- Open roles are current
+- Application destination works
+- Closed roles are removed or marked
+- Employment claims are accurate
 
 ---
 
@@ -3618,15 +3618,15 @@ Route visitors to the correct support, commercial, partnership, privacy, or comp
 
 ### Required Contact Categories
 
-* General enquiry
-* Patient support
-* Healthcare Provider enquiry
-* Hospital or institutional enquiry
-* Partnership
-* Media
-* Careers
-* Privacy
-* Security
+- General enquiry
+- Patient support
+- Healthcare Provider enquiry
+- Hospital or institutional enquiry
+- Partnership
+- Media
+- Careers
+- Privacy
+- Security
 
 ### Required Safety Statement
 
@@ -3634,26 +3634,26 @@ The Contact page is not an emergency or medical-consultation service.
 
 ### Prohibited Content
 
-* Detailed medical-history fields
-* Clinical advice form
-* Patient report uploads through general contact
-* Unowned contact categories
+- Detailed medical-history fields
+- Clinical advice form
+- Patient report uploads through general contact
+- Unowned contact categories
 
 ### Analytics
 
-* Contact page viewed
-* Category selected
-* Form started
-* Form submitted
-* Form failed
+- Contact page viewed
+- Category selected
+- Form started
+- Form submitted
+- Form failed
 
 ### Acceptance Criteria
 
-* Every category routes to an approved owner
-* No sensitive health information is requested
-* Success and error states work
-* Safety wording is visible
-* Response expectations are accurate
+- Every category routes to an approved owner
+- No sensitive health information is requested
+- Success and error states work
+- Safety wording is visible
+- Response expectations are accurate
 
 ---
 
@@ -3669,27 +3669,27 @@ The Contact page is not an emergency or medical-consultation service.
 
 ### Required Content
 
-* Legal entity
-* Data collected
-* Purpose
-* Lawful basis where applicable
-* Cookies and analytics
-* Third-party services
-* Data sharing
-* Retention
-* Security principles
-* User rights
-* Contact
-* Market applicability
-* Effective and updated dates
+- Legal entity
+- Data collected
+- Purpose
+- Lawful basis where applicable
+- Cookies and analytics
+- Third-party services
+- Data sharing
+- Retention
+- Security principles
+- User rights
+- Contact
+- Market applicability
+- Effective and updated dates
 
 ### Acceptance Criteria
 
-* Legal review is complete
-* Product and website data flows are accurately represented
-* Market applicability is clear
-* Contact details work
-* Version date is visible
+- Legal review is complete
+- Product and website data flows are accurately represented
+- Market applicability is clear
+- Contact details work
+- Version date is visible
 
 ---
 
@@ -3702,24 +3702,24 @@ The Contact page is not an emergency or medical-consultation service.
 
 ### Required Content
 
-* Website terms
-* Intellectual property
-* Informational-use boundary
-* Medical boundary
-* Availability
-* Liability
-* Third-party links
-* Market applicability
-* Governing law
-* Contact
-* Effective date
+- Website terms
+- Intellectual property
+- Informational-use boundary
+- Medical boundary
+- Availability
+- Liability
+- Third-party links
+- Market applicability
+- Governing law
+- Contact
+- Effective date
 
 ### Acceptance Criteria
 
-* Legal review is complete
-* Terms distinguish website and application use
-* Medical boundaries are clear
-* Market applicability is accurate
+- Legal review is complete
+- Terms distinguish website and application use
+- Medical boundaries are clear
+- Market applicability is accurate
 
 ---
 
@@ -3732,21 +3732,21 @@ The Contact page is not an emergency or medical-consultation service.
 
 ### Required Content
 
-* Cookie categories
-* Purpose
-* Duration
-* Third parties
-* Consent management
-* Withdrawal
-* Contact
-* Update date
+- Cookie categories
+- Purpose
+- Duration
+- Third parties
+- Consent management
+- Withdrawal
+- Contact
+- Update date
 
 ### Acceptance Criteria
 
-* Cookie inventory matches implementation
-* Consent choices work
-* Non-essential scripts respect consent
-* Policy is updated when services change
+- Cookie inventory matches implementation
+- Consent choices work
+- Non-essential scripts respect consent
+- Policy is updated when services change
 
 ---
 
@@ -3759,19 +3759,19 @@ The Contact page is not an emergency or medical-consultation service.
 
 ### Required Content
 
-* Accessibility commitment
-* Target standard
-* Known limitations
-* Feedback route
-* Contact
-* Review date
+- Accessibility commitment
+- Target standard
+- Known limitations
+- Feedback route
+- Contact
+- Review date
 
 ### Acceptance Criteria
 
-* Statement reflects actual implementation
-* Feedback route works
-* Known issues are not concealed
-* Accessibility target matches approved standard
+- Statement reflects actual implementation
+- Feedback route works
+- Known issues are not concealed
+- Accessibility target matches approved standard
 
 ---
 
@@ -3786,28 +3786,28 @@ The Contact page is not an emergency or medical-consultation service.
 
 ### Required Features
 
-* Query input
-* Audience label
-* Topic and type filters where justified
-* No-result state
-* Accessible keyboard interaction
-* Exclusion of drafts and restricted pages
+- Query input
+- Audience label
+- Topic and type filters where justified
+- No-result state
+- Accessible keyboard interaction
+- Exclusion of drafts and restricted pages
 
 ### Analytics
 
-* Search submitted
-* Filter applied
-* Result selected
-* No-result query
+- Search submitted
+- Filter applied
+- Result selected
+- No-result query
 
 Search terms must be reviewed for privacy implications.
 
 ### Acceptance Criteria
 
-* Restricted content is excluded
-* Results show audience context
-* Search is accessible
-* No-result state offers recovery
+- Restricted content is excluded
+- Results show audience context
+- Search is accessible
+- No-result state offers recovery
 
 ---
 
@@ -3824,18 +3824,18 @@ Route users to approved Patient or Provider access.
 
 ### Requirements
 
-* Patient access only when available
-* Provider access only when available
-* Clear distinction between login, demonstration, and registration
-* Market restrictions where applicable
-* Secure destinations
+- Patient access only when available
+- Provider access only when available
+- Clear distinction between login, demonstration, and registration
+- Market restrictions where applicable
+- Secure destinations
 
 ### Acceptance Criteria
 
-* Every access route works
-* Unsupported access is hidden
-* Users understand which system they are entering
-* Authentication details are not exposed
+- Every access route works
+- Unsupported access is hidden
+- Users understand which system they are entering
+- Authentication details are not exposed
 
 ---
 
@@ -3848,19 +3848,19 @@ Route users to approved Patient or Provider access.
 
 ### Required Content
 
-* Clear page-not-found message
-* Patient homepage route
-* Provider homepage route
-* Shared entry route
-* Search when available
-* Contact route
+- Clear page-not-found message
+- Patient homepage route
+- Provider homepage route
+- Shared entry route
+- Search when available
+- Contact route
 
 ### Acceptance Criteria
 
-* Correct HTTP status
-* No broken assets
-* Audience routes work
-* Page is not indexable as normal content
+- Correct HTTP status
+- No broken assets
+- Audience routes work
+- Page is not indexable as normal content
 
 ---
 
@@ -3873,16 +3873,16 @@ Route users to approved Patient or Provider access.
 
 ### Required Content
 
-* Temporary-error message
-* Safe return route
-* Contact or support route
-* No internal technical details
+- Temporary-error message
+- Safe return route
+- Contact or support route
+- No internal technical details
 
 ### Acceptance Criteria
 
-* Correct HTTP status
-* No sensitive details exposed
-* Static fallback works during application failure
+- Correct HTTP status
+- No sensitive details exposed
+- Static fallback works during application failure
 
 ---
 
@@ -3890,16 +3890,16 @@ Route users to approved Patient or Provider access.
 
 Every page specification must later define:
 
-* Primary search intent
-* Secondary search themes
-* Proposed title
-* Proposed meta description
-* Canonical URL
-* Index or noindex
-* Structured data
-* Internal-link requirements
-* Author and reviewer metadata
-* Market and language applicability
+- Primary search intent
+- Secondary search themes
+- Proposed title
+- Proposed meta description
+- Canonical URL
+- Index or noindex
+- Structured data
+- Internal-link requirements
+- Author and reviewer metadata
+- Market and language applicability
 
 Final titles and descriptions belong in the SEO specification or page content briefs.
 
@@ -3911,16 +3911,16 @@ This document defines intent rather than final metadata copy.
 
 Every implemented page must identify:
 
-* Page ID
-* Route
-* Audience
-* Page type
-* Market
-* Language
-* Product-status dependency
-* Primary CTA
-* Secondary CTA
-* Relevant engagement events
+- Page ID
+- Route
+- Audience
+- Page type
+- Market
+- Language
+- Product-status dependency
+- Primary CTA
+- Secondary CTA
+- Relevant engagement events
 
 Analytics must use stable internal names even when visible labels change.
 
@@ -3939,29 +3939,29 @@ route: /patients/weight-monitoring/
 
 Each page design and implementation review must evaluate:
 
-* Heading hierarchy
-* Landmark structure
-* Keyboard flow
-* Focus order
-* Link purpose
-* Button naming
-* Form labeling
-* Error messaging
-* Color contrast
-* Reduced motion
-* Alternative text
-* Complex-image description
-* Chart interpretation
-* Mobile zoom and text scaling
-* Language and direction attributes
-* Right-to-left behavior where applicable
+- Heading hierarchy
+- Landmark structure
+- Keyboard flow
+- Focus order
+- Link purpose
+- Button naming
+- Form labeling
+- Error messaging
+- Color contrast
+- Reduced motion
+- Alternative text
+- Complex-image description
+- Chart interpretation
+- Mobile zoom and text scaling
+- Language and direction attributes
+- Right-to-left behavior where applicable
 
 Advanced clinical diagrams should include:
 
-* Short alternative text
-* Longer visible or programmatic explanation
-* Clear legend
-* Non-color-dependent distinctions
+- Short alternative text
+- Longer visible or programmatic explanation
+- Clear legend
+- Non-color-dependent distinctions
 
 ---
 
@@ -3973,54 +3973,54 @@ Each page must identify the required reviewers.
 
 Required when the page describes:
 
-* Product capabilities
-* Availability
-* Pricing
-* Workflow
-* Roadmap
-* Integrations
-* Market access
+- Product capabilities
+- Availability
+- Pricing
+- Workflow
+- Roadmap
+- Integrations
+- Market access
 
 ## 21.2 Clinical Review
 
 Required when the page includes:
 
-* Clinical claims
-* Risk factors
-* Weight guidance
-* Nutrition
-* Physical activity
-* Maternal intelligence
-* Fetal growth
-* Doppler
-* Validation
-* Methodology
-* Patient safety
+- Clinical claims
+- Risk factors
+- Weight guidance
+- Nutrition
+- Physical activity
+- Maternal intelligence
+- Fetal growth
+- Doppler
+- Validation
+- Methodology
+- Patient safety
 
 ## 21.3 Legal or Privacy Review
 
 Required when the page includes:
 
-* Forms
-* Consent
-* Pricing terms
-* Privacy
-* Security
-* Medical disclaimers
-* Market-specific legal claims
-* Regulatory status
+- Forms
+- Consent
+- Pricing terms
+- Privacy
+- Security
+- Medical disclaimers
+- Market-specific legal claims
+- Regulatory status
 
 ## 21.4 Commercial Review
 
 Required when the page includes:
 
-* Pricing
-* Membership
-* Demonstrations
-* Pilots
-* Enterprise implementation
-* Partnerships
-* Market availability
+- Pricing
+- Membership
+- Demonstrations
+- Pilots
+- Enterprise implementation
+- Partnerships
+- Market availability
 
 ---
 
@@ -4028,22 +4028,22 @@ Required when the page includes:
 
 Before copywriting begins, every page must receive a content brief containing:
 
-* Page ID
-* Route
-* Primary audience
-* Primary purpose
-* Primary visitor question
-* Story stage
-* Primary CTA
-* Secondary CTA
-* Required sections
-* Required proof
-* Required disclaimers
-* Product Status
-* Clinical sources
-* SEO intent
-* Related pages
-* Reviewer list
+- Page ID
+- Route
+- Primary audience
+- Primary purpose
+- Primary visitor question
+- Story stage
+- Primary CTA
+- Secondary CTA
+- Required sections
+- Required proof
+- Required disclaimers
+- Product Status
+- Clinical sources
+- SEO intent
+- Related pages
+- Reviewer list
 
 The brief must not redefine the Page Requirements.
 
@@ -4053,27 +4053,27 @@ The brief must not redefine the Page Requirements.
 
 Before design begins, every page must identify:
 
-* Page ID
-* Page type
-* Narrative sequence
-* Content hierarchy
-* Required components
-* Required diagrams
-* Required product visuals
-* Motion purpose
-* Mobile behavior
-* Accessibility considerations
-* Product-status labels
-* CTA behavior
-* Empty, loading, error, or success states
-* Motion ID
-* Motion purpose
-* Trigger
-* Duration and easing
-* Reduced-motion alternative
-* Mobile behavior
-* RTL behavior
-* Performance impact
+- Page ID
+- Page type
+- Narrative sequence
+- Content hierarchy
+- Required components
+- Required diagrams
+- Required product visuals
+- Motion purpose
+- Mobile behavior
+- Accessibility considerations
+- Product-status labels
+- CTA behavior
+- Empty, loading, error, or success states
+- Motion ID
+- Motion purpose
+- Trigger
+- Duration and easing
+- Reduced-motion alternative
+- Mobile behavior
+- RTL behavior
+- Performance impact
 
 ---
 
@@ -4081,20 +4081,20 @@ Before design begins, every page must identify:
 
 Before development begins, every page must identify:
 
-* Canonical route
-* Page ID
-* Data source
-* Content ownership
-* Required reusable components
-* Analytics events
-* Metadata
-* Structured data
-* Form integrations
-* Consent dependencies
-* Redirects
-* Market and language behavior
-* Test cases
-* Launch status
+- Canonical route
+- Page ID
+- Data source
+- Content ownership
+- Required reusable components
+- Analytics events
+- Metadata
+- Structured data
+- Form integrations
+- Consent dependencies
+- Redirects
+- Market and language behavior
+- Test cases
+- Launch status
 
 ---
 
@@ -4104,46 +4104,46 @@ Each page must pass five approval gates.
 
 ## Gate One — Strategic
 
-* Supports an approved objective
-* Serves a defined audience
-* Fits the Website Story
-* Fits the Information Architecture
-* Has a clear CTA
+- Supports an approved objective
+- Serves a defined audience
+- Fits the Website Story
+- Fits the Information Architecture
+- Has a clear CTA
 
 ## Gate Two — Content
 
-* Required sections are complete
-* Claims are sourced
-* Product Status is accurate
-* Clinical boundaries are present
-* Terminology is approved
+- Required sections are complete
+- Claims are sourced
+- Product Status is accurate
+- Clinical boundaries are present
+- Terminology is approved
 
 ## Gate Three — Design
 
-* Visual hierarchy is clear
-* Brand system is followed
-* Mobile design is complete
-* Motion is purposeful
-* Accessibility is considered
+- Visual hierarchy is clear
+- Brand system is followed
+- Mobile design is complete
+- Motion is purposeful
+- Accessibility is considered
 
 ## Gate Four — Engineering
 
-* Route is correct
-* Metadata is complete
-* Analytics works
-* Performance is acceptable
-* Security and privacy requirements are met
-* Forms and errors work
+- Route is correct
+- Metadata is complete
+- Analytics works
+- Performance is acceptable
+- Security and privacy requirements are met
+- Forms and errors work
 
 ## Gate Five — Launch
 
-* Product owner approved
-* Clinical reviewer approved where required
-* Legal or privacy reviewer approved where required
-* CTA destination verified
-* Route Registry updated
-* Traceability updated
-* Page status changed to Published
+- Product owner approved
+- Clinical reviewer approved where required
+- Legal or privacy reviewer approved where required
+- CTA destination verified
+- Route Registry updated
+- Traceability updated
+- Page status changed to Published
 
 ---
 
@@ -4151,16 +4151,16 @@ Each page must pass five approval gates.
 
 Each Page ID must map to:
 
-* Website objective
-* PRD requirements
-* Information Architecture route
-* Website Story stage
-* Product Status
-* Design template
-* Components
-* Analytics
-* Tests
-* Implementation status
+- Website objective
+- PRD requirements
+- Information Architecture route
+- Website Story stage
+- Product Status
+- Design template
+- Components
+- Analytics
+- Tests
+- Implementation status
 
 Example:
 
@@ -4183,49 +4183,49 @@ PAT-PG-005 — Risk Awareness
 
 ## 27.1 Core Shared P0
 
-* SH-PG-001 — Shared Audience Entry
-* SH-PG-002 — Contact
-* COM-PG-001 — About
-* LEG-PG-001 — Privacy
-* LEG-PG-002 — Terms
-* LEG-PG-003 — Cookies where required
-* LEG-PG-004 — Accessibility
-* UTL-PG-003 — 404
-* UTL-PG-004 — 500
+- SH-PG-001 — Shared Audience Entry
+- SH-PG-002 — Contact
+- COM-PG-001 — About
+- LEG-PG-001 — Privacy
+- LEG-PG-002 — Terms
+- LEG-PG-003 — Cookies where required
+- LEG-PG-004 — Accessibility
+- UTL-PG-003 — 404
+- UTL-PG-004 — 500
 
 ## 27.2 Core Patient P0
 
-* PAT-PG-001 — Patient Homepage
-* PAT-PG-002 — How ODRISC Helps
-* PAT-PG-011 — Patient FAQs
+- PAT-PG-001 — Patient Homepage
+- PAT-PG-002 — How ODRISC Helps
+- PAT-PG-011 — Patient FAQs
 
 Conditional P0:
 
-* PAT-PG-005 — Risk Awareness
-* PAT-PG-006 — Weight Monitoring
-* PAT-PG-007 — Nutrition
-* PAT-PG-008 — Physical Activity
-* PAT-PG-010 — Membership
-* PAT-PG-012 — Patient Start
+- PAT-PG-005 — Risk Awareness
+- PAT-PG-006 — Weight Monitoring
+- PAT-PG-007 — Nutrition
+- PAT-PG-008 — Physical Activity
+- PAT-PG-010 — Membership
+- PAT-PG-012 — Patient Start
 
 ## 27.3 Core Provider P0
 
-* PRO-PG-001 — Provider Homepage
-* PRO-PG-002 — Clinical Platform
-* PRO-PG-003 — Monitoring
-* PRO-PG-007 — Workflow
-* PRO-PG-008 — Validation
-* PRO-PG-015 — Provider FAQs
-* PRO-PG-016 — Request Demonstration
+- PRO-PG-001 — Provider Homepage
+- PRO-PG-002 — Clinical Platform
+- PRO-PG-003 — Monitoring
+- PRO-PG-007 — Workflow
+- PRO-PG-008 — Validation
+- PRO-PG-015 — Provider FAQs
+- PRO-PG-016 — Request Demonstration
 
 Conditional P0 or P1:
 
-* PRO-PG-004 — Intelligence Hub
-* PRO-PG-005 — Maternal Intelligence
-* PRO-PG-006 — Fetal Growth Intelligence
-* PRO-PG-009 — Methodology
-* PRO-PG-011 — Hospitals and Health Systems
-* PRO-PG-017 — Discuss Pilot
+- PRO-PG-004 — Intelligence Hub
+- PRO-PG-005 — Maternal Intelligence
+- PRO-PG-006 — Fetal Growth Intelligence
+- PRO-PG-009 — Methodology
+- PRO-PG-011 — Hospitals and Health Systems
+- PRO-PG-017 — Discuss Pilot
 
 ---
 
@@ -4323,26 +4323,26 @@ All unresolved decisions must remain in:
 
 Page-level blocking questions include:
 
-* Which pages form the final P0 launch inventory?
-* What is the final Patient homepage CTA?
-* What is the final Provider homepage CTA?
-* Which Patient capabilities are publicly available?
-* Which Provider capabilities may be described publicly?
-* Which Patient pricing may be published?
-* Which validation claims are approved?
-* Which product screenshots are current?
-* Which pages use concept visuals?
-* Which pages require visible product-status labels?
-* Which pages require clinical author or reviewer information?
-* Which institutional pages launch in Qatar?
-* Which pages are translated into Arabic at first launch?
-* Which pages differ by market?
-* Is Provider Insights separate from Provider Resources?
-* Is Patient Start a page or routing layer?
-* Is the Intelligence Hub P0 or P1?
-* Which forms have operational owners?
-* Which pages require noindex?
-* Which page sections require animation?
+- Which pages form the final P0 launch inventory?
+- What is the final Patient homepage CTA?
+- What is the final Provider homepage CTA?
+- Which Patient capabilities are publicly available?
+- Which Provider capabilities may be described publicly?
+- Which Patient pricing may be published?
+- Which validation claims are approved?
+- Which product screenshots are current?
+- Which pages use concept visuals?
+- Which pages require visible product-status labels?
+- Which pages require clinical author or reviewer information?
+- Which institutional pages launch in Qatar?
+- Which pages are translated into Arabic at first launch?
+- Which pages differ by market?
+- Is Provider Insights separate from Provider Resources?
+- Is Patient Start a page or routing layer?
+- Is the Intelligence Hub P0 or P1?
+- Which forms have operational owners?
+- Which pages require noindex?
+- Which page sections require animation?
 
 ---
 
@@ -4399,20 +4399,20 @@ Before writing, designing, or implementing a page, AI agents must:
 
 AI agents must not:
 
-* Invent a public page outside the approved architecture
-* Change a Page ID
-* Create duplicate canonical pages
-* Draft copy before checking Product Status
-* Present future features as available
-* Turn a Patient page into a clinical document
-* Turn a Provider page into generic wellness marketing
-* Invent evidence, validation, partnerships, or regulatory status
-* Add a form without an operational owner
-* Add a CTA without a working destination
-* Remove safety or clinical-boundary language
-* Use a visual mockup as the only page requirement
-* Create bespoke components before checking the Component Library
-* publish a page without updating the Route Registry
+- Invent a public page outside the approved architecture
+- Change a Page ID
+- Create duplicate canonical pages
+- Draft copy before checking Product Status
+- Present future features as available
+- Turn a Patient page into a clinical document
+- Turn a Provider page into generic wellness marketing
+- Invent evidence, validation, partnerships, or regulatory status
+- Add a form without an operational owner
+- Add a CTA without a working destination
+- Remove safety or clinical-boundary language
+- Use a visual mockup as the only page requirement
+- Create bespoke components before checking the Component Library
+- publish a page without updating the Route Registry
 
 ---
 

@@ -16,23 +16,23 @@
 
 ## Related Documents
 
-* `PROJECT_CONTEXT.md`
-* `docs/project/SOURCE_OF_TRUTH.md`
-* `docs/project/ASSUMPTIONS.md`
-* `docs/project/OPEN_QUESTIONS.md`
-* `docs/project/GLOSSARY.md`
-* `docs/product/PRODUCT_VISION.md`
-* `docs/product/AUDIENCE.md`
-* `docs/product/WEBSITE_OBJECTIVES.md`
-* `docs/product/WEBSITE_STORY.md`
-* `docs/product/PRD.md`
-* `docs/product/PRODUCT_STATUS.md`
-* `docs/product/INFORMATION_ARCHITECTURE.md`
-* `docs/product/PAGE_REQUIREMENTS.md`
-* `docs/design/DESIGN_SYSTEM.md`
-* `docs/design/ANIMATION_GUIDELINES.md`
-* `ai/rules/NON_NEGOTIABLES.md`
-* `ai/rules/AI_BEHAVIOR.md`
+- `PROJECT_CONTEXT.md`
+- `docs/project/SOURCE_OF_TRUTH.md`
+- `docs/project/ASSUMPTIONS.md`
+- `docs/project/OPEN_QUESTIONS.md`
+- `docs/project/GLOSSARY.md`
+- `docs/product/PRODUCT_VISION.md`
+- `docs/product/AUDIENCE.md`
+- `docs/product/WEBSITE_OBJECTIVES.md`
+- `docs/product/WEBSITE_STORY.md`
+- `docs/product/PRD.md`
+- `docs/product/PRODUCT_STATUS.md`
+- `docs/product/INFORMATION_ARCHITECTURE.md`
+- `docs/product/PAGE_REQUIREMENTS.md`
+- `docs/design/DESIGN_SYSTEM.md`
+- `docs/design/ANIMATION_GUIDELINES.md`
+- `ai/rules/NON_NEGOTIABLES.md`
+- `ai/rules/AI_BEHAVIOR.md`
 
 Detailed motion principles, timing, narrative animation, component transitions, reduced-motion behavior, performance requirements, and RTL motion guidance are defined in:
 
@@ -48,30 +48,30 @@ This document defines the foundational ODRISC brand.
 
 It governs:
 
-* Brand identity
-* Brand positioning
-* Brand purpose
-* Brand promise
-* Brand personality
-* Brand values
-* Brand voice
-* Audience-specific expression
-* Visual principles
-* Color roles
-* Typography direction
-* Layout character
-* Imagery
-* Illustration
-* Iconography
-* Data visualization
-* Motion principles
-* Product-status presentation
-* Clinical trust
-* Accessibility
-* Localization
-* Brand consistency
-* Brand review
-* AI-assisted brand generation
+- Brand identity
+- Brand positioning
+- Brand purpose
+- Brand promise
+- Brand personality
+- Brand values
+- Brand voice
+- Audience-specific expression
+- Visual principles
+- Color roles
+- Typography direction
+- Layout character
+- Imagery
+- Illustration
+- Iconography
+- Data visualization
+- Motion principles
+- Product-status presentation
+- Clinical trust
+- Accessibility
+- Localization
+- Brand consistency
+- Brand review
+- AI-assisted brand generation
 
 This document explains what ODRISC should feel like, sound like, and visually represent.
 
@@ -79,9 +79,9 @@ It does not define every design token, component, responsive rule, or implementa
 
 Those requirements belong in:
 
-* `docs/design/DESIGN_SYSTEM.md`
-* `docs/design/ANIMATION_GUIDELINES.md`
-* `docs/engineering/COMPONENT_LIBRARY.md`
+- `docs/design/DESIGN_SYSTEM.md`
+- `docs/design/ANIMATION_GUIDELINES.md`
+- `docs/engineering/COMPONENT_LIBRARY.md`
 
 ---
 
@@ -91,27 +91,27 @@ ODRISC is a maternal and fetal intelligence platform designed to help patients a
 
 The brand must communicate that ODRISC:
 
-* Connects fragmented pregnancy information
-* Organizes maternal and fetal information longitudinally
-* Supports earlier recognition
-* Supports more informed monitoring
-* Strengthens Patient-Provider collaboration
-* Supports healthcare professionals
-* Does not replace clinical judgment
-* Treats pregnancy as an evolving story rather than a collection of isolated measurements
+- Connects fragmented pregnancy information
+- Organizes maternal and fetal information longitudinally
+- Supports earlier recognition
+- Supports more informed monitoring
+- Strengthens Patient-Provider collaboration
+- Supports healthcare professionals
+- Does not replace clinical judgment
+- Treats pregnancy as an evolving story rather than a collection of isolated measurements
 
 ODRISC should not appear to be:
 
-* A generic pregnancy application
-* A wellness content brand
-* A diet application
-* A weight-loss brand
-* A fetal-growth calculator
-* An artificial-intelligence chatbot
-* An emergency-care service
-* An autonomous diagnostic system
-* A consumer lifestyle brand
-* A hospital-software brand with no human dimension
+- A generic pregnancy application
+- A wellness content brand
+- A diet application
+- A weight-loss brand
+- A fetal-growth calculator
+- An artificial-intelligence chatbot
+- An emergency-care service
+- An autonomous diagnostic system
+- A consumer lifestyle brand
+- A hospital-software brand with no human dimension
 
 ---
 
@@ -125,13 +125,13 @@ ODRISC exists because pregnancy information is often distributed across differen
 
 The brand should make visible the value of:
 
-* Continuity
-* Context
-* Progression
-* Collaboration
-* Explainability
-* Earlier understanding
-* More informed care
+- Continuity
+- Context
+- Progression
+- Collaboration
+- Explainability
+- Earlier understanding
+- More informed care
 
 ## 3.2 Human Purpose
 
@@ -139,12 +139,12 @@ The human purpose of ODRISC is to reduce uncertainty without creating false cert
 
 The brand should help patients feel:
 
-* Better informed
-* More prepared
-* More supported
-* Less overwhelmed
-* More capable of participating in care
-* Connected to their healthcare professionals
+- Better informed
+- More prepared
+- More supported
+- Less overwhelmed
+- More capable of participating in care
+- Connected to their healthcare professionals
 
 ## 3.3 Clinical Purpose
 
@@ -152,13 +152,13 @@ The clinical purpose of ODRISC is to support healthcare professionals with clear
 
 The brand should help Providers perceive:
 
-* Clinical relevance
-* Product discipline
-* Explainable logic
-* Workflow awareness
-* Appropriate boundaries
-* Respect for professional judgment
-* Honest product maturity
+- Clinical relevance
+- Product discipline
+- Explainable logic
+- Workflow awareness
+- Appropriate boundaries
+- Respect for professional judgment
+- Honest product maturity
 
 ---
 
@@ -168,16 +168,16 @@ The brand should help Providers perceive:
 
 The brand must be capable of supporting:
 
-* Patient experiences
-* Provider experiences
-* Clinical collaboration
-* Hospital and institutional adoption
-* Qatar commercialization
-* GCC expansion
-* English and Arabic
-* Future international markets
-* Clinical and product maturity
-* Long-term maternal and fetal intelligence
+- Patient experiences
+- Provider experiences
+- Clinical collaboration
+- Hospital and institutional adoption
+- Qatar commercialization
+- GCC expansion
+- English and Arabic
+- Future international markets
+- Clinical and product maturity
+- Long-term maternal and fetal intelligence
 
 The brand must therefore feel scalable beyond one application, one market, one feature, or one pregnancy stage.
 
@@ -189,15 +189,15 @@ The brand must therefore feel scalable beyond one application, one market, one f
 
 The mission should guide:
 
-* Product messaging
-* Website storytelling
-* Product demonstrations
-* Investor communication
-* Clinical communication
-* Patient education
-* Partnership materials
-* Social communication
-* Future market localization
+- Product messaging
+- Website storytelling
+- Product demonstrations
+- Investor communication
+- Clinical communication
+- Patient education
+- Partnership materials
+- Social communication
+- Future market localization
 
 ---
 
@@ -211,14 +211,14 @@ This is the central emotional and functional idea behind ODRISC.
 
 ODRISC connects:
 
-* Moments
-* Measurements
-* Reports
-* Maternal change
-* Fetal growth
-* Patient experiences
-* Clinical interpretation
-* Time
+- Moments
+- Measurements
+- Reports
+- Maternal change
+- Fetal growth
+- Patient experiences
+- Clinical interpretation
+- Time
 
 into a clearer longitudinal understanding.
 
@@ -226,12 +226,12 @@ into a clearer longitudinal understanding.
 
 ODRISC should feel like:
 
-* A continuous line through fragmented information
-* A calm layer of intelligence
-* A structured view of progression
-* A bridge between Patient and Provider
-* A system that makes change more understandable
-* A modern clinical product with a human purpose
+- A continuous line through fragmented information
+- A calm layer of intelligence
+- A structured view of progression
+- A bridge between Patient and Provider
+- A system that makes change more understandable
+- A modern clinical product with a human purpose
 
 ---
 
@@ -287,14 +287,14 @@ Stronger collaboration supports improved maternal and fetal outcomes
 
 This narrative must be preserved across:
 
-* Website pages
-* Product demonstrations
-* Presentations
-* Founder communication
-* Clinical materials
-* Partnership proposals
-* Investor materials
-* Brand campaigns
+- Website pages
+- Product demonstrations
+- Presentations
+- Founder communication
+- Clinical materials
+- Partnership proposals
+- Investor materials
+- Brand campaigns
 
 The expression may be adapted by audience, but the underlying logic must remain intact.
 
@@ -362,13 +362,13 @@ It must not be presented as proof of guaranteed clinical outcomes.
 
 The brand promise must not become:
 
-* A guarantee of improved outcomes
-* A guarantee of earlier detection
-* A guarantee of prevention
-* A diagnostic claim
-* A replacement-of-clinician claim
-* A promise of uninterrupted real-time monitoring
-* A claim of universal product availability
+- A guarantee of improved outcomes
+- A guarantee of earlier detection
+- A guarantee of prevention
+- A diagnostic claim
+- A replacement-of-clinician claim
+- A promise of uninterrupted real-time monitoring
+- A claim of universal product availability
 
 ---
 
@@ -380,12 +380,12 @@ ODRISC should make complex information easier to understand without oversimplify
 
 Clarity requires:
 
-* Clear language
-* Clear hierarchy
-* Clear data relationships
-* Clear limitations
-* Clear next actions
-* Clear product status
+- Clear language
+- Clear hierarchy
+- Clear data relationships
+- Clear limitations
+- Clear next actions
+- Clear product status
 
 ## 11.2 Continuity
 
@@ -393,12 +393,12 @@ ODRISC should always reinforce the importance of change across time.
 
 Continuity is expressed through:
 
-* Timelines
-* Trajectories
-* Progression
-* Repeated measurements
-* Connected care
-* Shared Patient and Provider understanding
+- Timelines
+- Trajectories
+- Progression
+- Repeated measurements
+- Connected care
+- Shared Patient and Provider understanding
 
 ## 11.3 Clinical Responsibility
 
@@ -406,12 +406,12 @@ ODRISC must respect professional judgment, evidence, safety, and appropriate bou
 
 Clinical responsibility requires:
 
-* No unsupported claims
-* No diagnostic autonomy
-* No hidden limitations
-* No confusion between risk and diagnosis
-* No confusion between pilot and validation
-* No confusion between product concept and available capability
+- No unsupported claims
+- No diagnostic autonomy
+- No hidden limitations
+- No confusion between risk and diagnosis
+- No confusion between pilot and validation
+- No confusion between product concept and available capability
 
 ## 11.4 Empathy
 
@@ -419,12 +419,12 @@ ODRISC should understand the emotional experience of pregnancy without exploitin
 
 Empathy requires:
 
-* Calm language
-* Non-judgmental weight communication
-* Respect for individual variation
-* Recognition of uncertainty
-* Avoidance of blame
-* Avoidance of fear-based conversion
+- Calm language
+- Non-judgmental weight communication
+- Respect for individual variation
+- Recognition of uncertainty
+- Avoidance of blame
+- Avoidance of fear-based conversion
 
 ## 11.5 Explainability
 
@@ -432,12 +432,12 @@ ODRISC should communicate how information becomes meaningful.
 
 Explainability requires:
 
-* Visible rationale
-* Understandable relationships
-* Transparent sources
-* Human review
-* Clear product boundaries
-* Avoidance of black-box positioning
+- Visible rationale
+- Understandable relationships
+- Transparent sources
+- Human review
+- Clear product boundaries
+- Avoidance of black-box positioning
 
 ## 11.6 Collaboration
 
@@ -445,12 +445,12 @@ ODRISC should strengthen the relationship between patients and healthcare profes
 
 Collaboration requires:
 
-* Clear roles
-* Patient participation
-* Provider authority
-* Consent
-* Shared understanding
-* Multidisciplinary respect
+- Clear roles
+- Patient participation
+- Provider authority
+- Consent
+- Shared understanding
+- Multidisciplinary respect
 
 ## 11.7 Trust
 
@@ -458,12 +458,12 @@ ODRISC should earn trust through accuracy, restraint, transparency, and consiste
 
 Trust must not rely only on:
 
-* Premium visual design
-* Artificial-intelligence language
-* Logos
-* Testimonials
-* Statistics
-* Unexplained clinical terminology
+- Premium visual design
+- Artificial-intelligence language
+- Logos
+- Testimonials
+- Statistics
+- Unexplained clinical terminology
 
 ## 11.8 Progress
 
@@ -473,11 +473,11 @@ Progress is not perfection.
 
 The brand should recognize:
 
-* Product maturity
-* Validation stages
-* Market development
-* Individual pregnancy variation
-* Continuous learning
+- Product maturity
+- Validation stages
+- Market development
+- Individual pregnancy variation
+- Continuous learning
 
 ---
 
@@ -491,11 +491,11 @@ The brand should reduce noise and confusion.
 
 It should not feel:
 
-* Alarmist
-* Aggressive
-* Urgent without cause
-* Emotionally manipulative
-* Overstimulating
+- Alarmist
+- Aggressive
+- Urgent without cause
+- Emotionally manipulative
+- Overstimulating
 
 ## 12.2 Precise
 
@@ -503,11 +503,11 @@ The brand should communicate with discipline.
 
 It should not feel:
 
-* Vague
-* Promotional
-* Exaggerated
-* Careless with clinical meaning
-* Overloaded with generic claims
+- Vague
+- Promotional
+- Exaggerated
+- Careless with clinical meaning
+- Overloaded with generic claims
 
 ## 12.3 Intelligent
 
@@ -515,11 +515,11 @@ The brand should feel thoughtful, structured, and capable.
 
 It should not feel:
 
-* Artificially futuristic
-* Robotic
-* Technologically self-impressed
-* Opaque
-* Detached from care
+- Artificially futuristic
+- Robotic
+- Technologically self-impressed
+- Opaque
+- Detached from care
 
 ## 12.4 Human
 
@@ -527,10 +527,10 @@ The brand should recognize that pregnancy is experienced by people, not datasets
 
 It should not feel:
 
-* Cold
-* Mechanical
-* Institutional without empathy
-* Data-first at the expense of people
+- Cold
+- Mechanical
+- Institutional without empathy
+- Data-first at the expense of people
 
 ## 12.5 Reassuring
 
@@ -538,10 +538,10 @@ The brand should support confidence through clarity.
 
 It should not provide:
 
-* False reassurance
-* Guaranteed safety
-* Unqualified certainty
-* Minimization of serious concerns
+- False reassurance
+- Guaranteed safety
+- Unqualified certainty
+- Minimization of serious concerns
 
 ## 12.6 Progressive
 
@@ -549,10 +549,10 @@ The brand should feel modern and forward-looking.
 
 It should not appear:
 
-* Trend-driven
-* Experimental without discipline
-* Fashion-led
-* Dependent on generic AI imagery
+- Trend-driven
+- Experimental without discipline
+- Fashion-led
+- Dependent on generic AI imagery
 
 ## 12.7 Premium
 
@@ -560,19 +560,19 @@ The brand should feel considered and refined.
 
 Premium means:
 
-* Strong hierarchy
-* Quality typography
-* Controlled spacing
-* Thoughtful interaction
-* Clear information
-* Restrained detail
+- Strong hierarchy
+- Quality typography
+- Controlled spacing
+- Thoughtful interaction
+- Clear information
+- Restrained detail
 
 Premium does not mean:
 
-* Decorative excess
-* Luxury lifestyle imagery
-* Unnecessary animation
-* Expensive-looking effects without functional value
+- Decorative excess
+- Luxury lifestyle imagery
+- Unnecessary animation
+- Expensive-looking effects without functional value
 
 ---
 
@@ -603,14 +603,14 @@ ODRISC should be:
 
 The ODRISC voice should be:
 
-* Clear
-* Calm
-* Respectful
-* Structured
-* Responsible
-* Modern
-* Evidence-conscious
-* Audience-aware
+- Clear
+- Calm
+- Respectful
+- Structured
+- Responsible
+- Modern
+- Evidence-conscious
+- Audience-aware
 
 ## 14.2 Voice Principles
 
@@ -638,23 +638,23 @@ Avoid:
 
 Prefer:
 
-* Helps
-* Supports
-* Enables
-* Provides visibility
-* Strengthens
-* Assists
-* May contribute to
+- Helps
+- Supports
+- Enables
+- Provides visibility
+- Strengthens
+- Assists
+- May contribute to
 
 Avoid:
 
-* Guarantees
-* Prevents
-* Eliminates
-* Ensures
-* Diagnoses
-* Automatically manages
-* Never misses
+- Guarantees
+- Prevents
+- Eliminates
+- Ensures
+- Diagnoses
+- Automatically manages
+- Never misses
 
 ### State Boundaries Clearly
 
@@ -676,13 +676,13 @@ Patient content should not be patronizing or infantilizing.
 
 The Patient voice should be:
 
-* Supportive
-* Plain-language
-* Calm
-* Respectful
-* Non-judgmental
-* Actionable
-* Reassuring without certainty
+- Supportive
+- Plain-language
+- Calm
+- Respectful
+- Non-judgmental
+- Actionable
+- Reassuring without certainty
 
 ### Patient Voice Example
 
@@ -698,36 +698,36 @@ Avoid:
 
 Use:
 
-* Your pregnancy journey
-* Understand your progress
-* Prepare for appointments
-* Discuss with your healthcare professional
-* Follow how things are changing
-* Structured support
-* Relevant risk factors
-* Appropriate monitoring
+- Your pregnancy journey
+- Understand your progress
+- Prepare for appointments
+- Discuss with your healthcare professional
+- Follow how things are changing
+- Structured support
+- Relevant risk factors
+- Appropriate monitoring
 
 Avoid:
 
-* Patient compliance
-* Failed progress
-* Poor control
-* Obese patient
-* Normal versus abnormal without context
-* High-risk identity as the person's defining label
-* Weight-loss marketing language
+- Patient compliance
+- Failed progress
+- Poor control
+- Obese patient
+- Normal versus abnormal without context
+- High-risk identity as the person's defining label
+- Weight-loss marketing language
 
 ## 15.2 Provider Voice
 
 The Provider voice should be:
 
-* Clinically literate
-* Precise
-* Efficient
-* Evidence-conscious
-* Operationally realistic
-* Transparent
-* Respectful of clinical judgment
+- Clinically literate
+- Precise
+- Efficient
+- Evidence-conscious
+- Operationally realistic
+- Transparent
+- Respectful of clinical judgment
 
 ### Provider Voice Example
 
@@ -743,58 +743,58 @@ Avoid:
 
 Use:
 
-* Longitudinal review
-* Clinical decision support
-* Explainable insight
-* Monitoring workflow
-* Growth trajectory
-* Maternal progression
-* Fetal-growth velocity
-* Professional interpretation
-* Product status
-* Validation status
+- Longitudinal review
+- Clinical decision support
+- Explainable insight
+- Monitoring workflow
+- Growth trajectory
+- Maternal progression
+- Fetal-growth velocity
+- Professional interpretation
+- Product status
+- Validation status
 
 Avoid:
 
-* Disruption
-* Revolutionary
-* Fully automated
-* Replace manual care
-* Eliminate clinical uncertainty
-* Effortless implementation
-* Zero workflow burden
+- Disruption
+- Revolutionary
+- Fully automated
+- Replace manual care
+- Eliminate clinical uncertainty
+- Effortless implementation
+- Zero workflow burden
 
 ## 15.3 Institutional Voice
 
 The Institutional voice should be:
 
-* Structured
-* Operational
-* Governance-aware
-* Commercially clear
-* Security-conscious
-* Implementation-focused
+- Structured
+- Operational
+- Governance-aware
+- Commercially clear
+- Security-conscious
+- Implementation-focused
 
 Use:
 
-* Implementation pathway
-* Governance
-* Workflow
-* Security
-* Training
-* Role-based access
-* Integration direction
-* Scalability
-* Current readiness
-* Deployment status
+- Implementation pathway
+- Governance
+- Workflow
+- Security
+- Training
+- Role-based access
+- Integration direction
+- Scalability
+- Current readiness
+- Deployment status
 
 Avoid:
 
-* Enterprise-ready without evidence
-* Fully compliant without confirmation
-* Seamless integration without implementation
-* Guaranteed return on investment
-* Instant deployment
+- Enterprise-ready without evidence
+- Fully compliant without confirmation
+- Seamless integration without implementation
+- Guaranteed return on investment
+- Instant deployment
 
 ---
 
@@ -804,59 +804,59 @@ The core voice remains stable, but tone changes by context.
 
 ## 16.1 Homepage Tone
 
-* Clear
-* Aspirational
-* Calm
-* Concise
-* Human
+- Clear
+- Aspirational
+- Calm
+- Concise
+- Human
 
 ## 16.2 Patient Safety Tone
 
-* Direct
-* Calm
-* Unambiguous
-* Non-alarmist
-* Professionally responsible
+- Direct
+- Calm
+- Unambiguous
+- Non-alarmist
+- Professionally responsible
 
 ## 16.3 Provider Methodology Tone
 
-* Precise
-* Structured
-* Technical where necessary
-* Transparent
-* Evidence-conscious
+- Precise
+- Structured
+- Technical where necessary
+- Transparent
+- Evidence-conscious
 
 ## 16.4 Validation Tone
 
-* Restrained
-* Factual
-* Specific
-* Limitation-aware
-* Non-promotional
+- Restrained
+- Factual
+- Specific
+- Limitation-aware
+- Non-promotional
 
 ## 16.5 Founder Story Tone
 
-* Personal
-* Reflective
-* Purpose-led
-* Respectful
-* Not self-centered
+- Personal
+- Reflective
+- Purpose-led
+- Respectful
+- Not self-centered
 
 ## 16.6 Commercial Tone
 
-* Clear
-* Transparent
-* No artificial urgency
-* No hidden terms
-* No outcome guarantees
+- Clear
+- Transparent
+- No artificial urgency
+- No hidden terms
+- No outcome guarantees
 
 ## 16.7 Error and Support Tone
 
-* Helpful
-* Calm
-* Direct
-* Non-blaming
-* Recovery-oriented
+- Helpful
+- Calm
+- Direct
+- Non-blaming
+- Recovery-oriented
 
 ---
 
@@ -914,29 +914,29 @@ Avoid:
 
 Use:
 
-* Longitudinal intelligence
-* Explainable intelligence
-* Structured insight
-* Clinical decision support
-* Trend and trajectory analysis
+- Longitudinal intelligence
+- Explainable intelligence
+- Structured insight
+- Clinical decision support
+- Trend and trajectory analysis
 
 Avoid:
 
-* Autonomous intelligence
-* AI doctor
-* Predictive diagnosis
-* Smart pregnancy
-* Fully automated care
+- Autonomous intelligence
+- AI doctor
+- Predictive diagnosis
+- Smart pregnancy
+- Fully automated care
 
 ## 17.6 Preferred Patient Language
 
 Use:
 
-* Women planning pregnancy
-* Pregnant women
-* Patients
-* Women receiving pregnancy care
-* People using ODRISC, where broader language is contextually appropriate
+- Women planning pregnancy
+- Pregnant women
+- Patients
+- Women receiving pregnancy care
+- People using ODRISC, where broader language is contextually appropriate
 
 Do not change audience terminology inconsistently without a documented content decision.
 
@@ -944,12 +944,12 @@ Do not change audience terminology inconsistently without a documented content d
 
 Use:
 
-* Healthcare professional
-* Healthcare Provider
-* Clinician
-* Obstetrician
-* Maternal-fetal medicine specialist
-* Relevant professional role
+- Healthcare professional
+- Healthcare Provider
+- Clinician
+- Obstetrician
+- Maternal-fetal medicine specialist
+- Relevant professional role
 
 The visible gateway label remains subject to final approval.
 
@@ -977,13 +977,13 @@ Capabilities should normally be named descriptively beneath ODRISC.
 
 Examples:
 
-* ODRISC Risk Assessment
-* ODRISC Weight Monitoring
-* ODRISC Medical Nutrition Therapy
-* ODRISC Physical Activity Training
-* ODRISC Maternal Intelligence
-* ODRISC Fetal Growth Intelligence
-* ODRISC Provider Platform
+- ODRISC Risk Assessment
+- ODRISC Weight Monitoring
+- ODRISC Medical Nutrition Therapy
+- ODRISC Physical Activity Training
+- ODRISC Maternal Intelligence
+- ODRISC Fetal Growth Intelligence
+- ODRISC Provider Platform
 
 Do not create unrelated sub-brands unless strategically approved.
 
@@ -991,21 +991,21 @@ Do not create unrelated sub-brands unless strategically approved.
 
 Acronyms may be used only when:
 
-* They are already approved
-* They improve usability
-* The expanded meaning is provided
-* They do not create unnecessary complexity
+- They are already approved
+- They improve usability
+- The expanded meaning is provided
+- They do not create unnecessary complexity
 
 Examples already in use:
 
-* RAS
-* WMT
-* MNT
-* PAT
-* IVF
-* GDM
-* EFW
-* FHIR
+- RAS
+- WMT
+- MNT
+- PAT
+- IVF
+- GDM
+- EFW
+- FHIR
 
 Patient-facing use should define clinical acronyms before use.
 
@@ -1015,20 +1015,20 @@ Feature names should describe purpose rather than technology.
 
 Prefer:
 
-* Growth Timeline
-* Maternal Progress
-* Patient Summary
-* Clinical Review
-* Risk Factors
-* Weight Progress
+- Growth Timeline
+- Maternal Progress
+- Patient Summary
+- Clinical Review
+- Risk Factors
+- Weight Progress
 
 Avoid:
 
-* AI Engine
-* Smart Brain
-* Prediction Core
-* Magic Scan
-* Automated Doctor
+- AI Engine
+- Smart Brain
+- Prediction Core
+- Magic Scan
+- Automated Doctor
 
 ---
 
@@ -1050,21 +1050,21 @@ Avoid:
 
 The primary positioning line may appear in:
 
-* Brand headers
-* Provider materials
-* Company descriptions
-* Presentations
-* Strategic documents
-* Selected website areas
+- Brand headers
+- Provider materials
+- Company descriptions
+- Presentations
+- Strategic documents
+- Selected website areas
 
 “Every Pregnancy Has a Story” may appear in:
 
-* Shared website entry
-* Patient and Provider storytelling
-* Founder communication
-* Brand campaigns
-* Presentations
-* Video narratives
+- Shared website entry
+- Patient and Provider storytelling
+- Founder communication
+- Brand campaigns
+- Presentations
+- Video narratives
 
 ## 19.5 Tagline Restrictions
 
@@ -1105,15 +1105,15 @@ Collaboration
 
 This should be visible through:
 
-* Lines
-* Timelines
-* Connected nodes
-* Progression
-* Gradual convergence
-* Layered maternal and fetal information
-* Structured white space
-* Controlled gradients
-* Data moving through time
+- Lines
+- Timelines
+- Connected nodes
+- Progression
+- Gradual convergence
+- Layered maternal and fetal information
+- Structured white space
+- Controlled gradients
+- Data moving through time
 
 The brand should not rely on pregnancy photography alone to communicate meaning.
 
@@ -1123,28 +1123,28 @@ The brand should not rely on pregnancy photography alone to communicate meaning.
 
 ODRISC visual design should feel:
 
-* Minimal
-* Premium
-* Clinical
-* Calm
-* Spacious
-* Precise
-* Modern
-* Human
-* Structured
-* Intelligent
+- Minimal
+- Premium
+- Clinical
+- Calm
+- Spacious
+- Precise
+- Modern
+- Human
+- Structured
+- Intelligent
 
 The visual system should avoid feeling:
 
-* Decorative
-* Childlike
-* Feminine through stereotypes
-* Hospital-cold
-* Futuristic
-* Overly technological
-* Consumer-app playful
-* Corporate-generic
-* Data-dense without hierarchy
+- Decorative
+- Childlike
+- Feminine through stereotypes
+- Hospital-cold
+- Futuristic
+- Overly technological
+- Consumer-app playful
+- Corporate-generic
+- Data-dense without hierarchy
 
 ---
 
@@ -1192,8 +1192,8 @@ to:
 
 The default directional composition should use approximately:
 
-* 90% coral
-* 10% mint
+- 90% coral
+- 10% mint
 
 where a coral-dominant brand expression is desired.
 
@@ -1205,23 +1205,23 @@ The exact stop positions must be defined in the Design System.
 
 Coral may communicate:
 
-* Human warmth
-* Maternal context
-* Attention
-* Emotional relevance
-* Brand recognition
-* Primary emphasis
+- Human warmth
+- Maternal context
+- Attention
+- Emotional relevance
+- Brand recognition
+- Primary emphasis
 
 ### Mint Role
 
 Mint may communicate:
 
-* Progress
-* Connection
-* Clarity
-* Fetal or growth context
-* Resolution
-* Positive transition
+- Progress
+- Connection
+- Clarity
+- Fetal or growth context
+- Resolution
+- Positive transition
 
 These meanings are directional rather than rigid clinical codes.
 
@@ -1231,10 +1231,10 @@ These meanings are directional rather than rigid clinical codes.
 
 It should communicate:
 
-* Calm
-* Readability
-* Reduced visual harshness
-* Premium restraint
+- Calm
+- Readability
+- Reduced visual harshness
+- Premium restraint
 
 ## 22.5 Background Role
 
@@ -1242,51 +1242,51 @@ White is the dominant background.
 
 White supports:
 
-* Clinical clarity
-* High negative space
-* Focus
-* Accessible hierarchy
-* Premium presentation
+- Clinical clarity
+- High negative space
+- Focus
+- Accessible hierarchy
+- Premium presentation
 
 ## 22.6 Gradient Use
 
 The gradient may be used for:
 
-* Fine dividers
-* Select headlines
-* Key lines
-* Brand accents
-* Timeline progress
-* Selected borders
-* Controlled illustration elements
-* Strategic emphasis
+- Fine dividers
+- Select headlines
+- Key lines
+- Brand accents
+- Timeline progress
+- Selected borders
+- Controlled illustration elements
+- Strategic emphasis
 
 The gradient should not be used for:
 
-* Long body text
-* Essential low-contrast text
-* Every icon
-* Every button
-* Large decorative backgrounds by default
-* Clinical warning states
-* Data categories that require exact interpretation
-* Accessibility-critical information
+- Long body text
+- Essential low-contrast text
+- Every icon
+- Every button
+- Large decorative backgrounds by default
+- Clinical warning states
+- Data categories that require exact interpretation
+- Accessibility-critical information
 
 ## 22.7 Color Hierarchy
 
 The design system must later define:
 
-* Primary action colors
-* Secondary action colors
-* Neutral colors
-* Surface colors
-* Border colors
-* Error colors
-* Warning colors
-* Success colors
-* Information colors
-* Chart colors
-* Dark-mode behavior, if introduced
+- Primary action colors
+- Secondary action colors
+- Neutral colors
+- Surface colors
+- Border colors
+- Error colors
+- Warning colors
+- Success colors
+- Information colors
+- Chart colors
+- Dark-mode behavior, if introduced
 
 Clinical status colors must not be derived casually from brand colors.
 
@@ -1300,32 +1300,32 @@ All text and interactive controls must satisfy the adopted accessibility target.
 
 Gradient text may only be used when:
 
-* Contrast remains sufficient
-* The text is large enough
-* The meaning is also available without the gradient
-* It is not essential body content
-* It has been tested across the gradient range
+- Contrast remains sufficient
+- The text is large enough
+- The meaning is also available without the gradient
+- It is not essential body content
+- It has been tested across the gradient range
 
 ## 23.2 Meaning Beyond Color
 
 Color must not be the only indicator of:
 
-* Risk
-* Status
-* Selection
-* Error
-* Progress
-* Clinical concern
-* Product availability
+- Risk
+- Status
+- Selection
+- Error
+- Progress
+- Clinical concern
+- Product availability
 
 Use:
 
-* Labels
-* Icons
-* Patterns
-* Text
-* Position
-* Shape
+- Labels
+- Icons
+- Patterns
+- Text
+- Position
+- Shape
 
 ## 23.3 Patient Safety
 
@@ -1341,54 +1341,54 @@ The final typefaces must be selected in the Design System.
 
 The brand typography should feel:
 
-* Modern
-* Clear
-* Human
-* Precise
-* Accessible
-* International
-* Suitable for clinical and Patient content
-* Suitable for English and Arabic
+- Modern
+- Clear
+- Human
+- Precise
+- Accessible
+- International
+- Suitable for clinical and Patient content
+- Suitable for English and Arabic
 
 ## 24.1 Heading Typography
 
 Headings should feel:
 
-* Calm
-* Spacious
-* Intelligent
-* Distinct without being dramatic
-* Refined without becoming fragile
+- Calm
+- Spacious
+- Intelligent
+- Distinct without being dramatic
+- Refined without becoming fragile
 
 Avoid:
 
-* Highly decorative fonts
-* Overly geometric futuristic fonts
-* Fashion-editorial typography
-* Excessively rounded consumer-app typography
-* Thin weights that reduce accessibility
+- Highly decorative fonts
+- Overly geometric futuristic fonts
+- Fashion-editorial typography
+- Excessively rounded consumer-app typography
+- Thin weights that reduce accessibility
 
 ## 24.2 Body Typography
 
 Body text should prioritize:
 
-* Readability
-* Medium-length line widths
-* Clear paragraph spacing
-* Strong character differentiation
-* High legibility on mobile
-* Comfortable reading at clinical-content length
+- Readability
+- Medium-length line widths
+- Clear paragraph spacing
+- Strong character differentiation
+- High legibility on mobile
+- Comfortable reading at clinical-content length
 
 ## 24.3 Data Typography
 
 Data, measurements, and tables should use:
 
-* Clear numerals
-* Consistent alignment
-* Distinct decimal marks
-* Legible units
-* Tabular numerals where appropriate
-* Strong hierarchy between value, label, and unit
+- Clear numerals
+- Consistent alignment
+- Distinct decimal marks
+- Legible units
+- Tabular numerals where appropriate
+- Strong hierarchy between value, label, and unit
 
 ## 24.4 Arabic Typography
 
@@ -1396,13 +1396,13 @@ Arabic typography must be selected intentionally.
 
 It must support:
 
-* Modern clinical tone
-* Clear body readability
-* Right-to-left hierarchy
-* Mixed English-Arabic terms
-* Numeric data
-* Charts and tables
-* Consistent brand character
+- Modern clinical tone
+- Clear body readability
+- Right-to-left hierarchy
+- Mixed English-Arabic terms
+- Numeric data
+- Charts and tables
+- Consistent brand character
 
 Arabic should not be treated as a secondary visual adaptation.
 
@@ -1416,20 +1416,20 @@ High negative space is a core brand characteristic.
 
 Negative space should:
 
-* Improve comprehension
-* Separate narrative stages
-* Reduce anxiety
-* Elevate clinical information
-* Support premium presentation
-* Improve mobile scanning
+- Improve comprehension
+- Separate narrative stages
+- Reduce anxiety
+- Elevate clinical information
+- Support premium presentation
+- Improve mobile scanning
 
 Negative space must not create:
 
-* Excessively long pages
-* Hidden relationships
-* Poor information density
-* Wasted mobile space
-* Disconnected content
+- Excessively long pages
+- Hidden relationships
+- Poor information density
+- Wasted mobile space
+- Disconnected content
 
 ## 25.2 Hierarchy
 
@@ -1446,11 +1446,11 @@ Avoid multiple competing headlines, statistics, CTAs, and diagrams in one sectio
 
 Layouts should use:
 
-* Consistent grids
-* Strong left alignment where appropriate
-* Controlled center alignment for major brand moments
-* Clear relationships between text and visuals
-* Consistent rhythm
+- Consistent grids
+- Strong left alignment where appropriate
+- Controlled center alignment for major brand moments
+- Clear relationships between text and visuals
+- Consistent rhythm
 
 ## 25.4 Cards
 
@@ -1458,20 +1458,20 @@ Cards should be used only when they improve grouping or comparison.
 
 Avoid:
 
-* Turning every paragraph into a card
-* Excessive floating-card interfaces
-* Decorative cards without purpose
-* Deep shadow systems
-* Inconsistent border radii
+- Turning every paragraph into a card
+- Excessive floating-card interfaces
+- Decorative cards without purpose
+- Deep shadow systems
+- Inconsistent border radii
 
 ## 25.5 Borders and Dividers
 
 Use:
 
-* Fine lines
-* Subtle neutral borders
-* Controlled gradient dividers
-* Clear section separation
+- Fine lines
+- Subtle neutral borders
+- Controlled gradient dividers
+- Clear section separation
 
 Avoid heavy container outlines.
 
@@ -1481,30 +1481,30 @@ Avoid heavy container outlines.
 
 ODRISC shape language should communicate:
 
-* Continuity
-* Soft clinical precision
-* Connection
-* Progression
-* Calm structure
+- Continuity
+- Soft clinical precision
+- Connection
+- Progression
+- Calm structure
 
 Preferred shapes:
 
-* Rounded rectangles with restrained radius
-* Thin continuous lines
-* Soft curves
-* Timeline paths
-* Connected nodes
-* Layered bands
-* Subtle circular progress elements
+- Rounded rectangles with restrained radius
+- Thin continuous lines
+- Soft curves
+- Timeline paths
+- Connected nodes
+- Layered bands
+- Subtle circular progress elements
 
 Avoid:
 
-* Cartoon-like bubbles
-* Excessively pill-shaped everything
-* Sharp aggressive angles
-* Futuristic hexagonal systems
-* Neural-network webs
-* Decorative blobs without meaning
+- Cartoon-like bubbles
+- Excessively pill-shaped everything
+- Sharp aggressive angles
+- Futuristic hexagonal systems
+- Neural-network webs
+- Decorative blobs without meaning
 
 ---
 
@@ -1514,52 +1514,52 @@ Avoid:
 
 Human imagery should feel:
 
-* Real
-* Respectful
-* Diverse
-* Calm
-* Contextual
-* Non-stereotypical
-* Internationally appropriate
+- Real
+- Respectful
+- Diverse
+- Calm
+- Contextual
+- Non-stereotypical
+- Internationally appropriate
 
 Use human imagery to communicate:
 
-* Pregnancy experience
-* Professional collaboration
-* Preparation
-* Support
-* Care relationships
-* Everyday monitoring
+- Pregnancy experience
+- Professional collaboration
+- Preparation
+- Support
+- Care relationships
+- Everyday monitoring
 
 ## 27.2 Patient Imagery
 
 Patient imagery must avoid:
 
-* Weight judgment
-* Appearance emphasis
-* Fear
-* Vulnerability used for conversion
-* Stereotypical pink maternity imagery
-* Overly idealized pregnancy
-* Representation of every pregnant woman as anxious or unwell
+- Weight judgment
+- Appearance emphasis
+- Fear
+- Vulnerability used for conversion
+- Stereotypical pink maternity imagery
+- Overly idealized pregnancy
+- Representation of every pregnant woman as anxious or unwell
 
 ## 27.3 Provider Imagery
 
 Provider imagery should communicate:
 
-* Review
-* Interpretation
-* Collaboration
-* Patient discussion
-* Clinical workflow
-* Multidisciplinary care
+- Review
+- Interpretation
+- Collaboration
+- Patient discussion
+- Clinical workflow
+- Multidisciplinary care
 
 Avoid generic stock imagery of:
 
-* Doctors pointing at random screens
-* Artificial futuristic holograms
-* Staged handshakes
-* Excessively posed hospital teams
+- Doctors pointing at random screens
+- Artificial futuristic holograms
+- Staged handshakes
+- Excessively posed hospital teams
 
 ## 27.4 Fetal Imagery
 
@@ -1567,22 +1567,22 @@ Fetal or ultrasound imagery must be used responsibly.
 
 Avoid:
 
-* Emotional manipulation
-* Unnecessary fetal imagery
-* Dramatic fetus renderings
-* Images implying diagnostic certainty
-* Sensitive clinical imagery without context
+- Emotional manipulation
+- Unnecessary fetal imagery
+- Dramatic fetus renderings
+- Images implying diagnostic certainty
+- Sensitive clinical imagery without context
 
 ## 27.5 Regional Representation
 
 Photography should support:
 
-* Qatar
-* India
-* GCC
-* International audiences
-* Multiple ethnic and cultural contexts
-* Modest and appropriate visual presentation
+- Qatar
+- India
+- GCC
+- International audiences
+- Multiple ethnic and cultural contexts
+- Modest and appropriate visual presentation
 
 Representation should feel authentic rather than tokenistic.
 
@@ -1592,35 +1592,35 @@ Representation should feel authentic rather than tokenistic.
 
 Illustration is preferred when it helps explain:
 
-* Fragmentation
-* Connection
-* Progression
-* Maternal and fetal relationships
-* Data transformation
-* Longitudinal monitoring
-* Patient-Provider collaboration
-* Clinical workflow
+- Fragmentation
+- Connection
+- Progression
+- Maternal and fetal relationships
+- Data transformation
+- Longitudinal monitoring
+- Patient-Provider collaboration
+- Clinical workflow
 
 Illustrations should be:
 
-* Minimal
-* Flat or lightly dimensional
-* Clean
-* Structured
-* Brand-consistent
-* Clinically appropriate
-* Accessible
+- Minimal
+- Flat or lightly dimensional
+- Clean
+- Structured
+- Brand-consistent
+- Clinically appropriate
+- Accessible
 
 Avoid:
 
-* Childlike characters
-* Cartoon pregnancy imagery
-* Excessive decoration
-* Literal AI brains
-* Robots
-* Glowing neural networks
-* Complex isometric hospital scenes
-* Scientific imagery without explanatory value
+- Childlike characters
+- Cartoon pregnancy imagery
+- Excessive decoration
+- Literal AI brains
+- Robots
+- Glowing neural networks
+- Complex isometric hospital scenes
+- Scientific imagery without explanatory value
 
 ---
 
@@ -1628,27 +1628,27 @@ Avoid:
 
 Icons should be:
 
-* Minimal
-* Consistent
-* Recognizable
-* Line-based or carefully filled
-* Visually balanced
-* Accessible at small sizes
-* Suitable for English and Arabic contexts
+- Minimal
+- Consistent
+- Recognizable
+- Line-based or carefully filled
+- Visually balanced
+- Accessible at small sizes
+- Suitable for English and Arabic contexts
 
 Icons may represent:
 
-* Maternal health
-* Fetal growth
-* Weight
-* Nutrition
-* Physical activity
-* Risk awareness
-* Clinical review
-* Timeline
-* Reports
-* Privacy
-* Collaboration
+- Maternal health
+- Fetal growth
+- Weight
+- Nutrition
+- Physical activity
+- Risk awareness
+- Clinical review
+- Timeline
+- Reports
+- Privacy
+- Collaboration
 
 Icons must not replace clear labels in important navigation or clinical contexts.
 
@@ -1662,25 +1662,25 @@ Data visualization is central to ODRISC because the product focuses on change ac
 
 Visualizations should communicate:
 
-* Direction
-* Progression
-* Velocity
-* Variation
-* Relationship
-* Threshold
-* Context
-* Uncertainty
+- Direction
+- Progression
+- Velocity
+- Variation
+- Relationship
+- Threshold
+- Context
+- Uncertainty
 
 ## 30.1 Patient Data Visualizations
 
 Patient visualizations should emphasize:
 
-* Understandable progress
-* Clear labels
-* Simple trends
-* Appropriate next steps
-* Non-alarmist interpretation
-* Professional discussion
+- Understandable progress
+- Clear labels
+- Simple trends
+- Appropriate next steps
+- Non-alarmist interpretation
+- Professional discussion
 
 Avoid giving Patients raw specialist interpretation responsibilities.
 
@@ -1688,49 +1688,49 @@ Avoid giving Patients raw specialist interpretation responsibilities.
 
 Provider visualizations may include:
 
-* Longitudinal timelines
-* Growth curves
-* Percentiles
-* Z-scores
-* Velocity
-* Centile movement
-* Maternal trajectories
-* Doppler context
-* Clinical alerts
-* Cohort views
+- Longitudinal timelines
+- Growth curves
+- Percentiles
+- Z-scores
+- Velocity
+- Centile movement
+- Maternal trajectories
+- Doppler context
+- Clinical alerts
+- Cohort views
 
 Provider visualizations must preserve:
 
-* Data source
-* Unit
-* Date
-* Gestational age
-* Standard
-* Confidence or limitation
-* Missing-data state
-* Human-review context
+- Data source
+- Unit
+- Date
+- Gestational age
+- Standard
+- Confidence or limitation
+- Missing-data state
+- Human-review context
 
 ## 30.3 Chart Styling
 
 Charts should use:
 
-* Strong labels
-* Clear axes
-* Minimal decoration
-* Accessible contrast
-* Controlled gridlines
-* Direct annotations where useful
-* Clear legends
-* Semantic status indicators
+- Strong labels
+- Clear axes
+- Minimal decoration
+- Accessible contrast
+- Controlled gridlines
+- Direct annotations where useful
+- Clear legends
+- Semantic status indicators
 
 Avoid:
 
-* Decorative 3D charts
-* Excessive gradients
-* Unexplained smoothing
-* Hidden baselines
-* Dual axes without strong justification
-* Brand colors used as clinical meanings without governance
+- Decorative 3D charts
+- Excessive gradients
+- Unexplained smoothing
+- Hidden baselines
+- Dual axes without strong justification
+- Brand colors used as clinical meanings without governance
 
 ---
 
@@ -1738,31 +1738,31 @@ Avoid:
 
 Motion should help visitors understand:
 
-* Change
-* Progression
-* Connection
-* Transformation
-* Hierarchy
-* Cause and relationship
+- Change
+- Progression
+- Connection
+- Transformation
+- Hierarchy
+- Cause and relationship
 
 Appropriate motion may show:
 
-* Fragmented cards becoming connected
-* Multiple data points forming a trajectory
-* A pregnancy timeline progressing
-* Maternal and fetal streams aligning
-* Patient and Provider views becoming connected
-* Detail appearing progressively
+- Fragmented cards becoming connected
+- Multiple data points forming a trajectory
+- A pregnancy timeline progressing
+- Maternal and fetal streams aligning
+- Patient and Provider views becoming connected
+- Detail appearing progressively
 
 Motion should not be used to:
 
-* Delay content
-* Create artificial sophistication
-* Control scrolling
-* Animate every component
-* Make clinical information harder to read
-* Simulate urgent alerts
-* Distract from forms or CTAs
+- Delay content
+- Create artificial sophistication
+- Control scrolling
+- Animate every component
+- Make clinical information harder to read
+- Simulate urgent alerts
+- Distract from forms or CTAs
 
 Detailed motion rules belong in:
 
@@ -1776,37 +1776,37 @@ The final approved logo system must be documented separately or within the Desig
 
 Until then:
 
-* Do not invent or finalize a new logo without approval
-* Do not use temporary presentation placeholders as the permanent logo
-* Do not create multiple Patient and Provider logos
-* Do not create separate market logos
-* Do not add medical symbols automatically
-* Do not create fetus-heart combinations without strategic review
-* Do not use generic AI or neural symbols
+- Do not invent or finalize a new logo without approval
+- Do not use temporary presentation placeholders as the permanent logo
+- Do not create multiple Patient and Provider logos
+- Do not create separate market logos
+- Do not add medical symbols automatically
+- Do not create fetus-heart combinations without strategic review
+- Do not use generic AI or neural symbols
 
 ## 32.1 Logo Requirements
 
 The future logo must:
 
-* Work in digital and print
-* Work at small sizes
-* Work in monochrome
-* Work on white and dark backgrounds
-* Support English and Arabic lockups where required
-* Feel human and clinical
-* Avoid pregnancy stereotypes
-* Avoid narrow association with one feature
-* Support institutional credibility
+- Work in digital and print
+- Work at small sizes
+- Work in monochrome
+- Work on white and dark backgrounds
+- Support English and Arabic lockups where required
+- Feel human and clinical
+- Avoid pregnancy stereotypes
+- Avoid narrow association with one feature
+- Support institutional credibility
 
 ## 32.2 Logo Lockups
 
 Potential future lockups may include:
 
-* ODRISC wordmark
-* ODRISC symbol and wordmark
-* ODRISC with positioning line
-* Arabic-supported lockup
-* Monochrome lockup
+- ODRISC wordmark
+- ODRISC symbol and wordmark
+- ODRISC with positioning line
+- Arabic-supported lockup
+- Monochrome lockup
 
 These remain unresolved until formally approved.
 
@@ -1835,33 +1835,33 @@ They should remain visually and verbally connected.
 
 Differentiate through:
 
-* Language
-* Information depth
-* Navigation
-* Visual emphasis
-* Proof
-* CTA
-* Interface density
+- Language
+- Information depth
+- Navigation
+- Visual emphasis
+- Proof
+- CTA
+- Interface density
 
 Do not differentiate through:
 
-* Separate logos
-* Unrelated color systems
-* Different company names
-* Different taglines that contradict the master brand
-* Separate visual identities
+- Separate logos
+- Unrelated color systems
+- Different company names
+- Different taglines that contradict the master brand
+- Separate visual identities
 
 ## 33.2 Market Adaptation
 
 Qatar, India, and future GCC markets may adapt:
 
-* Language
-* Pricing
-* Imagery
-* Legal content
-* Availability
-* Market evidence
-* Contact details
+- Language
+- Pricing
+- Imagery
+- Legal content
+- Availability
+- Market evidence
+- Contact details
 
 They must not redefine the core ODRISC brand.
 
@@ -1871,29 +1871,29 @@ They must not redefine the core ODRISC brand.
 
 Clinical trust must be earned through:
 
-* Accurate terminology
-* Clear boundaries
-* Transparent Product Status
-* Transparent validation status
-* References
-* Methodology
-* Review dates
-* Professional contributors
-* Security and privacy information
-* Consistent design
-* Accessible information
-* Responsible claims
+- Accurate terminology
+- Clear boundaries
+- Transparent Product Status
+- Transparent validation status
+- References
+- Methodology
+- Review dates
+- Professional contributors
+- Security and privacy information
+- Consistent design
+- Accessible information
+- Responsible claims
 
 Trust must not rely on:
 
-* White coats alone
-* Hospital imagery
-* Clinical jargon
-* Logos without context
-* Artificial-intelligence claims
-* Complex dashboards
-* Decorative certifications
-* Unverified institutional references
+- White coats alone
+- Hospital imagery
+- Clinical jargon
+- Logos without context
+- Artificial-intelligence claims
+- Complex dashboards
+- Decorative certifications
+- Unverified institutional references
 
 ---
 
@@ -1903,23 +1903,23 @@ Product maturity must be communicated consistently.
 
 Approved status labels include:
 
-* Available
-* Limited availability
-* Pilot
-* In validation
-* In development
-* Planned
-* Future roadmap
-* Not publicly announced
+- Available
+- Limited availability
+- Pilot
+- In validation
+- In development
+- Planned
+- Future roadmap
+- Not publicly announced
 
 The Design System must later define:
 
-* Status badge styling
-* Status placement
-* Status explanations
-* Status accessibility
-* Patient versus Provider language
-* Market-specific status
+- Status badge styling
+- Status placement
+- Status explanations
+- Status accessibility
+- Patient versus Provider language
+- Market-specific status
 
 Status labels must not be hidden or visually minimized when they materially affect understanding.
 
@@ -1929,15 +1929,15 @@ Status labels must not be hidden or visually minimized when they materially affe
 
 The brand must distinguish:
 
-* Clinical input
-* Professional review
-* Technical testing
-* Usability testing
-* Pilot activity
-* Algorithm validation
-* Clinical validation
-* Regulatory review
-* Published evidence
+- Clinical input
+- Professional review
+- Technical testing
+- Usability testing
+- Pilot activity
+- Algorithm validation
+- Clinical validation
+- Regulatory review
+- Published evidence
 
 Visual and verbal presentation must not imply that all validation categories are equivalent.
 
@@ -1954,11 +1954,11 @@ What remains unresolved
 
 Avoid large unsupported seals such as:
 
-* Clinically validated
-* Doctor approved
-* Hospital ready
-* Proven
-* Certified
+- Clinically validated
+- Doctor approved
+- Hospital ready
+- Proven
+- Certified
 
 unless the claim is precisely verified and approved.
 
@@ -1970,27 +1970,27 @@ The founder story should communicate purpose.
 
 Approved core context includes:
 
-* The founder's mother experienced gestational diabetes
-* The founder was born macrosomic
-* His mother later developed type 2 diabetes
-* This contributed to recognizing the longer-term significance of pregnancy-related metabolic risk
+- The founder's mother experienced gestational diabetes
+- The founder was born macrosomic
+- His mother later developed type 2 diabetes
+- This contributed to recognizing the longer-term significance of pregnancy-related metabolic risk
 
 The founder story should feel:
 
-* Personal
-* Honest
-* Purpose-led
-* Relevant
-* Restrained
+- Personal
+- Honest
+- Purpose-led
+- Relevant
+- Restrained
 
 It must not:
 
-* Act as clinical evidence
-* Claim that ODRISC would have prevented the outcome
-* Generalize one experience to all women
-* Use guilt
-* Become the primary Provider value proposition
-* Overshadow the Patient and clinical mission
+- Act as clinical evidence
+- Claim that ODRISC would have prevented the outcome
+- Generalize one experience to all women
+- Use guilt
+- Become the primary Provider value proposition
+- Overshadow the Patient and clinical mission
 
 ---
 
@@ -2002,18 +2002,18 @@ An inaccessible brand contradicts ODRISC values of clarity and participation.
 
 The brand must support:
 
-* Readable text
-* Clear contrast
-* Understandable hierarchy
-* Keyboard navigation
-* Reduced motion
-* Plain language
-* Accessible charts
-* Non-color-dependent meaning
-* Screen-reader compatibility
-* Text scaling
-* English and Arabic
-* Different levels of clinical literacy
+- Readable text
+- Clear contrast
+- Understandable hierarchy
+- Keyboard navigation
+- Reduced motion
+- Plain language
+- Accessible charts
+- Non-color-dependent meaning
+- Screen-reader compatibility
+- Text scaling
+- English and Arabic
+- Different levels of clinical literacy
 
 Premium design must never be used as a reason to reduce accessibility.
 
@@ -2027,39 +2027,39 @@ ODRISC must remain recognizable and trustworthy across markets.
 
 Localization should adapt:
 
-* Language
-* Examples
-* Imagery
-* Cultural context
-* Market availability
-* Legal content
-* Pricing
-* Professional terminology
+- Language
+- Examples
+- Imagery
+- Cultural context
+- Market availability
+- Legal content
+- Pricing
+- Professional terminology
 
 Localization must preserve:
 
-* Brand purpose
-* Product identity
-* Clinical boundaries
-* Voice
-* Brand values
-* Product status
-* Visual hierarchy
-* Patient dignity
-* Professional authority
+- Brand purpose
+- Product identity
+- Clinical boundaries
+- Voice
+- Brand values
+- Product status
+- Visual hierarchy
+- Patient dignity
+- Professional authority
 
 ## 39.2 Arabic Expression
 
 Arabic brand expression must support:
 
-* Right-to-left reading
-* Arabic typography
-* Correct clinical translation
-* Direction-aware diagrams
-* Appropriate imagery
-* Consistent logo use
-* Accessible numerals and units
-* Mixed-language product and clinical terms
+- Right-to-left reading
+- Arabic typography
+- Correct clinical translation
+- Direction-aware diagrams
+- Appropriate imagery
+- Consistent logo use
+- Accessible numerals and units
+- Mixed-language product and clinical terms
 
 Literal translation is not sufficient.
 
@@ -2069,12 +2069,12 @@ Arabic communication requires clinical and language review.
 
 Qatar and GCC brand expression should feel:
 
-* International
-* Respectful
-* Premium
-* Clinically credible
-* Culturally appropriate
-* Institutionally relevant
+- International
+- Respectful
+- Premium
+- Clinically credible
+- Culturally appropriate
+- Institutionally relevant
 
 Avoid superficial regional styling.
 
@@ -2086,36 +2086,36 @@ ODRISC campaigns should remain connected to the core brand.
 
 Campaigns may emphasize:
 
-* Pregnancy preparation
-* Risk awareness
-* Weight progression
-* Maternal metabolic health
-* Fetal growth
-* Patient-Provider collaboration
-* Founder perspective
-* Clinical insights
-* Longitudinal monitoring
+- Pregnancy preparation
+- Risk awareness
+- Weight progression
+- Maternal metabolic health
+- Fetal growth
+- Patient-Provider collaboration
+- Founder perspective
+- Clinical insights
+- Longitudinal monitoring
 
 Campaigns must not:
 
-* Create a temporary identity unrelated to ODRISC
-* Use fear-based health advertising
-* Promise prevention
-* Use weight stigma
-* Publish unsupported statistics
-* Present roadmap capabilities as active
-* Use sensational pregnancy outcomes
+- Create a temporary identity unrelated to ODRISC
+- Use fear-based health advertising
+- Promise prevention
+- Use weight stigma
+- Publish unsupported statistics
+- Present roadmap capabilities as active
+- Use sensational pregnancy outcomes
 
 ## 40.1 Founder-Led Content
 
 Founder-led content may be:
 
-* Personal
-* Direct
-* Educational
-* Mission-focused
-* Short-form
-* Hindi, Hinglish, English, or other approved languages
+- Personal
+- Direct
+- Educational
+- Mission-focused
+- Short-form
+- Hindi, Hinglish, English, or other approved languages
 
 It must remain aligned with approved claims and boundaries.
 
@@ -2125,24 +2125,24 @@ It must remain aligned with approved claims and boundaries.
 
 Investor and partnership materials may be more commercially direct but must preserve:
 
-* Product identity
-* Product Status
-* Clinical boundaries
-* Market distinctions
-* Validation distinctions
-* Evidence integrity
-* Brand visual foundation
+- Product identity
+- Product Status
+- Clinical boundaries
+- Market distinctions
+- Validation distinctions
+- Evidence integrity
+- Brand visual foundation
 
 Investor materials may emphasize:
 
-* Market
-* Business model
-* Platform scalability
-* Clinical burden
-* Commercial opportunity
-* Roadmap
-* Partnerships
-* Funding
+- Market
+- Business model
+- Platform scalability
+- Clinical burden
+- Commercial opportunity
+- Roadmap
+- Partnerships
+- Funding
 
 They must not redefine the public brand or clinical positioning.
 
@@ -2154,50 +2154,50 @@ ODRISC must not use:
 
 ## 42.1 Visual Prohibitions
 
-* Generic AI brains
-* Robots
-* Glowing neural networks
-* Excessive pink maternity stereotypes
-* Cartoon babies
-* Decorative fetus silhouettes
-* Fear-based medical imagery
-* Weight-focused body imagery
-* Busy dashboards without explanation
-* Excessive gradients
-* Excessive glassmorphism
-* Excessive 3D
-* Heavy shadows
-* Futuristic hospital holograms
-* Inconsistent icon systems
-* Low-contrast gradient text
+- Generic AI brains
+- Robots
+- Glowing neural networks
+- Excessive pink maternity stereotypes
+- Cartoon babies
+- Decorative fetus silhouettes
+- Fear-based medical imagery
+- Weight-focused body imagery
+- Busy dashboards without explanation
+- Excessive gradients
+- Excessive glassmorphism
+- Excessive 3D
+- Heavy shadows
+- Futuristic hospital holograms
+- Inconsistent icon systems
+- Low-contrast gradient text
 
 ## 42.2 Verbal Prohibitions
 
-* Revolutionary
-* Disruptive
-* Never miss
-* Guaranteed
-* Perfect pregnancy
-* Prevent every complication
-* AI doctor
-* Automated diagnosis
-* Replaces your doctor
-* Zero-risk pregnancy
-* Effortless clinical adoption
-* Fully validated, unless precisely proven
-* Hospital ready, unless operationally verified
-* Clinically proven, unless supported by approved evidence
+- Revolutionary
+- Disruptive
+- Never miss
+- Guaranteed
+- Perfect pregnancy
+- Prevent every complication
+- AI doctor
+- Automated diagnosis
+- Replaces your doctor
+- Zero-risk pregnancy
+- Effortless clinical adoption
+- Fully validated, unless precisely proven
+- Hospital ready, unless operationally verified
+- Clinically proven, unless supported by approved evidence
 
 ## 42.3 Strategic Prohibitions
 
-* Separate Patient and Provider brands
-* A third primary gateway audience
-* Generic pregnancy-content repositioning
-* Consumer wellness repositioning
-* AI-first repositioning
-* Product claims based on mockups
-* Validation claims based only on interest
-* Market claims not supported by current availability
+- Separate Patient and Provider brands
+- A third primary gateway audience
+- Generic pregnancy-content repositioning
+- Consumer wellness repositioning
+- AI-first repositioning
+- Product claims based on mockups
+- Validation claims based only on interest
+- Market claims not supported by current availability
 
 ---
 
@@ -2229,46 +2229,46 @@ If the answer to a material question is no, the expression should be revised.
 
 ## 44.1 Strategic Review
 
-* Product identity is correct
-* Audience is defined
-* Brand purpose is preserved
-* Website Story is preserved
-* Product Status is accurate
+- Product identity is correct
+- Audience is defined
+- Brand purpose is preserved
+- Website Story is preserved
+- Product Status is accurate
 
 ## 44.2 Verbal Review
 
-* Voice matches the audience
-* Claims are proportionate
-* Clinical boundaries are clear
-* Terminology matches the Glossary
-* No prohibited language is used
+- Voice matches the audience
+- Claims are proportionate
+- Clinical boundaries are clear
+- Terminology matches the Glossary
+- No prohibited language is used
 
 ## 44.3 Visual Review
 
-* Core color roles are respected
-* Layout is calm and structured
-* Gradient use is restrained
-* Imagery is appropriate
-* Typography is readable
-* Visuals support the narrative
-* No generic AI imagery is used
+- Core color roles are respected
+- Layout is calm and structured
+- Gradient use is restrained
+- Imagery is appropriate
+- Typography is readable
+- Visuals support the narrative
+- No generic AI imagery is used
 
 ## 44.4 Accessibility Review
 
-* Contrast is sufficient
-* Meaning does not depend on color
-* Motion is optional or reduced
-* Text is readable
-* Diagrams have explanations
-* Arabic readiness is considered where relevant
+- Contrast is sufficient
+- Meaning does not depend on color
+- Motion is optional or reduced
+- Text is readable
+- Diagrams have explanations
+- Arabic readiness is considered where relevant
 
 ## 44.5 Trust Review
 
-* Validation claims are precise
-* Team and contributor information is current
-* Partnerships are verified
-* Market availability is accurate
-* Security and privacy claims are verified
+- Validation claims are precise
+- Team and contributor information is current
+- Partnerships are verified
+- Market availability is accurate
+- Security and privacy claims are verified
 
 ---
 
@@ -2282,17 +2282,17 @@ The Founder and CEO is the final brand approval authority unless delegated.
 
 Potential review roles include:
 
-* Product
-* Clinical
-* Content
-* Brand
-* Design
-* Accessibility
-* Localization
-* Legal
-* Privacy
-* Commercial
-* Engineering
+- Product
+- Clinical
+- Content
+- Brand
+- Design
+- Accessibility
+- Localization
+- Legal
+- Privacy
+- Commercial
+- Engineering
 
 ## 45.3 Brand Changes
 
@@ -2313,15 +2313,15 @@ Material brand changes require:
 
 Examples include:
 
-* New logo
-* New primary colors
-* New positioning
-* New tagline
-* Separate sub-brand
-* Change to brand purpose
-* Change to Patient or Provider relationship
-* Change to clinical identity
-* Change to master-brand architecture
+- New logo
+- New primary colors
+- New positioning
+- New tagline
+- Separate sub-brand
+- Change to brand purpose
+- Change to Patient or Provider relationship
+- Change to clinical identity
+- Change to master-brand architecture
 
 ---
 
@@ -2331,30 +2331,30 @@ All approved assets should be recorded in a Brand Asset Register.
 
 Asset categories may include:
 
-* Logo
-* Wordmark
-* Brand symbol
-* Color specifications
-* Typography
-* Icons
-* Illustrations
-* Photography
-* Diagrams
-* Templates
-* Presentation assets
-* Social templates
-* Product screenshots
-* Video assets
-* Arabic assets
+- Logo
+- Wordmark
+- Brand symbol
+- Color specifications
+- Typography
+- Icons
+- Illustrations
+- Photography
+- Diagrams
+- Templates
+- Presentation assets
+- Social templates
+- Product screenshots
+- Video assets
+- Arabic assets
 
 Temporary assets must be labeled as:
 
-* Placeholder
-* Concept
-* Draft
-* Approved
-* Deprecated
-* Retired
+- Placeholder
+- Concept
+- Draft
+- Approved
+- Deprecated
+- Retired
 
 ---
 
@@ -2379,33 +2379,33 @@ Before generating brand copy, design direction, images, page layouts, icons, ill
 
 AI agents must:
 
-* Identify the audience
-* Identify the brand purpose
-* Preserve the longitudinal story
-* Use approved colors
-* Use approved terminology
-* Check Product Status
-* Preserve clinical boundaries
-* Respect accessibility
-* Respect Patient dignity
-* Respect Provider authority
-* Identify concept assets clearly
-* Record material assumptions
+- Identify the audience
+- Identify the brand purpose
+- Preserve the longitudinal story
+- Use approved colors
+- Use approved terminology
+- Check Product Status
+- Preserve clinical boundaries
+- Respect accessibility
+- Respect Patient dignity
+- Respect Provider authority
+- Identify concept assets clearly
+- Record material assumptions
 
 AI agents must not:
 
-* Invent a new logo
-* Invent a new primary color
-* Invent a separate Patient or Provider brand
-* Replace the brand with generic AI imagery
-* Use unsupported claims
-* Finalize typography without approval
-* Use concept product screens as current screens
-* Use clinical risk colors without semantic design rules
-* Apply the gradient to essential low-contrast text
-* Use Patient stereotypes
-* Use fear-based conversion
-* Treat visual polish as proof of product maturity
+- Invent a new logo
+- Invent a new primary color
+- Invent a separate Patient or Provider brand
+- Replace the brand with generic AI imagery
+- Use unsupported claims
+- Finalize typography without approval
+- Use concept product screens as current screens
+- Use clinical risk colors without semantic design rules
+- Apply the gradient to essential low-contrast text
+- Use Patient stereotypes
+- Use fear-based conversion
+- Treat visual polish as proof of product maturity
 
 ---
 
@@ -2457,27 +2457,27 @@ The following decisions are locked unless formally changed:
 
 The following questions require later approval:
 
-* What is the final approved ODRISC logo?
-* Is the current logo retained, refined, or replaced?
-* Does ODRISC use a standalone brand symbol?
-* What are the approved logo clear-space rules?
-* What are the approved minimum logo sizes?
-* What are the approved monochrome logo versions?
-* Does the positioning line appear within the primary logo lockup?
-* What illustration style will be approved?
-* What photography library or commissioning approach will be used?
-* Which Patient and Provider visuals require custom illustration?
-* How will the Patient and Provider experiences be differentiated visually without creating separate brands?
-* Which brand assets are required for the first Qatar release?
-* Which brand assets require Arabic versions?
-* How will bilingual English-Arabic lockups be handled?
-* Which Product Status labels require public badge treatment?
-* Which validation categories require distinct visual treatment?
-* What presentation templates are approved?
-* What social-media templates are approved?
-* Which current presentation assets are placeholders rather than approved brand assets?
-* Who owns final brand-quality review before publication?
-* Which external vendors or designers may access editable brand assets?
+- What is the final approved ODRISC logo?
+- Is the current logo retained, refined, or replaced?
+- Does ODRISC use a standalone brand symbol?
+- What are the approved logo clear-space rules?
+- What are the approved minimum logo sizes?
+- What are the approved monochrome logo versions?
+- Does the positioning line appear within the primary logo lockup?
+- What illustration style will be approved?
+- What photography library or commissioning approach will be used?
+- Which Patient and Provider visuals require custom illustration?
+- How will the Patient and Provider experiences be differentiated visually without creating separate brands?
+- Which brand assets are required for the first Qatar release?
+- Which brand assets require Arabic versions?
+- How will bilingual English-Arabic lockups be handled?
+- Which Product Status labels require public badge treatment?
+- Which validation categories require distinct visual treatment?
+- What presentation templates are approved?
+- What social-media templates are approved?
+- Which current presentation assets are placeholders rather than approved brand assets?
+- Who owns final brand-quality review before publication?
+- Which external vendors or designers may access editable brand assets?
 
 Exact visual tokens and component-level implementation rules are defined in `docs/design/DESIGN_SYSTEM.md`. Where the Brand Foundation and Design System appear to conflict, the Brand Foundation governs strategic meaning and the Design System governs approved implementation.
 
@@ -2495,13 +2495,13 @@ ODRISC is a maternal and fetal intelligence brand built around one central idea:
 
 The brand must make complex maternal and fetal information feel:
 
-* Understandable
-* Structured
-* Calm
-* Clinically responsible
-* Human
-* Connected
-* Explainable
+- Understandable
+- Structured
+- Calm
+- Clinically responsible
+- Human
+- Connected
+- Explainable
 
 The Patient experience should communicate:
 

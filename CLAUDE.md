@@ -14,13 +14,13 @@ Before performing any work:
 
 Do not introduce new:
 
-* Product claims
-* Clinical claims
-* Features
-* Integrations
-* Regulatory statements
-* Brand directions
-* Architectural patterns
+- Product claims
+- Clinical claims
+- Features
+- Integrations
+- Regulatory statements
+- Brand directions
+- Architectural patterns
 
 unless they are supported by approved repository documentation.
 

@@ -52,3 +52,4 @@ ADR-015-decision-name.md
 | ADR-014 | ODRISC Public Website Coding Standards | Approved | 2026-07-25 |
 
 | ADR-015 | ODRISC Public Website Testing Strategy | Approved | 2026-07-26 |
+```

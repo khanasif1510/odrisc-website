@@ -16,24 +16,24 @@
 
 ## Related Documents
 
-* `PROJECT_CONTEXT.md`
-* `docs/project/SOURCE_OF_TRUTH.md`
-* `docs/project/ASSUMPTIONS.md`
-* `docs/project/OPEN_QUESTIONS.md`
-* `docs/project/GLOSSARY.md`
-* `docs/product/PRODUCT_VISION.md`
-* `docs/product/AUDIENCE.md`
-* `docs/product/WEBSITE_OBJECTIVES.md`
-* `docs/product/WEBSITE_STORY.md`
-* `docs/product/PRD.md`
-* `docs/product/PRODUCT_STATUS.md`
-* `docs/product/INFORMATION_ARCHITECTURE.md`
-* `docs/product/PAGE_REQUIREMENTS.md`
-* `docs/product/REQUIREMENTS_TRACEABILITY.md`
-* `docs/design/BRAND_FOUNDATION.md`
-* `docs/content/STORY_TO_PAGE_MATRIX.md`
-* `ai/rules/NON_NEGOTIABLES.md`
-* `ai/rules/AI_BEHAVIOR.md`
+- `PROJECT_CONTEXT.md`
+- `docs/project/SOURCE_OF_TRUTH.md`
+- `docs/project/ASSUMPTIONS.md`
+- `docs/project/OPEN_QUESTIONS.md`
+- `docs/project/GLOSSARY.md`
+- `docs/product/PRODUCT_VISION.md`
+- `docs/product/AUDIENCE.md`
+- `docs/product/WEBSITE_OBJECTIVES.md`
+- `docs/product/WEBSITE_STORY.md`
+- `docs/product/PRD.md`
+- `docs/product/PRODUCT_STATUS.md`
+- `docs/product/INFORMATION_ARCHITECTURE.md`
+- `docs/product/PAGE_REQUIREMENTS.md`
+- `docs/product/REQUIREMENTS_TRACEABILITY.md`
+- `docs/design/BRAND_FOUNDATION.md`
+- `docs/content/STORY_TO_PAGE_MATRIX.md`
+- `ai/rules/NON_NEGOTIABLES.md`
+- `ai/rules/AI_BEHAVIOR.md`
 
 The Patient and Provider route families may differ in language, content depth, navigation, and visual emphasis, but they must remain part of one ODRISC brand as defined in `docs/design/BRAND_FOUNDATION.md`.
 
@@ -49,40 +49,40 @@ It translates the approved Product Vision, Audience framework, Website Objective
 
 It defines:
 
-* The website hierarchy
-* The sitemap
-* The URL model
-* The shared audience gateway
-* Patient navigation
-* Provider navigation
-* Shared pages
-* Institutional pathways
-* Resource taxonomy
-* Audience-switching behavior
-* Cross-audience relationships
-* Breadcrumbs
-* Footer architecture
-* Search behavior
-* Localization readiness
-* Page hierarchy
-* Content discoverability
-* Redirect and canonicalization principles
-* Route governance
-* Information-architecture acceptance criteria
+- The website hierarchy
+- The sitemap
+- The URL model
+- The shared audience gateway
+- Patient navigation
+- Provider navigation
+- Shared pages
+- Institutional pathways
+- Resource taxonomy
+- Audience-switching behavior
+- Cross-audience relationships
+- Breadcrumbs
+- Footer architecture
+- Search behavior
+- Localization readiness
+- Page hierarchy
+- Content discoverability
+- Redirect and canonicalization principles
+- Route governance
+- Information-architecture acceptance criteria
 
 This document defines where website information belongs and how visitors move through it.
 
 It does not define:
 
-* Final page copy
-* Final page layouts
-* Final component design
-* Final visual design
-* Detailed clinical-platform application navigation
-* Patient application navigation
-* Provider-dashboard navigation
-* Hospital-administration navigation
-* Internal software architecture
+- Final page copy
+- Final page layouts
+- Final component design
+- Final visual design
+- Detailed clinical-platform application navigation
+- Patient application navigation
+- Provider-dashboard navigation
+- Hospital-administration navigation
+- Internal software architecture
 
 The canonical sitemap, URL model, audience-routing rules, navigation hierarchy, shared-page structure, resource taxonomy, and localization-ready route architecture are defined in:
 
@@ -142,12 +142,12 @@ Separate Patient and Provider domains must not be created without an approved ar
 
 The Patient and Provider journeys must remain visibly connected through:
 
-* One ODRISC identity
-* One design system
-* One product vision
-* One company story
-* One shared clinical philosophy
-* One common source of truth
+- One ODRISC identity
+- One design system
+- One product vision
+- One company story
+- One shared clinical philosophy
+- One common source of truth
 
 ## 3.3 Two Complete Journeys
 
@@ -155,13 +155,13 @@ Patients and healthcare providers are equal primary audiences.
 
 Each must receive:
 
-* A dedicated homepage
-* Audience-specific navigation
-* Audience-specific terminology
-* Audience-specific proof
-* Audience-specific calls to action
-* Appropriate content depth
-* Relevant trust information
+- A dedicated homepage
+- Audience-specific navigation
+- Audience-specific terminology
+- Audience-specific proof
+- Audience-specific calls to action
+- Appropriate content depth
+- Relevant trust information
 
 ## 3.4 Shared Entry, Not a Permanent Barrier
 
@@ -169,12 +169,12 @@ The shared audience gateway should help visitors select the appropriate experien
 
 It must not prevent:
 
-* Direct search-engine access
-* Deep linking
-* Sharing specific pages
-* Access to shared pages
-* Switching audiences
-* Returning to the shared entry
+- Direct search-engine access
+- Deep linking
+- Sharing specific pages
+- Access to shared pages
+- Switching audiences
+- Returning to the shared entry
 
 ## 3.5 Story-Led Hierarchy
 
@@ -208,11 +208,11 @@ Internal terminology may appear within appropriate page content, but navigation 
 
 A page may only be published when:
 
-* Its purpose is approved
-* Its product claims are approved
-* Its product-status dependencies are confirmed
-* Its CTA destination exists
-* Its content owner is identified
+- Its purpose is approved
+- Its product claims are approved
+- Its product-status dependencies are confirmed
+- Its CTA destination exists
+- Its content owner is identified
 
 ## 3.8 One Canonical Location Per Topic
 
@@ -233,14 +233,14 @@ Visitors should receive:
 
 The logical page hierarchy must support future:
 
-* English
-* Arabic
-* Additional GCC languages
-* India-specific content
-* Qatar-specific content
-* Market-specific pricing
-* Market-specific legal content
-* Right-to-left presentation
+- English
+- Arabic
+- Additional GCC languages
+- India-specific content
+- Qatar-specific content
+- Market-specific pricing
+- Market-specific legal content
+- Right-to-left presentation
 
 Localization must not require rebuilding the website hierarchy.
 
@@ -262,56 +262,56 @@ Zone 5 — Legal, Privacy, Accessibility, and Utility Experience
 
 The shared entry introduces ODRISC and routes visitors toward:
 
-* Patient
-* Healthcare Provider
+- Patient
+- Healthcare Provider
 
 ## 4.2 Zone Two — Patient Experience
 
 The Patient experience helps women:
 
-* Understand ODRISC
-* Explore relevance
-* Understand available support
-* Learn about risk, weight, nutrition, physical activity, and monitoring
-* Access Patient resources
-* Take the approved Patient action
+- Understand ODRISC
+- Explore relevance
+- Understand available support
+- Learn about risk, weight, nutrition, physical activity, and monitoring
+- Access Patient resources
+- Take the approved Patient action
 
 ## 4.3 Zone Three — Provider Experience
 
 The Provider experience helps healthcare professionals:
 
-* Understand the clinical problem
-* Explore monitoring and intelligence capabilities
-* Review workflow
-* Review methodology and validation
-* Explore hospital or institutional use
-* Take the approved Provider action
+- Understand the clinical problem
+- Explore monitoring and intelligence capabilities
+- Review workflow
+- Review methodology and validation
+- Explore hospital or institutional use
+- Take the approved Provider action
 
 ## 4.4 Zone Four — Shared Company and Resources
 
 Shared pages explain:
 
-* ODRISC
-* Mission
-* Founder and team
-* Resources
-* Partnerships
-* Contact pathways
-* Company information
+- ODRISC
+- Mission
+- Founder and team
+- Resources
+- Partnerships
+- Contact pathways
+- Company information
 
 ## 4.5 Zone Five — Legal and Utility
 
 This zone includes:
 
-* Privacy
-* Terms
-* Cookies
-* Accessibility
-* Error pages
-* Search
-* Sitemap
-* Consent-management interfaces
-* Platform login routes where approved
+- Privacy
+- Terms
+- Cookies
+- Accessibility
+- Error pages
+- Search
+- Sitemap
+- Consent-management interfaces
+- Platform login routes where approved
 
 ---
 
@@ -389,13 +389,13 @@ Not every route must be published at initial launch.
 
 Publication depends on:
 
-* Launch scope
-* Product Status
-* Approved content
-* Available CTA destination
-* Market readiness
-* Clinical review
-* Legal review
+- Launch scope
+- Product Status
+- Approved content
+- Available CTA destination
+- Market readiness
+- Clinical review
+- Legal review
 
 ---
 
@@ -405,16 +405,16 @@ Publication depends on:
 
 URLs must be:
 
-* Descriptive
-* Human-readable
-* Lowercase
-* Hyphen-separated
-* Stable
-* Audience-aware
-* Free of implementation-specific file extensions
-* Free of unnecessary query parameters
-* Suitable for search engines
-* Suitable for localization
+- Descriptive
+- Human-readable
+- Lowercase
+- Hyphen-separated
+- Stable
+- Audience-aware
+- Free of implementation-specific file extensions
+- Free of unnecessary query parameters
+- Suitable for search engines
+- Suitable for localization
 
 ## 6.2 Audience Prefixes
 
@@ -432,12 +432,12 @@ Provider content must use:
 
 These audience prefixes create:
 
-* Clear ownership
-* Clear navigation context
-* Search-intent separation
-* Analytics segmentation
-* Easier localization
-* Easier content governance
+- Clear ownership
+- Clear navigation context
+- Search-intent separation
+- Analytics segmentation
+- Easier localization
+- Easier content governance
 
 ## 6.3 Shared Content
 
@@ -465,8 +465,8 @@ The plural form represents an audience environment rather than one individual us
 
 Navigation labels may still display:
 
-* Patient
-* Healthcare Provider
+- Patient
+- Healthcare Provider
 
 ## 6.5 URL Depth
 
@@ -488,11 +488,11 @@ Avoid unnecessary depth such as:
 
 Published URLs must not change because:
 
-* A navigation label changes
-* A visual design changes
-* A section moves within a page
-* A team preference changes
-* A temporary campaign ends
+- A navigation label changes
+- A visual design changes
+- A section moves within a page
+- A team preference changes
+- A temporary campaign ends
 
 A route should change only when its meaning or canonical ownership changes.
 
@@ -512,10 +512,10 @@ The final technical behavior must be documented in Engineering Architecture and 
 
 Query parameters may be used for:
 
-* Campaign attribution
-* Non-indexable filtering
-* Search
-* Temporary interface state
+- Campaign attribution
+- Non-indexable filtering
+- Search
+- Temporary interface state
 
 Query parameters must not create competing canonical page versions.
 
@@ -543,12 +543,12 @@ Fragment identifiers should be meaningful and should not depend on visual layout
 
 The shared entry must:
 
-* Establish the ODRISC premise
-* Communicate one unified product identity
-* Introduce the shared pregnancy story
-* Route visitors to the appropriate audience journey
-* Allow audience switching
-* Preserve access to shared company and legal content
+- Establish the ODRISC premise
+- Communicate one unified product identity
+- Introduce the shared pregnancy story
+- Route visitors to the appropriate audience journey
+- Allow audience switching
+- Preserve access to shared company and legal content
 
 ## 7.3 Required Content
 
@@ -575,12 +575,12 @@ The shared entry may communicate:
 
 The gateway must not:
 
-* Require registration
-* Require a health questionnaire
-* Prevent direct access to deep links
-* Force visitors to accept marketing tracking
-* Treat institutional visitors as a third primary audience
-* Create separate Patient and Provider brands
+- Require registration
+- Require a health questionnaire
+- Prevent direct access to deep links
+- Force visitors to accept marketing tracking
+- Treat institutional visitors as a third primary audience
+- Create separate Patient and Provider brands
 
 ## 7.6 Search-Engine Behavior
 
@@ -592,9 +592,9 @@ Patient and Provider homepages must also be independently indexable.
 
 When an audience preference has previously been selected, the website may:
 
-* Highlight the previous selection
-* Offer a “Continue as Patient” or “Continue as Healthcare Provider” action
-* Preserve audience context in navigation
+- Highlight the previous selection
+- Offer a “Continue as Patient” or “Continue as Healthcare Provider” action
+- Preserve audience context in navigation
 
 The website should not automatically redirect visitors away from the root without an approved decision.
 
@@ -614,12 +614,12 @@ The website should not automatically redirect visitors away from the root withou
 
 The Patient homepage must help a woman understand:
 
-* Whether ODRISC is relevant to her
-* What problem it addresses
-* How it may support her
-* Which capabilities are available
-* The role of her healthcare professional
-* The next approved action
+- Whether ODRISC is relevant to her
+- What problem it addresses
+- How it may support her
+- Which capabilities are available
+- The role of her healthcare professional
+- The next approved action
 
 ### Story Position
 
@@ -639,17 +639,17 @@ Appropriate action
 
 ### Primary Child Routes
 
-* How ODRISC Helps
-* Preparing for Pregnancy
-* During Pregnancy
-* Risk Awareness
-* Weight Monitoring
-* Nutrition
-* Physical Activity
-* Maternal and Fetal Progress
-* Membership
-* Patient FAQs
-* Start
+- How ODRISC Helps
+- Preparing for Pregnancy
+- During Pregnancy
+- Risk Awareness
+- Weight Monitoring
+- Nutrition
+- Physical Activity
+- Maternal and Fetal Progress
+- Membership
+- Patient FAQs
+- Start
 
 ---
 
@@ -665,11 +665,11 @@ Appropriate action
 
 Provide a simple Patient-level explanation of:
 
-* Fragmented pregnancy information
-* Longitudinal monitoring
-* Patient participation
-* Patient-Provider collaboration
-* ODRISC boundaries
+- Fragmented pregnancy information
+- Longitudinal monitoring
+- Patient participation
+- Patient-Provider collaboration
+- ODRISC boundaries
 
 This page should act as the Patient product overview.
 
@@ -687,12 +687,12 @@ This page should act as the Patient product overview.
 
 Support women who are:
 
-* Planning pregnancy
-* Preparing before conception
-* Managing PCOS
-* Preparing for IVF
-* Reviewing metabolic risk
-* Working toward a healthier starting point
+- Planning pregnancy
+- Preparing before conception
+- Managing PCOS
+- Preparing for IVF
+- Reviewing metabolic risk
+- Working toward a healthier starting point
 
 ### Potential Child Pathways
 
@@ -720,14 +720,14 @@ Future readiness tools must not be represented as available unless approved in P
 
 Provide a Patient-oriented pregnancy overview connecting:
 
-* Trimester progression
-* Weight
-* Nutrition
-* Physical activity
-* Maternal progress
-* Fetal progress
-* Appointments
-* Professional monitoring
+- Trimester progression
+- Weight
+- Nutrition
+- Physical activity
+- Maternal progress
+- Fetal progress
+- Appointments
+- Professional monitoring
 
 This page should route visitors toward relevant Patient capabilities without becoming a generic pregnancy-content hub.
 
@@ -745,12 +745,12 @@ This page should route visitors toward relevant Patient capabilities without bec
 
 Explain:
 
-* What pregnancy risk means
-* Why early awareness may matter
-* The difference between risk and diagnosis
-* Relevant risk factors
-* How ODRISC risk assessment may support discussion
-* Why clinical testing remains important
+- What pregnancy risk means
+- Why early awareness may matter
+- The difference between risk and diagnosis
+- Relevant risk factors
+- How ODRISC risk assessment may support discussion
+- Why clinical testing remains important
 
 ### Conditional Conversion
 
@@ -770,12 +770,12 @@ A risk-assessment CTA may appear only when public use is approved.
 
 Explain:
 
-* Preconception weight monitoring
-* Gestational weight progression
-* Longitudinal change
-* Appropriate targets
-* Professional context
-* Non-stigmatizing support
+- Preconception weight monitoring
+- Gestational weight progression
+- Longitudinal change
+- Appropriate targets
+- Professional context
+- Non-stigmatizing support
 
 The page must not be positioned as a general weight-loss page.
 
@@ -793,12 +793,12 @@ The page must not be positioned as a general weight-loss page.
 
 Explain:
 
-* Medical Nutrition Therapy
-* Pregnancy-stage considerations
-* Personalized or structured plans where available
-* Professional involvement
-* Regional and dietary adaptation
-* Clinical boundaries
+- Medical Nutrition Therapy
+- Pregnancy-stage considerations
+- Personalized or structured plans where available
+- Professional involvement
+- Regional and dietary adaptation
+- Clinical boundaries
 
 ---
 
@@ -814,12 +814,12 @@ Explain:
 
 Explain:
 
-* Trimester-appropriate movement
-* Physical Activity Training
-* Safety
-* Professional involvement
-* Contraindications
-* Patient participation
+- Trimester-appropriate movement
+- Physical Activity Training
+- Safety
+- Professional involvement
+- Contraindications
+- Patient participation
 
 ---
 
@@ -835,12 +835,12 @@ Explain:
 
 Explain in accessible language:
 
-* The pregnancy timeline
-* Maternal progression
-* Fetal growth progression
-* Why multiple measurements matter
-* How summaries may support appointments
-* Why clinical interpretation remains necessary
+- The pregnancy timeline
+- Maternal progression
+- Fetal growth progression
+- Why multiple measurements matter
+- How summaries may support appointments
+- Why clinical interpretation remains necessary
 
 Advanced clinical terminology should be hidden behind progressive disclosure.
 
@@ -860,15 +860,15 @@ Explain approved Patient plans when public commercial access is active.
 
 The page may include:
 
-* Plans
-* Services
-* Duration
-* Market
-* Price
-* Taxes
-* Professional support
-* Limitations
-* Terms
+- Plans
+- Services
+- Duration
+- Market
+- Price
+- Taxes
+- Professional support
+- Limitations
+- Terms
 
 The page must not be published with outdated or unapproved pricing.
 
@@ -886,16 +886,16 @@ The page must not be published with outdated or unapproved pricing.
 
 Answer Patient questions concerning:
 
-* Clinical boundaries
-* Safety
-* Privacy
-* Availability
-* Risk assessment
-* Monitoring
-* Professional involvement
-* Pricing
-* Application access
-* Market availability
+- Clinical boundaries
+- Safety
+- Privacy
+- Availability
+- Risk assessment
+- Monitoring
+- Professional involvement
+- Pricing
+- Application access
+- Market availability
 
 ---
 
@@ -913,12 +913,12 @@ Act as a controlled conversion handoff.
 
 The route may direct toward:
 
-* Risk assessment
-* Patient application
-* Registration
-* Membership
-* Monitoring
-* Approved waiting list
+- Risk assessment
+- Patient application
+- Registration
+- Membership
+- Monitoring
+- Approved waiting list
 
 This route must not exist as an empty CTA destination.
 
@@ -940,13 +940,13 @@ Its behavior must be defined in Page Requirements and Product Status.
 
 The Provider homepage must establish:
 
-* The clinical fragmentation problem
-* The need for longitudinal review
-* ODRISC platform relevance
-* Maternal and fetal intelligence
-* Workflow support
-* Validation and methodology pathways
-* The approved professional next action
+- The clinical fragmentation problem
+- The need for longitudinal review
+- ODRISC platform relevance
+- Maternal and fetal intelligence
+- Workflow support
+- Validation and methodology pathways
+- The approved professional next action
 
 ### Story Position
 
@@ -982,14 +982,14 @@ Provide the main Provider-level platform overview.
 
 It should connect:
 
-* Clinical data
-* Patient-reported information
-* Maternal monitoring
-* Fetal growth
-* Longitudinal intelligence
-* Collaboration
-* Workflow
-* Implementation direction
+- Clinical data
+- Patient-reported information
+- Maternal monitoring
+- Fetal growth
+- Longitudinal intelligence
+- Collaboration
+- Workflow
+- Implementation direction
 
 The page must not be an unordered feature list.
 
@@ -1007,14 +1007,14 @@ The page must not be an unordered feature list.
 
 Explain how ODRISC may support:
 
-* Longitudinal review
-* Selected Patient monitoring
-* Maternal progression
-* Fetal progression
-* Patient-entered information
-* Alerts where approved
-* Review between consultations
-* Prioritization
+- Longitudinal review
+- Selected Patient monitoring
+- Maternal progression
+- Fetal progression
+- Patient-entered information
+- Alerts where approved
+- Review between consultations
+- Prioritization
 
 Real-time monitoring must not be implied unless operationally implemented.
 
@@ -1032,19 +1032,19 @@ Real-time monitoring must not be implied unless operationally implemented.
 
 Explain the overall intelligence model connecting:
 
-* Maternal context
-* Fetal growth
-* Trends
-* Velocity
-* Variation
-* Emerging deviation
-* Explainable summaries
-* Clinical decision support
+- Maternal context
+- Fetal growth
+- Trends
+- Velocity
+- Variation
+- Emerging deviation
+- Explainable summaries
+- Clinical decision support
 
 This page serves as the parent of:
 
-* Maternal Intelligence
-* Fetal Growth Intelligence
+- Maternal Intelligence
+- Fetal Growth Intelligence
 
 ---
 
@@ -1060,21 +1060,21 @@ This page serves as the parent of:
 
 Explain the intended connection among:
 
-* Maternal history
-* Risk
-* Weight
-* Symptoms
-* Laboratory information
-* Metabolic context
-* Pregnancy stage
-* Patient-reported information
+- Maternal history
+- Risk
+- Weight
+- Symptoms
+- Laboratory information
+- Metabolic context
+- Pregnancy stage
+- Patient-reported information
 
 The page must distinguish:
 
-* Available functionality
-* Pilot functionality
-* In-development functionality
-* Future roadmap
+- Available functionality
+- Pilot functionality
+- In-development functionality
+- Future roadmap
 
 ---
 
@@ -1090,16 +1090,16 @@ The page must distinguish:
 
 Explain:
 
-* Gestational-age anchoring
-* Longitudinal scan comparison
-* Fetal biometry
-* Estimated fetal weight
-* Percentiles and z-scores
-* Growth velocity
-* Centile movement
-* Customized growth context
-* Doppler context
-* Fetal-growth-restriction monitoring support
+- Gestational-age anchoring
+- Longitudinal scan comparison
+- Fetal biometry
+- Estimated fetal weight
+- Percentiles and z-scores
+- Growth velocity
+- Centile movement
+- Customized growth context
+- Doppler context
+- Fetal-growth-restriction monitoring support
 
 The page must preserve clinical interpretation and avoid autonomous-diagnosis language.
 
@@ -1119,14 +1119,14 @@ Show how ODRISC may fit into care delivery.
 
 The page should identify:
 
-* Patient onboarding
-* Data entry or import
-* Provider review
-* Summary generation
-* Clinical interpretation
-* Follow-up
-* Escalation responsibilities
-* Multidisciplinary collaboration
+- Patient onboarding
+- Data entry or import
+- Provider review
+- Summary generation
+- Clinical interpretation
+- Follow-up
+- Escalation responsibilities
+- Multidisciplinary collaboration
 
 Current and future workflows must be distinguished.
 
@@ -1144,15 +1144,15 @@ Current and future workflows must be distinguished.
 
 Provide transparent information concerning:
 
-* Clinical input
-* Expert review
-* Pilot activity
-* Technical evaluation
-* Usability testing
-* Clinical validation
-* Regulatory status
-* Limitations
-* Future validation plans
+- Clinical input
+- Expert review
+- Pilot activity
+- Technical evaluation
+- Usability testing
+- Clinical validation
+- Regulatory status
+- Limitations
+- Future validation plans
 
 The page must not combine all forms of validation into one unsupported claim.
 
@@ -1170,14 +1170,14 @@ The page must not combine all forms of validation into one unsupported claim.
 
 Explain publicly approved methodology concerning:
 
-* Clinical frameworks
-* Data processing
-* Calculation categories
-* Explainability
-* Human review
-* Standards
-* Versioning
-* Limitations
+- Clinical frameworks
+- Data processing
+- Calculation categories
+- Explainability
+- Human review
+- Standards
+- Versioning
+- Limitations
 
 The page must not expose restricted intellectual property.
 
@@ -1195,14 +1195,14 @@ The page must not expose restricted intellectual property.
 
 Provide an entry point to Provider-oriented:
 
-* Clinical articles
-* Methodology notes
-* Evidence summaries
-* Research updates
-* Product insights
-* Implementation insights
-* Maternal-health analysis
-* Fetal-growth analysis
+- Clinical articles
+- Methodology notes
+- Evidence summaries
+- Research updates
+- Product insights
+- Implementation insights
+- Maternal-health analysis
+- Fetal-growth analysis
 
 This page should primarily organize Provider resources rather than duplicate the main Resources library.
 
@@ -1220,16 +1220,16 @@ This page should primarily organize Provider resources rather than duplicate the
 
 Explain institutional value concerning:
 
-* Implementation
-* Governance
-* Security
-* Role-based access
-* Cohort visibility
-* Training
-* Support
-* Integration direction
-* Scalability
-* Commercial conversation
+- Implementation
+- Governance
+- Security
+- Role-based access
+- Cohort visibility
+- Training
+- Support
+- Integration direction
+- Scalability
+- Commercial conversation
 
 The page must not imply enterprise readiness beyond approved status.
 
@@ -1247,13 +1247,13 @@ The page must not imply enterprise readiness beyond approved status.
 
 Explain relevance to:
 
-* Preconception support
-* IVF preparation
-* Metabolic risk
-* Gestational-age anchoring
-* Continuity into pregnancy
-* Patient engagement
-* Center collaboration
+- Preconception support
+- IVF preparation
+- Metabolic risk
+- Gestational-age anchoring
+- Continuity into pregnancy
+- Patient engagement
+- Center collaboration
 
 This page should only be launched when its commercial and product pathway is approved.
 
@@ -1271,14 +1271,14 @@ This page should only be launched when its commercial and product pathway is app
 
 Explain collaboration among:
 
-* Obstetricians
-* Maternal-fetal medicine specialists
-* Nutrition professionals
-* Women's health physiotherapists
-* Nurses
-* Midwives
-* Diabetes educators
-* Care coordinators
+- Obstetricians
+- Maternal-fetal medicine specialists
+- Nutrition professionals
+- Women's health physiotherapists
+- Nurses
+- Midwives
+- Diabetes educators
+- Care coordinators
 
 The page should show role relationships without implying that all roles use identical interfaces.
 
@@ -1298,14 +1298,14 @@ Explain approved security and privacy information relevant to professional and i
 
 The page may address:
 
-* Data handling
-* Access controls
-* Consent
-* Hosting
-* Auditability
-* Privacy principles
-* Security governance
-* Future compliance direction
+- Data handling
+- Access controls
+- Consent
+- Hosting
+- Auditability
+- Privacy principles
+- Security governance
+- Future compliance direction
 
 Only implemented or explicitly planned controls may be described.
 
@@ -1323,18 +1323,18 @@ Only implemented or explicitly planned controls may be described.
 
 Answer professional questions concerning:
 
-* Product role
-* Clinical judgment
-* Validation
-* Methodology
-* Workflow
-* Privacy
-* Security
-* Integration
-* Pilot availability
-* Demonstrations
-* Pricing
-* Market availability
+- Product role
+- Clinical judgment
+- Validation
+- Methodology
+- Workflow
+- Privacy
+- Security
+- Integration
+- Pilot availability
+- Demonstrations
+- Pricing
+- Market availability
 
 ---
 
@@ -1352,12 +1352,12 @@ Provide a high-intent professional conversion route.
 
 The page must:
 
-* Explain what will be demonstrated
-* Identify suitable visitors
-* Collect only necessary information
-* Explain what happens next
-* Avoid collecting patient medical data
-* Route the enquiry to an approved owner
+- Explain what will be demonstrated
+- Identify suitable visitors
+- Collect only necessary information
+- Explain what happens next
+- Avoid collecting patient medical data
+- Route the enquiry to an approved owner
 
 ---
 
@@ -1375,10 +1375,10 @@ Support controlled pilot enquiries where pilots are available.
 
 The page must not imply:
 
-* Automatic acceptance
-* General availability
-* Completed validation
-* Guaranteed implementation
+- Automatic acceptance
+- General availability
+- Completed validation
+- Guaranteed implementation
 
 ---
 
@@ -1408,15 +1408,15 @@ The page must not present all resources as appropriate for all visitors.
 
 Potential content:
 
-* Patient guides
-* Pregnancy preparation
-* Risk awareness
-* Weight
-* Nutrition
-* Physical activity
-* Understanding reports
-* Appointment preparation
-* FAQs
+- Patient guides
+- Pregnancy preparation
+- Risk awareness
+- Weight
+- Nutrition
+- Physical activity
+- Understanding reports
+- Appointment preparation
+- FAQs
 
 ## 10.3 Provider Resources
 
@@ -1428,13 +1428,13 @@ Potential content:
 
 Potential content:
 
-* Clinical insights
-* Methodology notes
-* Evidence summaries
-* Workflow guidance
-* Validation updates
-* Implementation materials
-* Clinical briefs
+- Clinical insights
+- Methodology notes
+- Evidence summaries
+- Workflow guidance
+- Validation updates
+- Implementation materials
+- Clinical briefs
 
 ## 10.4 Glossary
 
@@ -1464,17 +1464,17 @@ The public glossary explains selected terms to visitors.
 
 Potential approved topics include:
 
-* Gestational diabetes
-* Gestational weight gain
-* Preconception health
-* PCOS
-* IVF and assisted reproduction
-* Pregnancy nutrition
-* Pregnancy physical activity
-* Maternal monitoring
-* Fetal growth
-* Doppler
-* Patient-Provider collaboration
+- Gestational diabetes
+- Gestational weight gain
+- Preconception health
+- PCOS
+- IVF and assisted reproduction
+- Pregnancy nutrition
+- Pregnancy physical activity
+- Maternal monitoring
+- Fetal growth
+- Doppler
+- Patient-Provider collaboration
 
 Topic hubs should only be created when sufficient unique content exists.
 
@@ -1508,31 +1508,31 @@ Every resource should contain structured metadata.
 
 ## 11.1 Required Metadata
 
-* Title
-* Slug
-* Summary
-* Intended audience
-* Content type
-* Topic
-* Author
-* Clinical reviewer where required
-* Publication date
-* Last reviewed date
-* Market applicability
-* Language
-* Status
-* References
-* Related product pages
-* Related resources
+- Title
+- Slug
+- Summary
+- Intended audience
+- Content type
+- Topic
+- Author
+- Clinical reviewer where required
+- Publication date
+- Last reviewed date
+- Market applicability
+- Language
+- Status
+- References
+- Related product pages
+- Related resources
 
 ## 11.2 Audience Taxonomy
 
 Allowed values:
 
-* Patient
-* Provider
-* Shared
-* Institutional
+- Patient
+- Provider
+- Shared
+- Institutional
 
 A resource may have more than one audience only when its content is genuinely appropriate to each.
 
@@ -1540,55 +1540,55 @@ A resource may have more than one audience only when its content is genuinely ap
 
 Allowed content types may include:
 
-* Article
-* Guide
-* Clinical brief
-* Methodology note
-* Evidence summary
-* FAQ
-* Glossary entry
-* Product update
-* Validation update
-* Implementation guide
-* Founder perspective
-* Case study
-* Downloadable overview
+- Article
+- Guide
+- Clinical brief
+- Methodology note
+- Evidence summary
+- FAQ
+- Glossary entry
+- Product update
+- Validation update
+- Implementation guide
+- Founder perspective
+- Case study
+- Downloadable overview
 
 ## 11.4 Journey-Stage Taxonomy
 
 Patient resources may be categorized by:
 
-* Preconception
-* IVF preparation
-* First trimester
-* Second trimester
-* Third trimester
-* Postpartum roadmap
+- Preconception
+- IVF preparation
+- First trimester
+- Second trimester
+- Third trimester
+- Postpartum roadmap
 
 Provider resources may be categorized by:
 
-* Evaluation
-* Monitoring
-* Maternal intelligence
-* Fetal growth
-* Validation
-* Implementation
-* Enterprise
-* Research
+- Evaluation
+- Monitoring
+- Maternal intelligence
+- Fetal growth
+- Validation
+- Implementation
+- Enterprise
+- Research
 
 ## 11.5 Market Taxonomy
 
 Allowed market labels may include:
 
-* Global
-* India
-* Qatar
-* GCC
-* UAE
-* Saudi Arabia
-* Kuwait
-* Bahrain
-* Oman
+- Global
+- India
+- Qatar
+- GCC
+- UAE
+- Saudi Arabia
+- Kuwait
+- Bahrain
+- Oman
 
 A market label must reflect the actual applicability of the content.
 
@@ -1596,12 +1596,12 @@ A market label must reflect the actual applicability of the content.
 
 Allowed resource statuses:
 
-* Draft
-* In review
-* Approved
-* Published
-* Update required
-* Archived
+- Draft
+- In review
+- Approved
+- Published
+- Update required
+- Archived
 
 Draft or restricted content must not be publicly indexable.
 
@@ -1621,11 +1621,11 @@ Draft or restricted content must not be publicly indexable.
 
 Explain:
 
-* Why ODRISC exists
-* Mission
-* Product direction
-* Patient and Provider connection
-* Company identity
+- Why ODRISC exists
+- Mission
+- Product direction
+- Patient and Provider connection
+- Company identity
 
 ## 12.2 Our Story
 
@@ -1665,11 +1665,11 @@ Present approved current team members, roles, and relevant expertise.
 
 Present approved:
 
-* Clinical advisers
-* Panel members
-* Professional contributors
-* Reviewers
-* Collaborators
+- Clinical advisers
+- Panel members
+- Professional contributors
+- Reviewers
+- Collaborators
 
 Interest, informal discussion, and unconfirmed involvement must not be presented as formal participation.
 
@@ -1717,15 +1717,15 @@ Route visitors toward appropriate contact categories without requesting sensitiv
 
 Potential contact categories:
 
-* General enquiry
-* Patient support
-* Healthcare Provider enquiry
-* Hospital or institutional enquiry
-* Partnership
-* Media
-* Careers
-* Privacy
-* Security
+- General enquiry
+- Patient support
+- Healthcare Provider enquiry
+- Hospital or institutional enquiry
+- Partnership
+- Media
+- Careers
+- Privacy
+- Security
 
 ## 13.2 Contact Routing
 
@@ -1803,8 +1803,8 @@ The website must not expose multiple contradictory legal documents without clear
 
 The shared login route may route users toward:
 
-* Patient access
-* Provider access
+- Patient access
+- Provider access
 
 It must not create the impression that both systems share identical authentication unless they do.
 
@@ -1823,10 +1823,10 @@ The final authentication routing belongs to Product and Engineering decisions.
 
 A login link must not be displayed if:
 
-* The destination is unavailable
-* The platform is restricted
-* The access process is not approved
-* The market is unsupported
+- The destination is unavailable
+- The platform is restricted
+- The access process is not approved
+- The market is unsupported
 
 ---
 
@@ -1838,15 +1838,15 @@ The root page should use minimal navigation.
 
 Recommended shared navigation:
 
-* About
-* Resources
-* Contact
-* Login, where available
+- About
+- Resources
+- Contact
+- Login, where available
 
 Primary audience actions:
 
-* Patient
-* Healthcare Provider
+- Patient
+- Healthcare Provider
 
 The shared entry should not display the full Patient and Provider navigation simultaneously.
 
@@ -1864,22 +1864,22 @@ Recommended Patient navigation:
 
 Primary CTA:
 
-* Start, with final wording determined by the approved conversion
+- Start, with final wording determined by the approved conversion
 
 Audience switch:
 
-* Healthcare Provider
+- Healthcare Provider
 
 ### Patient Support Menu
 
 The Support item may contain:
 
-* Risk Awareness
-* Weight Monitoring
-* Nutrition
-* Physical Activity
-* Maternal and Fetal Progress
-* Membership
+- Risk Awareness
+- Weight Monitoring
+- Nutrition
+- Physical Activity
+- Maternal and Fetal Progress
+- Membership
 
 The final number of top-level items should remain limited.
 
@@ -1898,25 +1898,25 @@ Recommended Provider navigation:
 
 Primary CTA:
 
-* Request Demonstration
+- Request Demonstration
 
 Audience switch:
 
-* Patient
+- Patient
 
 ### Intelligence Menu
 
-* Maternal Intelligence
-* Fetal Growth Intelligence
-* Methodology
+- Maternal Intelligence
+- Fetal Growth Intelligence
+- Methodology
 
 ### For Organizations Menu
 
-* Hospitals and Health Systems
-* Fertility and IVF Centers
-* Multidisciplinary Care
-* Security and Privacy
-* Discuss Pilot
+- Hospitals and Health Systems
+- Fertility and IVF Centers
+- Multidisciplinary Care
+- Security and Privacy
+- Discuss Pilot
 
 ---
 
@@ -1924,13 +1924,13 @@ Audience switch:
 
 Audience-specific headers may include:
 
-* ODRISC logo
-* Audience context
-* Primary navigation
-* Audience switch
-* Login
-* Primary CTA
-* Mobile-menu control
+- ODRISC logo
+- Audience context
+- Primary navigation
+- Audience switch
+- Login
+- Primary CTA
+- Mobile-menu control
 
 The selected audience should remain visible.
 
@@ -1940,13 +1940,13 @@ The selected audience should remain visible.
 
 Mobile navigation must:
 
-* Preserve audience identity
-* Preserve the audience switch
-* Expose the primary CTA
-* Group nested routes clearly
-* Avoid showing all website routes at once
-* Support keyboard and assistive technology
-* Avoid hidden essential legal or support access
+- Preserve audience identity
+- Preserve the audience switch
+- Expose the primary CTA
+- Group nested routes clearly
+- Avoid showing all website routes at once
+- Support keyboard and assistive technology
+- Avoid hidden essential legal or support access
 
 ---
 
@@ -1958,61 +1958,61 @@ Recommended footer groups:
 
 ## 17.1 Patients
 
-* Patient Homepage
-* How ODRISC Helps
-* Preparing for Pregnancy
-* During Pregnancy
-* Risk Awareness
-* Weight Monitoring
-* Nutrition
-* Physical Activity
-* Patient FAQs
+- Patient Homepage
+- How ODRISC Helps
+- Preparing for Pregnancy
+- During Pregnancy
+- Risk Awareness
+- Weight Monitoring
+- Nutrition
+- Physical Activity
+- Patient FAQs
 
 ## 17.2 Healthcare Providers
 
-* Provider Homepage
-* Clinical Platform
-* Monitoring
-* Maternal Intelligence
-* Fetal Growth Intelligence
-* Workflow
-* Validation
-* Hospitals and Health Systems
-* Request Demonstration
+- Provider Homepage
+- Clinical Platform
+- Monitoring
+- Maternal Intelligence
+- Fetal Growth Intelligence
+- Workflow
+- Validation
+- Hospitals and Health Systems
+- Request Demonstration
 
 ## 17.3 Resources
 
-* Patient Resources
-* Provider Resources
-* Glossary
-* Frequently Asked Questions
+- Patient Resources
+- Provider Resources
+- Glossary
+- Frequently Asked Questions
 
 ## 17.4 Company
 
-* About
-* Our Story
-* Team
-* Partnerships
-* Careers
-* Contact
+- About
+- Our Story
+- Team
+- Partnerships
+- Careers
+- Contact
 
 ## 17.5 Legal and Trust
 
-* Privacy
-* Terms
-* Cookies
-* Accessibility
-* Security and Privacy
+- Privacy
+- Terms
+- Cookies
+- Accessibility
+- Security and Privacy
 
 ## 17.6 Footer Utility
 
-* Audience switch
-* Language switch, when active
-* Market selection, when active
-* Login, when available
-* Copyright
-* Legal entity name
-* Social channels, when approved
+- Audience switch
+- Language switch, when active
+- Market selection, when active
+- Login, when available
+- Copyright
+- Legal entity name
+- Social channels, when approved
 
 ---
 
@@ -2024,12 +2024,12 @@ Visitors must be able to switch between Patient and Provider experiences.
 
 The audience switch must:
 
-* Be visible
-* Be available on mobile
-* Work without authentication
-* Remain within `odrisc.com`
-* Preserve access to shared pages
-* Be measured through analytics
+- Be visible
+- Be available on mobile
+- Work without authentication
+- Remain within `odrisc.com`
+- Preserve access to shared pages
+- Be measured through analytics
 
 ## 18.2 Equivalent-Page Mapping
 
@@ -2079,10 +2079,10 @@ Audience preference may be stored using an approved first-party mechanism.
 
 Preference storage must not:
 
-* Override direct deep links
-* Prevent audience switching
-* create sensitive health profiling
-* Be sent to general analytics as medical information
+- Override direct deep links
+- Prevent audience switching
+- create sensitive health profiling
+- Be sent to general analytics as medical information
 
 ---
 
@@ -2092,19 +2092,19 @@ Preference storage must not:
 
 Breadcrumbs should appear on:
 
-* Audience detail pages
-* Nested intelligence pages
-* Resource pages
-* Topic pages
-* Company subpages
-* Institutional pages
+- Audience detail pages
+- Nested intelligence pages
+- Resource pages
+- Topic pages
+- Company subpages
+- Institutional pages
 
 Breadcrumbs are not required on:
 
-* Shared entry
-* Patient homepage
-* Provider homepage
-* Simple conversion pages where they create distraction
+- Shared entry
+- Patient homepage
+- Provider homepage
+- Simple conversion pages where they create distraction
 
 ## 19.2 Patient Example
 
@@ -2144,11 +2144,11 @@ Understanding Growth Velocity
 
 Breadcrumbs must:
 
-* Reflect the canonical hierarchy
-* Use meaningful labels
-* Use structured data where appropriate
-* Avoid reflecting temporary campaign routes
-* Remain consistent with URLs
+- Reflect the canonical hierarchy
+- Use meaningful labels
+- Use structured data where appropriate
+- Avoid reflecting temporary campaign routes
+- Remain consistent with URLs
 
 ---
 
@@ -2201,9 +2201,9 @@ Level 4 should be used sparingly.
 
 Examples may include:
 
-* Detailed methodology subpages
-* Market-specific implementation guides
-* Specialized institutional resources
+- Detailed methodology subpages
+- Market-specific implementation guides
+- Specialized institutional resources
 
 Excessive hierarchy should be avoided.
 
@@ -2217,89 +2217,89 @@ The website should use controlled page types.
 
 Used for:
 
-* Patient Homepage
-* Provider Homepage
+- Patient Homepage
+- Provider Homepage
 
 ## 21.2 Product Overview Page
 
 Used for:
 
-* How ODRISC Helps
-* Clinical Platform
-* Intelligence
+- How ODRISC Helps
+- Clinical Platform
+- Intelligence
 
 ## 21.3 Capability Page
 
 Used for:
 
-* Risk Awareness
-* Weight Monitoring
-* Nutrition
-* Physical Activity
-* Maternal Intelligence
-* Fetal Growth Intelligence
+- Risk Awareness
+- Weight Monitoring
+- Nutrition
+- Physical Activity
+- Maternal Intelligence
+- Fetal Growth Intelligence
 
 ## 21.4 Journey Page
 
 Used for:
 
-* Preparing for Pregnancy
-* During Pregnancy
+- Preparing for Pregnancy
+- During Pregnancy
 
 ## 21.5 Trust Page
 
 Used for:
 
-* Validation
-* Methodology
-* Security and Privacy
-* About
-* Team
+- Validation
+- Methodology
+- Security and Privacy
+- About
+- Team
 
 ## 21.6 Institutional Page
 
 Used for:
 
-* Hospitals and Health Systems
-* Fertility and IVF Centers
-* Multidisciplinary Care
+- Hospitals and Health Systems
+- Fertility and IVF Centers
+- Multidisciplinary Care
 
 ## 21.7 Resource Hub
 
 Used for:
 
-* Resources
-* Patient Resources
-* Provider Resources
-* Topic Hubs
+- Resources
+- Patient Resources
+- Provider Resources
+- Topic Hubs
 
 ## 21.8 Resource Detail
 
 Used for:
 
-* Articles
-* Guides
-* Clinical briefs
-* Methodology notes
-* Evidence summaries
+- Articles
+- Guides
+- Clinical briefs
+- Methodology notes
+- Evidence summaries
 
 ## 21.9 Conversion Page
 
 Used for:
 
-* Patient Start
-* Request Demonstration
-* Discuss Pilot
-* Contact
+- Patient Start
+- Request Demonstration
+- Discuss Pilot
+- Contact
 
 ## 21.10 Legal Page
 
 Used for:
 
-* Privacy
-* Terms
-* Cookies
-* Accessibility
+- Privacy
+- Terms
+- Cookies
+- Accessibility
 
 Page templates must remain flexible enough to support content needs without creating uncontrolled one-off designs.
 
@@ -2371,13 +2371,13 @@ Provider Resource
 
 Cross-links must:
 
-* Be relevant
-* Use descriptive anchor text
-* Respect audience context
-* Avoid routing Patients into unexplained specialist content
-* Avoid routing Providers into consumer commercial content without context
-* Support the primary page objective
-* Avoid circular dead-end journeys
+- Be relevant
+- Use descriptive anchor text
+- Respect audience context
+- Avoid routing Patients into unexplained specialist content
+- Avoid routing Providers into consumer commercial content without context
+- Support the primary page objective
+- Avoid circular dead-end journeys
 
 ---
 
@@ -2397,42 +2397,42 @@ The route is reserved as:
 
 Search may include:
 
-* Public Patient pages
-* Public Provider pages
-* Resources
-* Company pages
-* FAQs
-* Glossary
+- Public Patient pages
+- Public Provider pages
+- Resources
+- Company pages
+- FAQs
+- Glossary
 
 Search must exclude:
 
-* Drafts
-* Internal documentation
-* Restricted product information
-* Unpublished validation content
-* Private platform pages
-* Personal data
-* Application records
+- Drafts
+- Internal documentation
+- Restricted product information
+- Unpublished validation content
+- Private platform pages
+- Personal data
+- Application records
 
 ## 23.3 Search Filters
 
 Potential filters:
 
-* Audience
-* Topic
-* Content type
-* Journey stage
-* Market
-* Language
+- Audience
+- Topic
+- Content type
+- Journey stage
+- Market
+- Language
 
 ## 23.4 Search Result Labels
 
 Every result should display its audience context:
 
-* Patient
-* Healthcare Provider
-* Shared
-* Institutional
+- Patient
+- Healthcare Provider
+- Shared
+- Institutional
 
 ---
 
@@ -2458,13 +2458,13 @@ Provider:
 
 These pages may discuss related concepts but must have distinct:
 
-* Audience
-* Purpose
-* Depth
-* Terminology
-* Metadata
-* CTA
-* Supporting evidence
+- Audience
+- Purpose
+- Depth
+- Terminology
+- Metadata
+- CTA
+- Supporting evidence
 
 ## 24.2 Canonical URLs
 
@@ -2482,23 +2482,23 @@ Resource pagination must use an approved indexation strategy.
 
 Resource filters should not automatically create indexable pages unless they have:
 
-* Unique value
-* Sufficient content
-* Approved metadata
-* Search demand
-* Stable taxonomy
+- Unique value
+- Sufficient content
+- Approved metadata
+- Search demand
+- Stable taxonomy
 
 ## 24.6 Structured Data
 
 Information Architecture should support:
 
-* Organization
-* Website
-* Breadcrumb
-* Article
-* FAQ
-* Person
-* Software or application information where appropriate
+- Organization
+- Website
+- Breadcrumb
+- Article
+- FAQ
+- Person
+- Software or application information where appropriate
 
 Structured data must not contain unsupported medical or product claims.
 
@@ -2551,41 +2551,41 @@ or:
 
 The final decision must account for:
 
-* Qatar launch
-* India validation
-* Future GCC markets
-* Search engines
-* Legal content
-* Market availability
-* Pricing
-* Analytics
-* Operational maintainability
+- Qatar launch
+- India validation
+- Future GCC markets
+- Search engines
+- Legal content
+- Market availability
+- Pricing
+- Analytics
+- Operational maintainability
 
 ## 25.3 Arabic Readiness
 
 The architecture must support:
 
-* Right-to-left presentation
-* Mirrored navigation where appropriate
-* Arabic typography
-* Localized route labels
-* Localized metadata
-* Localized structured data
-* Localized forms
-* Localized errors
-* Direction-aware diagrams
-* Charts that remain clinically understandable
+- Right-to-left presentation
+- Mirrored navigation where appropriate
+- Arabic typography
+- Localized route labels
+- Localized metadata
+- Localized structured data
+- Localized forms
+- Localized errors
+- Direction-aware diagrams
+- Charts that remain clinically understandable
 
 ## 25.4 Translation Equivalence
 
 Translated pages must preserve:
 
-* Meaning
-* Clinical boundaries
-* Product status
-* CTA availability
-* Evidence context
-* Legal applicability
+- Meaning
+- Clinical boundaries
+- Product status
+- CTA availability
+- Evidence context
+- Legal applicability
 
 ## 25.5 Incomplete Localization
 
@@ -2609,47 +2609,47 @@ The ODRISC identity should remain globally consistent.
 
 Qatar-specific content may include:
 
-* Availability
-* Pricing
-* Contact pathways
-* Provider implementation
-* Hospital pathways
-* English and Arabic
-* Legal information
-* Data and privacy information
-* Local market evidence
+- Availability
+- Pricing
+- Contact pathways
+- Provider implementation
+- Hospital pathways
+- English and Arabic
+- Legal information
+- Data and privacy information
+- Local market evidence
 
 ## 26.3 India
 
 India-specific content may include:
 
-* Product validation context
-* Current Patient access
-* Clinical collaborators
-* Applicable pricing
-* Local support information
-* India-specific evidence
+- Product validation context
+- Current Patient access
+- Clinical collaborators
+- Applicable pricing
+- Local support information
+- India-specific evidence
 
 ## 26.4 GCC Expansion
 
 Future market variants may include:
 
-* UAE
-* Saudi Arabia
-* Kuwait
-* Bahrain
-* Oman
+- UAE
+- Saudi Arabia
+- Kuwait
+- Bahrain
+- Oman
 
 ## 26.5 Market Selection
 
 A market selector should be introduced only when visitors genuinely receive different:
 
-* Availability
-* Pricing
-* Legal terms
-* Language
-* Contact pathways
-* Product experiences
+- Availability
+- Pricing
+- Legal terms
+- Language
+- Contact pathways
+- Product experiences
 
 The website must not add a decorative market selector with no functional difference.
 
@@ -2661,38 +2661,38 @@ The website must not add a decorative market selector with no functional differe
 
 The 404 page must:
 
-* Explain that the page was not found
-* Preserve ODRISC branding
-* Offer Patient and Provider destinations
-* Offer search where available
-* Offer shared navigation
-* Avoid blaming the user
+- Explain that the page was not found
+- Preserve ODRISC branding
+- Offer Patient and Provider destinations
+- Offer search where available
+- Offer shared navigation
+- Avoid blaming the user
 
 ## 27.2 500 Page
 
 The server-error page must:
 
-* Communicate a temporary problem
-* Avoid exposing technical details
-* Provide a safe return route
-* Provide an appropriate contact route
+- Communicate a temporary problem
+- Avoid exposing technical details
+- Provide a safe return route
+- Provide an appropriate contact route
 
 ## 27.3 Empty States
 
 Resource, search, and filter empty states must guide visitors toward:
 
-* Related topics
-* Audience homepages
-* Contact
-* Clearing filters
+- Related topics
+- Audience homepages
+- Contact
+- Clearing filters
 
 ## 27.4 Maintenance State
 
 Maintenance messaging must clearly distinguish:
 
-* Informational website availability
-* Patient application availability
-* Provider platform availability
+- Informational website availability
+- Patient application availability
+- Provider platform availability
 
 ---
 
@@ -2704,26 +2704,26 @@ The architecture must support audience and journey measurement.
 
 Analytics should identify:
 
-* Audience zone
-* Page type
-* Content topic
-* Product-status dependency
-* Market
-* Language
-* Conversion stage
+- Audience zone
+- Page type
+- Content topic
+- Product-status dependency
+- Market
+- Language
+- Conversion stage
 
 ## 28.2 Navigation Events
 
 Track:
 
-* Patient selected
-* Provider selected
-* Audience switched
-* Primary navigation selected
-* Footer navigation selected
-* Breadcrumb selected
-* Resource filter used
-* Search used
+- Patient selected
+- Provider selected
+- Audience switched
+- Primary navigation selected
+- Footer navigation selected
+- Breadcrumb selected
+- Resource filter used
+- Search used
 
 ## 28.3 Route Governance
 
@@ -2756,12 +2756,12 @@ A page may be published only when:
 
 A page may be indexable only when:
 
-* It provides unique public value
-* It is not a placeholder
-* It is not a thin duplicate
-* It is not restricted
-* It is not an unfinished localization
-* It has approved canonical metadata
+- It provides unique public value
+- It is not a placeholder
+- It is not a thin duplicate
+- It is not restricted
+- It is not an unfinished localization
+- It has approved canonical metadata
 
 ---
 
@@ -2799,12 +2799,12 @@ Archived or redirected
 
 When a page is retired:
 
-* Its replacement must be identified
-* A redirect should be added where appropriate
-* Internal links must be updated
-* Sitemap entries must be updated
-* Analytics should record the change
-* The redirect must be added to the redirect register
+- Its replacement must be identified
+- A redirect should be added where appropriate
+- Internal links must be updated
+- Sitemap entries must be updated
+- Analytics should record the change
+- The redirect must be added to the redirect register
 
 ---
 
@@ -2820,13 +2820,13 @@ Temporary campaign changes should use appropriate temporary behavior.
 
 Every redirect should record:
 
-* Previous URL
-* New URL
-* Reason
-* Redirect type
-* Date
-* Owner
-* Review status
+- Previous URL
+- New URL
+- Reason
+- Redirect type
+- Date
+- Owner
+- Review status
 
 ## 31.3 Redirect Chains
 
@@ -2836,13 +2836,13 @@ Redirect chains and loops must be avoided.
 
 When migrating from the existing Canva website:
 
-* Existing public URLs must be inventoried
-* Search-performing pages must be identified
-* Equivalent new destinations must be mapped
-* Unnecessary pages must not be recreated automatically
-* Redirects must be tested
-* Canonical metadata must be updated
-* Analytics continuity must be planned
+- Existing public URLs must be inventoried
+- Search-performing pages must be identified
+- Equivalent new destinations must be mapped
+- Unnecessary pages must not be recreated automatically
+- Redirects must be tested
+- Canonical metadata must be updated
+- Analytics continuity must be planned
 
 ---
 
@@ -2852,26 +2852,26 @@ Each page must have an owner.
 
 Potential owners include:
 
-* Founder
-* Product
-* Clinical
-* Content
-* Marketing
-* Engineering
-* Privacy
-* Legal
-* Commercial
-* Localization
+- Founder
+- Product
+- Clinical
+- Content
+- Marketing
+- Engineering
+- Privacy
+- Legal
+- Commercial
+- Localization
 
 Ownership must include responsibility for:
 
-* Accuracy
-* Product status
-* Review
-* Updates
-* CTA destination
-* References
-* Market applicability
+- Accuracy
+- Product status
+- Review
+- Updates
+- CTA destination
+- References
+- Market applicability
 
 Clinical content must also identify a clinical reviewer where required.
 
@@ -2885,57 +2885,57 @@ The recommended minimum architecture for initial launch is:
 
 ## 33.1 Shared P0 Pages
 
-* `/`
-* `/about/`
-* `/contact/`
-* `/privacy/`
-* `/terms/`
-* `/cookies/`, when required
-* `/accessibility/`
-* 404
-* 500
+- `/`
+- `/about/`
+- `/contact/`
+- `/privacy/`
+- `/terms/`
+- `/cookies/`, when required
+- `/accessibility/`
+- 404
+- 500
 
 ## 33.2 Patient P0 Pages
 
-* `/patients/`
-* `/patients/how-odrisc-helps/`
-* `/patients/risk-awareness/`, if public risk assessment is approved
-* `/patients/weight-monitoring/`, if public capability is approved
-* `/patients/nutrition/`, if public support is approved
-* `/patients/physical-activity/`, if public support is approved
-* `/patients/frequently-asked-questions/`
-* `/patients/start/`, only when a working destination exists
+- `/patients/`
+- `/patients/how-odrisc-helps/`
+- `/patients/risk-awareness/`, if public risk assessment is approved
+- `/patients/weight-monitoring/`, if public capability is approved
+- `/patients/nutrition/`, if public support is approved
+- `/patients/physical-activity/`, if public support is approved
+- `/patients/frequently-asked-questions/`
+- `/patients/start/`, only when a working destination exists
 
 ## 33.3 Provider P0 Pages
 
-* `/providers/`
-* `/providers/clinical-platform/`
-* `/providers/monitoring/`
-* `/providers/intelligence/`
-* `/providers/workflow/`
-* `/providers/validation/`
-* `/providers/frequently-asked-questions/`
-* `/providers/request-demonstration/`
+- `/providers/`
+- `/providers/clinical-platform/`
+- `/providers/monitoring/`
+- `/providers/intelligence/`
+- `/providers/workflow/`
+- `/providers/validation/`
+- `/providers/frequently-asked-questions/`
+- `/providers/request-demonstration/`
 
 ## 33.4 Conditional P1 Pages
 
-* Maternal Intelligence
-* Fetal Growth Intelligence
-* Methodology
-* Insights
-* Hospitals and Health Systems
-* Fertility and IVF Centers
-* Multidisciplinary Care
-* Security and Privacy
-* Discuss Pilot
-* Patient Membership
-* Patient Journey pages
-* Resource library
-* Team
-* Partnerships
-* Careers
-* Login
-* Search
+- Maternal Intelligence
+- Fetal Growth Intelligence
+- Methodology
+- Insights
+- Hospitals and Health Systems
+- Fertility and IVF Centers
+- Multidisciplinary Care
+- Security and Privacy
+- Discuss Pilot
+- Patient Membership
+- Patient Journey pages
+- Resource library
+- Team
+- Partnerships
+- Careers
+- Login
+- Search
 
 Conditional pages may be promoted to P0 through approved launch-scope decisions.
 
@@ -2999,60 +2999,60 @@ The Information Architecture is approved when:
 
 ## 35.1 Strategic
 
-* It supports the Product Vision
-* It supports the Website Objectives
-* It follows the Website Story
-* It supports both primary audiences
-* It preserves one brand and one domain
+- It supports the Product Vision
+- It supports the Website Objectives
+- It follows the Website Story
+- It supports both primary audiences
+- It preserves one brand and one domain
 
 ## 35.2 Audience
 
-* Patients receive a complete journey
-* Providers receive a complete journey
-* Shared secondary audiences are supported without complicating the gateway
-* Audience switching is defined
-* Audience terminology is appropriate
+- Patients receive a complete journey
+- Providers receive a complete journey
+- Shared secondary audiences are supported without complicating the gateway
+- Audience switching is defined
+- Audience terminology is appropriate
 
 ## 35.3 Structural
 
-* Every proposed page has a clear purpose
-* Each topic has one canonical owner
-* URL hierarchy is logical
-* Navigation is understandable
-* Page depth is controlled
-* Shared pages are not unnecessarily duplicated
+- Every proposed page has a clear purpose
+- Each topic has one canonical owner
+- URL hierarchy is logical
+- Navigation is understandable
+- Page depth is controlled
+- Shared pages are not unnecessarily duplicated
 
 ## 35.4 Product
 
-* Product Status dependencies are visible
-* Future capabilities are not presented as launch commitments
-* CTA destinations are governed
-* Public website and product applications remain distinct
+- Product Status dependencies are visible
+- Future capabilities are not presented as launch commitments
+- CTA destinations are governed
+- Public website and product applications remain distinct
 
 ## 35.5 Content
 
-* Patient and Provider search intent are separated
-* Resource taxonomy is defined
-* Clinical content review is supported
-* Founder and company content have clear locations
-* Legal content has clear locations
+- Patient and Provider search intent are separated
+- Resource taxonomy is defined
+- Clinical content review is supported
+- Founder and company content have clear locations
+- Legal content has clear locations
 
 ## 35.6 Technical
 
-* Routes support responsive implementation
-* Routes support analytics
-* Routes support SEO
-* Routes support localization
-* Redirect requirements are defined
-* Search and indexation rules are defined
+- Routes support responsive implementation
+- Routes support analytics
+- Routes support SEO
+- Routes support localization
+- Redirect requirements are defined
+- Search and indexation rules are defined
 
 ## 35.7 Operational
 
-* Page ownership can be assigned
-* Pages can move through a defined lifecycle
-* Content can be reviewed and archived
-* Route changes are governed
-* Migration from the current website can be planned
+- Page ownership can be assigned
+- Pages can move through a defined lifecycle
+- Content can be reviewed and archived
+- Route changes are governed
+- Migration from the current website can be planned
 
 ---
 
@@ -3153,26 +3153,26 @@ All unresolved questions must be tracked in:
 
 Key Information Architecture questions include:
 
-* Does the root page remain a full shared narrative page or a concise audience gateway?
-* Does the website remember the selected audience?
-* What is the exact visible Patient gateway label?
-* What is the exact visible Provider gateway label?
-* What is the final P0 page inventory?
-* Which conditional capability pages are public at launch?
-* Which Patient route receives the primary CTA?
-* Which Provider route receives the primary CTA?
-* Is the Resource library required at initial launch?
-* Is internal search required at initial launch?
-* What is the final locale and market URL strategy?
-* Is Arabic part of the first commercial release?
-* How are India and Qatar content variants represented?
-* Is `/login/` shared or audience-specific?
-* Which existing Canva URLs require redirects?
-* Which pages require dedicated Arabic visual adaptation?
-* Which institutional routes are P0?
-* Which Provider pages may discuss roadmap capabilities?
-* Which pages require clinical-review metadata?
-* Which pages require market-specific legal wording?
+- Does the root page remain a full shared narrative page or a concise audience gateway?
+- Does the website remember the selected audience?
+- What is the exact visible Patient gateway label?
+- What is the exact visible Provider gateway label?
+- What is the final P0 page inventory?
+- Which conditional capability pages are public at launch?
+- Which Patient route receives the primary CTA?
+- Which Provider route receives the primary CTA?
+- Is the Resource library required at initial launch?
+- Is internal search required at initial launch?
+- What is the final locale and market URL strategy?
+- Is Arabic part of the first commercial release?
+- How are India and Qatar content variants represented?
+- Is `/login/` shared or audience-specific?
+- Which existing Canva URLs require redirects?
+- Which pages require dedicated Arabic visual adaptation?
+- Which institutional routes are P0?
+- Which Provider pages may discuss roadmap capabilities?
+- Which pages require clinical-review metadata?
+- Which pages require market-specific legal wording?
 
 ---
 
@@ -3224,35 +3224,35 @@ Before creating, moving, renaming, deleting, or implementing a public route, AI 
 
 AI agents must:
 
-* Identify the audience
-* Identify the page purpose
-* Identify the canonical route
-* Identify the PRD requirements
-* Check Product Status
-* Check for an existing canonical page
-* Check relevant open questions
-* Preserve URL stability
-* Preserve audience switching
-* Preserve localization readiness
-* Add redirects when changing published routes
-* Update the route registry
-* Update traceability documentation
+- Identify the audience
+- Identify the page purpose
+- Identify the canonical route
+- Identify the PRD requirements
+- Check Product Status
+- Check for an existing canonical page
+- Check relevant open questions
+- Preserve URL stability
+- Preserve audience switching
+- Preserve localization readiness
+- Add redirects when changing published routes
+- Update the route registry
+- Update traceability documentation
 
 AI agents must not:
 
-* Invent a new top-level website zone
-* Create a third primary audience gateway
-* Create duplicate Patient and Provider content without audience justification
-* Create a public page for an unapproved roadmap capability
-* Rename canonical routes solely for visual preference
-* Use implementation folder structure as public URL structure
-* Add unnecessary URL depth
-* Publish empty placeholder pages
-* Force deep-link visitors through the audience gateway
-* Mix private platform routes with public marketing routes
-* Treat current Canva structure as the canonical future architecture
-* Change the locale strategy without an approved decision
-* Remove redirects without reviewing historical traffic
+- Invent a new top-level website zone
+- Create a third primary audience gateway
+- Create duplicate Patient and Provider content without audience justification
+- Create a public page for an unapproved roadmap capability
+- Rename canonical routes solely for visual preference
+- Use implementation folder structure as public URL structure
+- Add unnecessary URL depth
+- Publish empty placeholder pages
+- Force deep-link visitors through the audience gateway
+- Mix private platform routes with public marketing routes
+- Treat current Canva structure as the canonical future architecture
+- Change the locale strategy without an approved decision
+- Remove redirects without reviewing historical traffic
 
 ---
 
@@ -3262,8 +3262,8 @@ The ODRISC public website will use one domain, one brand, and one shared pregnan
 
 The root experience will introduce ODRISC and route visitors toward:
 
-* Patient
-* Healthcare Provider
+- Patient
+- Healthcare Provider
 
 The Patient journey will help women understand, prepare, monitor, participate, and take the next appropriate action.
 
@@ -3273,16 +3273,16 @@ Shared company, resource, legal, and utility pages will support both audiences w
 
 The architecture must remain:
 
-* Clear
-* Audience-specific
-* Clinically responsible
-* Searchable
-* Accessible
-* Measurable
-* Localization-ready
-* Stable
-* Governed
-* Scalable across Qatar, India, and future GCC markets
+- Clear
+- Audience-specific
+- Clinically responsible
+- Searchable
+- Accessible
+- Measurable
+- Localization-ready
+- Stable
+- Governed
+- Scalable across Qatar, India, and future GCC markets
 
 The governing structural model is:
 

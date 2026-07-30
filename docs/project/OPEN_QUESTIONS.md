@@ -2,9 +2,9 @@
 
 This document records unresolved questions that could affect the product, content, design, or implementation.
 
-| ID | Question | Area | Impact | Status | Decision Owner |
-|---|---|---|---|---|---|
-| Q-001 | Example unresolved question | Product | Medium | Open | Founder |
+| ID    | Question                    | Area    | Impact | Status | Decision Owner |
+| ----- | --------------------------- | ------- | ------ | ------ | -------------- |
+| Q-001 | Example unresolved question | Product | Medium | Open   | Founder        |
 
 ## Impact Values
 
@@ -270,7 +270,6 @@ This document records unresolved questions that could affect the product, conten
 | Q-245 | Which custom security rules require repository validation scripts? | Security engineering | High | Open | CTO |
 | Q-246 | Are AI-authored pull requests automatically labelled? | AI governance | Low | Open | CTO |
 | Q-247 | Which local validation commands must run before requesting review? | Engineering workflow | Blocking | Open | CTO |
-
 
 | Q-248 | Which exact Vitest and Playwright patch versions are pinned? | Test tooling | High | Open | CTO |
 | Q-249 | Which Playwright mobile-device descriptors are approved? | Browser testing | Medium | Open | QA owner |

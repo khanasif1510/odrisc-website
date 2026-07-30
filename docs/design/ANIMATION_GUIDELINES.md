@@ -17,31 +17,31 @@
 
 ## Related Documents
 
-* `PROJECT_CONTEXT.md`
-* `docs/project/SOURCE_OF_TRUTH.md`
-* `docs/project/ASSUMPTIONS.md`
-* `docs/project/OPEN_QUESTIONS.md`
-* `docs/project/GLOSSARY.md`
-* `docs/product/PRODUCT_VISION.md`
-* `docs/product/AUDIENCE.md`
-* `docs/product/WEBSITE_OBJECTIVES.md`
-* `docs/product/WEBSITE_STORY.md`
-* `docs/product/PRD.md`
-* `docs/product/PRODUCT_STATUS.md`
-* `docs/product/INFORMATION_ARCHITECTURE.md`
-* `docs/product/PAGE_REQUIREMENTS.md`
-* `docs/product/PAGE_IMPLEMENTATION_TRACKER.md`
-* `docs/product/REQUIREMENTS_TRACEABILITY.md`
-* `docs/design/BRAND_FOUNDATION.md`
-* `docs/design/DESIGN_SYSTEM.md`
-* `docs/design/BRAND_ASSET_REGISTER.md`
-* `docs/design/BRAND_REVIEW_CHECKLIST.md`
-* `docs/design/DESIGN_QA_CHECKLIST.md`
-* `docs/engineering/TECH_STACK.md`
-* `docs/engineering/ARCHITECTURE.md`
-* `docs/engineering/COMPONENT_LIBRARY.md`
-* `ai/rules/NON_NEGOTIABLES.md`
-* `ai/rules/AI_BEHAVIOR.md`
+- `PROJECT_CONTEXT.md`
+- `docs/project/SOURCE_OF_TRUTH.md`
+- `docs/project/ASSUMPTIONS.md`
+- `docs/project/OPEN_QUESTIONS.md`
+- `docs/project/GLOSSARY.md`
+- `docs/product/PRODUCT_VISION.md`
+- `docs/product/AUDIENCE.md`
+- `docs/product/WEBSITE_OBJECTIVES.md`
+- `docs/product/WEBSITE_STORY.md`
+- `docs/product/PRD.md`
+- `docs/product/PRODUCT_STATUS.md`
+- `docs/product/INFORMATION_ARCHITECTURE.md`
+- `docs/product/PAGE_REQUIREMENTS.md`
+- `docs/product/PAGE_IMPLEMENTATION_TRACKER.md`
+- `docs/product/REQUIREMENTS_TRACEABILITY.md`
+- `docs/design/BRAND_FOUNDATION.md`
+- `docs/design/DESIGN_SYSTEM.md`
+- `docs/design/BRAND_ASSET_REGISTER.md`
+- `docs/design/BRAND_REVIEW_CHECKLIST.md`
+- `docs/design/DESIGN_QA_CHECKLIST.md`
+- `docs/engineering/TECH_STACK.md`
+- `docs/engineering/ARCHITECTURE.md`
+- `docs/engineering/COMPONENT_LIBRARY.md`
+- `ai/rules/NON_NEGOTIABLES.md`
+- `ai/rules/AI_BEHAVIOR.md`
 
 ---
 
@@ -51,39 +51,39 @@ This document defines how motion must be used across the ODRISC public website.
 
 It governs:
 
-* Motion principles
-* Animation tokens
-* Duration
-* Delay
-* Easing
-* Scroll-triggered animation
-* Page-entry animation
-* Narrative animation
-* Audience-selection motion
-* Timeline animation
-* Data-visualization motion
-* Component transitions
-* Navigation motion
-* Form feedback
-* Loading states
-* Success and error feedback
-* Patient and Provider motion density
-* Mobile behavior
-* Performance
-* Reduced-motion alternatives
-* Arabic and right-to-left behavior
-* Motion testing
-* Motion governance
-* AI-generated animation
+- Motion principles
+- Animation tokens
+- Duration
+- Delay
+- Easing
+- Scroll-triggered animation
+- Page-entry animation
+- Narrative animation
+- Audience-selection motion
+- Timeline animation
+- Data-visualization motion
+- Component transitions
+- Navigation motion
+- Form feedback
+- Loading states
+- Success and error feedback
+- Patient and Provider motion density
+- Mobile behavior
+- Performance
+- Reduced-motion alternatives
+- Arabic and right-to-left behavior
+- Motion testing
+- Motion governance
+- AI-generated animation
 
 Motion must help visitors understand:
 
-* Progression
-* Connection
-* Transformation
-* Hierarchy
-* State
-* Cause and effect
+- Progression
+- Connection
+- Transformation
+- Hierarchy
+- State
+- Cause and effect
 
 Motion must not exist merely to make ODRISC appear technologically advanced.
 
@@ -93,32 +93,32 @@ Motion must not exist merely to make ODRISC appear technologically advanced.
 
 These guidelines apply to:
 
-* The shared audience-entry experience
-* Patient pages
-* Provider pages
-* Institutional pages
-* Resource pages
-* Company pages
-* Navigation
-* Forms
-* Product previews
-* Charts
-* Timelines
-* Illustrations
-* Diagrams
-* Loading and feedback states
-* Responsive website components
+- The shared audience-entry experience
+- Patient pages
+- Provider pages
+- Institutional pages
+- Resource pages
+- Company pages
+- Navigation
+- Forms
+- Product previews
+- Charts
+- Timelines
+- Illustrations
+- Diagrams
+- Loading and feedback states
+- Responsive website components
 
 These guidelines do not fully define:
 
-* Patient-application motion
-* Provider-dashboard motion
-* Clinical-alert escalation behavior
-* Native mobile application animation
-* Operating-system notifications
-* Video-production standards
-* Presentation-slide animation
-* Medical-device alarm behavior
+- Patient-application motion
+- Provider-dashboard motion
+- Clinical-alert escalation behavior
+- Native mobile application animation
+- Operating-system notifications
+- Video-production standards
+- Presentation-slide animation
+- Medical-device alarm behavior
 
 Those systems require separate specifications.
 
@@ -128,14 +128,14 @@ Those systems require separate specifications.
 
 The ODRISC motion system should make the website feel:
 
-* Calm
-* Precise
-* Continuous
-* Connected
-* Responsive
-* Human
-* Clinically responsible
-* Premium without being theatrical
+- Calm
+- Precise
+- Continuous
+- Connected
+- Responsive
+- Human
+- Clinically responsible
+- Premium without being theatrical
 
 The central motion idea is:
 
@@ -163,13 +163,13 @@ Collaboration
 
 Every meaningful animation must answer at least one question:
 
-* What changed?
-* Where did this element come from?
-* What is connected?
-* What should I notice?
-* What action succeeded?
-* What state is now active?
-* How is information progressing over time?
+- What changed?
+- Where did this element come from?
+- What is connected?
+- What should I notice?
+- What action succeeded?
+- What state is now active?
+- How is information progressing over time?
 
 Motion without explanatory value should be removed.
 
@@ -179,11 +179,11 @@ Essential content must not depend on animation completing.
 
 Visitors must be able to:
 
-* Read the content immediately
-* Navigate without waiting
-* Access CTAs without animation
-* Understand the page with motion disabled
-* use the website with reduced motion
+- Read the content immediately
+- Navigate without waiting
+- Access CTAs without animation
+- Understand the page with motion disabled
+- use the website with reduced motion
 
 ## 4.3 Calm Before Spectacle
 
@@ -191,25 +191,25 @@ ODRISC motion must remain restrained.
 
 Motion should not feel:
 
-* Cinematic for its own sake
-* Playful
-* Gamified
-* Futuristic
-* Aggressive
-* Alarmist
-* Constant
-* Distracting
+- Cinematic for its own sake
+- Playful
+- Gamified
+- Futuristic
+- Aggressive
+- Alarmist
+- Constant
+- Distracting
 
 ## 4.4 Progression Before Decoration
 
 Motion should favor:
 
-* Lines extending
-* Data points becoming connected
-* Timelines progressing
-* Relationships being revealed
-* Layers becoming organized
-* State changes being confirmed
+- Lines extending
+- Data points becoming connected
+- Timelines progressing
+- Relationships being revealed
+- Layers becoming organized
+- State changes being confirmed
 
 Avoid arbitrary floating, bouncing, spinning, or pulsing.
 
@@ -219,12 +219,12 @@ A section should normally contain one dominant motion concept.
 
 Avoid combining:
 
-* Parallax
-* Text reveal
-* Card stagger
-* Line drawing
-* Number counting
-* Background movement
+- Parallax
+- Text reveal
+- Card stagger
+- Line drawing
+- Number counting
+- Background movement
 
 within the same viewport unless each element is necessary.
 
@@ -232,13 +232,13 @@ within the same viewport unless each element is necessary.
 
 Animation must not:
 
-* Change the apparent clinical value
-* Suggest a trend that the data does not support
-* Conceal uncertainty
-* Smooth clinically relevant variation without explanation
-* Make a risk state appear more or less serious
-* Imply real-time monitoring when data is static
-* Suggest automatic diagnosis
+- Change the apparent clinical value
+- Suggest a trend that the data does not support
+- Conceal uncertainty
+- Smooth clinically relevant variation without explanation
+- Make a risk state appear more or less serious
+- Imply real-time monitoring when data is static
+- Suggest automatic diagnosis
 
 ## 4.7 Motion Must Remain Reversible and Predictable
 
@@ -246,10 +246,10 @@ Interactive motion should follow the user's action.
 
 Examples:
 
-* A drawer opens from the edge where it is anchored
-* An accordion expands beneath its heading
-* A selected tab indicator moves toward the selected tab
-* A modal emerges from the interface layer
+- A drawer opens from the edge where it is anchored
+- An accordion expands beneath its heading
+- A selected tab indicator moves toward the selected tab
+- A modal emerges from the interface layer
 
 Motion must not cause unexpected repositioning.
 
@@ -263,18 +263,18 @@ The ODRISC motion system uses six categories.
 
 Helps users understand:
 
-* Page entry
-* Navigation
-* Audience context
-* Component opening
-* Layer hierarchy
+- Page entry
+- Navigation
+- Audience context
+- Component opening
+- Layer hierarchy
 
 Examples:
 
-* Mobile menu opening
-* Audience switch
-* Modal appearance
-* Breadcrumb-context transition
+- Mobile menu opening
+- Audience switch
+- Modal appearance
+- Breadcrumb-context transition
 
 ## 5.2 Narrative Motion
 
@@ -282,10 +282,10 @@ Explains the ODRISC website story.
 
 Examples:
 
-* Fragmented information connecting
-* Pregnancy timeline progressing
-* Maternal and fetal streams aligning
-* Data becoming longitudinal intelligence
+- Fragmented information connecting
+- Pregnancy timeline progressing
+- Maternal and fetal streams aligning
+- Data becoming longitudinal intelligence
 
 ## 5.3 Interaction Motion
 
@@ -293,11 +293,11 @@ Responds directly to user action.
 
 Examples:
 
-* Button press
-* Tab change
-* Accordion expansion
-* Form-control selection
-* Tooltip appearance
+- Button press
+- Tab change
+- Accordion expansion
+- Form-control selection
+- Tooltip appearance
 
 ## 5.4 Feedback Motion
 
@@ -305,12 +305,12 @@ Confirms system state.
 
 Examples:
 
-* Form submission
-* Loading
-* Success
-* Error
-* Saved preference
-* Failed handoff
+- Form submission
+- Loading
+- Success
+- Error
+- Saved preference
+- Failed handoff
 
 ## 5.5 Data Motion
 
@@ -318,11 +318,11 @@ Explains change in data or visualization.
 
 Examples:
 
-* Chart line reveal
-* Data-point comparison
-* Timeline progression
-* Selected-series emphasis
-* Filter transition
+- Chart line reveal
+- Data-point comparison
+- Timeline progression
+- Selected-series emphasis
+- Filter transition
 
 ## 5.6 Ambient Motion
 
@@ -332,11 +332,11 @@ Ambient motion is generally discouraged.
 
 It may be used only when:
 
-* It is extremely subtle
-* It does not repeat aggressively
-* It has no accessibility cost
-* It does not impair performance
-* It reinforces progression or connection
+- It is extremely subtle
+- It does not repeat aggressively
+- It has no accessibility cost
+- It does not impair performance
+- It reinforces progression or connection
 
 ---
 
@@ -385,12 +385,12 @@ Components must not introduce arbitrary motion values when an approved token exi
 
 ## 7.1 Duration Rules
 
-* Most interface transitions should use `160–240ms`
-* Most component openings should use `240–360ms`
-* Narrative animation should normally use `600–900ms`
-* Individual animations should rarely exceed `1200ms`
-* A user should never need to wait for an animation before acting
-* Repeated UI interactions should become faster than first-entry narrative motion
+- Most interface transitions should use `160–240ms`
+- Most component openings should use `240–360ms`
+- Narrative animation should normally use `600–900ms`
+- Individual animations should rarely exceed `1200ms`
+- A user should never need to wait for an animation before acting
+- Repeated UI interactions should become faster than first-entry narrative motion
 
 ---
 
@@ -410,10 +410,10 @@ od.motion.ease.standard
 
 Use for:
 
-* General component transitions
-* Accordion expansion
-* Section reveals
-* Card movement
+- General component transitions
+- Accordion expansion
+- Section reveals
+- Card movement
 
 ## 8.2 Enter Ease
 
@@ -429,10 +429,10 @@ od.motion.ease.enter
 
 Use for:
 
-* Modal entry
-* Drawer entry
-* Tooltip entry
-* Element appearance
+- Modal entry
+- Drawer entry
+- Tooltip entry
+- Element appearance
 
 ## 8.3 Exit Ease
 
@@ -448,10 +448,10 @@ od.motion.ease.exit
 
 Use for:
 
-* Modal exit
-* Drawer exit
-* Dismissal
-* Removal
+- Modal exit
+- Drawer exit
+- Dismissal
+- Removal
 
 Exit motion should normally be faster than entry motion.
 
@@ -469,17 +469,17 @@ od.motion.ease.emphasis
 
 Use sparingly for:
 
-* Hero connection
-* Major narrative resolution
-* Final timeline alignment
+- Hero connection
+- Major narrative resolution
+- Final timeline alignment
 
 ## 8.5 Linear Motion
 
 Linear easing may be used for:
 
-* Determinate progress
-* Continuous data playback
-* Mechanical progression where constant speed is meaningful
+- Determinate progress
+- Continuous data playback
+- Mechanical progression where constant speed is meaningful
 
 Linear easing must not be used for general UI entry.
 
@@ -499,18 +499,18 @@ mass: 0.8
 
 Appropriate uses:
 
-* Small audience-card emphasis
-* Toggle thumb
-* Drag release where dragging is approved
-* Button press recovery
+- Small audience-card emphasis
+- Toggle thumb
+- Drag release where dragging is approved
+- Button press recovery
 
 Avoid:
 
-* Visible bouncing
-* Overshoot in clinical content
-* Spring motion in alerts
-* Spring motion for page sections
-* Spring motion in Patient safety content
+- Visible bouncing
+- Overshoot in clinical content
+- Spring motion in alerts
+- Spring motion for page sections
+- Spring motion in Patient safety content
 
 ---
 
@@ -534,10 +534,10 @@ Avoid large 80–200px entrance movements.
 
 Large movement can:
 
-* Disrupt reading
-* Create visual instability
-* Increase motion sensitivity
-* Make the interface feel theatrical
+- Disrupt reading
+- Create visual instability
+- Increase motion sensitivity
+- Make the interface feel theatrical
 
 ---
 
@@ -553,10 +553,10 @@ for ordinary content reveals.
 
 Full fade from `0` should be reserved for:
 
-* Overlay layers
-* Modals
-* Illustrative elements
-* Non-essential supporting visuals
+- Overlay layers
+- Modals
+- Illustrative elements
+- Non-essential supporting visuals
 
 Body text should not remain invisible while waiting for scroll activation.
 
@@ -573,11 +573,11 @@ Body text should not remain invisible while waiting for scroll activation.
 
 Rules:
 
-* Use a maximum of five staggered items per sequence
-* Large lists must not animate item by item
-* Navigation menus should use little or no stagger
-* Patient capability cards may use a short, calm stagger
-* Provider tables and lists should normally appear immediately
+- Use a maximum of five staggered items per sequence
+- Large lists must not animate item by item
+- Navigation menus should use little or no stagger
+- Patient capability cards may use a short, calm stagger
+- Provider tables and lists should normally appear immediately
 
 ---
 
@@ -593,10 +593,10 @@ Maximum recommended delay before visible motion:
 
 Avoid delays that:
 
-* Hold back essential content
-* Make the website feel unresponsive
-* Depend on users watching a full sequence
-* Accumulate across many elements
+- Hold back essential content
+- Make the website feel unresponsive
+- Depend on users watching a full sequence
+- Accumulate across many elements
 
 ---
 
@@ -608,23 +608,23 @@ Pages should render their essential content immediately.
 
 Permitted initial-load motion:
 
-* Header opacity transition
-* Hero illustration assembly
-* Short headline supporting-line reveal
-* Audience-selection-card emphasis
+- Header opacity transition
+- Hero illustration assembly
+- Short headline supporting-line reveal
+- Audience-selection-card emphasis
 
 ## 14.2 Prohibited Initial-Load Behavior
 
 Do not use:
 
-* Loading screens for ordinary pages
-* Logo intro sequences
-* Full-screen brand animation
-* Scroll lock during entry
-* Delayed navigation
-* Delayed CTA appearance
-* Long typewriter effects
-* Video autoplay with sound
+- Loading screens for ordinary pages
+- Logo intro sequences
+- Full-screen brand animation
+- Scroll lock during entry
+- Delayed navigation
+- Delayed CTA appearance
+- Long typewriter effects
+- Video autoplay with sound
 
 ---
 
@@ -634,19 +634,19 @@ The public website should not use elaborate route transitions by default.
 
 Recommended behavior:
 
-* Immediate route change
-* Browser-native scroll restoration
-* Short content opacity transition only when technically reliable
-* Clear focus movement to the new page heading
+- Immediate route change
+- Browser-native scroll restoration
+- Short content opacity transition only when technically reliable
+- Clear focus movement to the new page heading
 
 Route transitions must not:
 
-* Intercept browser navigation
-* delay page rendering
-* interfere with deep links
-* conceal loading failures
-* create scroll-position confusion
-* prevent screen-reader announcements
+- Intercept browser navigation
+- delay page rendering
+- interfere with deep links
+- conceal loading failures
+- create scroll-position confusion
+- prevent screen-reader announcements
 
 Shared-element transitions may be evaluated later but are not required for V1.
 
@@ -664,29 +664,29 @@ Scroll hijacking is prohibited.
 
 Do not:
 
-* Force one viewport per wheel event
-* lock scrolling to an animation timeline
-* convert vertical scroll into horizontal movement
-* require visitors to complete animation sequences
-* change scroll speed
-* trap visitors in pinned sections
+- Force one viewport per wheel event
+- lock scrolling to an animation timeline
+- convert vertical scroll into horizontal movement
+- require visitors to complete animation sequences
+- change scroll speed
+- trap visitors in pinned sections
 
 ## 16.3 Sticky Sections
 
 Sticky sections may be used for:
 
-* Short narrative comparison
-* Timeline explanation
-* Provider methodology diagram
-* Patient-Provider relationship
+- Short narrative comparison
+- Timeline explanation
+- Provider methodology diagram
+- Patient-Provider relationship
 
 Requirements:
 
-* The section must remain short
-* Mobile must receive a non-sticky alternative
-* Keyboard navigation must remain predictable
-* Reduced-motion users must receive a static layout
-* The pinned area must not prevent normal scrolling
+- The section must remain short
+- Mobile must receive a non-sticky alternative
+- Keyboard navigation must remain predictable
+- Reduced-motion users must receive a static layout
+- The pinned area must not prevent normal scrolling
 
 ---
 
@@ -703,12 +703,12 @@ Ease: standard
 
 Requirements:
 
-* Trigger once by default
-* Content remains available without JavaScript
-* Trigger before the element reaches the center of the viewport
-* Avoid repeatedly animating when scrolling up and down
-* Avoid animating every paragraph
-* Do not apply reveals to long clinical tables
+- Trigger once by default
+- Content remains available without JavaScript
+- Trigger before the element reaches the center of the viewport
+- Avoid repeatedly animating when scrolling up and down
+- Avoid animating every paragraph
+- Do not apply reveals to long clinical tables
 
 Recommended trigger threshold:
 
@@ -748,20 +748,20 @@ The CTA and headline must remain available immediately.
 
 Use:
 
-* Thin lines
-* Small data nodes
-* Controlled coral-to-mint transition
-* Subtle opacity
-* Limited depth
+- Thin lines
+- Small data nodes
+- Controlled coral-to-mint transition
+- Subtle opacity
+- Limited depth
 
 Avoid:
 
-* Glowing effects
-* Neural networks
-* Futuristic particles
-* Simulated medical alarms
-* Floating dashboards
-* Constant looping
+- Glowing effects
+- Neural networks
+- Futuristic particles
+- Simulated medical alarms
+- Floating dashboards
+- Constant looping
 
 ## 18.5 Looping
 
@@ -771,9 +771,9 @@ After completion, the illustration should remain static.
 
 A very subtle non-essential pulse may be used only if:
 
-* It does not resemble a clinical alert
-* It stops under reduced motion
-* It does not impair battery or performance
+- It does not resemble a clinical alert
+- It stops under reduced motion
+- It does not impair battery or performance
 
 ---
 
@@ -785,40 +785,40 @@ This is the primary ODRISC narrative animation.
 
 Display a small number of separated information elements, such as:
 
-* Weight record
-* Ultrasound measurement
-* Risk factor
-* Nutrition observation
-* Patient-reported information
-* Clinical review
+- Weight record
+- Ultrasound measurement
+- Risk factor
+- Nutrition observation
+- Patient-reported information
+- Clinical review
 
 ## 19.2 Transition
 
 The elements should:
 
-* Align gradually
-* Connect to a shared timeline
-* Maintain their identity
-* Avoid appearing to merge into an unexplained black box
+- Align gradually
+- Connect to a shared timeline
+- Maintain their identity
+- Avoid appearing to merge into an unexplained black box
 
 ## 19.3 Final State
 
 The final state should communicate:
 
-* Organization
-* Longitudinal relationship
-* Patient and Provider visibility
-* Explainable intelligence
+- Organization
+- Longitudinal relationship
+- Patient and Provider visibility
+- Explainable intelligence
 
 ## 19.4 Prohibited Meaning
 
 The sequence must not imply:
 
-* Automatic diagnosis
-* Guaranteed recognition
-* Real-time integration
-* Complete data capture
-* All features currently being available
+- Automatic diagnosis
+- Guaranteed recognition
+- Real-time integration
+- Complete data capture
+- All features currently being available
 
 Product-status wording should accompany conceptual animation where relevant.
 
@@ -842,11 +842,11 @@ Improved maternal and fetal outcomes
 
 ## 20.1 Animation Behavior
 
-* Reveal one stage at a time
-* Draw connectors in reading order
-* Keep all previous stages visible
-* Do not animate the outcome as guaranteed completion
-* Add supporting language that the chain represents intended product value
+- Reveal one stage at a time
+- Draw connectors in reading order
+- Keep all previous stages visible
+- Do not animate the outcome as guaranteed completion
+- Add supporting language that the chain represents intended product value
 
 ## 20.2 Duration
 
@@ -872,20 +872,20 @@ The Patient and Healthcare Provider choices must have equal visual importance.
 
 Both audience cards should be:
 
-* Visible
-* Fully readable
-* Equally sized
-* Keyboard accessible
+- Visible
+- Fully readable
+- Equally sized
+- Keyboard accessible
 
 ## 21.2 Hover and Focus
 
 Permitted response:
 
-* Border emphasis
-* 2–4px upward movement
-* Slight surface shift
-* Arrow movement of 4px
-* Illustration emphasis
+- Border emphasis
+- 2–4px upward movement
+- Slight surface shift
+- Arrow movement of 4px
+- Illustration emphasis
 
 Duration:
 
@@ -897,19 +897,19 @@ Duration:
 
 On selection:
 
-* Confirm the selected audience
-* Begin navigation immediately
-* Avoid a long card-expansion transition
-* Preserve accessibility announcements
+- Confirm the selected audience
+- Begin navigation immediately
+- Avoid a long card-expansion transition
+- Preserve accessibility announcements
 
 ## 21.4 Prohibited Behavior
 
-* One card auto-animating more strongly
-* Automatic audience selection
-* Continuous floating
-* Cards moving away from the pointer
-* Selection based only on hover
-* Different motion quality that suggests one audience is secondary
+- One card auto-animating more strongly
+- Automatic audience selection
+- Continuous floating
+- Cards moving away from the pointer
+- Selection based only on hover
+- Different motion quality that suggests one audience is secondary
 
 ---
 
@@ -917,30 +917,30 @@ On selection:
 
 Patient motion should be:
 
-* Slower
-* Simpler
-* More guided
-* Less dense
-* Calm
-* Reassuring
+- Slower
+- Simpler
+- More guided
+- Less dense
+- Calm
+- Reassuring
 
 Recommended characteristics:
 
-* Fewer simultaneous moving elements
-* Clear sequential reveals
-* Larger pauses between narrative steps
-* Minimal chart animation
-* Strong text explanation
-* Reduced use of hover-dependent behavior
+- Fewer simultaneous moving elements
+- Clear sequential reveals
+- Larger pauses between narrative steps
+- Minimal chart animation
+- Strong text explanation
+- Reduced use of hover-dependent behavior
 
 Patient motion should not:
 
-* Simulate clinical urgency
-* Flash risk colors
-* Use celebratory confetti
-* Gamify weight progress
-* Animate failure states aggressively
-* Create anxiety through constant monitoring cues
+- Simulate clinical urgency
+- Flash risk colors
+- Use celebratory confetti
+- Gamify weight progress
+- Animate failure states aggressively
+- Create anxiety through constant monitoring cues
 
 ---
 
@@ -948,29 +948,29 @@ Patient motion should not:
 
 Provider motion may be:
 
-* More compact
-* More information-dense
-* Faster
-* More interaction-led
-* Focused on comparison and relationships
+- More compact
+- More information-dense
+- Faster
+- More interaction-led
+- Focused on comparison and relationships
 
 Appropriate Provider motion:
 
-* Data-series emphasis
-* Layer filtering
-* Methodology-step transitions
-* Timeline comparison
-* Product-workflow reveal
-* Detail-on-demand
+- Data-series emphasis
+- Layer filtering
+- Methodology-step transitions
+- Timeline comparison
+- Product-workflow reveal
+- Detail-on-demand
 
 Provider motion must not:
 
-* Make evidence appear stronger
-* exaggerate trends
-* hide missing data
-* imply live monitoring
-* create dashboard spectacle
-* animate every metric
+- Make evidence appear stronger
+- exaggerate trends
+- hide missing data
+- imply live monitoring
+- create dashboard spectacle
+- animate every metric
 
 ---
 
@@ -982,16 +982,16 @@ Timelines are core ODRISC motion components.
 
 Use for:
 
-* Pregnancy journey
-* Product journey
-* Data-to-intelligence story
-* Patient-Provider collaboration
+- Pregnancy journey
+- Product journey
+- Data-to-intelligence story
+- Patient-Provider collaboration
 
 Recommended animation:
 
-* Progress line extends
-* Milestones become active in sequence
-* Supporting content appears near the active milestone
+- Progress line extends
+- Milestones become active in sequence
+- Supporting content appears near the active milestone
 
 ## 24.2 Clinical Timeline Preview
 
@@ -999,11 +999,11 @@ Use for Provider product previews.
 
 Requirements:
 
-* Dates and gestational ages remain visible
-* Data points do not move from their true position
-* Missing data remains visually missing
-* Hover or focus may reveal detail
-* Animation must not imply newly arriving real-time data
+- Dates and gestational ages remain visible
+- Data points do not move from their true position
+- Missing data remains visually missing
+- Hover or focus may reveal detail
+- Animation must not imply newly arriving real-time data
 
 ## 24.3 Mobile
 
@@ -1011,10 +1011,10 @@ Timelines should normally become vertical on mobile.
 
 Horizontal timeline scrolling should be used only when:
 
-* Labels remain readable
-* Swipe is not the only control
-* Keyboard controls exist
-* The chronology remains clear
+- Labels remain readable
+- Swipe is not the only control
+- Keyboard controls exist
+- The chronology remains clear
 
 ---
 
@@ -1024,11 +1024,11 @@ Horizontal timeline scrolling should be used only when:
 
 Permitted:
 
-* Line draws from earliest to latest point
-* Bars grow from the true baseline
-* Data points fade in
-* Reference range appears before patient series
-* Selected series becomes emphasized
+- Line draws from earliest to latest point
+- Bars grow from the true baseline
+- Data points fade in
+- Reference range appears before patient series
+- Selected series becomes emphasized
 
 ## 25.2 Chart Duration
 
@@ -1042,31 +1042,31 @@ Recommended:
 
 Chart animation must:
 
-* Preserve scale
-* Preserve baseline
-* Preserve chronology
-* Avoid overshoot
-* Avoid bouncing data points
-* Avoid smoothing not present in the data
-* Avoid hiding negative or adverse values
-* Avoid auto-playing repeatedly
+- Preserve scale
+- Preserve baseline
+- Preserve chronology
+- Avoid overshoot
+- Avoid bouncing data points
+- Avoid smoothing not present in the data
+- Avoid hiding negative or adverse values
+- Avoid auto-playing repeatedly
 
 ## 25.4 Numeric Counting
 
 Animated counting may be used for:
 
-* Non-clinical company metrics
-* Rounded market summaries
-* High-level platform quantities
+- Non-clinical company metrics
+- Rounded market summaries
+- High-level platform quantities
 
 Do not use counting animation for:
 
-* Clinical measurements
-* Risk percentages
-* Patient values
-* Validation results
-* Pricing
-* Exact medical statistics
+- Clinical measurements
+- Risk percentages
+- Patient values
+- Validation results
+- Pricing
+- Exact medical statistics
 
 Exact values should appear immediately.
 
@@ -1074,10 +1074,10 @@ Exact values should appear immediately.
 
 When chart filters change:
 
-* Preserve axes when comparison matters
-* Animate opacity rather than repositioning aggressively
-* Announce updated content to assistive technology
-* Provide a non-animated reduced-motion state
+- Preserve axes when comparison matters
+- Animate opacity rather than repositioning aggressively
+- Announce updated content to assistive technology
+- Provide a non-animated reduced-motion state
 
 ---
 
@@ -1085,19 +1085,19 @@ When chart filters change:
 
 Product previews may animate:
 
-* Timeline progression
-* Tab changes
-* Information-layer selection
-* Report-to-structured-data concept
-* Patient-to-Provider handoff
-* Summary generation
+- Timeline progression
+- Tab changes
+- Information-layer selection
+- Report-to-structured-data concept
+- Patient-to-Provider handoff
+- Summary generation
 
 Each preview must state whether it is:
 
-* Current
-* Prototype
-* Concept
-* In development
+- Current
+- Prototype
+- Concept
+- In development
 
 Animations must not make concept functionality appear operational.
 
@@ -1121,17 +1121,17 @@ Longitudinal timeline
 
 The sequence must explicitly preserve:
 
-* Human verification
-* Data-validation step
-* Error possibility
-* Product-status label
+- Human verification
+- Data-validation step
+- Error possibility
+- Product-status label
 
 Avoid:
 
-* Instant flawless scanning
-* Automated clinical interpretation
-* Report values entering the clinical record without review
-* Artificial scanning lasers
+- Instant flawless scanning
+- Automated clinical interpretation
+- Report values entering the clinical record without review
+- Artificial scanning lasers
 
 ---
 
@@ -1141,9 +1141,9 @@ Avoid:
 
 Permitted:
 
-* Active underline transition
-* Dropdown fade and short vertical shift
-* CTA hover response
+- Active underline transition
+- Dropdown fade and short vertical shift
+- CTA hover response
 
 Recommended dropdown:
 
@@ -1165,11 +1165,11 @@ Ease: enter
 
 Requirements:
 
-* Focus enters the drawer
-* Background becomes inert
-* Motion reverses on close
-* reduced-motion mode uses immediate appearance
-* opening does not move underlying page content
+- Focus enters the drawer
+- Background becomes inert
+- Motion reverses on close
+- reduced-motion mode uses immediate appearance
+- opening does not move underlying page content
 
 ## 28.3 Sticky Header
 
@@ -1183,10 +1183,10 @@ Avoid dramatic header compression.
 
 The audience switch should:
 
-* Confirm the alternate audience
-* Navigate promptly
-* Avoid morphing the entire website before route change
-* Preserve orientation through consistent header structure
+- Confirm the alternate audience
+- Navigate promptly
+- Avoid morphing the entire website before route change
+- Preserve orientation through consistent header structure
 
 Where equivalent pages exist, a short crossfade may be used.
 
@@ -1204,11 +1204,11 @@ Maximum duration:
 
 Permitted:
 
-* Background shift
-* Border shift
-* Arrow translation of 4px
-* Elevation change using `shadow-xs`
-* Scale up to a maximum of `1.01`
+- Background shift
+- Border shift
+- Arrow translation of 4px
+- Elevation change using `shadow-xs`
+- Scale up to a maximum of `1.01`
 
 ## 30.2 Active
 
@@ -1223,11 +1223,11 @@ Duration: 100ms
 
 Loading state must:
 
-* Preserve button dimensions
-* Show a visible progress indicator
-* Retain or replace the label clearly
-* Prevent duplicate submission
-* Announce loading state
+- Preserve button dimensions
+- Show a visible progress indicator
+- Retain or replace the label clearly
+- Prevent duplicate submission
+- Announce loading state
 
 Avoid indefinite spinners without explanation.
 
@@ -1243,16 +1243,16 @@ Do not use celebratory animation.
 
 Inline links may animate:
 
-* Underline thickness
-* Underline offset
-* Arrow movement
+- Underline thickness
+- Underline offset
+- Arrow movement
 
 Avoid:
 
-* Text jumping
-* Large horizontal shifts
-* color-only hover
-* underline animations that reduce readability
+- Text jumping
+- Large horizontal shifts
+- color-only hover
+- underline animations that reduce readability
 
 ---
 
@@ -1269,12 +1269,12 @@ Duration: 160–240ms
 
 Cards should not:
 
-* Tilt
-* rotate
-* use 3D perspective
-* continuously float
-* scale beyond `1.01`
-* shift surrounding layout
+- Tilt
+- rotate
+- use 3D perspective
+- continuously float
+- scale beyond `1.01`
+- shift surrounding layout
 
 Clinical evidence and validation cards should remain particularly stable.
 
@@ -1284,9 +1284,9 @@ Clinical evidence and validation cards should remain particularly stable.
 
 Recommended:
 
-* Height or grid-row expansion
-* Content opacity transition
-* Chevron rotation
+- Height or grid-row expansion
+- Content opacity transition
+- Chevron rotation
 
 Duration:
 
@@ -1296,10 +1296,10 @@ Duration:
 
 Requirements:
 
-* State changes immediately for assistive technology
-* Essential content remains accessible
-* Motion does not delay keyboard interaction
-* Reduced-motion mode opens instantly
+- State changes immediately for assistive technology
+- Essential content remains accessible
+- Motion does not delay keyboard interaction
+- Reduced-motion mode opens instantly
 
 ---
 
@@ -1307,9 +1307,9 @@ Requirements:
 
 Permitted:
 
-* Selected indicator movement
-* Short content fade
-* Minimal horizontal transition where direction is meaningful
+- Selected indicator movement
+- Short content fade
+- Minimal horizontal transition where direction is meaningful
 
 Duration:
 
@@ -1340,10 +1340,10 @@ Duration: 160–240ms
 
 Requirements:
 
-* Focus management is immediate
-* Content is not delayed
-* reduced-motion mode removes scaling
-* modal motion must not resemble zooming into clinical imagery
+- Focus management is immediate
+- Content is not delayed
+- reduced-motion mode removes scaling
+- modal motion must not resemble zooming into clinical imagery
 
 ---
 
@@ -1367,35 +1367,35 @@ Tooltips must not contain essential safety or clinical information.
 
 Use:
 
-* Border change
-* Error-icon appearance
-* Short message reveal
-* Focus movement to error summary on submission
+- Border change
+- Error-icon appearance
+- Short message reveal
+- Focus movement to error summary on submission
 
 Avoid:
 
-* Shaking fields
-* Flashing
-* bouncing
-* red pulsing
+- Shaking fields
+- Flashing
+- bouncing
+- red pulsing
 
 ## 37.2 Success
 
 Use:
 
-* Calm confirmation icon
-* Short opacity transition
-* Clear next step
+- Calm confirmation icon
+- Short opacity transition
+- Clear next step
 
 ## 37.3 Multi-Step Forms
 
 Step transitions should:
 
-* Preserve progress context
-* Keep completed information accessible
-* Use a maximum of 240ms
-* move in a direction consistent with progression
-* work without animation
+- Preserve progress context
+- Keep completed information accessible
+- Use a maximum of 240ms
+- move in a direction consistent with progression
+- work without animation
 
 ---
 
@@ -1405,20 +1405,20 @@ Step transitions should:
 
 Use:
 
-* Immediate page structure
-* Skeletons for known content shapes
-* Determinate progress when progress is measurable
-* Static fallback after a reasonable period
+- Immediate page structure
+- Skeletons for known content shapes
+- Determinate progress when progress is measurable
+- Static fallback after a reasonable period
 
 ## 38.2 Skeletons
 
 Skeletons must:
 
-* Match the expected layout
-* Avoid strong shimmer
-* stop under reduced motion
-* not continue indefinitely
-* avoid suggesting real patient data
+- Match the expected layout
+- Avoid strong shimmer
+- stop under reduced motion
+- not continue indefinitely
+- avoid suggesting real patient data
 
 A subtle opacity pulse may be used.
 
@@ -1426,9 +1426,9 @@ A subtle opacity pulse may be used.
 
 Use for:
 
-* Short unknown waits
-* Button submission
-* Small component loading
+- Short unknown waits
+- Button submission
+- Small component loading
 
 Do not use spinners as the only explanation for long processes.
 
@@ -1440,19 +1440,19 @@ Success motion should communicate completion without gamification.
 
 Appropriate:
 
-* Check icon drawing once
-* Message fade-in
-* Progress step becoming complete
-* Calm color transition
+- Check icon drawing once
+- Message fade-in
+- Progress step becoming complete
+- Calm color transition
 
 Avoid:
 
-* Confetti
-* fireworks
-* bouncing icons
-* loud sound
-* gamified health rewards
-* celebratory motion for clinical risk results
+- Confetti
+- fireworks
+- bouncing icons
+- loud sound
+- gamified health rewards
+- celebratory motion for clinical risk results
 
 ---
 
@@ -1460,25 +1460,25 @@ Avoid:
 
 Error motion must be:
 
-* Direct
-* Stable
-* Specific
-* recovery-oriented
+- Direct
+- Stable
+- Specific
+- recovery-oriented
 
 Use:
 
-* Error message appearance
-* focus movement
-* semantic color
-* clear icon
+- Error message appearance
+- focus movement
+- semantic color
+- clear icon
 
 Avoid:
 
-* Shake animation
-* repeated pulsing
-* dramatic red expansion
-* alarm sound
-* animated warning borders
+- Shake animation
+- repeated pulsing
+- dramatic red expansion
+- alarm sound
+- animated warning borders
 
 ---
 
@@ -1488,20 +1488,20 @@ Clinical-risk states should normally be static.
 
 Permitted motion:
 
-* One-time state reveal
-* Expanding explanation
-* Focus transition
-* clear escalation pathway
+- One-time state reveal
+- Expanding explanation
+- Focus transition
+- clear escalation pathway
 
 Prohibited:
 
-* Blinking
-* pulsing red
-* heartbeat animation
-* siren-like motion
-* countdown
-* repeated vibration
-* urgent animation without clinical necessity
+- Blinking
+- pulsing red
+- heartbeat animation
+- siren-like motion
+- countdown
+- repeated vibration
+- urgent animation without clinical necessity
 
 The website must not simulate a regulated medical alarm system.
 
@@ -1515,10 +1515,10 @@ Status changes during filtering may use a short fade.
 
 Do not animate:
 
-* Pilot
-* In validation
-* In development
-* Planned
+- Pilot
+- In validation
+- In development
+- Planned
 
 in ways that suggest progress toward availability unless actual progress data is being shown.
 
@@ -1530,9 +1530,9 @@ The public website must not use automatic sound.
 
 Sound may only be considered for:
 
-* User-initiated video
-* User-controlled educational media
-* Future accessibility-supported functionality
+- User-initiated video
+- User-controlled educational media
+- Future accessibility-supported functionality
 
 Sound must never be required to understand a state.
 
@@ -1546,12 +1546,12 @@ Autoplay video should generally be avoided.
 
 When used:
 
-* Muted
-* No essential spoken information
-* Pausable
-* No rapid movement
-* Optimized
-* reduced-motion alternative provided
+- Muted
+- No essential spoken information
+- Pausable
+- No rapid movement
+- Optimized
+- reduced-motion alternative provided
 
 ## 44.2 Animated GIFs
 
@@ -1559,28 +1559,28 @@ Avoid animated GIFs.
 
 Prefer:
 
-* HTML/CSS
-* SVG
-* Canvas where justified
-* Optimized video
-* Lottie only when approved
+- HTML/CSS
+- SVG
+- Canvas where justified
+- Optimized video
+- Lottie only when approved
 
 GIFs often create:
 
-* Large files
-* poor controls
-* inaccessible loops
-* reduced-motion problems
+- Large files
+- poor controls
+- inaccessible loops
+- reduced-motion problems
 
 ## 44.3 Lottie
 
 Lottie may be used only when:
 
-* File size is justified
-* Motion is not essential
-* Reduced-motion alternative exists
-* Animation does not contain inaccessible embedded text
-* Source and license are approved
+- File size is justified
+- Motion is not essential
+- Reduced-motion alternative exists
+- Animation does not contain inaccessible embedded text
+- Source and license are approved
 
 ---
 
@@ -1590,19 +1590,19 @@ Lottie may be used only when:
 
 Prefer:
 
-* `transform`
-* `opacity`
+- `transform`
+- `opacity`
 
 Avoid animating:
 
-* `width`
-* `height`, where a performant alternative exists
-* `top`
-* `left`
-* `box-shadow` at high frequency
-* large filters
-* background blur
-* layout-heavy properties
+- `width`
+- `height`, where a performant alternative exists
+- `top`
+- `left`
+- `box-shadow` at high frequency
+- large filters
+- background blur
+- layout-heavy properties
 
 ## 45.2 Frame Rate
 
@@ -1612,20 +1612,20 @@ Motion should target smooth rendering without requiring high-end hardware.
 
 Motion must be tested on:
 
-* Mid-range mobile devices
-* Mobile networks
-* Lower-power modes
-* Safari on iOS
-* Chrome on Android
+- Mid-range mobile devices
+- Mobile networks
+- Lower-power modes
+- Safari on iOS
+- Chrome on Android
 
 ## 45.4 Animation Budget
 
 Recommended page limits:
 
-* One major narrative animation above the fold
-* No more than two additional section-level sequences per page
-* Microinteractions as needed
-* No continuous full-page ambient animation
+- One major narrative animation above the fold
+- No more than two additional section-level sequences per page
+- Microinteractions as needed
+- No continuous full-page ambient animation
 
 ## 45.5 Bundle Impact
 
@@ -1639,11 +1639,11 @@ Animation must not require loading large libraries for a single effect.
 
 Essential content and actions must remain available when:
 
-* JavaScript is delayed
-* Motion library fails
-* Intersection Observer is unavailable
-* Browser performance is constrained
-* Reduced motion is enabled
+- JavaScript is delayed
+- Motion library fails
+- Intersection Observer is unavailable
+- Browser performance is constrained
+- Reduced motion is enabled
 
 Animation is an enhancement.
 
@@ -1656,40 +1656,40 @@ It is not the content delivery mechanism.
 The website must support:
 
 ```css
-@media (prefers-reduced-motion: reduce)
+@media (prefers-reduced-motion: reduce);
 ```
 
 ## 47.1 Reduced-Motion Default
 
 When reduced motion is requested:
 
-* Set non-essential durations to `0–100ms`
-* Remove parallax
-* Remove stagger
-* Remove line-drawing sequences
-* Remove scale and large translation
-* Stop looping animation
-* Display final illustration state
-* Preserve opacity only where necessary for state clarity
+- Set non-essential durations to `0–100ms`
+- Remove parallax
+- Remove stagger
+- Remove line-drawing sequences
+- Remove scale and large translation
+- Stop looping animation
+- Display final illustration state
+- Preserve opacity only where necessary for state clarity
 
 ## 47.2 Content Equivalence
 
 Reduced-motion users must receive:
 
-* The same content
-* The same hierarchy
-* The same data
-* The same CTA
-* The same validation information
-* The same success and error feedback
+- The same content
+- The same hierarchy
+- The same data
+- The same CTA
+- The same validation information
+- The same success and error feedback
 
 ## 47.3 Manual Motion Control
 
 Long or user-initiated animations should provide:
 
-* Pause
-* Replay where meaningful
-* Static alternative where needed
+- Pause
+- Replay where meaningful
+- Static alternative where needed
 
 ---
 
@@ -1697,15 +1697,15 @@ Long or user-initiated animations should provide:
 
 Avoid:
 
-* Full-screen zooming
-* large background movement
-* rotational motion
-* rapid parallax
-* perspective shifts
-* moving patterns
-* repeated diagonal movement
-* fast scale changes
-* simultaneous motion across the viewport
+- Full-screen zooming
+- large background movement
+- rotational motion
+- rapid parallax
+- perspective shifts
+- moving patterns
+- repeated diagonal movement
+- fast scale changes
+- simultaneous motion across the viewport
 
 Movement over 40px should be rare and carefully reviewed.
 
@@ -1717,14 +1717,14 @@ Mobile motion should be simpler than desktop motion.
 
 Requirements:
 
-* Reduce simultaneous animated elements
-* Avoid hover-dependent meaning
-* Avoid pinned narrative sections
-* Use vertical timeline movement
-* Reduce distance
-* Reduce duration where interaction speed matters
-* Preserve battery and data usage
-* Avoid videos as essential content
+- Reduce simultaneous animated elements
+- Avoid hover-dependent meaning
+- Avoid pinned narrative sections
+- Use vertical timeline movement
+- Reduce distance
+- Reduce duration where interaction speed matters
+- Preserve battery and data usage
+- Avoid videos as essential content
 
 ---
 
@@ -1736,19 +1736,19 @@ Motion direction must follow meaning, not mechanical mirroring.
 
 Mirror where appropriate:
 
-* Drawer direction
-* Navigation chevrons
-* Next and previous controls
-* Inline directional arrows
-* Audience-menu expansion
+- Drawer direction
+- Navigation chevrons
+- Next and previous controls
+- Inline directional arrows
+- Audience-menu expansion
 
 ## 50.2 Chronological Direction
 
 Clinical and pregnancy timelines may remain left-to-right when:
 
-* Chronology is conventionally represented that way
-* Mixed numerical data requires it
-* clinical review confirms clarity
+- Chronology is conventionally represented that way
+- Mixed numerical data requires it
+- clinical review confirms clarity
 
 The surrounding labels and reading order must still support RTL.
 
@@ -1762,12 +1762,12 @@ It should not be mirrored when coral and mint have a fixed semantic role within 
 
 Every animated component must be reviewed for:
 
-* RTL entry and exit direction
-* Arabic label length
-* Mixed Arabic and English content
-* Number and unit orientation
-* Chart progression
-* reduced motion
+- RTL entry and exit direction
+- Arabic label length
+- Mixed Arabic and English content
+- Number and unit orientation
+- Chart progression
+- reduced motion
 
 ---
 
@@ -1775,14 +1775,14 @@ Every animated component must be reviewed for:
 
 Every animated interaction must support:
 
-* Keyboard use
-* Screen-reader state announcements
-* Focus continuity
-* Pause where necessary
-* Reduced motion
-* No flashing
-* No color-only state
-* No motion-only meaning
+- Keyboard use
+- Screen-reader state announcements
+- Focus continuity
+- Pause where necessary
+- Reduced motion
+- No flashing
+- No color-only state
+- No motion-only meaning
 
 Content revealed by animation must exist in the accessibility tree at the appropriate time.
 
@@ -1796,15 +1796,15 @@ Where the website uses React, a component motion library such as Motion may be u
 
 Implementation must:
 
-* Centralize motion tokens
-* Avoid inline arbitrary values
-* Use shared motion utilities
-* respect reduced motion globally
-* avoid duplicate viewport observers
-* clean up listeners
-* avoid layout thrashing
-* support server rendering
-* preserve semantic HTML
+- Centralize motion tokens
+- Avoid inline arbitrary values
+- Use shared motion utilities
+- respect reduced motion globally
+- avoid duplicate viewport observers
+- clean up listeners
+- avoid layout thrashing
+- support server rendering
+- preserve semantic HTML
 
 ---
 
@@ -1835,22 +1835,22 @@ Do not create a separate animation implementation for each page.
 
 Every major animated feature must document:
 
-* Motion ID
-* Page ID
-* Purpose
-* Trigger
-* Starting state
-* Ending state
-* Duration
-* Easing
-* Delay
-* Responsive behavior
-* Reduced-motion alternative
-* Accessibility behavior
-* Performance considerations
-* Product-status implications
-* Test cases
-* Owner
+- Motion ID
+- Page ID
+- Purpose
+- Trigger
+- Starting state
+- Ending state
+- Duration
+- Easing
+- Delay
+- Responsive behavior
+- Reduced-motion alternative
+- Accessibility behavior
+- Performance considerations
+- Product-status implications
+- Test cases
+- Owner
 
 ---
 
@@ -1886,95 +1886,95 @@ Motion IDs should remain stable if visual implementation changes.
 
 Purpose:
 
-* Introduce fragmented information becoming connected
+- Introduce fragmented information becoming connected
 
 Status:
 
-* Approved in principle
+- Approved in principle
 
 Reduced-motion state:
 
-* Final connected illustration displayed immediately
+- Final connected illustration displayed immediately
 
 ## MOT-SHR-002 — Audience Card Interaction
 
 Purpose:
 
-* Reinforce equal Patient and Provider selections
+- Reinforce equal Patient and Provider selections
 
 Status:
 
-* Approved
+- Approved
 
 ## MOT-PAT-001 — Patient Journey Timeline
 
 Purpose:
 
-* Explain pregnancy progression in a calm sequence
+- Explain pregnancy progression in a calm sequence
 
 Status:
 
-* Conditional by page design
+- Conditional by page design
 
 ## MOT-PRO-001 — Clinical Data-to-Intelligence Flow
 
 Purpose:
 
-* Explain Provider platform logic
+- Explain Provider platform logic
 
 Status:
 
-* Approved in principle
+- Approved in principle
 
 ## MOT-PRO-002 — Provider Workflow Sequence
 
 Purpose:
 
-* Explain Patient onboarding, data capture, review, and action
+- Explain Patient onboarding, data capture, review, and action
 
 Status:
 
-* Approved in principle
+- Approved in principle
 
 ## MOT-DAT-001 — Longitudinal Line Reveal
 
 Purpose:
 
-* Explain trajectory across time
+- Explain trajectory across time
 
 Status:
 
-* Approved with clinical-integrity review
+- Approved with clinical-integrity review
 
 ## MOT-CMP-001 — Accordion Transition
 
 Purpose:
 
-* Reveal optional information
+- Reveal optional information
 
 Status:
 
-* Approved
+- Approved
 
 ## MOT-CMP-002 — Mobile Navigation Drawer
 
 Purpose:
 
-* Preserve orientation on mobile
+- Preserve orientation on mobile
 
 Status:
 
-* Approved
+- Approved
 
 ## MOT-FDB-001 — Form Submission Feedback
 
 Purpose:
 
-* Communicate loading, success, and failure
+- Communicate loading, success, and failure
 
 Status:
 
-* Approved
+- Approved
 
 ---
 
@@ -1984,45 +1984,45 @@ Every animation must be tested for:
 
 ## 57.1 Purpose
 
-* Does the motion explain something?
-* Is the purpose still clear when motion is disabled?
-* Does it support the page story?
+- Does the motion explain something?
+- Is the purpose still clear when motion is disabled?
+- Does it support the page story?
 
 ## 57.2 Accessibility
 
-* Is reduced motion supported?
-* Does focus remain correct?
-* Is state announced?
-* Is meaning available without motion?
-* Is flashing absent?
+- Is reduced motion supported?
+- Does focus remain correct?
+- Is state announced?
+- Is meaning available without motion?
+- Is flashing absent?
 
 ## 57.3 Performance
 
-* Does it use transform and opacity where possible?
-* Does it remain smooth on mobile?
-* Does it avoid layout shift?
-* Is bundle impact justified?
-* Does it stop when offscreen?
+- Does it use transform and opacity where possible?
+- Does it remain smooth on mobile?
+- Does it avoid layout shift?
+- Is bundle impact justified?
+- Does it stop when offscreen?
 
 ## 57.4 Product Accuracy
 
-* Does motion imply a capability that does not exist?
-* Is the product-preview status clear?
-* Is clinical meaning preserved?
-* Is uncertainty represented honestly?
+- Does motion imply a capability that does not exist?
+- Is the product-preview status clear?
+- Is clinical meaning preserved?
+- Is uncertainty represented honestly?
 
 ## 57.5 Audience
 
-* Is Patient motion calm enough?
-* Is Provider motion efficient enough?
-* Does the experience remain one ODRISC brand?
+- Is Patient motion calm enough?
+- Is Provider motion efficient enough?
+- Does the experience remain one ODRISC brand?
 
 ## 57.6 Localization
 
-* Does RTL direction make sense?
-* Do Arabic labels fit?
-* Does chronology remain understandable?
-* Does the reduced-motion version remain equivalent?
+- Does RTL direction make sense?
+- Do Arabic labels fit?
+- Does chronology remain understandable?
+- Does the reduced-motion version remain equivalent?
 
 ---
 
@@ -2030,32 +2030,32 @@ Every animation must be tested for:
 
 ODRISC must not use:
 
-* Scroll hijacking
-* Full-screen intro loaders
-* Mandatory logo animation
-* Constant floating cards
-* Aggressive parallax
-* Rapid zoom
-* Repeated pulsing
-* Blinking clinical states
-* Shaking error fields
-* Confetti
-* Fireworks
-* Gamified health progress
-* Hover-only content
-* Typewriter animation for important text
-* Long card staggers
-* Count-up animation for clinical values
-* Autoplay video with sound
-* Looping animated dashboards
-* Artificial heartbeat animation
-* Neural-network particle effects
-* Robot or AI-brain animation
-* Animation that delays CTAs
-* Animation that blocks scrolling
-* Animation that implies real-time monitoring
-* Motion that hides Product Status
-* Motion that makes concept screens appear operational
+- Scroll hijacking
+- Full-screen intro loaders
+- Mandatory logo animation
+- Constant floating cards
+- Aggressive parallax
+- Rapid zoom
+- Repeated pulsing
+- Blinking clinical states
+- Shaking error fields
+- Confetti
+- Fireworks
+- Gamified health progress
+- Hover-only content
+- Typewriter animation for important text
+- Long card staggers
+- Count-up animation for clinical values
+- Autoplay video with sound
+- Looping animated dashboards
+- Artificial heartbeat animation
+- Neural-network particle effects
+- Robot or AI-brain animation
+- Animation that delays CTAs
+- Animation that blocks scrolling
+- Animation that implies real-time monitoring
+- Motion that hides Product Status
+- Motion that makes concept screens appear operational
 
 ---
 
@@ -2086,35 +2086,35 @@ When removal does not reduce understanding, the animation should normally be rem
 
 A designated design or frontend owner must maintain:
 
-* Motion tokens
-* Motion primitives
-* Motion QA
-* Reduced-motion behavior
-* Motion documentation
-* Performance review
+- Motion tokens
+- Motion primitives
+- Motion QA
+- Reduced-motion behavior
+- Motion documentation
+- Performance review
 
 ## 60.2 Change Categories
 
 ### Patch
 
-* Minor duration correction
-* Easing correction
-* Accessibility fix
-* Documentation clarification
+- Minor duration correction
+- Easing correction
+- Accessibility fix
+- Documentation clarification
 
 ### Minor
 
-* New approved motion primitive
-* New component transition
-* New narrative sequence
+- New approved motion primitive
+- New component transition
+- New narrative sequence
 
 ### Major
 
-* New route-transition system
-* New global scroll behavior
-* New ambient-motion system
-* Major token changes
-* Animation affecting clinical interpretation
+- New route-transition system
+- New global scroll behavior
+- New ambient-motion system
+- Major token changes
+- Animation affecting clinical interpretation
 
 ## 60.3 Change Requirements
 
@@ -2155,20 +2155,20 @@ Before generating or implementing motion, AI agents must:
 
 AI agents must not:
 
-* Add motion merely for visual polish
-* Create scroll hijacking
-* Add arbitrary durations or easing
-* Animate every section
-* Use motion to conceal loading
-* animate clinical values theatrically
-* use pulsing clinical-warning states
-* create a long intro sequence
-* add autoplay sound
-* add a new motion library without approval
-* make unavailable features appear operational
-* omit reduced-motion behavior
-* rely on hover for essential content
-* implement concept animation without labeling its status
+- Add motion merely for visual polish
+- Create scroll hijacking
+- Add arbitrary durations or easing
+- Animate every section
+- Use motion to conceal loading
+- animate clinical values theatrically
+- use pulsing clinical-warning states
+- create a long intro sequence
+- add autoplay sound
+- add a new motion library without approval
+- make unavailable features appear operational
+- omit reduced-motion behavior
+- rely on hover for essential content
+- implement concept animation without labeling its status
 
 ---
 
@@ -2213,26 +2213,26 @@ The following are approved V1 decisions:
 
 The following remain unresolved:
 
-* Which P0 pages receive section-level narrative animation?
-* Is the shared hero animation implemented with SVG, CSS, Canvas, video, or another method?
-* Which parts of the eight-part website story receive animation?
-* Does the shared entry hero animate on every visit or only the first visit?
-* Is animation replay available?
-* Which Provider charts are animated in the public release?
-* Which Patient progress visualizations are animated?
-* Does the Provider workflow use a scroll-triggered sequence or static steps?
-* Are product previews interactive or pre-rendered?
-* Is Lottie permitted for selected illustrations?
-* Which motion library is approved in the Technical Stack?
-* What motion-performance budget is adopted?
-* Which devices form the motion QA test matrix?
-* Which animations require formal Patient usability testing?
-* Which animations require Provider usability testing?
-* Which diagrams retain left-to-right chronology on Arabic pages?
-* Who owns final motion approval?
-* Who owns reduced-motion QA?
-* How are motion regressions tested automatically?
-* Will route transitions be reconsidered after V1?
+- Which P0 pages receive section-level narrative animation?
+- Is the shared hero animation implemented with SVG, CSS, Canvas, video, or another method?
+- Which parts of the eight-part website story receive animation?
+- Does the shared entry hero animate on every visit or only the first visit?
+- Is animation replay available?
+- Which Provider charts are animated in the public release?
+- Which Patient progress visualizations are animated?
+- Does the Provider workflow use a scroll-triggered sequence or static steps?
+- Are product previews interactive or pre-rendered?
+- Is Lottie permitted for selected illustrations?
+- Which motion library is approved in the Technical Stack?
+- What motion-performance budget is adopted?
+- Which devices form the motion QA test matrix?
+- Which animations require formal Patient usability testing?
+- Which animations require Provider usability testing?
+- Which diagrams retain left-to-right chronology on Arabic pages?
+- Who owns final motion approval?
+- Who owns reduced-motion QA?
+- How are motion regressions tested automatically?
+- Will route transitions be reconsidered after V1?
 
 These questions must remain in:
 
@@ -2264,14 +2264,14 @@ Provider motion should feel efficient, structured, and clinically disciplined.
 
 All motion must remain:
 
-* Purposeful
-* Restrained
-* Accessible
-* Performant
-* Mobile-ready
-* RTL-aware
-* Product-status accurate
-* Clinically responsible
+- Purposeful
+- Restrained
+- Accessible
+- Performant
+- Mobile-ready
+- RTL-aware
+- Product-status accurate
+- Clinically responsible
 
 Motion should make ODRISC easier to understand, never harder to use.
 

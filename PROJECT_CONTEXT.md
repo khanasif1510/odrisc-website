@@ -11,14 +11,14 @@
 
 ---
 
-## Canonical Product and Website Documents 
+## Canonical Product and Website Documents
 
-The following documents define the approved product and website direction: 
+The following documents define the approved product and website direction:
 
-- `docs/product/PRODUCT_VISION.md` - Defines what ODRISC is becoming and the principles governing product evolution. 
-- `docs/product/AUDIENCE.md` - Defines the Patient and Healthcare Provider audiences, their needs, journeys, and conversion requirements. 
+- `docs/product/PRODUCT_VISION.md` - Defines what ODRISC is becoming and the principles governing product evolution.
+- `docs/product/AUDIENCE.md` - Defines the Patient and Healthcare Provider audiences, their needs, journeys, and conversion requirements.
 - `docs/product/WEBSITE_OBJECTIVES.md` - Defines what the public ODRISC website must accomplish across audience routing, communication, trust, conversion, accessibility, localization, privacy, performance, and governance.
-- `docs/product/WEBSITE_STORY.md` - Defines the canonical public narrative, the shared story architecture, and the Patient and Provider narrative progression. 
+- `docs/product/WEBSITE_STORY.md` - Defines the canonical public narrative, the shared story architecture, and the Patient and Provider narrative progression.
 - `docs/product/PRD.md` - Defines the functional, content, experience, technical, operational, and acceptance requirements for the website at `odrisc.com`.
 - `docs/product/PRODUCT_STATUS.md` - Defines the approved maturity and public communication status of every product capability.
 - `docs/product/INFORMATION_ARCHITECTURE.md` - Defines the canonical website hierarchy, sitemap, URL model, navigation, audience switching, shared-page structure, resource taxonomy, and localization-ready route architecture.
@@ -40,28 +40,28 @@ This document provides the canonical context for the design, content, developmen
 
 It must be read before:
 
-* Defining the website architecture
-* Writing website content
-* Creating page layouts
-* Designing components
-* Generating visual assets
-* Implementing frontend code
-* Adding animations
-* Configuring analytics
-* Planning search engine optimization
-* Integrating forms, dashboards, portals, or clinical workflows
-* Using an AI coding or design assistant within this repository
+- Defining the website architecture
+- Writing website content
+- Creating page layouts
+- Designing components
+- Generating visual assets
+- Implementing frontend code
+- Adding animations
+- Configuring analytics
+- Planning search engine optimization
+- Integrating forms, dashboards, portals, or clinical workflows
+- Using an AI coding or design assistant within this repository
 
 This document exists to ensure that every human contributor and AI agent understands:
 
-* What ODRISC is
-* Why ODRISC exists
-* Who the website serves
-* How the website must be structured
-* How the Patient and Provider experiences differ
-* What the website must communicate
-* What the website must never claim
-* Which product, clinical, design, and engineering principles must remain consistent
+- What ODRISC is
+- Why ODRISC exists
+- Who the website serves
+- How the website must be structured
+- How the Patient and Provider experiences differ
+- What the website must communicate
+- What the website must never claim
+- Which product, clinical, design, and engineering principles must remain consistent
 
 This file is not a temporary brief. It is the durable context layer for the ODRISC website repository.
 
@@ -98,11 +98,11 @@ ODRISC is a maternal and fetal intelligence platform designed to transform fragm
 
 The platform is intended to support:
 
-* Earlier recognition of emerging concerns
-* Better monitoring across pregnancy
-* Greater visibility into maternal and fetal changes over time
-* More informed collaboration between patients and healthcare providers
-* Improved maternal and fetal outcomes
+- Earlier recognition of emerging concerns
+- Better monitoring across pregnancy
+- Greater visibility into maternal and fetal changes over time
+- More informed collaboration between patients and healthcare providers
+- Improved maternal and fetal outcomes
 
 ODRISC must not be positioned as replacing healthcare professionals.
 
@@ -114,25 +114,25 @@ It should be presented as a platform that supports clinical judgment, longitudin
 
 Pregnancy generates a continuous stream of information, including:
 
-* Maternal health information
-* Weight and metabolic changes
-* Medical history
-* Laboratory findings
-* Ultrasound measurements
-* Fetal growth data
-* Doppler findings
-* Nutrition and activity information
-* Symptoms and patient-reported observations
+- Maternal health information
+- Weight and metabolic changes
+- Medical history
+- Laboratory findings
+- Ultrasound measurements
+- Fetal growth data
+- Doppler findings
+- Nutrition and activity information
+- Symptoms and patient-reported observations
 
 This information is often fragmented across:
 
-* Different appointments
-* Separate reports
-* Paper records
-* Hospital systems
-* Diagnostic centers
-* Patient recollection
-* Independent monitoring tools
+- Different appointments
+- Separate reports
+- Paper records
+- Hospital systems
+- Diagnostic centers
+- Patient recollection
+- Independent monitoring tools
 
 Individual data points may be reviewed at a particular moment, but their development across time may not always be presented as one synchronized longitudinal story.
 
@@ -140,12 +140,12 @@ ODRISC exists to help make that story more visible.
 
 The platform seeks to organize maternal and fetal information across pregnancy so that patients and providers can better understand:
 
-* What has changed
-* How quickly it has changed
-* Whether patterns are emerging
-* Whether closer monitoring may be required
-* How maternal and fetal developments relate to one another
-* What should receive attention during the next stage of care
+- What has changed
+- How quickly it has changed
+- Whether patterns are emerging
+- Whether closer monitoring may be required
+- How maternal and fetal developments relate to one another
+- What should receive attention during the next stage of care
 
 The central ODRISC idea is:
 
@@ -161,11 +161,11 @@ The founder's motivation is connected to a personal maternal-health experience. 
 
 This history informs the long-term purpose of ODRISC:
 
-* To improve awareness before complications become more difficult to manage
-* To make maternal risk and pregnancy progression easier to understand
-* To support more proactive monitoring
-* To improve communication between patients and healthcare professionals
-* To contribute to healthier outcomes for mothers and babies
+- To improve awareness before complications become more difficult to manage
+- To make maternal risk and pregnancy progression easier to understand
+- To support more proactive monitoring
+- To improve communication between patients and healthcare professionals
+- To contribute to healthier outcomes for mothers and babies
 
 The founder story may be used selectively where it strengthens authenticity and trust.
 
@@ -181,13 +181,13 @@ It must serve both patients and providers without forcing both audiences through
 
 The website should immediately recognize that patients and healthcare professionals have different:
 
-* Questions
-* Needs
-* Levels of clinical knowledge
-* Product expectations
-* Trust requirements
-* Calls to action
-* Decision-making processes
+- Questions
+- Needs
+- Levels of clinical knowledge
+- Product expectations
+- Trust requirements
+- Calls to action
+- Decision-making processes
 
 The website must therefore begin by helping the visitor select the journey that is relevant to them.
 
@@ -203,8 +203,8 @@ The detailed audience framework, including patient segments, provider segments, 
 
 When a visitor enters `odrisc.com`, the website should provide a clear and accessible audience choice:
 
-* **I am a Patient**
-* **I am a Healthcare Provider**
+- **I am a Patient**
+- **I am a Healthcare Provider**
 
 The language may later be refined through usability testing, but the distinction must remain direct and immediately understandable.
 
@@ -212,13 +212,13 @@ The language may later be refined through usability testing, but the distinction
 
 The audience selection must:
 
-* Reduce confusion
-* Personalize the website experience
-* Present audience-appropriate language
-* Direct users to relevant information
-* Improve conversion
-* Avoid mixing patient wellness messaging with clinician-focused clinical intelligence
-* Preserve one unified ODRISC brand
+- Reduce confusion
+- Personalize the website experience
+- Present audience-appropriate language
+- Direct users to relevant information
+- Improve conversion
+- Avoid mixing patient wellness messaging with clinician-focused clinical intelligence
+- Preserve one unified ODRISC brand
 
 ## 6.3 Selection Behavior
 
@@ -228,13 +228,13 @@ Selecting **Provider** should open the Provider-oriented website journey.
 
 The selected journey should have:
 
-* Its own navigation
-* Its own homepage
-* Its own content hierarchy
-* Its own primary calls to action
-* Audience-appropriate terminology
-* Audience-appropriate trust signals
-* Relevant products and features
+- Its own navigation
+- Its own homepage
+- Its own content hierarchy
+- Its own primary calls to action
+- Audience-appropriate terminology
+- Audience-appropriate trust signals
+- Relevant products and features
 
 ## 6.4 Returning Visitors
 
@@ -250,10 +250,10 @@ Both the Patient and Provider experiences must include a persistent and understa
 
 Examples may include:
 
-* “For Patients”
-* “For Providers”
-* An audience switcher in the navigation
-* An audience option in the menu or footer
+- “For Patients”
+- “For Providers”
+- An audience switcher in the navigation
+- An audience option in the menu or footer
 
 The switch must not require the visitor to return to a separate external website.
 
@@ -309,54 +309,54 @@ The final page names and URL paths will be defined in the Information Architectu
 
 The Patient experience is intended primarily for:
 
-* Women planning pregnancy
-* Pregnant women
-* Women with risk factors for gestational diabetes
-* Women with polycystic ovary syndrome
-* Women preparing for IVF or assisted reproduction
-* Women entering pregnancy while overweight or underweight
-* Women who require closer weight or metabolic monitoring
-* Women seeking structured nutrition and physical-activity support
-* Family members supporting someone through pregnancy
+- Women planning pregnancy
+- Pregnant women
+- Women with risk factors for gestational diabetes
+- Women with polycystic ovary syndrome
+- Women preparing for IVF or assisted reproduction
+- Women entering pregnancy while overweight or underweight
+- Women who require closer weight or metabolic monitoring
+- Women seeking structured nutrition and physical-activity support
+- Family members supporting someone through pregnancy
 
 ## 8.2 Patient Website Purpose
 
 The Patient experience must help users:
 
-* Understand why pregnancy should be monitored longitudinally
-* Recognize that maternal health can influence fetal development
-* Understand the value of early awareness
-* Track relevant maternal changes
-* Understand weight progression
-* Access structured nutrition support
-* Access appropriate pregnancy physical-activity guidance
-* View pregnancy progress in a clear and reassuring manner
-* Prepare for more informed conversations with healthcare providers
-* Understand how ODRISC supports, but does not replace, clinical care
+- Understand why pregnancy should be monitored longitudinally
+- Recognize that maternal health can influence fetal development
+- Understand the value of early awareness
+- Track relevant maternal changes
+- Understand weight progression
+- Access structured nutrition support
+- Access appropriate pregnancy physical-activity guidance
+- View pregnancy progress in a clear and reassuring manner
+- Prepare for more informed conversations with healthcare providers
+- Understand how ODRISC supports, but does not replace, clinical care
 
 ## 8.3 Patient Experience Principles
 
 The Patient experience must feel:
 
-* Reassuring
-* Supportive
-* Clear
-* Respectful
-* Non-judgmental
-* Clinically responsible
-* Easy to understand
-* Personally relevant
-* Calm rather than fear-based
+- Reassuring
+- Supportive
+- Clear
+- Respectful
+- Non-judgmental
+- Clinically responsible
+- Easy to understand
+- Personally relevant
+- Calm rather than fear-based
 
 The experience must not:
 
-* Diagnose the patient
-* Replace medical consultation
-* Create unnecessary anxiety
-* Shame users about weight, diet, health status, or pregnancy risk
-* Guarantee prevention or outcomes
-* Use clinical terminology without explanation
-* Make the user feel reduced to a score or risk category
+- Diagnose the patient
+- Replace medical consultation
+- Create unnecessary anxiety
+- Shame users about weight, diet, health status, or pregnancy risk
+- Guarantee prevention or outcomes
+- Use clinical terminology without explanation
+- Make the user feel reduced to a score or risk category
 
 ## 8.4 Patient Narrative
 
@@ -398,14 +398,14 @@ Better awareness supports better monitoring
 
 Potential Patient calls to action include:
 
-* Assess My Risk
-* Understand My Pregnancy
-* Start Monitoring
-* Explore ODRISC
-* View Membership Options
-* Join ODRISC
-* Speak With My Healthcare Provider
-* Access Patient Resources
+- Assess My Risk
+- Understand My Pregnancy
+- Start Monitoring
+- Explore ODRISC
+- View Membership Options
+- Join ODRISC
+- Speak With My Healthcare Provider
+- Access Patient Resources
 
 Final calls to action must be defined within the approved Patient journey and PRD.
 
@@ -421,59 +421,59 @@ The complete Patient audience specification, including audience segments, trust 
 
 The Provider experience is intended primarily for:
 
-* Obstetricians and gynecologists
-* Maternal-fetal medicine specialists
-* Fertility and IVF specialists
-* Maternity hospitals
-* Healthcare systems
-* Antenatal clinics
-* Maternal-health teams
-* Nutrition professionals
-* Women's health physiotherapists
-* Clinical administrators
-* Institutional healthcare partners
+- Obstetricians and gynecologists
+- Maternal-fetal medicine specialists
+- Fertility and IVF specialists
+- Maternity hospitals
+- Healthcare systems
+- Antenatal clinics
+- Maternal-health teams
+- Nutrition professionals
+- Women's health physiotherapists
+- Clinical administrators
+- Institutional healthcare partners
 
 ## 9.2 Provider Website Purpose
 
 The Provider experience must explain how ODRISC can support:
 
-* Longitudinal maternal monitoring
-* Fetal growth assessment
-* Recognition of changing patterns
-* Interpretation of pregnancy data across time
-* Synchronization of maternal and fetal information
-* Clinical review between appointments
-* Patient engagement
-* Multidisciplinary collaboration
-* Risk-informed monitoring
-* Cohort visibility
-* Structured clinical workflows
-* Explainable clinical intelligence
+- Longitudinal maternal monitoring
+- Fetal growth assessment
+- Recognition of changing patterns
+- Interpretation of pregnancy data across time
+- Synchronization of maternal and fetal information
+- Clinical review between appointments
+- Patient engagement
+- Multidisciplinary collaboration
+- Risk-informed monitoring
+- Cohort visibility
+- Structured clinical workflows
+- Explainable clinical intelligence
 
 ## 9.3 Provider Experience Principles
 
 The Provider experience must feel:
 
-* Clinically credible
-* Evidence-conscious
-* Precise
-* Intelligent
-* Professional
-* Calm
-* Modern
-* Explainable
-* Workflow-aware
+- Clinically credible
+- Evidence-conscious
+- Precise
+- Intelligent
+- Professional
+- Calm
+- Modern
+- Explainable
+- Workflow-aware
 
 The Provider experience must avoid:
 
-* Consumer wellness language
-* Inflated artificial-intelligence claims
-* Unsupported clinical claims
-* Suggesting autonomous diagnosis
-* Suggesting that ODRISC replaces clinician judgment
-* Generic statements without explaining clinical relevance
-* Excessive marketing terminology
-* Overly decorative interfaces that weaken credibility
+- Consumer wellness language
+- Inflated artificial-intelligence claims
+- Unsupported clinical claims
+- Suggesting autonomous diagnosis
+- Suggesting that ODRISC replaces clinician judgment
+- Generic statements without explaining clinical relevance
+- Excessive marketing terminology
+- Overly decorative interfaces that weaken credibility
 
 ## 9.4 Provider Narrative
 
@@ -515,14 +515,14 @@ Better clinical collaboration supports improved maternal and fetal outcomes
 
 Potential Provider calls to action include:
 
-* Explore the Clinical Platform
-* Request a Demonstration
-* Join the Clinical Panel
-* Discuss a Pilot
-* Partner With ODRISC
-* View Clinical Workflows
-* Explore Fetal Growth Intelligence
-* Contact the ODRISC Team
+- Explore the Clinical Platform
+- Request a Demonstration
+- Join the Clinical Panel
+- Discuss a Pilot
+- Partner With ODRISC
+- View Clinical Workflows
+- Explore Fetal Growth Intelligence
+- Contact the ODRISC Team
 
 Final calls to action must be defined in the Provider journey and PRD.
 
@@ -540,20 +540,20 @@ They represent two perspectives on one connected pregnancy-care ecosystem.
 
 The Patient experience helps individuals:
 
-* Understand
-* Monitor
-* Engage
-* Prepare
-* Participate
+- Understand
+- Monitor
+- Engage
+- Prepare
+- Participate
 
 The Provider experience helps healthcare professionals:
 
-* Review
-* Interpret
-* Recognize
-* Monitor
-* Collaborate
-* Escalate where clinically appropriate
+- Review
+- Interpret
+- Recognize
+- Monitor
+- Collaborate
+- Escalate where clinically appropriate
 
 The shared bridge between both experiences is longitudinal maternal and fetal understanding.
 
@@ -575,13 +575,13 @@ ODRISC includes a gestational diabetes risk-assessment capability designed to su
 
 Potential inputs include:
 
-* Age
-* Pregnancy history
-* Anthropometric information
-* Ethnicity
-* Family history
-* Personal medical history
-* Relevant risk factors
+- Age
+- Pregnancy history
+- Anthropometric information
+- Ethnicity
+- Family history
+- Personal medical history
+- Relevant risk factors
 
 Outputs may include structured risk categories and explanations of contributing risk factors.
 
@@ -593,15 +593,15 @@ ODRISC supports structured weight monitoring before and during pregnancy.
 
 Potential capabilities include:
 
-* Preconception weight goals
-* Body mass index context
-* Pregnancy-stage monitoring
-* Trimester-specific progression
-* Gestational weight-gain ranges
-* Daily or periodic weight logging
-* Progress visualization
-* Trend recognition
-* Alerts based on approved monitoring logic
+- Preconception weight goals
+- Body mass index context
+- Pregnancy-stage monitoring
+- Trimester-specific progression
+- Gestational weight-gain ranges
+- Daily or periodic weight logging
+- Progress visualization
+- Trend recognition
+- Alerts based on approved monitoring logic
 
 Weight-related content must remain supportive and non-stigmatizing.
 
@@ -611,14 +611,14 @@ ODRISC supports personalized nutrition guidance through structured plans designe
 
 Potential capabilities include:
 
-* Trimester-specific nutrition
-* Vegetarian and non-vegetarian options
-* Portion guidance
-* Macronutrient planning
-* Glycemic-awareness considerations
-* Dietitian-supported planning
-* Indian and regionally relevant meal patterns
-* One-to-one professional support where included in the selected plan
+- Trimester-specific nutrition
+- Vegetarian and non-vegetarian options
+- Portion guidance
+- Macronutrient planning
+- Glycemic-awareness considerations
+- Dietitian-supported planning
+- Indian and regionally relevant meal patterns
+- One-to-one professional support where included in the selected plan
 
 Nutrition content must not make therapeutic guarantees.
 
@@ -628,13 +628,13 @@ ODRISC supports trimester-appropriate physical-activity guidance designed with w
 
 Potential capabilities include:
 
-* Trimester-specific activity plans
-* Upper-body and lower-body routines
-* Back and mobility exercises
-* Pelvic-floor activity
-* Safety guidance
-* Structured frequency, intensity, time, and type principles
-* Motivational and adherence support
+- Trimester-specific activity plans
+- Upper-body and lower-body routines
+- Back and mobility exercises
+- Pelvic-floor activity
+- Safety guidance
+- Structured frequency, intensity, time, and type principles
+- Motivational and adherence support
 
 Activity content must clearly acknowledge contraindications and the importance of professional medical advice where appropriate.
 
@@ -642,53 +642,53 @@ Activity content must clearly acknowledge contraindications and the importance o
 
 The developing maternal-intelligence layer may include:
 
-* Maternal weight trajectory
-* Weight-change velocity
-* Risk-factor context
-* Metabolic information
-* Laboratory information
-* Symptom-related context
-* Longitudinal maternal timeline
-* Monitoring alerts
-* Relationship between maternal patterns and pregnancy progression
+- Maternal weight trajectory
+- Weight-change velocity
+- Risk-factor context
+- Metabolic information
+- Laboratory information
+- Symptom-related context
+- Longitudinal maternal timeline
+- Monitoring alerts
+- Relationship between maternal patterns and pregnancy progression
 
 ## 11.6 Fetal Growth Intelligence
 
 The developing fetal growth-intelligence layer may include:
 
-* Gestational-age anchoring
-* Estimated due date consistency
-* Ultrasound biometric measurements
-* Estimated fetal weight
-* Growth percentiles
-* Growth velocity
-* Centile crossing
-* Customized growth expectations
-* Fetal growth timeline
-* Doppler context
-* Fetal growth restriction-related monitoring support
-* Explainable alerts and clinical review
+- Gestational-age anchoring
+- Estimated due date consistency
+- Ultrasound biometric measurements
+- Estimated fetal weight
+- Growth percentiles
+- Growth velocity
+- Centile crossing
+- Customized growth expectations
+- Fetal growth timeline
+- Doppler context
+- Fetal growth restriction-related monitoring support
+- Explainable alerts and clinical review
 
 ## 11.7 Data Capture and Integration
 
 Potential platform capabilities include:
 
-* Manual data entry
-* Ultrasound report extraction
-* Optical character recognition
-* Structured report review
-* Longitudinal timelines
-* PDF reporting
-* Clinician notes
-* Patient summaries
-* Future interoperability using healthcare data standards
-* Hospital system integrations where approved and implemented
+- Manual data entry
+- Ultrasound report extraction
+- Optical character recognition
+- Structured report review
+- Longitudinal timelines
+- PDF reporting
+- Clinician notes
+- Patient summaries
+- Future interoperability using healthcare data standards
+- Hospital system integrations where approved and implemented
 
 The website must clearly distinguish among:
 
-* Available capabilities
-* Capabilities under development
-* Future roadmap capabilities
+- Available capabilities
+- Capabilities under development
+- Future roadmap capabilities
 
 No future capability may be presented as currently available unless its status has been approved.
 
@@ -720,33 +720,33 @@ Its primary objectives are:
 
 ## 13.1 Shared Objectives
 
-* Establish ODRISC as a credible maternal and fetal intelligence platform
-* Explain the problem of fragmented pregnancy information
-* Communicate the value of longitudinal monitoring
-* Build trust
-* Explain how ODRISC connects patients and providers
-* Present capabilities accurately
-* Generate relevant patient and provider actions
-* Support future market expansion
-* Provide a scalable digital foundation for the ODRISC platform
+- Establish ODRISC as a credible maternal and fetal intelligence platform
+- Explain the problem of fragmented pregnancy information
+- Communicate the value of longitudinal monitoring
+- Build trust
+- Explain how ODRISC connects patients and providers
+- Present capabilities accurately
+- Generate relevant patient and provider actions
+- Support future market expansion
+- Provide a scalable digital foundation for the ODRISC platform
 
 ## 13.2 Patient Objectives
 
-* Help patients understand the value of early awareness
-* Explain the Patient offering
-* Encourage appropriate risk assessment and monitoring
-* Present nutrition, activity, and weight-support capabilities
-* Support informed participation in pregnancy care
-* Convert relevant visitors into registered users or members
+- Help patients understand the value of early awareness
+- Explain the Patient offering
+- Encourage appropriate risk assessment and monitoring
+- Present nutrition, activity, and weight-support capabilities
+- Support informed participation in pregnancy care
+- Convert relevant visitors into registered users or members
 
 ## 13.3 Provider Objectives
 
-* Establish clinical credibility
-* Explain the Provider platform
-* Demonstrate longitudinal maternal and fetal intelligence
-* Communicate workflow value
-* Generate demonstration, pilot, panel, and partnership enquiries
-* Support conversations with clinics, hospitals, and healthcare systems
+- Establish clinical credibility
+- Explain the Provider platform
+- Demonstrate longitudinal maternal and fetal intelligence
+- Communicate workflow value
+- Generate demonstration, pilot, panel, and partnership enquiries
+- Support conversations with clinics, hospitals, and healthcare systems
 
 ## 13.4 Website Objectives
 
@@ -771,22 +771,22 @@ ODRISC is being developed with an international maternal-health vision.
 
 Current and planned market context includes:
 
-* India as a validation and development market
-* Qatar as a primary planned commercial market
-* Future Gulf Cooperation Council expansion
-* Potential expansion into the United Arab Emirates, Saudi Arabia, Kuwait, Bahrain, and Oman
+- India as a validation and development market
+- Qatar as a primary planned commercial market
+- Future Gulf Cooperation Council expansion
+- Potential expansion into the United Arab Emirates, Saudi Arabia, Kuwait, Bahrain, and Oman
 
 The website architecture should therefore be designed to support future:
 
-* Country-specific content
-* Regional pricing
-* Language localization
-* Arabic support
-* English support
-* Hindi or other relevant language support
-* Regional clinical and regulatory information
-* Market-specific calls to action
-* Country-specific legal and privacy requirements
+- Country-specific content
+- Regional pricing
+- Language localization
+- Arabic support
+- English support
+- Hindi or other relevant language support
+- Regional clinical and regulatory information
+- Market-specific calls to action
+- Country-specific legal and privacy requirements
 
 The initial architecture must not unnecessarily restrict future internationalization.
 
@@ -798,48 +798,48 @@ The initial architecture must not unnecessarily restrict future internationaliza
 
 The ODRISC website should feel:
 
-* Premium
-* Minimal
-* Clinically credible
-* Calm
-* Intelligent
-* Human
-* Modern
-* Trustworthy
-* Precise
-* Supportive
+- Premium
+- Minimal
+- Clinically credible
+- Calm
+- Intelligent
+- Human
+- Modern
+- Trustworthy
+- Precise
+- Supportive
 
 ## 15.2 Visual Foundation
 
 The established visual direction includes:
 
-* Predominantly white backgrounds
-* High negative space
-* Clean visual hierarchy
-* Minimalist interface design
-* Subtle clinical and data visualizations
-* Restrained use of illustration
-* Thin borders
-* Carefully controlled rounded corners
-* Purposeful animation
-* Clear typography
-* Accessible contrast
+- Predominantly white backgrounds
+- High negative space
+- Clean visual hierarchy
+- Minimalist interface design
+- Subtle clinical and data visualizations
+- Restrained use of illustration
+- Thin borders
+- Carefully controlled rounded corners
+- Purposeful animation
+- Clear typography
+- Accessible contrast
 
 ## 15.3 Established Colors
 
 Primary gradient direction:
 
-* `#ff7680`
-* `#80ffcc`
+- `#ff7680`
+- `#80ffcc`
 
 The preferred gradient balance is approximately:
 
-* 90% visual influence from `#ff7680`
-* Transition toward `#80ffcc`
+- 90% visual influence from `#ff7680`
+- Transition toward `#80ffcc`
 
 Principal text color:
 
-* `#4d4d4d`
+- `#4d4d4d`
 
 Exact tokens, contrast rules, states, backgrounds, and accessible alternatives must be defined in the Design System.
 
@@ -847,17 +847,17 @@ Exact tokens, contrast rules, states, backgrounds, and accessible alternatives m
 
 Avoid:
 
-* Generic stock images of pregnant women
-* Fear-based pregnancy imagery
-* Overly futuristic artificial-intelligence visuals
-* Excessive glowing effects
-* Dense dashboard visuals without explanation
-* Generic blue healthcare branding
-* Decorative gradients without functional purpose
-* Clinical imagery that may feel alarming or dehumanizing
-* Visual clutter
-* Excessive animation
-* Cartoon-like medical graphics unless specifically appropriate for patient education
+- Generic stock images of pregnant women
+- Fear-based pregnancy imagery
+- Overly futuristic artificial-intelligence visuals
+- Excessive glowing effects
+- Dense dashboard visuals without explanation
+- Generic blue healthcare branding
+- Decorative gradients without functional purpose
+- Clinical imagery that may feel alarming or dehumanizing
+- Visual clutter
+- Excessive animation
+- Cartoon-like medical graphics unless specifically appropriate for patient education
 
 ---
 
@@ -867,53 +867,53 @@ Avoid:
 
 ODRISC content must be:
 
-* Clear
-* Responsible
-* Evidence-conscious
-* Human
-* Specific
-* Calm
-* Credible
-* Purposeful
+- Clear
+- Responsible
+- Evidence-conscious
+- Human
+- Specific
+- Calm
+- Credible
+- Purposeful
 
 ## 16.2 Patient Voice
 
 Patient content should:
 
-* Explain rather than overwhelm
-* Reassure without minimizing risk
-* Encourage participation
-* Avoid blame
-* Avoid unnecessary technical language
-* Define clinical terms when they are necessary
-* Promote collaboration with healthcare providers
+- Explain rather than overwhelm
+- Reassure without minimizing risk
+- Encourage participation
+- Avoid blame
+- Avoid unnecessary technical language
+- Define clinical terms when they are necessary
+- Promote collaboration with healthcare providers
 
 ## 16.3 Provider Voice
 
 Provider content should:
 
-* Respect clinical expertise
-* Be specific about workflow and monitoring value
-* Explain what the platform does
-* Avoid inflated promotional language
-* Use appropriate clinical terminology
-* Distinguish available features from future capabilities
-* Support claims with approved references where necessary
+- Respect clinical expertise
+- Be specific about workflow and monitoring value
+- Explain what the platform does
+- Avoid inflated promotional language
+- Use appropriate clinical terminology
+- Distinguish available features from future capabilities
+- Support claims with approved references where necessary
 
 ## 16.4 Prohibited Language
 
 Do not use unsupported claims such as:
 
-* Guaranteed outcomes
-* Prevents all complications
-* Replaces your doctor
-* Diagnoses complications automatically
-* Eliminates clinical risk
-* The world's best platform
-* Revolutionary without explanation
-* Fully validated unless formally established
-* Clinically proven unless supported by approved evidence
-* Regulatory approved unless accurate for the relevant jurisdiction and capability
+- Guaranteed outcomes
+- Prevents all complications
+- Replaces your doctor
+- Diagnoses complications automatically
+- Eliminates clinical risk
+- The world's best platform
+- Revolutionary without explanation
+- Fully validated unless formally established
+- Clinically proven unless supported by approved evidence
+- Regulatory approved unless accurate for the relevant jurisdiction and capability
 
 ---
 
@@ -925,34 +925,34 @@ The ODRISC website must maintain clear clinical boundaries.
 
 The website must communicate that ODRISC:
 
-* Supports monitoring
-* Supports awareness
-* Supports communication
-* Supports clinical review
-* Does not replace healthcare professionals
-* Does not independently diagnose
-* Does not independently prescribe treatment
-* Does not guarantee maternal or fetal outcomes
+- Supports monitoring
+- Supports awareness
+- Supports communication
+- Supports clinical review
+- Does not replace healthcare professionals
+- Does not independently diagnose
+- Does not independently prescribe treatment
+- Does not guarantee maternal or fetal outcomes
 
 ## 17.2 Clinical Claims
 
 Every clinical claim must be:
 
-* Accurate
-* Proportionate
-* Traceable
-* Appropriate to the intended audience
-* Supported by an approved reference when necessary
+- Accurate
+- Proportionate
+- Traceable
+- Appropriate to the intended audience
+- Supported by an approved reference when necessary
 
 ## 17.3 Safety Messaging
 
 Patient-facing areas must include appropriate guidance about:
 
-* Contacting healthcare professionals
-* Seeking urgent medical care when necessary
-* Not relying exclusively on digital monitoring
-* Following individualized medical advice
-* Recognizing that clinical recommendations may differ by individual circumstances
+- Contacting healthcare professionals
+- Seeking urgent medical care when necessary
+- Not relying exclusively on digital monitoring
+- Following individualized medical advice
+- Recognizing that clinical recommendations may differ by individual circumstances
 
 Exact safety wording will be defined through the Content Guidelines and legal review.
 
@@ -960,12 +960,12 @@ Exact safety wording will be defined through the Content Guidelines and legal re
 
 The website must avoid:
 
-* Weight stigma
-* Maternal blame
-* Fear-based conversion
-* Judgmental language
-* Oversimplification of pregnancy complications
-* Implying that adverse outcomes result from personal failure
+- Weight stigma
+- Maternal blame
+- Fear-based conversion
+- Judgmental language
+- Oversimplification of pregnancy complications
+- Implying that adverse outcomes result from personal failure
 
 ---
 
@@ -993,13 +993,13 @@ Pages should explain the underlying problem and clinical relevance before presen
 
 Where appropriate, layouts and visuals should communicate:
 
-* Change over time
-* Relationships between data
-* Progression
-* Trends
-* Timelines
-* Earlier recognition
-* Connected maternal and fetal development
+- Change over time
+- Relationships between data
+- Progression
+- Trends
+- Timelines
+- Earlier recognition
+- Connected maternal and fetal development
 
 ## 18.6 Explainability
 
@@ -1009,11 +1009,11 @@ Clinical intelligence must be presented as explainable rather than as an unexpla
 
 Animation should help users understand:
 
-* Progression
-* Data connection
-* Timeline development
-* Navigation hierarchy
-* Cause and effect
+- Progression
+- Data connection
+- Timeline development
+- Navigation hierarchy
+- Cause and effect
 
 Animation must not distract from clinical credibility or accessibility.
 
@@ -1021,13 +1021,13 @@ Animation must not distract from clinical credibility or accessibility.
 
 The website must be usable across:
 
-* Desktop
-* Tablet
-* Mobile
-* Keyboard navigation
-* Assistive technologies
-* Reduced-motion preferences
-* Appropriate contrast requirements
+- Desktop
+- Tablet
+- Mobile
+- Keyboard navigation
+- Assistive technologies
+- Reduced-motion preferences
+- Appropriate contrast requirements
 
 ## 18.9 Performance
 
@@ -1043,19 +1043,19 @@ The final technical architecture will be defined in the engineering documentatio
 
 The expected initial direction includes:
 
-* A modern React-based web framework
-* TypeScript
-* Responsive component architecture
-* Reusable design-system components
-* Structured metadata
-* Search-engine optimization
-* Accessible semantic markup
-* Analytics support
-* Internationalization readiness
-* Content scalability
-* Privacy-conscious form handling
-* Performance monitoring
-* Secure environment-variable management
+- A modern React-based web framework
+- TypeScript
+- Responsive component architecture
+- Reusable design-system components
+- Structured metadata
+- Search-engine optimization
+- Accessible semantic markup
+- Analytics support
+- Internationalization readiness
+- Content scalability
+- Privacy-conscious form handling
+- Performance monitoring
+- Secure environment-variable management
 
 No framework or dependency should be treated as permanently approved until it is recorded in the appropriate technical documentation or decision record.
 
@@ -1067,14 +1067,14 @@ Every capability described on the website must have a documented status.
 
 Recommended status categories:
 
-* Available
-* Limited availability
-* Pilot
-* In validation
-* In development
-* Planned
-* Future roadmap
-* Not publicly announced
+- Available
+- Limited availability
+- Pilot
+- In validation
+- In development
+- Planned
+- Future roadmap
+- Not publicly announced
 
 Content writers, designers, and developers must verify status before presenting a capability.
 
@@ -1130,18 +1130,18 @@ Before performing work, AI agents must:
 
 AI agents must not:
 
-* Invent clinical claims
-* Invent product availability
-* Merge Patient and Provider messaging indiscriminately
-* Create separate brands for the two audiences
-* Change the domain
-* Redefine the primary audience architecture
-* Present ODRISC as replacing clinicians
-* Introduce unsupported regulatory claims
-* Use generic healthcare copy in place of approved positioning
-* Change locked decisions without explicit authorization
+- Invent clinical claims
+- Invent product availability
+- Merge Patient and Provider messaging indiscriminately
+- Create separate brands for the two audiences
+- Change the domain
+- Redefine the primary audience architecture
+- Present ODRISC as replacing clinicians
+- Introduce unsupported regulatory claims
+- Use generic healthcare copy in place of approved positioning
+- Change locked decisions without explicit authorization
 
-- Read `docs/product/AUDIENCE.md` before generating audience-specific pages, copy, navigation, forms, illustrations, or user flows.
+* Read `docs/product/AUDIENCE.md` before generating audience-specific pages, copy, navigation, forms, illustrations, or user flows.
 
 ---
 
@@ -1171,36 +1171,36 @@ The following decisions are currently locked for the website foundation:
 
 The following matters will be resolved in subsequent project documents:
 
-* Exact Patient and Provider URL structure
-* Entry-page design and behavior
-* Whether the audience selector is a full landing screen or integrated hero
-* Cookie or local-storage behavior for remembering audience selection
-* Patient navigation
-* Provider navigation
-* Patient page inventory
-* Provider page inventory
-* Shared pages
-* Footer architecture
-* Login and registration pathways
-* Patient membership structure
-* Provider demonstration and pilot flows
-* Forms and lead routing
-* Country and language handling
-* Content-management approach
-* Analytics event structure
-* Search-engine indexing strategy for the audience gateway
-* Accessibility acceptance criteria
-* Legal disclaimers
-* Privacy policy
-* Terms of use
-* Clinical-reference governance
-* Product capability status
-* Final technical stack
-* Hosting and deployment
-* Integration with the existing ODRISC application
-* Provider portal relationship
-* Patient application relationship
-* Whether the audience preference should persist across sessions
+- Exact Patient and Provider URL structure
+- Entry-page design and behavior
+- Whether the audience selector is a full landing screen or integrated hero
+- Cookie or local-storage behavior for remembering audience selection
+- Patient navigation
+- Provider navigation
+- Patient page inventory
+- Provider page inventory
+- Shared pages
+- Footer architecture
+- Login and registration pathways
+- Patient membership structure
+- Provider demonstration and pilot flows
+- Forms and lead routing
+- Country and language handling
+- Content-management approach
+- Analytics event structure
+- Search-engine indexing strategy for the audience gateway
+- Accessibility acceptance criteria
+- Legal disclaimers
+- Privacy policy
+- Terms of use
+- Clinical-reference governance
+- Product capability status
+- Final technical stack
+- Hosting and deployment
+- Integration with the existing ODRISC application
+- Provider portal relationship
+- Patient application relationship
+- Whether the audience preference should persist across sessions
 
 These items must be recorded in `docs/project/OPEN_QUESTIONS.md` and resolved through the relevant documentation phase.
 
@@ -1210,18 +1210,18 @@ These items must be recorded in `docs/project/OPEN_QUESTIONS.md` and resolved th
 
 The website will be successful when:
 
-* Patients immediately understand where to begin
-* Providers immediately find the clinical experience relevant
-* Both audiences recognize ODRISC as one connected platform
-* The website communicates why longitudinal pregnancy understanding matters
-* The Patient journey feels supportive and understandable
-* The Provider journey feels clinically credible and precise
-* Visitors understand that ODRISC strengthens patient-provider collaboration
-* Product capabilities are communicated accurately
-* Unsupported claims are avoided
-* Calls to action are relevant to each audience
-* The architecture can scale across markets, languages, and future platform capabilities
-* Human and AI contributors can continue development without relying on historical chat context
+- Patients immediately understand where to begin
+- Providers immediately find the clinical experience relevant
+- Both audiences recognize ODRISC as one connected platform
+- The website communicates why longitudinal pregnancy understanding matters
+- The Patient journey feels supportive and understandable
+- The Provider journey feels clinically credible and precise
+- Visitors understand that ODRISC strengthens patient-provider collaboration
+- Product capabilities are communicated accurately
+- Unsupported claims are avoided
+- Calls to action are relevant to each audience
+- The architecture can scale across markets, languages, and future platform capabilities
+- Human and AI contributors can continue development without relying on historical chat context
 
 ---
 

@@ -12,15 +12,15 @@ Public routes must comply with:
 
 ## Route Status Definitions
 
-| Status | Meaning |
-|---|---|
-| Proposed | Route appears in the approved architecture but is not yet approved for publication |
-| Approved | Route is approved for implementation |
-| In development | Route is actively being implemented |
-| Published | Route is publicly available |
-| Restricted | Route exists but is not publicly indexable |
-| Redirected | Route permanently or temporarily redirects |
-| Retired | Route has been removed and its lifecycle completed |
+| Status         | Meaning                                                                            |
+| -------------- | ---------------------------------------------------------------------------------- |
+| Proposed       | Route appears in the approved architecture but is not yet approved for publication |
+| Approved       | Route is approved for implementation                                               |
+| In development | Route is actively being implemented                                                |
+| Published      | Route is publicly available                                                        |
+| Restricted     | Route exists but is not publicly indexable                                         |
+| Redirected     | Route permanently or temporarily redirects                                         |
+| Retired        | Route has been removed and its lifecycle completed                                 |
 
 ## Route Registry
 

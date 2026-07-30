@@ -17,28 +17,28 @@
 
 ## Related Documents
 
-* `PROJECT_CONTEXT.md`
-* `docs/project/SOURCE_OF_TRUTH.md`
-* `docs/project/ASSUMPTIONS.md`
-* `docs/project/OPEN_QUESTIONS.md`
-* `docs/project/GLOSSARY.md`
-* `docs/product/PRODUCT_VISION.md`
-* `docs/product/AUDIENCE.md`
-* `docs/product/WEBSITE_OBJECTIVES.md`
-* `docs/product/WEBSITE_STORY.md`
-* `docs/product/PRD.md`
-* `docs/product/PRODUCT_STATUS.md`
-* `docs/product/INFORMATION_ARCHITECTURE.md`
-* `docs/product/PAGE_REQUIREMENTS.md`
-* `docs/product/PAGE_IMPLEMENTATION_TRACKER.md`
-* `docs/design/BRAND_FOUNDATION.md`
-* `docs/design/BRAND_ASSET_REGISTER.md`
-* `docs/design/BRAND_REVIEW_CHECKLIST.md`
-* `docs/design/ANIMATION_GUIDELINES.md`
-* `docs/engineering/TECH_STACK.md`
-* `docs/engineering/COMPONENT_LIBRARY.md`
-* `ai/rules/NON_NEGOTIABLES.md`
-* `ai/rules/AI_BEHAVIOR.md`
+- `PROJECT_CONTEXT.md`
+- `docs/project/SOURCE_OF_TRUTH.md`
+- `docs/project/ASSUMPTIONS.md`
+- `docs/project/OPEN_QUESTIONS.md`
+- `docs/project/GLOSSARY.md`
+- `docs/product/PRODUCT_VISION.md`
+- `docs/product/AUDIENCE.md`
+- `docs/product/WEBSITE_OBJECTIVES.md`
+- `docs/product/WEBSITE_STORY.md`
+- `docs/product/PRD.md`
+- `docs/product/PRODUCT_STATUS.md`
+- `docs/product/INFORMATION_ARCHITECTURE.md`
+- `docs/product/PAGE_REQUIREMENTS.md`
+- `docs/product/PAGE_IMPLEMENTATION_TRACKER.md`
+- `docs/design/BRAND_FOUNDATION.md`
+- `docs/design/BRAND_ASSET_REGISTER.md`
+- `docs/design/BRAND_REVIEW_CHECKLIST.md`
+- `docs/design/ANIMATION_GUIDELINES.md`
+- `docs/engineering/TECH_STACK.md`
+- `docs/engineering/COMPONENT_LIBRARY.md`
+- `ai/rules/NON_NEGOTIABLES.md`
+- `ai/rules/AI_BEHAVIOR.md`
 
 ---
 
@@ -48,54 +48,54 @@ This document translates the ODRISC Brand Foundation into an implementation-read
 
 It defines:
 
-* Design principles
-* Design tokens
-* Color palettes
-* Semantic colors
-* Typography
-* Spacing
-* Grids
-* Responsive breakpoints
-* Layouts
-* Borders
-* Radii
-* Shadows
-* Iconography
-* Images
-* Illustrations
-* Data visualizations
-* Navigation
-* Buttons
-* Forms
-* Cards
-* Status indicators
-* Alerts
-* Tables
-* Timelines
-* Modals
-* Drawers
-* Tabs
-* Accordions
-* Tooltips
-* Page templates
-* Patient and Provider variants
-* Accessibility
-* Arabic and right-to-left behavior
-* Design governance
-* Design acceptance criteria
+- Design principles
+- Design tokens
+- Color palettes
+- Semantic colors
+- Typography
+- Spacing
+- Grids
+- Responsive breakpoints
+- Layouts
+- Borders
+- Radii
+- Shadows
+- Iconography
+- Images
+- Illustrations
+- Data visualizations
+- Navigation
+- Buttons
+- Forms
+- Cards
+- Status indicators
+- Alerts
+- Tables
+- Timelines
+- Modals
+- Drawers
+- Tabs
+- Accordions
+- Tooltips
+- Page templates
+- Patient and Provider variants
+- Accessibility
+- Arabic and right-to-left behavior
+- Design governance
+- Design acceptance criteria
 
 This document governs the visual and interaction design of the public website.
 
 It does not fully define:
 
-* Motion choreography
-* Application-screen design
-* Patient application components
-* Provider-dashboard components
-* Clinical algorithm interfaces
-* Source-code architecture
-* Framework-specific implementation
-* Final logo artwork
+- Motion choreography
+- Application-screen design
+- Patient application components
+- Provider-dashboard components
+- Clinical algorithm interfaces
+- Source-code architecture
+- Framework-specific implementation
+- Final logo artwork
 
 Detailed motion behavior belongs in:
 
@@ -103,10 +103,10 @@ Detailed motion behavior belongs in:
 
 Detailed engineering implementation belongs in:
 
-* `docs/engineering/TECH_STACK.md`
-* `docs/engineering/ARCHITECTURE.md`
-* `docs/engineering/COMPONENT_LIBRARY.md`
-* `docs/engineering/CODING_STANDARDS.md`
+- `docs/engineering/TECH_STACK.md`
+- `docs/engineering/ARCHITECTURE.md`
+- `docs/engineering/COMPONENT_LIBRARY.md`
+- `docs/engineering/CODING_STANDARDS.md`
 
 ---
 
@@ -114,14 +114,14 @@ Detailed engineering implementation belongs in:
 
 The ODRISC Design System must make complex pregnancy information feel:
 
-* Clear
-* Calm
-* Connected
-* Clinically responsible
-* Human
-* Explainable
-* Accessible
-* Trustworthy
+- Clear
+- Calm
+- Connected
+- Clinically responsible
+- Human
+- Explainable
+- Accessible
+- Trustworthy
 
 The system must support one master brand through two audience experiences:
 
@@ -147,12 +147,12 @@ They must not appear to belong to separate brands.
 
 Every visual element must improve:
 
-* Meaning
-* Hierarchy
-* Navigation
-* Comprehension
-* Trust
-* Action
+- Meaning
+- Hierarchy
+- Navigation
+- Comprehension
+- Trust
+- Action
 
 Decorative elements must not compete with essential information.
 
@@ -164,11 +164,11 @@ The public website must explain the pregnancy-care story before presenting compl
 
 Design should prioritize:
 
-* Timelines
-* Sequences
-* Relationships
-* Change across time
-* Connected maternal and fetal information
+- Timelines
+- Sequences
+- Relationships
+- Change across time
+- Connected maternal and fetal information
 
 ## 3.4 Explainability Before Density
 
@@ -184,13 +184,13 @@ Brand coral must not be used automatically as an alarm color.
 
 No visual preference may override:
 
-* Contrast
-* Keyboard access
-* Text readability
-* Reduced motion
-* Screen-reader structure
-* Touch-target size
-* Meaning beyond color
+- Contrast
+- Keyboard access
+- Text readability
+- Reduced motion
+- Screen-reader structure
+- Touch-target size
+- Meaning beyond color
 
 ## 3.7 Reuse Before Variation
 
@@ -240,10 +240,10 @@ Recommended implementation naming:
 
 The engineering implementation may convert these into:
 
-* CSS custom properties
-* TypeScript objects
-* JSON tokens
-* Framework theme configuration
+- CSS custom properties
+- TypeScript objects
+- JSON tokens
+- Framework theme configuration
 
 There must be one canonical generated token source in the codebase.
 
@@ -265,12 +265,12 @@ od.color.brand.coral
 
 Purpose:
 
-* Primary human warmth
-* Brand recognition
-* Selected highlights
-* Patient-oriented emphasis
-* Narrative beginnings
-* Controlled visual attention
+- Primary human warmth
+- Brand recognition
+- Selected highlights
+- Patient-oriented emphasis
+- Narrative beginnings
+- Controlled visual attention
 
 ## 5.2 Brand Mint
 
@@ -286,12 +286,12 @@ od.color.brand.mint
 
 Purpose:
 
-* Progression
-* Connection
-* Resolution
-* Fetal and growth context
-* Provider-oriented emphasis
-* Narrative transitions
+- Progression
+- Connection
+- Resolution
+- Fetal and growth context
+- Provider-oriented emphasis
+- Narrative transitions
 
 ## 5.3 Primary Text
 
@@ -451,26 +451,26 @@ od.gradient.progression
 
 ## 8.3 Approved Gradient Uses
 
-* Thin header dividers
-* Narrative timelines
-* Select display headlines
-* Controlled borders
-* Progress lines
-* Hero illustration elements
-* Section transitions
-* Brand diagrams
+- Thin header dividers
+- Narrative timelines
+- Select display headlines
+- Controlled borders
+- Progress lines
+- Hero illustration elements
+- Section transitions
+- Brand diagrams
 
 ## 8.4 Prohibited Gradient Uses
 
-* Long body text
-* Essential small text
-* Clinical risk states
-* Every button
-* Every icon
-* Large backgrounds by default
-* Form fields
-* Data-series differentiation
-* Error, warning, or success meaning
+- Long body text
+- Essential small text
+- Clinical risk states
+- Every button
+- Every icon
+- Large backgrounds by default
+- Form fields
+- Data-series differentiation
+- Error, warning, or success meaning
 
 ---
 
@@ -541,12 +541,12 @@ Clinical risk colors may only be used when the associated clinical logic and wor
 
 Requirements:
 
-* Always show the written state
-* Never rely on color alone
-* Include an explanation
-* Distinguish risk from diagnosis
-* Provide professional-care guidance
-* Avoid animated alarm behavior
+- Always show the written state
+- Never rely on color alone
+- Include an explanation
+- Distinguish risk from diagnosis
+- Provide professional-care guidance
+- Avoid animated alarm behavior
 
 ---
 
@@ -608,10 +608,10 @@ sans-serif
 
 Approved weights:
 
-* 400 — Regular
-* 500 — Medium
-* 600 — Semibold
-* 700 — Bold
+- 400 — Regular
+- 500 — Medium
+- 600 — Semibold
+- 700 — Bold
 
 Avoid weights below 400 for essential text.
 
@@ -619,12 +619,12 @@ Avoid weights below 400 for essential text.
 
 Font delivery must:
 
-* Avoid layout shifts
-* Use only required weights
-* Use approved licensing
-* Provide system fallbacks
-* Avoid committing unlicensed font files
-* Support English and Arabic consistently
+- Avoid layout shifts
+- Use only required weights
+- Use approved licensing
+- Provide system fallbacks
+- Avoid committing unlicensed font files
+- Support English and Arabic consistently
 
 ---
 
@@ -666,23 +666,23 @@ Font delivery must:
 
 Recommended readable line lengths:
 
-* Patient body content: 55–72 characters
-* Provider body content: 60–80 characters
-* Legal content: maximum 85 characters
-* Hero text: maximum 18 words per line where practical
+- Patient body content: 55–72 characters
+- Provider body content: 60–80 characters
+- Legal content: maximum 85 characters
+- Hero text: maximum 18 words per line where practical
 
 ---
 
 # 14. Heading Rules
 
-* One visible H1 per page
-* Heading levels must follow semantic hierarchy
-* Do not choose heading levels for visual size
-* Avoid all-uppercase headings
-* Avoid gradient treatment on long headings
-* Do not use more than two font weights in one heading
-* Keep Patient headings plain and direct
-* Provider headings may be more technical but must remain concise
+- One visible H1 per page
+- Heading levels must follow semantic hierarchy
+- Do not choose heading levels for visual size
+- Avoid all-uppercase headings
+- Avoid gradient treatment on long headings
+- Do not use more than two font weights in one heading
+- Keep Patient headings plain and direct
+- Provider headings may be more technical but must remain concise
 
 ---
 
@@ -776,27 +776,27 @@ Full-bleed maximum   = 1600px
 
 ## 18.1 Desktop
 
-* 12 columns
-* 24px minimum gutter
-* 32px preferred gutter on wide layouts
+- 12 columns
+- 24px minimum gutter
+- 32px preferred gutter on wide layouts
 
 ## 18.2 Tablet
 
-* 8 columns
-* 24px gutter
+- 8 columns
+- 24px gutter
 
 ## 18.3 Mobile
 
-* 4 columns
-* 16px gutter
+- 4 columns
+- 16px gutter
 
 ## 18.4 Grid Rules
 
-* Text should not span more columns than required
-* Clinical tables may use wider containers
-* Patient narratives should favor narrower reading widths
-* Provider dashboards shown as website previews may use the wide container
-* Asymmetry may be used only when hierarchy remains clear
+- Text should not span more columns than required
+- Clinical tables may use wider containers
+- Patient narratives should favor narrower reading widths
+- Provider dashboards shown as website previews may use the wide container
+- Asymmetry may be used only when hierarchy remains clear
 
 ---
 
@@ -877,11 +877,11 @@ Use one consistent icon family for standard interface icons.
 
 Custom icons may be created for:
 
-* Maternal intelligence
-* Fetal growth intelligence
-* Longitudinal timelines
-* Patient-Provider collaboration
-* ODRISC-specific clinical concepts
+- Maternal intelligence
+- Fetal growth intelligence
+- Longitudinal timelines
+- Patient-Provider collaboration
+- ODRISC-specific clinical concepts
 
 ## 21.2 Icon Sizes
 
@@ -896,13 +896,13 @@ icon-2xl = 48px
 
 ## 21.3 Icon Rules
 
-* Important icons require text labels
-* Use consistent stroke widths
-* Do not mix filled and outline families casually
-* Avoid decorative icons inside every heading
-* Mirror directional icons in RTL
-* Do not mirror universal medical or media symbols without reason
-* Clinical status icons must not rely on color alone
+- Important icons require text labels
+- Use consistent stroke widths
+- Do not mix filled and outline families casually
+- Avoid decorative icons inside every heading
+- Mirror directional icons in RTL
+- Do not mirror universal medical or media symbols without reason
+- Clinical status icons must not rely on color alone
 
 ---
 
@@ -912,30 +912,30 @@ icon-2xl = 48px
 
 Preferred ratios:
 
-* Hero landscape: `16:9`
-* Editorial landscape: `3:2`
-* Portrait: `4:5`
-* Profile: `1:1`
-* Wide narrative: `21:9`
+- Hero landscape: `16:9`
+- Editorial landscape: `3:2`
+- Portrait: `4:5`
+- Profile: `1:1`
+- Wide narrative: `21:9`
 
 ## 22.2 Image Treatment
 
-* Natural lighting
-* Neutral or white environments
-* Low visual clutter
-* Controlled coral or mint accents only when authentic
-* Respectful cropping
-* Avoid overly warm lifestyle filters
-* Do not apply heavy gradient overlays by default
+- Natural lighting
+- Neutral or white environments
+- Low visual clutter
+- Controlled coral or mint accents only when authentic
+- Respectful cropping
+- Avoid overly warm lifestyle filters
+- Do not apply heavy gradient overlays by default
 
 ## 22.3 Product Screens
 
 Every product image must be labeled where necessary as:
 
-* Current interface
-* Prototype
-* Concept
-* In development
+- Current interface
+- Prototype
+- Concept
+- In development
 
 No real patient information may appear.
 
@@ -945,13 +945,13 @@ No real patient information may appear.
 
 Illustrations should use:
 
-* White or neutral backgrounds
-* Fine neutral lines
-* Controlled coral beginnings
-* Mint progression or resolution
-* Minimal fills
-* Clear labels
-* Limited visual depth
+- White or neutral backgrounds
+- Fine neutral lines
+- Controlled coral beginnings
+- Mint progression or resolution
+- Minimal fills
+- Clear labels
+- Limited visual depth
 
 Illustration complexity levels:
 
@@ -985,25 +985,25 @@ Brand colors should not carry clinical meaning without context.
 
 Use neutral gray for:
 
-* Reference ranges
-* Previous periods
-* Inactive comparison
-* Population context
-* Missing or unavailable information
+- Reference ranges
+- Previous periods
+- Inactive comparison
+- Population context
+- Missing or unavailable information
 
 ## 24.3 Brand Data Roles
 
 Coral may represent:
 
-* Maternal series
-* Starting state
-* Patient-entered progression
+- Maternal series
+- Starting state
+- Patient-entered progression
 
 Mint-derived dark green may represent:
 
-* Fetal or growth series
-* Resolution
-* Connected outcome
+- Fetal or growth series
+- Resolution
+- Connected outcome
 
 These associations are defaults, not universal clinical rules.
 
@@ -1011,15 +1011,15 @@ These associations are defaults, not universal clinical rules.
 
 Every chart must include:
 
-* Title
-* Unit
-* Time period
-* Data source where relevant
-* Legend or direct labels
-* Accessible summary
-* Missing-data state
-* Appropriate uncertainty
-* Standard or reference where applicable
+- Title
+- Unit
+- Time period
+- Data source where relevant
+- Legend or direct labels
+- Accessible summary
+- Missing-data state
+- Appropriate uncertainty
+- Standard or reference where applicable
 
 ---
 
@@ -1038,7 +1038,7 @@ Radius: radius-md
 
 Purpose:
 
-* One primary action per page or section
+- One primary action per page or section
 
 ## 25.2 Brand-Accent Button
 
@@ -1052,9 +1052,9 @@ Border: gradient treatment or coral-300
 
 Use for:
 
-* Selected brand moments
-* Audience selection
-* Secondary Patient or Provider actions
+- Selected brand moments
+- Audience selection
+- Secondary Patient or Provider actions
 
 Do not use gradient-filled buttons with low-contrast text.
 
@@ -1094,13 +1094,13 @@ Minimum interactive target:
 
 Required states:
 
-* Default
-* Hover
-* Focus
-* Active
-* Disabled
-* Loading
-* Success where appropriate
+- Default
+- Hover
+- Focus
+- Active
+- Disabled
+- Loading
+- Success where appropriate
 
 Loading states must preserve button width where practical.
 
@@ -1110,16 +1110,16 @@ Loading states must preserve button width where practical.
 
 ## 26.1 Inline Links
 
-* Underline by default in long-form content
-* Use descriptive text
-* Provide visible focus
-* Do not rely on color alone
+- Underline by default in long-form content
+- Use descriptive text
+- Provide visible focus
+- Do not rely on color alone
 
 ## 26.2 Navigation Links
 
-* Underline not required
-* Active state must be visible
-* Audience context must remain clear
+- Underline not required
+- Active state must be visible
+- Audience context must remain clear
 
 ## 26.3 External Links
 
@@ -1150,26 +1150,26 @@ Radius: radius-sm
 
 ## 27.3 Labels
 
-* Always visible
-* Positioned above controls
-* `14px` semibold
-* Required state communicated in text
-* Placeholder is not a label
+- Always visible
+- Positioned above controls
+- `14px` semibold
+- Required state communicated in text
+- Placeholder is not a label
 
 ## 27.4 Help Text
 
-* `14px`
-* Neutral secondary
-* Explains format or purpose
-* Must not contain critical information unavailable elsewhere
+- `14px`
+- Neutral secondary
+- Explains format or purpose
+- Must not contain critical information unavailable elsewhere
 
 ## 27.5 Error State
 
-* Semantic error border
-* Error icon
-* Written explanation
-* Programmatically associated with the field
-* Error summary for multi-field forms
+- Semantic error border
+- Error icon
+- Written explanation
+- Programmatically associated with the field
+- Error summary for multi-field forms
 
 ## 27.6 Success State
 
@@ -1181,11 +1181,11 @@ Do not turn every valid field green.
 
 Public forms must not encourage entry of:
 
-* Medical history
-* Symptoms
-* Patient reports
-* Identifiable clinical details
-* Risk-assessment answers
+- Medical history
+- Symptoms
+- Patient reports
+- Identifiable clinical details
+- Risk-assessment answers
 
 ---
 
@@ -1233,51 +1233,51 @@ Shadow: none or shadow-xs
 
 May use:
 
-* Coral-50 surface
-* Coral-200 border
-* Clear plain-language heading
-* One simple illustration
-* One next action
+- Coral-50 surface
+- Coral-200 border
+- Clear plain-language heading
+- One simple illustration
+- One next action
 
 ## 29.3 Provider Card
 
 May use:
 
-* Neutral or mint-50 surface
-* More structured metadata
-* Methodology or Product Status label
-* Higher information density
+- Neutral or mint-50 surface
+- More structured metadata
+- Methodology or Product Status label
+- Higher information density
 
 ## 29.4 Evidence Card
 
 Must include:
 
-* Evidence type
-* Source
-* Date
-* What was evaluated
-* Limitation
+- Evidence type
+- Source
+- Date
+- What was evaluated
+- Limitation
 
 ## 29.5 Capability Card
 
 Must include:
 
-* Capability name
-* User need
-* One-sentence explanation
-* Product Status where material
-* Relevant route
+- Capability name
+- User need
+- One-sentence explanation
+- Product Status where material
+- Relevant route
 
 ## 29.6 Metric Card
 
 Must include:
 
-* Metric label
-* Value
-* Unit
-* Period
-* Context
-* Source where required
+- Metric label
+- Value
+- Unit
+- Period
+- Context
+- Source where required
 
 Avoid isolated large numbers with no explanation.
 
@@ -1296,13 +1296,13 @@ Recommended height:
 
 Header includes:
 
-* Logo
-* Audience context
-* Primary navigation
-* Audience switch
-* Login where available
-* Primary CTA
-* Language or market control where active
+- Logo
+- Audience context
+- Primary navigation
+- Audience switch
+- Login where available
+- Primary CTA
+- Language or market control where active
 
 ## 30.2 Sticky Behavior
 
@@ -1310,30 +1310,30 @@ The header may become sticky after scrolling.
 
 Requirements:
 
-* Must not obscure headings
-* Must not consume excessive mobile space
-* Must remain keyboard accessible
-* Must not use heavy blur or glass effects
-* Must respect reduced transparency where applicable
+- Must not obscure headings
+- Must not consume excessive mobile space
+- Must remain keyboard accessible
+- Must not use heavy blur or glass effects
+- Must respect reduced transparency where applicable
 
 ## 30.3 Mobile Navigation
 
-* Full-height or near-full-height drawer
-* Visible audience context
-* Visible audience switch
-* Primary CTA remains prominent
-* Nested groups clearly labeled
-* Escape and close controls supported
-* Focus trapped while open
-* Background scrolling disabled
+- Full-height or near-full-height drawer
+- Visible audience context
+- Visible audience switch
+- Primary CTA remains prominent
+- Nested groups clearly labeled
+- Escape and close controls supported
+- Focus trapped while open
+- Background scrolling disabled
 
 ## 30.4 Active State
 
 Active navigation must use:
 
-* Text weight
-* Underline or indicator
-* Accessible contrast
+- Text weight
+- Underline or indicator
+- Accessible contrast
 
 Do not rely on color alone.
 
@@ -1343,12 +1343,12 @@ Do not rely on color alone.
 
 The audience switcher must:
 
-* Clearly identify the current experience
-* Offer the alternate experience
-* Remain available without authentication
-* Work on mobile and desktop
-* Route to an equivalent page where defined
-* Avoid implying two separate products
+- Clearly identify the current experience
+- Offer the alternate experience
+- Remain available without authentication
+- Work on mobile and desktop
+- Route to an equivalent page where defined
+- Avoid implying two separate products
 
 Recommended labels:
 
@@ -1365,11 +1365,11 @@ Final visible wording remains subject to approved content decisions.
 
 Breadcrumbs should use:
 
-* `14px` text
-* Neutral secondary text
-* Clear current-page state
-* Accessible separators
-* Horizontal scrolling only as a last resort on mobile
+- `14px` text
+- Neutral secondary text
+- Clear current-page state
+- Accessible separators
+- Horizontal scrolling only as a last resort on mobile
 
 Do not truncate the current page label when it is essential for orientation.
 
@@ -1379,24 +1379,24 @@ Do not truncate the current page label when it is essential for orientation.
 
 Use tabs when:
 
-* Content belongs to one context
-* Users benefit from comparing related views
-* All tab labels are visible
+- Content belongs to one context
+- Users benefit from comparing related views
+- All tab labels are visible
 
 Do not use tabs to hide essential narrative content.
 
 Examples:
 
-* Preconception / Pregnancy
-* Patient / Provider explanation within a shared comparison
-* Methodology categories
+- Preconception / Pregnancy
+- Patient / Provider explanation within a shared comparison
+- Methodology categories
 
 Requirements:
 
-* Keyboard arrow navigation
-* Visible selected state
-* Programmatic relationships
-* URL state only when deep linking adds value
+- Keyboard arrow navigation
+- Visible selected state
+- Programmatic relationships
+- URL state only when deep linking adds value
 
 ---
 
@@ -1404,20 +1404,20 @@ Requirements:
 
 Use accordions for:
 
-* FAQs
-* Secondary methodology detail
-* Optional evidence
-* Legal or technical explanations
+- FAQs
+- Secondary methodology detail
+- Optional evidence
+- Legal or technical explanations
 
 Do not place primary page arguments entirely inside accordions.
 
 Accordion requirements:
 
-* Button-based heading
-* Visible expanded state
-* Keyboard accessible
-* Multiple-open behavior preferred for long FAQs
-* Search engines and assistive technology must access the content
+- Button-based heading
+- Visible expanded state
+- Keyboard accessible
+- Multiple-open behavior preferred for long FAQs
+- Search engines and assistive technology must access the content
 
 ---
 
@@ -1425,20 +1425,20 @@ Accordion requirements:
 
 Approved badge categories:
 
-* Product Status
-* Audience
-* Content type
-* Market
-* Language
-* Validation type
+- Product Status
+- Audience
+- Content type
+- Market
+- Language
+- Validation type
 
 Badges must:
 
-* Remain short
-* Use visible text
-* Avoid excessive color
-* Avoid pill overuse
-* Never replace explanatory content
+- Remain short
+- Use visible text
+- Avoid excessive color
+- Avoid pill overuse
+- Never replace explanatory content
 
 ---
 
@@ -1472,11 +1472,11 @@ Common boundary message:
 
 Must be:
 
-* Direct
-* Visible
-* Non-alarmist
-* Market-appropriate
-* Reviewed clinically
+- Direct
+- Visible
+- Non-alarmist
+- Market-appropriate
+- Reviewed clinically
 
 ---
 
@@ -1484,24 +1484,24 @@ Must be:
 
 Tables are appropriate for:
 
-* Provider comparison
-* Product-status registers
-* Methodology
-* Evidence
-* Pricing
-* Clinical definitions
-* Implementation details
+- Provider comparison
+- Product-status registers
+- Methodology
+- Evidence
+- Pricing
+- Clinical definitions
+- Implementation details
 
 Requirements:
 
-* Header cells identified
-* Caption or title provided
-* Responsive strategy defined
-* Units included
-* Sorting only when useful
-* No essential meaning conveyed only through cell color
-* Sticky headers permitted for long tables
-* Horizontal scrolling clearly indicated on small screens
+- Header cells identified
+- Caption or title provided
+- Responsive strategy defined
+- Units included
+- Sorting only when useful
+- No essential meaning conveyed only through cell color
+- Sticky headers permitted for long tables
+- Horizontal scrolling clearly indicated on small screens
 
 Patient pages should use tables sparingly.
 
@@ -1515,37 +1515,37 @@ Timelines are core ODRISC components.
 
 Used for:
 
-* Pregnancy story
-* Product journey
-* Fragmentation-to-intelligence transformation
+- Pregnancy story
+- Product journey
+- Fragmentation-to-intelligence transformation
 
 ## 38.2 Pregnancy Timeline
 
 May show:
 
-* Trimester
-* Gestational age
-* Maternal milestones
-* Fetal milestones
-* Appointments
-* Data points
+- Trimester
+- Gestational age
+- Maternal milestones
+- Fetal milestones
+- Appointments
+- Data points
 
 ## 38.3 Workflow Stepper
 
 Used for:
 
-* Patient enrolment
-* Provider review
-* Demo process
-* Pilot process
+- Patient enrolment
+- Provider review
+- Demo process
+- Pilot process
 
 Requirements:
 
-* Current step written explicitly
-* Completed and upcoming states distinguished
-* Vertical mobile layout
-* Meaning beyond color
-* No unsupported implication of clinical completion
+- Current step written explicitly
+- Completed and upcoming states distinguished
+- Vertical mobile layout
+- Meaning beyond color
+- No unsupported implication of clinical completion
 
 ---
 
@@ -1555,19 +1555,19 @@ Public Provider pages may preview clinical interfaces.
 
 Approved preview component types:
 
-* Patient list preview
-* Maternal timeline preview
-* Fetal growth chart preview
-* Clinical summary preview
-* Alert explanation preview
-* Workflow preview
+- Patient list preview
+- Maternal timeline preview
+- Fetal growth chart preview
+- Clinical summary preview
+- Alert explanation preview
+- Workflow preview
 
 Every preview must state whether it is:
 
-* Current
-* Prototype
-* Concept
-* In development
+- Current
+- Prototype
+- Concept
+- In development
 
 No preview may contain identifiable patient data.
 
@@ -1579,26 +1579,26 @@ Use dialogs only when the task requires focused interruption.
 
 Appropriate uses:
 
-* Consent confirmation
-* Short form confirmation
-* Language or market clarification
-* Video or product-preview expansion
+- Consent confirmation
+- Short form confirmation
+- Language or market clarification
+- Video or product-preview expansion
 
 Avoid using modals for:
 
-* Long content
-* Essential clinical explanations
-* Full-page forms
-* Repeated promotional messages
+- Long content
+- Essential clinical explanations
+- Full-page forms
+- Repeated promotional messages
 
 Requirements:
 
-* Focus trap
-* Escape support
-* Visible close button
-* Descriptive title
-* Background inert
-* Return focus after closing
+- Focus trap
+- Escape support
+- Visible close button
+- Descriptive title
+- Background inert
+- Return focus after closing
 
 ---
 
@@ -1606,10 +1606,10 @@ Requirements:
 
 Drawers are appropriate for:
 
-* Mobile navigation
-* Filters
-* Optional detail
-* Contextual information
+- Mobile navigation
+- Filters
+- Optional detail
+- Contextual information
 
 Drawers must not conceal critical safety information.
 
@@ -1621,17 +1621,17 @@ Use tooltips for short supplementary definitions.
 
 Do not use tooltips for:
 
-* Essential instructions
-* Long clinical explanations
-* Mobile-only content
-* Safety information
+- Essential instructions
+- Long clinical explanations
+- Mobile-only content
+- Safety information
 
 Tooltips must work with:
 
-* Keyboard
-* Pointer
-* Touch where practical
-* Screen readers
+- Keyboard
+- Pointer
+- Touch where practical
+- Screen readers
 
 ---
 
@@ -1639,17 +1639,17 @@ Tooltips must work with:
 
 Toasts may confirm:
 
-* Form submission
-* Copy action
-* Saved preference
-* Non-critical system state
+- Form submission
+- Copy action
+- Saved preference
+- Non-critical system state
 
 Toasts must not communicate:
 
-* Critical clinical warnings
-* Important legal terms
-* Form errors requiring action
-* Product availability limitations
+- Critical clinical warnings
+- Important legal terms
+- Form errors requiring action
+- Product availability limitations
 
 ---
 
@@ -1657,19 +1657,19 @@ Toasts must not communicate:
 
 Every interactive feature must define:
 
-* Loading
-* Empty
-* Partial data
-* Error
-* Success
-* Offline or unavailable state where relevant
+- Loading
+- Empty
+- Partial data
+- Error
+- Success
+- Offline or unavailable state where relevant
 
 Tone must remain:
 
-* Calm
-* Specific
-* Recovery-oriented
-* Non-blaming
+- Calm
+- Specific
+- Recovery-oriented
+- Non-blaming
 
 Avoid:
 
@@ -1685,24 +1685,24 @@ Prefer:
 
 The Patient experience should use:
 
-* More open space
-* Larger body text
-* Simpler diagrams
-* Fewer simultaneous metrics
-* Coral-led accents
-* Supportive illustrations
-* Clear next actions
-* More explanatory labels
-* Lower information density
-* Strong safety context
+- More open space
+- Larger body text
+- Simpler diagrams
+- Fewer simultaneous metrics
+- Coral-led accents
+- Supportive illustrations
+- Clear next actions
+- More explanatory labels
+- Lower information density
+- Strong safety context
 
 Patient pages should generally avoid:
 
-* Dense tables
-* Multiple data visualizations in one viewport
-* Specialist terminology as primary labels
-* Dashboard-style layouts
-* Aggressive alert colors
+- Dense tables
+- Multiple data visualizations in one viewport
+- Specialist terminology as primary labels
+- Dashboard-style layouts
+- Aggressive alert colors
 
 ---
 
@@ -1710,25 +1710,25 @@ Patient pages should generally avoid:
 
 The Provider experience may use:
 
-* Higher information density
-* More structured grids
-* Methodology labels
-* Product Status badges
-* Evidence cards
-* Tables
-* Charts
-* Data-source labels
-* Mint-led accents
-* Neutral clinical surfaces
-* Detail on demand
+- Higher information density
+- More structured grids
+- Methodology labels
+- Product Status badges
+- Evidence cards
+- Tables
+- Charts
+- Data-source labels
+- Mint-led accents
+- Neutral clinical surfaces
+- Detail on demand
 
 Provider density must not reduce:
 
-* Readability
-* Accessibility
-* Trust
-* Explanation
-* Mobile usability
+- Readability
+- Accessibility
+- Trust
+- Explanation
+- Mobile usability
 
 ---
 
@@ -1736,28 +1736,28 @@ Provider density must not reduce:
 
 Patient and Provider experiences must share:
 
-* Logo
-* Typography
-* Core colors
-* Signature gradient
-* Spacing system
-* Radius system
-* Button system
-* Navigation logic
-* Icon family
-* Accessibility rules
-* Motion principles
-* Component foundations
+- Logo
+- Typography
+- Core colors
+- Signature gradient
+- Spacing system
+- Radius system
+- Button system
+- Navigation logic
+- Icon family
+- Accessibility rules
+- Motion principles
+- Component foundations
 
 They may differ in:
 
-* Accent balance
-* Density
-* Diagram complexity
-* Content hierarchy
-* Page templates
-* CTA language
-* Evidence depth
+- Accent balance
+- Density
+- Diagram complexity
+- Content hierarchy
+- Page templates
+- CTA language
+- Evidence depth
 
 ---
 
@@ -1831,13 +1831,13 @@ They may differ in:
 
 Design must not:
 
-* Shorten content until clinical meaning changes
-* Hide Product Status to improve visual simplicity
-* Move limitations into inaccessible fine print
-* Replace labels with icons
-* Turn evidence into decorative statistics
-* Present prototype interfaces as live
-* Introduce a second CTA that competes with the approved primary CTA
+- Shorten content until clinical meaning changes
+- Hide Product Status to improve visual simplicity
+- Move limitations into inaccessible fine print
+- Replace labels with icons
+- Turn evidence into decorative statistics
+- Present prototype interfaces as live
+- Introduce a second CTA that competes with the approved primary CTA
 
 Content and design must be reviewed together.
 
@@ -1853,18 +1853,18 @@ WCAG 2.2 Level AA
 
 This includes:
 
-* Keyboard access
-* Focus visibility
-* Contrast
-* Touch targets
-* Semantic structure
-* Form labeling
-* Error identification
-* Reduced motion
-* Text scaling
-* Non-color-dependent meaning
-* Accessible names
-* Screen-reader announcements
+- Keyboard access
+- Focus visibility
+- Contrast
+- Touch targets
+- Semantic structure
+- Form labeling
+- Error identification
+- Reduced motion
+- Text scaling
+- Non-color-dependent meaning
+- Accessible names
+- Screen-reader announcements
 
 Automated testing alone is insufficient.
 
@@ -1877,28 +1877,28 @@ Manual review is required.
 Default focus ring:
 
 ```css
-outline: 3px solid #175CD3;
+outline: 3px solid #175cd3;
 outline-offset: 3px;
 ```
 
 Requirements:
 
-* Never remove focus without replacement
-* Focus must remain visible against white and tinted surfaces
-* Focus must not depend on shadow alone
-* Focus order must follow reading order
-* Skip links must be provided
+- Never remove focus without replacement
+- Focus must remain visible against white and tinted surfaces
+- Focus must not depend on shadow alone
+- Focus order must follow reading order
+- Skip links must be provided
 
 ---
 
 # 52. Touch and Pointer Requirements
 
-* Minimum interactive target: `44px × 44px`
-* Minimum space between adjacent small targets: `8px`
-* Hover must not be required for access
-* Dragging must have an alternative
-* Small chart points must have accessible selection alternatives
-* Tooltips must not require precise pointer movement
+- Minimum interactive target: `44px × 44px`
+- Minimum space between adjacent small targets: `8px`
+- Hover must not be required for access
+- Dragging must have an alternative
+- Small chart points must have accessible selection alternatives
+- Tooltips must not require precise pointer movement
 
 ---
 
@@ -1907,17 +1907,17 @@ Requirements:
 The design system must support:
 
 ```css
-@media (prefers-reduced-motion: reduce)
+@media (prefers-reduced-motion: reduce);
 ```
 
 When reduced motion is active:
 
-* Remove non-essential transitions
-* Avoid parallax
-* Avoid continuous motion
-* Replace animated sequences with static progression
-* Preserve content and state changes
-* Keep focus and error feedback clear
+- Remove non-essential transitions
+- Avoid parallax
+- Avoid continuous motion
+- Replace animated sequences with static progression
+- Preserve content and state changes
+- Keep focus and error feedback clear
 
 Detailed rules belong in `ANIMATION_GUIDELINES.md`.
 
@@ -1930,35 +1930,34 @@ Detailed rules belong in `ANIMATION_GUIDELINES.md`.
 Arabic pages must use:
 
 ```html
-dir="rtl"
-lang="ar"
+dir="rtl" lang="ar"
 ```
 
 ## 54.2 Layout
 
 RTL implementation must:
 
-* Mirror layout flow where appropriate
-* Mirror directional navigation icons
-* Preserve clinical chart direction when chronology requires left-to-right
-* Keep numbers and units readable
-* Support mixed-language clinical terminology
-* Reassess alignment rather than mechanically flipping every element
+- Mirror layout flow where appropriate
+- Mirror directional navigation icons
+- Preserve clinical chart direction when chronology requires left-to-right
+- Keep numbers and units readable
+- Support mixed-language clinical terminology
+- Reassess alignment rather than mechanically flipping every element
 
 ## 54.3 Components
 
 Every reusable component must be tested for:
 
-* RTL text
-* Long Arabic labels
-* Arabic forms
-* Arabic navigation
-* Mixed Latin and Arabic data
-* Tables
-* Charts
-* Accordions
-* Modals
-* Breadcrumbs
+- RTL text
+- Long Arabic labels
+- Arabic forms
+- Arabic navigation
+- Mixed Latin and Arabic data
+- Tables
+- Charts
+- Accordions
+- Modals
+- Breadcrumbs
 
 ## 54.4 Typography
 
@@ -1972,13 +1971,13 @@ Do not force Arabic text into Latin line-height assumptions.
 
 Components must support:
 
-* Labels 30–50% longer than English
-* Multi-line button text only when unavoidable
-* Longer navigation items
-* Different date and number formats
-* Currency differences
-* Market-specific disclaimers
-* Market-specific Product Status
+- Labels 30–50% longer than English
+- Multi-line button text only when unavoidable
+- Longer navigation items
+- Different date and number formats
+- Currency differences
+- Market-specific disclaimers
+- Market-specific Product Status
 
 Fixed-width text containers should be avoided.
 
@@ -1990,9 +1989,9 @@ Dark mode is not part of the public website V1 design system.
 
 Reasons:
 
-* White is a foundational ODRISC brand surface
-* Clinical and brand color validation is not yet complete for dark environments
-* Arabic and data-visualization testing would require separate review
+- White is a foundational ODRISC brand surface
+- Clinical and brand color validation is not yet complete for dark environments
+- Arabic and data-visualization testing would require separate review
 
 Dark mode may be evaluated later through a formal decision.
 
@@ -2035,12 +2034,12 @@ Every component should minimize variants.
 
 A variant is justified only when it changes:
 
-* Audience need
-* Semantic meaning
-* Interaction
-* Density
-* Product Status
-* Clinical context
+- Audience need
+- Semantic meaning
+- Interaction
+- Density
+- Product Status
+- Clinical context
 
 Do not create variants only to match one mockup.
 
@@ -2050,19 +2049,19 @@ Do not create variants only to match one mockup.
 
 Every reusable component must document:
 
-* Purpose
-* Supported contexts
-* Anatomy
-* Variants
-* Sizes
-* States
-* Content rules
-* Accessibility
-* Responsive behavior
-* RTL behavior
-* Analytics where relevant
-* Examples
-* Prohibited use
+- Purpose
+- Supported contexts
+- Anatomy
+- Variants
+- Sizes
+- States
+- Content rules
+- Accessibility
+- Responsive behavior
+- RTL behavior
+- Analytics where relevant
+- Examples
+- Prohibited use
 
 Detailed component documentation belongs in:
 
@@ -2076,47 +2075,47 @@ Every page and component must be reviewed for:
 
 ## 60.1 Brand
 
-* ODRISC identity
-* Audience voice
-* Color use
-* Gradient restraint
-* Negative space
-* Visual consistency
+- ODRISC identity
+- Audience voice
+- Color use
+- Gradient restraint
+- Negative space
+- Visual consistency
 
 ## 60.2 Accessibility
 
-* Contrast
-* Keyboard
-* Focus
-* Touch targets
-* Reduced motion
-* Screen-reader meaning
-* Chart alternatives
+- Contrast
+- Keyboard
+- Focus
+- Touch targets
+- Reduced motion
+- Screen-reader meaning
+- Chart alternatives
 
 ## 60.3 Responsive Behavior
 
-* Mobile reading order
-* Tablet layout
-* Desktop hierarchy
-* Long content
-* Long labels
-* Arabic expansion
+- Mobile reading order
+- Tablet layout
+- Desktop hierarchy
+- Long content
+- Long labels
+- Arabic expansion
 
 ## 60.4 Product Accuracy
 
-* Product Status
-* Validation status
-* Current versus concept interfaces
-* CTA availability
-* Clinical boundaries
+- Product Status
+- Validation status
+- Current versus concept interfaces
+- CTA availability
+- Clinical boundaries
 
 ## 60.5 Technical Quality
 
-* No layout shift
-* Optimized media
-* Consistent tokens
-* No arbitrary values
-* No inaccessible custom controls
+- No layout shift
+- Optimized media
+- Consistent tokens
+- No arbitrary values
+- No inaccessible custom controls
 
 ---
 
@@ -2128,27 +2127,27 @@ Every page and component must be reviewed for:
 
 Examples:
 
-* Minor token correction
-* Documentation clarification
-* Non-breaking accessibility improvement
+- Minor token correction
+- Documentation clarification
+- Non-breaking accessibility improvement
 
 ### Minor
 
 Examples:
 
-* New component
-* New approved variant
-* New semantic token
+- New component
+- New approved variant
+- New semantic token
 
 ### Major
 
 Examples:
 
-* New color system
-* Typography replacement
-* Breakpoint changes
-* Major component API changes
-* Separate audience brand expression
+- New color system
+- Typography replacement
+- Breakpoint changes
+- Major component API changes
+- Separate audience brand expression
 
 ## 61.2 Change Requirements
 
@@ -2173,14 +2172,14 @@ Tokens must not be changed only to make one page easier to design.
 
 Before changing a token, evaluate:
 
-* Every component using it
-* Patient and Provider impact
-* Accessibility
-* English and Arabic
-* Charts
-* Print and presentation use
-* Existing implementation
-* Migration cost
+- Every component using it
+- Patient and Provider impact
+- Accessibility
+- English and Arabic
+- Charts
+- Print and presentation use
+- Existing implementation
+- Migration cost
 
 Token changes must be recorded in a token changelog.
 
@@ -2205,20 +2204,20 @@ Before generating a page, component, interface, diagram, or visual system, AI ag
 
 AI agents must not:
 
-* Invent new colors
-* Invent new spacing values
-* Invent new radii
-* Invent new typefaces
-* Create a separate Patient design system
-* Create a separate Provider design system
-* Use inaccessible gradient text
-* Use coral as an automatic error color
-* Remove focus states
-* create one-off components without documenting why
-* Use generic AI imagery
-* Treat screenshots as component specifications
-* Add dark mode without approval
-* Use hard-coded visual values where tokens exist
+- Invent new colors
+- Invent new spacing values
+- Invent new radii
+- Invent new typefaces
+- Create a separate Patient design system
+- Create a separate Provider design system
+- Use inaccessible gradient text
+- Use coral as an automatic error color
+- Remove focus states
+- create one-off components without documenting why
+- Use generic AI imagery
+- Treat screenshots as component specifications
+- Add dark mode without approval
+- Use hard-coded visual values where tokens exist
 
 ---
 
@@ -2265,26 +2264,26 @@ The following are approved V1 decisions:
 
 The following remain unresolved:
 
-* What is the final approved ODRISC logo?
-* Does ODRISC require a standalone brand symbol?
-* What are the final logo clear-space and minimum-size rules?
-* Which custom ODRISC icons require original design?
-* What is the final photography sourcing policy?
-* Which pages require commissioned photography?
-* Which illustrations require a custom system?
-* Which clinical charts appear in the public Provider release?
-* Which Product Status badges appear publicly at launch?
-* Which risk states are approved for public Patient display?
-* Which components require formal usability testing?
-* Which third-party charting implementation will be selected?
-* Does the public website require print styles?
-* Which Qatar pages launch simultaneously in English and Arabic?
-* What date, number, and currency formats are canonical by market?
-* Which product screenshots are current enough for publication?
-* Who owns final design-system approval?
-* Who owns token implementation and maintenance?
-* Which design application will hold the editable component library?
-* How will design-to-code synchronization be governed?
+- What is the final approved ODRISC logo?
+- Does ODRISC require a standalone brand symbol?
+- What are the final logo clear-space and minimum-size rules?
+- Which custom ODRISC icons require original design?
+- What is the final photography sourcing policy?
+- Which pages require commissioned photography?
+- Which illustrations require a custom system?
+- Which clinical charts appear in the public Provider release?
+- Which Product Status badges appear publicly at launch?
+- Which risk states are approved for public Patient display?
+- Which components require formal usability testing?
+- Which third-party charting implementation will be selected?
+- Does the public website require print styles?
+- Which Qatar pages launch simultaneously in English and Arabic?
+- What date, number, and currency formats are canonical by market?
+- Which product screenshots are current enough for publication?
+- Who owns final design-system approval?
+- Who owns token implementation and maintenance?
+- Which design application will hold the editable component library?
+- How will design-to-code synchronization be governed?
 
 These questions must remain in:
 
@@ -2298,20 +2297,20 @@ The ODRISC Design System turns the brand idea of longitudinal clarity into a con
 
 The system uses:
 
-* White space for calm
-* `#4D4D4D` for readable hierarchy
-* Coral for human and maternal emphasis
-* Mint for progression and connection
-* A coral-to-mint gradient for narrative transformation
-* Accessible neutral actions
-* Structured typography
-* Responsive grids
-* Controlled clinical data visualization
-* Patient-friendly simplicity
-* Provider-appropriate depth
-* Transparent Product Status
-* Strong accessibility
-* Arabic and right-to-left readiness
+- White space for calm
+- `#4D4D4D` for readable hierarchy
+- Coral for human and maternal emphasis
+- Mint for progression and connection
+- A coral-to-mint gradient for narrative transformation
+- Accessible neutral actions
+- Structured typography
+- Responsive grids
+- Controlled clinical data visualization
+- Patient-friendly simplicity
+- Provider-appropriate depth
+- Transparent Product Status
+- Strong accessibility
+- Arabic and right-to-left readiness
 
 The visual progression remains:
 

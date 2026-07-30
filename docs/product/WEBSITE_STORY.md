@@ -10,14 +10,14 @@
 **Primary brand line:** The Intelligence Layer for Pregnancy Care
 **Related documents:**
 
-* `PROJECT_CONTEXT.md`
-* `docs/product/PRODUCT_VISION.md`
-* `docs/product/AUDIENCE.md`
-* `docs/product/PRODUCT_STATUS.md`
-* `docs/product/WEBSITE_OBJECTIVES.md`
-* `docs/product/WEBSITE_STORY.md`
-* `docs/product/INFORMATION_ARCHITECTURE.md`
-* `docs/project/SOURCE_OF_TRUTH.md`
+- `PROJECT_CONTEXT.md`
+- `docs/product/PRODUCT_VISION.md`
+- `docs/product/AUDIENCE.md`
+- `docs/product/PRODUCT_STATUS.md`
+- `docs/product/WEBSITE_OBJECTIVES.md`
+- `docs/product/WEBSITE_STORY.md`
+- `docs/product/INFORMATION_ARCHITECTURE.md`
+- `docs/project/SOURCE_OF_TRUTH.md`
 
 The Website Story defines the narrative sequence. The canonical page hierarchy, URL structure, navigation, and audience-routing model are defined in `docs/product/INFORMATION_ARCHITECTURE.md`.
 
@@ -29,22 +29,22 @@ This document defines the story the ODRISC website must communicate.
 
 It governs:
 
-* The shared website narrative
-* The Patient journey
-* The Provider journey
-* Homepage structure
-* Page sequencing
-* Messaging hierarchy
-* Section transitions
-* Product explanation
-* Emotional progression
-* Clinical framing
-* Trust-building
-* Visual storytelling
-* Calls to action
-* Animation purpose
-* Audience switching
-* Content generation by AI agents
+- The shared website narrative
+- The Patient journey
+- The Provider journey
+- Homepage structure
+- Page sequencing
+- Messaging hierarchy
+- Section transitions
+- Product explanation
+- Emotional progression
+- Clinical framing
+- Trust-building
+- Visual storytelling
+- Calls to action
+- Animation purpose
+- Audience switching
+- Content generation by AI agents
 
 This document does not define final page copy.
 
@@ -68,13 +68,13 @@ The story does not develop only during appointments.
 
 It evolves:
 
-* Between consultations
-* Between ultrasound scans
-* Between laboratory tests
-* Between recorded measurements
-* Across trimesters
-* Across different members of the care team
-* Across the Patient and Provider experiences
+- Between consultations
+- Between ultrasound scans
+- Between laboratory tests
+- Between recorded measurements
+- Across trimesters
+- Across different members of the care team
+- Across the Patient and Provider experiences
 
 Yet much of pregnancy care is still reviewed through isolated moments.
 
@@ -164,12 +164,12 @@ Improved maternal and fetal outcomes
 
 This line may be used in:
 
-* Website headers
-* Presentation materials
-* Product summaries
-* Brand lockups
-* Provider-facing pages
-* Company descriptions
+- Website headers
+- Presentation materials
+- Product summaries
+- Brand lockups
+- Provider-facing pages
+- Company descriptions
 
 It must not be interpreted as a claim of autonomous intelligence or independent diagnosis.
 
@@ -179,18 +179,18 @@ It must not be interpreted as a claim of autonomous intelligence or independent 
 
 The website must not present ODRISC as:
 
-* A replacement for a doctor
-* A diagnostic authority
-* An automated pregnancy-management system
-* A generic pregnancy-content application
-* A collection of unrelated wellness tools
-* A weight-loss product
-* A fetal-growth calculator
-* An artificial-intelligence chatbot
-* A guarantee of healthy pregnancy outcomes
-* A system that can prevent every complication
-* A source of emergency medical care
-* A platform that transfers clinical responsibility to patients
+- A replacement for a doctor
+- A diagnostic authority
+- An automated pregnancy-management system
+- A generic pregnancy-content application
+- A collection of unrelated wellness tools
+- A weight-loss product
+- A fetal-growth calculator
+- An artificial-intelligence chatbot
+- A guarantee of healthy pregnancy outcomes
+- A system that can prevent every complication
+- A source of emergency medical care
+- A platform that transfers clinical responsibility to patients
 
 The website must not begin with technology.
 
@@ -215,13 +215,13 @@ The Patient is experiencing the pregnancy.
 
 She may be trying to understand:
 
-* What is happening
-* What is changing
-* What matters
-* What she can do
-* What she should discuss with her healthcare professional
-* Whether different reports and observations are connected
-* How to participate without becoming overwhelmed
+- What is happening
+- What is changing
+- What matters
+- What she can do
+- What she should discuss with her healthcare professional
+- Whether different reports and observations are connected
+- How to participate without becoming overwhelmed
 
 The Patient story must move from uncertainty toward structured understanding and informed participation.
 
@@ -231,12 +231,12 @@ The Provider is responsible for reviewing, interpreting, monitoring, and making 
 
 The Provider may be trying to understand:
 
-* How maternal and fetal information is changing
-* Whether a pattern is emerging
-* Whether a measurement is isolated or part of a trajectory
-* Which patients may require closer attention
-* How information from different sources relates
-* How technology can support the workflow without replacing judgment
+- How maternal and fetal information is changing
+- Whether a pattern is emerging
+- Whether a measurement is isolated or part of a trajectory
+- Which patients may require closer attention
+- How information from different sources relates
+- How technology can support the workflow without replacing judgment
 
 The Provider story must move from fragmentation toward longitudinal visibility, clinical confidence, and practical adoption.
 
@@ -244,12 +244,12 @@ The Provider story must move from fragmentation toward longitudinal visibility, 
 
 Both stories converge around:
 
-* A shared pregnancy timeline
-* Better-informed conversations
-* Clearer longitudinal understanding
-* Appropriate professional review
-* More coordinated monitoring
-* Improved maternal and fetal outcomes
+- A shared pregnancy timeline
+- Better-informed conversations
+- Clearer longitudinal understanding
+- Appropriate professional review
+- More coordinated monitoring
+- Improved maternal and fetal outcomes
 
 ---
 
@@ -263,8 +263,8 @@ The user should first understand:
 
 The user should then select:
 
-* I am a Patient
-* I am a Healthcare Provider
+- I am a Patient
+- I am a Healthcare Provider
 
 The selector is not simply a navigation preference.
 
@@ -272,12 +272,12 @@ It is the first act of narrative personalization.
 
 It tells the website:
 
-* What the visitor needs to understand
-* Which terminology is appropriate
-* Which proof matters
-* Which capabilities should be emphasized
-* Which call to action should be presented
-* How much clinical detail should be shown
+- What the visitor needs to understand
+- Which terminology is appropriate
+- Which proof matters
+- Which capabilities should be emphasized
+- Which call to action should be presented
+- How much clinical detail should be shown
 
 The entry experience must not imply that the two journeys are separate companies or products.
 
@@ -321,19 +321,19 @@ The visitor should think:
 
 Possible visual concepts include:
 
-* A continuous pregnancy timeline
-* Maternal and fetal information moving through time
-* Separate data points gradually becoming connected
-* A calm transition from early pregnancy to later pregnancy
-* A continuous line representing the pregnancy journey
+- A continuous pregnancy timeline
+- Maternal and fetal information moving through time
+- Separate data points gradually becoming connected
+- A calm transition from early pregnancy to later pregnancy
+- A continuous line representing the pregnancy journey
 
 ### Avoid
 
-* Feature grids
-* Dashboard screenshots as the opening image
-* Alarm-based messaging
-* Complication statistics without context
-* Technology-first headlines
+- Feature grids
+- Dashboard screenshots as the opening image
+- Alarm-based messaging
+- Complication statistics without context
+- Technology-first headlines
 
 ---
 
@@ -345,17 +345,17 @@ Define the problem.
 
 Pregnancy information may exist across:
 
-* Medical history
-* Weight measurements
-* Symptoms
-* Laboratory tests
-* Ultrasound scans
-* Fetal biometry
-* Doppler reports
-* Nutrition
-* Physical activity
-* Patient observations
-* Different healthcare professionals
+- Medical history
+- Weight measurements
+- Symptoms
+- Laboratory tests
+- Ultrasound scans
+- Fetal biometry
+- Doppler reports
+- Nutrition
+- Physical activity
+- Patient observations
+- Different healthcare professionals
 
 These sources often remain separated.
 
@@ -377,11 +377,11 @@ The visitor should think:
 
 Use an intentionally fragmented composition:
 
-* Separate report cards
-* Isolated measurements
-* Disconnected clinical icons
-* Independent timeline points
-* Maternal and fetal data displayed in separate areas
+- Separate report cards
+- Isolated measurements
+- Disconnected clinical icons
+- Independent timeline points
+- Maternal and fetal data displayed in separate areas
 
 The visual should later resolve into a connected system.
 
@@ -395,14 +395,14 @@ Explain why fragmentation matters.
 
 The clinical meaning of a value may depend on:
 
-* Previous values
-* Rate of change
-* Gestational age
-* Maternal context
-* Fetal context
-* Relevant standards
-* Whether change is sustained
-* Relationships among multiple indicators
+- Previous values
+- Rate of change
+- Gestational age
+- Maternal context
+- Fetal context
+- Relevant standards
+- Whether change is sustained
+- Relationships among multiple indicators
 
 ### Visitor Understanding
 
@@ -420,20 +420,20 @@ The visitor should think:
 
 ### Provider Emphasis
 
-* Growth velocity
-* Weight trajectory
-* Centile movement
-* Doppler progression
-* Longitudinal comparison
-* Maternal-fetal relationships
+- Growth velocity
+- Weight trajectory
+- Centile movement
+- Doppler progression
+- Longitudinal comparison
+- Maternal-fetal relationships
 
 ### Patient Emphasis
 
-* Progress over time
-* Connecting appointments
-* Understanding reports
-* Recognizing meaningful changes
-* Preparing better questions for the care team
+- Progress over time
+- Connecting appointments
+- Understanding reports
+- Recognizing meaningful changes
+- Preparing better questions for the care team
 
 ### Visual Direction
 
@@ -473,20 +473,20 @@ The visitor should think:
 
 ### Platform Inputs May Include
 
-* Maternal history
-* Pregnancy history
-* Metabolic risk
-* Weight trajectory
-* Nutrition
-* Physical activity
-* Symptoms
-* Laboratory information
-* Ultrasound measurements
-* Estimated fetal weight
-* Fetal biometry
-* Doppler information
-* Clinical observations
-* Patient-reported information
+- Maternal history
+- Pregnancy history
+- Metabolic risk
+- Weight trajectory
+- Nutrition
+- Physical activity
+- Symptoms
+- Laboratory information
+- Ultrasound measurements
+- Estimated fetal weight
+- Fetal biometry
+- Doppler information
+- Clinical observations
+- Patient-reported information
 
 The website must not imply that every input is currently integrated unless its status is approved in `docs/product/PRODUCT_STATUS.md`.
 
@@ -494,10 +494,10 @@ The website must not imply that every input is currently integrated unless its s
 
 The fragmented elements from the previous section should converge into:
 
-* One longitudinal timeline
-* One pregnancy story
-* One maternal-fetal intelligence layer
-* One shared ecosystem
+- One longitudinal timeline
+- One pregnancy story
+- One maternal-fetal intelligence layer
+- One shared ecosystem
 
 ---
 
@@ -529,29 +529,29 @@ The visitor should think:
 
 Depending on audience and capability status, the website may explain:
 
-* Timelines
-* Trends
-* Velocity
-* Percentile movement
-* Weight progression
-* Growth progression
-* Maternal change
-* Fetal change
-* Pattern recognition
-* Monitoring prompts
-* Explainable alerts
-* Clinical summaries
+- Timelines
+- Trends
+- Velocity
+- Percentile movement
+- Weight progression
+- Growth progression
+- Maternal change
+- Fetal change
+- Pattern recognition
+- Monitoring prompts
+- Explainable alerts
+- Clinical summaries
 
 ### Required Boundary
 
 Intelligence must always be positioned as:
 
-* Explainable
-* Reviewable
-* Supportive
-* Clinically bounded
-* Dependent on appropriate data quality
-* Subject to professional interpretation
+- Explainable
+- Reviewable
+- Supportive
+- Clinically bounded
+- Dependent on appropriate data quality
+- Subject to professional interpretation
 
 ---
 
@@ -589,43 +589,43 @@ Improved maternal and fetal outcomes
 
 For Patients, this means:
 
-* Better understanding
-* More informed participation
-* Clearer preparation for appointments
-* Knowing which information may need professional review
-* Greater continuity between consultations
+- Better understanding
+- More informed participation
+- Clearer preparation for appointments
+- Knowing which information may need professional review
+- Greater continuity between consultations
 
 ### Provider Interpretation
 
 For Providers, this means:
 
-* More efficient longitudinal review
-* Better visibility of emerging patterns
-* Explainable prioritization
-* More informed monitoring decisions
-* Clearer multidisciplinary collaboration
+- More efficient longitudinal review
+- Better visibility of emerging patterns
+- Explainable prioritization
+- More informed monitoring decisions
+- Clearer multidisciplinary collaboration
 
 ### Required Language Standard
 
 Prefer:
 
-* Supports
-* Helps
-* Enables
-* Provides visibility
-* Strengthens
-* Assists
-* May contribute to
+- Supports
+- Helps
+- Enables
+- Provides visibility
+- Strengthens
+- Assists
+- May contribute to
 
 Avoid:
 
-* Guarantees
-* Prevents
-* Diagnoses
-* Eliminates
-* Ensures
-* Automatically manages
-* Replaces
+- Guarantees
+- Prevents
+- Diagnoses
+- Eliminates
+- Ensures
+- Automatically manages
+- Replaces
 
 ---
 
@@ -655,24 +655,24 @@ The visitor should think:
 
 The Patient may:
 
-* Record relevant information
-* Follow approved guidance
-* Review understandable summaries
-* Prepare for consultations
-* Share information with consent
-* Contact the care team when appropriate
+- Record relevant information
+- Follow approved guidance
+- Review understandable summaries
+- Prepare for consultations
+- Share information with consent
+- Contact the care team when appropriate
 
 ### Provider Role
 
 The Provider may:
 
-* Review longitudinal trends
-* Interpret clinical information
-* Monitor selected patients
-* Validate findings
-* Make clinical decisions
-* Guide escalation
-* Coordinate care
+- Review longitudinal trends
+- Interpret clinical information
+- Monitor selected patients
+- Validate findings
+- Make clinical decisions
+- Guide escalation
+- Coordinate care
 
 ### Required Boundary
 
@@ -713,21 +713,21 @@ Depending on approved status, the website may organize the platform into:
 
 Capabilities should be framed around questions such as:
 
-* How can I understand my risk?
-* How is my pregnancy progressing?
-* How can I monitor weight appropriately?
-* How can I follow structured nutrition and physical activity?
-* How can I better understand what to discuss with my healthcare provider?
+- How can I understand my risk?
+- How is my pregnancy progressing?
+- How can I monitor weight appropriately?
+- How can I follow structured nutrition and physical activity?
+- How can I better understand what to discuss with my healthcare provider?
 
 ### Provider Presentation
 
 Capabilities should be framed around questions such as:
 
-* How can I review pregnancy progression across time?
-* How can I identify meaningful changes earlier?
-* How can I understand maternal and fetal trajectories together?
-* How can I monitor selected patients between visits?
-* How can ODRISC fit into clinical workflows?
+- How can I review pregnancy progression across time?
+- How can I identify meaningful changes earlier?
+- How can I understand maternal and fetal trajectories together?
+- How can I monitor selected patients between visits?
+- How can ODRISC fit into clinical workflows?
 
 ### Required Product-Status Rule
 
@@ -749,13 +749,13 @@ It should not feel like an unrelated sales block.
 
 By the time the visitor reaches the final CTA, they should understand:
 
-* Pregnancy evolves continuously
-* Pregnancy information is often fragmented
-* Longitudinal understanding matters
-* ODRISC connects maternal and fetal information
-* ODRISC supports patients and providers differently
-* ODRISC strengthens collaboration
-* ODRISC does not replace professional care
+- Pregnancy evolves continuously
+- Pregnancy information is often fragmented
+- Longitudinal understanding matters
+- ODRISC connects maternal and fetal information
+- ODRISC supports patients and providers differently
+- ODRISC strengthens collaboration
+- ODRISC does not replace professional care
 
 ## 9.1 Shared Final CTA Narrative
 
@@ -771,11 +771,11 @@ Supporting direction:
 
 Potential primary actions:
 
-* Start My Journey
-* Assess My Risk
-* Explore Patient Support
-* Begin Monitoring
-* Join ODRISC
+- Start My Journey
+- Assess My Risk
+- Explore Patient Support
+- Begin Monitoring
+- Join ODRISC
 
 The final action must be confirmed in the Product Requirements Document.
 
@@ -783,10 +783,10 @@ The final action must be confirmed in the Product Requirements Document.
 
 Potential primary actions:
 
-* Request a Demonstration
-* Explore the Clinical Platform
-* Discuss a Pilot
-* Speak With the Clinical Team
+- Request a Demonstration
+- Explore the Clinical Platform
+- Discuss a Pilot
+- Speak With the Clinical Team
 
 The final action must be confirmed in the Product Requirements Document.
 
@@ -856,37 +856,37 @@ The Patient journey should answer:
 
 Prioritize:
 
-* Understanding
-* Preparation
-* Monitoring
-* Clarity
-* Support
-* Progress
-* Collaboration
-* Appropriate professional review
+- Understanding
+- Preparation
+- Monitoring
+- Clarity
+- Support
+- Progress
+- Collaboration
+- Appropriate professional review
 
 Avoid leading with:
 
-* Algorithms
-* Data architecture
-* FHIR
-* Clinical staging systems
-* Growth-standard names
-* Technical product specifications
-* Artificial-intelligence terminology
+- Algorithms
+- Data architecture
+- FHIR
+- Clinical staging systems
+- Growth-standard names
+- Technical product specifications
+- Artificial-intelligence terminology
 
 ## 10.5 Patient Story Tone
 
 The Patient story should feel:
 
-* Calm
-* Clear
-* Supportive
-* Respectful
-* Non-judgmental
-* Hopeful without overpromising
-* Clinically responsible
-* Easy to follow
+- Calm
+- Clear
+- Supportive
+- Respectful
+- Non-judgmental
+- Hopeful without overpromising
+- Clinically responsible
+- Easy to follow
 
 ---
 
@@ -953,39 +953,39 @@ The Provider journey should answer:
 
 Prioritize:
 
-* Longitudinal visibility
-* Clinical relevance
-* Explainability
-* Workflow
-* Data quality
-* Monitoring
-* Maternal-fetal relationships
-* Validation
-* Privacy
-* Implementation
-* Collaboration
+- Longitudinal visibility
+- Clinical relevance
+- Explainability
+- Workflow
+- Data quality
+- Monitoring
+- Maternal-fetal relationships
+- Validation
+- Privacy
+- Implementation
+- Collaboration
 
 Avoid leading with:
 
-* Generic wellness language
-* Emotional pregnancy imagery without clinical relevance
-* Broad artificial-intelligence claims
-* Unsupported outcome claims
-* Feature counts
-* Decorative dashboards without explanation
+- Generic wellness language
+- Emotional pregnancy imagery without clinical relevance
+- Broad artificial-intelligence claims
+- Unsupported outcome claims
+- Feature counts
+- Decorative dashboards without explanation
 
 ## 11.5 Provider Story Tone
 
 The Provider story should feel:
 
-* Precise
-* Credible
-* Structured
-* Clinically literate
-* Transparent
-* Respectful of professional judgment
-* Evidence-conscious
-* Operationally realistic
+- Precise
+- Credible
+- Structured
+- Clinically literate
+- Transparent
+- Respectful of professional judgment
+- Evidence-conscious
+- Operationally realistic
 
 ---
 
@@ -997,47 +997,47 @@ Not every message should be duplicated separately for Patients and Providers.
 
 The following may be shared:
 
-* Every Pregnancy Has a Story
-* The fragmentation problem
-* The importance of longitudinal understanding
-* The ODRISC product identity
-* The patient-provider collaboration principle
-* Company mission
-* Founder motivation
-* Privacy commitment
-* Clinical boundaries
-* Brand philosophy
+- Every Pregnancy Has a Story
+- The fragmentation problem
+- The importance of longitudinal understanding
+- The ODRISC product identity
+- The patient-provider collaboration principle
+- Company mission
+- Founder motivation
+- Privacy commitment
+- Clinical boundaries
+- Brand philosophy
 
 ## 12.2 Patient-Specific Narrative Content
 
 The following should be tailored for Patients:
 
-* Risk understanding
-* Weight monitoring
-* Nutrition
-* Physical activity
-* Patient summaries
-* Pregnancy progress
-* Appointment preparation
-* Safety guidance
-* Membership or application access
+- Risk understanding
+- Weight monitoring
+- Nutrition
+- Physical activity
+- Patient summaries
+- Pregnancy progress
+- Appointment preparation
+- Safety guidance
+- Membership or application access
 
 ## 12.3 Provider-Specific Narrative Content
 
 The following should be tailored for Providers:
 
-* Maternal intelligence
-* Fetal growth intelligence
-* Growth velocity
-* Gestational-age anchoring
-* Clinical alerts
-* Methodology
-* Validation
-* Clinical workflow
-* Provider dashboards
-* Hospital deployment
-* Integration
-* Cohort analytics
+- Maternal intelligence
+- Fetal growth intelligence
+- Growth velocity
+- Gestational-age anchoring
+- Clinical alerts
+- Methodology
+- Validation
+- Clinical workflow
+- Provider dashboards
+- Hospital deployment
+- Integration
+- Cohort analytics
 
 ---
 
@@ -1047,28 +1047,28 @@ The founder story may support trust and purpose, but it must not dominate the pr
 
 The approved founder motivation includes:
 
-* The founder's mother experienced gestational diabetes during pregnancy
-* The founder was born macrosomic
-* His mother later developed type 2 diabetes
-* This experience contributed to the recognition that pregnancy-related metabolic risk may have consequences extending beyond pregnancy
+- The founder's mother experienced gestational diabetes during pregnancy
+- The founder was born macrosomic
+- His mother later developed type 2 diabetes
+- This experience contributed to the recognition that pregnancy-related metabolic risk may have consequences extending beyond pregnancy
 
 The founder story may be used on:
 
-* About ODRISC
-* Founder story
-* Mission
-* Selected Patient content
-* Investor or partnership content
-* Founder-led videos
-* Media content
+- About ODRISC
+- Founder story
+- Mission
+- Selected Patient content
+- Investor or partnership content
+- Founder-led videos
+- Media content
 
 It should not be used:
 
-* As proof of product effectiveness
-* As clinical evidence
-* To create fear
-* To imply that every case follows the same path
-* As the primary Provider-platform justification
+- As proof of product effectiveness
+- As clinical evidence
+- To create fear
+- To imply that every case follows the same path
+- As the primary Provider-platform justification
 
 The story should support the question:
 
@@ -1084,14 +1084,14 @@ Evidence should strengthen the story, not interrupt it.
 
 Evidence may establish:
 
-* The scale of a clinical burden
-* The importance of maternal metabolic health
-* The value of appropriate gestational weight monitoring
-* The importance of fetal-growth assessment
-* The limitations of isolated measurements
-* The need for longitudinal review
-* The importance of patient engagement
-* The role of multidisciplinary care
+- The scale of a clinical burden
+- The importance of maternal metabolic health
+- The value of appropriate gestational weight monitoring
+- The importance of fetal-growth assessment
+- The limitations of isolated measurements
+- The need for longitudinal review
+- The importance of patient engagement
+- The role of multidisciplinary care
 
 ## 14.2 Evidence Placement
 
@@ -1115,12 +1115,12 @@ Do not begin every page with statistics.
 
 Every statistic or clinical claim must have:
 
-* A verified source
-* A defined population
-* A relevant date
-* Appropriate context
-* Approved public wording
-* No implication beyond the evidence
+- A verified source
+- A defined population
+- A relevant date
+- Appropriate context
+- Approved public wording
+- No implication beyond the evidence
 
 Evidence sources and claims should be governed separately through research and content documentation.
 
@@ -1132,36 +1132,36 @@ Validation must be communicated transparently.
 
 The website may distinguish among:
 
-* Clinical input
-* Expert review
-* Panel feedback
-* Pilot use
-* Technical validation
-* Usability validation
-* Algorithm validation
-* Clinical validation
-* Regulatory review
-* Published evidence
+- Clinical input
+- Expert review
+- Panel feedback
+- Pilot use
+- Technical validation
+- Usability validation
+- Algorithm validation
+- Clinical validation
+- Regulatory review
+- Published evidence
 
 These terms must not be used interchangeably.
 
 The website must not imply that:
 
-* Expert participation equals clinical validation
-* A pilot equals proven clinical effectiveness
-* Technical implementation equals regulatory approval
-* A clinical standard automatically validates ODRISC's implementation
-* Provider interest equals adoption
-* Product qualification equals medical-device approval
+- Expert participation equals clinical validation
+- A pilot equals proven clinical effectiveness
+- Technical implementation equals regulatory approval
+- A clinical standard automatically validates ODRISC's implementation
+- Provider interest equals adoption
+- Product qualification equals medical-device approval
 
 The validation story should answer:
 
-* What has been evaluated?
-* By whom?
-* Using which methodology?
-* At what scale?
-* With what limitations?
-* What remains under development?
+- What has been evaluated?
+- By whom?
+- Using which methodology?
+- At what scale?
+- With what limitations?
+- What remains under development?
 
 ---
 
@@ -1271,45 +1271,45 @@ Collaboration
 
 Possible themes include:
 
-* Timelines
-* Connected data streams
-* Maternal and fetal progression
-* Layered clinical information
-* Growth curves
-* Weight trajectories
-* Scan sequences
-* Connected Patient and Provider views
-* Signals becoming clearer across time
-* Fragmented cards resolving into one system
+- Timelines
+- Connected data streams
+- Maternal and fetal progression
+- Layered clinical information
+- Growth curves
+- Weight trajectories
+- Scan sequences
+- Connected Patient and Provider views
+- Signals becoming clearer across time
+- Fragmented cards resolving into one system
 
 ## 17.3 Brand Application
 
 The visual story should use:
 
-* White backgrounds
-* High negative space
-* Text color `#4d4d4d`
-* Linear gradient using `#ff7680` and `#80ffcc`
-* Thin lines
-* Restrained icons
-* Minimalist cards
-* Clear typography
-* Purposeful data visualization
-* Subtle depth
-* Premium clinical presentation
+- White backgrounds
+- High negative space
+- Text color `#4d4d4d`
+- Linear gradient using `#ff7680` and `#80ffcc`
+- Thin lines
+- Restrained icons
+- Minimalist cards
+- Clear typography
+- Purposeful data visualization
+- Subtle depth
+- Premium clinical presentation
 
 ## 17.4 Visual Boundaries
 
 Avoid:
 
-* Excessive pink pregnancy stereotypes
-* Generic stock images of smiling pregnant women as the main storytelling device
-* Fetal imagery used for emotional manipulation
-* Visual alarms without clinical purpose
-* Overly futuristic artificial-intelligence imagery
-* Glowing brains, robots, or neural networks
-* Dense medical dashboards without hierarchy
-* Decorative gradients that reduce readability
+- Excessive pink pregnancy stereotypes
+- Generic stock images of smiling pregnant women as the main storytelling device
+- Fetal imagery used for emotional manipulation
+- Visual alarms without clinical purpose
+- Overly futuristic artificial-intelligence imagery
+- Glowing brains, robots, or neural networks
+- Dense medical dashboards without hierarchy
+- Decorative gradients that reduce readability
 
 ---
 
@@ -1323,26 +1323,26 @@ It should not be used simply because motion is technically possible.
 
 Animation may show:
 
-* Fragmented information connecting
-* Pregnancy progression over time
-* Data points forming a trajectory
-* Separate maternal and fetal streams becoming synchronized
-* A timeline moving through trimesters
-* Patient and Provider views becoming connected
-* Information transforming into longitudinal intelligence
-* Progressive disclosure of clinical detail
+- Fragmented information connecting
+- Pregnancy progression over time
+- Data points forming a trajectory
+- Separate maternal and fetal streams becoming synchronized
+- A timeline moving through trimesters
+- Patient and Provider views becoming connected
+- Information transforming into longitudinal intelligence
+- Progressive disclosure of clinical detail
 
 ## 18.2 Inappropriate Animation Uses
 
 Avoid:
 
-* Constant floating elements
-* Decorative parallax without narrative purpose
-* Aggressive scroll hijacking
-* Motion that delays access to essential information
-* Rapid medical-alert animations
-* Unnecessary 3D effects
-* Animation that makes clinical information harder to read
+- Constant floating elements
+- Decorative parallax without narrative purpose
+- Aggressive scroll hijacking
+- Motion that delays access to essential information
+- Rapid medical-alert animations
+- Unnecessary 3D effects
+- Animation that makes clinical information harder to read
 
 ## 18.3 Animation Test
 
@@ -1360,23 +1360,23 @@ Data visualization is central to the ODRISC story because the product is built a
 
 Visualizations should help users understand:
 
-* Direction
-* Progression
-* Comparison
-* Velocity
-* Variation
-* Relationship
-* Thresholds
-* Uncertainty
+- Direction
+- Progression
+- Comparison
+- Velocity
+- Variation
+- Relationship
+- Thresholds
+- Uncertainty
 
 Visualizations must not:
 
-* Overstate accuracy
-* Conceal missing information
-* Treat estimates as exact values
-* Use unexplained colors
-* Present Patient and Provider views identically
-* Create alarm without context
+- Overstate accuracy
+- Conceal missing information
+- Treat estimates as exact values
+- Use unexplained colors
+- Present Patient and Provider views identically
+- Create alarm without context
 
 Patient visualizations should prioritize comprehension.
 
@@ -1390,70 +1390,70 @@ Provider visualizations should prioritize clinical review and detail on demand.
 
 Primary purpose:
 
-* Establish the ODRISC premise
-* Introduce the shared pregnancy story
-* Route the visitor to Patient or Provider
+- Establish the ODRISC premise
+- Introduce the shared pregnancy story
+- Route the visitor to Patient or Provider
 
 ## 20.2 Patient Homepage
 
 Primary purpose:
 
-* Help women recognize that ODRISC is relevant
-* Explain how the platform supports understanding and participation
-* Establish safety and professional boundaries
-* Present the next Patient action
+- Help women recognize that ODRISC is relevant
+- Explain how the platform supports understanding and participation
+- Establish safety and professional boundaries
+- Present the next Patient action
 
 ## 20.3 Provider Homepage
 
 Primary purpose:
 
-* Establish the clinical fragmentation problem
-* Explain longitudinal maternal and fetal intelligence
-* Demonstrate workflow and clinical relevance
-* Present the next Provider action
+- Establish the clinical fragmentation problem
+- Explain longitudinal maternal and fetal intelligence
+- Demonstrate workflow and clinical relevance
+- Present the next Provider action
 
 ## 20.4 Capability Pages
 
 Primary purpose:
 
-* Connect a specific need to the wider platform story
-* Explain how the capability works
-* Show its relationship to longitudinal intelligence
-* State its limitations and status
+- Connect a specific need to the wider platform story
+- Explain how the capability works
+- Show its relationship to longitudinal intelligence
+- State its limitations and status
 
 ## 20.5 Validation Page
 
 Primary purpose:
 
-* Explain what has been reviewed or evaluated
-* Present methodology transparently
-* Distinguish validation types
-* Avoid unsupported credibility claims
+- Explain what has been reviewed or evaluated
+- Present methodology transparently
+- Distinguish validation types
+- Avoid unsupported credibility claims
 
 ## 20.6 About Page
 
 Primary purpose:
 
-* Explain why ODRISC exists
-* Present founder motivation
-* Present mission and team
-* Connect human purpose to product direction
+- Explain why ODRISC exists
+- Present founder motivation
+- Present mission and team
+- Connect human purpose to product direction
 
 ## 20.7 Hospital or Enterprise Page
 
 Primary purpose:
 
-* Translate the product story into implementation, governance, workflow, scalability, and organizational value
+- Translate the product story into implementation, governance, workflow, scalability, and organizational value
 
 ## 20.8 Resource Pages
 
 Primary purpose:
 
-* Educate
-* Build trust
-* Clarify terminology
-* Support search intent
-* Guide visitors toward relevant Patient or Provider journeys
+- Educate
+- Build trust
+- Clarify terminology
+- Support search intent
+- Guide visitors toward relevant Patient or Provider journeys
 
 Resource content must remain connected to the central story rather than becoming an unrelated content library.
 
@@ -1469,34 +1469,34 @@ They should not merely describe page contents.
 
 Headlines should be:
 
-* Clear
-* Human
-* Specific
-* Calm
-* Outcome-oriented
-* Clinically responsible
-* Short enough to scan
-* Connected to the page narrative
+- Clear
+- Human
+- Specific
+- Calm
+- Outcome-oriented
+- Clinically responsible
+- Short enough to scan
+- Connected to the page narrative
 
 ## 21.2 Patient Headline Direction
 
 Patient headlines may focus on:
 
-* Understanding
-* Progress
-* Preparation
-* Support
-* Clarity
-* Connection
-* Participation
+- Understanding
+- Progress
+- Preparation
+- Support
+- Clarity
+- Connection
+- Participation
 
 Examples of direction:
 
-* Understand How Your Pregnancy Is Evolving
-* See the Journey, Not Just the Moment
-* Feel More Informed Between Appointments
-* Follow Progress With Greater Clarity
-* Prepare, Monitor, and Participate
+- Understand How Your Pregnancy Is Evolving
+- See the Journey, Not Just the Moment
+- Feel More Informed Between Appointments
+- Follow Progress With Greater Clarity
+- Prepare, Monitor, and Participate
 
 These are narrative directions, not automatically approved final copy.
 
@@ -1504,20 +1504,20 @@ These are narrative directions, not automatically approved final copy.
 
 Provider headlines may focus on:
 
-* Longitudinal visibility
-* Clinical progression
-* Earlier recognition
-* Monitoring
-* Maternal-fetal relationships
-* Workflow
+- Longitudinal visibility
+- Clinical progression
+- Earlier recognition
+- Monitoring
+- Maternal-fetal relationships
+- Workflow
 
 Examples of direction:
 
-* See the Pregnancy Beyond Individual Visits
-* Turn Fragmented Data Into Longitudinal Insight
-* Recognize Change Across the Pregnancy Journey
-* Connect Maternal and Fetal Progression
-* Monitor the Trajectory, Not Only the Measurement
+- See the Pregnancy Beyond Individual Visits
+- Turn Fragmented Data Into Longitudinal Insight
+- Recognize Change Across the Pregnancy Journey
+- Connect Maternal and Fetal Progression
+- Monitor the Trajectory, Not Only the Measurement
 
 These are narrative directions, not automatically approved final copy.
 
@@ -1525,14 +1525,14 @@ These are narrative directions, not automatically approved final copy.
 
 Avoid:
 
-* Revolutionary AI for Pregnancy
-* Never Miss a Complication
-* Guarantee a Healthier Pregnancy
-* Replace Fragmented Clinical Judgment
-* Diagnose Risk Instantly
-* The Only Pregnancy Platform You Need
-* Perfect Pregnancy Monitoring
-* Prevent Complications Before They Happen
+- Revolutionary AI for Pregnancy
+- Never Miss a Complication
+- Guarantee a Healthier Pregnancy
+- Replace Fragmented Clinical Judgment
+- Diagnose Risk Instantly
+- The Only Pregnancy Platform You Need
+- Perfect Pregnancy Monitoring
+- Prevent Complications Before They Happen
 
 ---
 
@@ -1542,52 +1542,52 @@ Every page should have one clear primary action.
 
 Calls to action must match:
 
-* Audience
-* Page purpose
-* Visitor readiness
-* Product availability
-* Commercial model
-* Clinical boundaries
+- Audience
+- Page purpose
+- Visitor readiness
+- Product availability
+- Commercial model
+- Clinical boundaries
 
 ## 22.1 Patient CTA Progression
 
 Low commitment:
 
-* Learn How It Works
-* Explore Patient Support
-* Understand My Risk
+- Learn How It Works
+- Explore Patient Support
+- Understand My Risk
 
 Medium commitment:
 
-* Begin My Assessment
-* View Membership
-* Start Monitoring
+- Begin My Assessment
+- View Membership
+- Start Monitoring
 
 High commitment:
 
-* Create My Account
-* Join ODRISC
-* Open the Application
+- Create My Account
+- Join ODRISC
+- Open the Application
 
 ## 22.2 Provider CTA Progression
 
 Low commitment:
 
-* Explore the Platform
-* Review the Clinical Workflow
-* View the Methodology
+- Explore the Platform
+- Review the Clinical Workflow
+- View the Methodology
 
 Medium commitment:
 
-* Download the Clinical Overview
-* Speak With the Clinical Team
-* Explore a Pilot
+- Download the Clinical Overview
+- Speak With the Clinical Team
+- Explore a Pilot
 
 High commitment:
 
-* Request a Demonstration
-* Discuss Implementation
-* Begin a Pilot Conversation
+- Request a Demonstration
+- Discuss Implementation
+- Begin a Pilot Conversation
 
 ## 22.3 CTA Integrity
 
@@ -1595,10 +1595,10 @@ A CTA must not lead to an unavailable experience.
 
 For example:
 
-* Do not use “Start Monitoring” if monitoring is not publicly accessible
-* Do not use “Request Hospital Integration” if no implementation pathway exists
-* Do not use “View Clinical Evidence” if no approved evidence page exists
-* Do not use “Join the Clinical Panel” if panel recruitment is closed
+- Do not use “Start Monitoring” if monitoring is not publicly accessible
+- Do not use “Request Hospital Integration” if no implementation pathway exists
+- Do not use “View Clinical Evidence” if no approved evidence page exists
+- Do not use “Join the Clinical Panel” if panel recruitment is closed
 
 ---
 
@@ -1657,17 +1657,17 @@ Before generating a page, section, component, illustration, diagram, animation, 
 
 AI agents must not:
 
-* Begin a page with an unrelated feature list
-* Invent a new website narrative
-* Replace the longitudinal story with generic artificial-intelligence messaging
-* Treat Patient and Provider language as interchangeable
-* Present future features as currently available
-* Use fear as the main conversion mechanism
-* Overstate evidence
-* Imply diagnosis
-* Remove professional responsibility
-* Create a separate ODRISC brand for either audience
-* Change canonical narrative statements without approval
+- Begin a page with an unrelated feature list
+- Invent a new website narrative
+- Replace the longitudinal story with generic artificial-intelligence messaging
+- Treat Patient and Provider language as interchangeable
+- Present future features as currently available
+- Use fear as the main conversion mechanism
+- Overstate evidence
+- Imply diagnosis
+- Remove professional responsibility
+- Create a separate ODRISC brand for either audience
+- Change canonical narrative statements without approval
 
 ---
 
@@ -1715,31 +1715,31 @@ Improved maternal and fetal outcomes
 
 The following questions require later approval:
 
-* What exact copy appears on the shared audience-selection page?
-* Does the shared entry page contain the full opening narrative or only the audience selector?
-* Is “Every Pregnancy Has a Story” the primary homepage headline for both audiences or only the shared entry experience?
-* What is the final Patient homepage headline?
-* What is the final Provider homepage headline?
-* What is the final shared subheadline?
-* What is the primary Patient call to action at launch?
-* What is the primary Provider call to action at launch?
-* Which capabilities appear in the eight-part story at launch?
-* Which capabilities require roadmap labels?
-* Which approved statistics support the fragmentation and clinical-burden story?
-* Which validation claims can be published?
-* Which founder-story details appear publicly?
-* How early should product screenshots appear?
-* Will the shared story use one continuous interactive timeline?
-* How should the story adapt on mobile?
-* Which parts of the narrative are animated?
-* Will the audience selection persist across sessions?
-* How will users switch between Patient and Provider experiences?
-* Which shared pages sit outside the audience-specific story?
-* Which markets and languages are represented at launch?
-* Does the Qatar website story differ from the India validation story?
-* Which parts of the story may be localized for GCC markets?
-* What Patient safety language must appear globally?
-* Which Provider clinical disclaimers must appear globally?
+- What exact copy appears on the shared audience-selection page?
+- Does the shared entry page contain the full opening narrative or only the audience selector?
+- Is “Every Pregnancy Has a Story” the primary homepage headline for both audiences or only the shared entry experience?
+- What is the final Patient homepage headline?
+- What is the final Provider homepage headline?
+- What is the final shared subheadline?
+- What is the primary Patient call to action at launch?
+- What is the primary Provider call to action at launch?
+- Which capabilities appear in the eight-part story at launch?
+- Which capabilities require roadmap labels?
+- Which approved statistics support the fragmentation and clinical-burden story?
+- Which validation claims can be published?
+- Which founder-story details appear publicly?
+- How early should product screenshots appear?
+- Will the shared story use one continuous interactive timeline?
+- How should the story adapt on mobile?
+- Which parts of the narrative are animated?
+- Will the audience selection persist across sessions?
+- How will users switch between Patient and Provider experiences?
+- Which shared pages sit outside the audience-specific story?
+- Which markets and languages are represented at launch?
+- Does the Qatar website story differ from the India validation story?
+- Which parts of the story may be localized for GCC markets?
+- What Patient safety language must appear globally?
+- Which Provider clinical disclaimers must appear globally?
 
 These questions must be tracked in:
 
@@ -1753,20 +1753,20 @@ docs/project/OPEN_QUESTIONS.md
 
 The website story is successful when a Patient can explain:
 
-* ODRISC helps me understand how my pregnancy is changing
-* It connects information across time
-* It supports weight, nutrition, activity, risk awareness, and pregnancy monitoring where available
-* It helps me prepare for better conversations with my healthcare professional
-* It does not replace my healthcare professional
+- ODRISC helps me understand how my pregnancy is changing
+- It connects information across time
+- It supports weight, nutrition, activity, risk awareness, and pregnancy monitoring where available
+- It helps me prepare for better conversations with my healthcare professional
+- It does not replace my healthcare professional
 
 The website story is successful when a Provider can explain:
 
-* ODRISC connects fragmented maternal and fetal information
-* It creates a longitudinal view of pregnancy
-* It can support recognition, monitoring, and prioritization
-* Its outputs are intended to be explainable
-* Clinical judgment remains central
-* Its available, pilot, and future capabilities are clearly distinguished
+- ODRISC connects fragmented maternal and fetal information
+- It creates a longitudinal view of pregnancy
+- It can support recognition, monitoring, and prioritization
+- Its outputs are intended to be explainable
+- Clinical judgment remains central
+- Its available, pilot, and future capabilities are clearly distinguished
 
 The shared story is successful when both audiences understand:
 

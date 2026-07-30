@@ -3,7 +3,7 @@
 ## Register
 
 | Flaky ID | Test ID | First observed | Failure pattern | Product or test issue | Owner | Risk | Temporary action | Target resolution | Status |
-|---|---|---|---|---|---|---|---|---|---|
+| -------- | ------- | -------------- | --------------- | --------------------- | ----- | ---- | ---------------- | ----------------- | ------ |
 
 ## Rules
 

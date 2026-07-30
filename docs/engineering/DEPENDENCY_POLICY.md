@@ -25,15 +25,15 @@ This document governs the introduction, upgrade, replacement, and removal of pub
 
 ## Approval Levels
 
-| Change | Approval |
-|---|---|
-| Patch update | Engineering review |
-| Minor update | Engineering review and CI |
-| New development-only dependency | CTO or delegated owner |
-| New production server dependency | CTO |
-| New production client dependency | CTO plus performance review |
-| Framework or major-version change | Founder, CTO, and ADR |
-| New third-party data processor | Privacy and security approval |
+| Change                            | Approval                      |
+| --------------------------------- | ----------------------------- |
+| Patch update                      | Engineering review            |
+| Minor update                      | Engineering review and CI     |
+| New development-only dependency   | CTO or delegated owner        |
+| New production server dependency  | CTO                           |
+| New production client dependency  | CTO plus performance review   |
+| Framework or major-version change | Founder, CTO, and ADR         |
+| New third-party data processor    | Privacy and security approval |
 
 ## Rules
 
