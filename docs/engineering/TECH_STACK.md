@@ -1606,13 +1606,15 @@ The canonical sources remain:
 
 ---
 
-# 32. Unit and Component Testing
+# 32. Unit, Integration, and Component Testing
 
-## 32.1 Approved Unit-Test Framework
+## 32.1 Approved Unit and Integration Test Runner
 
 ```text
 Vitest
 ```
+
+Vitest is the canonical runner for unit and integration tests.
 
 ## 32.2 Approved Component-Test Utilities
 
@@ -1620,13 +1622,16 @@ Vitest
 - `@testing-library/user-event`
 - `@testing-library/jest-dom`
 
-## 32.3 Unit-Test Scope
+React Testing Library and User Event are the approved tools for testing React component behavior through accessible queries and user-oriented interactions. Jest DOM provides DOM-specific assertions.
 
-Unit tests should cover:
+## 32.3 Unit, Integration, and Component-Test Scope
+
+Unit, integration, and component tests should cover:
 
 - Content schemas
 - Form schemas
 - API error mapping
+- Collaboration between first-party modules
 - Analytics event construction
 - Locale helpers
 - SEO helpers
@@ -1639,15 +1644,29 @@ Unit tests should cover:
 
 Test behavior and contracts rather than internal implementation details.
 
+## 32.5 Coverage Provider
+
+Vitest uses the V8 coverage provider through:
+
+```text
+@vitest/coverage-v8
+```
+
+Coverage scope, exclusions, thresholds and enforcement requirements are defined in:
+
+`docs/engineering/TESTING_STRATEGY.md`
+
 ---
 
-# 33. End-to-End Testing
+# 33. Browser and End-to-End Testing
 
-## 33.1 Approved E2E Framework
+## 33.1 Approved Browser and E2E Framework
 
 ```text
 Playwright
 ```
+
+Playwright is the canonical runner for browser-dependent behavior, complete application journeys and end-to-end testing.
 
 ## 33.2 Required Browser Projects
 
@@ -1685,9 +1704,10 @@ Mobile emulation should include:
 
 Use:
 
-```text
-@axe-core/playwright
-```
+- `@storybook/addon-a11y` for component and story accessibility checks
+- `@axe-core/playwright` for page-level and journey-level accessibility checks
+
+Both integrations use Axe for automated accessibility analysis.
 
 Automated accessibility checks must run against:
 
@@ -1721,6 +1741,8 @@ Manual review must include:
 # 35. Visual Regression Testing
 
 Use Playwright screenshot comparisons for selected stable pages and components.
+
+Reference screenshots must be generated and compared in a controlled, consistent environment.
 
 Initial visual-regression coverage:
 
@@ -2774,10 +2796,10 @@ The following decisions are locked unless formally changed:
 25. Google Tag Manager, Google Analytics 4, and Search Console will support measurement.
 26. Analytics must remain consent controlled.
 27. Components will not send analytics events directly to providers.
-28. Vitest will provide unit testing.
-29. React Testing Library will provide component behavior testing.
-30. Playwright will provide end-to-end testing.
-31. Axe integration will support automated accessibility checks.
+28. Vitest will provide unit and integration testing with the V8 coverage provider.
+29. React Testing Library and User Event will provide component behavior testing.
+30. Playwright will provide browser, end-to-end, and screenshot-comparison testing.
+31. Axe through Storybook and Playwright will support automated accessibility checks.
 32. Storybook will document reusable components.
 33. ESLint flat configuration and Prettier will govern code quality.
 34. Docker will be used for production packaging.
