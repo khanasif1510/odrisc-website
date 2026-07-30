@@ -4295,6 +4295,30 @@ Equal audience pathways.
 - Founder story remains proportionate
 - Team and entity information are current
 
+### Test Requirements
+
+- **Requirement IDs:** CON-001, SHR-020
+- **Page ID:** COM-PG-001
+- **Risk priority:** P0 and release blocking, with high company-identity, legal-entity, founder-story, Product Status, clinical-claim, audience-balance, and institutional-trust risk
+- **Static validations:** Validate the `/about/` route, Page ID, requirement traceability, indexation, approved company and product names, legal-entity metadata, mission and product-vision references, Patient and Provider audience parity, team and contributor records, market-direction wording, Product Status vocabulary, canonical audience links, translation completeness, architecture rules, linting, TypeScript, and production build.
+- **Unit or integration coverage:** Cover company-profile and legal-entity schemas, team and contributor metadata, Patient and Provider pathway mappings, market and Product Status presentation, founder-story content selection, current-versus-planned capability classification, canonical-link generation, and consent-aware analytics where applicable.
+- **Required Component IDs and component tests:** `CMP-PRM-001` Button, `CMP-PRM-002` Text Link, `CMP-LYT-001` Container, `CMP-TRS-001` Product Status Badge where capabilities are referenced, `CMP-NAV-002` Site Header, `CMP-NAV-004` Mobile Navigation Drawer, and `CMP-NAV-005` Audience Switcher. Test equal Patient and Provider pathway semantics, company information, team and contributor presentation, Product Status variants, keyboard behavior, focus, mobile reflow, RTL, reduced motion, loading, unavailable-image, and error states.
+- **E2E journeys:** Open About ODRISC, understand the company purpose, pregnancy-care problem, product vision and mission, distinguish Patient from Provider experiences, review founder motivation without treating it as evidence, inspect current team and entity information, and follow both equal audience pathways.
+- **Browser projects:** `chromium-desktop`, `firefox-desktop`, `webkit-desktop`, `arabic-rtl`, and `reduced-motion`.
+- **Mobile coverage:** Run `mobile-chrome` and `mobile-safari`; verify company-story order, equal audience pathways, team and contributor content, Product Status, CTA visibility, image alternatives, touch targets, and narrow-viewport reflow.
+- **Accessibility automation:** Run Storybook Axe checks for the required registered components and Playwright Axe checks against `/about/`, including representative team, image, Product Status, and audience-pathway states.
+- **Manual accessibility review:** Verify keyboard navigation, visible focus, headings, landmarks, company and product identity comprehension, equal audience-pathway semantics, founder-story context, team and contributor relationships, image alternatives, reading order, zoom, reflow, touch targets, VoiceOver with Safari, and one additional approved screen-reader/browser combination.
+- **Arabic and RTL coverage:** Run `arabic-rtl`; verify equivalent company-purpose, product-vision, Patient and Provider, mission, founder-motivation, team, market-direction, Product Status, and audience-pathway meaning; logical layout; accurate company, legal, professional, and market terminology; and qualified Arabic, product, legal, and clinical review.
+- **Reduced-motion coverage:** Run `reduced-motion`; company-story transitions, images, progressive disclosure, team presentation, navigation, and audience-pathway access must remain complete and understandable without non-essential animation.
+- **Visual-regression coverage:** Capture controlled desktop, mobile, Arabic RTL, reduced-motion, company-purpose, Patient and Provider ecosystem, founder-story, team, contributor, Product Status, unavailable-image, and audience-pathway baselines.
+- **Product Status tests:** Verify every product, platform, market, validation, regulatory, availability, and expansion statement reflects approved current, planned, prototype, pilot, or unavailable status. Founder motivation, team experience, or company ambition must not be presented as clinical proof.
+- **Clinical-review requirement:** Required for the pregnancy-care problem, maternal or fetal intelligence, clinical workflow, risk, outcome, validation, healthcare-professional, and clinical-impact statements. Founder motivation must remain clearly personal context and not clinical evidence.
+- **Form or integration tests:** No submission form is embedded on this page. Test Patient and Provider pathway links, team and contributor data loading, legal-entity and market metadata, unavailable-image handling, analytics consent where applicable, and safe synthetic fixtures. Tests must not call live Patient, Provider, company-directory, or clinical systems.
+- **Performance-budget tests:** Test `/about/` and its images, team content, audience pathways, and motion against approved Core Web Vitals, JavaScript, image, font, third-party, content, and motion budgets in `docs/engineering/PERFORMANCE_BUDGET.md`.
+- **Security tests:** Verify security headers, safe internal and external links, approved image sources, escaped company and team metadata, no personal contact details beyond approved public information, no Patient or production operational data, no restricted company or clinical information, consent-controlled analytics, and absence of secrets or sensitive URL parameters.
+- **Staging smoke:** Verify page availability, approved company and product identity, legal-entity information, Patient and Provider parity, founder-story context, current team and contributor content, Product Status, both audience pathways, Arabic behavior, analytics consent where applicable, and absence of blocking console or network failures.
+- **Production smoke applicability:** Applicable and non-destructive; verify `/about/`, approved company, product, legal-entity, founder, team and market information, equal Patient and Provider pathways, essential navigation, and public images without submitting data.
+
 ---
 
 ## COM-PG-002 — Our Story
@@ -4303,6 +4327,7 @@ Equal audience pathways.
 **Priority:** P1
 **Audience:** Shared
 **Page type:** Founder and mission story
+**PRD requirements:** CON-002
 
 ### Primary Purpose
 
@@ -4338,6 +4363,30 @@ Present the personal motivation behind ODRISC and connect it to the product miss
 - Tone is respectful
 - The story supports rather than dominates the product narrative
 - Clinical claims remain evidence-based elsewhere
+
+### Test Requirements
+
+- **Requirement IDs:** CON-002, SHR-020
+- **Page ID:** COM-PG-002
+- **Risk priority:** P1, with high personal-fact accuracy, privacy, consent, clinical-boundary, emotional-tone, accessibility, and company-trust risk; release blocking whenever included in an approved release
+- **Static validations:** Validate the `/about/our-story/` route, Page ID, requirement traceability, publication and indexation status, approved personal-fact records, consent and publication approval, company and product naming, founder-story and clinical-evidence separation, Product Status vocabulary where applicable, canonical vision link, translation completeness, architecture rules, linting, TypeScript, and production build.
+- **Unit or integration coverage:** Cover approved story-content selection, personal-fact metadata, publication-consent status, chronology ordering, founder-story and clinical-evidence boundary markers, canonical vision-link generation, unavailable-image handling, locale-specific content selection, and consent-aware analytics where applicable.
+- **Required Component IDs and component tests:** `CMP-PRM-001` Button, `CMP-PRM-002` Text Link, `CMP-LYT-001` Container, `CMP-NAV-002` Site Header, `CMP-NAV-004` Mobile Navigation Drawer, and `CMP-NAV-005` Audience Switcher. Test accessible narrative structure, chronology, quotation and image semantics where used, personal-story disclaimer, Vision CTA, keyboard behavior, focus, mobile reflow, RTL, reduced motion, unavailable-image, and error states.
+- **E2E journeys:** When included in release scope, open Our Story, understand the approved personal chronology, distinguish personal experience from clinical evidence, verify the transition to the ODRISC mission, confirm that no prevention or universal-outcome claim appears, and follow the ODRISC Vision CTA.
+- **Browser projects:** Run `chromium-desktop` for every changed-feature test. When the page enters a release scope, also run `firefox-desktop`, `webkit-desktop`, `arabic-rtl`, and `reduced-motion`.
+- **Mobile coverage:** Run `mobile-chrome` and `mobile-safari` when the page enters release scope; verify narrative chronology, personal-story disclaimer, images and captions, CTA visibility, touch targets, long-content reading, and narrow-viewport reflow.
+- **Accessibility automation:** Run Storybook Axe checks for all required registered components and Playwright Axe checks against `/about/our-story/`, including representative image, quotation, disclaimer, and CTA states.
+- **Manual accessibility review:** Before publication, verify keyboard navigation, visible focus, headings, landmarks, chronology comprehension, quotation attribution, image alternatives, personal-story and clinical-evidence distinction, respectful language, link purpose, reading order, zoom, reflow, touch targets, VoiceOver with Safari, and one additional approved screen-reader/browser combination.
+- **Arabic and RTL coverage:** Before Arabic publication, run `arabic-rtl`; verify equivalent personal-history, gestational-diabetes, macrosomia, later type 2 diabetes, pregnancy-health-story, mission, disclaimer, and CTA meaning; preserve respectful medical and family terminology; and obtain qualified Arabic, founder, content, privacy, and clinical review.
+- **Reduced-motion coverage:** Run `reduced-motion`; narrative transitions, chronology, images, progressive disclosure, navigation, and Vision CTA access must remain complete and understandable without non-essential animation.
+- **Visual-regression coverage:** Capture controlled desktop, mobile, Arabic RTL where applicable, reduced-motion, chronology, quotation, personal-image, unavailable-image, disclaimer, mission-transition, and Vision CTA baselines before publication.
+- **Product Status tests:** Verify any statement about ODRISC’s current product, validation, clinical capabilities, markets, or future mission reflects approved Product Status. The founder story must not imply that ODRISC is proven to prevent gestational diabetes, macrosomia, type 2 diabetes, or any other outcome.
+- **Clinical-review requirement:** Mandatory for gestational diabetes, macrosomia, maternal type 2 diabetes, pregnancy-health, prevention, risk, outcome, and clinical-evidence wording. Personal facts require explicit founder and affected-person approval where applicable and must remain distinct from scientific evidence.
+- **Form or integration tests:** No submission form or live integration is present. Test approved story-content loading, chronology, personal-fact publication status, Vision CTA, unavailable-image handling, analytics consent where applicable, and safe synthetic presentation fixtures. Tests must not retrieve private family, Patient, health-record, or clinical-system data.
+- **Performance-budget tests:** Before publication, test `/about/our-story/` and its long-form content, images, typography, CTA, and motion against approved Core Web Vitals, JavaScript, image, font, content, third-party, and motion budgets in `docs/engineering/PERFORMANCE_BUDGET.md`.
+- **Security tests:** Verify security headers, safe internal and external links, approved image sources, escaped story metadata, publication of approved personal information only, no private contact, medical-record, Patient, or production operational data, consent-controlled analytics, and absence of secrets or sensitive URL parameters.
+- **Staging smoke:** Required whenever included in a release; verify page availability, approved personal facts and chronology, respectful tone, explicit personal-story and clinical-evidence separation, mission transition, public images, Vision CTA, Arabic behavior where released, analytics consent where applicable, and absence of blocking console or network failures.
+- **Production smoke applicability:** Applicable and non-destructive only when published; verify `/about/our-story/`, approved personal facts, clinical-evidence disclaimer, mission wording, public images, essential navigation, and Vision CTA without submitting data.
 
 ---
 
@@ -4375,6 +4424,30 @@ For each listed member:
 - Professional qualifications are accurate
 - Update ownership is defined
 
+### Test Requirements
+
+- **Requirement IDs:** CON-002, SHR-020
+- **Page ID:** COM-PG-003
+- **Risk priority:** P1, with high identity, role, qualification, employment-status, consent, privacy, professional-link, and company-trust risk; release blocking whenever included in an approved release
+- **Static validations:** Validate the `/about/team/` route, Page ID, requirement traceability, publication and indexation status, unique team-member identifiers, approved names, current roles, employment or contribution statuses, qualifications, biographies, professional-profile URLs, image metadata, consent and publication approval, update ownership, translation completeness, architecture rules, linting, TypeScript, and production build.
+- **Unit or integration coverage:** Cover team-member schema validation, active and former status handling, role-vocabulary consistency, display ordering, qualification and biography metadata, optional profile-link validation, consent and publication states, missing or unavailable images, archived-member exclusion, locale-specific content selection, and consent-aware analytics where applicable.
+- **Required Component IDs and component tests:** `CMP-PRM-002` Text Link, `CMP-LYT-001` Container, `CMP-NAV-002` Site Header, `CMP-NAV-004` Mobile Navigation Drawer, and `CMP-NAV-005` Audience Switcher. Test accessible team-member presentation, role and qualification relationships, biographies, image alternatives, optional professional links, keyboard behavior, focus, mobile reflow, RTL, reduced motion, missing-image, unavailable-profile, empty, and error states. Any reusable team-card component must receive an approved Component ID before implementation.
+- **E2E journeys:** When included in release scope, open Team, review representative team members, verify approved names, roles, statuses, qualifications and biographies, open an approved professional profile safely, confirm former or unapproved members are absent, and navigate back to the About experience.
+- **Browser projects:** Run `chromium-desktop` for every changed-feature test. When the page enters a release scope, also run `firefox-desktop`, `webkit-desktop`, `arabic-rtl`, and `reduced-motion`.
+- **Mobile coverage:** Run `mobile-chrome` and `mobile-safari` when the page enters release scope; verify team-card order, names, roles, qualifications, biographies, images, professional links, touch targets, long-text handling, and narrow-viewport reflow.
+- **Accessibility automation:** Run Storybook Axe checks for all required registered components and Playwright Axe checks against `/about/team/`, including representative complete, missing-image, unavailable-profile, and long-biography states.
+- **Manual accessibility review:** Before publication, verify keyboard navigation, visible focus, headings, landmarks, team-member grouping, name, role and qualification relationships, image alternatives, biography reading order, external-profile link purpose, zoom, reflow, touch targets, VoiceOver with Safari, and one additional approved screen-reader/browser combination.
+- **Arabic and RTL coverage:** Before Arabic publication, run `arabic-rtl`; verify approved transliteration or translation of names, equivalent role, status, qualification, biography, and professional-link meaning; logical card layout; accurate professional terminology; and qualified Arabic, individual, HR or company, and relevant professional review.
+- **Reduced-motion coverage:** Run `reduced-motion`; team-card presentation, biography disclosure, image loading, navigation, and professional-link access must remain complete and understandable without non-essential animation.
+- **Visual-regression coverage:** Capture controlled desktop, mobile, Arabic RTL where applicable, reduced-motion, complete-member, long-biography, missing-image, unavailable-profile, multi-role, and material error-state baselines before publication.
+- **Product Status tests:** Verify biographies and role descriptions do not overstate ODRISC capabilities, validation, partnerships, clinical status, regulatory status, or individual involvement. Employment, contributor, adviser, former-member, and availability statuses must match the approved team register.
+- **Clinical-review requirement:** Required for biographies or qualifications that describe clinical roles, specialties, research, Patient care, clinical validation, or professional contributions. Professional titles, registrations, credentials, and scope statements must be verified by the designated owner.
+- **Form or integration tests:** No submission form is embedded on this page. Test team-data loading, active-member filtering, approved ordering, optional profile and image handling, About navigation, analytics consent where applicable, and safe synthetic fixtures. Tests must not call live HR, professional-register, social-network, Patient, or clinical systems.
+- **Performance-budget tests:** Before publication, test `/about/team/` and its member list, portraits, biographies, professional links, typography, and interactions against approved Core Web Vitals, JavaScript, image, font, content, third-party, and motion budgets in `docs/engineering/PERFORMANCE_BUDGET.md`.
+- **Security tests:** Verify security headers, safe professional-profile links, approved image sources, escaped team metadata, publication of approved public information only, no personal contact details, private employment data, Patient data, or production operational data, consent-controlled analytics, and absence of secrets or sensitive URL parameters.
+- **Staging smoke:** Required whenever included in a release; verify page availability, current team membership, approved names, roles, statuses, qualifications and biographies, image and profile links, removal of former or unapproved entries, Arabic behavior where released, analytics consent where applicable, and absence of blocking console or network failures.
+- **Production smoke applicability:** Applicable and non-destructive only when published; verify `/about/team/`, representative current members, approved roles and qualifications, public images, professional links, essential navigation, and exclusion of former or unapproved entries without submitting data.
+
 ---
 
 ## COM-PG-004 — Clinical and Professional Contributors
@@ -4383,6 +4456,7 @@ For each listed member:
 **Priority:** P1
 **Audience:** Shared and Provider
 **Page type:** Trust page
+**PRD requirements:** CON-003
 
 ### Primary Purpose
 
@@ -4408,6 +4482,30 @@ Present formally confirmed clinical advisers, panel members, reviewers, and prof
 - Contribution type is precise
 - Logos and affiliations have permission
 - Clinical input is not equated with validation
+
+### Test Requirements
+
+- **Requirement IDs:** CON-003, SHR-020
+- **Page ID:** COM-PG-004
+- **Risk priority:** P1, with high contributor-confirmation, qualification, affiliation, permission, disclosure, clinical-validation, privacy, and institutional-trust risk; release blocking whenever included in an approved release
+- **Static validations:** Validate the `/about/clinical-and-professional-contributors/` route, Page ID, requirement traceability, publication and indexation status, unique contributor identifiers, approved names, contributor roles and types, current statuses, qualifications, required disclosures, affiliation and logo permissions, publication consent, review dates, translation completeness, architecture rules, linting, TypeScript, and production build.
+- **Unit or integration coverage:** Cover contributor-schema validation, confirmed and unconfirmed status handling, contribution-type vocabulary, active and former status filtering, qualification metadata, disclosure requirements, affiliation and logo permission states, display ordering, unavailable images, optional professional links, locale-specific content, and consent-aware analytics where applicable.
+- **Required Component IDs and component tests:** `CMP-PRM-002` Text Link, `CMP-LYT-001` Container, `CMP-NAV-002` Site Header, `CMP-NAV-004` Mobile Navigation Drawer, and `CMP-NAV-005` Audience Switcher. Test accessible contributor presentation, role and contribution relationships, qualifications, disclosures, affiliations, logos and image alternatives, professional links, keyboard behavior, focus, mobile reflow, RTL, reduced motion, missing-image, unavailable-affiliation, empty, and error states. Any reusable contributor-card component must receive an approved Component ID before implementation.
+- **E2E journeys:** When included in release scope, open Clinical and Professional Contributors, review representative confirmed contributors, verify contribution type, current status, qualification and required disclosure, inspect an approved affiliation or professional link, and confirm that informal, withdrawn, unconfirmed, or unapproved contributors and affiliations are absent.
+- **Browser projects:** Run `chromium-desktop` for every changed-feature test. When the page enters a release scope, also run `firefox-desktop`, `webkit-desktop`, `arabic-rtl`, and `reduced-motion`.
+- **Mobile coverage:** Run `mobile-chrome` and `mobile-safari` when the page enters release scope; verify contributor-card order, names, roles, contribution types, qualifications, disclosures, affiliations, logos, professional links, touch targets, long-text handling, and narrow-viewport reflow.
+- **Accessibility automation:** Run Storybook Axe checks for all required registered components and Playwright Axe checks against `/about/clinical-and-professional-contributors/`, including complete, disclosure, missing-image, unavailable-affiliation, and long-biography states.
+- **Manual accessibility review:** Before publication, verify keyboard navigation, visible focus, headings, landmarks, contributor grouping, name, role, contribution, qualification and disclosure relationships, logo and image alternatives, affiliation and professional-link purpose, reading order, zoom, reflow, touch targets, VoiceOver with Safari, and one additional approved screen-reader/browser combination.
+- **Arabic and RTL coverage:** Before Arabic publication, run `arabic-rtl`; verify approved transliteration or translation of names, equivalent contributor-role, contribution-type, status, qualification, disclosure, affiliation, and professional-link meaning; logical layout; accurate clinical and professional terminology; and qualified Arabic, contributor, legal, clinical, and company review.
+- **Reduced-motion coverage:** Run `reduced-motion`; contributor-card presentation, disclosure expansion, logo and image loading, navigation, and professional-link access must remain complete and understandable without non-essential animation.
+- **Visual-regression coverage:** Capture controlled desktop, mobile, Arabic RTL where applicable, reduced-motion, contributor, adviser, panel-member, reviewer, disclosure, affiliation, missing-image, unavailable-affiliation, and material error-state baselines before publication.
+- **Product Status tests:** Verify contributor descriptions do not overstate ODRISC capabilities, validation, adoption, partnerships, regulatory status, or contributor involvement. Informal interest, advice, panel participation, review, testing, and clinical validation must remain distinct.
+- **Clinical-review requirement:** Mandatory for contributor roles, clinical qualifications, specialties, clinical-review activity, Patient-care experience, validation involvement, evidence statements, and professional-scope descriptions. Relevant credentials and contribution descriptions must be verified by the designated clinical or professional owner.
+- **Form or integration tests:** No submission form is embedded on this page. Test contributor-data loading, confirmation and active-status filtering, disclosure and permission states, affiliation and professional links, unavailable-image handling, analytics consent where applicable, and safe synthetic fixtures. Tests must not call live HR, credential, professional-network, institution, Patient, or clinical systems.
+- **Performance-budget tests:** Before publication, test `/about/clinical-and-professional-contributors/` and its contributor list, portraits, logos, disclosures, biographies, links, and interactions against approved Core Web Vitals, JavaScript, image, font, content, third-party, and motion budgets in `docs/engineering/PERFORMANCE_BUDGET.md`.
+- **Security tests:** Verify security headers, safe professional and institutional links, approved logo and image sources, escaped contributor metadata, publication of approved public information only, no personal contact details, private agreements, Patient data, or production operational data, consent-controlled analytics, and absence of secrets or sensitive URL parameters.
+- **Staging smoke:** Required whenever included in a release; verify page availability, confirmed contributor records, precise contribution types, current statuses, qualifications, disclosures, approved affiliations and logos, removal of unconfirmed or withdrawn entries, Arabic behavior where released, analytics consent where applicable, and absence of blocking console or network failures.
+- **Production smoke applicability:** Applicable and non-destructive only when published; verify the canonical route, representative confirmed contributors, contribution types, qualifications, disclosures, approved affiliations and links, essential navigation, and exclusion of unconfirmed entries without submitting data.
 
 ---
 
@@ -4439,6 +4537,30 @@ Present formally confirmed clinical advisers, panel members, reviewers, and prof
 - Partnership status is unambiguous
 - Contact route works
 
+### Test Requirements
+
+- **Requirement IDs:** CON-003, SHR-020
+- **Page ID:** COM-PG-005
+- **Risk priority:** P1, with high relationship-verification, partnership-status, logo-permission, program-participation, legal, reputational, contact-routing, and institutional-trust risk; release blocking whenever included in an approved release
+- **Static validations:** Validate the `/about/partnerships/` route, Page ID, requirement traceability, publication and indexation status, unique relationship identifiers, approved partner names, relationship and collaboration categories, current statuses, effective and review dates, program-participation evidence, logo and trademark permissions, external URLs, partnership-enquiry ownership, translation completeness, architecture rules, linting, TypeScript, and production build.
+- **Unit or integration coverage:** Cover partnership-record schemas, confirmed, proposed, expired and withdrawn status handling, collaboration-category mappings, program-participation classification, publication and permission states, logo and external-link validation, display ordering, unavailable-logo handling, contact-route configuration, locale-specific content, and consent-aware analytics where applicable.
+- **Required Component IDs and component tests:** `CMP-PRM-001` Button, `CMP-PRM-002` Text Link, `CMP-LYT-001` Container, `CMP-FRM-006` General Contact Form when used for partnership enquiries, `CMP-NAV-002` Site Header, `CMP-NAV-004` Mobile Navigation Drawer, and `CMP-NAV-005` Audience Switcher. Test accessible relationship and status presentation, collaboration categories, logo alternatives, external links, enquiry CTA or form states, keyboard behavior, focus, mobile reflow, RTL, reduced motion, unavailable-logo, empty, success, and error states.
+- **E2E journeys:** When included in release scope, open Partnerships, review representative verified relationships and collaboration categories, distinguish partnerships from programs and other relationships, inspect approved logos and external links, start the owned partnership-enquiry route, and confirm that prospects, applications, discussions, expired relationships, and unapproved logos are absent or accurately labelled.
+- **Browser projects:** Run `chromium-desktop` for every changed-feature test. When the page enters a release scope, also run `firefox-desktop`, `webkit-desktop`, `arabic-rtl`, and `reduced-motion`.
+- **Mobile coverage:** Run `mobile-chrome` and `mobile-safari` when the page enters release scope; verify relationship-card order, names, statuses, categories, logos, external links, enquiry CTA or form, touch targets, long-name handling, and narrow-viewport reflow.
+- **Accessibility automation:** Run Storybook Axe checks for all required registered components and Playwright Axe checks against `/about/partnerships/`, including verified-relationship, unavailable-logo, empty, enquiry, success, and error states where applicable.
+- **Manual accessibility review:** Before publication, verify keyboard navigation, visible focus, headings, landmarks, partner-name and relationship-status associations, category meaning, logo alternatives, external-link purpose and destination notice, enquiry labels and errors where applicable, reading order, zoom, reflow, touch targets, VoiceOver with Safari, and one additional approved screen-reader/browser combination.
+- **Arabic and RTL coverage:** Before Arabic publication, run `arabic-rtl`; verify approved transliteration or translation of organization names, equivalent relationship, collaboration-category, program-participation, status, external-link, and enquiry meaning; logical layout; accurate legal and institutional terminology; and qualified Arabic, partner, legal, commercial, and company review.
+- **Reduced-motion coverage:** Run `reduced-motion`; relationship-card presentation, logo loading, progressive disclosure, enquiry feedback, navigation, and external-link access must remain complete and understandable without non-essential animation.
+- **Visual-regression coverage:** Capture controlled desktop, mobile, Arabic RTL where applicable, reduced-motion, verified-partnership, program-participation, collaboration-category, unavailable-logo, empty, enquiry, success, and error-state baselines before publication.
+- **Product Status tests:** Verify every partnership, collaboration, program, pilot, integration, customer, institutional, market, and Product Status statement reflects its approved current status. Prospects, applications, discussions, intentions, and expired relationships must not be presented as partnerships, selection, agreements, adoption, or active integrations.
+- **Clinical-review requirement:** Required when a partnership description includes clinical collaboration, validation, research, Patient care, healthcare delivery, clinical outcomes, professional endorsement, or medical claims. The partner and designated legal, clinical, product, or commercial owners must approve their respective statements.
+- **Form or integration tests:** If `CMP-FRM-006` is used for partnership enquiries, cover required fields, validation, consent, success, duplicate submission, delivery failure, spam protection, safe error mapping, and owned recipient routing through `TST-INT-001` or an approved extension. Test partnership data and links using synthetic fixtures; do not call live CRM, email, partner, program, Patient, Provider, or clinical systems.
+- **Performance-budget tests:** Before publication, test `/about/partnerships/` and its relationship list, logos, external links, enquiry flow, images, fonts, and motion against approved Core Web Vitals, JavaScript, image, font, third-party, form, content, and motion budgets in `docs/engineering/PERFORMANCE_BUDGET.md`.
+- **Security tests:** Verify security headers, safe external and contact links, approved logo sources, escaped partnership metadata, secure enquiry validation and delivery where applicable, no confidential agreement, negotiation, personal-contact, Patient, or production operational data, consent-controlled analytics, and absence of secrets or sensitive URL parameters.
+- **Staging smoke:** Required whenever included in a release; verify page availability, current verified relationships, unambiguous statuses, approved categories, logos and external links, exclusion of prospects and unapproved claims, owned partnership-enquiry routing, success and failure recovery where applicable, Arabic behavior, and absence of blocking console or network failures.
+- **Production smoke applicability:** Applicable and non-destructive only when published; verify `/about/partnerships/`, representative verified relationships, unambiguous statuses, approved logos and links, essential navigation, and enquiry-route availability without submitting a form or contacting a partner.
+
 ---
 
 ## COM-PG-006 — Careers
@@ -4447,6 +4569,7 @@ Present formally confirmed clinical advisers, panel members, reviewers, and prof
 **Priority:** P2 unless hiring
 **Audience:** Shared
 **Page type:** Careers page
+**PRD requirements:** CON-003
 
 ### Primary Purpose
 
@@ -4465,6 +4588,30 @@ Present current roles and company employment information.
 - Application destination works
 - Closed roles are removed or marked
 - Employment claims are accurate
+
+### Test Requirements
+
+- **Requirement IDs:** CON-003, SHR-020
+- **Page ID:** COM-PG-006
+- **Risk priority:** P2 unless active hiring is approved; release blocking whenever published with open roles, with high role-currency, employment-claim, application-routing, privacy, accessibility, and legal risk
+- **Static validations:** Validate the `/about/careers/` route, Page ID, requirement traceability, publication and indexation status, unique role identifiers and slugs, active and closed status, role title, location, employment type, responsibilities, requirements, application process, owner and review dates, approved application destinations, privacy content, translation completeness, architecture rules, linting, TypeScript, and production build.
+- **Unit or integration coverage:** Cover career-role schemas, active, scheduled, closed and archived status handling, publication dates, location and employment-type values, application-destination configuration, missing-field prevention, closed-role exclusion or labelling, empty-careers state, locale-specific content, and consent-aware analytics where applicable.
+- **Required Component IDs and component tests:** `CMP-PRM-001` Button, `CMP-PRM-002` Text Link, `CMP-LYT-001` Container, `CMP-NAV-002` Site Header, `CMP-NAV-004` Mobile Navigation Drawer, and `CMP-NAV-005` Audience Switcher. Test accessible role listings, employment metadata, responsibilities and requirements, application links, closed-role and no-open-role states, keyboard behavior, focus, mobile reflow, RTL, reduced motion, loading, unavailable-destination, and error states. Any reusable job-card component must receive an approved Component ID before implementation.
+- **E2E journeys:** When active hiring is published, open Careers, review an active role, verify its location, employment type, responsibilities, requirements and application process, follow the approved application destination, and confirm closed or expired roles are removed or accurately marked. When no roles are open, verify the approved empty state without a misleading application CTA.
+- **Browser projects:** Run `chromium-desktop` for every changed-feature test. When active roles enter a release scope, also run `firefox-desktop`, `webkit-desktop`, `arabic-rtl`, and `reduced-motion` where those locales and experiences are published.
+- **Mobile coverage:** Run `mobile-chrome` and `mobile-safari` when active roles are published; verify role-list order, employment metadata, long responsibilities and requirements, application CTA, touch targets, external-destination notice, closed-role status, and narrow-viewport reflow.
+- **Accessibility automation:** Run Storybook Axe checks for all required registered components and Playwright Axe checks against `/about/careers/`, including active-role, closed-role, no-open-role, unavailable-application, and error states.
+- **Manual accessibility review:** Before publication, verify keyboard navigation, visible focus, headings, landmarks, role and employment-metadata relationships, list structure, application-link purpose and destination notice, closed-role status, empty-state comprehension, reading order, zoom, reflow, touch targets, VoiceOver with Safari, and one additional approved screen-reader/browser combination.
+- **Arabic and RTL coverage:** Before Arabic publication, run `arabic-rtl`; verify equivalent role title, location, employment type, responsibilities, requirements, application process, open or closed status, privacy, and application-destination meaning; logical layout; accurate employment terminology; and qualified Arabic, HR, privacy, and legal review.
+- **Reduced-motion coverage:** Run `reduced-motion`; role-list updates, status changes, progressive disclosure, navigation, and application-destination access must remain complete and understandable without non-essential animation.
+- **Visual-regression coverage:** Capture controlled desktop, mobile, Arabic RTL where applicable, reduced-motion, active-role, multiple-role, long-description, closed-role, no-open-role, unavailable-application, loading, and error-state baselines before publication.
+- **Product Status tests:** Verify hiring status, role availability, locations, employment types, company maturity, team descriptions, benefits, work arrangements, and expansion claims reflect current approved operational status. Planned or unapproved roles must not appear open.
+- **Clinical-review requirement:** Not normally required for standard employment information. Clinical review becomes mandatory when a role description includes clinical responsibilities, Patient interaction, healthcare qualifications, research, validation, clinical algorithms, or regulated activities.
+- **Form or integration tests:** No application form is defined on this public page unless separately approved. Test role-data loading, active and closed filtering, approved application links, unavailable-destination recovery, analytics consent where applicable, and safe synthetic vacancy fixtures. If a form is introduced, it requires a separately approved privacy, security, retention, accessibility, and integration contract. Tests must not call live HR, recruitment, email, or production systems.
+- **Performance-budget tests:** Before publication, test `/about/careers/` and its role listings, long descriptions, application links, images, fonts, and interactions against approved Core Web Vitals, JavaScript, image, font, content, third-party, interaction, and motion budgets in `docs/engineering/PERFORMANCE_BUDGET.md`.
+- **Security tests:** Verify security headers, safe application and external links, normalized role slugs where used, escaped vacancy metadata, no collection or exposure of résumés, identity documents, sensitive applicant information, personal contact details, or production operational data, consent-controlled analytics, and absence of secrets or sensitive URL parameters.
+- **Staging smoke:** Required whenever Careers or an active role enters a release; verify page availability, current open and closed statuses, complete role metadata, accurate employment claims, approved application destinations, no-open-role behavior, Arabic presentation where released, analytics consent where applicable, and absence of blocking console or network failures.
+- **Production smoke applicability:** Applicable and non-destructive whenever published; verify `/about/careers/`, current role availability, representative employment metadata, closed-role handling, essential navigation, and application-destination availability without submitting an application or entering applicant data.
 
 ---
 
