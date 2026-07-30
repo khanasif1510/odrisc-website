@@ -35,3 +35,9 @@ The Next.js application should not be initialized until the foundational project
 ## Product Principle
 
 The repository documentation is the durable project memory. Important decisions must be documented rather than left only in chat histories or temporary prompts.
+
+## Repository Documentation Overview
+
+| `docs/product/PRD.md` | Defines the requirements and acceptance criteria for the public ODRISC website |
+
+The project is in the documentation and requirements-definition phase. Website implementation must follow the approved Product Vision, Audience, Website Objectives, Website Story, PRD, Product Status, Information Architecture, Design System, and Engineering Standards.

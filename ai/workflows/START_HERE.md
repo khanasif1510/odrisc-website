@@ -19,7 +19,11 @@
    - `docs/product/AUDIENCE.md`
    - `docs/product/WEBSITE_OBJECTIVES.md`
    - `docs/product/WEBSITE_STORY.md`
+   - `docs/product/PRD.md`
    - `docs/product/PRODUCT_STATUS.md`
+   - `docs/product/INFORMATION_ARCHITECTURE.md`
+   - `docs/product/PAGE_REQUIREMENTS.md`
+   - `docs/product/ROUTE_REGISTRY.md`
    
    **Project**
    - `docs/project/GLOSSARY.md`
@@ -27,14 +31,17 @@
    **Design**
    - `docs/design/BRAND_FOUNDATION.md`
    - `docs/design/DESIGN_SYSTEM.md`
+   - `docs/design/ANIMATION_GUIDELINES.md`
 
    **Content**
    - `docs/content/CONTENT_GUIDELINES.md`
 
    **Engineering**
+   - `docs/engineering/TECH_STACK.md`
    - `docs/engineering/ARCHITECTURE.md`
    - `docs/engineering/COMPONENT_LIBRARY.md`
    - `docs/engineering/CODING_STANDARDS.md`
+   - `docs/engineering/TESTING_STRATEGY.md`
 
    Read only the documents that are relevant to the current task. Do not read the entire repository unless necessary.
 

@@ -1,5 +1,9 @@
 # ODRISC Product Capability Status
 
+**Related documents:**
+
+* `docs/product/INFORMATION_ARCHITECTURE.md`
+
 Website storytelling and public capability descriptions must be checked against this register before being implemented.
 
 ## Purpose

@@ -10,6 +10,8 @@
 **Related product vision:** `docs/product/PRODUCT_VISION.md`
 **Related audience framework:** `docs/product/AUDIENCE.md`
 **Related project context:** `PROJECT_CONTEXT.md`
+**Related website story:** `docs/product/WEBSITE_STORY.md`
+**Related information architecture:** `docs/product/INFORMATION_ARCHITECTURE.md`
 **Related architecture decision:** `ADR-001 — Unified Patient and Provider Website`
 
 ---

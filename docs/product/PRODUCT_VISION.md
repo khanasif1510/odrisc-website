@@ -8,6 +8,8 @@
 **Primary audiences:** Patients and healthcare providers
 **Product category:** Maternal and fetal intelligence platform
 **Related audience framework:** `docs/product/AUDIENCE.md`
+**Related website story:** `docs/product/WEBSITE_STORY.md`
+**Related information architecture:** `docs/product/INFORMATION_ARCHITECTURE.md`
 **Related architecture decision:** `ADR-001 — Unified Patient and Provider Website`
 
 ---
@@ -17,12 +19,6 @@ Capability availability is governed by:
 `docs/product/PRODUCT_STATUS.md`
 
 This document defines the intended long-term direction of the platform. It does not determine whether a capability is currently available for public use.
-
----
-
-Related Documents:
-
-- `docs/product/WEBSITE_STORY.md`
 
 ---
 

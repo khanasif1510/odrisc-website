@@ -66,3 +66,165 @@ This glossary defines approved terminology and abbreviations used throughout the
 | Audience gateway | The entry experience through which a visitor selects the Patient or Healthcare Provider journey | One website, one brand |
 | Narrative conversion | The visitor action that follows naturally from the completed page story | Must match audience and product status |
 | Progressive disclosure | Presentation of essential information first, with greater detail available when needed | Required for clinical and technical depth |
+| Product Requirements Document | The canonical document defining what the public website must contain, do, and satisfy | Abbreviated as PRD |
+| Requirement identifier | A stable code used to reference a specific website requirement | Examples: SHR-001, PAT-001, PRO-001 |
+| Acceptance criteria | Testable conditions that must be satisfied before a requirement is considered complete | Required for implementation review |
+| P0 | Mandatory for initial public launch | Highest delivery priority |
+| P1 | High-priority requirement needed shortly after launch or before commercial activation | Must not be treated as optional backlog |
+| P2 | Important enhancement | Delivered after foundational requirements |
+| P3 | Future consideration | Requires later approval |
+| Functional requirement | A requirement defining what the website must do | Includes navigation, forms, conversion, and audience switching |
+| Non-functional requirement | A requirement defining how the website must perform or be governed | Includes accessibility, security, performance, and privacy |
+| Launch scope | The approved set of website capabilities and pages required for public release | Must align with Product Status |
+| Conversion handoff | The transition from the public website to an application, registration, purchase, demo, or enquiry experience | Destination must be available |
+| Requirement traceability | The ability to connect a page, component, test, or implementation to its originating requirement | Use PRD identifiers |
+| Definition of launch ready | The complete set of product, content, design, engineering, and operational conditions required before public release | Defined in the PRD |
+| Information architecture | The approved structure governing website hierarchy, navigation, URLs, content ownership, and visitor movement | Abbreviated as IA |
+| Canonical route | The single approved public URL for a page or topic | Recorded in the Route Registry |
+| Audience prefix | The URL segment identifying Patient or Provider content | `/patients/` or `/providers/` |
+| Shared entry | The root website experience that introduces ODRISC and routes visitors to Patient or Provider journeys | Canonical route `/` |
+| Audience switch | A navigation control that changes between Patient and Provider contexts | Routes to an equivalent page when appropriate |
+| Equivalent-page mapping | The defined relationship between a Patient page and a Provider page addressing related subject matter | Used by the audience switch |
+| Pillar page | A high-level page organizing a major audience need, product concept, or content area | Usually Level 2 |
+| Topic hub | A resource page organizing multiple pieces of content around one approved topic | Create only when sufficient content exists |
+| Route registry | The controlled record of proposed, approved, implemented, redirected, and retired public URLs | Governed by Information Architecture |
+| URL depth | The number of meaningful hierarchical segments in a public route | Keep most pages within three levels |
+| Canonical URL | The preferred URL identified to visitors and search engines as the authoritative version of a page | Required for indexable pages |
+| Redirect register | The controlled record of old and new URLs and the reason for redirecting them | Required for published route changes |
+| Content taxonomy | The controlled categories used to classify and retrieve resources | Includes audience, topic, type, market, and language |
+| Page type | A repeatable functional class of page, such as audience homepage, capability page, trust page, or resource detail | Used in design and requirements |
+| Breadcrumb | A hierarchical navigation trail showing a page's location within the canonical architecture | Must match the canonical hierarchy |
+| Deep link | A direct link to a specific internal page rather than the shared entry | Must not be blocked by the gateway |
+| Localization architecture | The structure that allows pages, URLs, navigation, and metadata to support multiple languages and markets | Must support Arabic and RTL |
+| RTL | Right-to-left text and interface direction | Required for Arabic readiness |
+| Page requirement | The approved page-level definition of audience, purpose, content, CTA, dependencies, and acceptance criteria | Governed by `PAGE_REQUIREMENTS.md` |
+| Page ID | A stable identifier assigned to an approved public page | Example: `PAT-PG-001` |
+| Page specification | The complete approved requirements for one website page | Must be approved before design |
+| Page content brief | A page-specific writing brief derived from Page Requirements | Must not redefine the page |
+| Page implementation tracker | The operational record of page progress from requirements to publication | Does not override Page Requirements |
+| Primary visitor question | The principal question a page must answer for its intended audience | One primary question per page |
+| Primary page purpose | The single most important reason a page exists | Must align with an approved objective |
+| Conditional page | A page approved in the architecture but publishable only after a dependency is satisfied | Often dependent on Product Status |
+| Publication gate | A required approval stage before a page may be published | Strategic, content, design, engineering, and launch |
+| Product-status dependency | A product capability or maturity status that determines what a page may communicate | Checked before drafting and publication |
+| Page owner | The person responsible for page accuracy, maintenance, CTA, and review | Required for every published page |
+| Content brief | A controlled document defining the copywriting requirements for a page | Derived from Page Requirements |
+| Page acceptance criteria | Testable conditions that determine whether a page is complete | Required before publication |
+| Brand Foundation | The canonical document defining ODRISC purpose, positioning, personality, voice, visual principles, and brand boundaries | Governed by `docs/design/BRAND_FOUNDATION.md` |
+| Brand essence | The central emotional and functional idea the brand should express | ODRISC essence: clarity across the pregnancy journey |
+| Brand positioning | The distinctive place ODRISC aims to occupy in the minds of Patients, Providers, and institutions | Maternal and fetal intelligence platform |
+| Brand promise | The value ODRISC consistently commits to communicate and support | Must not become a guaranteed outcome claim |
+| Brand personality | The human characteristics expressed through ODRISC communication and design | Calm, precise, intelligent, human, reassuring, progressive, premium |
+| Brand voice | The consistent verbal character used across ODRISC communication | Adapted by audience without changing the core identity |
+| Tone | The contextual variation of the Brand Voice for a particular page, audience, or situation | Examples: Patient safety, Provider methodology |
+| Brand architecture | The structure governing the relationship between the master brand, experiences, capabilities, and markets | ODRISC uses a master-brand architecture |
+| Master brand | The primary brand under which all Patient, Provider, capability, and institutional experiences operate | ODRISC |
+| Signature gradient | The approved coral-to-mint gradient using `#ff7680` and `#80ffcc` | Use with restraint |
+| Negative space | Deliberate empty space used to improve hierarchy, clarity, and calm | Core ODRISC visual principle |
+| Visual character | The overall visual qualities through which the brand is recognized | Minimal, clinical, calm, premium, modern |
+| Brand asset | A controlled visual, verbal, or media element used to represent ODRISC | Recorded in the Brand Asset Register |
+| Placeholder asset | A temporary asset that is not approved for final public use | Must be labeled |
+| Brand Review | The structured review of strategy, voice, visual expression, accessibility, and trust | Required before publication |
+| Product Status expression | The verbal and visual presentation of capability maturity | Must be consistent and transparent |
+| Semantic color | A color assigned to a functional meaning such as success, warning, error, or clinical status | Separate from decorative brand color |
+| Design System | The canonical system of reusable visual, interaction, responsive, and component-design rules | Governed by `docs/design/DESIGN_SYSTEM.md` |
+| Design token | A named reusable design value such as a color, spacing value, radius, or typography size | Must replace arbitrary hard-coded values |
+| Semantic color | A color associated with functional meaning such as success, warning, error, or information | Separate from brand color |
+| Clinical-risk color | A governed visual state representing an approved clinical risk category | Must include written labels |
+| Product-status badge | A visible label showing whether a capability is available, pilot, in validation, in development, or planned | Must not use clinical-risk styling |
+| Typography scale | The approved hierarchy of display, heading, body, label, and caption sizes | Defined in the Design System |
+| Container | A maximum-width layout region controlling readable page width | Text, standard, wide, or full-bleed |
+| Responsive breakpoint | A width threshold at which layout behavior changes | Must be treated as a design threshold rather than a device |
+| Grid system | The approved column and gutter structure used to organize page layouts | 12 desktop, 8 tablet, 4 mobile |
+| Radius token | A named value controlling corner rounding | Default card radius is 16px |
+| Elevation | The visual depth created through border, surface, and shadow treatment | Use restrained shadows |
+| Focus ring | A visible indicator showing the element currently receiving keyboard focus | Required for interactive elements |
+| Component state | A defined visual and functional condition such as hover, focus, disabled, loading, error, or success | Must be documented |
+| RTL | Right-to-left layout and text direction used for Arabic | Requires component-level testing |
+| Design QA | The structured review of tokens, layout, components, accessibility, responsiveness, and localization | Required before publication |
+| Animation Guidelines | The canonical rules governing motion purpose, timing, transitions, reduced motion, performance, and RTL behavior | Governed by `docs/design/ANIMATION_GUIDELINES.md` |
+| Motion token | A named reusable animation value such as duration, easing, distance, delay, or stagger | Must replace arbitrary values |
+| Narrative motion | Animation used to explain the ODRISC story, progression, or relationship between information | Must not delay essential content |
+| Interaction motion | Motion directly caused by a visitor action | Examples include buttons, tabs, and accordions |
+| Feedback motion | Motion communicating loading, success, error, or completion | Must remain calm and accessible |
+| Data motion | Animation used to reveal or compare data while preserving its meaning | Must preserve scale and chronology |
+| Reduced motion | An alternative presentation that minimizes non-essential movement | Required throughout the website |
+| Scroll hijacking | Replacing or controlling native page scrolling to force animation progression | Prohibited |
+| Motion ID | A stable identifier assigned to a major animation or transition | Example: `MOT-SHR-001` |
+| Motion primitive | A reusable implementation pattern for approved motion behavior | Examples include reveal, drawer, and timeline motion |
+| Motion density | The quantity and complexity of simultaneous movement within an interface | Lower for Patient pages |
+| Motion budget | The approved limit on the number, complexity, and performance cost of animations | Used to prevent motion overload |
+| Vestibular safety | Design practices that reduce disorientation caused by zoom, rotation, parallax, or large movement | Required for accessible motion |
+| Technology Stack | The approved set of runtime, framework, language, libraries, testing, hosting, and deployment technologies | Governed by `docs/engineering/TECH_STACK.md` |
+| App Router | The approved Next.js routing and rendering architecture for the public website | The Pages Router is not approved |
+| React Server Component | A React component rendered on the server and excluded from the client JavaScript bundle unless a client boundary is required | Default component type |
+| Client Component | A React component requiring browser interaction and marked with `"use client"` | Keep boundaries small |
+| Static-first rendering | The policy of generating public content statically unless a request-specific requirement requires dynamic execution | Core performance principle |
+| Standalone output | A minimal Next.js production-server output suitable for Docker deployment | Required for V1 hosting |
+| Runtime dependency | A package required by the production application | Requires stronger review |
+| Development dependency | A package required only for development, testing, or build tooling | Must still be governed |
+| Lockfile | The exact dependency-resolution record committed to the repository | `pnpm-lock.yaml` |
+| Content adapter | An abstraction allowing the content source to change without rewriting page components | Repository content in V1 |
+| Integration adapter | A controlled interface separating website forms or APIs from a specific external provider | Required for portability |
+| Static generation | Producing page output before a visitor request | Default for public content |
+| Dynamic rendering | Producing page output at request time | Use only when required |
+| Design-token source | The canonical code representation of ODRISC visual tokens | Must remain synchronized with the Design System |
+| Immutable deployment | Deploying a fixed, versioned artifact that is not modified after build | Required for staging and production |
+| Health check | A server endpoint used to verify that the application process is alive or ready | Must not expose secrets |
+| Dependency proposal | A documented justification for introducing a package | Required for new dependencies |
+| Engineering Architecture | The canonical structure governing system boundaries, modules, rendering, integrations, security zones, and deployment | Governed by `docs/engineering/ARCHITECTURE.md` |
+| Modular monolith | One deployable application with explicit internal module boundaries | V1 architecture style |
+| Trust boundary | A point where data moves between systems or zones with different trust levels | Requires validation and controls |
+| Route layer | The Next.js layer responsible for URLs, metadata, content loading, and page composition | Must remain thin |
+| Application service | Server-side logic coordinating validation, rules, and integration ports | Independent of vendor SDKs |
+| Integration adapter | A module translating an internal contract into a vendor-specific API or service | Keeps vendors replaceable |
+| Port | An internal interface describing a capability required by an application service | Implemented by an adapter |
+| Static shell | A statically rendered page whose mutations are handled by a server endpoint or Server Action | Used for public forms |
+| Runtime public configuration | An allowlisted non-sensitive configuration response exposed at runtime | Prevents unnecessary build-time public variables |
+| Blue-green deployment | A release method using two application slots so traffic can switch after the new version is ready | Supports low-downtime deployment |
+| Liveness check | An endpoint confirming that the application process is running | Must not call external dependencies |
+| Readiness check | An endpoint confirming that the application can serve traffic | Must not expose secrets |
+| Architecture test | An automated check enforcing module boundaries and architectural rules | Runs in CI |
+| Data classification | The policy assigning handling requirements to public, operational, sensitive, and secret information | Required for every integration |
+| Synchronous delivery | A form workflow that reports success only after its delivery provider acknowledges the request | V1 form model |
+| Component Library | The canonical system defining reusable public-website component contracts, IDs, variants, accessibility, and composition | Governed by `docs/engineering/COMPONENT_LIBRARY.md` |
+| Component ID | A stable identifier assigned to a governed reusable component | Format: `CMP-<CATEGORY>-<NUMBER>` |
+| Primitive | A low-level semantic or interactive building block | Examples: Button, Input, Checkbox |
+| Layout component | A reusable component controlling container, spacing, grid, or page structure | Must use approved tokens |
+| Feature pattern | A reusable audience- or workflow-specific composition of lower-level components | Examples: Patient Hero, Provider Workflow |
+| Server composition | A Server Component that composes one or more small Client Components | Preferred for interactive sections |
+| Component contract | The approved purpose, anatomy, props, variants, states, accessibility, RTL, and testing requirements | Must remain stable |
+| Component Registry | The implementation-status register for reusable components | Tracks specification, Storybook, tests, and approval |
+| Page-local section | A section kept within one page because its reusable contract is not established | Should not be promoted prematurely |
+| Analytics ownership | The component or feature layer responsible for sending a defined analytics event | Low-level primitives own none |
+| Audience variant | A controlled component expression for shared, Patient, Provider, or institutional contexts | Must share one foundation |
+| Component maturity | The governed status from proposed through published, deprecated, and retired | Code existence does not equal approval |
+| Component deprecation | The controlled process of replacing and removing a reusable component | Requires migration path |
+| Coding Standards | The canonical rules governing how public-website source and configuration code is written, validated, reviewed, and maintained | Governed by `docs/engineering/CODING_STANDARDS.md` |
+| Strict TypeScript | TypeScript configuration enabling strong compile-time checking and approved additional strict options | Must not be disabled |
+| Runtime boundary | A point where data enters from an environment, user, file, URL, cookie, API, or external service | Requires validation |
+| Type assertion | A developer instruction telling TypeScript to treat a value as another type | Must not replace validation |
+| Discriminated union | A type model using a shared literal property to represent distinct states safely | Preferred for state and results |
+| Exhaustive handling | Compile-time or runtime confirmation that every controlled-union value is handled | Required for governed values |
+| Client boundary | The point at which a module and its imports become part of client-side React execution | Must remain small |
+| Pure component | A component whose render output is determined by props, state, and context without render-time side effects | Required by React |
+| Architecture restriction | A rule prohibiting imports or dependencies that violate approved module boundaries | Enforced through linting and tests |
+| Lint warning debt | Accumulated non-blocking lint violations | Not permitted in CI |
+| Standards exception | An approved, scoped, time-bounded deviation from Coding Standards | Recorded in the exception register |
+| Generated code | Source produced from a contract or tool rather than manually authored | Must be isolated and reproducible |
+| Behavioural test | A test verifying user-observable or contract-level behaviour rather than internal implementation | Preferred testing style |
+| Safe public error | A user-facing error message that explains recovery without exposing internal details | Mapped through the Error Catalog |
+| Testing Strategy | The canonical system defining test levels, release evidence, browser coverage, and quality gates | Governed by `docs/engineering/TESTING_STRATEGY.md` |
+| Static validation | Verification performed without running a full browser, including types, linting, schemas, routes, content, and architecture rules | Runs before browser tests |
+| Component test | A test verifying one rendered component’s user-observable behavior | Uses React Testing Library |
+| Integration test | A test verifying collaboration between multiple first-party modules | Usually uses fake external adapters |
+| Contract test | A test verifying request, response, or data shape at a trust boundary | Uses runtime schemas |
+| End-to-end test | A browser test verifying a complete journey through the running application | Uses Playwright |
+| Smoke test | A small non-destructive check confirming that critical deployment functions respond | Runs after deployment |
+| Visual regression | Comparison of a controlled current screenshot against an approved baseline | Requires human review for updates |
+| Flaky test | A test that may pass or fail without a relevant code or environment change | Must be recorded and fixed |
+| Quarantined test | A temporarily isolated non-P0 test with explicit approval, owner, and resolution date | Does not count as passing evidence |
+| P0 test | A release-critical test protecting a required public journey or safety boundary | Cannot be skipped or quarantined |
+| Illustrative data | Synthetic data used to explain or test a public product preview | Must not be mistaken for a real clinical case |
+| Release quality gate | The complete evidence and approval checklist required before production promotion | Recorded per release |
+| Production smoke | Non-destructive verification of critical public routes and infrastructure after deployment | Must not create operational records |

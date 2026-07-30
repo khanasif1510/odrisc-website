@@ -16,13 +16,21 @@ Before planning, generating, editing, or reviewing code, the agent must read the
 6. `docs/product/AUDIENCE.md`
 7. `docs/product/WEBSITE_OBJECTIVES.md`
 8. `docs/product/WEBSITE_STORY.md`
-9. `docs/product/PRODUCT_STATUS.md`
-10. `docs/design/BRAND_FOUNDATION.md`
-11. `docs/design/DESIGN_SYSTEM.md`
-12. `docs/content/CONTENT_GUIDELINES.md`
-13. `docs/engineering/TECH_STACK.md`
-14. `docs/engineering/ARCHITECTURE.md`
-15. The specific page, component, or workflow document relevant to the task
+9. `docs/product/PRD.md`
+10. `docs/product/PRODUCT_STATUS.md`
+11. `docs/product/INFORMATION_ARCHITECTURE.md`
+12. `docs/product/PAGE_REQUIREMENTS.md`
+13. `docs/product/ROUTE_REGISTRY.md`
+14. `docs/design/BRAND_FOUNDATION.md`
+15. `docs/design/DESIGN_SYSTEM.md`
+16. `docs/design/ANIMATION_GUIDELINES.md`
+17. `docs/content/CONTENT_GUIDELINES.md`
+18. `docs/engineering/TECH_STACK.md`
+19. `docs/engineering/ARCHITECTURE.md`
+20. `docs/engineering/COMPONENT_LIBRARY.md`
+21. `docs/engineering/CODING_STANDARDS.md`
+22. `docs/engineering/TESTING_STRATEGY.md`
+23. The specific page, component, or workflow document relevant to the task
 
 ## Core Working Rules
 

@@ -6,17 +6,10 @@
 **Authority:** Approved audience framework
 **Website:** `odrisc.com`
 **Primary audience groups:** Patients and healthcare providers
+**Related website story:** `docs/product/WEBSITE_STORY.md`
+**Related information architecture:** `docs/product/INFORMATION_ARCHITECTURE.md`
 **Related decision:** `ADR-001 — Unified Patient and Provider Website`
 
----
-
-Related Documents:
-
-- `docs/product/WEBSITE_STORY.md`
-
-Audience needs, motivations, objections, and knowledge levels are defined in this document. The narrative sequence used to communicate with those audiences is defined in `docs/product/WEBSITE_STORY.md`.
-
----
 
 # 1. Purpose of This Document
 

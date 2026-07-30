@@ -15,7 +15,11 @@
 * `docs/product/AUDIENCE.md`
 * `docs/product/PRODUCT_STATUS.md`
 * `docs/product/WEBSITE_OBJECTIVES.md`
+* `docs/product/WEBSITE_STORY.md`
+* `docs/product/INFORMATION_ARCHITECTURE.md`
 * `docs/project/SOURCE_OF_TRUTH.md`
+
+The Website Story defines the narrative sequence. The canonical page hierarchy, URL structure, navigation, and audience-routing model are defined in `docs/product/INFORMATION_ARCHITECTURE.md`.
 
 ---
 

@@ -19,7 +19,18 @@ The following documents define the approved product and website direction:
 - `docs/product/AUDIENCE.md` - Defines the Patient and Healthcare Provider audiences, their needs, journeys, and conversion requirements. 
 - `docs/product/WEBSITE_OBJECTIVES.md` - Defines what the public ODRISC website must accomplish across audience routing, communication, trust, conversion, accessibility, localization, privacy, performance, and governance.
 - `docs/product/WEBSITE_STORY.md` - Defines the canonical public narrative, the shared story architecture, and the Patient and Provider narrative progression. 
+- `docs/product/PRD.md` - Defines the functional, content, experience, technical, operational, and acceptance requirements for the website at `odrisc.com`.
 - `docs/product/PRODUCT_STATUS.md` - Defines the approved maturity and public communication status of every product capability.
+- `docs/product/INFORMATION_ARCHITECTURE.md` - Defines the canonical website hierarchy, sitemap, URL model, navigation, audience switching, shared-page structure, resource taxonomy, and localization-ready route architecture.
+- `docs/product/PAGE_REQUIREMENTS.md` - Defines the audience, purpose, narrative sequence, content structure, CTA, product-status dependency, SEO intent, analytics, accessibility requirements, and acceptance criteria for every approved public page.
+- `docs/design/BRAND_FOUNDATION.md` - Defines the canonical ODRISC brand purpose, positioning, personality, voice, visual principles, color roles, imagery, clinical trust expression, localization principles, and prohibited brand expressions.
+- `docs/design/DESIGN_SYSTEM.md` - Defines the canonical design tokens, typography, color system, semantic colors, spacing, grid, responsive behavior, component rules, Patient and Provider variants, accessibility, and RTL requirements.
+- `docs/design/ANIMATION_GUIDELINES.md` - Defines the canonical motion principles, timing tokens, narrative animation, component transitions, data-animation rules, reduced-motion behavior, performance requirements, and RTL motion guidance.
+- `docs/engineering/TECH_STACK.md` - Defines the approved runtime, framework, rendering strategy, language, styling, content, localization, API, analytics, testing, security, hosting, deployment, and dependency-selection technologies for the public website.
+- `docs/engineering/ARCHITECTURE.md` - Defines the public website's system boundaries, repository structure, rendering model, Server and Client Component boundaries, content pipeline, integration adapters, form and analytics flows, security zones, deployment topology, and rollback architecture.
+- `docs/engineering/COMPONENT_LIBRARY.md` - Defines the canonical reusable-component taxonomy, stable Component IDs, Server and Client classifications, component contracts, audience variants, accessibility, RTL, motion, analytics ownership, Storybook requirements, testing, and lifecycle governance.
+- `docs/engineering/CODING_STANDARDS.md` - Defines the canonical TypeScript, React, Next.js, naming, formatting, validation, error-handling, logging, analytics, accessibility, localization, testing, review, and AI-generated-code standards.
+- `docs/engineering/TESTING_STRATEGY.md` - Defines the canonical static, unit, component, integration, contract, accessibility, visual, browser, Arabic, RTL, reduced-motion, staging, production, coverage, flaky-test, and release-verification requirements.
 
 ---
 
