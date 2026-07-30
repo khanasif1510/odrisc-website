@@ -407,6 +407,7 @@ Every page specification includes:
 - Analytics
 - Accessibility considerations
 - Acceptance criteria
+- Test requirements
 
 ---
 
@@ -536,6 +537,30 @@ Track:
 - Analytics events fire once per valid interaction
 - The gateway does not block deep links
 - The gateway passes keyboard and focus testing
+
+### Test Requirements
+
+- **Requirement IDs:** SHR-001, SHR-002, SHR-003, SHR-004, SHR-005, SHR-006, SHR-009, SHR-011, SHR-020, UX-001, ACC-001, SEO-003, ANL-001
+- **Page ID:** SH-PG-001
+- **Risk priority:** P0 and release blocking
+- **Static validations:** Validate the `/` route, Page ID, requirement traceability, indexation, content and claim rules, analytics-event registration, architecture boundaries, linting, TypeScript, and production build.
+- **Unit or integration coverage:** Cover audience-route mapping, optional audience-preference behavior, consent-aware analytics construction, and prevention of duplicate audience-selection events.
+- **Required Component IDs and component tests:** `CMP-FTR-001` Audience Gateway; verify equal Patient and Provider semantics, keyboard operation, accessible names, routing, focus behavior, reduced motion, and one valid analytics event per selection.
+- **E2E journeys:** `TST-E2E-001`; load the shared root, understand both audience choices, enter the Patient journey, return, enter the Provider journey, and verify that direct deep links remain available.
+- **Browser projects:** `chromium-desktop`, `firefox-desktop`, `webkit-desktop`, `arabic-rtl`, and `reduced-motion`.
+- **Mobile coverage:** `mobile-chrome` and `mobile-safari`; verify responsive audience choices, touch targets, focus visibility, and navigation.
+- **Accessibility automation:** Run Storybook Axe checks against `CMP-FTR-001` and Playwright Axe checks against `/`.
+- **Manual accessibility review:** Verify keyboard-only operation, visible focus, reading order, accessible audience labels, 200% zoom, narrow-viewport reflow, touch targets, VoiceOver with Safari, and one additional approved screen-reader/browser combination.
+- **Arabic and RTL coverage:** Run the `arabic-rtl` project; verify translated content, reading order, logical layout, audience-choice parity, and qualified Arabic review.
+- **Reduced-motion coverage:** Run the `reduced-motion` project and verify that audience selection and content access remain complete without non-essential motion.
+- **Visual-regression coverage:** Capture approved stable screenshots for desktop, mobile, and Arabic RTL gateway layouts in the controlled Playwright baseline environment.
+- **Product Status tests:** Verify that the gateway does not imply that every platform capability, login destination, language, or market pathway is currently available.
+- **Clinical-review requirement:** Required when clinical statistics, outcomes, risk statements, or clinical claims appear; otherwise record as not applicable with reviewer evidence.
+- **Form or integration tests:** No form submission applies. Test Patient and Provider route handoffs, optional preference behavior, consent-aware analytics, and valid footer destinations.
+- **Performance-budget tests:** Test `/` against the approved page, Core Web Vitals, JavaScript, image, font, and motion budgets defined in `docs/engineering/PERFORMANCE_BUDGET.md`.
+- **Security tests:** Verify security headers, safe internal and external navigation, absence of secrets and Patient data, consent-controlled analytics, and no unauthorized redirect behavior.
+- **Staging smoke:** Load `/`, verify both audience routes, shared footer links, approved language behavior, analytics consent behavior, and absence of blocking console or network failures.
+- **Production smoke applicability:** Applicable and non-destructive; verify root availability, Patient and Provider navigation, essential footer links, approved public content, and health without submitting data.
 
 ---
 
@@ -674,6 +699,30 @@ Track:
 - Audience switch is visible
 - Patient and Provider language are not mixed
 
+### Test Requirements
+
+- **Requirement IDs:** PAT-001, PAT-007, PAT-008, PAT-010, SHR-020, UX-001, UX-002, UX-003, SEO-001, ANL-002
+- **Page ID:** PAT-PG-001
+- **Risk priority:** P0 and release blocking
+- **Static validations:** Validate the `/patients/` route, Page ID, requirement traceability, indexation, Product Status vocabulary, clinical-boundary content, analytics events, internal links, translation completeness, architecture rules, linting, TypeScript, and production build.
+- **Unit or integration coverage:** Cover Product Status mapping, Patient CTA destination selection, unavailable-destination behavior, consent-aware analytics filtering, route generation, and safe public capability models.
+- **Required Component IDs and component tests:** `CMP-FTR-101` Patient Hero, `CMP-NAV-002` Site Header, `CMP-NAV-004` Mobile Navigation Drawer, `CMP-NAV-005` Audience Switcher, and `CMP-TRS-001` Product Status Badge. Test accessible rendering, navigation, focus, mobile state, Patient/Provider switching, Product Status variants, RTL, and reduced motion.
+- **E2E journeys:** `TST-E2E-002`; open the Patient homepage, navigate through primary Patient sections, view Product Status and the clinical boundary, reach the approved Patient Start destination, and recover safely when that destination is unavailable.
+- **Browser projects:** `chromium-desktop`, `firefox-desktop`, `webkit-desktop`, `arabic-rtl`, and `reduced-motion`.
+- **Mobile coverage:** `mobile-chrome` and `mobile-safari`; verify the Patient hero, navigation drawer, CTA visibility, touch targets, content reflow, and approved handoff behavior.
+- **Accessibility automation:** Run Storybook Axe checks for the required registered components and Playwright Axe checks against `/patients/`.
+- **Manual accessibility review:** Verify keyboard navigation, visible focus, skip-link behavior, heading hierarchy, landmark structure, link purpose, Product Status comprehension, zoom, reflow, touch targets, VoiceOver with Safari, and one additional approved screen-reader/browser combination.
+- **Arabic and RTL coverage:** Run `arabic-rtl`; verify equivalent Patient meaning, clinical-boundary visibility, Product Status meaning, logical layout, navigation direction, CTA equivalence, and qualified Arabic review.
+- **Reduced-motion coverage:** Run `reduced-motion`; verify that hero, navigation, transitions, and capability presentation remain understandable and operable without non-essential motion.
+- **Visual-regression coverage:** Capture controlled desktop, mobile, Arabic RTL, and reduced-motion baselines for the Patient homepage and material navigation states.
+- **Product Status tests:** Verify current and future capabilities use approved status values, unavailable capabilities do not present operational CTAs, and Patient-facing wording matches the Product Status register.
+- **Clinical-review requirement:** Required for Patient-facing clinical context, risk or outcome wording, clinical boundaries, and illustrative clinical information.
+- **Form or integration tests:** No embedded form is required. Test the approved Patient Start handoff, unavailable-destination recovery, analytics events, consent behavior, and absence of sensitive query parameters.
+- **Performance-budget tests:** Test `/patients/` against approved Core Web Vitals, JavaScript, image, font, third-party, and motion budgets in `docs/engineering/PERFORMANCE_BUDGET.md`.
+- **Security tests:** Verify security headers, safe Patient handoff configuration, no Patient or clinical data collection, consent-controlled analytics, safe external links, and absence of secrets or sensitive URL parameters.
+- **Staging smoke:** Verify page availability, Patient navigation, Product Status display, clinical boundary, primary CTA, unavailable-destination recovery, Arabic route behavior, analytics consent, and absence of blocking console or network failures.
+- **Production smoke applicability:** Applicable and non-destructive; verify `/patients/`, essential navigation, approved Product Status wording, clinical boundary, and operational CTA or approved unavailable state without submitting data.
+
 ---
 
 ## PAT-PG-002 — How ODRISC Helps
@@ -768,6 +817,30 @@ Every described capability must use approved availability wording.
 - Product limitations are visible
 - The page routes to relevant Patient capabilities
 - No unavailable feature is presented as active
+
+### Test Requirements
+
+- **Requirement IDs:** PAT-001, PAT-002, PAT-007, SHR-020, UX-001, UX-002
+- **Page ID:** PAT-PG-002
+- **Risk priority:** P0 and release blocking
+- **Static validations:** Validate the `/patients/how-odrisc-helps/` route, Page ID, requirement traceability, indexation, Product Status vocabulary, clinical-boundary content, internal links, analytics events, translation completeness, architecture rules, linting, TypeScript, and production build.
+- **Unit or integration coverage:** Cover Product Status mapping, capability-card data, canonical Patient-route generation, approved CTA destination selection, unavailable-capability handling, and consent-aware analytics events.
+- **Required Component IDs and component tests:** No page-specific feature component ID is currently registered. Test the applicable shared `CMP-NAV-002` Site Header, `CMP-NAV-004` Mobile Navigation Drawer, `CMP-NAV-005` Audience Switcher, and `CMP-TRS-001` Product Status Badge. Register any reusable Patient product-overview component before implementation.
+- **E2E journeys:** Include the page in `TST-E2E-002`; navigate from the Patient homepage, understand the longitudinal Patient proposition, verify limitations and Product Status, follow links to relevant Patient capabilities, and test the approved Patient Start CTA or unavailable state.
+- **Browser projects:** `chromium-desktop`, `firefox-desktop`, `webkit-desktop`, `arabic-rtl`, and `reduced-motion`.
+- **Mobile coverage:** `mobile-chrome` and `mobile-safari`; verify narrative order, capability navigation, CTA visibility, touch targets, content reflow, and Product Status presentation.
+- **Accessibility automation:** Run Storybook Axe checks for applicable registered components and Playwright Axe checks against `/patients/how-odrisc-helps/`.
+- **Manual accessibility review:** Verify keyboard navigation, visible focus, heading hierarchy, landmark structure, link purpose, capability and limitation comprehension, zoom, reflow, touch targets, VoiceOver with Safari, and one additional approved screen-reader/browser combination.
+- **Arabic and RTL coverage:** Run `arabic-rtl`; verify equivalent longitudinal meaning, logical order, capability links, limitations, Product Status meaning, CTA equivalence, and qualified Arabic review.
+- **Reduced-motion coverage:** Run `reduced-motion`; verify that narrative progression, capability explanation, and CTA access remain complete without non-essential motion.
+- **Visual-regression coverage:** Capture controlled desktop, mobile, and Arabic RTL baselines for stable page structure, capability presentation, Product Status, and CTA states.
+- **Product Status tests:** Verify every described capability uses approved availability wording, future functionality is not presented as active, and the CTA appears only with an approved working destination.
+- **Clinical-review requirement:** Required for descriptions of Patient support, longitudinal monitoring, clinical boundaries, outcomes, risk statements, and professional involvement.
+- **Form or integration tests:** No embedded form applies. Test Patient capability routes, the approved Patient Start handoff, unavailable-destination recovery, analytics events, consent behavior, and absence of sensitive query parameters.
+- **Performance-budget tests:** Test `/patients/how-odrisc-helps/` against approved Core Web Vitals, JavaScript, image, font, third-party, and motion budgets in `docs/engineering/PERFORMANCE_BUDGET.md`.
+- **Security tests:** Verify security headers, safe route and handoff behavior, no Patient or clinical-data collection, consent-controlled analytics, safe external links, and absence of secrets or sensitive URL parameters.
+- **Staging smoke:** Verify page availability, Patient navigation, capability links, Product Status and limitations, primary CTA or approved unavailable state, Arabic behavior, analytics consent, and absence of blocking console or network failures.
+- **Production smoke applicability:** Applicable and non-destructive; verify the published route, essential navigation, approved capability wording, visible limitations, and operational CTA or approved unavailable state without submitting data.
 
 ---
 
@@ -871,6 +944,30 @@ Only when risk assessment is publicly available.
 - Links route to canonical Patient pages
 - Professional involvement is visible
 
+### Test Requirements
+
+- **Requirement IDs:** PAT-002, PAT-003, PAT-004, PAT-005, PAT-006, SHR-020
+- **Page ID:** PAT-PG-003
+- **Risk priority:** P1, with elevated clinical-content risk
+- **Static validations:** Validate the `/patients/preparing-for-pregnancy/` route, Page ID, requirement traceability, indexation, Product Status vocabulary, clinical-claim references, internal links, content metadata, translation completeness, architecture rules, linting, TypeScript, and production build.
+- **Unit or integration coverage:** Cover Product Status mappings for risk assessment, preconception weight monitoring, nutrition, physical activity, and IVF-readiness content; canonical Patient links; CTA destination selection; and consent-aware analytics.
+- **Required Component IDs and component tests:** No page-specific feature component ID is currently registered. Test applicable shared navigation and `CMP-TRS-001` Product Status Badge behavior. Register reusable preconception or journey components before implementation.
+- **E2E journeys:** Include the route in the changed-feature Patient journey associated with `TST-E2E-002`; navigate from Patient pages, distinguish preconception from pregnancy support, verify professional involvement, follow canonical capability links, and test the approved CTA or unavailable state.
+- **Browser projects:** `chromium-desktop` for changed-feature verification; include `firefox-desktop` and `webkit-desktop` when the page enters a release scope; use `arabic-rtl` and `reduced-motion` where applicable.
+- **Mobile coverage:** `mobile-chrome` and `mobile-safari`; verify journey order, clinical-content readability, touch targets, capability links, CTA visibility, and narrow-viewport reflow.
+- **Accessibility automation:** Run Storybook Axe checks for applicable registered components and Playwright Axe checks against `/patients/preparing-for-pregnancy/`.
+- **Manual accessibility review:** Verify keyboard navigation, visible focus, headings, landmarks, link purpose, clinical-content comprehension, zoom, reflow, touch targets, VoiceOver with Safari, and one additional approved screen-reader/browser combination.
+- **Arabic and RTL coverage:** Run `arabic-rtl` when Arabic publication is in scope; verify equivalent preconception, PCOS, IVF, Product Status, professional-support, and CTA meaning with qualified Arabic review.
+- **Reduced-motion coverage:** Run `reduced-motion` for any material journey or capability animation and verify complete content access without non-essential motion.
+- **Visual-regression coverage:** Capture controlled baselines for stable journey structure, clinical-boundary presentation, Product Status, and CTA states when the page enters visual-regression scope.
+- **Product Status tests:** Verify that risk assessment, preconception monitoring, nutrition, physical activity, and IVF-readiness capabilities use approved status language and that future tools are not presented as currently available.
+- **Clinical-review requirement:** Required for preconception, PCOS, IVF, weight, nutrition, physical-activity, risk, outcome, and professional-support statements.
+- **Form or integration tests:** No embedded form applies. Test canonical Patient capability routes, approved CTA handoff, unavailable-destination recovery, analytics consent, and absence of sensitive query parameters.
+- **Performance-budget tests:** Test the route against approved page, Core Web Vitals, JavaScript, image, font, third-party, and motion budgets in `docs/engineering/PERFORMANCE_BUDGET.md`.
+- **Security tests:** Verify security headers, safe navigation and handoffs, no collection of Patient or fertility information, consent-controlled analytics, safe external links, and absence of secrets or sensitive URL parameters.
+- **Staging smoke:** When included in staging scope, verify route availability, Patient navigation, preconception/pregnancy distinction, Product Status, clinical boundaries, CTA behavior, Arabic behavior where applicable, and absence of blocking console or network failures.
+- **Production smoke applicability:** Applicable only when published; use a non-destructive check of route availability, essential links, approved clinical and Product Status wording, and CTA or unavailable state without submitting data.
+
 ---
 
 ## PAT-PG-004 — During Pregnancy
@@ -961,6 +1058,30 @@ All Patient monitoring and support capabilities.
 - It avoids generic pregnancy-content positioning
 - Professional care remains central
 - Patient safety language is present
+
+### Test Requirements
+
+- **Requirement IDs:** PAT-002, PAT-004, PAT-005, PAT-006, PAT-007, SHR-020
+- **Page ID:** PAT-PG-004
+- **Risk priority:** P1, with elevated Patient-safety and clinical-content risk
+- **Static validations:** Validate the `/patients/during-pregnancy/` route, Page ID, requirement traceability, indexation, Product Status vocabulary, safety and clinical-boundary content, claim references, internal links, analytics events, translation completeness, architecture rules, linting, TypeScript, and production build.
+- **Unit or integration coverage:** Cover Product Status mappings for monitoring, weight, nutrition, physical activity, and progress capabilities; canonical Patient-route generation; CTA destination selection; unavailable-capability handling; and consent-aware analytics.
+- **Required Component IDs and component tests:** No page-specific journey component ID is currently registered. Test applicable shared navigation and `CMP-TRS-001` Product Status Badge behavior. Register reusable pregnancy-journey components before implementation.
+- **E2E journeys:** Include the route in the changed-feature Patient journey associated with `TST-E2E-002`; navigate from Patient pages, understand the connected pregnancy-support journey, verify professional-care and safety boundaries, follow canonical capability links, and test the approved CTA or unavailable state.
+- **Browser projects:** `chromium-desktop` for changed-feature verification; include `firefox-desktop` and `webkit-desktop` when the page enters a release scope; use `arabic-rtl` and `reduced-motion` where applicable.
+- **Mobile coverage:** `mobile-chrome` and `mobile-safari`; verify journey order, safety-content prominence, touch targets, capability links, CTA visibility, and narrow-viewport reflow.
+- **Accessibility automation:** Run Storybook Axe checks for applicable registered components and Playwright Axe checks against `/patients/during-pregnancy/`.
+- **Manual accessibility review:** Verify keyboard navigation, visible focus, headings, landmarks, link purpose, safety and clinical-boundary comprehension, zoom, reflow, touch targets, VoiceOver with Safari, and one additional approved screen-reader/browser combination.
+- **Arabic and RTL coverage:** Run `arabic-rtl` when Arabic publication is in scope; verify equivalent pregnancy-support, safety, professional-care, Product Status, and CTA meaning with qualified Arabic and clinical review.
+- **Reduced-motion coverage:** Run `reduced-motion` for material journey or capability animation and verify complete content and CTA access without non-essential motion.
+- **Visual-regression coverage:** Capture controlled baselines for stable journey structure, safety and clinical-boundary presentation, Product Status, and CTA states when the page enters visual-regression scope.
+- **Product Status tests:** Verify that every Patient monitoring and support capability uses approved availability wording and that unavailable or future functionality is not presented as operational.
+- **Clinical-review requirement:** Required for pregnancy monitoring, weight, nutrition, physical activity, maternal or fetal progress, safety, outcome, and professional-care statements.
+- **Form or integration tests:** No embedded form applies. Test canonical Patient capability routes, the approved CTA handoff, unavailable-destination recovery, analytics consent, and absence of sensitive query parameters.
+- **Performance-budget tests:** Test the route against approved page, Core Web Vitals, JavaScript, image, font, third-party, and motion budgets in `docs/engineering/PERFORMANCE_BUDGET.md`.
+- **Security tests:** Verify security headers, safe navigation and handoffs, no collection of pregnancy or clinical information, consent-controlled analytics, safe external links, and absence of secrets or sensitive URL parameters.
+- **Staging smoke:** When included in staging scope, verify route availability, Patient navigation, connected support areas, safety and clinical boundaries, Product Status, CTA behavior, Arabic behavior where applicable, and absence of blocking console or network failures.
+- **Production smoke applicability:** Applicable only when published; use a non-destructive check of route availability, essential links, approved safety, clinical and Product Status wording, and CTA or unavailable state without submitting data.
 
 ---
 
@@ -1065,6 +1186,30 @@ Not permitted in general analytics:
 - Analytics does not collect sensitive answers
 - Sources and review dates are available
 
+### Test Requirements
+
+- **Requirement IDs:** PAT-003, PAT-007, PAT-010, SHR-020
+- **Page ID:** PAT-PG-005
+- **Risk priority:** P0 and release blocking when the public risk assessment is approved; otherwise P1 with high clinical, privacy, and Product Status risk
+- **Static validations:** Validate the `/patients/risk-awareness/` route, Page ID, requirement traceability, conditional indexation, Product Status vocabulary, risk-versus-diagnosis language, clinical references and review dates, CTA availability, analytics-event definitions, translation completeness, architecture rules, linting, TypeScript, and production build.
+- **Unit or integration coverage:** Cover Gestational Diabetes Risk Assessment Product Status mapping, approved CTA destination selection, unavailable-assessment behavior, risk-versus-diagnosis content contracts, source and review-date metadata, consent-aware analytics, and exclusion of assessment answers from events.
+- **Required Component IDs and component tests:** No risk-assessment page component ID is currently registered. Test applicable shared navigation and `CMP-TRS-001` Product Status Badge behavior. Register any reusable risk-awareness, evidence, or assessment-handoff component before implementation.
+- **E2E journeys:** Include the route in `TST-E2E-002` when it is part of the published Patient journey; verify risk and diagnosis distinction, clinical-testing guidance, Product Status, source visibility, CTA presence only when approved, safe handoff, and recovery from an unavailable destination.
+- **Browser projects:** When P0 and public, run `chromium-desktop`, `firefox-desktop`, `webkit-desktop`, `arabic-rtl`, and `reduced-motion`; otherwise run changed-feature `chromium-desktop` with applicable locale and motion projects.
+- **Mobile coverage:** `mobile-chrome` and `mobile-safari` when published; verify risk-language readability, clinical-testing guidance, source access, CTA state, touch targets, and narrow-viewport reflow.
+- **Accessibility automation:** Run Storybook Axe checks for applicable registered components and Playwright Axe checks against `/patients/risk-awareness/`.
+- **Manual accessibility review:** Verify keyboard navigation, visible focus, headings, landmarks, risk and diagnosis comprehension, source and review-date access, CTA state, zoom, reflow, touch targets, VoiceOver with Safari, and one additional approved screen-reader/browser combination.
+- **Arabic and RTL coverage:** Run `arabic-rtl` when Arabic publication is in scope; verify equivalent risk, diagnosis, clinical-testing, Product Status, source, and CTA meaning with qualified Arabic and clinical review.
+- **Reduced-motion coverage:** Run `reduced-motion` for any material risk, evidence, or CTA animation and verify complete access without non-essential motion.
+- **Visual-regression coverage:** Capture controlled baselines for stable risk-versus-diagnosis messaging, clinical boundary, evidence metadata, Product Status, and available/unavailable CTA states when the page enters visual-regression scope.
+- **Product Status tests:** Verify the Gestational Diabetes Risk Assessment uses its approved status, the assessment CTA appears only when publicly available, and planned or unavailable assessment behavior is communicated accurately.
+- **Clinical-review requirement:** Mandatory for risk-factor, prevalence, screening, diagnosis, outcome, clinical-testing, evidence, and limitation statements, including source and review-date approval.
+- **Form or integration tests:** If the assessment is an external or application handoff, test the approved destination, unavailable state, return path, and absence of sensitive query parameters. Verify that analytics never captures assessment answers or health information.
+- **Performance-budget tests:** Test the route against approved page, Core Web Vitals, JavaScript, image, font, third-party, and motion budgets in `docs/engineering/PERFORMANCE_BUDGET.md`.
+- **Security tests:** Verify security headers, safe assessment handoff, no collection or logging of risk answers or Patient data by the public page, consent-controlled analytics, safe external links, and absence of secrets or sensitive URL parameters.
+- **Staging smoke:** When included in staging scope, verify route availability, risk-versus-diagnosis wording, clinical-testing guidance, Product Status, source metadata, CTA or unavailable state, analytics privacy, Arabic behavior where applicable, and absence of blocking console or network failures.
+- **Production smoke applicability:** Applicable only when published; use a non-destructive check of route availability, approved risk and clinical wording, current Product Status, source visibility, and CTA or unavailable state without entering or submitting health information.
+
 ---
 
 ## PAT-PG-006 — Weight Monitoring
@@ -1161,6 +1306,30 @@ Weight Monitoring Tool.
 - CTA and feature descriptions match Product Status
 - Visualizations include accessible explanations
 
+### Test Requirements
+
+- **Requirement IDs:** PAT-004, PAT-007, SHR-020
+- **Page ID:** PAT-PG-006
+- **Risk priority:** P0 and release blocking when Weight Monitoring is publicly available; otherwise conditional P1 with elevated clinical and Product Status risk
+- **Static validations:** Validate the `/patients/weight-monitoring/` route, Page ID, requirement traceability, conditional indexation, Product Status vocabulary, preconception-versus-pregnancy terminology, clinical references, CTA availability, analytics events, translation completeness, architecture rules, linting, TypeScript, and production build.
+- **Unit or integration coverage:** Cover Weight Monitoring Tool Product Status mapping, preconception and gestational content models, approved CTA destination selection, unavailable-tool behavior, accessible visualization data, route generation, and consent-aware analytics.
+- **Required Component IDs and component tests:** `CMP-DAT-001` Chart Frame and `CMP-TRS-001` Product Status Badge, plus applicable shared navigation. Test accessible chart titles, summaries and alternatives; empty and unavailable states; Product Status variants; RTL behavior; reduced motion; and CTA state. Register any reusable weight-monitoring feature component before implementation.
+- **E2E journeys:** Include the route in `TST-E2E-002` when it is part of the published Patient journey; distinguish preconception from gestational monitoring, verify non-stigmatizing clinical context, inspect accessible visualization explanations, confirm Product Status, and test the approved CTA or unavailable state.
+- **Browser projects:** When P0 and public, run `chromium-desktop`, `firefox-desktop`, `webkit-desktop`, `arabic-rtl`, and `reduced-motion`; otherwise run changed-feature `chromium-desktop` with applicable locale and motion projects.
+- **Mobile coverage:** `mobile-chrome` and `mobile-safari` when published; verify content order, chart reflow, text alternatives, touch targets, CTA state, and narrow-viewport readability.
+- **Accessibility automation:** Run Storybook Axe checks for `CMP-DAT-001`, `CMP-TRS-001`, and other applicable registered components, plus Playwright Axe checks against `/patients/weight-monitoring/`.
+- **Manual accessibility review:** Verify keyboard navigation, visible focus, headings, landmarks, non-stigmatizing comprehension, chart text alternatives, zoom, reflow, touch targets, VoiceOver with Safari, and one additional approved screen-reader/browser combination.
+- **Arabic and RTL coverage:** Run `arabic-rtl` when Arabic publication is in scope; verify equivalent preconception and pregnancy meaning, non-stigmatizing language, Product Status, chart labels and reading order, CTA state, and qualified Arabic and clinical review.
+- **Reduced-motion coverage:** Run `reduced-motion` for chart, progress, or CTA animation and verify equivalent values, explanations, and controls without non-essential motion.
+- **Visual-regression coverage:** Capture controlled baselines for stable desktop, mobile, Arabic RTL, chart, Product Status, and available/unavailable CTA states when the page enters visual-regression scope.
+- **Product Status tests:** Verify the Weight Monitoring Tool uses its approved availability status, its CTA appears only when operationally available, and future or restricted functionality is not represented as active.
+- **Clinical-review requirement:** Mandatory for preconception weight, gestational weight gain, BMI, monitoring, target, safety, outcome, and professional-care statements, including chart interpretation language.
+- **Form or integration tests:** No public weight-entry form applies unless separately approved. Test the application handoff, unavailable state, return path, analytics events, consent behavior, and absence of weight or health information in URLs and analytics.
+- **Performance-budget tests:** Test the route and `CMP-DAT-001` against approved Core Web Vitals, JavaScript, chart-library, image, font, third-party, and motion budgets in `docs/engineering/PERFORMANCE_BUDGET.md`.
+- **Security tests:** Verify security headers, safe application handoff, no public-page collection or logging of weight, BMI, pregnancy, or Patient data, consent-controlled analytics, and absence of secrets or sensitive URL parameters.
+- **Staging smoke:** When included in staging scope, verify route availability, preconception/pregnancy distinction, non-stigmatizing clinical context, Product Status, accessible chart explanation, CTA or unavailable state, analytics privacy, and absence of blocking console or network failures.
+- **Production smoke applicability:** Applicable only when published; use a non-destructive check of route availability, approved clinical wording, current Product Status, accessible visualization, and CTA or unavailable state without entering or submitting weight or health information.
+
 ---
 
 ## PAT-PG-007 — Nutrition
@@ -1255,6 +1424,30 @@ Medical Nutrition Therapy and professional-support availability.
 - Product availability is accurate
 - Professional involvement is represented correctly
 
+### Test Requirements
+
+- **Requirement IDs:** PAT-005, PAT-007, SHR-020
+- **Page ID:** PAT-PG-007
+- **Risk priority:** P0 and release blocking when Nutrition support is publicly available; otherwise conditional P1 with elevated clinical and Product Status risk
+- **Static validations:** Validate the `/patients/nutrition/` route, Page ID, requirement traceability, conditional indexation, Product Status vocabulary, personalization and professional-support claims, clinical references, CTA availability, analytics events, translation completeness, architecture rules, linting, TypeScript, and production build.
+- **Unit or integration coverage:** Cover Medical Nutrition Therapy Product Status mapping, generic-versus-personalized content models, professional-support availability, approved CTA destination selection, unavailable-service behavior, canonical route generation, and consent-aware analytics.
+- **Required Component IDs and component tests:** No Nutrition-specific feature component ID is currently registered. Test applicable shared navigation and `CMP-TRS-001` Product Status Badge behavior. Register reusable Nutrition or professional-support components before implementation.
+- **E2E journeys:** Include the route in `TST-E2E-002` when part of the published Patient journey; distinguish general information from personalized support, verify professional involvement and safety boundaries, confirm Product Status, and test the approved CTA or unavailable state.
+- **Browser projects:** When P0 and public, run `chromium-desktop`, `firefox-desktop`, `webkit-desktop`, `arabic-rtl`, and `reduced-motion`; otherwise run changed-feature `chromium-desktop` with applicable locale and motion projects.
+- **Mobile coverage:** `mobile-chrome` and `mobile-safari` when published; verify content order, nutrition and safety guidance, professional-support presentation, CTA state, touch targets, and narrow-viewport reflow.
+- **Accessibility automation:** Run Storybook Axe checks for applicable registered components and Playwright Axe checks against `/patients/nutrition/`.
+- **Manual accessibility review:** Verify keyboard navigation, visible focus, headings, landmarks, generic-versus-personalized content comprehension, safety boundaries, zoom, reflow, touch targets, VoiceOver with Safari, and one additional approved screen-reader/browser combination.
+- **Arabic and RTL coverage:** Run `arabic-rtl` when Arabic publication is in scope; verify equivalent nutrition, personalization, professional-support, Product Status, safety, and CTA meaning with qualified Arabic, nutrition, and clinical review.
+- **Reduced-motion coverage:** Run `reduced-motion` for any material content, meal, process, or CTA animation and verify complete access without non-essential motion.
+- **Visual-regression coverage:** Capture controlled baselines for stable nutrition-content hierarchy, professional-support presentation, Product Status, and available/unavailable CTA states when the page enters visual-regression scope.
+- **Product Status tests:** Verify Medical Nutrition Therapy and professional-support availability use approved status language, personalization is not overstated, and unavailable services are not presented as operational.
+- **Clinical-review requirement:** Mandatory for nutrition, dietary, trimester, personalization, safety, outcome, professional-support, and limitation statements. Nutrition-owner review is also required for detailed nutrition content.
+- **Form or integration tests:** No public dietary-input form applies unless separately approved. Test the approved application or support handoff, unavailable state, return path, analytics consent, and absence of dietary or health information in URLs and analytics.
+- **Performance-budget tests:** Test the route against approved page, Core Web Vitals, JavaScript, image, font, third-party, and motion budgets in `docs/engineering/PERFORMANCE_BUDGET.md`.
+- **Security tests:** Verify security headers, safe support handoff, no public-page collection or logging of dietary, pregnancy, or Patient data, consent-controlled analytics, and absence of secrets or sensitive URL parameters.
+- **Staging smoke:** When included in staging scope, verify route availability, generic-versus-personalized distinction, professional involvement, safety boundaries, Product Status, CTA or unavailable state, analytics privacy, and absence of blocking console or network failures.
+- **Production smoke applicability:** Applicable only when published; use a non-destructive check of route availability, approved nutrition and professional-support wording, current Product Status, and CTA or unavailable state without entering or submitting dietary or health information.
+
 ---
 
 ## PAT-PG-008 — Physical Activity
@@ -1343,6 +1536,30 @@ Physical Activity Training.
 - Professional involvement is accurate
 - Product Status is current
 - Demonstrations are accessible and appropriately qualified
+
+### Test Requirements
+
+- **Requirement IDs:** PAT-006, PAT-007, SHR-020
+- **Page ID:** PAT-PG-008
+- **Risk priority:** P0 and release blocking when Physical Activity support is publicly available; otherwise conditional P1 with high Patient-safety, clinical, and Product Status risk
+- **Static validations:** Validate the `/patients/physical-activity/` route, Page ID, requirement traceability, conditional indexation, Product Status vocabulary, safety and contraindication wording, professional-support claims, clinical references, media metadata, CTA availability, analytics events, translation completeness, architecture rules, linting, TypeScript, and production build.
+- **Unit or integration coverage:** Cover Physical Activity Training Product Status mapping, safety and contraindication content models, professional-support availability, approved CTA destination selection, unavailable-service behavior, media metadata, canonical route generation, and consent-aware analytics.
+- **Required Component IDs and component tests:** No Physical Activity feature component ID is currently registered. Test applicable shared navigation and `CMP-TRS-001` Product Status Badge behavior. Register reusable activity, safety, demonstration, or media components before implementation.
+- **E2E journeys:** Include the route in `TST-E2E-002` when part of the published Patient journey; verify safety prominence, contraindication acknowledgement, professional involvement, accessible demonstrations, Product Status, and the approved CTA or unavailable state.
+- **Browser projects:** When P0 and public, run `chromium-desktop`, `firefox-desktop`, `webkit-desktop`, `arabic-rtl`, and `reduced-motion`; otherwise run changed-feature `chromium-desktop` with applicable locale and motion projects.
+- **Mobile coverage:** `mobile-chrome` and `mobile-safari` when published; verify safety-content priority, demonstration controls, captions or transcripts, CTA state, touch targets, orientation resilience, and narrow-viewport reflow.
+- **Accessibility automation:** Run Storybook Axe checks for applicable registered components and Playwright Axe checks against `/patients/physical-activity/`.
+- **Manual accessibility review:** Verify keyboard navigation, visible focus, headings, landmarks, safety and contraindication comprehension, media controls, captions or transcripts, zoom, reflow, touch targets, VoiceOver with Safari, and one additional approved screen-reader/browser combination.
+- **Arabic and RTL coverage:** Run `arabic-rtl` when Arabic publication is in scope; verify equivalent safety, contraindication, professional-support, Product Status, demonstration, and CTA meaning with qualified Arabic, physiotherapy, and clinical review.
+- **Reduced-motion coverage:** Run `reduced-motion`; demonstrations, transitions, and instructional presentation must remain safe and understandable without autoplay or non-essential motion.
+- **Visual-regression coverage:** Capture controlled baselines for stable safety-content hierarchy, demonstration states, professional-support presentation, Product Status, and available/unavailable CTA states when the page enters visual-regression scope.
+- **Product Status tests:** Verify Physical Activity Training uses approved availability wording, demonstrations and professional support match actual delivery, and unavailable functionality is not presented as operational.
+- **Clinical-review requirement:** Mandatory for exercise, pregnancy safety, contraindication, trimester, symptom, outcome, professional-support, and limitation statements. Women’s-health physiotherapy review is required for detailed activity guidance.
+- **Form or integration tests:** No public activity-input form applies unless separately approved. Test the approved application or support handoff, unavailable state, media delivery, return path, analytics consent, and absence of activity or health information in URLs and analytics.
+- **Performance-budget tests:** Test the route against approved page, Core Web Vitals, JavaScript, image, video or media, font, third-party, and motion budgets in `docs/engineering/PERFORMANCE_BUDGET.md`.
+- **Security tests:** Verify security headers, safe media and support handoffs, no public-page collection or logging of activity, symptom, pregnancy, or Patient data, consent-controlled analytics, and absence of secrets or sensitive URL parameters.
+- **Staging smoke:** When included in staging scope, verify route availability, safety and contraindication content, professional involvement, accessible demonstrations, Product Status, CTA or unavailable state, media behavior, analytics privacy, and absence of blocking console or network failures.
+- **Production smoke applicability:** Applicable only when published; use a non-destructive check of route availability, approved safety and professional-support wording, current Product Status, accessible media, and CTA or unavailable state without entering or submitting activity or health information.
 
 ---
 
@@ -1433,6 +1650,30 @@ Maternal Intelligence, Fetal Growth Intelligence, Patient summaries, and timelin
 - Prototype or roadmap visuals are labeled
 - Advanced terms are progressively disclosed
 - The page does not imply diagnostic functionality
+
+### Test Requirements
+
+- **Requirement IDs:** PAT-001, PAT-002, PAT-007, SHR-020
+- **Page ID:** PAT-PG-009
+- **Risk priority:** P1 with high clinical-interpretation, Product Status, and misleading-claim risk
+- **Static validations:** Validate the `/patients/maternal-and-fetal-progress/` route, Page ID, requirement traceability, indexation, Product Status vocabulary, clinical-boundary and non-diagnostic wording, illustrative-data labels, claim references, internal links, analytics events, translation completeness, architecture rules, linting, TypeScript, and production build.
+- **Unit or integration coverage:** Cover Product Status mappings for Maternal Intelligence, Fetal Growth Intelligence, Patient summaries, and timeline features; public-preview models; illustrative-data metadata; progressive-disclosure content; canonical route generation; and consent-aware analytics.
+- **Required Component IDs and component tests:** `CMP-DAT-001` Chart Frame and `CMP-TRS-001` Product Status Badge, plus applicable shared navigation. Test accessible chart summaries and alternatives, illustrative labels, empty and unavailable states, progressive disclosure, Product Status variants, RTL, and reduced motion. Register any reusable progress or timeline feature component before implementation.
+- **E2E journeys:** Include the route in the changed-feature Patient journey associated with `TST-E2E-002`; verify understandable Patient language, visible clinical responsibility and non-diagnostic boundaries, labelled prototype or roadmap visuals, progressive disclosure, Product Status, and canonical next actions.
+- **Browser projects:** Run `chromium-desktop` for changed-feature verification; include `firefox-desktop` and `webkit-desktop` when the page enters a release scope; use `arabic-rtl` and `reduced-motion` where applicable.
+- **Mobile coverage:** `mobile-chrome` and `mobile-safari` when published; verify content order, chart and timeline reflow, accessible alternatives, progressive disclosure, touch targets, and narrow-viewport readability.
+- **Accessibility automation:** Run Storybook Axe checks for `CMP-DAT-001`, `CMP-TRS-001`, and applicable registered components, plus Playwright Axe checks against `/patients/maternal-and-fetal-progress/`.
+- **Manual accessibility review:** Verify keyboard navigation, visible focus, headings, landmarks, advanced-term disclosure, chart and timeline alternatives, illustrative labels, non-diagnostic comprehension, zoom, reflow, touch targets, VoiceOver with Safari, and one additional approved screen-reader/browser combination.
+- **Arabic and RTL coverage:** Run `arabic-rtl` when Arabic publication is in scope; verify equivalent maternal, fetal, clinical-boundary, Product Status, illustrative-label, chart, timeline, and CTA meaning with qualified Arabic and clinical review.
+- **Reduced-motion coverage:** Run `reduced-motion` for chart, timeline, disclosure, or progress animation and verify equivalent values, explanations, sequencing, and controls without non-essential motion.
+- **Visual-regression coverage:** Capture controlled baselines for stable desktop, mobile, Arabic RTL, chart, timeline, progressive-disclosure, Product Status, and illustrative or unavailable states when the page enters visual-regression scope.
+- **Product Status tests:** Verify Maternal Intelligence, Fetal Growth Intelligence, Patient summaries, timelines, and related capabilities use approved availability wording and that prototypes, roadmap items, and unavailable functionality are visibly identified.
+- **Clinical-review requirement:** Mandatory for maternal and fetal monitoring, growth, progress, clinical interpretation, risk, outcome, standards, illustrative clinical data, and non-diagnostic limitation statements.
+- **Form or integration tests:** No embedded form applies. Test canonical Patient routes, approved application or information handoffs, unavailable states, illustrative-data isolation, analytics consent, and absence of sensitive query parameters.
+- **Performance-budget tests:** Test the route and `CMP-DAT-001` against approved Core Web Vitals, JavaScript, chart-library, image, font, third-party, and motion budgets in `docs/engineering/PERFORMANCE_BUDGET.md`.
+- **Security tests:** Verify security headers, safe handoffs, synthetic illustrative data only, no public-page collection or logging of maternal, fetal, pregnancy, or Patient data, consent-controlled analytics, and absence of secrets or sensitive URL parameters.
+- **Staging smoke:** When included in staging scope, verify route availability, Patient-language comprehension, clinical boundaries, Product Status, labelled illustrative visuals, accessible charts or timelines, progressive disclosure, analytics privacy, and absence of blocking console or network failures.
+- **Production smoke applicability:** Applicable only when published; use a non-destructive check of route availability, approved clinical and Product Status wording, visible non-diagnostic limitations, labelled illustrative visuals, and essential links without entering or submitting data.
 
 ---
 
@@ -1536,6 +1777,30 @@ Pricing pages must not create conflicting market versions.
 - Each CTA reaches a working purchase or registration destination
 - Product-status changes can be updated centrally
 
+### Test Requirements
+
+- **Requirement IDs:** PAT-008, PAT-009, PAT-010, SHR-020
+- **Page ID:** PAT-PG-010
+- **Risk priority:** P0 and release blocking only when direct commercial access is active; otherwise conditional P1 with high commercial, legal, integration, and Product Status risk
+- **Static validations:** Validate the `/patients/membership/` route, Page ID, requirement traceability, conditional indexation, pricing and currency data, Product Status vocabulary, included-service claims, legal and terms links, CTA availability, analytics events, translation completeness, architecture rules, linting, TypeScript, and production build.
+- **Unit or integration coverage:** Cover centrally controlled pricing and currency models, included-capability and professional-service Product Status mappings, market eligibility, approved CTA destination selection, unavailable-commercial-flow behavior, terms-link generation, and consent-aware analytics.
+- **Required Component IDs and component tests:** No membership, pricing, or checkout component ID is currently registered. Test applicable shared navigation, `CMP-PRM-001` Button, `CMP-PRM-002` Text Link, and `CMP-TRS-001` Product Status Badge behavior. Register reusable pricing, plan, or commercial-handoff components before implementation.
+- **E2E journeys:** Include the route in `TST-E2E-002` when it is part of the published Patient journey; verify market and currency, included services, Product Status, terms visibility, operational purchase or registration destination, unavailable state, and safe recovery.
+- **Browser projects:** When P0 and commercially active, run `chromium-desktop`, `firefox-desktop`, `webkit-desktop`, `arabic-rtl`, and `reduced-motion`; otherwise run changed-feature `chromium-desktop` with applicable locale and motion projects.
+- **Mobile coverage:** `mobile-chrome` and `mobile-safari` when published; verify plan comparison, price and currency readability, included-service presentation, terms access, CTA state, touch targets, and narrow-viewport reflow.
+- **Accessibility automation:** Run Storybook Axe checks for applicable pricing, action, status, and link components and Playwright Axe checks against `/patients/membership/`.
+- **Manual accessibility review:** Verify keyboard navigation, visible focus, headings, plan and price comprehension, included-service associations, terms access, CTA state, zoom, reflow, touch targets, VoiceOver with Safari, and one additional approved screen-reader/browser combination.
+- **Arabic and RTL coverage:** Run `arabic-rtl` when Arabic commercial publication is in scope; verify equivalent plan, price, currency, included-service, Product Status, legal, and CTA meaning with qualified Arabic, commercial, and legal review.
+- **Reduced-motion coverage:** Run `reduced-motion` for plan, comparison, disclosure, or CTA animation and verify complete commercial information and operation without non-essential motion.
+- **Visual-regression coverage:** Capture controlled baselines for stable desktop, mobile, Arabic RTL, plan, pricing, included-service, Product Status, and available/unavailable CTA states when the page enters visual-regression scope.
+- **Product Status tests:** Verify every included capability and professional service matches operational delivery, unavailable services are not included as active benefits, and centrally controlled Product Status changes update the page consistently.
+- **Clinical-review requirement:** Required for clinical-support, outcome, monitoring, nutrition, physical-activity, or professional-service descriptions. Commercial and legal review are mandatory for price, currency, plan, renewal, cancellation, refund, and terms wording.
+- **Form or integration tests:** Test approved registration, purchase, payment-provider, waiting-list, or application handoffs using sandbox or fake adapters; verify success, cancellation, failure, unavailable state, return URLs, analytics consent, and exclusion of health information.
+- **Performance-budget tests:** Test the route against approved page, Core Web Vitals, JavaScript, payment or commercial third-party, image, font, and motion budgets in `docs/engineering/PERFORMANCE_BUDGET.md`.
+- **Security tests:** Verify security headers, trusted commercial destinations, safe return URLs, no open redirects, no health or Patient data in payment metadata, URLs, logs, or analytics, consent control, secret isolation, and approved payment-security boundaries.
+- **Staging smoke:** When commercial staging is active, verify route availability, market, currency, plans, included services, Product Status, terms, sandbox purchase or registration handoff, cancellation and failure recovery, analytics privacy, and absence of blocking console or network failures.
+- **Production smoke applicability:** Applicable only when commercially published and non-destructive; verify route availability, price and currency, included services, terms, Product Status, and CTA destination without completing a real purchase, registration, or submission.
+
 ---
 
 ## PAT-PG-011 — Patient FAQs
@@ -1603,6 +1868,30 @@ Patient FAQ search intent and approved FAQ structured data.
 - Product availability is current
 - FAQ structured data matches visible content
 
+### Test Requirements
+
+- **Requirement IDs:** CON-005, PAT-007, PAT-010, SHR-020
+- **Page ID:** PAT-PG-011
+- **Risk priority:** P0 and release blocking
+- **Static validations:** Validate the `/patients/frequently-asked-questions/` route, Page ID, requirement traceability, indexation, FAQ content schema, visible-content-to-structured-data parity, Product Status vocabulary, clinical and emergency boundaries, internal links, CTA availability, analytics events, translation completeness, architecture rules, linting, TypeScript, and production build.
+- **Unit or integration coverage:** Cover FAQ content schemas, category and ordering rules, FAQ structured-data generation, visible-answer parity, Product Status mappings, canonical links, approved CTA destination selection, and consent-aware analytics.
+- **Required Component IDs and component tests:** No FAQ or accordion component ID is currently registered. Test applicable shared navigation, link, action, and `CMP-TRS-001` Product Status behavior. Register the approved FAQ or accordion component before implementation and test keyboard operation, expanded and collapsed states, accessible names, focus, RTL, and reduced motion.
+- **E2E journeys:** Include the route in `TST-E2E-002`; navigate from Patient pages, find and expand relevant questions, verify concise Patient-language answers, clinical and emergency boundaries, Product Status, structured-data parity, and the approved Patient Start CTA or unavailable state.
+- **Browser projects:** `chromium-desktop`, `firefox-desktop`, `webkit-desktop`, `arabic-rtl`, and `reduced-motion`.
+- **Mobile coverage:** `mobile-chrome` and `mobile-safari`; verify FAQ navigation, accordion operation, answer readability, touch targets, focus visibility, CTA state, and narrow-viewport reflow.
+- **Accessibility automation:** Run Storybook Axe checks for the approved FAQ or accordion and applicable registered components, plus Playwright Axe checks against `/patients/frequently-asked-questions/`.
+- **Manual accessibility review:** Verify keyboard navigation, visible focus, heading hierarchy, accordion semantics and state announcements, answer comprehension, emergency boundaries, zoom, reflow, touch targets, VoiceOver with Safari, and one additional approved screen-reader/browser combination.
+- **Arabic and RTL coverage:** Run `arabic-rtl`; verify equivalent questions, answers, clinical and emergency boundaries, Product Status, accordion direction and operation, structured-data meaning, and qualified Arabic and clinical review.
+- **Reduced-motion coverage:** Run `reduced-motion`; FAQ expansion, collapse, scrolling, and CTA access must remain complete without non-essential motion.
+- **Visual-regression coverage:** Capture controlled desktop, mobile, and Arabic RTL baselines for stable FAQ categories, expanded and collapsed states, boundary content, Product Status, and CTA states.
+- **Product Status tests:** Verify every answer describing capability availability matches the Product Status register and that unavailable or future capabilities are not described as active.
+- **Clinical-review requirement:** Mandatory for clinical, risk, symptom, screening, diagnosis, treatment, safety, emergency, professional-care, and outcome answers. Review dates and ownership must remain current.
+- **Form or integration tests:** No embedded form applies. Test FAQ structured-data output, canonical Patient links, the approved Patient Start handoff, unavailable state, analytics consent, and absence of sensitive query parameters.
+- **Performance-budget tests:** Test the route against approved Core Web Vitals, JavaScript, structured-data, image, font, third-party, and motion budgets in `docs/engineering/PERFORMANCE_BUDGET.md`.
+- **Security tests:** Verify security headers, safe links and handoffs, no collection or logging of Patient questions or health information, consent-controlled analytics, safe structured data, and absence of secrets or sensitive URL parameters.
+- **Staging smoke:** Verify route availability, FAQ categories, expand and collapse behavior, visible-answer and structured-data parity, clinical and emergency boundaries, Product Status, CTA or unavailable state, Arabic behavior, analytics privacy, and absence of blocking console or network failures.
+- **Production smoke applicability:** Applicable and non-destructive; verify the published FAQ route, representative questions and answers, clinical and emergency boundaries, Product Status, structured data, and CTA or unavailable state without submitting data.
+
 ---
 
 ## PAT-PG-012 — Patient Start
@@ -1669,6 +1958,30 @@ Normally noindex if it primarily routes authenticated or commercial traffic.
 - The user understands whether they are leaving the website
 - Tracking does not capture health data
 - Failure states provide recovery
+
+### Test Requirements
+
+- **Requirement IDs:** PAT-008, INT-001, SHR-020
+- **Page ID:** PAT-PG-012
+- **Risk priority:** P0 and release blocking only when a working Patient destination exists; otherwise conditional with high integration, privacy, Product Status, and broken-journey risk
+- **Static validations:** Validate the `/patients/start/` route, Page ID, requirement traceability, conditional indexation, approved destination allowlist, market availability, Product Status vocabulary, external-origin notices, CTA configuration, analytics events, translation completeness, architecture rules, linting, TypeScript, and production build.
+- **Unit or integration coverage:** Cover market-aware Patient destination selection, Product Status and availability rules, approved-destination allowlisting, unavailable and misconfigured destination behavior, external-origin notice generation, safe return behavior, analytics filtering, and rejection of sensitive query parameters.
+- **Required Component IDs and component tests:** No Patient Start or handoff component ID is currently registered. Test applicable `CMP-PRM-001` Button, `CMP-PRM-002` Text Link, shared navigation, and `CMP-TRS-001` Product Status Badge behavior. Register a reusable application-handoff component before implementation.
+- **E2E journeys:** Complete the Patient handoff portion of `TST-E2E-002`; open Patient Start, display only approved available options, understand whether the destination leaves the website, reach the operational destination, preserve safe navigation, and recover from unavailable or misconfigured destinations.
+- **Browser projects:** When the handoff is P0 and operational, run `chromium-desktop`, `firefox-desktop`, `webkit-desktop`, `arabic-rtl`, and `reduced-motion`; otherwise run changed-feature `chromium-desktop` against the approved unavailable state.
+- **Mobile coverage:** `mobile-chrome` and `mobile-safari`; verify option visibility, external-origin notice, touch targets, destination-opening behavior, back navigation, unavailable-state recovery, and narrow-viewport reflow.
+- **Accessibility automation:** Run Storybook Axe checks for the approved handoff and applicable action components and Playwright Axe checks against `/patients/start/`.
+- **Manual accessibility review:** Verify keyboard navigation, visible focus, headings, destination and external-origin comprehension, option state, error recovery, zoom, reflow, touch targets, VoiceOver with Safari, and one additional approved screen-reader/browser combination.
+- **Arabic and RTL coverage:** Run `arabic-rtl` when Arabic handoff publication is in scope; verify equivalent destination, availability, external-origin, Product Status, error-recovery, and CTA meaning with qualified Arabic review.
+- **Reduced-motion coverage:** Run `reduced-motion`; option selection, destination notices, loading, transition, and recovery behavior must remain complete without non-essential motion.
+- **Visual-regression coverage:** Capture controlled baselines for desktop, mobile, Arabic RTL, available-option, unavailable-destination, loading, and recovery states when the page enters visual-regression scope.
+- **Product Status tests:** Verify that only operational and market-approved Patient destinations are displayed, unavailable options are hidden or clearly disabled according to policy, and all capability and access wording matches the Product Status register.
+- **Clinical-review requirement:** Required when destination descriptions contain clinical capability, risk, monitoring, treatment, outcome, or professional-care wording; otherwise record as not applicable with approved product-review evidence.
+- **Form or integration tests:** Test every approved Patient destination through fake, sandbox, or controlled staging configuration; verify allowlisting, success, unavailable state, misconfiguration, timeout, external-origin notice, safe return, analytics consent, and absence of health data in URLs or events.
+- **Performance-budget tests:** Test the route against approved Core Web Vitals, JavaScript, third-party handoff, image, font, and motion budgets in `docs/engineering/PERFORMANCE_BUDGET.md`.
+- **Security tests:** Verify security headers, destination allowlisting, safe external-link attributes, no open redirect, no authentication-detail exposure, no health or Patient data in query parameters, fragments, logs, or analytics, secret isolation, and consent control.
+- **Staging smoke:** When an operational destination exists, verify route availability, market-appropriate options, Product Status, external-origin notice, successful controlled handoff, back navigation, unavailable and misconfigured recovery, analytics privacy, and absence of blocking console or network failures.
+- **Production smoke applicability:** Applicable only when an approved production destination is active and strictly non-destructive; verify route availability, displayed options, destination origin and reachability, Product Status, and recovery without creating an account, selecting a plan, entering health data, or submitting information.
 
 ---
 
