@@ -3906,6 +3906,30 @@ ODRISC resources and topic discovery.
 - Filtering is accessible
 - Resource taxonomy is controlled
 
+### Test Requirements
+
+- **Requirement IDs:** CON-004, SHR-010, SHR-020
+- **Page ID:** RES-PG-001
+- **Risk priority:** P1, with high audience-separation, clinical-content governance, review-metadata, taxonomy, search, accessibility, and SEO risk; release blocking whenever included in an approved release
+- **Static validations:** Validate the `/resources/` route, Page ID, requirement traceability, publication and indexation status, resource metadata schemas, controlled audience, content-type and topic values, author and reviewer requirements, publication and review dates, market applicability, canonical resource links, analytics-event registration, translation completeness, architecture rules, linting, TypeScript, and production build.
+- **Unit or integration coverage:** Cover resource-index generation, Patient and Provider audience filtering, topic and content-type filtering, controlled taxonomy mappings, featured and latest-reviewed selection, metadata validation, search normalization where implemented, empty and unavailable states, canonical-link generation, consent-aware analytics, and duplicate-resource detection.
+- **Required Component IDs and component tests:** `CMP-PRM-001` Button, `CMP-PRM-002` Text Link, `CMP-LYT-001` Container, `CMP-NAV-002` Site Header, `CMP-NAV-004` Mobile Navigation Drawer, and `CMP-NAV-005` Audience Switcher. Test accessible audience selection, filters, topics, resource links, metadata relationships, search where implemented, keyboard behavior, focus, mobile reflow, RTL, reduced motion, loading, empty, no-result, unavailable, and error states. Any reusable resource-card, filter, or search component must receive an approved Component ID before implementation.
+- **E2E journeys:** When included in release scope, open the Resources Homepage, distinguish Patient from Provider pathways, select each audience, filter by an approved topic, open a reviewed resource, verify its metadata, return to the hub, access the Glossary, use search where available, and recover from empty or no-result states.
+- **Browser projects:** Run `chromium-desktop` for every changed-feature test. When the page enters a release scope, also run `firefox-desktop`, `webkit-desktop`, `arabic-rtl`, and `reduced-motion`.
+- **Mobile coverage:** Run `mobile-chrome` and `mobile-safari` when the page enters release scope; verify audience choices, filters, topic navigation, resource-card order, metadata display, search controls, CTA visibility, touch targets, no-result recovery, and narrow-viewport reflow.
+- **Accessibility automation:** Run Storybook Axe checks for all required registered components and Playwright Axe checks against `/resources/`, including default, filtered, empty, and no-result states.
+- **Manual accessibility review:** Before publication, verify keyboard navigation, visible focus, headings, landmarks, audience-selection semantics, filter labels and states, resource-link purpose, metadata relationships, search controls, result announcements, empty-state recovery, reading order, zoom, reflow, touch targets, VoiceOver with Safari, and one additional approved screen-reader/browser combination.
+- **Arabic and RTL coverage:** Before Arabic publication, run `arabic-rtl`; verify equivalent audience, topic, content-type, author, reviewer, publication, review, market, search, no-result, glossary, and product-pathway meaning; logical filter and result layout; accurate metadata; and qualified Arabic, content, and clinical review.
+- **Reduced-motion coverage:** Run `reduced-motion`; audience selection, filtering, search-result updates, resource-list changes, progressive disclosure, navigation, and CTA access must remain complete and understandable without non-essential animation.
+- **Visual-regression coverage:** Capture controlled desktop, mobile, Arabic RTL where applicable, reduced-motion, shared, Patient-filtered, Provider-filtered, topic-filtered, search, resource-card, metadata, empty, no-result, loading, and error-state baselines before publication.
+- **Product Status tests:** Verify resources and product pathways reflect approved capability, audience, market, publication, and availability status. Draft, archived, withdrawn, unavailable, planned, or unvalidated material must not appear as current reviewed guidance or active functionality.
+- **Clinical-review requirement:** Mandatory for every clinical, maternal, fetal, pregnancy, risk, outcome, monitoring, nutrition, physical-activity, methodology, or validation resource. Author, reviewer, review date, references, market applicability, and review status must be traceable.
+- **Form or integration tests:** No submission form is embedded on this page. Test resource-index generation, audience and topic filters, search where implemented, Glossary and product-pathway links, unavailable-resource recovery, analytics consent, and safe synthetic metadata fixtures. Tests must not call live publishing, Patient, Provider, search, or clinical systems.
+- **Performance-budget tests:** Before publication, test `/resources/` and its resource lists, filters, search, images, metadata, and result updates against approved Core Web Vitals, JavaScript, image, font, third-party, search, interaction, and motion budgets in `docs/engineering/PERFORMANCE_BUDGET.md`.
+- **Security tests:** Verify security headers, safe resource and external links, approved download types, sanitized search and filter parameters, escaped resource metadata, no Patient or production operational data, no draft or restricted resource exposure, consent-controlled analytics, and absence of secrets or sensitive URL parameters.
+- **Staging smoke:** Required whenever included in a release; verify page availability, Patient and Provider separation, approved taxonomy, audience and topic filters, reviewed-resource metadata, search and no-result recovery where applicable, Glossary and product pathways, Arabic behavior, analytics consent, and absence of blocking console or network failures.
+- **Production smoke applicability:** Applicable and non-destructive only when published; verify `/resources/`, Patient and Provider pathways, approved resource metadata, representative filtering, reviewed-resource and Glossary links, essential navigation, and no-result recovery without submitting data.
+
 ---
 
 ## RES-PG-002 — Patient Resources
@@ -3914,6 +3938,7 @@ ODRISC resources and topic discovery.
 **Priority:** P1
 **Audience:** Patient
 **Page type:** Resource hub
+**PRD requirements:** CON-004, SHR-010
 
 ### Primary Purpose
 
@@ -3940,6 +3965,30 @@ Organize Patient-appropriate education by pregnancy stage and topic.
 - Resources link to canonical Patient pages
 - No Provider-only content is surfaced without explanation
 
+### Test Requirements
+
+- **Requirement IDs:** CON-004, SHR-010, SHR-020
+- **Page ID:** RES-PG-002
+- **Risk priority:** P1, with high Patient-comprehension, clinical-content governance, review-metadata, audience-separation, canonical-link, accessibility, and SEO risk; release blocking whenever included in an approved release
+- **Static validations:** Validate the `/resources/patients/` route, Page ID, requirement traceability, publication and indexation status, Patient-audience classification, controlled category values, resource metadata schemas, clinical-review dates, canonical Patient-page links, Provider-content labelling, analytics-event registration where applicable, translation completeness, architecture rules, linting, TypeScript, and production build.
+- **Unit or integration coverage:** Cover Patient-resource index generation, pregnancy-stage and topic filtering, category mappings, Patient-language and audience metadata, review-date validation, canonical Patient-link generation, Provider-content exclusion or explanation rules, empty and unavailable states, duplicate-resource detection, and consent-aware analytics where applicable.
+- **Required Component IDs and component tests:** `CMP-PRM-001` Button, `CMP-PRM-002` Text Link, `CMP-LYT-001` Container, `CMP-NAV-002` Site Header, `CMP-NAV-004` Mobile Navigation Drawer, and `CMP-NAV-005` Audience Switcher. Test accessible category navigation, resource links, review metadata, audience labels, Patient-support CTA, keyboard behavior, focus, mobile reflow, RTL, reduced motion, loading, empty, no-result, unavailable, and error states. Any reusable resource-card or filter component must receive an approved Component ID before implementation.
+- **E2E journeys:** When included in release scope, open Patient Resources, navigate preparing-for-pregnancy, risk-awareness, weight, nutrition, physical-activity, progress, and appointment-preparation categories, open a reviewed resource, verify its review metadata, follow a canonical Patient-page link, use the Patient-support CTA, and recover from empty or unavailable categories.
+- **Browser projects:** Run `chromium-desktop` for every changed-feature test. When the page enters a release scope, also run `firefox-desktop`, `webkit-desktop`, `arabic-rtl`, and `reduced-motion`.
+- **Mobile coverage:** Run `mobile-chrome` and `mobile-safari` when the page enters release scope; verify category navigation, resource-card order, review metadata, Patient-language content, CTA visibility, touch targets, empty-state recovery, and narrow-viewport reflow.
+- **Accessibility automation:** Run Storybook Axe checks for all required registered components and Playwright Axe checks against `/resources/patients/`, including default, category-filtered, empty, and unavailable states.
+- **Manual accessibility review:** Before publication, verify keyboard navigation, visible focus, headings, landmarks, category-control names and states, resource-link purpose, review-metadata relationships, Patient-language comprehension, Provider-content explanations where applicable, reading order, zoom, reflow, touch targets, VoiceOver with Safari, and one additional approved screen-reader/browser combination.
+- **Arabic and RTL coverage:** Before Arabic publication, run `arabic-rtl`; verify equivalent pregnancy-stage, risk, weight, nutrition, physical-activity, progress, appointment-preparation, review-metadata, audience-label, Patient-support, and unavailable-state meaning; logical layout; accurate clinical terminology; and qualified Arabic, Patient-content, and clinical review.
+- **Reduced-motion coverage:** Run `reduced-motion`; category navigation, resource-list changes, progressive disclosure, navigation, and Patient-support CTA access must remain complete and understandable without non-essential animation.
+- **Visual-regression coverage:** Capture controlled desktop, mobile, Arabic RTL where applicable, reduced-motion, category, resource-card, review-metadata, Provider-content explanation, empty, unavailable, loading, and error-state baselines before publication.
+- **Product Status tests:** Verify Patient resources and linked Patient pathways reflect approved capability, audience, market, publication, clinical-review, and availability status. Draft, archived, withdrawn, future, unavailable, or Provider-only content must not appear as currently available Patient guidance without an approved explanation.
+- **Clinical-review requirement:** Mandatory for pregnancy preparation, risk awareness, weight, nutrition, physical activity, maternal or fetal progress, appointment preparation, symptoms, outcomes, monitoring, or other clinical guidance. Author, reviewer, review date, references, market applicability, and review status must be traceable.
+- **Form or integration tests:** No submission form is embedded on this page. Test resource-index generation, category filters where implemented, canonical Patient-page and Patient-support links, unavailable-resource recovery, analytics consent where applicable, and safe synthetic metadata fixtures. Tests must not call live publishing, Patient, Provider, search, or clinical systems.
+- **Performance-budget tests:** Before publication, test `/resources/patients/` and its resource lists, categories, images, metadata, and interactions against approved Core Web Vitals, JavaScript, image, font, third-party, interaction, and motion budgets in `docs/engineering/PERFORMANCE_BUDGET.md`.
+- **Security tests:** Verify security headers, safe resource and external links, approved download types, escaped resource metadata, sanitized category parameters, no Patient or production operational data, no draft or restricted resource exposure, consent-controlled analytics, and absence of secrets or sensitive URL parameters.
+- **Staging smoke:** Required whenever included in a release; verify page availability, approved Patient categories, Patient-language content, clinical-review metadata, canonical Patient links, exclusion or explanation of Provider-only content, Patient-support CTA, Arabic behavior, analytics consent where applicable, and absence of blocking console or network failures.
+- **Production smoke applicability:** Applicable and non-destructive only when published; verify `/resources/patients/`, approved categories, representative reviewed resources, review dates, canonical Patient links, essential navigation, and Patient-support CTA without submitting data.
+
 ---
 
 ## RES-PG-003 — Provider Resources
@@ -3948,6 +3997,7 @@ Organize Patient-appropriate education by pregnancy stage and topic.
 **Priority:** P1
 **Audience:** Provider
 **Page type:** Resource hub
+**PRD requirements:** CON-004, SHR-010
 
 ### Required Categories
 
@@ -3970,6 +4020,30 @@ Organize Patient-appropriate education by pregnancy stage and topic.
 - Content is distinct from Patient resources
 - Product material and independent evidence are clearly distinguished
 
+### Test Requirements
+
+- **Requirement IDs:** CON-004, SHR-010, SHR-020
+- **Page ID:** RES-PG-003
+- **Risk priority:** P1, with high professional-content, evidence-classification, authorship, reference, clinical-review, audience-separation, accessibility, and SEO risk; release blocking whenever included in an approved release
+- **Static validations:** Validate the `/resources/providers/` route, Page ID, requirement traceability, publication and indexation status, Provider-audience classification, controlled category values, resource metadata schemas, authorship, references and review requirements, product-material and independent-evidence classification, canonical Provider links, analytics-event registration where applicable, translation completeness, architecture rules, linting, TypeScript, and production build.
+- **Unit or integration coverage:** Cover Provider-resource index generation, category and content-type filtering, Provider-audience metadata, authorship and reference validation, product-material versus independent-evidence classification, review-state handling, canonical Provider-link generation, Patient-resource exclusion rules, empty and unavailable states, duplicate-resource detection, and consent-aware analytics where applicable.
+- **Required Component IDs and component tests:** `CMP-PRM-001` Button, `CMP-PRM-002` Text Link, `CMP-LYT-001` Container, `CMP-TRS-001` Product Status Badge where product material is displayed, `CMP-NAV-002` Site Header, `CMP-NAV-004` Mobile Navigation Drawer, and `CMP-NAV-005` Audience Switcher. Test accessible category navigation, resource links, authorship, references, evidence-type labels, Product Status, Clinical Platform CTA, keyboard behavior, focus, mobile reflow, RTL, reduced motion, loading, empty, no-result, unavailable, and error states. Any reusable resource-card or filter component must receive an approved Component ID before implementation.
+- **E2E journeys:** When included in release scope, open Provider Resources, navigate Monitoring, Maternal Intelligence, Fetal Growth, Methodology, Validation, Workflow, Implementation, and Research categories, distinguish product material from independent evidence, open a reviewed professional resource, verify authorship and references, follow a canonical Provider link, and continue to the Clinical Platform.
+- **Browser projects:** Run `chromium-desktop` for every changed-feature test. When the page enters a release scope, also run `firefox-desktop`, `webkit-desktop`, `arabic-rtl`, and `reduced-motion`.
+- **Mobile coverage:** Run `mobile-chrome` and `mobile-safari` when the page enters release scope; verify category navigation, resource-card order, authorship, references, evidence-type labels, Product Status, Clinical Platform CTA, touch targets, empty-state recovery, and narrow-viewport reflow.
+- **Accessibility automation:** Run Storybook Axe checks for all required registered components and Playwright Axe checks against `/resources/providers/`, including default, category-filtered, empty, and unavailable states.
+- **Manual accessibility review:** Before publication, verify keyboard navigation, visible focus, headings, landmarks, category-control names and states, resource-link purpose, authorship and reference relationships, evidence-type and Product Status comprehension, technical terminology, reading order, zoom, reflow, touch targets, VoiceOver with Safari, and one additional approved screen-reader/browser combination.
+- **Arabic and RTL coverage:** Before Arabic publication, run `arabic-rtl`; verify equivalent monitoring, maternal-intelligence, fetal-growth, methodology, validation, workflow, implementation, research, authorship, reference, evidence-type, Product Status, and Clinical Platform meaning; logical layout; accurate technical terminology and citations; and qualified Arabic, clinical, evidence, and content review.
+- **Reduced-motion coverage:** Run `reduced-motion`; category navigation, resource-list changes, progressive disclosure, navigation, and Clinical Platform CTA access must remain complete and understandable without non-essential animation.
+- **Visual-regression coverage:** Capture controlled desktop, mobile, Arabic RTL where applicable, reduced-motion, category, resource-card, authorship, reference, product-material, independent-evidence, Product Status, empty, unavailable, loading, and error-state baselines before publication.
+- **Product Status tests:** Verify Provider resources, product material, linked capabilities, validation claims, integrations, implementation content, and Clinical Platform pathways reflect approved publication and capability status. Planned or unvalidated product material must not appear as active functionality or independent clinical evidence.
+- **Clinical-review requirement:** Mandatory for monitoring, maternal intelligence, fetal growth, methodology, validation, workflow, implementation, research, outcome, risk, accuracy, or clinical evidence content. Author, clinical reviewer, review date, references, evidence classification, market applicability, and review status must be traceable.
+- **Form or integration tests:** No submission form is embedded on this page. Test resource-index generation, category filters where implemented, evidence-type classification, canonical Provider and Clinical Platform links, unavailable-resource recovery, analytics consent where applicable, and safe synthetic metadata fixtures. Tests must not call live publishing, Patient, Provider, research, integration, or clinical systems.
+- **Performance-budget tests:** Before publication, test `/resources/providers/` and its resource lists, categories, references, images, metadata, and interactions against approved Core Web Vitals, JavaScript, image, font, third-party, interaction, and motion budgets in `docs/engineering/PERFORMANCE_BUDGET.md`.
+- **Security tests:** Verify security headers, safe resource, reference and external links, approved download types, escaped resource metadata, sanitized category parameters, no Patient or production operational data, no draft, restricted, proprietary, or unpublished evidence exposure, consent-controlled analytics, and absence of secrets or sensitive URL parameters.
+- **Staging smoke:** Required whenever included in a release; verify page availability, approved Provider categories, audience separation, professional authorship and references, product-material and independent-evidence labels, Product Status, canonical Provider links, Clinical Platform CTA, Arabic behavior, analytics consent where applicable, and absence of blocking console or network failures.
+- **Production smoke applicability:** Applicable and non-destructive only when published; verify `/resources/providers/`, approved categories, representative reviewed professional resources, authorship, references, evidence-type labels, essential navigation, and Clinical Platform CTA without submitting data.
+
 ---
 
 ## RES-PG-004 — Public Glossary
@@ -3978,6 +4052,7 @@ Organize Patient-appropriate education by pregnancy stage and topic.
 **Priority:** P1
 **Audience:** Shared
 **Page type:** Glossary
+**PRD requirements:** CON-004, SHR-010
 
 ### Primary Purpose
 
@@ -4002,6 +4077,30 @@ Approved public terminology and definitions.
 - Public wording is understandable
 - Search and alphabetical navigation work
 
+### Test Requirements
+
+- **Requirement IDs:** CON-004, SHR-010, SHR-020
+- **Page ID:** RES-PG-004
+- **Risk priority:** P1, with high terminology-accuracy, clinical-boundary, internal-information exposure, search, accessibility, localization, and SEO risk; release blocking whenever included in an approved release
+- **Static validations:** Validate the `/resources/glossary/` route, Page ID, requirement traceability, publication and indexation status, public-term schemas, unique term identifiers and slugs, alphabetical grouping, internal-glossary source mapping, canonical-page links, Patient and Provider depth labels, internal-only exclusions, analytics-event registration where applicable, translation completeness, architecture rules, linting, TypeScript, and production build.
+- **Unit or integration coverage:** Cover public-glossary generation, term normalization, alphabetical grouping, search normalization, Patient and Provider definition layering, canonical-link generation, duplicate-term detection, internal-only term exclusion, missing-definition handling, no-result recovery, locale-aware sorting, and consent-aware analytics where applicable.
+- **Required Component IDs and component tests:** `CMP-PRM-001` Button, `CMP-PRM-002` Text Link, `CMP-LYT-001` Container, `CMP-NAV-002` Site Header, `CMP-NAV-004` Mobile Navigation Drawer, and `CMP-NAV-005` Audience Switcher. Test accessible alphabetical navigation, search controls, term links, layered definitions, keyboard behavior, focus, result announcements, mobile reflow, RTL, reduced motion, loading, empty, no-result, direct-linked-term, and error states. Any reusable glossary search, alphabet navigation, or term component must receive an approved Component ID before implementation.
+- **E2E journeys:** When included in release scope, open the Public Glossary, navigate by alphabet, search for an approved maternal, fetal, product, or monitoring term, inspect Patient and Provider definition depth where available, follow a canonical-page link, open a direct term URL or fragment where supported, and recover from an unknown term or no-result search.
+- **Browser projects:** Run `chromium-desktop` for every changed-feature test. When the page enters a release scope, also run `firefox-desktop`, `webkit-desktop`, `arabic-rtl`, and `reduced-motion`.
+- **Mobile coverage:** Run `mobile-chrome` and `mobile-safari` when the page enters release scope; verify alphabetical controls, search input and results, term-list order, layered definitions, direct links, touch targets, no-result recovery, and narrow-viewport reflow.
+- **Accessibility automation:** Run Storybook Axe checks for all required registered components and Playwright Axe checks against `/resources/glossary/`, including default, search-result, no-result, layered-definition, and direct-linked-term states.
+- **Manual accessibility review:** Before publication, verify keyboard navigation, visible focus, headings, landmarks, alphabetical-control names and current state, search labels and result announcements, term-definition relationships, layered-content semantics, link purpose, direct-link focus behavior, reading order, zoom, reflow, touch targets, VoiceOver with Safari, and one additional approved screen-reader/browser combination.
+- **Arabic and RTL coverage:** Before Arabic publication, run `arabic-rtl`; use an approved Arabic navigation and sorting model rather than assuming the English alphabet; verify equivalent term, definition, audience-depth, search, no-result, and canonical-link meaning; preserve abbreviations and clinical terminology accurately; and obtain qualified Arabic, content, and clinical review.
+- **Reduced-motion coverage:** Run `reduced-motion`; alphabetical navigation, search-result updates, direct-term focus, layered-definition disclosure, navigation, and canonical-link access must remain complete and understandable without non-essential animation.
+- **Visual-regression coverage:** Capture controlled desktop, mobile, Arabic RTL where applicable, reduced-motion, alphabetical navigation, search result, no-result, layered Patient and Provider definition, direct-linked term, long definition, loading, and error-state baselines before publication.
+- **Product Status tests:** Verify definitions describing ODRISC capabilities, monitoring, intelligence, integrations, validation, markets, and clinical functions reflect approved terminology and current Product Status. Planned or unavailable capabilities must not be defined as active functionality.
+- **Clinical-review requirement:** Mandatory for maternal, fetal, pregnancy, risk, diagnosis, monitoring, measurement, nutrition, physical-activity, gestational-age, growth, Doppler, outcome, validation, and clinical-decision terminology. Definitions must identify or trace to their approved reviewer and review date.
+- **Form or integration tests:** No submission form is embedded on this page. Test glossary generation from the approved internal source, search, alphabetical navigation, direct-term links, canonical-page links, unknown-term and no-result recovery, analytics consent where applicable, and safe synthetic metadata fixtures. Tests must not expose the full internal glossary or call live Patient, Provider, search, or clinical systems.
+- **Performance-budget tests:** Before publication, test `/resources/glossary/` and its term index, alphabetical navigation, search, result updates, and long definitions against approved Core Web Vitals, JavaScript, content, font, search, interaction, and motion budgets in `docs/engineering/PERFORMANCE_BUDGET.md`.
+- **Security tests:** Verify security headers, escaped terms and definitions, sanitized search and fragment parameters, safe canonical and external links, no internal-only terms, confidential terminology, Patient data, or production operational data, consent-controlled analytics, and absence of secrets or sensitive URL parameters.
+- **Staging smoke:** Required whenever included in a release; verify page availability, approved terminology, alphabetical navigation, representative search and no-result behavior, Patient and Provider depth where applicable, internal-only exclusions, canonical links, Arabic behavior where released, analytics consent where applicable, and absence of blocking console or network failures.
+- **Production smoke applicability:** Applicable and non-destructive only when published; verify `/resources/glossary/`, representative approved terms and definitions, alphabetical navigation, search, no-result recovery, direct-term and canonical links, and internal-only exclusion without submitting data.
+
 ---
 
 ## RES-PG-005 — Topic Hub Template
@@ -4010,6 +4109,7 @@ Approved public terminology and definitions.
 **Priority:** P2 unless justified
 **Audience:** Patient, Provider, or Shared
 **Page type:** Topic hub
+**PRD requirements:** CON-004, SHR-010
 
 ### Publication Conditions
 
@@ -4037,6 +4137,30 @@ A topic hub may be created only when:
 - Duplicated capability content
 - Unreviewed medical summaries
 
+### Test Requirements
+
+- **Requirement IDs:** CON-004, SHR-010, SHR-020
+- **Page ID:** RES-PG-005
+- **Risk priority:** P2 unless separately justified, with publication-blocking content-quality, clinical-review, audience-classification, duplicate-content, route-generation, accessibility, and SEO requirements for every published topic instance
+- **Static validations:** Validate every `/resources/topics/[topic-slug]/` instance, template Page ID, unique and normalized topic slug, requirement traceability, publication and indexation status, minimum-resource condition, stable search intent, unique-value evidence, audience applicability, content ownership, clinical-review availability, metadata schemas, canonical URLs, internal links, translation completeness, architecture rules, linting, TypeScript, and production build.
+- **Unit or integration coverage:** Cover topic-page generation, slug normalization and collision detection, topic-to-resource mappings, Patient, Provider and Shared audience classification, publication-condition enforcement, minimum-resource rules, featured-resource selection, canonical-link generation, duplicate-content detection, empty and unpublished states, locale-aware metadata, and consent-aware analytics where applicable.
+- **Required Component IDs and component tests:** `CMP-PRM-001` Button, `CMP-PRM-002` Text Link, `CMP-LYT-001` Container, `CMP-TRS-001` Product Status Badge where product capabilities are referenced, `CMP-NAV-002` Site Header, `CMP-NAV-004` Mobile Navigation Drawer, and `CMP-NAV-005` Audience Switcher. Test accessible topic headings, audience labels, featured-resource links, review information, Product Status, keyboard behavior, focus, mobile reflow, RTL, reduced motion, loading, empty, unpublished, not-found, and error states. Any reusable topic or resource-card component must receive an approved Component ID before implementation.
+- **E2E journeys:** For each published topic template variant, open a representative topic URL, understand the topic and its audience relevance, inspect featured reviewed resources, follow a related ODRISC page, verify references or review information, return to the relevant resource hub, and confirm that invalid, unpublished, and unknown topic slugs produce the approved not-found or unavailable behavior.
+- **Browser projects:** Run `chromium-desktop` for every published or changed topic variant. When a topic enters release scope, also run the applicable `firefox-desktop`, `webkit-desktop`, `arabic-rtl`, and `reduced-motion` projects according to its priority, audience, locale, and content.
+- **Mobile coverage:** Run `mobile-chrome` and `mobile-safari` for published representative Patient, Provider, and Shared topic variants; verify topic narrative order, audience labels, featured resources, review information, related-page links, touch targets, and narrow-viewport reflow.
+- **Accessibility automation:** Run Storybook Axe checks for all required registered components and Playwright Axe checks against representative published Patient, Provider, and Shared topic instances, including normal, empty-prevention, unavailable, and not-found behavior.
+- **Manual accessibility review:** Before publication, verify keyboard navigation, visible focus, headings, landmarks, topic and audience comprehension, resource-link purpose, review and reference relationships, Product Status meaning where applicable, reading order, zoom, reflow, touch targets, VoiceOver with Safari, and one additional approved screen-reader/browser combination for representative variants.
+- **Arabic and RTL coverage:** Before publishing an Arabic topic, run `arabic-rtl`; verify equivalent topic definition, importance, audience relevance, featured-resource, related-page, reference, review, Product Status, and unavailable-state meaning; logical layout; accurate terminology and metadata; and qualified Arabic, content, and clinical review.
+- **Reduced-motion coverage:** Run `reduced-motion` for topic instances using motion; topic presentation, featured-resource transitions, progressive disclosure, navigation, and related-page access must remain complete and understandable without non-essential animation.
+- **Visual-regression coverage:** Capture controlled representative Patient, Provider, Shared, desktop, mobile, Arabic RTL where applicable, reduced-motion, long-title, featured-resource, review-information, unavailable, and not-found template baselines before publication.
+- **Product Status tests:** Verify topic content, featured resources, and related ODRISC pages reflect approved capability, audience, market, publication, validation, and availability status. Planned or unavailable capabilities must not be represented as active through topic summaries or links.
+- **Clinical-review requirement:** Mandatory whenever a topic contains maternal, fetal, pregnancy, risk, outcome, monitoring, nutrition, physical-activity, methodology, validation, or other clinical content. The content owner, clinical reviewer, review date, references, market applicability, and next-review status must be traceable.
+- **Form or integration tests:** No submission form is defined by this template. Test topic-index generation, publication-condition enforcement, slug resolution, resource mappings, related-page links, invalid and unpublished topic behavior, analytics consent where applicable, and safe synthetic topic metadata. Tests must not call live publishing, Patient, Provider, search, or clinical systems.
+- **Performance-budget tests:** Before publication, test representative topic instances and their resource lists, images, metadata, links, and interactions against approved Core Web Vitals, JavaScript, image, font, content, third-party, interaction, and motion budgets in `docs/engineering/PERFORMANCE_BUDGET.md`.
+- **Security tests:** Verify security headers, normalized and sanitized topic slugs, escaped topic and resource metadata, safe internal, external and reference links, approved download types, no draft, restricted, internal-only, Patient, or production operational data exposure, consent-controlled analytics, and absence of secrets or sensitive URL parameters.
+- **Staging smoke:** Required for every topic entering a release; verify its canonical route, publication conditions, unique value, audience classification, featured resources, clinical-review metadata, related ODRISC links, Product Status where applicable, invalid and unpublished slug handling, Arabic behavior where released, and absence of blocking console or network failures.
+- **Production smoke applicability:** Applicable and non-destructive for every published topic; verify its canonical URL, approved title, audience, representative resources, review information, related links, and not-found behavior for one invalid slug without submitting data.
+
 ---
 
 ## RES-PG-006 — Resource Detail Template
@@ -4045,6 +4169,7 @@ A topic hub may be created only when:
 **Priority:** P1
 **Audience:** Defined per resource
 **Page type:** Article, guide, clinical brief, or evidence summary
+**PRD requirements:** CON-004, SHR-010
 
 ### Required Metadata
 
@@ -4086,6 +4211,30 @@ A topic hub may be created only when:
 - References are accurate
 - CTA is relevant and not intrusive
 - Archived content is no longer promoted
+
+### Test Requirements
+
+- **Requirement IDs:** CON-004, SHR-010, SHR-020
+- **Page ID:** RES-PG-006
+- **Risk priority:** P1, with high metadata, clinical-review, reference-accuracy, sponsorship-disclosure, content-status, Product Status, accessibility, and SEO risk; release blocking for every published resource instance
+- **Static validations:** Validate every `/resources/[resource-slug]/` instance, template Page ID, unique and normalized resource slug, requirement traceability, publication and indexation status, required metadata, audience, author, reviewer, publication and review dates, market applicability, references, related pages, content status, sponsorship disclosure where applicable, canonical URL, translation completeness, architecture rules, linting, TypeScript, and production build.
+- **Unit or integration coverage:** Cover resource-schema validation, slug normalization and collision detection, audience and content-type mappings, publication and review-date rules, author and reviewer metadata, market applicability, reference normalization, related-resource selection, archived and withdrawn states, CTA selection, structured metadata generation, and consent-aware analytics where applicable.
+- **Required Component IDs and component tests:** `CMP-PRM-001` Button, `CMP-PRM-002` Text Link, `CMP-LYT-001` Container, `CMP-TRS-001` Product Status Badge where capabilities are referenced, `CMP-NAV-002` Site Header, `CMP-NAV-004` Mobile Navigation Drawer, and `CMP-NAV-005` Audience Switcher. Test accessible article structure, metadata relationships, references, safety notes, sponsorship disclosure, Product Status, related resources, CTA behavior, keyboard navigation, focus, mobile reflow, RTL, reduced motion, archived, unavailable, not-found, and error states.
+- **E2E journeys:** For representative article, guide, clinical-brief, and evidence-summary instances, open the canonical resource URL, verify audience and review metadata, read the summary and safety or limitation note, open an approved reference, follow a related resource and canonical page, use the relevant product CTA, and verify archived, withdrawn, unknown, and invalid slugs use the approved unavailable or not-found behavior.
+- **Browser projects:** Run `chromium-desktop` for every published or changed resource variant. For P0-linked or release-critical resources, also run `firefox-desktop`, `webkit-desktop`, `arabic-rtl`, and `reduced-motion`; otherwise run the projects affected by the resource type or change.
+- **Mobile coverage:** Run `mobile-chrome` and `mobile-safari` for representative published resource types; verify title and metadata order, long-form reading, tables and figures where used, references, safety notes, related resources, CTA placement, touch targets, and narrow-viewport reflow.
+- **Accessibility automation:** Run Storybook Axe checks for all required registered components and Playwright Axe checks against representative article, guide, clinical-brief, and evidence-summary instances, including long-content, archived, unavailable, and not-found states.
+- **Manual accessibility review:** Before publication of a new template behavior, verify keyboard navigation, visible focus, headings, landmarks, metadata and content relationships, table and figure accessibility, reference-link purpose, abbreviation expansion, safety-note prominence, sponsorship disclosure, reading order, zoom, reflow, touch targets, VoiceOver with Safari, and one additional approved screen-reader/browser combination.
+- **Arabic and RTL coverage:** Before publishing an Arabic resource, run `arabic-rtl`; verify equivalent title, summary, audience, author, reviewer, dates, market, main content, key takeaway, limitation, safety note, references, sponsorship disclosure, Product Status, and CTA meaning; preserve citations, identifiers, numbers, units, and clinical terminology accurately; and obtain qualified Arabic, content, and clinical review.
+- **Reduced-motion coverage:** Run `reduced-motion` for resources using motion; figures, progressive disclosure, related-resource transitions, navigation, and CTA access must remain complete and understandable without non-essential animation.
+- **Visual-regression coverage:** Capture controlled representative article, guide, clinical brief, evidence summary, desktop, mobile, Arabic RTL where applicable, reduced-motion, long-title, table, figure, safety-note, sponsorship, Product Status, archived, unavailable, and not-found baselines.
+- **Product Status tests:** Verify content, related pages, and product CTAs reflect approved capability, market, validation, publication, and availability status. Archived, withdrawn, planned, unavailable, or unvalidated material must not be promoted as current guidance, evidence, or active functionality.
+- **Clinical-review requirement:** Mandatory for every maternal, fetal, pregnancy, risk, outcome, monitoring, nutrition, physical-activity, gestational-age, growth, Doppler, methodology, validation, or other clinical resource. Author, clinical reviewer, review date, references, limitations, market applicability, and next-review status must be traceable.
+- **Form or integration tests:** No submission form is defined by this template. Test resource loading, metadata and structured-data generation, slug resolution, reference and related-page links, CTA selection, archived and withdrawn behavior, analytics consent where applicable, and safe synthetic resource fixtures. Tests must not call live publishing, Patient, Provider, research, reference, or clinical systems.
+- **Performance-budget tests:** Before publication, test representative resource types and their long-form content, tables, figures, images, references, metadata, and related-resource lists against approved Core Web Vitals, JavaScript, image, font, content, third-party, interaction, and motion budgets in `docs/engineering/PERFORMANCE_BUDGET.md`.
+- **Security tests:** Verify security headers, normalized and sanitized resource slugs, escaped content and metadata, safe internal, external and reference links, approved download and embed types, visible sponsorship disclosure, no draft, restricted, internal-only, Patient, or production operational data exposure, consent-controlled analytics, and absence of secrets or sensitive URL parameters.
+- **Staging smoke:** Required for every resource entering a release; verify its canonical route, complete metadata, audience, review and market information, references, limitation or safety note, sponsorship disclosure where applicable, related links, Product Status, CTA, archived behavior, Arabic presentation where released, and absence of blocking console or network failures.
+- **Production smoke applicability:** Applicable and non-destructive for every published resource; verify its canonical URL, title, summary, audience and review metadata, representative references, safety or limitation note, related links, relevant CTA, and approved behavior for one invalid slug without submitting data.
 
 ---
 
