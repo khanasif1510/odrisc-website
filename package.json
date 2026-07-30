@@ -15,7 +15,8 @@
     "test:watch": "vitest",
     "test:e2e": "playwright test",
     "storybook": "storybook dev",
-    "build:storybook": "storybook build"
+    "build:storybook": "storybook build",
+    "check": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm test"
   },
   "dependencies": {
     "next": "16.2.11",
