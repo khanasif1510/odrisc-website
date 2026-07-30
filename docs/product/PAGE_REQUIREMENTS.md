@@ -4923,6 +4923,7 @@ The Contact page is not an emergency or medical-consultation service.
 **Priority:** P2 unless resource volume requires it
 **Audience:** Shared
 **Page type:** Search utility
+**PRD requirements:** SHR-010
 
 ### Required Features
 
@@ -4949,6 +4950,30 @@ Search terms must be reviewed for privacy implications.
 - Search is accessible
 - No-result state offers recovery
 
+### Test Requirements
+
+- **Requirement IDs:** SHR-010, SHR-020
+- **Page ID:** UTL-PG-001
+- **Risk priority:** P2 unless approved resource volume requires search; release blocking whenever published, with high restricted-content, privacy, query-handling, audience-context, accessibility, analytics, and SEO risk
+- **Static validations:** Validate the `/search/` route when approved, Page ID, requirement traceability, publication and indexation status, searchable-source allowlist, exclusion rules for drafts and restricted pages, audience, topic and content-type values, result metadata, canonical result links, query and filter parameter schemas, analytics-event registration, translation completeness, architecture rules, linting, TypeScript, and production build.
+- **Unit or integration coverage:** Cover query normalization, whitespace and case handling, minimum and maximum lengths, audience, topic and type filters, searchable-source allowlisting, draft and restricted-content exclusion, result ranking rules where defined, audience-context labels, no-result recovery, invalid-query handling, pagination where used, locale-aware search, analytics payload filtering, and prevention of raw sensitive-query collection.
+- **Required Component IDs and component tests:** `CMP-PRM-001` Button, `CMP-PRM-002` Text Link, `CMP-LYT-001` Container, `CMP-NAV-002` Site Header, `CMP-NAV-004` Mobile Navigation Drawer, and `CMP-NAV-005` Audience Switcher. Test accessible query input, submit control, filter labels and states, result count announcements, audience labels, result links, keyboard behavior, focus, mobile reflow, RTL, reduced motion, loading, empty-query, no-result, invalid-query, unavailable, and error states. Any reusable Search, Filter, or Search Result component must receive an approved Component ID before implementation.
+- **E2E journeys:** When Search is published, open `/search/`, submit representative approved queries, filter by audience, topic and type where available, verify audience context, open a canonical result, return to results, test empty, unknown and privacy-sensitive queries, recover from no results, and confirm drafts, restricted pages and internal-only content never appear.
+- **Browser projects:** Run `chromium-desktop` for every changed search behavior. When Search enters release scope, also run `firefox-desktop`, `webkit-desktop`, `arabic-rtl`, and `reduced-motion`.
+- **Mobile coverage:** Run `mobile-chrome` and `mobile-safari` when Search is published; verify query entry, input mode, virtual-keyboard behavior, filters, result announcements, result-card order, audience labels, no-result recovery, touch targets, and narrow-viewport reflow.
+- **Accessibility automation:** Run Storybook Axe checks for all registered search dependencies and Playwright Axe checks against `/search/`, including initial, loading, results, filtered-results, empty-query, no-result, invalid-query, unavailable, and error states.
+- **Manual accessibility review:** Before publication, verify keyboard-only search and filtering, visible focus, headings, landmarks, query labels, filter names and states, result-count announcements, result-link purpose, audience-label relationships, focus after result updates, no-result recovery, zoom, reflow, touch targets, VoiceOver with Safari, and one additional approved screen-reader/browser combination.
+- **Arabic and RTL coverage:** Before Arabic Search publication, run `arabic-rtl`; verify Arabic query input, normalization and result behavior, equivalent audience, topic, type, count, result, no-result and recovery meaning, logical filter and result layout, accurate metadata, and qualified Arabic, content, privacy and accessibility review.
+- **Reduced-motion coverage:** Run `reduced-motion`; loading feedback, filter changes, result updates, focus movement, no-result recovery, navigation, and result access must remain complete and understandable without non-essential animation.
+- **Visual-regression coverage:** Capture controlled desktop, mobile, Arabic RTL where applicable, reduced-motion, initial, focused-query, loading, results, filtered-results, long-title, empty-query, no-result, invalid-query, unavailable, and error-state baselines before publication.
+- **Product Status tests:** Verify searchable pages, resources, result snippets and links reflect approved publication, audience, market, capability and availability status. Draft, archived, withdrawn, restricted, planned-only or unavailable content must not appear as current searchable information.
+- **Clinical-review requirement:** Required for search-result titles or snippets containing maternal, fetal, pregnancy, risk, outcome, monitoring, nutrition, physical-activity, validation, methodology or other clinical content. Search must not generate new clinical interpretations or advice.
+- **Form or integration tests:** Search query entry is not a contact or clinical-data form. Test the approved search index or adapter using synthetic content, query and filter handling, result mapping, unavailable-search recovery, analytics consent, and privacy-safe event construction. Tests must not call production search, Patient, Provider, publishing, analytics or clinical systems.
+- **Performance-budget tests:** Before publication, test `/search/`, query handling, search-index loading, filters, result updates, pagination where used, fonts, third-party dependencies and interactions against approved Core Web Vitals, JavaScript, search-response, content, font, third-party and motion budgets in `docs/engineering/PERFORMANCE_BUDGET.md`.
+- **Security tests:** Verify security headers, normalized and length-limited queries, output encoding, safe highlighting, sanitized filters and pagination, restricted-source exclusion, safe result links, abuse and rate controls where applicable, no query reflection vulnerabilities, no Patient or production operational data, no raw sensitive query in analytics or logs, and absence of secrets or sensitive URL parameters.
+- **Staging smoke:** Required whenever Search enters a release; verify page availability, representative English and approved Arabic queries, audience and filter behavior, canonical results, no-result recovery, draft and restricted-content exclusion, analytics privacy, search-unavailable recovery, and absence of blocking console or network failures.
+- **Production smoke applicability:** Applicable and non-destructive whenever published; verify `/search/`, one privacy-safe representative query, audience context, canonical result navigation, no-result recovery and restricted-content exclusion without using Patient, personal, clinical or sensitive search terms.
+
 ---
 
 ## UTL-PG-002 — Login Router
@@ -4957,6 +4982,7 @@ Search terms must be reviewed for privacy implications.
 **Priority:** P1 when platform access exists
 **Audience:** Shared
 **Page type:** Platform-access router
+**PRD requirements:** INT-001, INT-002, SEC-005
 
 ### Primary Purpose
 
@@ -4977,6 +5003,30 @@ Route users to approved Patient or Provider access.
 - Users understand which system they are entering
 - Authentication details are not exposed
 
+### Test Requirements
+
+- **Requirement IDs:** INT-001, INT-002, SEC-005, SHR-020
+- **Page ID:** UTL-PG-002
+- **Risk priority:** P1 when platform access exists, with critical destination-integrity, authentication-boundary, market-restriction, Product Status, privacy, security, open-redirect, and user-trust risk; release blocking whenever published
+- **Static validations:** Validate the `/login/` route when approved, Page ID, requirement traceability, publication and indexation status, Patient and Provider destination allowlists, availability and market restrictions, login, registration and demonstration labels, Product Status mappings, external-origin notices, analytics-event registration where applicable, translation completeness, architecture rules, linting, TypeScript, and production build.
+- **Unit or integration coverage:** Cover Patient and Provider destination selection, availability and market rules, login, registration and demonstration distinctions, destination allowlisting, unavailable and restricted states, external-origin notices, return-route handling where approved, Product Status mappings, locale-specific routing, consent-aware analytics, and open-redirect prevention.
+- **Required Component IDs and component tests:** `CMP-PRM-001` Button, `CMP-PRM-002` Text Link, `CMP-LYT-001` Container, `CMP-TRS-001` Product Status Badge where access status is displayed, `CMP-NAV-002` Site Header, `CMP-NAV-004` Mobile Navigation Drawer, and `CMP-NAV-005` Audience Switcher. Test accessible Patient and Provider choices, access-type and destination descriptions, market and unavailable states, external-origin notices, keyboard behavior, focus, mobile reflow, RTL, reduced motion, loading, restricted, unavailable, and error states.
+- **E2E journeys:** When published, open Login Router, distinguish Patient from Provider access, distinguish login from registration and demonstration, follow each approved available destination, verify market restrictions and unavailable recovery, return safely to the public website, and confirm unsupported, tampered or unapproved destinations cannot be reached.
+- **Browser projects:** Run `chromium-desktop` for every changed access route. When Login Router enters release scope, also run `firefox-desktop`, `webkit-desktop`, `arabic-rtl`, and `reduced-motion`.
+- **Mobile coverage:** Run `mobile-chrome` and `mobile-safari` when published; verify Patient and Provider access choices, destination descriptions, external-origin notices, market and unavailable states, CTA visibility, touch targets, return navigation, and narrow-viewport reflow.
+- **Accessibility automation:** Run Storybook Axe checks for all required registered components and Playwright Axe checks against `/login/`, including available, partially available, restricted-market, unavailable, invalid-destination, and error states.
+- **Manual accessibility review:** Before publication, verify keyboard navigation, visible focus, headings, landmarks, Patient and Provider choice semantics, login, registration and demonstration distinctions, destination and external-origin comprehension, market and unavailable-state messaging, zoom, reflow, touch targets, VoiceOver with Safari, and one additional approved screen-reader/browser combination.
+- **Arabic and RTL coverage:** Before Arabic publication, run `arabic-rtl`; verify equivalent Patient, Provider, login, registration, demonstration, destination, external-origin, market, restricted, unavailable, Product Status and recovery meaning; logical layout; accurate platform-access terminology; and qualified Arabic, product, security, privacy and operational review.
+- **Reduced-motion coverage:** Run `reduced-motion`; access-choice presentation, destination transitions, status changes, navigation, and unavailable recovery must remain complete and understandable without non-essential animation.
+- **Visual-regression coverage:** Capture controlled desktop, mobile, Arabic RTL where applicable, reduced-motion, both-access-available, Patient-only, Provider-only, restricted-market, unavailable, invalid-destination, external-origin, loading, and error-state baselines.
+- **Product Status tests:** Verify Patient access, Provider access, login, registration, demonstration, platform availability, supported markets and destination status reflect approved operational reality. Unsupported or unavailable access must be hidden or clearly unavailable and must never route to a placeholder or unapproved system.
+- **Clinical-review requirement:** Required when access descriptions mention clinical monitoring, maternal or fetal intelligence, Patient care, clinical workflows, decision support, medical information, or professional responsibilities. The router itself must not provide clinical advice.
+- **Form or integration tests:** No credential or authentication form is hosted on this public route. Test approved Patient and Provider handoff configuration, destination allowlists, market restrictions, unavailable recovery, external-origin notices, return routing where supported, and analytics consent. Tests must not submit credentials or call live authentication, Patient, Provider, identity, or production platform systems.
+- **Performance-budget tests:** Before publication, test `/login/` and its access choices, status resolution, external-destination handling, fonts, images and interactions against approved Core Web Vitals, JavaScript, image, font, third-party, interaction and motion budgets in `docs/engineering/PERFORMANCE_BUDGET.md`.
+- **Security tests:** Verify HTTPS and security headers, exact destination allowlisting, open-redirect prevention, safe return URLs, no credentials, tokens, session identifiers, Patient information or sensitive data in query parameters, referrers, analytics or logs, safe external links, authentication-boundary separation, and absence of secrets or internal authentication details.
+- **Staging smoke:** Required whenever Login Router enters a release; verify route availability, approved Patient and Provider destinations, access-type distinctions, market restrictions, unavailable recovery, external-origin notices, return behavior, Arabic presentation where released, analytics consent where applicable, and absence of blocking console or network failures.
+- **Production smoke applicability:** Applicable and non-destructive whenever published; verify `/login/`, approved access labels and availability, destination hostnames, market restrictions, external-origin notices, essential navigation, and unavailable recovery without entering credentials or completing authentication.
+
 ---
 
 ## UTL-PG-003 — 404 Not Found
@@ -4985,6 +5035,7 @@ Route users to approved Patient or Provider access.
 **Priority:** P0
 **Audience:** Shared
 **Page type:** Error page
+**PRD requirements:** UX-005
 
 ### Required Content
 
@@ -5002,6 +5053,30 @@ Route users to approved Patient or Provider access.
 - Audience routes work
 - Page is not indexable as normal content
 
+### Test Requirements
+
+- **Requirement IDs:** UX-005, SHR-020
+- **Page ID:** UTL-PG-003
+- **Risk priority:** P0 and release blocking, with high HTTP-status, error-recovery, route-integrity, indexation, accessibility, localization, navigation, and user-trust risk
+- **Static validations:** Validate the framework-defined 404 implementation, Page ID, requirement traceability, correct not-found handling, noindex behavior and metadata, Patient, Provider, shared-entry, Search and Contact links, route-registry alignment, asset references, translation completeness, architecture rules, linting, TypeScript, and production build.
+- **Unit or integration coverage:** Cover not-found content models, recovery-link generation, Search availability handling, audience-route mappings, metadata and robots directives, locale-specific content, missing-route classification, safe preservation or removal of invalid-path context, consent-aware analytics where applicable, and fallback behavior when optional recovery destinations are unavailable.
+- **Required Component IDs and component tests:** `CMP-PRM-001` Button, `CMP-PRM-002` Text Link, `CMP-LYT-001` Container, `CMP-NAV-002` Site Header where approved for the error state, and `CMP-NAV-005` Audience Switcher where approved. Test accessible error heading and message, recovery-link names, Patient and Provider parity, keyboard behavior, focus, mobile reflow, RTL, reduced motion, missing-asset resilience, Search-unavailable, and minimal-fallback states.
+- **E2E journeys:** Request representative unknown public routes, verify an HTTP 404 response and approved not-found content, confirm the page is not indexable as normal content, follow shared-entry, Patient, Provider, Search when available, and Contact recovery routes, test an unknown localized route, and verify no redirect loop or broken asset occurs.
+- **Browser projects:** `chromium-desktop`, `firefox-desktop`, `webkit-desktop`, `arabic-rtl`, and `reduced-motion`.
+- **Mobile coverage:** Run `mobile-chrome` and `mobile-safari`; verify the not-found message, recovery-link order, audience-route parity, Search availability, Contact link, touch targets, focus visibility, and narrow-viewport reflow.
+- **Accessibility automation:** Run Storybook Axe checks for all required registered components and Playwright Axe checks against representative unknown routes, including standard, Search-unavailable, localized, missing-asset, and minimal-fallback states.
+- **Manual accessibility review:** Verify keyboard navigation, visible focus, error heading, landmarks, understandable error wording, recovery-link purpose, Patient and Provider parity, focus behavior after client navigation where applicable, zoom, reflow, touch targets, reduced motion, VoiceOver with Safari, and one additional approved screen-reader/browser combination.
+- **Arabic and RTL coverage:** Run `arabic-rtl`; request an unknown Arabic route and verify equivalent not-found, shared-entry, Patient, Provider, Search, Contact and recovery meaning; correct `lang` and `dir`; logical layout; safe fallback when localized Search is unavailable; and qualified Arabic, accessibility and product review.
+- **Reduced-motion coverage:** Run `reduced-motion`; error presentation, focus movement, navigation and recovery must remain complete and understandable without non-essential animation.
+- **Visual-regression coverage:** Capture controlled desktop, mobile, Arabic RTL, reduced-motion, Search-available, Search-unavailable, long-invalid-path, missing-asset, focused-link, and minimal-fallback baselines.
+- **Product Status tests:** Verify recovery links appear only for approved and available Patient, Provider, Search and Contact destinations. Conditional or unavailable pathways must be hidden or replaced with accurate alternatives, and the error page must not imply unsupported platform availability.
+- **Clinical-review requirement:** Not normally required for the standard not-found message. Clinical review becomes mandatory if the page includes Patient-safety, emergency, medical-support, clinical-service, maternal, fetal, pregnancy, risk, or healthcare guidance.
+- **Form or integration tests:** No submission form or live integration is present. Test route resolution, HTTP status, metadata, recovery links, Search availability, localized fallback, analytics consent where applicable, and safe rendering when optional services or assets are unavailable. Tests must not call live Patient, Provider, search, contact, authentication, or clinical systems.
+- **Performance-budget tests:** Test the 404 response and page against approved server-response, Core Web Vitals, JavaScript, image, font, content, third-party and motion budgets in `docs/engineering/PERFORMANCE_BUDGET.md`. The minimal recovery page must remain usable during partial asset or application failure.
+- **Security tests:** Verify security headers, correct status without sensitive server details, escaped invalid-path content, no reflected markup or script execution, no open redirects, safe recovery links, no secrets, stack traces, Patient data, or production operational data, consent-controlled analytics, and no leakage of sensitive query parameters.
+- **Staging smoke:** Request representative unknown shared, Patient, Provider and localized routes; verify HTTP 404, noindex behavior, approved content, working recovery links, Search-availability behavior, no broken assets, Arabic and reduced-motion behavior, and absence of blocking console or network failures.
+- **Production smoke applicability:** Applicable and non-destructive; request one controlled nonexistent route, verify HTTP 404, noindex metadata, approved recovery content, shared-entry, Patient, Provider and Contact links, and no sensitive error details without triggering external actions.
+
 ---
 
 ## UTL-PG-004 — 500 Server Error
@@ -5010,6 +5085,7 @@ Route users to approved Patient or Provider access.
 **Priority:** P0
 **Audience:** Shared
 **Page type:** Error page
+**PRD requirements:** UX-005
 
 ### Required Content
 
@@ -5023,6 +5099,30 @@ Route users to approved Patient or Provider access.
 - Correct HTTP status
 - No sensitive details exposed
 - Static fallback works during application failure
+
+### Test Requirements
+
+- **Requirement IDs:** UX-005, SHR-020
+- **Page ID:** UTL-PG-004
+- **Risk priority:** P0 and release blocking, with critical HTTP-status, failure-recovery, sensitive-information exposure, fallback-availability, accessibility, localization, security, and user-trust risk
+- **Static validations:** Validate the framework-defined 500 and global-error implementation, Page ID, requirement traceability, correct server-error handling, noindex behavior and metadata, temporary-error wording, safe return and support routes, exclusion of internal technical details, static fallback assets, translation completeness, architecture rules, linting, TypeScript, and production build.
+- **Unit or integration coverage:** Cover safe public error models, internal-to-public error mapping, approved error-reference generation where used, sensitive-detail redaction, return and support-route selection, locale-specific fallback content, static-fallback rendering, repeated-error handling, consent-aware analytics where applicable, and behavior when optional navigation, configuration or services are unavailable.
+- **Required Component IDs and component tests:** `CMP-PRM-001` Button, `CMP-PRM-002` Text Link, and `CMP-LYT-001` Container. Use `CMP-NAV-002` Site Header only when it can render safely without the failed application dependency. Test accessible error heading and message, safe recovery links, error-reference presentation where approved, keyboard behavior, focus, mobile reflow, RTL, reduced motion, missing-asset resilience, repeated failure, and minimal static-fallback states.
+- **E2E journeys:** In a controlled test environment, simulate a route or application failure, verify the approved 500 or error response and public message, confirm internal details are absent, use the safe return and support routes, test recovery or retry only where approved, verify repeated failure remains safe, and confirm the static fallback renders when normal application dependencies fail.
+- **Browser projects:** `chromium-desktop`, `firefox-desktop`, `webkit-desktop`, `arabic-rtl`, and `reduced-motion`.
+- **Mobile coverage:** Run `mobile-chrome` and `mobile-safari`; verify the temporary-error message, recovery and support links, optional error reference, focus visibility, touch targets, missing-asset resilience, and narrow-viewport reflow.
+- **Accessibility automation:** Run Storybook Axe checks for the independent error-state components and Playwright Axe checks against controlled server-error, repeated-error, missing-asset, dependency-failure, and minimal-static-fallback states.
+- **Manual accessibility review:** Verify keyboard navigation, visible focus, error heading, landmarks, understandable temporary-error wording, recovery and support-link purpose, error-reference comprehension where used, focus behavior after failure, zoom, reflow, touch targets, reduced motion, VoiceOver with Safari, and one additional approved screen-reader/browser combination.
+- **Arabic and RTL coverage:** Run `arabic-rtl` against a controlled localized failure; verify equivalent temporary-error, return, support and error-reference meaning; correct `lang` and `dir`; logical fallback layout; safe default-language recovery if localized content cannot load; and qualified Arabic, accessibility, product and security review.
+- **Reduced-motion coverage:** Run `reduced-motion`; error presentation, focus movement, retry where approved, navigation and recovery must remain complete and understandable without non-essential animation.
+- **Visual-regression coverage:** Capture controlled desktop, mobile, Arabic RTL, reduced-motion, standard-error, repeated-error, optional-error-reference, missing-asset, dependency-failure, and minimal-static-fallback baselines.
+- **Product Status tests:** Verify return, support, Contact, Patient and Provider routes appear only when approved and safely available during failure. The error page must not claim that unavailable services are operational or expose internal capability status.
+- **Clinical-review requirement:** Not normally required for a generic temporary-error message. Clinical review becomes mandatory if the page includes Patient-safety, emergency, medical-support, clinical-service, maternal, fetal, pregnancy, risk, or healthcare guidance.
+- **Form or integration tests:** No submission form or live integration is present. Test safe error mapping, status and metadata, recovery links, optional error references, localized fallback, repeated failure, dependency isolation, analytics consent where applicable, and static rendering without optional services. Tests must use controlled failures and must not disrupt or call production Patient, Provider, contact, authentication, analytics or clinical systems.
+- **Performance-budget tests:** Test controlled error responses and the static fallback against approved server-response, Core Web Vitals, JavaScript, image, font, content, third-party and motion budgets in `docs/engineering/PERFORMANCE_BUDGET.md`. The fallback must remain small and usable when normal bundles, fonts, images or services fail.
+- **Security tests:** Verify security headers, correct safe status handling, generic public messaging, redaction of exceptions, stack traces, file paths, queries, configuration, credentials and integration details, unpredictable non-sensitive public error references where used, safe recovery links, no reflected error content, no Patient data, and no sensitive analytics or logging payloads.
+- **Staging smoke:** Use an approved controlled failure mechanism to verify server-error handling, public wording, noindex behavior, sensitive-detail redaction, safe return and support routes, repeated-error handling, static fallback, Arabic and reduced-motion behavior, and absence of secondary blocking console or network failures.
+- **Production smoke applicability:** Applicable only through non-destructive observation or an approved health-safe mechanism. Verify the deployed fallback asset or controlled health evidence, public recovery routes and absence of sensitive details without intentionally causing a production error, disrupting service or invoking external actions.
 
 ---
 
