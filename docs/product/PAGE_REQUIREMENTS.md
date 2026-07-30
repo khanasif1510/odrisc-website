@@ -4732,6 +4732,30 @@ The Contact page is not an emergency or medical-consultation service.
 - Contact details work
 - Version date is visible
 
+### Test Requirements
+
+- **Requirement IDs:** PRV-001, PRV-002, PRV-003, PRV-004, PRV-005, PRV-006, PRV-007, SHR-020
+- **Page ID:** LEG-PG-001
+- **Risk priority:** P0 and release blocking, with critical legal, privacy, data-flow, consent, retention, third-party, market-applicability, versioning, and user-rights risk
+- **Static validations:** Validate the `/privacy/` route, Page ID, requirement traceability, indexation, approved legal-entity details, data-category and purpose records, lawful-basis wording where applicable, cookie and analytics inventory, third-party services, sharing and retention statements, security principles, user-rights content, contact ownership, market applicability, effective and updated dates, canonical URL, translation completeness, architecture rules, linting, TypeScript, and production build.
+- **Unit or integration coverage:** Cover privacy-policy metadata schemas, legal-entity and market mappings, data-category and purpose mappings, cookie and analytics inventory generation, third-party service records, retention-category presentation, user-rights and contact-route selection, effective and updated date formatting, version handling, consent-aware analytics, and safe unavailable-contact behavior.
+- **Required Component IDs and component tests:** `CMP-PRM-002` Text Link, `CMP-LYT-001` Container, `CMP-NAV-002` Site Header, `CMP-NAV-004` Mobile Navigation Drawer, and `CMP-NAV-005` Audience Switcher. Test accessible long-form legal structure, table and definition-list semantics where used, section navigation, effective and updated dates, external and contact links, keyboard behavior, focus, mobile reflow, RTL, reduced motion, long-content, and unavailable-contact states.
+- **E2E journeys:** Open the Privacy Policy, verify legal entity, data collected, purposes, applicable lawful basis, cookies and analytics, third parties, sharing, retention, security, user rights, market applicability and dates, follow the owned privacy-contact route, verify policy access before analytics consent, and confirm essential content remains available when non-essential scripts are blocked.
+- **Browser projects:** `chromium-desktop`, `firefox-desktop`, `webkit-desktop`, `arabic-rtl`, and `reduced-motion`.
+- **Mobile coverage:** Run `mobile-chrome` and `mobile-safari`; verify long-form reading, section navigation, tables where used, dates, rights and contact links, external-link handling, touch targets, sticky elements where present, and narrow-viewport reflow.
+- **Accessibility automation:** Run Storybook Axe checks for required registered components and Playwright Axe checks against `/privacy/`, including default, long-content, table, external-link, and unavailable-contact states.
+- **Manual accessibility review:** Verify keyboard navigation, visible focus, headings, landmarks, section structure, list and table semantics, link purpose, date comprehension, legal-language readability, zoom, text enlargement, reflow, touch targets, VoiceOver with Safari, and one additional approved screen-reader/browser combination.
+- **Arabic and RTL coverage:** Run `arabic-rtl` before Arabic publication; verify equivalent legal-entity, data, purpose, lawful-basis, cookie, analytics, third-party, sharing, retention, security, rights, market, contact and date meaning; preserve legal references and identifiers accurately; and obtain qualified Arabic, privacy, legal and security review.
+- **Reduced-motion coverage:** Run `reduced-motion`; section navigation, disclosures, consent links, focus movement, external links, and contact access must remain complete and understandable without non-essential animation.
+- **Visual-regression coverage:** Capture controlled desktop, mobile, Arabic RTL, reduced-motion, long-content, section-navigation, table, effective-date, updated-date, external-link, and unavailable-contact baselines.
+- **Product Status tests:** Verify all described website, application, analytics, cookie, third-party, form, Patient, Provider, market, integration and data-processing activities match their approved operational status. Planned processing or services must not be described as active, and active processing must not be omitted.
+- **Clinical-review requirement:** Required for descriptions of Patient, maternal, fetal, pregnancy, clinical, health, medical-record, Provider, or other sensitive health information. Legal, privacy, security and operational owners must approve their respective data-flow statements.
+- **Form or integration tests:** No submission form is embedded on this page. Test privacy-contact links, cookie and consent controls, third-party and policy links, market-specific policy selection where applicable, unavailable-contact recovery, and analytics suppression before consent. Tests must not call live legal, privacy, Patient, Provider, CRM, or production systems.
+- **Performance-budget tests:** Test `/privacy/` and its long-form content, tables, section navigation, fonts, links, and consent dependencies against approved Core Web Vitals, JavaScript, content, font, third-party, interaction, and motion budgets in `docs/engineering/PERFORMANCE_BUDGET.md`.
+- **Security tests:** Verify HTTPS and security headers, safe internal and external links, approved third-party references, escaped legal content, no secrets or unpublished security details, no Patient or production operational data, privacy-page availability without non-essential cookies, consent-controlled analytics, and absence of sensitive URL parameters.
+- **Staging smoke:** Verify page availability, approved legal entity, accurate website and product data flows, cookie and analytics inventory, third-party services, retention, user rights, market applicability, effective and updated dates, privacy-contact route, Arabic behavior where released, analytics consent behavior, and absence of blocking console or network failures.
+- **Production smoke applicability:** Applicable and non-destructive; verify `/privacy/`, legal-entity information, representative data-flow and rights content, market applicability, version dates, privacy-contact link, and policy availability before consent without submitting data.
+
 ---
 
 ## LEG-PG-002 — Terms
@@ -4740,6 +4764,7 @@ The Contact page is not an emergency or medical-consultation service.
 **Priority:** P0
 **Audience:** Shared
 **Page type:** Legal page
+**PRD requirements:** SHR-008
 
 ### Required Content
 
@@ -4762,6 +4787,30 @@ The Contact page is not an emergency or medical-consultation service.
 - Medical boundaries are clear
 - Market applicability is accurate
 
+### Test Requirements
+
+- **Requirement IDs:** SHR-008, SHR-020
+- **Page ID:** LEG-PG-002
+- **Risk priority:** P0 and release blocking, with critical legal, intellectual-property, medical-boundary, availability, liability, market-applicability, governing-law, versioning, and user-trust risk
+- **Static validations:** Validate the `/terms/` route, Page ID, requirement traceability, indexation, approved legal-entity details, website-versus-application scope, intellectual-property wording, informational-use and medical boundaries, availability and liability statements, third-party-link rules, market applicability, governing law, contact ownership, effective date, canonical URL, translation completeness, architecture rules, linting, TypeScript, and production build.
+- **Unit or integration coverage:** Cover Terms metadata schemas, legal-entity and market mappings, website-versus-application scope selection, effective-date and version handling, third-party-link metadata, contact-route configuration, unavailable-service wording, locale-specific policy selection, consent-aware analytics where applicable, and safe unavailable-contact behavior.
+- **Required Component IDs and component tests:** `CMP-PRM-002` Text Link, `CMP-LYT-001` Container, `CMP-NAV-002` Site Header, `CMP-NAV-004` Mobile Navigation Drawer, and `CMP-NAV-005` Audience Switcher. Test accessible long-form legal structure, section navigation, list and table semantics where used, medical-boundary prominence, effective date, external and contact links, keyboard behavior, focus, mobile reflow, RTL, reduced motion, long-content, and unavailable-contact states.
+- **E2E journeys:** Open Terms, verify the website and application distinction, intellectual-property terms, informational-use and medical boundaries, availability, liability, third-party links, market applicability, governing law and effective date, follow the owned contact route, and confirm the page remains available when non-essential scripts are blocked.
+- **Browser projects:** `chromium-desktop`, `firefox-desktop`, `webkit-desktop`, `arabic-rtl`, and `reduced-motion`.
+- **Mobile coverage:** Run `mobile-chrome` and `mobile-safari`; verify long-form reading, section navigation, lists and tables where used, medical boundary, effective date, contact and third-party links, touch targets, and narrow-viewport reflow.
+- **Accessibility automation:** Run Storybook Axe checks for required registered components and Playwright Axe checks against `/terms/`, including default, long-content, external-link, medical-boundary, and unavailable-contact states.
+- **Manual accessibility review:** Verify keyboard navigation, visible focus, headings, landmarks, section structure, list and table semantics, website-versus-application distinction, medical-boundary comprehension, link purpose, legal-language readability, zoom, text enlargement, reflow, touch targets, VoiceOver with Safari, and one additional approved screen-reader/browser combination.
+- **Arabic and RTL coverage:** Run `arabic-rtl` before Arabic publication; verify equivalent website, application, intellectual-property, informational-use, medical-boundary, availability, liability, third-party, market, governing-law, contact and effective-date meaning; preserve legal references and identifiers accurately; and obtain qualified Arabic, legal, clinical, product and market review.
+- **Reduced-motion coverage:** Run `reduced-motion`; section navigation, disclosures, focus movement, third-party links, navigation, and contact access must remain complete and understandable without non-essential animation.
+- **Visual-regression coverage:** Capture controlled desktop, mobile, Arabic RTL, reduced-motion, long-content, section-navigation, medical-boundary, external-link, effective-date, and unavailable-contact baselines.
+- **Product Status tests:** Verify all statements about the website, applications, services, markets, availability, integrations, demonstrations, pilots, clinical functions and limitations reflect approved Product Status. Planned, unavailable or restricted functionality must not be described as active or generally available.
+- **Clinical-review requirement:** Mandatory for the informational-use boundary, medical boundary, clinical-support role, diagnosis, treatment, professional responsibility, Patient safety, maternal or fetal information, risk, outcome, and healthcare-service statements.
+- **Form or integration tests:** No submission form is embedded on this page. Test contact and third-party links, website and application route distinctions, market-specific Terms selection where applicable, unavailable-contact recovery, and analytics consent where applicable. Tests must not call live legal, Patient, Provider, application, or production systems.
+- **Performance-budget tests:** Test `/terms/` and its long-form content, section navigation, lists, tables, fonts, links, and consent dependencies against approved Core Web Vitals, JavaScript, content, font, third-party, interaction, and motion budgets in `docs/engineering/PERFORMANCE_BUDGET.md`.
+- **Security tests:** Verify HTTPS and security headers, safe internal and external links, protected intellectual property, escaped legal content, no secrets, restricted implementation details, Patient data, or production operational data, consent-controlled analytics, and absence of sensitive URL parameters.
+- **Staging smoke:** Verify page availability, approved legal entity and website-versus-application scope, intellectual-property terms, medical boundary, availability and liability wording, market applicability, governing law, effective date, contact route, Arabic behavior where released, and absence of blocking console or network failures.
+- **Production smoke applicability:** Applicable and non-destructive; verify `/terms/`, website and application distinction, medical boundary, market and governing-law content, effective date, contact and representative third-party links, and page availability without submitting data.
+
 ---
 
 ## LEG-PG-003 — Cookies
@@ -4770,6 +4819,7 @@ The Contact page is not an emergency or medical-consultation service.
 **Priority:** P0 when cookies require a separate policy
 **Audience:** Shared
 **Page type:** Legal and consent page
+**PRD requirements:** SHR-008, PRV-002, PRV-006
 
 ### Required Content
 
@@ -4789,6 +4839,30 @@ The Contact page is not an emergency or medical-consultation service.
 - Non-essential scripts respect consent
 - Policy is updated when services change
 
+### Test Requirements
+
+- **Requirement IDs:** SHR-008, PRV-002, PRV-006, SHR-020
+- **Page ID:** LEG-PG-003
+- **Risk priority:** P0 whenever a separate cookie policy is required, with critical consent, privacy, cookie-inventory, third-party, withdrawal, analytics, legal-versioning, and user-choice risk
+- **Static validations:** Validate the `/cookies/` route when required, Page ID, requirement traceability, publication and indexation status, approved cookie categories, purposes, durations, third-party records, consent-management and withdrawal instructions, contact ownership, update date, cookie-inventory-to-implementation mapping, analytics configuration, translation completeness, architecture rules, linting, TypeScript, and production build.
+- **Unit or integration coverage:** Cover cookie-record schemas, category and purpose mappings, duration formatting, first-party and third-party classification, essential and non-essential classification, default consent state, accept, reject and granular-choice persistence, withdrawal and expiry behavior, locale and policy-version handling, analytics guards, and inventory generation.
+- **Required Component IDs and component tests:** `CMP-PRM-001` Button, `CMP-PRM-002` Text Link, `CMP-LYT-001` Container, `CMP-NAV-002` Site Header, `CMP-NAV-004` Mobile Navigation Drawer, and `CMP-NAV-005` Audience Switcher. Test accessible cookie-policy structure, category and duration presentation, consent-control links, withdrawal instructions, keyboard behavior, focus, mobile reflow, RTL, reduced motion, long-content, and unavailable-contact states. Any reusable consent banner, preferences dialog, or consent-control component must receive an approved Component ID before implementation.
+- **E2E journeys:** Open the Cookies page before making a consent choice, verify the implemented inventory, reject non-essential cookies, confirm non-essential scripts remain blocked, accept approved categories, confirm only permitted scripts initialize, change granular preferences where supported, withdraw consent, confirm future non-essential events are blocked, and follow the owned contact route.
+- **Browser projects:** `chromium-desktop`, `firefox-desktop`, `webkit-desktop`, `arabic-rtl`, and `reduced-motion`.
+- **Mobile coverage:** Run `mobile-chrome` and `mobile-safari`; verify policy reading, category and duration tables where used, consent-preference controls, withdrawal flow, dialog or banner behavior, focus containment where applicable, touch targets, and narrow-viewport reflow.
+- **Accessibility automation:** Run Storybook Axe checks for all consent-control states and required registered components and Playwright Axe checks against `/cookies/` with no choice, rejected, accepted, granular, withdrawn, expired, and unavailable-contact states.
+- **Manual accessibility review:** Verify keyboard navigation, visible focus, headings, landmarks, category and purpose relationships, table semantics, consent-control names and states, preferences-dialog focus management, withdrawal comprehension, status announcements, zoom, reflow, touch targets, VoiceOver with Safari, and one additional approved screen-reader/browser combination.
+- **Arabic and RTL coverage:** Run `arabic-rtl` when the policy is published in Arabic; verify equivalent category, purpose, duration, third-party, consent, rejection, granular-choice, withdrawal, contact and update-date meaning; logical controls and tables; accurate legal and technical terminology; and qualified Arabic, privacy, legal, security and analytics review.
+- **Reduced-motion coverage:** Run `reduced-motion`; consent banner or dialog presentation, preference changes, withdrawal feedback, focus movement, section navigation, and contact access must remain complete and understandable without non-essential animation.
+- **Visual-regression coverage:** Capture controlled desktop, mobile, Arabic RTL where applicable, reduced-motion, no-choice, rejected, accepted, granular-preferences, withdrawn, expired, long-inventory, dialog, banner, and unavailable-contact baselines.
+- **Product Status tests:** Verify the cookie inventory, analytics providers, third-party services, consent controls, markets and policy routes match the implemented environment and approved operational status. Planned, removed or disabled services must not appear active, and active services must not be omitted.
+- **Clinical-review requirement:** Not normally required for standard cookie descriptions. Clinical and privacy review becomes mandatory if any cookie or associated service processes, infers, links, targets, or describes Patient, pregnancy, maternal, fetal, clinical, or health-related information.
+- **Form or integration tests:** No submission form is embedded on this page. Test consent-state storage, accept, reject, granular choice, withdrawal, expiry, policy-version changes, cross-page persistence, analytics and third-party guards, contact links, and safe failure when storage is unavailable. Tests must not call production analytics, advertising, Patient, Provider, or third-party systems.
+- **Performance-budget tests:** Test `/cookies/`, the consent banner or dialog, preference controls, inventory tables, and third-party blocking behavior against approved Core Web Vitals, JavaScript, font, content, third-party, interaction, and motion budgets in `docs/engineering/PERFORMANCE_BUDGET.md`.
+- **Security tests:** Verify HTTPS and security headers, secure cookie attributes where applicable, no sensitive information in cookie values, safe consent-state parsing, tamper-resistant defaults, storage-failure handling, blocked non-essential scripts before consent, safe third-party and contact links, no secrets or Patient data, and absence of sensitive URL parameters.
+- **Staging smoke:** Verify page availability when required, cookie inventory accuracy, default blocked state, reject, accept, granular preference and withdrawal behavior, third-party and analytics guards, contact route, update date, Arabic behavior where released, and absence of blocking console or network failures.
+- **Production smoke applicability:** Applicable and non-destructive whenever the separate policy is published; verify `/cookies/`, representative inventory entries, update date, consent-management and withdrawal links, default non-essential blocking, and contact route using a fresh isolated browser context without sending analytics or altering another user’s preferences.
+
 ---
 
 ## LEG-PG-004 — Accessibility
@@ -4797,6 +4871,7 @@ The Contact page is not an emergency or medical-consultation service.
 **Priority:** P0
 **Audience:** Shared
 **Page type:** Trust and accessibility statement
+**PRD requirements:** SHR-008, ACC-001
 
 ### Required Content
 
@@ -4813,6 +4888,30 @@ The Contact page is not an emergency or medical-consultation service.
 - Feedback route works
 - Known issues are not concealed
 - Accessibility target matches approved standard
+
+### Test Requirements
+
+- **Requirement IDs:** SHR-008, ACC-001, SHR-020
+- **Page ID:** LEG-PG-004
+- **Risk priority:** P0 and release blocking, with critical accessibility-claim, implementation-accuracy, known-limitation, feedback-routing, legal, transparency, and user-trust risk
+- **Static validations:** Validate the `/accessibility/` route, Page ID, requirement traceability, indexation, approved accessibility commitment and target standard, implementation-status evidence, known-limitation records, feedback and contact ownership, review date, canonical URL, translation completeness, architecture rules, linting, TypeScript, and production build.
+- **Unit or integration coverage:** Cover accessibility-statement metadata, target-standard mappings, known-limitation publication rules, resolved and active limitation states, feedback-route configuration, review-date and expiry handling, locale-specific statement selection, consent-aware analytics where applicable, and safe unavailable-feedback behavior.
+- **Required Component IDs and component tests:** `CMP-PRM-001` Button, `CMP-PRM-002` Text Link, `CMP-LYT-001` Container, `CMP-NAV-002` Site Header, `CMP-NAV-004` Mobile Navigation Drawer, and `CMP-NAV-005` Audience Switcher. Test accessible long-form statement structure, known-limitation presentation, feedback and contact links, keyboard behavior, focus, mobile reflow, RTL, reduced motion, long-content, no-known-limitation, and unavailable-feedback states.
+- **E2E journeys:** Open the Accessibility statement, verify the commitment, target standard, implementation status, known limitations and review date, follow the owned feedback route, confirm the statement remains accessible when non-essential scripts are blocked, and verify navigation back to essential public pages.
+- **Browser projects:** `chromium-desktop`, `firefox-desktop`, `webkit-desktop`, `arabic-rtl`, and `reduced-motion`.
+- **Mobile coverage:** Run `mobile-chrome` and `mobile-safari`; verify long-form reading, known-limitation content, feedback and contact links, headings, touch targets, zoom, text enlargement, narrow-viewport reflow, and orientation changes.
+- **Accessibility automation:** Run Storybook Axe checks for required registered components and Playwright Axe checks against `/accessibility/`, including default, known-limitation, no-known-limitation, long-content, and unavailable-feedback states.
+- **Manual accessibility review:** Verify keyboard-only navigation, visible focus, skip link, headings, landmarks, list and link semantics, target-standard comprehension, known-limitation transparency, feedback-route purpose, 200% and 400% zoom where required, text enlargement, narrow-viewport reflow, touch targets, reduced motion, VoiceOver with Safari, and one additional approved screen-reader/browser combination.
+- **Arabic and RTL coverage:** Run `arabic-rtl` before Arabic publication; verify equivalent commitment, target-standard, implementation-status, known-limitation, feedback, contact and review-date meaning; logical layout; accurate accessibility terminology; keyboard and screen-reader usability; and qualified Arabic, accessibility, legal and product review.
+- **Reduced-motion coverage:** Run `reduced-motion`; section navigation, disclosures, focus movement, feedback access, and all statement content must remain complete and understandable without non-essential animation.
+- **Visual-regression coverage:** Capture controlled desktop, mobile, Arabic RTL, reduced-motion, long-content, known-limitation, no-known-limitation, focused-link, high-zoom, text-enlargement, and unavailable-feedback baselines.
+- **Product Status tests:** Verify accessibility-support claims, conformance targets, implemented features, known limitations, remediation status, language support, feedback channels and review dates match actual approved implementation. Planned accessibility improvements must not be presented as complete.
+- **Clinical-review requirement:** Not normally required for the accessibility statement. Clinical review becomes mandatory when a known limitation or accessibility claim affects Patient safety, clinical content interpretation, charts, alerts, forms, maternal or fetal information, or healthcare-professional workflows.
+- **Form or integration tests:** No feedback form is necessarily embedded on this page. Test feedback and contact links, unavailable-route recovery, accessibility-issue metadata, statement-version and review-date handling, and analytics consent where applicable. If a feedback form is introduced, it requires approved validation, privacy, accessibility, spam-protection, error-handling and delivery tests.
+- **Performance-budget tests:** Test `/accessibility/` and its long-form content, fonts, navigation, links, zoom and reflow behavior against approved Core Web Vitals, JavaScript, content, font, third-party, interaction, and motion budgets in `docs/engineering/PERFORMANCE_BUDGET.md`.
+- **Security tests:** Verify HTTPS and security headers, safe feedback and contact links, escaped statement and limitation content, no private reporter details, security-sensitive vulnerability information, Patient data, or production operational data, consent-controlled analytics, and absence of secrets or sensitive URL parameters.
+- **Staging smoke:** Verify page availability, approved accessibility commitment and target standard, current implementation wording, visible known limitations, feedback and contact routes, review date, Arabic behavior where released, reduced-motion behavior, zoom and reflow, and absence of blocking console or network failures.
+- **Production smoke applicability:** Applicable and non-destructive; verify `/accessibility/`, commitment, target standard, known limitations, review date, feedback and contact links, essential navigation, keyboard access, and basic zoom and reflow without submitting feedback.
 
 ---
 
