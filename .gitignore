@@ -49,3 +49,9 @@ coverage/
 *.key
 secrets/
 *.tsbuildinfo
+
+# Test reports and browser-test artifacts
+storybook-static/
+test-results/
+playwright-report/
+blob-report/
