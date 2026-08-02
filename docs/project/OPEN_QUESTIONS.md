@@ -95,7 +95,7 @@ This document records unresolved questions that could affect the product, conten
 | Q-073 | Which analytics and consent-management systems will be used? | Engineering and privacy | High | Open | CTO |
 | Q-074 | What content-management approach will be used for product status, resources, pricing, and team information? | Engineering and content | High | Open | CTO |
 | Q-075 | Which accessibility compliance target is formally adopted for launch? | Design and engineering | High | Open | Founder |
-| Q-076 | Is Arabic included in the first Qatar launch or delivered in a subsequent release? | Localization and market | Blocking | Open | Founder |
+| Q-076 | Is Arabic included in the first Qatar launch or delivered in a subsequent release? | Localization and market | Blocking | Resolved | Founder |
 | Q-077 | What is the approved website hosting and deployment environment? | Engineering | High | Open | CTO |
 | Q-078 | Who owns clinical claim approval before publication? | Clinical and operations | Blocking | Open | Founder |
 | Q-079 | Who owns Provider and institutional lead follow-up after form submission? | Commercial operations | Blocking | Open | Founder |
@@ -137,7 +137,7 @@ This document records unresolved questions that could affect the product, conten
 | Q-115| Are controlled pilots active when PRO-PG-017 is published? | Product and commercial | Blocking | Open | Founder |
 | Q-116| Which Page IDs require visible clinical author and reviewer metadata? | Clinical content and SEO | High | Open | Clinical lead |
 | Q-117| Which Page IDs require noindex at launch? | SEO and product | High | Open | Marketing and CTO |
-| Q-118| Which Page IDs require Arabic content in the first Qatar release? | Localization and market | Blocking | Open | Founder |
+| Q-118 | Which Page IDs require Arabic content in the first Qatar release? | Localization and market | Blocking | Under review | Founder |
 | Q-119 | Is the current ODRISC logo retained, refined, or replaced? | Brand | Blocking | Open | Founder |
 | Q-120 | Does ODRISC require a standalone brand symbol? | Brand | High | Open | Founder |
 | Q-121 | Does “The Intelligence Layer for Pregnancy Care” appear in the primary logo lockup? | Brand and content | High | Open | Founder |
@@ -198,12 +198,12 @@ This document records unresolved questions that could affect the product, conten
 | Q-174 | Which dependency-security findings block release? | Security | High | Open | CTO |
 | Q-175 | Who approves major production dependency upgrades? | Engineering governance | Blocking | Open | Founder and CTO |
 | Q-176 | Who owns production deployment and rollback? | Infrastructure operations | Blocking | Open | CTO |
-| Q-177 | Who owns the analytics-event registry? | Analytics governance | Blocking | Open | Founder |
+| Q-177 | Who owns the analytics-event registry? | Analytics governance | Blocking | Resolved | Founder |
 | Q-178 | Who owns consent configuration and legal synchronization? | Privacy governance | Blocking | Open | Founder |
 | Q-179 | What is the maximum approved production-container image size? | Infrastructure and performance | Medium | Open | CTO |
 
-| Q-180 | What is the final locale-prefix policy for English and Arabic routes? | Localization, SEO, and architecture | Blocking | Open | Founder and CTO |
-| Q-181 | Will Arabic routes use translated pathnames or shared English path segments? | Localization and SEO | High | Open | Founder |
+| Q-180 | What is the final locale-prefix policy for English and Arabic routes? | Localization, SEO, and architecture | Blocking | Resolved | Founder and CTO |
+| Q-181 | Will Arabic routes use translated pathnames or shared English path segments? | Localization and SEO | High | Resolved | Founder |
 | Q-182 | Which form-delivery provider implements `LeadDeliveryPort`? | Operations and engineering | Blocking | Open | Founder and CTO |
 | Q-183 | Is a persistent form queue required after the first release? | Reliability and operations | Medium | Open | CTO |
 | Q-184 | Which application ports are assigned to the blue and green deployment slots? | Infrastructure | High | Open | CTO |
@@ -282,7 +282,7 @@ This document records unresolved questions that could affect the product, conten
 | Q-256 | Which non-production form-delivery destination is used in staging? | Integration testing | Blocking | Open | CTO |
 | Q-257 | Which analytics container and property are used for staging tests? | Analytics testing | High | Open | Analytics owner |
 | Q-258 | Which Product Status capabilities are release blocking? | Product governance | Blocking | Open | Founder |
-| Q-259 | Which Arabic pages are P0 for first release? | Localization | Blocking | Open | Founder |
+| Q-259 | Which Arabic pages are P0 for first release? | Localization | Blocking | Under review | Founder |
 | Q-260 | Who approves Arabic clinical terminology? | Clinical localization | Blocking | Open | Clinical lead |
 | Q-261 | Which visual snapshots run on every pull request? | Visual QA | High | Open | Design owner |
 | Q-262 | What suite duration triggers Playwright sharding? | CI performance | Medium | Open | CTO |
