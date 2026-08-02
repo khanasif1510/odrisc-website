@@ -2802,10 +2802,13 @@ The repository should expose stable scripts:
     "test:watch": "vitest",
     "test:e2e": "playwright test",
     "storybook": "storybook dev",
-    "build:storybook": "storybook build"
+    "build:storybook": "storybook build",
+    "check": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm validate && pnpm test:coverage && pnpm build"
   }
 }
 ```
+
+End-to-end tests remain separate from the combined quality command so developers can run focused browser checks without repeating the complete static, validation, coverage, and production-build pipeline.
 
 Additional validation scripts are defined by Architecture and Testing Strategy.
 

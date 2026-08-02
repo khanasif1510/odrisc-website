@@ -36,7 +36,8 @@ const approvedScripts = {
   "build:storybook": "storybook build",
   validate:
     "pnpm validate:content && pnpm validate:routes && pnpm validate:components && pnpm validate:i18n && pnpm validate:analytics && pnpm validate:architecture",
-  check: "pnpm format:check && pnpm lint && pnpm typecheck && pnpm test",
+  check:
+    "pnpm format:check && pnpm lint && pnpm typecheck && pnpm validate && pnpm test:coverage && pnpm build",
 } as const;
 
 describe("INF-CFG-001 stable package-script contract", () => {
