@@ -172,3 +172,4 @@ approval are separate responsibilities.
 - `ai/decisions/ADR-006-public-website-information-architecture.md`
 - `ai/decisions/ADR-012-public-website-architecture.md`
 - `ai/decisions/ADR-015-public-website-testing-strategy.md`
+- `docs/engineering/ANALYTICS_EVENT_REGISTRY.md`
