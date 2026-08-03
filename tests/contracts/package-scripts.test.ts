@@ -35,6 +35,7 @@ const approvedScripts = {
   storybook: "storybook dev",
   "build:storybook": "storybook build",
   "validate:routes": "node scripts/validate-routes.mjs",
+  "validate:components": "node scripts/validate-components.mjs",
   "validate:i18n": "node scripts/validate-i18n.mjs",
   validate:
     "pnpm validate:content && pnpm validate:routes && pnpm validate:components && pnpm validate:i18n && pnpm validate:analytics && pnpm validate:architecture",
