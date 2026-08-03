@@ -13,6 +13,11 @@ export default defineConfig({
   test: {
     environment: "node",
     setupFiles: ["./tests/setup/vitest.setup.ts"],
+    server: {
+      deps: {
+        inline: ["next-intl"],
+      },
+    },
     include: [
       "src/**/*.test.{ts,tsx}",
       "tests/integration/**/*.test.{ts,tsx}",
