@@ -34,6 +34,7 @@ const approvedScripts = {
   "test:e2e:update-snapshots": "playwright test --update-snapshots",
   storybook: "storybook dev",
   "build:storybook": "storybook build",
+  "validate:content": "node scripts/validate-content.mjs",
   "validate:routes": "node scripts/validate-routes.mjs",
   "validate:components": "node scripts/validate-components.mjs",
   "validate:i18n": "node scripts/validate-i18n.mjs",

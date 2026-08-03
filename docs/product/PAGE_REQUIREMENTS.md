@@ -4244,6 +4244,7 @@ A topic hub may be created only when:
 
 **Route:** `/about/`
 **Priority:** P0
+**Initial status:** Approved
 **Audience:** Shared
 **Page type:** Company overview
 **PRD requirements:** CON-001
@@ -4621,6 +4622,7 @@ Present current roles and company employment information.
 
 **Route:** `/contact/`
 **Priority:** P0
+**Initial status:** Approved
 **Audience:** Shared
 **Page type:** Contact-routing page
 **PRD requirements:** SHR-007, UX-010, SEC-002, PRV-003, INT-003
@@ -4704,6 +4706,7 @@ The Contact page is not an emergency or medical-consultation service.
 
 **Route:** `/privacy/`
 **Priority:** P0
+**Initial status:** Proposed
 **Audience:** Shared
 **Page type:** Legal page
 **PRD requirements:** PRV-001 to PRV-007
@@ -4762,6 +4765,7 @@ The Contact page is not an emergency or medical-consultation service.
 
 **Route:** `/terms/`
 **Priority:** P0
+**Initial status:** Proposed
 **Audience:** Shared
 **Page type:** Legal page
 **PRD requirements:** SHR-008
