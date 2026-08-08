@@ -40,8 +40,9 @@ const approvedScripts = {
   "validate:i18n": "node scripts/validate-i18n.mjs",
   "validate:analytics": "node scripts/validate-analytics.mjs",
   "validate:architecture": "node scripts/validate-architecture.mjs",
+  "validate:test-policy": "node scripts/validate-test-policy.mjs",
   validate:
-    "pnpm validate:content && pnpm validate:routes && pnpm validate:components && pnpm validate:i18n && pnpm validate:analytics && pnpm validate:architecture",
+    "pnpm validate:content && pnpm validate:routes && pnpm validate:components && pnpm validate:i18n && pnpm validate:analytics && pnpm validate:architecture && pnpm validate:test-policy",
   check:
     "pnpm format:check && pnpm lint && pnpm typecheck && pnpm validate && pnpm test:coverage && pnpm build",
 } as const;
