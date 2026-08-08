@@ -87,7 +87,7 @@ jobs:
         if: ${{ always() }}
         uses: actions/upload-artifact@v6
         with:
-          name: coverage-${{ github.run_id }}
+          name: coverage-${{ github.run_id }}-${{ github.run_attempt }}
           path: coverage
           if-no-files-found: warn
 
@@ -124,7 +124,7 @@ jobs:
         if: ${{ always() }}
         uses: actions/upload-artifact@v6
         with:
-          name: storybook-${{ github.run_id }}
+          name: storybook-${{ github.run_id }}-${{ github.run_attempt }}
           path: storybook-static
           if-no-files-found: warn
 
@@ -171,10 +171,186 @@ jobs:
       - name: Upload standalone release evidence
         uses: actions/upload-artifact@v6
         with:
-          name: standalone-release-${{ github.sha }}
+          name: standalone-release-${{ github.sha }}-${{ github.run_attempt }}
           path: |
             .next/standalone
             .next/static
             public
           if-no-files-found: error
           include-hidden-files: true
+
+  e2e-chromium:
+    name: E2E — Chromium P0
+    needs:
+      - unit-and-component
+      - production-build
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v6
+        with:
+          version: ${{ env.PNPM_VERSION }}
+          run_install: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Install Chromium
+        run: pnpm exec playwright install --with-deps chromium
+
+      - name: Run Chromium P0 tests
+        run: pnpm test:e2e:critical
+
+      - name: Upload Chromium evidence
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v6
+        with:
+          name: e2e-chromium-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            playwright-report
+            test-results
+          if-no-files-found: warn
+
+  e2e-cross-browser-critical:
+    name: E2E — Firefox and WebKit P0
+    needs:
+      - unit-and-component
+      - production-build
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v6
+        with:
+          version: ${{ env.PNPM_VERSION }}
+          run_install: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Install Firefox and WebKit
+        run: pnpm exec playwright install --with-deps firefox webkit
+
+      - name: Run cross-browser P0 tests
+        run: pnpm test:e2e:cross-browser
+
+      - name: Upload cross-browser evidence
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v6
+        with:
+          name: e2e-cross-browser-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            playwright-report
+            test-results
+          if-no-files-found: warn
+
+  e2e-arabic-rtl:
+    name: E2E — Arabic RTL
+    needs:
+      - unit-and-component
+      - production-build
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v6
+        with:
+          version: ${{ env.PNPM_VERSION }}
+          run_install: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Install Chromium
+        run: pnpm exec playwright install --with-deps chromium
+
+      - name: Run Arabic RTL tests
+        run: pnpm test:e2e:rtl
+
+      - name: Upload Arabic RTL evidence
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v6
+        with:
+          name: e2e-arabic-rtl-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            playwright-report
+            test-results
+          if-no-files-found: warn
+
+  e2e-reduced-motion:
+    name: E2E — Reduced Motion
+    needs:
+      - unit-and-component
+      - production-build
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v6
+        with:
+          version: ${{ env.PNPM_VERSION }}
+          run_install: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Install Chromium
+        run: pnpm exec playwright install --with-deps chromium
+
+      - name: Run reduced-motion tests
+        run: pnpm test:e2e:reduced-motion
+
+      - name: Upload reduced-motion evidence
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v6
+        with:
+          name: e2e-reduced-motion-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            playwright-report
+            test-results
+          if-no-files-found: warn
