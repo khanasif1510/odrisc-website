@@ -194,8 +194,8 @@ This document records unresolved questions that could affect the product, conten
 | Q-170 | Which pages use MDX rather than structured page components? | Content architecture | Medium | Open | Content owner |
 | Q-171 | Is Storybook deployed privately or retained only as a CI artifact? | Design engineering | Low | Open | CTO |
 | Q-172 | Which browser versions form the release-blocking support matrix? | QA and engineering | High | Open | CTO |
-| Q-173 | Which visual-regression tests are release blocking? | QA and design | Medium | Open | Design owner |
-| Q-174 | Which dependency-security findings block release? | Security | High | Open | CTO |
+| Q-173 | Which visual-regression tests are release blocking? | QA and design | Medium | Resolved | Design owner |
+| Q-174 | Which dependency-security findings block release? | Security | High | Resolved | CTO |
 | Q-175 | Who approves major production dependency upgrades? | Engineering governance | Blocking | Open | Founder and CTO |
 | Q-176 | Who owns production deployment and rollback? | Infrastructure operations | Blocking | Open | CTO |
 | Q-177 | Who owns the analytics-event registry? | Analytics governance | Blocking | Resolved | Founder |
@@ -284,7 +284,7 @@ This document records unresolved questions that could affect the product, conten
 | Q-258 | Which Product Status capabilities are release blocking? | Product governance | Blocking | Open | Founder |
 | Q-259 | Which Arabic pages are P0 for first release? | Localization | Blocking | Under review | Founder |
 | Q-260 | Who approves Arabic clinical terminology? | Clinical localization | Blocking | Open | Clinical lead |
-| Q-261 | Which visual snapshots run on every pull request? | Visual QA | High | Open | Design owner |
+| Q-261 | Which visual snapshots run on every pull request? | Visual QA | High | Resolved | Design owner |
 | Q-262 | What suite duration triggers Playwright sharding? | CI performance | Medium | Open | CTO |
 | Q-263 | How many Playwright shards are initially approved? | CI performance | Medium | Open | CTO |
 | Q-264 | How long are failed PR and release test artifacts retained? | QA operations | Medium | Open | CTO |
@@ -292,7 +292,7 @@ This document records unresolved questions that could affect the product, conten
 | Q-266 | Is Storybook hosted privately or retained as a CI artifact? | Component QA | Medium | Open | CTO |
 | Q-267 | Which Axe exclusions, if any, are approved initially? | Accessibility | High | Open | Accessibility owner |
 | Q-268 | Which performance checks are release blocking? | Performance QA | High | Open | CTO |
-| Q-269 | Which security scanners are release blocking? | Security QA | Blocking | Open | CTO |
+| Q-269 | Which security scanners are release blocking? | Security QA | Blocking | Resolved | CTO |
 | Q-270 | What form rate limits apply in test environments? | Security testing | High | Open | CTO |
 | Q-271 | What controlled process verifies production form delivery? | Operations QA | Blocking | Open | Founder and CTO |
 | Q-272 | Who may approve a non-P0 test quarantine? | QA governance | Blocking | Open | CTO |
