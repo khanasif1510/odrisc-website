@@ -354,3 +354,150 @@ jobs:
             playwright-report
             test-results
           if-no-files-found: warn
+
+  container-build:
+    name: Container — Build and Runtime
+    needs:
+      - production-build
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Validate Dockerfile
+        run: |
+          docker build \
+            --check \
+            --file infra/docker/Dockerfile \
+            .
+
+      - name: Build production container
+        run: |
+          docker build \
+            --file infra/docker/Dockerfile \
+            --tag odrisc-website:${{ github.sha }} \
+            .
+
+      - name: Verify container configuration
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          configured_user="$(
+            docker image inspect \
+              odrisc-website:${{ github.sha }} \
+              --format '{{.Config.User}}'
+          )"
+
+          test "${configured_user}" = "nextjs"
+
+          docker image inspect \
+            odrisc-website:${{ github.sha }} \
+            --format 'Image: {{.Id}}
+          Architecture: {{.Architecture}}
+          OS: {{.Os}}
+          User: {{.Config.User}}
+          Working directory: {{.Config.WorkingDir}}
+          Healthcheck: {{json .Config.Healthcheck}}' \
+            >container-image-metadata.txt
+
+          printf 'PASS: production image is configured for the nextjs user.\n'
+
+      - name: Verify container runtime and health
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          container_name="odrisc-website-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+
+          cleanup() {
+            docker rm \
+              --force \
+              "${container_name}" \
+              >/dev/null 2>&1 || true
+          }
+
+          trap cleanup EXIT
+
+          docker run \
+            --detach \
+            --name "${container_name}" \
+            --read-only \
+            --tmpfs /tmp \
+            odrisc-website:${{ github.sha }}
+
+          attempt=1
+
+          while [ "${attempt}" -le 30 ]; do
+            health="$(
+              docker inspect \
+                "${container_name}" \
+                --format '{{if .State.Health}}{{.State.Health.Status}}{{else}}missing{{end}}'
+            )"
+
+            printf 'Attempt %s: %s\n' "${attempt}" "${health}"
+
+            if [ "${health}" = "healthy" ]; then
+              runtime_user="$(
+                docker exec \
+                  "${container_name}" \
+                  id -u
+              )"
+
+              test "${runtime_user}" = "1001"
+
+              read_only_root="$(
+                docker inspect \
+                  "${container_name}" \
+                  --format '{{.HostConfig.ReadonlyRootfs}}'
+              )"
+
+              test "${read_only_root}" = "true"
+
+              docker inspect \
+                "${container_name}" \
+                --format 'Status: {{.State.Status}}
+          Health: {{.State.Health.Status}}
+          Read-only root: {{.HostConfig.ReadonlyRootfs}}' \
+                >container-runtime-metadata.txt
+
+              docker logs \
+                "${container_name}" \
+                >container-runtime.log 2>&1
+
+              printf 'PASS: container reached healthy state as UID 1001.\n'
+              exit 0
+            fi
+
+            if [ "${health}" = "unhealthy" ] || [ "${health}" = "missing" ]; then
+              docker inspect \
+                "${container_name}" \
+                --format '{{json .State.Health}}'
+
+              docker logs "${container_name}"
+              exit 1
+            fi
+
+            sleep 2
+            attempt=$((attempt + 1))
+          done
+
+          docker inspect \
+            "${container_name}" \
+            --format '{{json .State.Health}}'
+
+          docker logs "${container_name}"
+          exit 1
+
+      - name: Upload container evidence
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v6
+        with:
+          name: container-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            container-image-metadata.txt
+            container-runtime-metadata.txt
+            container-runtime.log
+          if-no-files-found: warn
