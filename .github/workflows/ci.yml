@@ -1,4 +1,4 @@
-name: ESLint
+name: Continuous Integration
 
 on:
   pull_request:
@@ -9,14 +9,18 @@ permissions:
   contents: read
 
 concurrency:
-  group: eslint-${{ github.workflow }}-${{ github.ref }}
+  group: ci-${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+env:
+  NODE_VERSION: 24.18.0
+  PNPM_VERSION: 11.17.0
+
 jobs:
-  eslint:
-    name: ESLint
+  quality-static:
+    name: Quality — Static
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
 
     steps:
       - name: Checkout repository
@@ -25,18 +29,27 @@ jobs:
       - name: Set up pnpm
         uses: pnpm/action-setup@v6
         with:
-          version: 11.17.0
+          version: ${{ env.PNPM_VERSION }}
           run_install: false
 
       - name: Set up Node.js
         uses: actions/setup-node@v7
         with:
-          node-version: 24.18.0
+          node-version: ${{ env.NODE_VERSION }}
           cache: pnpm
           cache-dependency-path: pnpm-lock.yaml
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Check formatting
+        run: pnpm format:check
+
       - name: Run ESLint
-        run: pnpm exec eslint . --max-warnings=0
+        run: pnpm lint
+
+      - name: Check TypeScript
+        run: pnpm typecheck
+
+      - name: Validate repository contracts
+        run: pnpm validate
