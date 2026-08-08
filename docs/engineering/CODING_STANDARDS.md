@@ -3252,6 +3252,7 @@ The following decisions are locked unless formally changed:
 61. Exceptions are documented and time bounded.
 62. Material standards changes require approval.
 63. Passing compilation alone does not make work complete.
+64. Fast formatting, linting, type checking, and focused tests may run locally; full release gates remain in CI.
 
 ---
 
@@ -3270,8 +3271,6 @@ The following remain unresolved:
 - Which code-size review signals become automated lint thresholds?
 - Is a Git-hook runner approved?
 - Is `lint-staged` approved?
-- Which pre-commit checks are mandatory?
-- Which checks run only in CI?
 - Which architecture restrictions are implemented through ESLint versus validation scripts?
 - Are server-only import restrictions implemented with ESLint, TypeScript, or both?
 - Which generated directories are committed?
