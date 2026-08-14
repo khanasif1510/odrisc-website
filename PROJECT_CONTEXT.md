@@ -26,8 +26,8 @@ The following documents define the approved product and website direction:
 - `docs/design/BRAND_FOUNDATION.md` - Defines the canonical ODRISC brand purpose, positioning, personality, voice, visual principles, color roles, imagery, clinical trust expression, localization principles, and prohibited brand expressions.
 - `docs/design/DESIGN_SYSTEM.md` - Defines the canonical design tokens, typography, color system, semantic colors, spacing, grid, responsive behavior, component rules, Patient and Provider variants, accessibility, and RTL requirements.
 - `docs/design/ANIMATION_GUIDELINES.md` - Defines the canonical motion principles, timing tokens, narrative animation, component transitions, data-animation rules, reduced-motion behavior, performance requirements, and RTL motion guidance.
-- `docs/engineering/TECH_STACK.md` - Defines the approved runtime, framework, rendering strategy, language, styling, content, localization, API, analytics, testing, security, hosting, deployment, and dependency-selection technologies for the public website.
-- `docs/engineering/ARCHITECTURE.md` - Defines the public website's system boundaries, repository structure, rendering model, Server and Client Component boundaries, content pipeline, integration adapters, form and analytics flows, security zones, deployment topology, and rollback architecture.
+- `docs/engineering/TECH_STACK.md` - Defines the approved runtime, framework, rendering strategy, language, styling, content, localization, API, analytics, testing, security, local build, and dependency-selection technologies for the public website.
+- `docs/engineering/ARCHITECTURE.md` - Defines the public website's system boundaries, repository structure, rendering model, Server and Client Component boundaries, static content pipeline, form and analytics boundaries, and local build architecture.
 - `docs/engineering/COMPONENT_LIBRARY.md` - Defines the canonical reusable-component taxonomy, stable Component IDs, Server and Client classifications, component contracts, audience variants, accessibility, RTL, motion, analytics ownership, Storybook requirements, testing, and lifecycle governance.
 - `docs/engineering/CODING_STANDARDS.md` - Defines the canonical TypeScript, React, Next.js, naming, formatting, validation, error-handling, logging, analytics, accessibility, localization, testing, review, and AI-generated-code standards.
 - `docs/engineering/TESTING_STRATEGY.md` - Defines the canonical static, unit, component, integration, contract, accessibility, visual, browser, Arabic, RTL, reduced-motion, staging, production, coverage, flaky-test, and release-verification requirements.
@@ -1196,7 +1196,7 @@ The following matters will be resolved in subsequent project documents:
 - Clinical-reference governance
 - Product capability status
 - Final technical stack
-- Hosting and deployment
+- Local build and manual publication
 - Integration with the existing ODRISC application
 - Provider portal relationship
 - Patient application relationship

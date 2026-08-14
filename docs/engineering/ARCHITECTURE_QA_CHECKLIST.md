@@ -57,7 +57,7 @@
 - [ ] Health-check implications are defined
 - [ ] Logs contain request and release identifiers
 - [ ] Cache behavior is defined
-- [ ] Deployment works with immutable images
+- [ ] Production build passes locally and is ready for manual publication
 - [ ] Rollback does not require rebuilding
 - [ ] Staging noindex remains active
 

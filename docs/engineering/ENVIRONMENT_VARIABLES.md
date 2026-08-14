@@ -35,4 +35,4 @@ No real secret values belong in this file.
 
 Environment-varying public values must be exposed only through the allowlisted `/api/config/public` response or server-rendered approved configuration.
 
-`NEXT_PUBLIC_*` variables are reserved for intentionally public values that do not need to change when the same immutable image is promoted between environments.
+`NEXT_PUBLIC_*` variables are reserved for intentionally public values required by the locally built application.

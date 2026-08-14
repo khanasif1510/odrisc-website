@@ -12,9 +12,9 @@ Approved
 
 The ODRISC Technology Stack defines the approved technologies for the public website.
 
-Implementation requires a canonical architecture that determines how routes, content, components, integrations, security boundaries, runtime configuration, forms, analytics, deployment, and rollback fit together.
+Implementation requires a canonical architecture that determines how routes, content, components, static sample data, security boundaries, runtime configuration, forms, analytics, and local builds fit together.
 
-Without this architecture, human and AI contributors may create excessive Client Components, place vendor logic in pages, duplicate Product Status, access external systems inconsistently, expose runtime values, or deploy through incompatible infrastructure patterns.
+Without this architecture, human and AI contributors may create excessive Client Components, duplicate Product Status, introduce unapproved live data access, expose runtime values, or create incompatible build assumptions.
 
 ## Decision
 
@@ -29,31 +29,27 @@ The ODRISC public website will use:
 - An internal top-level locale segment
 - Repository-controlled content under `src/content`
 - Typed and validated Product Status
-- Application services and replaceable integration adapters
+- Repository-controlled static sample-data modules
 - Server Actions for same-origin public-form mutations
 - Route Handlers for health, runtime configuration, webhooks, and machine endpoints
-- No website-owned database
+- No database connections
 - No website-owned authentication
-- No direct SQL Server access
+- No direct or indirect SQL Server access
 - Consent-aware analytics abstraction
 - Runtime allowlisting of environment-varying public configuration
 - Structured logging and request IDs
-- Deployment-based content invalidation in V1
-- Docker Compose-managed application containers
-- Host-managed Nginx
-- Blue-green deployment slots
-- Immutable-image promotion and rollback
+- Local production builds followed by manual publication
 
 ## Consequences
 
 - Routes and page components must remain thin.
-- Vendor SDKs remain behind adapters.
+- Live data and database SDKs are not introduced.
 - Client Components require justification.
 - Product Status has one code representation.
 - Public forms cannot collect clinical information.
 - The public website remains separated from ODRISC clinical systems.
-- The same image can be promoted between environments.
-- Architecture validation must run in CI.
+- Static sample data remains synthetic, reviewable, and version controlled.
+- Architecture validation must pass locally before publication.
 - Material architecture changes require a new ADR.
 
 ## Alternatives Considered
@@ -70,9 +66,9 @@ Rejected because both journeys belong to one public brand and website.
 
 Rejected because it would couple presentation code to external systems.
 
-### Website-Owned Database
+### Website-Owned or External Database
 
-Deferred because V1 does not require persistent website state.
+Rejected because the approved website experience uses repository-controlled static sample data and requires no persistent website state.
 
 ### Microservices
 
@@ -85,10 +81,6 @@ Rejected because requirements documentation and published website content have d
 ### Request-Time CMS Rendering
 
 Deferred because V1 content remains repository controlled.
-
-### In-Place Container Replacement
-
-Rejected as the preferred release model because blue-green slots provide safer rollback and lower downtime.
 
 ## Related Documents
 

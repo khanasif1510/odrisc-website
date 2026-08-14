@@ -2650,6 +2650,67 @@ Must not display placeholder registration or payment actions.
 
 ---
 
+## CMP-FTR-111 — Personal Pregnancy Journey
+
+**Runtime:** Client motion component within Server page composition
+**Motion ID:** `MOT-PAT-002`
+**Location:** `src/components/patient/personal-pregnancy-journey.tsx`
+
+Explains the conceptual progression from individual pregnancy context through assessment and a
+personalised longitudinal journey.
+
+Must:
+
+- Use illustrative, non-Patient values only
+- Present risk as context rather than diagnosis
+- Keep support and professional guidance language status-aware
+- Preserve the complete Assess → Personalise → Support meaning without animation
+- Render a vertical pregnancy sequence on mobile
+- Respect reduced-motion preferences by showing the completed static state
+
+---
+
+## CMP-FTR-112 — Maternal Trajectory Visual
+
+**Runtime:** Client motion component within Server page composition
+**Motion ID:** `MOT-PAT-003`
+**Location:** `src/components/patient/maternal-trajectory-visual.tsx`
+
+Explains how illustrative maternal measurement moments can be understood as a connected trajectory
+across pregnancy.
+
+Must:
+
+- Identify every displayed value as illustrative rather than Patient data or clinical guidance
+- Present change over time without thresholds, diagnosis, or clinical recommendations
+- Keep the personalised range non-semantic and free of clinical status colours
+- Preserve the complete measurement → trajectory → direction story without animation
+- Use a vertical reading sequence on mobile
+- Introduce fetal growth only as a subtle bridge to the next narrative section
+- Respect reduced-motion preferences by showing the completed static state
+
+---
+
+## CMP-FTR-113 — Fetal Growth Journey Visual
+
+**Runtime:** Client motion component within Server page composition
+**Motion ID:** `MOT-PAT-004`
+**Location:** `src/components/patient/fetal-growth-journey-visual.tsx`
+
+Explains how illustrative ultrasound moments can contribute to a connected view of fetal growth
+over time while continuing the narrative from the maternal trajectory section.
+
+Must:
+
+- Identify scan content and measurement moments as illustrative rather than clinical interpretation
+- Present gestational progression without percentiles, thresholds, diagnosis, or recommendations
+- Preserve the complete snapshots → measurements → growth journey story without animation
+- Use a vertical reading sequence on mobile
+- Keep maternal and fetal trajectories parallel and unconnected as the bridge to the next section
+- Respect reduced-motion preferences by showing the completed static state
+
+---
+
 # 36. Provider Feature Component Registry
 
 ## CMP-FTR-201 — Provider Hero

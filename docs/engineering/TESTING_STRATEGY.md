@@ -128,10 +128,9 @@ This strategy applies to:
 - Runtime configuration
 - SEO outputs
 - Security headers
-- Docker images
-- Nginx behavior
-- Deployment and rollback
-- Production health and smoke verification
+- Local production builds
+- Static sample-data validation
+- Manual pre-publication verification
 
 It does not validate the correctness of:
 
@@ -350,10 +349,8 @@ The approved testing toolchain is:
 | Automated accessibility       | Axe through Storybook and Playwright |
 | Visual comparison             | Playwright screenshot assertions     |
 | Coverage                      | Vitest V8 coverage                   |
-| CI                            | GitHub Actions                       |
 | Production build verification | Next.js production build             |
-| Container verification        | Docker build and scan                |
-| Deployment verification       | Health checks and smoke tests        |
+| Publication verification      | Local smoke and accessibility checks |
 
 A second unit-test runner, E2E runner, accessibility engine, or visual-testing platform must not be introduced without approval.
 
@@ -724,7 +721,7 @@ Poor unit-test subjects:
 - Complete page journeys
 - Real browser focus
 - Responsive layouts
-- Nginx behavior
+- Hosting behavior, which is outside repository test scope
 - External provider uptime
 - Actual analytics transmission
 
@@ -1110,7 +1107,7 @@ Main-branch validation must run:
 - Reduced-motion suite
 - Accessibility suite
 - Selected visual regression
-- Production build and container build
+- Local production build
 
 ---
 
@@ -2105,7 +2102,7 @@ Staging and production smoke tests should verify approved headers, including:
 - HSTS in production
 - Staging `X-Robots-Tag`
 
-Exact values belong in the Security Architecture and Nginx configuration.
+Exact application-level values belong in the Security Architecture.
 
 ---
 
@@ -2195,26 +2192,9 @@ The production image must be tested before publication.
 
 ---
 
-# 81. Nginx and Deployment Testing
+# 81. Local Build and Manual Publication Testing
 
-Infrastructure verification must cover:
-
-- Configuration syntax
-- TLS routing
-- HTTPS redirect
-- Request ID propagation
-- Proxy headers
-- Static caching
-- No-store routes
-- Request-size limits
-- Rate limiting
-- Security headers
-- Blue-green upstream switching
-- Safe reload
-- Rollback
-- Loopback-only application port
-
-Infrastructure changes require staging verification.
+Pre-publication verification must cover the local production build, representative routes, static sample-data labels, localization, accessibility, security-sensitive output, and critical navigation. Hosting infrastructure is outside this testing strategy.
 
 ---
 
@@ -2640,7 +2620,7 @@ Required pull-request gates:
 15. Relevant reduced-motion tests
 16. Selected visual regression
 17. Dependency and secret checks
-18. Docker build where application infrastructure is affected
+18. Final local production build
 
 A required gate may not be marked optional solely to merge a failing change.
 
@@ -2717,25 +2697,23 @@ Broad serial suites are discouraged.
 
 ---
 
-# 105. Staging Verification
+# 105. Manual Pre-Publication Verification
 
-After deploying the approved immutable image to staging:
+Before manual publication of the locally verified build:
 
-1. Verify liveness.
-2. Verify readiness.
-3. Verify release identity.
-4. Verify security headers.
-5. Verify noindex.
-6. Run staging smoke.
-7. Run P0 browser suite.
-8. Test forms with non-production destination.
-9. Test analytics with test identifiers.
-10. Test consent.
-11. Test English and Arabic.
-12. Test mobile.
-13. Review visual changes.
-14. Complete manual release QA.
-15. Record approval.
+1. Verify representative routes.
+2. Verify static sample-data labels and provenance.
+3. Verify security-sensitive output.
+4. Run the local smoke suite.
+5. Run the P0 browser suite.
+6. Test forms without submitting real information.
+7. Test analytics with test identifiers where configured.
+8. Test consent.
+9. Test English and Arabic.
+10. Test mobile.
+11. Review visual changes.
+12. Complete manual release QA.
+13. Record approval.
 
 Staging must use the same image intended for production.
 
@@ -2782,27 +2760,15 @@ After production deployment, monitor:
 - CSP violations
 - Broken handoffs
 - Unexpected 404s
-- Deployment release identity
-- Nginx errors
+- Published build identity where the owner records one
 
 Monitoring thresholds and incident actions belong in the operational runbook.
 
 ---
 
-# 108. Rollback Verification
+# 108. Publication Recovery
 
-Every release must preserve a tested rollback route.
-
-Rollback verification must confirm:
-
-- Previous image exists
-- Previous slot starts
-- Health check passes
-- Nginx can switch safely
-- Public routes respond
-- Release identity changes correctly
-- Failed release artifacts remain available
-- Rollback reason is recorded
+Hosting recovery and rollback are manual owner responsibilities outside this repository. The repository must retain reproducible source history and a verified local build process.
 
 Rollback must not require rebuilding the prior release.
 
@@ -2916,7 +2882,7 @@ Tests must be reviewed when:
 - Browser versions change
 - Framework or library versions change
 - Accessibility behavior changes
-- Deployment topology changes
+- Manual publication requirements change
 
 Stale tests create false confidence.
 
@@ -3044,14 +3010,13 @@ The following decisions are locked unless formally changed:
 37. Critical modules use higher path-specific thresholds.
 38. Coverage does not replace requirement verification.
 39. Every defect fix requires regression evidence.
-40. Staging receives full P0 release verification.
-41. The same immutable image is promoted to production.
-42. Production receives non-destructive smoke verification.
-43. Rollback must be tested.
-44. Test reports must exclude sensitive data.
-45. AI-generated tests receive full review.
-46. Passing compilation alone does not constitute release evidence.
-47. Material test-strategy changes require approval and an ADR.
+40. The final local build receives full P0 release verification.
+41. The verified local build is selected for manual publication.
+42. Published output receives non-destructive smoke verification where practical.
+43. Test reports must exclude sensitive data.
+44. AI-generated tests receive full review.
+45. Passing compilation alone does not constitute release evidence.
+46. Material test-strategy changes require approval and an ADR.
 
 ---
 

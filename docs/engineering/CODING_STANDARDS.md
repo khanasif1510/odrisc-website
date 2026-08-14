@@ -117,12 +117,9 @@ These standards apply to:
 - ESLint configuration
 - TypeScript configuration
 - Tailwind and CSS configuration
-- Docker and deployment scripts
-- Nginx configuration stored in the repository
-- GitHub Actions
 - Content-processing utilities
 - Generated API contracts
-- Infrastructure automation
+- Local build and validation automation
 - Test fixtures
 
 They do not directly govern:

@@ -250,7 +250,7 @@
 ## Technology Stack
 
 - The public website must use the approved technologies in `docs/engineering/TECH_STACK.md`.
-- Use Node.js 24 LTS and pnpm 11 consistently across local, CI, Docker, and production.
+- Use Node.js 24 LTS and pnpm 11 consistently for local development and local production builds.
 - Use Next.js 16 with the App Router.
 - React Server Components are the default.
 - Use strict TypeScript.
@@ -260,21 +260,22 @@
 - Use Motion for React as the only approved motion library.
 - Use next-intl for localization foundations.
 - Use repository-controlled content in V1.
-- Do not introduce a CMS, website database, or website authentication without approval.
+- Do not introduce a CMS, website database, database connection, or website authentication.
+- Use repository-controlled static sample data for all public demonstrations and visualizations.
 - Use native Fetch for HTTP.
 - Do not connect the public website directly to SQL Server.
 - Validate external data with Zod.
 - Analytics must pass through the approved wrapper and consent layer.
 - Public forms must not collect unnecessary medical information.
 - Use Vitest, Playwright, and Axe for automated quality checks.
-- Package production through Docker using Next.js standalone output.
-- Use immutable deployment artifacts and retain rollback capability.
+- Build and verify the website locally before manual publication.
 - New dependencies require documented justification.
 
 ## Engineering Architecture
 
 - The public website is a modular monolith.
-- The public website must remain separate from clinical and operational databases.
+- The public website must not connect to clinical, operational, or website databases.
+- Runtime content and demonstrations must use repository-controlled static sample data.
 - Public pages must be static-first.
 - React Server Components are the default.
 - Client Component boundaries must remain small and justified.
@@ -282,7 +283,7 @@
 - Public URLs must follow the approved Information Architecture.
 - Internal documentation must not be parsed as runtime website content.
 - Product Status must have one controlled code representation.
-- External services must be accessed through adapters.
+- External services may be introduced only for an explicitly approved non-data requirement and must be accessed through adapters.
 - Page and UI components must not import vendor SDKs directly.
 - Public forms must use approved application services and validation.
 - Server Actions must be treated as public server endpoints.
@@ -290,9 +291,7 @@
 - Analytics must pass through the consent-aware internal wrapper.
 - The website must not collect sensitive clinical information.
 - Environment-varying client configuration must not be compiled indiscriminately into `NEXT_PUBLIC_*` values.
-- Production must use immutable Docker images.
-- The application container must not expose a public port directly.
-- Low-downtime deployment and rollback are mandatory.
+- Publishing is a manual operation performed from a verified local build.
 - Material architecture changes require an ADR.
 
 ## Component Library
