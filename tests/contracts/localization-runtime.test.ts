@@ -1,4 +1,5 @@
 import { describe, expect, it, vi } from "vitest";
+import { NextRequest } from "next/server";
 
 vi.mock("next-intl/server", () => ({
   getRequestConfig: (configuration: unknown) => configuration,
@@ -63,5 +64,19 @@ describe("INF-CFG-002 localization runtime contract", () => {
     expect(proxyConfig).toEqual({
       matcher: "/((?!api|trpc|_next|_vercel|.*\\..*).*)",
     });
+  });
+
+  it("rewrites unprefixed English routes without changing their public URL", () => {
+    const response = proxy(new NextRequest("https://odrisc.com/patients/"));
+
+    expect(response.status).toBe(200);
+    expect(response.headers.get("x-middleware-rewrite")).toBe("https://odrisc.com/en/patients/");
+  });
+
+  it("canonicalizes directly requested English-prefixed routes", () => {
+    const response = proxy(new NextRequest("https://odrisc.com/en/patients/"));
+
+    expect(response.status).toBe(307);
+    expect(response.headers.get("location")).toBe("https://odrisc.com/patients/");
   });
 });

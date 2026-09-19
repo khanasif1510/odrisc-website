@@ -574,18 +574,17 @@ Every badge must include visible text.
 ## 12.1 Approved V1 Latin Typeface
 
 ```text
-Inter
+Manrope
 ```
 
 Fallback stack:
 
 ```css
-Inter,
-ui-sans-serif,
-system-ui,
--apple-system,
-BlinkMacSystemFont,
-"Segoe UI",
+Manrope,
+"Noto Sans Arabic",
+"Helvetica Neue",
+Tahoma,
+Arial,
 sans-serif
 ```
 
@@ -634,16 +633,16 @@ Font delivery must:
 
 | Token        | Desktop | Mobile | Weight | Line height |
 | ------------ | ------: | -----: | -----: | ----------: |
-| `display-xl` |    72px |   48px |    600 |        1.05 |
-| `display-lg` |    64px |   44px |    600 |        1.08 |
-| `display-md` |    56px |   40px |    600 |        1.10 |
+| `display-xl` |    72px |   48px |    500 |        1.05 |
+| `display-lg` |    64px |   44px |    500 |        1.08 |
+| `display-md` |    56px |   40px |    500 |        1.10 |
 
 ## 13.2 Headings
 
 | Token       | Desktop | Mobile | Weight | Line height |
 | ----------- | ------: | -----: | -----: | ----------: |
-| `heading-1` |    48px |   36px |    600 |        1.15 |
-| `heading-2` |    40px |   32px |    600 |        1.20 |
+| `heading-1` |    48px |   36px |    500 |        1.15 |
+| `heading-2` |    40px |   32px |    500 |        1.20 |
 | `heading-3` |    32px |   26px |    600 |        1.25 |
 | `heading-4` |    24px |   22px |    600 |        1.30 |
 | `heading-5` |    20px |   18px |    600 |        1.35 |
@@ -2225,7 +2224,7 @@ AI agents must not:
 
 The following are approved V1 decisions:
 
-1. Inter is the primary Latin typeface.
+1. Manrope is the primary Latin typeface.
 2. Noto Sans Arabic is the primary Arabic typeface.
 3. White remains the dominant background.
 4. `#4D4D4D` remains the primary text color.

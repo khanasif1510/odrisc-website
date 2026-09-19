@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { hasLocale } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -9,7 +10,11 @@ import {
   PatientImageNarrative,
   PersonalPregnancyStory,
 } from "@/components/patient/connected-pregnancy-journey";
+import { PatientSectionSixVideo } from "@/components/patient/patient-section-six-video";
+import { PatientSectionSevenAbout } from "@/components/patient/patient-section-seven-about";
 import { ResponsivePatientHeroVideo } from "@/components/responsive-patient-hero-video";
+import { PatientToolsFrame } from "@/components/patient/patient-tools-frame";
+import { PatientCareTierFrames } from "@/components/patient/patient-care-tier-frames";
 import { routing } from "@/i18n/routing";
 
 import { SiteHeader } from "../_components/site-header";
@@ -19,35 +24,67 @@ export const metadata: Metadata = {
   description: "A supportive, connected view of your pregnancy journey.",
 };
 
-const tools = [
-  {
-    number: "01",
-    title: "Risk awareness",
-    href: "risk-awareness",
-    status: "Status to confirm",
-    body: "Understand contributing factors and prepare more informed questions for your healthcare professional.",
-  },
-  {
-    number: "02",
-    title: "Nutrition support",
-    href: "nutrition",
-    status: "Status to confirm",
-    body: "Explore pregnancy-aware nutrition principles designed to support conversations with qualified professionals.",
-  },
-  {
-    number: "03",
-    title: "Activity guidance",
-    href: "physical-activity",
-    status: "Status to confirm",
-    body: "Learn about trimester-aware movement with clear safety boundaries and professional guidance.",
-  },
-  {
-    number: "04",
-    title: "Weight monitoring",
-    href: "weight-monitoring",
-    status: "Status to confirm",
-    body: "See how change over time can be understood without stigma, pressure or isolated numbers.",
-  },
+const journeyCapabilityColumns = [
+  [
+    {
+      title: "RAS Test",
+      description: "Assess your Risk for Gestational diabetes",
+      image: "/media/patient-connected-story/capability-ras-test-desktop-122x116-v1.png",
+      mobileImage: "/media/patient-connected-story/capability-ras-test-mobile-96x116-v1.png",
+      imageAlt: "Visual representing the RAS Test",
+    },
+    {
+      title: "Nutrition",
+      description: "Nourishment for healthier conception & pregnancy",
+      image: "/media/patient-connected-story/capability-nutrition-desktop-122x116-v1.png",
+      mobileImage: "/media/patient-connected-story/capability-nutrition-mobile-96x116-v1.png",
+      imageAlt: "Visual representing nutrition",
+    },
+    {
+      title: "Fitness",
+      description: "Activity to benefit Conception & Pregnancy",
+      image: "/media/patient-connected-story/capability-fitness-desktop-122x116-v1.png",
+      mobileImage: "/media/patient-connected-story/capability-fitness-mobile-96x116-v1.png",
+      imageAlt: "Visual representing fitness",
+    },
+    {
+      title: "Monitor",
+      description: "Healthy Weight is Vital for Conception & Pregnancy",
+      image: "/media/patient-connected-story/capability-monitor-desktop-122x116-v1.png",
+      mobileImage: "/media/patient-connected-story/capability-monitor-mobile-96x116-v1.png",
+      imageAlt: "Visual representing monitoring",
+    },
+  ],
+  [
+    {
+      title: "Gestational Age",
+      description: "Consistent gestational-age context",
+      image: "/media/patient-connected-story/capability-gestational-age-desktop-122x116-v1.png",
+      mobileImage: "/media/patient-connected-story/capability-gestational-age-mobile-96x116-v1.png",
+      imageAlt: "Visual representing gestational age",
+    },
+    {
+      title: "Biometry",
+      description: "Longitudinal Fetal Growth Timeline",
+      image: "/media/patient-connected-story/capability-biometry-desktop-122x116-v1.png",
+      mobileImage: "/media/patient-connected-story/capability-biometry-mobile-96x116-v1.png",
+      imageAlt: "Visual representing fetal biometry",
+    },
+    {
+      title: "Growth Analysis",
+      description: "Continuous Tracking across the Scans",
+      image: "/media/patient-connected-story/capability-growth-analysis-desktop-122x116-v1.png",
+      mobileImage: "/media/patient-connected-story/capability-growth-analysis-mobile-96x116-v1.png",
+      imageAlt: "Visual representing fetal growth analysis",
+    },
+    {
+      title: "Doppler & Staging",
+      description: "Protocol aligned Staging",
+      image: "/media/patient-connected-story/capability-doppler-staging-desktop-122x116-v1.png",
+      mobileImage: "/media/patient-connected-story/capability-doppler-staging-mobile-96x116-v1.png",
+      imageAlt: "Visual representing Doppler and staging",
+    },
+  ],
 ] as const;
 
 export default async function PatientPage({
@@ -92,8 +129,8 @@ export default async function PatientPage({
           </div>
           <span className="eyebrow">Your pregnancy is one connected journey.</span>
           <h1>
-            <span className="hero-title-line">Understand your health.</span>
-            <span className="hero-title-line">Follow your baby’s growth.</span>
+            <span className="hero-title-line">Understand<br className="patient-hero-mobile-break" /> your health.</span>
+            <span className="hero-title-line">Follow your<br className="patient-hero-mobile-break" /> baby’s growth.</span>
             <em className="hero-title-line">See the whole picture.</em>
           </h1>
           <p className="hero-lead">
@@ -105,7 +142,7 @@ export default async function PatientPage({
             <a className="button primary" href="https://app.odrisc.com">
               Start Your Journey
             </a>
-            <a className="button quiet" href="#safety">
+            <a className="button quiet" href={`${prefix}/about/`}>
               Explore ODRISC
             </a>
           </div>
@@ -120,6 +157,31 @@ export default async function PatientPage({
             <span>ODRISC connects maternal health and fetal growth over time,</span>
             <span>creating a clearer, more continuous view of your pregnancy journey.</span>
           </p>
+          <div className="journey-capability-grid" aria-label="ODRISC support areas">
+            {journeyCapabilityColumns.map((column) => (
+              <div className="journey-capability-column" key={column[0].title}>
+                {column.map((capability) => (
+                  <article className="journey-capability-card" key={capability.title}>
+                    <div className="journey-capability-image">
+                      <picture>
+                        <source media="(max-width: 760px)" srcSet={capability.mobileImage} />
+                        <Image
+                          src={capability.image}
+                          alt={capability.imageAlt}
+                          fill
+                          sizes="(max-width: 760px) 96px, 122px"
+                        />
+                      </picture>
+                    </div>
+                    <div className="journey-capability-copy">
+                      <h3>{capability.title}</h3>
+                      <p>{capability.description}</p>
+                    </div>
+                  </article>
+                ))}
+              </div>
+            ))}
+          </div>
         </div>
         <ConnectedPregnancyJourney>
           <div className="journey-copy">
@@ -178,8 +240,14 @@ export default async function PatientPage({
       >
         <div className="journey-copy maternal-trajectory-copy">
           <span className="eyebrow">Your health in motion</span>
-          <h2>
-            What matters is where your <span>pregnancy is progressing.</span>
+          <h2 className="maternal-trajectory-title">
+            <span className="maternal-trajectory-title-line">What matters is where</span>{" "}
+            <span className="maternal-trajectory-title-line">
+              your <span className="maternal-trajectory-title-accent">pregnancy is</span>
+            </span>{" "}
+            <span className="maternal-trajectory-title-line maternal-trajectory-title-accent">
+              progressing.
+            </span>
           </h2>
           <div className="maternal-trajectory-body">
             <p>
@@ -211,71 +279,201 @@ export default async function PatientPage({
           </h2>
           <div className="fetal-growth-body">
             <p>
-              Every ultrasound provides an important snapshot of your baby&apos;s growth, but
-              understanding how that growth changes across pregnancy can reveal a much clearer
-              picture.
-            </p>
-            <p>
               ODRISC Fetal Intelligence is designed to bring measurements from across pregnancy
               together, helping transform individual snapshots into a continuous view of how a baby
               is growing over time.
             </p>
           </div>
+          <AnimatedJourneyChecklist
+            items={[
+              "See each ultrasound as one moment in your baby’s growth.",
+              "Bring measurements across pregnancy together into one continuous view.",
+              "Follow growth over time with greater clarity and context.",
+            ]}
+          />
         </div>
       </PatientImageNarrative>
 
-      <section id="tools" className="section patient-tools">
-        <div className="section-heading">
-          <span className="eyebrow">A clearer path forward</span>
-          <h2>Four connected areas of support</h2>
-          <p>
-            The initial Patient experience draws on the wellness journey in your reference material
-            while keeping availability transparent.
-          </p>
+      <PatientToolsFrame>
+        <PatientSectionSixVideo />
+      </PatientToolsFrame>
+
+      <section id="about-odrisc" className="section patient-section-seven">
+        <div className="section-seven-intro">
+          <PatientSectionSevenAbout href={`${prefix}/about/`} />
+          <div className="section-seven-care-marker" aria-label="Pregnancy Care">
+            <span className="section-seven-care-capsule" aria-hidden="true" />
+            <span className="section-seven-care-label">Pregnancy Care</span>
+            <span className="section-seven-care-line" aria-hidden="true" />
+          </div>
         </div>
-        <div className="tool-grid">
-          {tools.map((tool) => (
-            <a className="tool-card" href={`${prefix}/patients/${tool.href}/`} key={tool.number}>
-              <span className="tool-number">{tool.number}</span>
-              <div className="tool-icon" aria-hidden="true">
-                <span />
+        <div className="section-seven-intelligence-stage">
+          <div className="section-seven-intelligence">
+            <div className="section-seven-frame-grid" aria-label="Connected pregnancy care moments">
+              <figure className="section-seven-frame section-seven-frame-primary">
+                <picture>
+                  <source
+                    media="(max-width: 760px)"
+                    srcSet="/media/patient-connected-story/pregnancy-care-couple-primary-mobile-1144x1375-v1.png"
+                  />
+                  <Image
+                    src="/media/patient-connected-story/pregnancy-care-couple-primary-desktop-1145x1374-v1.png"
+                    alt="An expectant couple sharing a quiet moment together"
+                    fill
+                    sizes="(max-width: 760px) 46vw, 32vw"
+                  />
+                </picture>
+              </figure>
+              <figure className="section-seven-frame section-seven-frame-secondary">
+                <picture>
+                  <source
+                    media="(max-width: 760px)"
+                    srcSet="/media/patient-connected-story/pregnancy-care-consultation-secondary-mobile-1030x1527-v1.png"
+                  />
+                  <Image
+                    src="/media/patient-connected-story/pregnancy-care-consultation-secondary-desktop-935x1683-v1.png"
+                    alt="A pregnant woman speaking with a healthcare professional"
+                    fill
+                    sizes="(max-width: 760px) 46vw, 32vw"
+                  />
+                </picture>
+              </figure>
+              <figure className="section-seven-frame section-seven-frame-wide">
+                <picture>
+                  <source
+                    media="(max-width: 760px)"
+                    srcSet="/media/patient-connected-story/pregnancy-care-phone-wide-mobile-1494x1052-v1.png"
+                  />
+                  <Image
+                    src="/media/patient-connected-story/pregnancy-care-phone-wide-desktop-1494x1052-v1.png"
+                    alt="A pregnant woman using a smartphone at home"
+                    fill
+                    sizes="(max-width: 760px) 100vw, 64vw"
+                  />
+                </picture>
+              </figure>
+            </div>
+            <div className="section-seven-intelligence-copy">
+              <h2 className="section-seven-intelligence-title">
+                <span>Intelligence</span> <span>designed for</span> <span>every pregnancy</span>{" "}
+                <span>journey</span>
+              </h2>
+              <p>
+                ODRISC is being developed to support informed pregnancy care by combining
+                evidence-based guidance, longitudinal monitoring and clinician-aligned insights
+                while keeping clinical decisions with qualified healthcare professionals.
+              </p>
+            </div>
+          </div>
+          <div className="section-seven-community-marker" aria-label="Join our Community">
+            <span className="section-seven-care-capsule" aria-hidden="true" />
+            <span className="section-seven-care-label">Join our Community</span>
+            <span className="section-seven-care-line" aria-hidden="true" />
+          </div>
+        </div>
+        <PatientCareTierFrames href="https://app.odrisc.com" />
+        <div className="section-seven-talk-stage">
+          <div className="section-seven-talk-marker" aria-label="Talk to Us">
+            <span className="section-seven-care-capsule" aria-hidden="true" />
+            <span className="section-seven-care-label">Talk to Us</span>
+            <span className="section-seven-care-line" aria-hidden="true" />
+          </div>
+          <div className="section-seven-talk-content">
+            <div className="section-seven-talk-copy">
+              <h2>Schedule a Call</h2>
+              <p>
+                Discover how ODRISC is advancing preventive pregnancy care by transforming health
+                data into meaningful results, actionable insights and more informed care decisions.
+              </p>
+              <a
+                className="section-seven-about-action section-seven-talk-action"
+                href="https://app.odrisc.com"
+              >
+                <span className="section-seven-about-icon" aria-hidden="true">
+                  <Image
+                    className="section-seven-about-icon-image"
+                    src="/brand/website-icon.svg"
+                    alt=""
+                    width={86}
+                    height={62}
+                  />
+                </span>
+                <span className="section-seven-about-button">Call Us</span>
+              </a>
+            </div>
+            <figure className="section-seven-talk-frame" aria-hidden="true">
+              <picture>
+                <source
+                  media="(max-width: 760px)"
+                  srcSet="/media/patient-connected-story/talk-to-us-mobile-1683x935-v2.png"
+                />
+                <Image
+                  src="/media/patient-connected-story/talk-to-us-desktop-1287x1222-v2.png"
+                  alt=""
+                  fill
+                  sizes="(max-width: 760px) 100vw, 46vw"
+                />
+              </picture>
+            </figure>
+          </div>
+          <div className="section-seven-talk-fade">
+            <div className="section-seven-talk-closing">
+              <p>
+                Understand earlier what’s<br className="patient-closing-mobile-break" /> changing for
+                you and your baby
+              </p>
+              <h2>Care designed to look ahead</h2>
+              <a
+                className="section-seven-about-action section-seven-journey-action"
+                href="https://app.odrisc.com"
+              >
+                <span className="section-seven-about-icon" aria-hidden="true">
+                  <Image
+                    className="section-seven-about-icon-image"
+                    src="/brand/website-icon.svg"
+                    alt=""
+                    width={86}
+                    height={62}
+                  />
+                </span>
+                <span className="section-seven-about-button">Start your Journey</span>
+              </a>
+              <div className="section-seven-technologies-marker" aria-label="ODRISC Technologies">
+                <span className="section-seven-care-capsule" aria-hidden="true" />
+                <span className="section-seven-care-label">ODRISC TECHNOLOGIES</span>
+                <span className="section-seven-care-line" aria-hidden="true" />
               </div>
-              <h3>{tool.title}</h3>
-              <p>{tool.body}</p>
-              <span className="status-label">{tool.status}</span>
-              <span className="tool-link">Learn more →</span>
-            </a>
-          ))}
+              <div className="section-seven-company-links">
+                <h3>
+                  <span>A new way to experience</span>
+                  <span>pregnancy care</span>
+                </h3>
+                <div className="section-seven-company-column">
+                  <h4>OUR POLICIES</h4>
+                  <span>Terms and Conditions</span>
+                  <span>Privacy Policy</span>
+                  <span>Cancellation and Refund</span>
+                  <span>Shipping and Delivery Policy</span>
+                </div>
+                <div className="section-seven-company-column">
+                  <h4>FOLLOW US</h4>
+                  <a href="https://www.linkedin.com/company/odrisc-technologies/">
+                    <span>Linkedin</span>
+                  </a>
+                  <a href="https://www.instagram.com/odriscapp?stkn=MWFrMnh1Y3gwYngxMw==">
+                    <span>Instagram</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
-
-      <section id="safety" className="section safety-section">
-        <div>
-          <span className="eyebrow">Designed around dignity and safety</span>
-          <h2>Technology should support care—not replace it.</h2>
-        </div>
-        <div className="safety-card">
-          <span className="safety-mark">+</span>
-          <p>
-            ODRISC does not diagnose conditions, provide emergency care, or replace advice from a
-            qualified healthcare professional. Capabilities shown here are concepts or works in
-            progress unless explicitly marked available.
-          </p>
-        </div>
-      </section>
-
-      <section className="closing-cta patient-closing">
-        <div>
-          <span className="eyebrow">Every pregnancy has a story</span>
-          <h2>Understand how yours is evolving.</h2>
-        </div>
-        <a className="button primary" href={`${prefix}/contact/`}>
-          Stay connected
-        </a>
       </section>
       <footer className="site-footer">
-        <span>© 2026 ODRISC Technologies</span>
-        <span>For information only · Not medical advice</span>
+        <strong>© 2026 ODRISC TECHNOLOGIES</strong>
+        <span>
+          Learn About Us: <a href="mailto:support@odrisc.com">support@odrisc.com</a>
+        </span>
       </footer>
     </main>
   );

@@ -5,6 +5,9 @@ import { m, useReducedMotion } from "motion/react";
 
 const CROSSFADE_DURATION_MS = 900;
 const CROSSFADE_LEAD_SECONDS = 1;
+const MOBILE_HERO_VIDEO = "/media/patient-hero-mobile-20260818-v2.mp4";
+const DESKTOP_HERO_VIDEO = "/media/patient-hero-desktop.mp4";
+const MOBILE_HERO_QUERY = "(max-width: 900px)";
 
 export function ResponsivePatientHeroVideo() {
   const videoRefs = useRef<Array<HTMLVideoElement | null>>([null, null]);
@@ -13,6 +16,46 @@ export function ResponsivePatientHeroVideo() {
   const prefersReducedMotion = useReducedMotion();
   const [activeVideo, setActiveVideo] = useState(0);
   const [incomingVideo, setIncomingVideo] = useState<number | null>(null);
+
+  useEffect(() => {
+    const mobileQuery = window.matchMedia(MOBILE_HERO_QUERY);
+
+    function syncResponsiveSource() {
+      const nextSource = mobileQuery.matches ? MOBILE_HERO_VIDEO : DESKTOP_HERO_VIDEO;
+      const videos = videoRefs.current.filter((video) => video !== null);
+
+      if (videos.every((video) => video.getAttribute("src") === nextSource)) {
+        return;
+      }
+
+      if (crossfadeTimer.current) {
+        clearTimeout(crossfadeTimer.current);
+        crossfadeTimer.current = null;
+      }
+      isCrossfading.current = false;
+      setIncomingVideo(null);
+      setActiveVideo(0);
+
+      videos.forEach((video, index) => {
+        video.src = nextSource;
+        video.load();
+        video.currentTime = 0;
+
+        if (index === 0 && !prefersReducedMotion) {
+          void video.play().catch(() => undefined);
+        }
+      });
+    }
+
+    syncResponsiveSource();
+    mobileQuery.addEventListener("change", syncResponsiveSource);
+    window.addEventListener("resize", syncResponsiveSource);
+
+    return () => {
+      mobileQuery.removeEventListener("change", syncResponsiveSource);
+      window.removeEventListener("resize", syncResponsiveSource);
+    };
+  }, [prefersReducedMotion]);
 
   useEffect(() => {
     const videos = videoRefs.current;
@@ -126,12 +169,8 @@ export function ResponsivePatientHeroVideo() {
             onEnded={() => restartVideo(index)}
             onTimeUpdate={() => beginCrossfade(index)}
           >
-            <source
-              src="/media/patient-hero-mobile.mp4"
-              media="(max-width: 650px)"
-              type="video/mp4"
-            />
-            <source src="/media/patient-hero-desktop.mp4" type="video/mp4" />
+            <source src={MOBILE_HERO_VIDEO} media={MOBILE_HERO_QUERY} type="video/mp4" />
+            <source src={DESKTOP_HERO_VIDEO} type="video/mp4" />
           </m.video>
         );
       })}

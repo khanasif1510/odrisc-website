@@ -100,3 +100,18 @@ test("@reduced-motion fetal growth journey renders its completed state", async (
   await page.waitForTimeout(250);
   await expect(firstCard).toHaveCSS("transform", initialTransform);
 });
+
+test("@reduced-motion section six video remains paused on its poster", async ({ page }) => {
+  await page.goto("/patients/#tools");
+
+  const video = page.locator("#tools video");
+  await expect(video).toBeVisible();
+  await expect(page.locator("#tools button")).toHaveCount(0);
+
+  await expect
+    .poll(() => video.evaluate((element) => (element as HTMLVideoElement).paused))
+    .toBe(true);
+  await expect
+    .poll(() => video.evaluate((element) => (element as HTMLVideoElement).currentTime))
+    .toBe(0);
+});

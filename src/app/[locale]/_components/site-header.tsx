@@ -1,7 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 
+import { PatientMobileMenu } from "@/components/patient-mobile-menu";
 import { ScrollAwareSiteHeader } from "@/components/scroll-aware-site-header";
 
 import { BrandMark } from "./brand-mark";
@@ -20,7 +22,6 @@ export function SiteHeader({ locale, audience, items }: SiteHeaderProps) {
   const otherPath = audience === "patient" ? "providers" : "patients";
   const homePath = audience === "patient" ? "patients" : "providers";
   const visibleItems = audience === "patient" ? [] : items;
-
   return (
     <ScrollAwareSiteHeader audience={audience}>
       <a
@@ -30,6 +31,12 @@ export function SiteHeader({ locale, audience, items }: SiteHeaderProps) {
       >
         <BrandMark />
       </a>
+      {audience === "patient" ? (
+        <a className="site-header-centre-link" href={`${prefix}/about/`}>
+          WHY ODRISC
+        </a>
+      ) : null}
+      {audience === "patient" ? <PatientMobileMenu prefix={prefix} /> : null}
       {visibleItems.length > 0 ? (
         <button
           className="menu-toggle"
@@ -49,13 +56,24 @@ export function SiteHeader({ locale, audience, items }: SiteHeaderProps) {
         className={open ? "site-nav open" : "site-nav"}
         aria-label={`${audience} navigation`}
       >
-        {visibleItems.map((item) => (
-          <a key={item.href} href={item.href} onClick={() => setOpen(false)}>
-            {item.label}
-          </a>
-        ))}
+        {audience === "provider" ? (
+          <div className="provider-nav-links">
+            {visibleItems.map((item) => (
+              <a key={item.href} href={item.href} onClick={() => setOpen(false)}>
+                {item.label}
+              </a>
+            ))}
+          </div>
+        ) : null}
         <a className="audience-switch" href={`${prefix}/${otherPath}/`}>
-          {audience === "patient" ? "For providers" : "For patients"}
+          <Image
+            className="audience-switch-icon"
+            src="/brand/website-icon.svg"
+            alt=""
+            width={34}
+            height={36}
+          />
+          <span>{audience === "patient" ? "For providers" : "For Patients"}</span>
         </a>
       </nav>
     </ScrollAwareSiteHeader>

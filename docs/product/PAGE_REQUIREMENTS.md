@@ -617,10 +617,32 @@ All Patient-facing capability descriptions must reflect the Product Status regis
 5. Patient capability overview
 6. Pregnancy-stage or relevance pathways
 7. Patient-Provider collaboration
-8. Safety and clinical boundaries
-9. Trust and professional involvement
-10. FAQs preview
-11. Final Patient CTA
+8. Legal information footer
+
+The current Patient homepage ends after its Section 7 company content. It does not render the
+“Step Inside,” standalone safety, closing CTA, or subsequent narrative sections. The retained footer
+contains only the bold “© 2026 ODRISC TECHNOLOGIES” and “Learn About Us: support@odrisc.com,” with
+the underlined email linked through `mailto:support@odrisc.com`. The footer uses a `#4d4d4d`
+background that extends continuously behind the rounded lower corners of Section 7. The Section 7
+footer surface includes five additional viewport-height units of vertical depth. The Section 7
+footer labels are ten pixels larger than the shared footer baseline and vertically centred within
+the dark surface. The final 75 pixels beneath the rounded Section 7 treatment use the same solid
+`#4d4d4d` rather than transparency, preventing any pink compositing difference. The Section 7 region from the Pregnancy Care marker through and below the Join Our
+Community marker uses a white
+background.
+The four Section 2 connected-journey image frames display their approved source artwork without a
+coral tint, `#ffecee` wash, or colour-processing filter; motion and frame transitions remain
+unchanged. The Section 2 frames do not apply an outer shadow, preventing a one-sided colour cast at
+the right edge.
+The image frames in Sections 3, 4, and 5 use the same clean `#FDE9EA` studio background as Section 2. They retain the approved people and action-defining foreground objects while removing unrelated
+room environments, and display without a tint, colour-processing filter, overlay, or outer shadow.
+Their motion and frame transitions remain unchanged. Images use a contain-within-frame treatment so
+the full approved composition remains visible without cover-cropping, zooming, or loss of foreground
+subjects and action-defining objects.
+The pregnant women in the three Section 5 image frames use the same warm cream, oatmeal, and
+light-beige clothing palette established by the Section 2 Patient imagery. Clinical uniforms,
+medical equipment, ultrasound imagery, identities, poses, and original framing remain unchanged;
+clinical coats and sleeves must remain clean neutral white without coral or pink edge spill.
 
 ### Required Content
 
@@ -1991,10 +2013,14 @@ Normally noindex if it primarily routes authenticated or commercial traffic.
 
 **Route:** `/providers/`
 **Priority:** P0
-**Initial status:** Approved
+**Initial status:** In development
 **Audience:** Provider
 **Page type:** Audience homepage
 **PRD requirements:** PRO-001, PRO-002, PRO-005, PRO-006, PRO-008, SEO-001, ANL-003
+
+### Review build scope — 14 September 2026
+
+The founder-authorized review build is governed by [Provider review build](../project/PROVIDER_REVIEW_BUILD.md). It is English-only and noindex. Interim CTAs explore the fictional fetal-growth case; account connection is deferred pending the existing application details. This review scope takes precedence over the production conversion, integration and translation requirements below, which remain publication dependencies. Guideline citations do not establish software or clinical validation.
 
 ### Primary Purpose
 
@@ -2129,10 +2155,14 @@ All Provider platform claims.
 
 **Route:** `/providers/clinical-platform/`
 **Priority:** P0
-**Initial status:** Approved
+**Initial status:** In development
 **Audience:** Provider
 **Page type:** Product overview
 **PRD requirements:** PRO-002, PRO-005, PRO-012
+
+### Review build scope — 14 September 2026
+
+The founder-authorized review build is governed by [Provider review build](../project/PROVIDER_REVIEW_BUILD.md). It is English-only and noindex. Interim CTAs explore the fictional fetal-growth case; account connection is deferred pending the existing application details. This review scope takes precedence over the production conversion, integration and translation requirements below, which remain publication dependencies. Guideline citations do not establish software or clinical validation.
 
 ### Primary Purpose
 
@@ -2466,10 +2496,14 @@ Final hierarchy depends on launch status.
 
 **Route:** `/providers/intelligence/maternal-intelligence/`
 **Priority:** P1
-**Initial status:** Conditional approval
+**Initial status:** In development
 **Audience:** Provider
 **Page type:** Advanced capability page
 **PRD requirements:** PRO-003
+
+### Review build scope — 14 September 2026
+
+The founder-authorized review build is governed by [Provider review build](../project/PROVIDER_REVIEW_BUILD.md). It is English-only and noindex. Interim CTAs explore the fictional fetal-growth case; account connection is deferred pending the existing application details. This review scope takes precedence over the production conversion, integration and translation requirements below, which remain publication dependencies. Guideline citations do not establish software or clinical validation.
 
 ### Primary Purpose
 
@@ -2579,10 +2613,14 @@ Maternal Intelligence development and validation status.
 
 **Route:** `/providers/intelligence/fetal-growth-intelligence/`
 **Priority:** P1
-**Initial status:** Conditional approval
+**Initial status:** In development
 **Audience:** Provider
 **Page type:** Advanced clinical capability page
 **PRD requirements:** PRO-004
+
+### Review build scope — 14 September 2026
+
+The founder-authorized review build is governed by [Provider review build](../project/PROVIDER_REVIEW_BUILD.md). It is English-only and noindex. Interim CTAs explore the fictional fetal-growth case; account connection is deferred pending the existing application details. This review scope takes precedence over the production conversion, integration and translation requirements below, which remain publication dependencies. Guideline citations do not establish software or clinical validation.
 
 ### Primary Purpose
 
@@ -2953,10 +2991,14 @@ Each must use precise approved wording.
 
 **Route:** `/providers/methodology/`
 **Priority:** P1
-**Initial status:** Approved in principle
+**Initial status:** In development
 **Audience:** Provider
 **Page type:** Methodology and trust page
 **PRD requirements:** PRO-007
+
+### Review build scope — 14 September 2026
+
+The founder-authorized review build is governed by [Provider review build](../project/PROVIDER_REVIEW_BUILD.md). It is English-only and noindex. Interim CTAs explore the fictional fetal-growth case; account connection is deferred pending the existing application details. This review scope takes precedence over the production conversion, integration and translation requirements below, which remain publication dependencies. Guideline citations do not establish software or clinical validation.
 
 ### Primary Purpose
 
@@ -3651,10 +3693,14 @@ Provider FAQ intent with visible and accurate FAQ structured data.
 
 **Route:** `/providers/request-demonstration/`
 **Priority:** P0
-**Initial status:** Approved
+**Initial status:** In development
 **Audience:** Provider and institutional
 **Page type:** Conversion page
 **PRD requirements:** PRO-008, UX-010, SEC-002, PRV-003, ANL-003, INT-003
+
+### Review build scope — 14 September 2026
+
+The founder-authorized review build is governed by [Provider review build](../project/PROVIDER_REVIEW_BUILD.md). It is English-only and noindex. Interim CTAs explore the fictional fetal-growth case; account connection is deferred pending the existing application details. This review scope takes precedence over the production conversion, integration and translation requirements below, which remain publication dependencies. Guideline citations do not establish software or clinical validation.
 
 ### Primary Purpose
 
@@ -4282,6 +4328,171 @@ Equal audience pathways.
 - Unsupported market leadership claims
 - Unconfirmed regulatory status
 - Outdated legal entity details
+
+### Approved Company Narrative
+
+The About ODRISC page may state:
+
+> Since 2019, we’ve been building a new approach to pregnancy care, bringing together proprietary
+> intelligence, connected health data and a maternal-fetal model designed around the evolving
+> health of both mother and baby.
+
+This is a company-history and product-direction statement. It must not be presented as evidence of
+clinical effectiveness or as an indication that restricted or in-development capabilities are
+generally available.
+
+The “Beginning in 2019…” paragraph is left-aligned and “We began developing new technologies…”
+is right-aligned, both with natural line wrapping. Each paragraph occupies two-thirds of the square founding-history
+image frame's responsive width on desktop and mobile, not two-thirds of the page width.
+The Problem narrative and its closing paragraphs also use left alignment, not justification,
+to preserve natural word spacing. The short founding date/location retains its right alignment
+beside the image on desktop and left alignment on mobile.
+
+The pregnancy-care problem narrative may explain that gestational diabetes is identified through
+prenatal screening rather than relying on symptoms. This wording reflects that gestational diabetes
+usually has no symptoms and must remain informational rather than diagnostic. Clinical source:
+National Institute of Diabetes and Digestive and Kidney Diseases, “Symptoms & Causes of Gestational
+Diabetes” (reviewed for this page on 2026-08-25).
+
+The Pregnancy Health in Numbers section may use the following reviewed global estimates:
+
+| Public statistic                                                                                      | Source and data period                                                                     |
+| ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| 1 in 5 live births are affected by hyperglycaemia in pregnancy                                        | International Diabetes Federation, Diabetes Atlas 11th Edition, 2025; global 2024 estimate |
+| 1 in 7 newborns are born with low birth weight                                                        | WHO and UNICEF joint low-birthweight estimates; global 2020 estimate                       |
+| 1.9 million stillbirths occurred globally in 2023                                                     | UNICEF / UN Inter-agency Group for Child Mortality Estimation, 2024 report                 |
+| More than 700 women died each day in 2023 from preventable causes related to pregnancy and childbirth | WHO, Trends in Maternal Mortality 2000 to 2023, published 2025                             |
+
+Statistics must retain their scope and data period, must not imply individual risk, and must be
+reviewed when the cited source publishes a newer global estimate. The outdated earlier global
+hyperglycaemia figure of 1 in 6 must not be used in place of the current 1 in 5 estimate.
+
+The pregnancy-care problem and Pregnancy Health in Numbers narrative are presented inside one
+responsive full-width frame. At the 1280 × 720 desktop reference viewport, the framed region maps
+to a 2560 × 3928 source-artwork canvas at 2× density. Its content boundary begins 20vh before “THE
+PROBLEM” and ends 20vh after the final connected-view statement. On approach, the frame uses the
+same 0.9-to-1 scale progression as the Patient homepage Section 2 frame while its corners transition
+from 75px to square. The transition completes when the frame has entered 30% of the viewport from
+the bottom; its completed scale and square corners remain fixed afterward. Reduced motion renders
+the complete frame without this transition.
+Why ODRISC image frames display their source images without dark overlays or brightness filters.
+Previously white text over the hero, problem/statistics, Step Inside, founder, and collaboration
+frames uses `#4d4d4d`, retaining its existing weight without dark text shadows. Coral emphasis,
+decorative dividers, text outside image frames, and the Patient page's shared carousel treatment
+remain unchanged.
+The hero stage and image fallback background use `#ffffff`; the hero's “WHY ODRISC” eyebrow
+uses `#5bc2a3`, without changing the menu link. The problem frame uses the supplied
+2026-09-04 consultation image on desktop and mobile with full-frame cover fitting. The two
+lines flanking “Pregnancy health in numbers” and the lower divider use `#4d4d4d` without
+dark shadows. For comfortable reading, the problem/statistics frame uses `#4d4d4d` text on
+solid white text-block surfaces for maximum contrast with that gray, body copy at 16–18px with weight 600 and 1.75 line
+height, and weight-900 headings. Its closing statement “ODRISC is building that connected view.”
+uses `#ff7680` as requested; this coral has lower contrast than the main body text.
+All divider lines are 2px `#4d4d4d` with solid `#ffffff` highlights separating them from the photograph. Text wraps within
+its columns and the frame grows with its content to prevent clipping on desktop or mobile.
+The photograph remains unfiltered, without a full-frame overlay; other sections are unchanged.
+The hero uses the supplied 1672 × 941 close-up portrait (`why-odrisc-hero-1672x941-v2.png`)
+on desktop and mobile, retaining centered cover fitting, existing text styling, and scroll motion.
+The centred “WHY ODRISC” menu link uses `#4d4d4d` over the hero and in all scroll states. Its existing
+scroll visibility behavior is unchanged. The hero eyebrow, headline, and description share one left alignment edge.
+The hero reuses the Our Purpose “The ODRISC App” icon-and-label link, targeting the same approved
+application URL. It appears at the lower left, 70px inside the image frame's left edge and
+70px above its bottom edge,
+once the shrink target is reached (20 percent of hero scroll progress) and its spring reaches
+93.6% completion, approximately 1.5 seconds earlier than the previous 99.9% settling threshold.
+Actual timing depends on scroll speed. It hides immediately when reverse scrolling enters the
+expansion range. Once revealed, it stays attached to the compact frame as it leaves or returns
+to view in either scroll direction; visibility does not depend on the frame being pinned.
+Hidden links are excluded from keyboard navigation. With reduced motion, the
+link remains visible at the lower left of the static hero with the same insets, without
+requiring a scroll reveal.
+
+Twenty viewport-height units after the problem frame, an “Our Perspective” box-label-line marker
+introduces “The connection pregnancy care was missing” ten viewport-height units later on the right half of the viewport. The
+section may describe the historic separation of maternal health, pregnancy risk, and fetal-growth
+observations; ODRISC’s 2019 exploration of earlier pregnancy-risk recognition; and the GDM Risk
+Assessment as designed to identify gestational-diabetes risk and contributing factors. It may then
+explain that longitudinal relationships across maternal weight, metabolic health, nutrition,
+activity, and fetal growth can remain difficult to see. These statements require clinical and
+product-status review and must not imply validation, diagnosis, guaranteed prevention, or current
+availability beyond the approved Product Status.
+
+Ten viewport-height units after this narrative, a right-aligned visual frame uses the established
+purpose-frame proportions with 25 percent additional vertical height and a further 15-percent
+vertical-only enlargement while retaining its original width and right-edge alignment. Ten viewport-height units after the frame, the section may present the defining question about following the mother’s health
+and baby’s growth as one connected journey, followed by ODRISC’s directional maternal–fetal
+intelligence-platform vision. The vision remains aspirational and must retain professional-care and
+non-diagnostic boundaries. Twenty viewport-height units after this concluding narrative, a
+full-viewport visual frame uses the same reduced-motion-aware scale and 75px-to-0px corner
+transition as the collaboration frame. The following section marker begins twenty viewport-height
+units after this frame, matching the frame-to-marker rhythm used after the approach frame.
+This full-viewport perspective visual uses the supplied family-meal photographs:
+`why-odrisc-perspective-family-desktop-1672x941-v1.png` on desktop and
+`why-odrisc-perspective-family-mobile-853x1844-v1.png` at widths up to 760px, with centre-bottom
+cover fitting. The smaller Our Perspective frame retains the couple photograph; the founder
+and collaboration frames retain their own images.
+The full-viewport frame overlays the exact three-line quote “When conception has taken place, / one
+must beware of every excess / and change” in `#ff7680`. On desktop it begins at the viewport centre,
+occupies the right half, and is vertically centred and left-aligned. Its responsive type is 25px
+larger than the 16–18px “ODRISC is building that connected view.” treatment. The attribution
+“– Soranus of Ephesus” begins 3vh below the quotation at the same responsive 16–18px size as that
+closing statement. On mobile the quotation uses 24px side insets and may wrap beyond the authored
+three desktop lines to prevent clipping; the wording and line sequence remain unchanged.
+
+After the perspective sequence, an “Our purpose” box-label-line marker
+introduces the approved purpose statement “Earlier understanding for every pregnancy.” The
+statement follows the marker with the same vertical relationship and heading treatment used by the
+Patient homepage Section 7 “Choose what works for you” transition.
+
+The purpose section may explain that ODRISC brings maternal health, pregnancy risk, personalised
+guidance, and fetal growth together so women and clinicians can understand the journey as one rather
+than as isolated measurements. It may state that revealing how maternal and fetal health evolve
+across time aims to support earlier understanding, informed conversations, and timely care
+decisions. This remains a product-purpose statement and must not imply diagnosis, guaranteed
+outcomes, or independent clinical decision-making.
+
+The purpose composition may close with: “Our purpose is to make pregnancy care more connected,
+preventive and responsive to change.” This statement is presented beside two equal supporting
+frames and remains a directional company-purpose statement rather than a claim of clinical effect.
+The purpose composition may provide a “The ODRISC App” action using the established Patient Section
+7 icon-and-label treatment and linking to the approved ODRISC application destination.
+Ten viewport-height units after that action, the About page reuses the complete Patient Section 7
+“Step Inside” experience, including its image frame, Maternal Intelligence narrative, Fetal Growth
+Intelligence narrative, scroll sequencing, clinical boundaries, and reduced-motion behavior.
+Twenty viewport-height units after that experience, an “Our Approach” box-label-line marker
+introduces “From separate snapshots to trajectories” on the right half of the viewport, with
+“snapshots” beginning the second display line. The section
+uses the three principles Connect, Follow, and Support to explain bringing maternal health,
+pregnancy risk, and fetal growth into a continuous view; following measurements and health
+indicators across time; and supporting meaningful guidance and better-informed care conversations.
+The principles are introduced by “The 3 Concise Principles.” Twenty viewport-height units after the
+Support description, a full-viewport visual frame may present the approved founder-purpose
+statement, followed by the attribution “Dr. Asif Khan” and “Founder - ODRISC TECHNOLOGIES.” The
+statement remains company-purpose context and must not be presented as clinical evidence or a
+guarantee of outcomes. The founder frame uses the same reduced-motion-aware entrance treatment as
+the problem frame, scaling from 0.9 to 1 while its corners transition from 75px to 0px.
+
+Twenty viewport-height units after the founder frame, a “Clinical Collaboration” box-label-line marker
+introduces the two-line heading “Shaped alongside pregnancy-care professionals.” The section may explain that ODRISC is
+being shaped through engagement with obstetricians, clinicians, and healthcare stakeholders to
+examine clinical relevance, usability, and how maternal–fetal intelligence could support existing
+care pathways in one continuous paragraph aligned to the heading width. This engagement must not be described as product validation, endorsement, a formal
+partnership, or evidence of clinical effectiveness. A subsequent full-viewport frame may introduce
+“The future we envision” and describe a directional future of more continuous, contextual,
+connected, preventive, and informed pregnancy care. Future-state language must remain aspirational
+and must not represent planned or in-development capabilities as currently available.
+Thirty viewport-height units after the Clinical Collaboration frame, the page reuses the Patient
+homepage closing treatment with “One connected view of pregnancy for women, clinicians and
+healthcare systems” and “Help shape what comes next,” followed by the approved journey action, the
+ODRISC Technologies marker, policy labels, social labels, and the established `#ffecee` fade
+background.
+This closing treatment is followed only by the same legal-information footer used on the Patient
+homepage: bold “© 2026 ODRISC TECHNOLOGIES” and “Learn About Us: support@odrisc.com,” with the
+underlined email linked through `mailto:support@odrisc.com`. Its `#4d4d4d` surface, five additional
+viewport-height units of depth, enlarged labels, vertical centring, and solid 75px rounded-corner
+underlay match the Patient homepage. On Why ODRISC, the footer begins below the rounded frame without
+overlapping it while retaining the same visible height as the Patient homepage footer. No building
+or audience-pathway sections follow it.
 
 ### SEO Intent
 

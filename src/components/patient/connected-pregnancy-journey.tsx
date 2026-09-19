@@ -2,12 +2,20 @@
 
 import Image from "next/image";
 import { type ReactNode, useRef, useState } from "react";
-import { m, type MotionValue, useMotionValueEvent, useScroll, useTransform } from "motion/react";
+import {
+  m,
+  type MotionValue,
+  useMotionValueEvent,
+  useScroll,
+  useSpring,
+  useTransform,
+} from "motion/react";
 
 type StoryFrame = Readonly<{
   src?: string;
   mobileSrc?: string;
   alt: string;
+  mobileAlt?: string;
   placeholderLabel?: string;
   shortLabel: string;
   position: string;
@@ -32,29 +40,29 @@ type PatientImageNarrativeProps = Readonly<{
 
 const storyFrames: readonly StoryFrame[] = [
   {
-    src: "/media/patient-connected-story/maternal-health-risk-20260812.png",
-    mobileSrc: "/media/patient-connected-story/maternal-health-risk-mobile-20260812.png",
+    src: "/media/patient-connected-story/risk-desktop-1211x1299-v3.png",
+    mobileSrc: "/media/patient-connected-story/risk-mobile-941x1672-v3.png",
     alt: "A pregnant woman speaking with a healthcare professional",
     shortLabel: "Risk",
     position: "50% 48%",
   },
   {
-    src: "/media/patient-connected-story/nutrition-20260812.png",
-    mobileSrc: "/media/patient-connected-story/nutrition-mobile-20260812.png",
+    src: "/media/patient-connected-story/nutrition-desktop-1211x1299-v3.png",
+    mobileSrc: "/media/patient-connected-story/nutrition-mobile-941x1672-v3.png",
     alt: "A pregnant woman preparing a fresh meal",
     shortLabel: "Nutrition",
     position: "50% 62%",
   },
   {
-    src: "/media/patient-connected-story/activity-20260812.png",
-    mobileSrc: "/media/patient-connected-story/activity-mobile-20260812.png",
+    src: "/media/patient-connected-story/fitness-desktop-1211x1299-v3.png",
+    mobileSrc: "/media/patient-connected-story/fitness-mobile-941x1672-v3.png",
     alt: "A pregnant woman walking outdoors",
     shortLabel: "Activity",
     position: "50% 48%",
   },
   {
-    src: "/media/patient-connected-story/monitoring-baby-growth-20260812.png",
-    mobileSrc: "/media/patient-connected-story/monitoring-baby-growth-mobile-20260812.png",
+    src: "/media/patient-connected-story/monitor-desktop-1211x1299-v3.png",
+    mobileSrc: "/media/patient-connected-story/monitor-mobile-941x1672-v3.png",
     alt: "A pregnant woman reviewing an ultrasound with a healthcare professional",
     shortLabel: "Monitor",
     position: "50% 56%",
@@ -63,48 +71,49 @@ const storyFrames: readonly StoryFrame[] = [
 
 const personalStoryFrames: readonly StoryFrame[] = [
   {
-    src: "/media/patient-connected-story/personal-journey-consultation-desktop-20260814-v2.png",
+    src: "/media/patient-connected-story/personal-journey-consultation-desktop-1194x1317-v6.png",
     mobileSrc:
-      "/media/patient-connected-story/personal-journey-consultation-mobile-20260814-v2.png",
+      "/media/patient-connected-story/personal-journey-consultation-mobile-895x1758-v6.png",
     alt: "A pregnant woman speaking with a healthcare professional",
-    shortLabel: "Risk",
+    shortLabel: "Assess",
     position: "50% 50%",
   },
   {
-    src: "/media/patient-connected-story/personal-journey-nutrition-desktop-20260814-v2.png",
-    mobileSrc: "/media/patient-connected-story/personal-journey-nutrition-mobile-20260814-v2.png",
+    src: "/media/patient-connected-story/personal-journey-nutrition-desktop-1211x1299-v5.png",
+    mobileSrc: "/media/patient-connected-story/personal-journey-nutrition-mobile-941x1672-v6.png",
     alt: "A pregnant woman enjoying a fresh fruit and salad meal",
-    shortLabel: "Nutrition",
+    shortLabel: "Personalise",
     position: "50% 50%",
   },
   {
-    src: "/media/patient-connected-story/personal-journey-activity-desktop-20260814-v2.png",
-    mobileSrc: "/media/patient-connected-story/personal-journey-activity-mobile-20260814-v2.png",
+    src: "/media/patient-connected-story/personal-journey-activity-desktop-1211x1299-v5.png",
+    mobileSrc: "/media/patient-connected-story/personal-journey-activity-mobile-941x1672-v6.png",
     alt: "A pregnant woman stretching on an exercise mat",
-    shortLabel: "Activity",
+    shortLabel: "Support",
     position: "50% 50%",
   },
 ] as const;
 
 const maternalTrajectoryFrames: readonly StoryFrame[] = [
   {
-    src: "/media/patient-connected-story/maternal-trajectory-food-label-desktop-20260814.png",
-    mobileSrc: "/media/patient-connected-story/maternal-trajectory-food-label-mobile-20260814.png",
+    src: "/media/patient-connected-story/maternal-trajectory-food-label-desktop-1211x1299-v3.png",
+    mobileSrc:
+      "/media/patient-connected-story/maternal-trajectory-food-label-mobile-941x1672-v3.png",
     alt: "A pregnant woman reading the label on a food container",
     shortLabel: "Starting point",
     position: "50% 50%",
   },
   {
-    src: "/media/patient-connected-story/maternal-trajectory-weight-progress-desktop-20260814.png",
+    src: "/media/patient-connected-story/maternal-trajectory-weight-progress-desktop-1211x1299-v3.png",
     mobileSrc:
-      "/media/patient-connected-story/maternal-trajectory-weight-progress-mobile-20260814.png",
+      "/media/patient-connected-story/maternal-trajectory-weight-progress-mobile-941x1672-v4.png",
     alt: "A pregnant woman standing on a scale",
     shortLabel: "Progress",
     position: "50% 50%",
   },
   {
-    src: "/media/patient-connected-story/maternal-trajectory-phone-desktop-20260814.png",
-    mobileSrc: "/media/patient-connected-story/maternal-trajectory-phone-mobile-20260814.png",
+    src: "/media/patient-connected-story/maternal-trajectory-phone-desktop-1211x1299-v3.png",
+    mobileSrc: "/media/patient-connected-story/maternal-trajectory-phone-mobile-941x1672-v3.png",
     alt: "A pregnant woman using a smartphone",
     shortLabel: "Trajectory",
     position: "50% 50%",
@@ -113,23 +122,23 @@ const maternalTrajectoryFrames: readonly StoryFrame[] = [
 
 const fetalGrowthFrames: readonly StoryFrame[] = [
   {
-    src: "/media/patient-connected-story/fetal-growth-ultrasound-snapshot-desktop-20260814.png",
-    mobileSrc:
-      "/media/patient-connected-story/fetal-growth-ultrasound-snapshot-mobile-20260814.png",
+    src: "/media/patient-connected-story/fetal-growth-consultation-desktop-1086x1448-v9.png",
+    mobileSrc: "/media/patient-connected-story/fetal-growth-consultation-mobile-1086x1448-v9.png",
     alt: "A pregnant woman having an ultrasound examination with a healthcare professional",
     shortLabel: "Snapshot",
     position: "50% 50%",
   },
   {
-    src: "/media/patient-connected-story/fetal-growth-ultrasound-prints-desktop-20260814.png",
-    mobileSrc: "/media/patient-connected-story/fetal-growth-ultrasound-prints-mobile-20260814.png",
+    src: "/media/patient-connected-story/fetal-growth-ultrasound-prints-desktop-1086x1448-v9.png",
+    mobileSrc: "/media/patient-connected-story/fetal-growth-phone-mobile-1086x1448-v10.png",
     alt: "A pregnant woman looking at ultrasound images",
+    mobileAlt: "A pregnant woman using a smartphone while seated at home",
     shortLabel: "Growth",
     position: "50% 50%",
   },
   {
-    src: "/media/patient-connected-story/fetal-growth-review-journey-desktop-20260814.png",
-    mobileSrc: "/media/patient-connected-story/fetal-growth-review-journey-mobile-20260814.png",
+    src: "/media/patient-connected-story/fetal-growth-review-desktop-1086x1448-v9.png",
+    mobileSrc: "/media/patient-connected-story/fetal-growth-review-mobile-1086x1448-v9.png",
     alt: "A healthcare professional reviewing an ultrasound image with a pregnant woman",
     shortLabel: "Journey",
     position: "50% 50%",
@@ -155,7 +164,7 @@ function StoryFrameVisual({
   return (
     <Image
       src={src}
-      alt={frame.alt}
+      alt={mobile ? (frame.mobileAlt ?? frame.alt) : frame.alt}
       fill
       priority={priority}
       loading={priority ? "eager" : "lazy"}
@@ -335,11 +344,16 @@ export function ConnectedPregnancyJourney({ children }: ConnectedPregnancyJourne
   });
   const { scrollYProgress: approachProgress } = useScroll({
     target: storyRef,
-    offset: ["start end", "start start"],
+    offset: ["start 95%", "start 15%"],
   });
-  const shellScale = useTransform(approachProgress, [0, 1], [0.9, 1]);
-  const shellRadius = useTransform(approachProgress, [0, 1], ["37.4px", "0px"]);
-  const imageRightRadius = useTransform(approachProgress, [0, 1], ["37.4px", "0px"]);
+  const smoothApproachProgress = useSpring(approachProgress, {
+    damping: 26,
+    mass: 0.3,
+    stiffness: 82,
+  });
+  const shellScale = useTransform(smoothApproachProgress, [0, 1], [0.9, 1]);
+  const shellRadius = useTransform(smoothApproachProgress, [0, 1], ["37.4px", "0px"]);
+  const imageRightRadius = useTransform(smoothApproachProgress, [0, 1], ["37.4px", "0px"]);
 
   return (
     <div id="connected-pregnancy-journey" ref={storyRef} className="journey-scroll-story">
@@ -381,11 +395,16 @@ export function PersonalPregnancyStory({ children }: PersonalPregnancyStoryProps
   });
   const { scrollYProgress: approachProgress } = useScroll({
     target: storyRef,
-    offset: ["start end", "start start"],
+    offset: ["start 95%", "start 15%"],
   });
-  const shellScale = useTransform(approachProgress, [0, 1], [0.9, 1]);
-  const shellRadius = useTransform(approachProgress, [0, 1], ["37.4px", "0px"]);
-  const imageLeftRadius = useTransform(approachProgress, [0, 1], ["37.4px", "0px"]);
+  const smoothApproachProgress = useSpring(approachProgress, {
+    damping: 26,
+    mass: 0.3,
+    stiffness: 82,
+  });
+  const shellScale = useTransform(smoothApproachProgress, [0, 1], [0.9, 1]);
+  const shellRadius = useTransform(smoothApproachProgress, [0, 1], ["37.4px", "0px"]);
+  const imageLeftRadius = useTransform(smoothApproachProgress, [0, 1], ["37.4px", "0px"]);
 
   return (
     <div
@@ -441,10 +460,15 @@ export function PatientImageNarrative({
   });
   const { scrollYProgress: approachProgress } = useScroll({
     target: sectionRef,
-    offset: ["start end", "start start"],
+    offset: ["start 95%", "start 15%"],
   });
-  const shellScale = useTransform(approachProgress, [0, 1], [0.9, 1]);
-  const shellRadius = useTransform(approachProgress, [0, 1], ["37.4px", "0px"]);
+  const smoothApproachProgress = useSpring(approachProgress, {
+    damping: 26,
+    mass: 0.3,
+    stiffness: 82,
+  });
+  const shellScale = useTransform(smoothApproachProgress, [0, 1], [0.9, 1]);
+  const shellRadius = useTransform(smoothApproachProgress, [0, 1], ["37.4px", "0px"]);
   const frameStyle =
     visualSide === "left"
       ? { borderBottomLeftRadius: shellRadius, borderTopLeftRadius: shellRadius }

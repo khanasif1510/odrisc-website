@@ -29,9 +29,12 @@ Public routes must comply with:
 | SH-PG-001 | `/` | Shared Entry | Shared | Audience gateway | P0 | None | Index | Select audience | Founder | Approved |
 | PAT-PG-001 | `/patients/` | Patient | Patient | Audience homepage | P0 | Product Status | Index | To confirm | Founder | Approved |
 | PAT-PG-002 | `/patients/how-odrisc-helps/` | Patient | Patient | Product overview | P0 | Product Status | Index | To confirm | Founder | Approved |
-| PRO-PG-001 | `/providers/` | Provider | Provider | Audience homepage | P0 | Product Status | Index | Request demonstration | Founder | Approved |
-| PRO-PG-002 | `/providers/clinical-platform/` | Provider | Provider | Product overview | P0 | Product Status | Index | Request demonstration | Founder | Approved |
-| PRO-PG-016 | `/providers/request-demonstration/` | Provider | Provider | Conversion page | P0 | Demonstration workflow | Index | Submit request | Commercial owner | Approved |
+| PRO-PG-001 | `/providers/` | Provider | Provider | Audience homepage | P0 | Product Status | Noindex | Explore fetal growth | Founder | In development |
+| PRO-PG-002 | `/providers/clinical-platform/` | Provider | Provider | Product overview | P0 | Product Status | Noindex | Explore fetal growth | Founder | In development |
+| PRO-PG-005 | `/providers/intelligence/maternal-intelligence/` | Provider | Provider | Capability overview | P1 | Product Status | Noindex | Explore fetal growth | Founder | In development |
+| PRO-PG-006 | `/providers/intelligence/fetal-growth-intelligence/` | Provider | Provider | Clinical demonstration | P1 | Synthetic case review | Noindex | Explore demonstration | Founder | In development |
+| PRO-PG-009 | `/providers/methodology/` | Provider | Provider | Methodology and trust | P1 | Evidence publication | Noindex | Review references | Founder | In development |
+| PRO-PG-016 | `/providers/request-demonstration/` | Provider | Provider | Conversion page | P0 | Demonstration workflow | Noindex | Review access information | Commercial owner | In development |
 | COM-PG-001 | `/about/` | Shared | Shared | Company overview | P0 | None | Index | Choose audience | Founder | Approved |
 | SH-PG-002 | `/contact/` | Shared | Shared | Contact routing | P0 | Form workflow | Index | Submit enquiry | Founder | Approved |
 | LEG-PG-001 | `/privacy/` | Legal | Shared | Legal page | P0 | Legal approval | Index | None | Privacy owner | Proposed |

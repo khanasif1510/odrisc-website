@@ -303,3 +303,10 @@ This document records unresolved questions that could affect the product, conten
 | Q-277 | What evidence format is required for manual QA? | Release governance | Medium | Open | QA owner |
 | Q-278 | When will formal Patient usability testing begin? | UX validation | High | Open | Founder |
 | Q-279 | When will formal Provider usability testing begin? | UX validation | High | Open | Founder |
+
+## Provider launch review — 14 September 2026
+
+- Confirm release status, market and clinical review owner before publication. Fetal-growth demonstration is authorized; general clinical availability is not established by the supplied prototype.
+- Approve one consistent fictional case and independent mappings to every named reference/version. Resolve prototype source findings in `PROVIDER_REVIEW_BUILD.md` before publishing calculated centiles, velocity bands or staging results.
+- Clinician signup/login repository, API contract and destinations will be provided later by the founder. Do not create a parallel identity store or connect this website directly to the application database.
+- Provide account privacy/terms, consent-aware analytics and reviewed Arabic content before those experiences are activated.

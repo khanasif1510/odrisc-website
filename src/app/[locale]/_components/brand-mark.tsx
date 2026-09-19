@@ -2,9 +2,10 @@ import Image from "next/image";
 
 type BrandMarkProps = Readonly<{
   variant?: "default" | "light";
+  logoSizes?: string;
 }>;
 
-export function BrandMark({ variant = "default" }: BrandMarkProps) {
+export function BrandMark({ variant = "default", logoSizes = "(max-width: 650px) 0px, 90px" }: BrandMarkProps) {
   const suffix = variant === "light" ? "-light" : "";
 
   return (
@@ -14,7 +15,7 @@ export function BrandMark({ variant = "default" }: BrandMarkProps) {
         src={`/brand/odrisc-logo${suffix}.png`}
         width={639}
         height={324}
-        sizes="(max-width: 650px) 0px, 90px"
+        sizes={logoSizes}
         alt=""
         priority
       />
