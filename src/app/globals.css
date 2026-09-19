@@ -641,7 +641,7 @@ select {
   border: 0;
   border-radius: 16px;
   background: #5bc2a3;
-  color: #fff;
+  color: var(--mint-deep);
   font-size: clamp(0.9rem, 1vw, 1rem);
   font-weight: 700;
   letter-spacing: 0.025em;
@@ -658,7 +658,7 @@ select {
 }
 .site-header.patient .site-nav .audience-switch:hover {
   background: #45a98c;
-  color: #fff;
+  color: var(--mint-deep);
   text-decoration: none;
 }
 .site-header.patient .site-nav .audience-switch:focus-visible {
@@ -1912,7 +1912,10 @@ select {
     height: auto;
     background-image:
       linear-gradient(rgb(255 255 255 / 78%), rgb(255 255 255 / 78%)),
-      var(--why-odrisc-mobile-quote-blur-image, url("/media/why-odrisc-perspective-family-mobile-853x1844-v1.png"));
+      var(
+        --why-odrisc-mobile-quote-blur-image,
+        url("/media/why-odrisc-perspective-family-mobile-853x1844-v1.png")
+      );
     background-position: center bottom;
     background-size: cover;
     filter: blur(10px);
@@ -2095,28 +2098,27 @@ select {
   .why-odrisc-hero p {
     margin-left: 0;
   }
-  .why-odrisc-page :is(
-    .why-odrisc-since > p,
-    .why-odrisc-history-description,
-    .why-odrisc-perspective-copy,
-    .why-odrisc-perspective-direction > p,
-    .why-odrisc-purpose-intro,
-    .why-odrisc-purpose-outcome,
-    .why-odrisc-purpose-closing,
-    .why-odrisc-approach-list > article,
-    .why-odrisc-approach-list p,
-    .why-odrisc-collaboration-intro
-  ) {
+  .why-odrisc-page
+    :is(
+      .why-odrisc-since > p,
+      .why-odrisc-history-description,
+      .why-odrisc-perspective-copy,
+      .why-odrisc-perspective-direction > p,
+      .why-odrisc-purpose-intro,
+      .why-odrisc-purpose-outcome,
+      .why-odrisc-purpose-closing,
+      .why-odrisc-approach-list > article,
+      .why-odrisc-approach-list p,
+      .why-odrisc-collaboration-intro
+    ) {
     width: 100%;
     max-width: none;
     text-align: left;
     text-wrap: wrap;
   }
-  .why-odrisc-page :is(
-    .why-odrisc-purpose-intro,
-    .why-odrisc-purpose-outcome,
-    .why-odrisc-purpose-closing
-  ) > span::after {
+  .why-odrisc-page
+    :is(.why-odrisc-purpose-intro, .why-odrisc-purpose-outcome, .why-odrisc-purpose-closing)
+    > span::after {
     content: " ";
   }
 }
@@ -7631,7 +7633,12 @@ select {
     position: absolute;
     inset: 0;
     pointer-events: none;
-    background: linear-gradient(to right, rgb(255 236 238 / 72%) 0%, rgb(255 236 238 / 55%) 65%, transparent 100%);
+    background: linear-gradient(
+      to right,
+      rgb(255 236 238 / 72%) 0%,
+      rgb(255 236 238 / 55%) 65%,
+      transparent 100%
+    );
   }
 
   .patient-page > .patient-section-seven {

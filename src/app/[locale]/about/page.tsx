@@ -61,7 +61,6 @@ export default async function AboutPage({
     notFound();
   }
   setRequestLocale(locale);
-  const prefix = locale === "en" ? "" : `/${locale}`;
 
   return (
     <main className="why-odrisc-page" data-page-id="COM-PG-001">
@@ -173,10 +172,12 @@ export default async function AboutPage({
         <div className="why-odrisc-perspective-content">
           <h2 id="why-odrisc-perspective-title">
             <span>
-              The connection<br className="why-odrisc-perspective-mobile-break" /> pregnancy
+              The connection
+              <br className="why-odrisc-perspective-mobile-break" /> pregnancy
             </span>{" "}
             <span>
-              care<br className="why-odrisc-perspective-mobile-break" /> was missing
+              care
+              <br className="why-odrisc-perspective-mobile-break" /> was missing
             </span>
           </h2>
           <div className="why-odrisc-perspective-copy">
@@ -341,7 +342,8 @@ export default async function AboutPage({
           <h2 id="why-odrisc-approach-title">
             <span>From separate</span>{" "}
             <span>
-              snapshots to<br className="why-odrisc-approach-mobile-break" /> trajectories
+              snapshots to
+              <br className="why-odrisc-approach-mobile-break" /> trajectories
             </span>
           </h2>
           <div className="why-odrisc-approach-principles">
@@ -403,7 +405,8 @@ export default async function AboutPage({
           <h2 id="why-odrisc-collaboration-title">
             <span>Shaped alongside</span>{" "}
             <span>
-              pregnancy-care<br className="why-odrisc-collaboration-mobile-break" /> professionals
+              pregnancy-care
+              <br className="why-odrisc-collaboration-mobile-break" /> professionals
             </span>
           </h2>
           <div className="why-odrisc-collaboration-intro">
@@ -425,16 +428,18 @@ export default async function AboutPage({
             <h3>The future we envision</h3>
             <p>
               <span>We envision a future where pregnancy information does more than</span>
-              <span>document individual appointments. It helps create a continuous understanding</span>
               <span>
-                of maternal health and fetal growth—from the earliest assessment through every
-                stage of pregnancy.
+                document individual appointments. It helps create a continuous understanding
+              </span>
+              <span>
+                of maternal health and fetal growth—from the earliest assessment through every stage
+                of pregnancy.
               </span>
             </p>
             <p>
               <span>
-                A future where women can better understand their journey, clinicians can view
-                change with greater context
+                A future where women can better understand their journey, clinicians can view change
+                with greater context
               </span>
               <span>and care can become more connected, preventive and informed.</span>
             </p>

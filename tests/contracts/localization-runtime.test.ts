@@ -1,4 +1,4 @@
-import { describe, expect, it, vi } from "vitest";
+import { beforeEach, describe, expect, it, vi } from "vitest";
 import { NextRequest } from "next/server";
 
 vi.mock("next-intl/server", () => ({
@@ -11,6 +11,10 @@ import { routing } from "../../src/i18n/routing";
 import proxy, { config as proxyConfig } from "../../src/proxy";
 
 describe("INF-CFG-002 localization runtime contract", () => {
+  beforeEach(() => {
+    // The Next.js plugin injects this value from trailingSlash in production.
+    vi.stubEnv("_next_intl_trailing_slash", "true");
+  });
   it("preserves the approved deterministic locale policy", () => {
     expect(routing).toMatchObject({
       locales: ["en", "ar"],

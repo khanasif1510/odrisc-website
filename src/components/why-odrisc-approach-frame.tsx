@@ -44,13 +44,7 @@ export function WhyOdriscApproachFrame({
     >
       <picture>
         {mobileImageSrc && <source media="(max-width: 760px)" srcSet={mobileImageSrc} />}
-        <Image
-          alt=""
-          fill
-          sizes="100vw"
-          src={imageSrc}
-          style={{ objectPosition: imagePosition }}
-        />
+        <Image alt="" fill sizes="100vw" src={imageSrc} style={{ objectPosition: imagePosition }} />
       </picture>
       {children}
     </m.section>

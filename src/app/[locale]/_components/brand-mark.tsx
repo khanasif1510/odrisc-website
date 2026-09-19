@@ -5,7 +5,10 @@ type BrandMarkProps = Readonly<{
   logoSizes?: string;
 }>;
 
-export function BrandMark({ variant = "default", logoSizes = "(max-width: 650px) 0px, 90px" }: BrandMarkProps) {
+export function BrandMark({
+  variant = "default",
+  logoSizes = "(max-width: 650px) 0px, 90px",
+}: BrandMarkProps) {
   const suffix = variant === "light" ? "-light" : "";
 
   return (

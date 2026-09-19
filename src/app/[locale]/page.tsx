@@ -57,21 +57,26 @@ export default async function SharedEntryPage({ params }: SharedEntryPageProps) 
             </p>
           </div>
           <span className="card-action">
-            Explore patient experience <span className="gateway-card-action-icon" aria-hidden="true" />
+            Explore patient experience{" "}
+            <span className="gateway-card-action-icon" aria-hidden="true" />
           </span>
         </AnimatedGradientLink>
         <AnimatedGradientLink className="audience-card provider-card" href={`${prefix}/providers/`}>
           <span className="card-index"></span>
           <div>
             <span className="audience-label">I am a</span>
-            <h2>Healthcare<br className="gateway-provider-mobile-break" /> provider</h2>
+            <h2>
+              Healthcare
+              <br className="gateway-provider-mobile-break" /> provider
+            </h2>
             <p>
               Explore longitudinal maternal and fetal intelligence designed to support clinical
               monitoring.
             </p>
           </div>
           <span className="card-action">
-            Explore provider experience <span className="gateway-card-action-icon" aria-hidden="true" />
+            Explore provider experience{" "}
+            <span className="gateway-card-action-icon" aria-hidden="true" />
           </span>
         </AnimatedGradientLink>
       </section>

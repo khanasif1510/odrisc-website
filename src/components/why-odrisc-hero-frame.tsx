@@ -87,7 +87,8 @@ export function WhyOdriscHeroFrame() {
             <span className="eyebrow">Why ODRISC</span>
             <h1>
               <span className="why-odrisc-hero-title-white">
-                Because<br className="why-odrisc-hero-mobile-break" /> It begins
+                Because
+                <br className="why-odrisc-hero-mobile-break" /> It begins
               </span>
               <span className="why-odrisc-hero-title-secondary">
                 with <span className="why-odrisc-hero-title-coral">You</span>

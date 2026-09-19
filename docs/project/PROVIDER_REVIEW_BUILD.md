@@ -143,3 +143,12 @@ Three targeted desktop, mobile and reduced-motion direction
 checks passed, together with source lint and TypeScript.
 The patient header's direct scroll check also passed. Its broader portrait-video
 regression test timed out waiting for page load, before reaching header assertions.
+
+## Production preparation — 19 September 2026
+
+The shared audience-button contrast finding above was corrected during production
+cleanup: both headers retain their green fill and white decorative icon, and use
+the existing mint-deep color for readable label text in normal and hover states.
+The final provider suite passed 15 desktop, mobile and reduced-motion checks,
+including automated accessibility on all six provider routes. See
+`PRODUCTION_BUILD_REPORT.md` for the deployment artifact and remaining release gates.

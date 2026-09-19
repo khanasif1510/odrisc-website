@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:smarteraspnet": "pnpm build && node scripts/package-smarteraspnet.mjs",
+    "test:deployment": "node scripts/test-deployment.mjs",
     "start": "next start",
     "lint": "eslint . --max-warnings=0",
     "format": "prettier . --write",

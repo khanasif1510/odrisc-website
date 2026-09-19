@@ -5,6 +5,11 @@ allowBuilds:
   sharp: true
   unrs-resolver: true
 
+# Keep local tooling usable and install the native image runtime for IIS x64.
+supportedArchitectures:
+  os: [current, win32]
+  cpu: [current, x64]
+
 overrides:
   "brace-expansion@<1.1.18": "1.1.18"
   "brace-expansion@>=4.0.0 <5.0.9": "5.0.9"

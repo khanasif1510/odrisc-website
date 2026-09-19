@@ -129,8 +129,14 @@ export default async function PatientPage({
           </div>
           <span className="eyebrow">Your pregnancy is one connected journey.</span>
           <h1>
-            <span className="hero-title-line">Understand<br className="patient-hero-mobile-break" /> your health.</span>
-            <span className="hero-title-line">Follow your<br className="patient-hero-mobile-break" /> baby’s growth.</span>
+            <span className="hero-title-line">
+              Understand
+              <br className="patient-hero-mobile-break" /> your health.
+            </span>
+            <span className="hero-title-line">
+              Follow your
+              <br className="patient-hero-mobile-break" /> baby’s growth.
+            </span>
             <em className="hero-title-line">See the whole picture.</em>
           </h1>
           <p className="hero-lead">
@@ -419,8 +425,8 @@ export default async function PatientPage({
           <div className="section-seven-talk-fade">
             <div className="section-seven-talk-closing">
               <p>
-                Understand earlier what’s<br className="patient-closing-mobile-break" /> changing for
-                you and your baby
+                Understand earlier what’s
+                <br className="patient-closing-mobile-break" /> changing for you and your baby
               </p>
               <h2>Care designed to look ahead</h2>
               <a

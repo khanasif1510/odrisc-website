@@ -1,6 +1,7 @@
 .next/
 out/
 build/
+dist/
 coverage/
 storybook-static/
 playwright-report/

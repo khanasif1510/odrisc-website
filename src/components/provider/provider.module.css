@@ -144,7 +144,7 @@
   border: 0;
   border-radius: 16px;
   background: #5bc2a3;
-  color: #fff;
+  color: var(--mint-deep);
   font-size: clamp(0.9rem, 1vw, 1rem);
   font-weight: 700;
   letter-spacing: 0.025em;
@@ -153,7 +153,7 @@
 }
 .site :global(.site-nav .audience-switch:hover) {
   background: #45a98c;
-  color: #fff;
+  color: var(--mint-deep);
   text-decoration: none;
 }
 .site :global(.site-nav .audience-switch:focus-visible) {
