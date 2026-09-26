@@ -11,6 +11,12 @@ test("provider header reveals labels and white surface on upward scroll @reduced
   const frame = header.locator(".site-header-frame");
   const links = header.locator(".provider-nav-links");
   const desktop = (page.viewportSize()?.width ?? 0) > 760;
+  // Confirm client interactivity before testing scroll listeners on the SSR page.
+  const caseButton = page.getByRole("button", { name: /Anaya · Illustrative case/ });
+  await caseButton.click();
+  await expect(caseButton).toHaveAttribute("aria-pressed", "true");
+  await page.evaluate(() => window.scrollTo({ top: 0, behavior: "instant" }));
+  await expect(header).toHaveClass(/is-at-top/);
   await expect(header).toHaveCSS("position", "fixed");
   await expect(header.locator(".site-nav")).toHaveCSS("text-transform", "uppercase");
   await expect(frame).toHaveCSS(
@@ -18,7 +24,7 @@ test("provider header reveals labels and white surface on upward scroll @reduced
     desktop ? "rgba(255, 255, 255, 0)" : "rgba(0, 0, 0, 0)",
   );
 
-  await page.mouse.wheel(0, 850);
+  await page.evaluate(() => window.scrollBy({ top: 850, behavior: "instant" }));
   await expect(header).toHaveClass(/is-scroll-down/);
   await expect(header).not.toHaveClass(/is-at-top/);
   expect(await header.evaluate((element) => element.getBoundingClientRect().top)).toBe(0);
@@ -30,7 +36,7 @@ test("provider header reveals labels and white surface on upward scroll @reduced
     await expect(links).toHaveCSS("opacity", "0");
   }
 
-  await page.mouse.wheel(0, -300);
+  await page.evaluate(() => window.scrollBy({ top: -300, behavior: "instant" }));
   await expect(header).toHaveClass(/is-scroll-up/);
   await expect(frame).toHaveCSS(
     "background-color",
@@ -93,13 +99,13 @@ test("provider review routes are available, non-indexable and do not collect cre
       }
       await page.locator("h1").scrollIntoViewIfNeeded();
       await page
-        .locator("main > section")
+        .locator("main section")
         .first()
         .screenshot({
           path: testInfo.outputPath(route === growth ? "growth-hero.png" : "home-hero.png"),
         });
       await page
-        .getByTestId("fetal-growth-demo")
+        .getByTestId(route === "/providers/" ? "clinical-lookup-dashboard" : "fetal-growth-demo")
         .screenshot({ path: testInfo.outputPath("demo.png") });
       await page.screenshot({
         path: testInfo.outputPath(route === growth ? "fetal-growth.png" : "homepage.png"),

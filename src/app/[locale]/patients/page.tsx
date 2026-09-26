@@ -57,11 +57,11 @@ const journeyCapabilityColumns = [
   ],
   [
     {
-      title: "Gestational Age",
-      description: "Consistent gestational-age context",
+      title: "Pregnancy Dating",
+      description: "The documented baseline",
       image: "/media/patient-connected-story/capability-gestational-age-desktop-122x116-v1.png",
       mobileImage: "/media/patient-connected-story/capability-gestational-age-mobile-96x116-v1.png",
-      imageAlt: "Visual representing gestational age",
+      imageAlt: "Visual representing pregnancy dating",
     },
     {
       title: "Biometry",
@@ -78,11 +78,11 @@ const journeyCapabilityColumns = [
       imageAlt: "Visual representing fetal growth analysis",
     },
     {
-      title: "Doppler & Staging",
-      description: "Protocol aligned Staging",
+      title: "Doppler Lookup",
+      description: "Protocol aligned assistance",
       image: "/media/patient-connected-story/capability-doppler-staging-desktop-122x116-v1.png",
       mobileImage: "/media/patient-connected-story/capability-doppler-staging-mobile-96x116-v1.png",
-      imageAlt: "Visual representing Doppler and staging",
+      imageAlt: "Visual representing Doppler lookup",
     },
   ],
 ] as const;

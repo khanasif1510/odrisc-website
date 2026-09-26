@@ -5349,6 +5349,26 @@ select {
   .section-seven-about-copy {
     transform: translateY(-7svh);
   }
+  .patient-page > .patient-section-seven {
+    /* Match the existing clear space above the Join our Community marker. */
+    --section-seven-desktop-marker-gap: calc(
+      clamp(110px, 12vw, 180px) - clamp(18px, 2.5svh, 30px) - clamp(1.2168rem, 1.404vw, 1.404rem)
+    );
+  }
+  .patient-page .section-seven-intro {
+    min-height: auto;
+    padding-bottom: clamp(110px, 12vw, 180px);
+  }
+  .patient-page .section-seven-about-copy {
+    transform: none;
+  }
+  .patient-page .section-seven-choice-sticky {
+    height: auto;
+    padding-bottom: 0;
+  }
+  .patient-page .section-seven-talk-stage {
+    padding-top: var(--section-seven-desktop-marker-gap);
+  }
 }
 .split-section {
   background: #fbfcfb;

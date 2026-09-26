@@ -77,7 +77,7 @@ const maternalIntelligenceTopics = [
 
 const fetalGrowthIntelligenceTopics = [
   {
-    title: "Gestational Age",
+    title: "Pregnancy Dating",
     sections: [
       {
         label: "What it is:",
@@ -128,7 +128,7 @@ const fetalGrowthIntelligenceTopics = [
     ],
   },
   {
-    title: "Doppler & Staging",
+    title: "Doppler Lookup",
     sections: [
       {
         label: "What it is:",

@@ -619,6 +619,16 @@ All Patient-facing capability descriptions must reflect the Product Status regis
 7. Patient-Provider collaboration
 8. Legal information footer
 
+The Section 2 eight-card overview uses “PREGNANCY DATING” with “The documented baseline”
+and “DOPPLER LOOKUP” with “Protocol aligned assistance,” as approved
+by the founder on 21 September 2026. These label changes do not alter capability availability.
+
+Above 1000px viewport width, Section 7 uses the existing clear gap above “Join our Community”
+as the reference for the space after the About us action and before “Pregnancy Care,” and
+after the membership panels and before “Talk to Us.” The desktop introduction and sticky
+membership panel fit their content to remove excess blank space. The horizontal membership
+scroll track and mobile spacing remain unchanged.
+
 The current Patient homepage ends after its Section 7 company content. It does not render the
 “Step Inside,” standalone safety, closing CTA, or subsequent narrative sections. The retained footer
 contains only the bold “© 2026 ODRISC TECHNOLOGIES” and “Learn About Us: support@odrisc.com,” with
@@ -2018,6 +2028,10 @@ Normally noindex if it primarily routes authenticated or commercial traffic.
 **Page type:** Audience homepage
 **PRD requirements:** PRO-001, PRO-002, PRO-005, PRO-006, PRO-008, SEO-001, ANL-003
 
+### Two-case homepage update — 23 September 2026
+
+The founder supplied the two-case homepage specification and clinical source registry v3.1. The review homepage now contains the Fetal Growth educational workspace with Meera and Anaya, five module families, 24 highlights and source/history/verification views. Primary actions are Study Case 1 and Study Case 2. All former homepage content moves to the existing Platform page alongside its prior sections. This authorized review sequence supersedes the production section sequence below; no clinical availability is implied. See [Clinical lookup homepage](../project/CLINICAL_LOOKUP_HOMEPAGE.md) for the source, numerical and interaction contracts.
+
 ### Review build scope — 14 September 2026
 
 The founder-authorized review build is governed by [Provider review build](../project/PROVIDER_REVIEW_BUILD.md). It is English-only and noindex. Interim CTAs explore the fictional fetal-growth case; account connection is deferred pending the existing application details. This review scope takes precedence over the production conversion, integration and translation requirements below, which remain publication dependencies. Guideline citations do not establish software or clinical validation.
@@ -2159,6 +2173,10 @@ All Provider platform claims.
 **Audience:** Provider
 **Page type:** Product overview
 **PRD requirements:** PRO-002, PRO-005, PRO-012
+
+### Homepage migration — 23 September 2026
+
+This page now preserves all content from the former clinician homepage, followed by its existing Platform sections. The pregnancy-in-view, pregnancy-dating and report-review anchors remain available. The two-case educational workspace is on the clinician homepage. See [Clinical lookup homepage](../project/CLINICAL_LOOKUP_HOMEPAGE.md).
 
 ### Review build scope — 14 September 2026
 
@@ -4459,6 +4477,9 @@ The purpose composition may provide a “The ODRISC App” action using the esta
 Ten viewport-height units after that action, the About page reuses the complete Patient Section 7
 “Step Inside” experience, including its image frame, Maternal Intelligence narrative, Fetal Growth
 Intelligence narrative, scroll sequencing, clinical boundaries, and reduced-motion behavior.
+As requested on 26 September 2026, the Fetal Growth Intelligence topic headers in this
+“Step Inside” experience read “Pregnancy Dating” and “Doppler Lookup,” replacing
+“Gestational Age” and “Doppler & Staging.” Their supporting copy remains unchanged.
 Twenty viewport-height units after that experience, an “Our Approach” box-label-line marker
 introduces “From separate snapshots to trajectories” on the right half of the viewport, with
 “snapshots” beginning the second display line. The section

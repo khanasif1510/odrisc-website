@@ -56,3 +56,7 @@ capability in the register below.
 ## Provider review build clarification — 14 September 2026
 
 The founder authorized a fictional fetal-growth demonstration and Doppler/staging context within the fetal-growth website page. This records demonstration scope, not general availability or validation. The existing maturity register remains unchanged. Report extraction remains Planned. Clinician authentication will use the existing application; repository/API and clinician destinations will be provided later. See [Provider review build](../project/PROVIDER_REVIEW_BUILD.md) for source verification gaps and publication dependencies.
+
+## Two-case review demonstration — 23 September 2026
+
+The founder authorized the supplied synthetic Meera/Anaya homepage demonstration and moving the existing homepage to Platform. Registry v3.1 records zero production-enabled clinical lookups and zero enabled numerical utilities. Demo calculations, simulated report verification and fictional clinician assessments do not change the capability register. The page remains English-only and noindex. Source explanations remain non-authoritative demonstration fixtures; real OCR, authentication and clinical methods are not activated. See [implementation contract](../project/CLINICAL_LOOKUP_HOMEPAGE.md).

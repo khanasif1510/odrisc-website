@@ -315,3 +315,8 @@ This document records unresolved questions that could affect the product, conten
 
 - Confirm Node.js 24 x64, IIS httpPlatformHandler, the Node executable path and writable `.next/cache` on the owner's hosting account. Plan/runtime are currently unknown.
 - Complete the broad test-coverage gate and repeat the production dependency audit after npm's maintenance ends. See `PRODUCTION_BUILD_REPORT.md`; no quality thresholds were lowered.
+
+## Two-case clinician homepage — 23 September 2026
+
+- Registry v3.1 and its complete machine-readable companion have been supplied and incorporated. The remaining dependency is promotion evidence: clinical content review, rights, correction review, numerical package validation and explicit release approvals. All 38 source identities remain unpromoted for production.
+- Confirm publication approval for the two supplied synthetic cases. The educational review homepage is implemented; noindex and the existing English-only boundary remain until publication requirements are satisfied.

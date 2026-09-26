@@ -22,9 +22,11 @@ export function ProviderShell({
 }: Readonly<{ locale: string; children: ReactNode }>) {
   return (
     <div className={styles.site} lang="en" dir="ltr">
-      <a className={styles.skip} href="#provider-content">
-        Skip to content
-      </a>
+      <nav aria-label="Skip links">
+        <a className={styles.skip} href="#provider-content">
+          Skip to content
+        </a>
+      </nav>
       <SiteHeader
         locale={locale}
         audience="provider"

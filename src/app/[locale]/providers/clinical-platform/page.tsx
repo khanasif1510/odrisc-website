@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
+import { ProviderPlatformOverview } from "../_components/provider-home";
 import styles from "@/components/provider/provider.module.css";
 import { providerRoutes, providerStatus } from "@/content/providers/site";
 import {
-  DetailHero,
   ProviderClosing,
   ProviderShell,
   TextLink,
@@ -20,11 +20,20 @@ export default async function ClinicalPlatformPage({
   const locale = await providerLocale(params);
   return (
     <ProviderShell locale={locale}>
-      <DetailHero
-        eyebrow="Platform"
-        title="One clinical view. From context to conversation."
-        body="ODRISC is designed to organise information around the consultation: establish the pregnancy context, review observations across visits, and keep the source behind each measurement available for review."
-      />
+      <ProviderPlatformOverview />
+      <section className={styles.section}>
+        <div className={styles.sectionInner}>
+          <div className={styles.sectionTitle}>
+            <span className={styles.kicker}>Platform</span>
+            <h2>One clinical view. From context to conversation.</h2>
+            <p>
+              ODRISC is designed to organise information around the consultation: establish the
+              pregnancy context, review observations across visits, and keep the source behind each
+              measurement available for review.
+            </p>
+          </div>
+        </div>
+      </section>
       <section className={styles.section}>
         <div className={styles.sectionInner}>
           <div className={styles.sectionTitle}>

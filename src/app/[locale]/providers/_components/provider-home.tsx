@@ -11,9 +11,9 @@ import { FetalGrowthDemo } from "@/features/providers/fetal-growth-demo";
 import styles from "@/components/provider/provider.module.css";
 import { providerRoutes, providerStatus } from "@/content/providers/site";
 import { demoCase, displayDate } from "@/content/providers/demo-case";
-import { ProviderClosing, TextLink } from "./provider-shell";
+import { TextLink } from "./provider-shell";
 
-export function ProviderHome() {
+export function ProviderPlatformOverview() {
   return (
     <>
       <section className={styles.hero}>
@@ -349,7 +349,6 @@ export function ProviderHome() {
           </div>
         </div>
       </section>
-      <ProviderClosing />
     </>
   );
 }
