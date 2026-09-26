@@ -2441,7 +2441,7 @@ The following decisions are locked unless formally changed:
 26. Temporary visual placeholders do not become approved brand assets automatically.
 27. A new logo must not be created without explicit approval.
 28. Design System implementation must derive from this Brand Foundation.
-29. Primary Latin typeface: Inter
+29. Primary Latin typeface: Manrope
 30. Primary Arabic typeface: Noto Sans Arabic
 31. Fallback font stacks: defined in Design System
 32. Signature-gradient direction and stops: defined in Design System

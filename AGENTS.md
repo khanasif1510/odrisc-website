@@ -45,6 +45,14 @@ Before planning, generating, editing, or reviewing code, the agent must read the
 - Record material architectural decisions in `ai/decisions/`.
 - Record unresolved matters in `docs/project/OPEN_QUESTIONS.md`.
 
+## UI/UX and Motion Override
+
+- For UI design or redesign work, use the installed `figma-generate-design` Codex skill as the primary professional design workflow when it is available in the session.
+- Use Motion for React from `motion/react` as the primary framework for component, layout, SVG, gesture, presence, scroll, and narrative animation.
+- The global Motion configuration lives in `src/components/motion-provider.tsx`; preserve user reduced-motion preferences.
+- For UI-only redesign work, the established visual design system is advisory and may be bypassed when a stronger professional design solution is justified.
+- This override does not authorize changes to business logic, approved content, routing, functionality, product status, clinical boundaries, analytics, or data behavior.
+
 ## Before Coding
 
 The agent must establish:

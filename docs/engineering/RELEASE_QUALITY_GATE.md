@@ -44,7 +44,7 @@
 
 ## Staging
 
-- [ ] Correct immutable image is deployed
+- [ ] Correct locally verified build is selected for manual publication
 - [ ] Liveness passes
 - [ ] Readiness passes
 - [ ] Release identity is correct

@@ -55,7 +55,7 @@ Components for easier unit testing.
 - Test artifacts must follow privacy rules.
 - Failed retries are recorded as flaky.
 - Defect fixes require regression evidence.
-- The same immutable image must pass staging before production promotion.
+- The same locally verified production build must be used for manual publication.
 
 ## Alternatives Considered
 

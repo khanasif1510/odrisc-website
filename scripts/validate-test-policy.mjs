@@ -12,6 +12,8 @@ const sourceExtensions = new Set([".cjs", ".cts", ".js", ".jsx", ".mjs", ".mts",
 const excludedDirectories = new Set([
   ".git",
   ".next",
+  "dist",
+  "build",
   "blob-report",
   "coverage",
   "node_modules",

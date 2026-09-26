@@ -2697,31 +2697,30 @@ The public website must be implemented using the approved technologies and const
 - Public pages use the approved rendering strategy.
 - Styling consumes ODRISC design tokens.
 - Localization supports English, Arabic, and RTL.
-- External data is validated.
+- Static sample data is typed, validated, synthetic, and repository controlled.
 - Analytics respects consent.
-- Automated testing and accessibility checks run in CI.
-- Production uses the approved Docker and standalone-output model.
+- Automated testing and accessibility checks run locally.
+- The production build is verified locally before manual publication.
 - No prohibited technology is introduced without approval.
 
 ## SHR-017 — Engineering-Architecture Compliance
 
 **Priority:** P0
 
-The public website must comply with the system boundaries, rendering model, module structure, integration architecture, security zones, runtime configuration, deployment topology, and rollback requirements defined in `docs/engineering/ARCHITECTURE.md`.
+The public website must comply with the system boundaries, rendering model, module structure, static-data architecture, security zones, runtime configuration, local-build, and manual-publication requirements defined in `docs/engineering/ARCHITECTURE.md`.
 
 ### Acceptance Criteria
 
 - Public pages use the approved rendering strategy.
 - Server and Client Component boundaries are justified.
 - Routes map to approved Page IDs.
-- External services are accessed through adapters.
+- Demonstrations use repository-controlled static sample data and no database connection.
 - Product Status uses one controlled source.
 - Public forms follow the approved processing flow.
 - Analytics remains consent controlled.
 - Clinical data remains outside the public website.
 - Runtime configuration does not expose secrets.
-- Deployment and rollback use immutable images.
-- Architecture validation runs in CI.
+- The production build and architecture validation pass locally before manual publication.
 
 ## SHR-018 — Component-Library Compliance
 

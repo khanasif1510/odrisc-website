@@ -90,12 +90,8 @@ It establishes:
 - Logging
 - Observability
 - Testing
-- Continuous integration
-- Docker topology
-- Nginx routing
-- Deployment
-- Health checks
-- Rollback
+- Local build verification
+- Manual publication boundary
 - Architecture governance
 
 This document answers:
@@ -123,8 +119,8 @@ It includes:
 - Public product previews
 - Analytics and consent
 - Application handoffs
-- Approved public API integrations
-- Self-hosted deployment
+- Repository-controlled static sample data
+- Manual publication
 
 It does not define the internal architecture of:
 
@@ -139,7 +135,7 @@ It does not define the internal architecture of:
 - Native mobile applications
 - Internal administrative systems
 
-The website must remain separated from clinical systems by approved API boundaries.
+The website must remain separated from clinical systems and must not connect to their APIs or databases for website data.
 
 ---
 
@@ -161,16 +157,14 @@ The architecture must support:
 12. Product Status transparency
 13. Secure public forms
 14. Consent-controlled analytics
-15. Existing ODRISC service integration
-16. No direct clinical-database access
-17. Self-hosted Docker deployment
-18. Immutable releases
-19. Low-downtime deployment
-20. Reliable rollback
-21. Multiple AI coding agents
-22. Clear module ownership
-23. Automated quality gates
-24. Future CMS and search adoption without rebuilding the application
+15. Repository-controlled static sample data
+16. No database connection
+17. Verified local production builds
+18. Manual publication
+19. Multiple AI coding agents
+20. Clear module ownership
+21. Local quality gates
+22. Future search adoption without rebuilding the application
 
 ---
 
@@ -261,7 +255,7 @@ Core content, navigation, and form semantics should remain understandable when c
 
 V1 should avoid unnecessary distributed infrastructure.
 
-The initial architecture should remain deployable on one controlled server while preserving a future scaling path.
+The initial architecture should remain locally buildable and operationally simple.
 
 ---
 
@@ -269,17 +263,17 @@ The initial architecture should remain deployable on one controlled server while
 
 The public website uses a:
 
-> Modular monolith with layered server integrations and static-first rendering.
+> Modular monolith with repository-controlled static data and static-first rendering.
 
 This means:
 
-- One deployable Next.js application
+- One locally buildable Next.js application
 - One source repository
 - One build artifact
 - Clearly separated internal modules
-- External integrations behind adapters
+- Static sample-data modules with typed contracts
 - No independent website microservices
-- No website-owned database
+- No database connections
 - No distributed event system
 - No separate Patient and Provider frontends
 
@@ -300,8 +294,6 @@ The repository contains:
 - Design tokens
 - Tests
 - Storybook
-- Infrastructure configuration
-- Deployment scripts
 
 It does not contain:
 
@@ -332,13 +324,7 @@ Public visitor
     └── Authorized content reviewer
     │
     ▼
-DNS / optional approved CDN or WAF
-    │
-    ▼
-Nginx reverse proxy
-    │
-    ▼
-ODRISC Next.js standalone container
+ODRISC Next.js website
     │
     ├── Static pages and assets
     ├── Server Components
@@ -347,11 +333,9 @@ ODRISC Next.js standalone container
     ├── Content pipeline
     ├── Localization
     ├── Consent and analytics adapter
-    ├── Form application services
-    └── Public API adapters
+    ├── Form presentation
+    └── Static sample-data modules
     │
-    ├──────────────► Approved form-delivery service
-    ├──────────────► Approved ODRISC public `.NET` API
     ├──────────────► Google Tag Manager / GA4 after consent
     ├──────────────► Approved error-monitoring provider
     └──────────────► Patient and Provider application handoffs
@@ -592,13 +576,6 @@ tests/
 ├── accessibility/
 ├── visual/
 └── fixtures/
-
-infra/
-├── docker/
-├── nginx/
-├── compose/
-├── scripts/
-└── deployment/
 ```
 
 The exact folder structure may evolve without changing the architectural boundaries.
@@ -1833,10 +1810,7 @@ Challenge systems must remain accessible and privacy reviewed.
 
 # 46. Rate Limiting
 
-V1 rate limiting may use:
-
-- Nginx request limits
-- Small application-level in-memory limits for defense in depth
+If a published form endpoint is approved later, rate limiting may use a small application-level in-memory limit for defense in depth.
 
 Application memory must not be treated as a durable global limit.
 
@@ -2139,20 +2113,9 @@ Recommended cache behavior:
 | Legal documents               | Normal page caching                     |
 | Remote image optimizer output | Controlled cache                        |
 
-## 57.3 Nginx Caching
+## 57.3 Publication Caching Boundary
 
-Nginx may cache:
-
-- Immutable Next.js static assets
-- Approved image-optimization responses
-
-Nginx should not cache:
-
-- Form responses
-- Health checks
-- Runtime config
-- Error responses
-- Pages with request-specific state
+Hosting and cache configuration are not prescribed by this repository. Application code must continue to emit appropriate cache semantics for static assets and any approved stateful response.
 
 ---
 
@@ -2288,7 +2251,7 @@ Logs must not contain:
 
 # 64. Request ID Architecture
 
-Nginx should accept or generate a request ID.
+The application may accept or generate a request ID for approved server-side operations.
 
 The request ID should be:
 
@@ -2307,13 +2270,11 @@ The request ID must not encode personal information.
 The V1 observability foundation includes:
 
 - Structured application logs
-- Nginx access and error logs
 - Health checks
-- Deployment version
 - Form-delivery success and failure metrics
 - External error-monitoring adapter
 - Core Web Vitals
-- CI and deployment status
+- Local build and publication records
 
 OpenTelemetry may be introduced later without changing application-service contracts.
 
@@ -2821,190 +2782,14 @@ Selected E2E tests
 ↓
 Storybook build
 ↓
-Docker build
-↓
 Security checks
 ```
 
-## Main Branch
-
-```text
-All pull-request checks
-↓
-Full E2E and visual regression
-↓
-Immutable container build
-↓
-Container scan
-↓
-Push versioned image to GHCR
-↓
-Deploy image to staging
-↓
-Staging smoke and accessibility checks
-↓
-Approval gate
-↓
-Promote same image to production
-↓
-Production health checks
-↓
-Production smoke tests
-↓
-Retain previous image for rollback
-```
-
 ---
 
-# 84. Deployment Topology
+# 84. Local Build and Manual Publication
 
-The V1 deployment uses:
-
-- One production server
-- Host-managed Nginx
-- Docker Compose-managed Next.js container
-- Versioned images from GHCR
-- Loopback-only application port
-- TLS at Nginx
-- Health-based deployment checks
-
-```text
-Internet
-↓
-Host Nginx :443
-↓
-127.0.0.1:<active-slot-port>
-↓
-Next.js standalone container
-```
-
-The application container must not expose its port publicly.
-
----
-
-# 85. Infrastructure Repository Structure
-
-```text
-infra/
-├── docker/
-│   └── Dockerfile
-│
-├── compose/
-│   ├── compose.staging.yml
-│   └── compose.production.yml
-│
-├── nginx/
-│   ├── site.conf.template
-│   ├── security-headers.conf
-│   └── cache.conf
-│
-├── deployment/
-│   ├── deploy.sh
-│   ├── rollback.sh
-│   ├── switch-slot.sh
-│   └── smoke-test.sh
-│
-└── README.md
-```
-
-Infrastructure scripts must be reviewed with the same care as application code.
-
----
-
-# 86. Docker Architecture
-
-The Docker image uses a multi-stage build:
-
-```text
-Base
-↓
-Dependencies
-↓
-Application build
-↓
-Standalone production runner
-```
-
-The production container must:
-
-- Run as non-root
-- Contain no development dependencies
-- Contain no Git metadata
-- Contain no secrets
-- Expose one internal port
-- Use a read-only filesystem where practical
-- Write temporary data only to approved locations
-- Include a container health check where practical
-
----
-
-# 87. Nginx Architecture
-
-Nginx is responsible for:
-
-- TLS termination
-- HTTPS redirect
-- Request ID
-- Proxy headers
-- Static asset caching
-- Request-size limits
-- Rate limiting
-- Security headers
-- Staging noindex
-- Proxying to the active application slot
-- Access and error logging
-
-Nginx must forward:
-
-- Host
-- Scheme
-- Client IP chain
-- Request ID
-
-Forwarded-header trust must be configured safely.
-
----
-
-# 88. Deployment Slots
-
-V1 should support two logical deployment slots:
-
-- Blue
-- Green
-
-Only one slot receives public traffic at a time.
-
-Deployment sequence:
-
-1. Determine inactive slot
-2. Pull the approved image
-3. Start inactive slot
-4. Wait for readiness
-5. Run smoke tests
-6. Update Nginx upstream
-7. Reload Nginx safely
-8. Run production smoke tests
-9. Retain previous slot temporarily
-10. Stop previous slot after stabilization
-
-This supports low-downtime deployment and rapid rollback.
-
----
-
-# 89. Rollback Architecture
-
-Rollback should:
-
-1. Identify previous known-good image
-2. Verify the previous slot remains healthy or restart it
-3. Switch Nginx upstream
-4. Reload Nginx
-5. Run smoke tests
-6. Record rollback reason
-7. Preserve failed-release logs
-8. Create a follow-up issue
-
-Rollback must not require rebuilding the previous release.
+The website is developed, tested, and built locally. All governed checks must pass before the owner manually publishes the verified output. Hosting topology, transfer tooling, automated deployment, containers, reverse proxies, and rollback orchestration are outside this repository's architecture.
 
 ---
 
@@ -3031,11 +2816,9 @@ It should not dominate the public interface.
 
 # 91. Staging Architecture
 
-Staging should match production in:
+Any manually prepared review environment should match the local production build in:
 
 - Node version
-- Container image
-- Nginx behavior
 - Locale support
 - Content structure
 - Security headers
@@ -3236,14 +3019,11 @@ The architecture is correctly implemented when:
 - Sensitive values are rejected
 - Direct provider calls are absent
 
-## Deployment
+## Publication
 
-- Standalone container builds
-- Application port is not public
-- Health checks work
-- Blue-green switching works
-- Rollback works
-- Release identity is traceable
+- The production build passes locally
+- Static sample data is validated and contains no real Patient data
+- The verified output is ready for manual publication
 
 ## Quality
 
@@ -3285,17 +3065,17 @@ AI agents must not:
 - Duplicate Product Status
 - Call analytics providers directly
 - Call external services directly from UI components
-- connect to SQL Server
+- connect to SQL Server or any other database
 - create a public API without approval
-- add a database
+- add a database or live data connection
 - add authentication
 - add a CMS
 - collect clinical data
 - expose runtime secrets
 - weaken validation to complete a task
 - bypass the adapter layer
-- introduce persistent infrastructure without an ADR
-- change deployment topology without approval
+- introduce persistent infrastructure
+- add automated publishing infrastructure without approval
 
 ---
 
@@ -3305,7 +3085,7 @@ The following decisions are locked unless formally changed:
 
 1. The website uses a dedicated single-application repository.
 2. The architecture is a modular monolith.
-3. There is one Next.js deployable application.
+3. There is one Next.js application that builds locally.
 4. Patient and Provider journeys share one application.
 5. Public pages are static-first.
 6. Server Components are the default.
@@ -3320,13 +3100,13 @@ The following decisions are locked unless formally changed:
 15. Long-form content uses controlled MDX.
 16. Structured content uses typed validated data.
 17. Product Status has one controlled code representation.
-18. External integrations use adapters.
+18. Public demonstrations use typed repository-controlled static sample data.
 19. Pages and components do not import vendor SDKs directly.
 20. Native Fetch is used behind integration clients.
 21. Server Actions handle same-origin public-form mutations.
 22. Route Handlers handle health, runtime config, and machine endpoints.
-23. The website does not connect directly to SQL Server.
-24. The website does not own a database in V1.
+23. The website does not connect to SQL Server or any other database.
+24. Static sample data is synthetic and repository controlled.
 25. The website does not own authentication in V1.
 26. Public forms do not collect clinical information.
 27. V1 form delivery is synchronous.
@@ -3334,7 +3114,7 @@ The following decisions are locked unless formally changed:
 29. Analytics uses an internal typed wrapper.
 30. Analytics payloads are filtered for sensitive data.
 31. Recharts is isolated behind ODRISC chart components.
-32. V1 content invalidation occurs through deployment.
+32. Content changes require a new verified local build and manual publication.
 33. Request-time ISR is not required in V1.
 34. Immutable static assets may be cached long term.
 35. Health, runtime-config, and form responses use no-store behavior.
@@ -3345,16 +3125,10 @@ The following decisions are locked unless formally changed:
 40. Request IDs propagate through the system.
 41. CSP and security headers are required.
 42. Staging uses layered noindex controls.
-43. The production application runs in a Docker container.
-44. Nginx is host managed in V1.
-45. Docker Compose manages application containers.
-46. The application container is bound to loopback only.
-47. Production supports blue and green deployment slots.
-48. The same immutable image is promoted from staging to production.
-49. Rollback uses a previously built image.
-50. Architecture boundaries are enforced through tests and linting.
-51. Vendor-specific code remains replaceable.
-52. Material architecture changes require an ADR.
+43. Required checks run locally before publication.
+44. Publication is manual.
+45. Architecture boundaries are enforced through tests and linting.
+46. Material architecture changes require an ADR.
 
 ---
 
@@ -3370,9 +3144,6 @@ The following remain unresolved:
 - Is form delivery email-based, CRM-based, or API-based?
 - Is a persistent form queue required after launch?
 - Is Cloudflare used at the edge?
-- What production Linux distribution is used?
-- What exact ports are allocated to blue and green slots?
-- Does the server already use host-level Docker Compose conventions?
 - Which error-monitoring provider is approved?
 - Is OpenTelemetry included in V1?
 - Which ODRISC public API endpoints are available?
@@ -3388,9 +3159,7 @@ The following remain unresolved:
 - Is Turnstile required at launch or only after abuse appears?
 - Which Storybook environment is used?
 - Which architecture tests are release blocking?
-- What is the exact blue-green Nginx-switch mechanism?
-- How long is the previous deployment slot retained?
-- Who owns production incident response?
+- Who owns manual publication?
 - Who approves architecture changes?
 
 These questions must remain in:
@@ -3416,17 +3185,11 @@ Small accessible Client Component boundaries
 ↓
 ODRISC design-system and motion components
 ↓
-Application services
+Typed repository-controlled static sample data
 ↓
-Replaceable external-service adapters
+Verified local production build
 ↓
-Approved ODRISC APIs and delivery services
-↓
-Standalone Docker deployment
-↓
-Host Nginx
-↓
-Blue-green low-downtime release and rollback
+Manual publication
 ```
 
 The architecture keeps the public website:

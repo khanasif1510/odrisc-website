@@ -1,4 +1,5 @@
-import { describe, expect, it, vi } from "vitest";
+import { beforeEach, describe, expect, it, vi } from "vitest";
+import { NextRequest } from "next/server";
 
 vi.mock("next-intl/server", () => ({
   getRequestConfig: (configuration: unknown) => configuration,
@@ -10,6 +11,10 @@ import { routing } from "../../src/i18n/routing";
 import proxy, { config as proxyConfig } from "../../src/proxy";
 
 describe("INF-CFG-002 localization runtime contract", () => {
+  beforeEach(() => {
+    // The Next.js plugin injects this value from trailingSlash in production.
+    vi.stubEnv("_next_intl_trailing_slash", "true");
+  });
   it("preserves the approved deterministic locale policy", () => {
     expect(routing).toMatchObject({
       locales: ["en", "ar"],
@@ -63,5 +68,19 @@ describe("INF-CFG-002 localization runtime contract", () => {
     expect(proxyConfig).toEqual({
       matcher: "/((?!api|trpc|_next|_vercel|.*\\..*).*)",
     });
+  });
+
+  it("rewrites unprefixed English routes without changing their public URL", () => {
+    const response = proxy(new NextRequest("https://odrisc.com/patients/"));
+
+    expect(response.status).toBe(200);
+    expect(response.headers.get("x-middleware-rewrite")).toBe("https://odrisc.com/en/patients/");
+  });
+
+  it("canonicalizes directly requested English-prefixed routes", () => {
+    const response = proxy(new NextRequest("https://odrisc.com/en/patients/"));
+
+    expect(response.status).toBe(307);
+    expect(response.headers.get("location")).toBe("https://odrisc.com/patients/");
   });
 });

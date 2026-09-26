@@ -49,7 +49,7 @@
 - `ai/rules/NON_NEGOTIABLES.md`
 - `ai/rules/AI_BEHAVIOR.md`
 
-The canonical repository, rendering, module, content, integration, security-boundary, deployment, and rollback architecture is defined in:
+The canonical repository, rendering, module, content, static-data, security-boundary, and local-build architecture is defined in:
 
 `docs/engineering/ARCHITECTURE.md`
 
@@ -84,16 +84,15 @@ It establishes:
 - Accessibility tooling
 - Security tooling
 - Logging and observability
-- Hosting
-- Containerization
-- Continuous integration
-- Deployment
+- Local development
+- Local production builds
+- Manual publication
 - Dependency governance
 - Versioning
 - Technology-selection rules
 - Prohibited and deferred technologies
 
-This document exists so that human contributors and AI coding agents implement one coherent website rather than introducing different frameworks, libraries, deployment patterns, or overlapping tools.
+This document exists so that human contributors and AI coding agents implement one coherent website rather than introducing different frameworks, libraries, data sources, publishing assumptions, or overlapping tools.
 
 ---
 
@@ -117,9 +116,9 @@ It does not define the complete technology stack of:
 - Native Android or iOS applications
 - Capacitor or Flutter applications
 
-The public website may integrate with approved ODRISC application services through controlled APIs and handoff links.
+The public website may link to separately approved ODRISC applications, but its own content and demonstrations use repository-controlled static sample data.
 
-It must not directly duplicate clinical logic or directly connect to the production clinical database.
+It must not duplicate clinical logic or connect to any production, clinical, operational, or website database.
 
 ---
 
@@ -142,8 +141,9 @@ The stack must support:
 - Product-status transparency
 - Secure forms
 - Analytics with consent
-- Self-hosted deployment
-- Existing ODRISC `.NET` services
+- Local development and production builds
+- Manual publication
+- Repository-controlled static sample data
 - Future headless-CMS integration
 - Future GCC market expansion
 - Multiple AI coding agents
@@ -223,16 +223,9 @@ Analytics and monitoring must not collect:
 - Form-message content
 - Identifiable maternal or fetal information
 
-## 4.6 Portability Before Platform Lock-In
+## 4.6 Local Build Before Publication
 
-The website must be deployable to:
-
-- ODRISC-managed infrastructure
-- A standard Linux server
-- Docker
-- A compatible managed container platform
-
-Core functionality must not depend exclusively on one commercial hosting vendor.
+The website must build and pass its required checks locally. Publication is a manual step and must not be encoded as a required hosting, container, proxy, registry, or CI/CD architecture.
 
 ## 4.7 Fewer Dependencies Before More Features
 
@@ -264,7 +257,7 @@ A package should be introduced only when it solves a documented need better than
 | Component primitives      | Radix Primitives                                            | Compatible stable release |
 | Component scaffolding     | shadcn-style source components                              | Controlled use only       |
 | Icons                     | Lucide React                                                | Compatible stable release |
-| Motion                    | Motion for React                                            | 12                        |
+| Motion                    | Motion for React                                            | 13                        |
 | Localization              | next-intl                                                   | 4                         |
 | Content                   | Repository-controlled MDX and typed data                    | V1                        |
 | Schema validation         | Zod                                                         | 4                         |
@@ -281,14 +274,10 @@ A package should be introduced only when it solves a documented need better than
 | Component documentation   | Storybook                                                   | Current compatible stable |
 | Linting                   | ESLint flat configuration                                   | Required                  |
 | Formatting                | Prettier                                                    | Required                  |
-| Containerization          | Docker                                                      | Required                  |
-| Production output         | Next.js standalone output                                   | Required                  |
-| Reverse proxy             | Nginx                                                       | V1 production default     |
-| CI/CD                     | GitHub Actions                                              | Required                  |
-| Container registry        | GitHub Container Registry                                   | Preferred                 |
 | Error logging             | Structured server logs                                      | Required                  |
 | External error monitoring | Provider adapter; final vendor pending                      | Conditional               |
-| Database                  | None inside public website                                  | V1                        |
+| Data source               | Repository-controlled static sample data                    | Required                  |
+| Database                  | No database connection                                      | Required                  |
 | Authentication            | None inside public website                                  | V1                        |
 | CMS                       | No external CMS                                             | V1                        |
 | Dark mode                 | Not included                                                | V1                        |
@@ -303,7 +292,7 @@ A package should be introduced only when it solves a documented need better than
 Node.js 24 LTS
 ```
 
-Production, development, CI, and Docker must use the same Node major version.
+Local development and local production builds must use the same Node major version.
 
 ## 6.2 Version Files
 
@@ -338,9 +327,7 @@ The Node version must be declared in:
 - `.node-version`
 - `.nvmrc`, when retained
 - `package.json`
-- Dockerfile
-- GitHub Actions
-- Deployment documentation
+- Local development documentation
 
 Example:
 
@@ -608,27 +595,21 @@ The following should normally be statically generated:
 
 ## 11.2 Dynamic Rendering
 
-Dynamic rendering should be used only when a page requires:
+Dynamic rendering should be used only when a page requires an explicitly approved non-data behavior such as:
 
 - Request-specific locale or market behavior
 - Secure form processing
 - Draft preview
-- Approved integration data
 - Authentication-aware handoff
-- Current external information
 
 ## 11.3 Revalidation
 
-Content should normally change through:
-
-- Git commit
-- CI build
-- Deployment
+Content should normally change through a reviewed repository edit followed by a local build and manual publication.
 
 On-demand or time-based revalidation may be introduced when:
 
 - A CMS is approved
-- Product Status must update without full deployment
+- Product Status requires a faster approved publishing workflow
 - Resources require editorial publishing
 - Pricing requires controlled rapid updates
 
@@ -879,7 +860,7 @@ Rules:
 ## 17.1 Approved Motion Library
 
 ```text
-Motion for React 12
+Motion for React 13
 ```
 
 Import from:
@@ -1089,7 +1070,7 @@ A headless CMS may be evaluated when:
 - Arabic publication needs independent workflows
 - Draft previews become operationally necessary
 - Multiple approvers require role-based publishing
-- Deployment-based content updates become a bottleneck
+- Manual publication becomes a content bottleneck
 
 CMS selection requires a separate ADR.
 
@@ -2086,197 +2067,11 @@ Final budgets are governed by:
 
 ---
 
-# 43. Hosting Model
+# 43. Local Build and Manual Publication
 
-## 43.1 V1 Hosting Decision
+Development and release preparation occur locally. Before manual publication, run the repository's approved formatting, linting, type, validation, test, accessibility, and production-build checks.
 
-The public website will be capable of self-hosted production deployment.
-
-Approved production model:
-
-```text
-Internet
-↓
-DNS or approved CDN
-↓
-Nginx reverse proxy
-↓
-Next.js standalone Docker container
-↓
-Approved external services and ODRISC APIs
-```
-
-## 43.2 Next.js Output
-
-Use:
-
-```js
-const nextConfig = {
-  output: "standalone",
-};
-```
-
-## 43.3 Reverse Proxy
-
-Nginx responsibilities:
-
-- TLS termination
-- HTTP-to-HTTPS redirect
-- Security headers where appropriate
-- Compression
-- Request-size limits
-- Rate limiting where approved
-- Proxying
-- Health-check routing
-- Static asset caching
-- Access logging with privacy controls
-
-## 43.4 Container Runtime
-
-Use Docker.
-
-Production must not rely on a globally installed Node process outside the container.
-
-## 43.5 Managed Hosting
-
-Vercel or another managed Next.js platform may be evaluated later.
-
-Moving to a managed platform requires:
-
-- Cost comparison
-- Data and privacy review
-- Deployment analysis
-- Feature compatibility
-- Rollback plan
-- ADR approval
-
----
-
-# 44. Docker
-
-Use a multi-stage Docker build.
-
-Recommended stages:
-
-1. Base
-2. Dependencies
-3. Build
-4. Production runner
-
-Preferred base:
-
-```text
-node:24-bookworm-slim
-```
-
-The production image should contain:
-
-- Standalone server output
-- Required static files
-- Required public assets
-- Non-root runtime user
-- No development dependencies
-- No source-control metadata
-- No secrets
-
-Avoid Alpine unless compatibility and native-dependency behavior are verified.
-
----
-
-# 45. Continuous Integration
-
-## 45.1 Approved CI Platform
-
-```text
-GitHub Actions
-```
-
-## 45.2 Pull-Request Pipeline
-
-Required checks:
-
-1. Dependency installation with frozen lockfile
-2. Format check
-3. Lint
-4. Type check
-5. Unit tests
-6. Component tests
-7. Production build
-8. Accessibility tests
-9. Selected E2E tests
-10. Dependency-security checks
-11. Docker build validation where relevant
-
-## 45.3 Main-Branch Pipeline
-
-Required:
-
-1. All pull-request checks
-2. Full E2E suite
-3. Container build
-4. Container scan
-5. Publish image
-6. Deploy to staging
-7. Smoke tests
-8. Manual or approved production gate
-9. Production deployment
-10. Production smoke tests
-
-## 45.4 Deployment Artifact
-
-Build one immutable container image.
-
-Promote the same image from staging to production.
-
-Do not rebuild separately for production unless environment-independent reproducibility is guaranteed.
-
----
-
-# 46. Deployment
-
-## 46.1 Container Registry
-
-Preferred:
-
-```text
-GitHub Container Registry
-```
-
-## 46.2 Deployment Version
-
-Every deployment must expose:
-
-- Git commit SHA
-- Build timestamp
-- Application version
-- Environment
-
-## 46.3 Health Checks
-
-Required routes:
-
-```text
-/api/health/live
-/api/health/ready
-```
-
-Health responses must not expose sensitive configuration.
-
-## 46.4 Rollback
-
-Production deployment must support rollback to the previous known-good image.
-
-## 46.5 Zero- or Low-Downtime Deployment
-
-Use:
-
-- Health checks
-- New-container readiness
-- Proxy switch
-- Previous-container retention
-- Post-deployment smoke tests
-
-The exact deployment orchestration will be defined in Engineering Architecture.
+No automated hosting or publication infrastructure is required by the project architecture. The publication destination and transfer method remain an owner-operated manual concern outside this repository.
 
 ---
 
@@ -2382,27 +2177,11 @@ unless the website itself receives an approved authenticated requirement.
 
 ---
 
-# 51. Database
+# 51. Static Sample Data and Database Boundary
 
-The public website will not own a production database in V1.
+The public website must not own or connect to a database. Structured public content, demonstrations, charts, timelines, and other data-driven examples must use repository-controlled static sample data.
 
-Structured public content remains repository controlled.
-
-Operational submissions should be delivered to an approved service through an integration adapter.
-
-If a database becomes necessary, the requirement must define:
-
-- Data classification
-- Retention
-- Encryption
-- Region
-- Access control
-- Backup
-- Deletion
-- Auditability
-- Relationship to existing SQL Server systems
-
-A database technology must not be selected before those requirements exist.
+Sample data must be synthetic, contain no real Patient information, be reviewable in source control, and be clearly labelled as illustrative wherever a visitor could mistake it for live or clinical data. Adding any database connection requires an explicit change to this locked decision.
 
 ---
 
@@ -2477,7 +2256,7 @@ The repository should support Codex, Claude Code, and other coding agents throug
 - Documented dependencies
 - Testable requirements
 - Clear environment setup
-- Reproducible container builds
+- Reproducible local builds
 
 Framework documentation used by agents must match the installed major versions.
 
@@ -2669,7 +2448,7 @@ The Technology Stack is successfully implemented when:
 ## Runtime
 
 - Node and pnpm versions are pinned
-- Local, CI, Docker, and production versions match
+- Local development and local production-build versions match
 - Lockfile installation is reproducible
 
 ## Framework
@@ -2677,7 +2456,7 @@ The Technology Stack is successfully implemented when:
 - Next.js App Router is used
 - Server Components are the default
 - Static generation is used for public content
-- Standalone output builds successfully
+- The local production build succeeds
 
 ## Design
 
@@ -2701,7 +2480,6 @@ The Technology Stack is successfully implemented when:
 - E2E tests pass
 - Accessibility tests pass
 - Production build passes
-- Docker build passes
 
 ## Security
 
@@ -2712,13 +2490,10 @@ The Technology Stack is successfully implemented when:
 - Dependency scanning runs
 - Sensitive data is absent from logs and analytics
 
-## Deployment
+## Publication
 
-- Staging and production use immutable containers
-- Health checks work
-- Rollback works
-- Production smoke tests run
-- Deployment version is traceable
+- All required checks pass locally
+- The production build is reviewed before manual publication
 
 ---
 
@@ -2783,15 +2558,15 @@ The following decisions are locked unless formally changed:
 12. Runtime CSS-in-JS is prohibited.
 13. Radix Primitives will support complex accessible controls.
 14. Lucide React will be the standard interface-icon package.
-15. Motion for React 12 will be the single approved motion library.
+15. Motion for React 13 will be the single approved motion library.
 16. next-intl 4 will provide localization foundations.
 17. English and Arabic must be supported technically.
 18. Repository-controlled MDX and typed data will be used in V1.
 19. No external CMS will be used in V1.
 20. Zod 4 will validate external and structured data.
 21. Native Fetch will be used for HTTP.
-22. The public website will not directly access SQL Server.
-23. The website will not own a database in V1.
+22. The public website will not access SQL Server or any other database.
+23. The website will use repository-controlled static sample data.
 24. The website will not own authentication in V1.
 25. Google Tag Manager, Google Analytics 4, and Search Console will support measurement.
 26. Analytics must remain consent controlled.
@@ -2802,26 +2577,21 @@ The following decisions are locked unless formally changed:
 31. Axe through Storybook and Playwright will support automated accessibility checks.
 32. Storybook will document reusable components.
 33. ESLint flat configuration and Prettier will govern code quality.
-34. Docker will be used for production packaging.
-35. Next.js standalone output will be used.
-36. Nginx will be the V1 reverse proxy.
-37. GitHub Actions will provide CI/CD.
-38. GitHub Container Registry is the preferred container registry.
-39. Production deployments will use immutable images.
-40. A rollback mechanism is required.
-41. Structured logs are required.
-42. Pino is the server-logging library.
-43. Recharts will be the V1 public-chart library.
-44. Dark mode is not part of V1.
-45. Search is deferred until content volume justifies it.
-46. Technology changes require documentation and governance.
-47. ESLint flat configuration is the approved linting system.
-48. ESLint runs through the repository script `pnpm lint`.
-49. The lint script uses `eslint . --max-warnings=0`.
-50. `next lint` is not used.
-51. Prettier is the canonical formatter.
-52. Formatting verification runs through `pnpm format:check`.
-53. ESLint and Prettier have separate responsibilities and must not enforce conflicting formatting rules.
+34. Production builds and release checks will run locally.
+35. Publication will be performed manually.
+36. Structured logs are required.
+37. Pino is the server-logging library.
+38. Recharts will be the V1 public-chart library.
+39. Dark mode is not part of V1.
+40. Search is deferred until content volume justifies it.
+41. Technology changes require documentation and governance.
+42. ESLint flat configuration is the approved linting system.
+43. ESLint runs through the repository script `pnpm lint`.
+44. The lint script uses `eslint . --max-warnings=0`.
+45. `next lint` is not used.
+46. Prettier is the canonical formatter.
+47. Formatting verification runs through `pnpm format:check`.
+48. ESLint and Prettier have separate responsibilities and must not enforce conflicting formatting rules.
 
 ---
 
@@ -2840,11 +2610,6 @@ The following remain unresolved:
 - Is Cloudflare used for DNS, CDN, WAF, or Turnstile?
 - Which external error-monitoring provider will be approved?
 - Will OpenTelemetry be included in V1?
-- What is the final staging-server environment?
-- Which production Linux distribution is used?
-- Is Docker Compose sufficient for deployment?
-- Is a managed container platform required later?
-- Which Nginx configuration is already available on the server?
 - Which domain serves Patient application access?
 - Which domain serves Provider application access?
 - Is the risk assessment embedded, routed, or linked?
@@ -2852,15 +2617,14 @@ The following remain unresolved:
 - Who owns generated API-contract updates?
 - Is Recharts sufficient for all public Provider visualizations?
 - Which content pages require MDX?
-- Is Storybook deployed privately or used only in CI?
+- Is Storybook used only locally?
 - Which browser versions form the formal support matrix?
 - Which visual-regression screenshots are release blocking?
 - Which dependency-security scanner is release blocking?
 - Who approves major dependency upgrades?
-- Who owns production deployment and rollback?
+- Who owns manual publication?
 - Who owns analytics-event governance?
 - Who owns consent configuration?
-- What is the maximum acceptable production Docker image size?
 
 These questions must remain in:
 
@@ -2899,11 +2663,9 @@ GA4, GTM, consent, and Search Console
 ↓
 Vitest, Playwright, Axe, and Storybook
 ↓
-Docker standalone output
+Verified local production build
 ↓
-Nginx and self-hosted deployment
-↓
-GitHub Actions and immutable releases
+Manual publication
 ```
 
 The stack must keep the public website:
@@ -2960,7 +2722,7 @@ The Technology Stack selects:
 - Playwright
 - Axe
 - Storybook
-- GitHub Actions
+- Local validation scripts
 
 The canonical test levels, browser matrix, coverage, accessibility, visual,
 flaky-test, staging, production, and release-gate requirements are defined in:

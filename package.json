@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:smarteraspnet": "pnpm build && node scripts/package-smarteraspnet.mjs",
+    "test:deployment": "node scripts/test-deployment.mjs",
     "start": "next start",
     "lint": "eslint . --max-warnings=0",
     "format": "prettier . --write",
@@ -36,6 +38,8 @@
     "validate:test-policy": "node scripts/validate-test-policy.mjs"
   },
   "dependencies": {
+    "lucide-react": "^1.30.0",
+    "motion": "13.0.0",
     "next": "16.2.11",
     "next-intl": "4.13.4",
     "react": "19.2.4",

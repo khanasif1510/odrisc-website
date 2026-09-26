@@ -1,9 +1,13 @@
 .next/
 out/
 build/
+dist/
 coverage/
 storybook-static/
 playwright-report/
 test-results/
 node_modules/
 pnpm-lock.yaml
+
+# Preserve supplied clinical reference documents verbatim.
+docs/clinical/reference/

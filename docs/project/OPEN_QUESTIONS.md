@@ -253,12 +253,12 @@ This document records unresolved questions that could affect the product, conten
 | Q-228 | Are unused variables enforced through TypeScript, ESLint, or both? | Engineering quality | Medium | Open | CTO |
 | Q-229 | Is automated import ordering added through an approved plugin? | Code consistency | Low | Open | CTO |
 | Q-230 | Is the official Tailwind Prettier plugin approved? | Styling and tooling | Medium | Open | CTO |
-| Q-231 | Are unit and component tests centralised or colocated with source? | Testing architecture | High | Open | CTO |
+| Q-231 | Are unit and component tests centralised or colocated with source? | Testing architecture | High | Resolved | CTO |
 | Q-232 | Are Storybook stories colocated with components? | Component documentation | Medium | Open | Design engineering owner |
 | Q-233 | Which exported contracts require TSDoc before release? | Engineering documentation | Medium | Open | CTO |
 | Q-234 | Is a Git-hook runner approved? | Developer workflow | Medium | Open | CTO |
 | Q-235 | Is `lint-staged` approved for pre-commit checks? | Developer workflow | Medium | Open | CTO |
-| Q-236 | Which checks run before commit versus only in CI? | Engineering workflow | High | Open | CTO |
+| Q-236 | Which checks run before commit versus only in CI? | Engineering workflow | High | Resolved | CTO |
 | Q-237 | Which architecture restrictions are enforced through ESLint? | Architecture governance | High | Open | CTO |
 | Q-238 | Which generated directories are committed to Git? | Generated-code governance | High | Open | CTO |
 | Q-239 | What issue-key format is required for TODO comments? | Project governance | Low | Open | Founder and CTO |
@@ -298,8 +298,25 @@ This document records unresolved questions that could affect the product, conten
 | Q-272 | Who may approve a non-P0 test quarantine? | QA governance | Blocking | Open | CTO |
 | Q-273 | Who approves temporary coverage exceptions? | Engineering governance | High | Open | CTO |
 | Q-274 | Which commands are mandatory before AI-authored review requests? | AI quality governance | Blocking | Open | CTO |
-| Q-275 | Which test cases may run against production? | Production governance | Blocking | Open | CTO |
+| Q-275 | Which test cases may run against production? | Production governance | Blocking | Resolved | CTO |
 | Q-276 | Which nightly failures create automatic issues? | QA operations | Medium | Open | QA owner |
 | Q-277 | What evidence format is required for manual QA? | Release governance | Medium | Open | QA owner |
 | Q-278 | When will formal Patient usability testing begin? | UX validation | High | Open | Founder |
 | Q-279 | When will formal Provider usability testing begin? | UX validation | High | Open | Founder |
+
+## Provider launch review — 14 September 2026
+
+- Confirm release status, market and clinical review owner before publication. Fetal-growth demonstration is authorized; general clinical availability is not established by the supplied prototype.
+- Approve one consistent fictional case and independent mappings to every named reference/version. Resolve prototype source findings in `PROVIDER_REVIEW_BUILD.md` before publishing calculated centiles, velocity bands or staging results.
+- Clinician signup/login repository, API contract and destinations will be provided later by the founder. Do not create a parallel identity store or connect this website directly to the application database.
+- Provide account privacy/terms, consent-aware analytics and reviewed Arabic content before those experiences are activated.
+
+## SmarterASP.NET preparation — 19 September 2026
+
+- Confirm Node.js 24 x64, IIS httpPlatformHandler, the Node executable path and writable `.next/cache` on the owner's hosting account. Plan/runtime are currently unknown.
+- Complete the broad test-coverage gate and repeat the production dependency audit after npm's maintenance ends. See `PRODUCTION_BUILD_REPORT.md`; no quality thresholds were lowered.
+
+## Two-case clinician homepage — 23 September 2026
+
+- Registry v3.1 and its complete machine-readable companion have been supplied and incorporated. The remaining dependency is promotion evidence: clinical content review, rights, correction review, numerical package validation and explicit release approvals. All 38 source identities remain unpromoted for production.
+- Confirm publication approval for the two supplied synthetic cases. The educational review homepage is implemented; noindex and the existing English-only boundary remain until publication requirements are satisfied.
